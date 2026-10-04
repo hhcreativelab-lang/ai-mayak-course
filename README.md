@@ -123,3 +123,27 @@ Site: https://aimayak.com/ru/
 51. [Сайты и веб-приложения с нуля](ru/15-websites-webapps.md) · [web](https://aimayak.com/ru/lessons/15-websites-webapps/)
 52. [Самый неожиданный урок](ru/100-intrigue.md) · [web](https://aimayak.com/ru/lessons/100-intrigue/)
 53. [Урок 49b: Выбери свой путь — decision tree по прикладным урокам](ru/49b-choose-your-path.md) · [web](https://aimayak.com/ru/lessons/49b-choose-your-path/)
+
+## Español
+
+Site: https://aimayak.com/es/
+
+1. [Tus primeros 30 minutos con la IA: por dónde empezar](es/00pre-your-first-30-minutes.md) · [web](https://aimayak.com/es/lessons/00pre-your-first-30-minutes/)
+2. [IA sin miedo: ¿la IA me va a quitar el trabajo?](es/00d-ai-without-fear.md) · [web](https://aimayak.com/es/lessons/00d-ai-without-fear/)
+3. [Cómo funciona un LLM por dentro, explicado sin matemáticas](es/00b-how-llm-works.md) · [web](https://aimayak.com/es/lessons/00b-how-llm-works/)
+4. [La historia de la IA: de Turing a Claude, y por qué ahora](es/00-what-is-ai.md) · [web](https://aimayak.com/es/lessons/00-what-is-ai/)
+5. [Cómo escribir un buen prompt para Claude Code](es/06-prompting-fundamentals.md) · [web](https://aimayak.com/es/lessons/06-prompting-fundamentals/)
+6. [El Default Shift: una mentalidad con IA para tu trabajo](es/03-default-shift-mindset.md) · [web](https://aimayak.com/es/lessons/03-default-shift-mindset/)
+7. [Ética y seguridad en IA: alucinaciones, ataques, sesgos](es/61b-ai-ethics-safety.md) · [web](https://aimayak.com/es/lessons/61b-ai-ethics-safety/)
+8. [Claude vs ChatGPT vs Gemini: comparación de modelos de IA](es/00c-ai-models-comparison.md) · [web](https://aimayak.com/es/lessons/00c-ai-models-comparison/)
+9. [Copywriting con IA: una cadena de prompts que suena como tú](es/67-ai-copywriting.md) · [web](https://aimayak.com/es/lessons/67-ai-copywriting/)
+10. [IA para el correo: una bandeja más inteligente, borradores y respuestas](es/73-ai-email-communications.md) · [web](https://aimayak.com/es/lessons/73-ai-email-communications/)
+11. [Notas de reuniones con IA: Otter.ai y Fireflies](es/74-ai-meetings.md) · [web](https://aimayak.com/es/lessons/74-ai-meetings/)
+12. [Presentaciones con IA: Gamma, Beautiful.ai y Claude](es/70-ai-presentations.md) · [web](https://aimayak.com/es/lessons/70-ai-presentations/)
+13. [Generadores de imágenes con IA en 2026: herramientas y flujos de trabajo](es/18c-ai-image-generation-pipeline.md) · [web](https://aimayak.com/es/lessons/18c-ai-image-generation-pipeline/)
+14. [Generación de video con IA: Runway, Kling, Luma y más](es/71-ai-video-generation.md) · [web](https://aimayak.com/es/lessons/71-ai-video-generation/)
+15. [Música con IA: Suno y diseño de sonido](es/69-music-ai-suno.md) · [web](https://aimayak.com/es/lessons/69-music-ai-suno/)
+16. [Cuánto gastar en IA: de $0 a $2,000 al mes](es/00e-investment-roadmap.md) · [web](https://aimayak.com/es/lessons/00e-investment-roadmap/)
+17. [Cuánto cuestan de verdad las herramientas de IA y cómo dejar de pagar de más](es/d04-ai-stack-costs.md) · [web](https://aimayak.com/es/lessons/d04-ai-stack-costs/)
+18. [El futuro de la IA 2027-2030: cómo prepararte](es/108-ai-roadmap-2027-2030.md) · [web](https://aimayak.com/es/lessons/108-ai-roadmap-2027-2030/)
+19. [La lección que no esperabas](es/100-intrigue.md) · [web](https://aimayak.com/es/lessons/100-intrigue/)
