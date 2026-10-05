@@ -1,6 +1,6 @@
 # Claude vs ChatGPT vs Gemini: AI models compared
 
-**Time:** about 30 min reading + 20 min practice
+**Time:** about 30 min reading + 25 min practice
 
 > *Picture choosing a vehicle for different jobs. A Ferrari for the racetrack, a Land Rover for off-road, a Toyota Camry for your daily drive around town. There's no "best car, period," only the best car for a particular road. AI models work exactly the same way. This lesson is your map of the roads and the cars in the AI market. The specific models and prices are as of October 2026. They change fast, so check the current list on the [What's current](https://aimayak.com/en/now/) page.*
 
@@ -12,7 +12,7 @@ By the end of this lesson you'll understand:
 - Which major AI models exist and who makes them
 - Where each model is strong and where it falls short
 - When to pick Claude, ChatGPT, Gemini, an open model or Mistral
-- Why this course is built around Claude Code, and why that's a deliberate choice, not fandom
+- Why this course uses Claude Code in the lessons where we build, and why that's a deliberate choice, not fandom
 
 ---
 
@@ -24,7 +24,7 @@ By the end of this lesson you'll understand:
 
 **Context window**: the maximum amount of text an AI can see and keep in mind at one time. Roughly: if the window is 200K tokens, the model can hold a 150,000-word book in memory.
 
-**Token** (the smallest unit of text for an AI): about 0.75 of a word. "Hello" = 1 token, "Hello world" = 2 tokens. Every token costs money when you work through the API (Application Programming Interface: the channel programs use to talk to the model).
+**Token** (the smallest unit of text for an AI): about 0.75 of an English word. "Hello" = 1 token, "Hello world" = 2 tokens. Other languages usually take more tokens per word, and each model counts a little differently. Every token costs money when you work through the API (Application Programming Interface: the channel programs use to talk to the model).
 
 **Open source / open weights**: a model whose weights are published, so you can download it and run it on your own machine. License terms differ from model to model.
 
@@ -32,7 +32,7 @@ By the end of this lesson you'll understand:
 
 **Inference**: the moment the model generates an answer to your question. The provider spends computing power; you pay for the tokens.
 
-**Parameters** (also called the model's "weights"): the numbers inside the model's neural network. The more there are, the smarter the model, but also the heavier it is to run. They're counted in billions: 8B, 70B, 405B.
+**Parameters** (also called the model's "weights"): the numbers inside the model's neural network. As a rule, the more there are, the more capable the model, but also the heavier it is to run. They're counted in billions: 8B, 70B, 405B.
 
 ---
 
@@ -44,9 +44,9 @@ A lot of people start with AI like this: they hear about ChatGPT and use only th
 
 Three reasons to know the whole market:
 
-**Different tasks, different strengths.** Working through a huge 500-page legal document calls for a model with a large context window (as of October 2026, a 1-million-token window is available in Claude Fable 5.1, Opus 5.5 and Sonnet 5.5, and in several Gemini models). Writing quality code: Claude and other coding agents. Working with images and voice in a single request: ChatGPT or Gemini. Complete privacy with no cloud: an open model running locally on your own computer.
+**Different tasks, different strengths.** Working through a huge 500-page legal document calls for a model with a large context window (as of October 2026, a window of about 1 million tokens is available in Claude Fable 5.1, Opus 5.5 and Sonnet 5.5, in several Gemini models and in the GPT-6 models; check each provider's docs for exact numbers). Writing quality code: Claude and other coding agents. Working with images and voice in a single request: ChatGPT or Gemini. Complete privacy with no cloud: an open model running locally on your own computer.
 
-**Prices differ 10 to 100 times.** As of October 2026, a million input tokens costs $0.10 on GPT-6 Luna and $10 on GPT-6 Astra. Among Claude models, a million input tokens ranges from $1 on Haiku 4.5 to $10 on Fable 5.1. For routine tasks, that's a huge difference in budget.
+**Prices differ 10 to 100 times.** As of October 2026, a million input tokens (the text you send to the model) costs $0.10 on GPT-6 Luna and $10 on GPT-6 Astra. Among Claude models, a million input tokens ranges from $1 on Haiku 4.5 to $10 on Fable 5.1. For routine tasks, that's a huge difference in budget.
 
 **The market changes fast.** The model that was the best six months ago may have lost its spot to a newcomer. When you understand the landscape (the overall map of the market), you make an informed choice instead of just following the hype.
 
@@ -85,15 +85,15 @@ Anthropic was founded in 2021 by former OpenAI employees, including Dario Amodei
 | Claude Haiku 4.5 | Fastest | Basic | $1 / $5 | Simple tasks, short answers, high-volume processing |
 | Claude Sonnet 5.5 | Fast | High | $2 / $10 | Everyday tasks, edits, documents, spreadsheets |
 | Claude Opus 5.5 | Medium | Very high | $4 / $20 | The main strong model: long work with code and documents; the default in Claude Code |
-| Claude Fable 5.1 | Slower | Maximum | $10 / $50 | The hardest multi-step tasks; on subscriptions it draws on usage credits |
+| Claude Fable 5.1 | Slower | Maximum | $10 / $50 | The hardest multi-step tasks; on the Pro plan it's paid for separately with usage credits (pay-as-you-go credits on top of your plan), and on Max it's included in the plan's limit |
 
 Current prices and the model list are on the [What's current](https://aimayak.com/en/now/) page. There's also an invitation-only model (Mythos 5.1, Project Glasswing); it isn't available to regular users.
 
-**Context window:** as of October 2026, Fable 5.1, Opus 5.5 and Sonnet 5.5 have 1 million tokens (about 555,000 words, roughly the whole Lord of the Rings trilogy and then some); Haiku 4.5 has 200K tokens.
+**Context window:** as of October 2026, Fable 5.1, Opus 5.5 and Sonnet 5.5 have 1 million tokens (about 555,000 English words by Anthropic's estimate, roughly the whole Lord of the Rings trilogy and then some); Haiku 4.5 has 200K tokens.
 
-**Claude's strengths:**
+**Claude's strengths** (as Anthropic describes them; test them on your own tasks):
 
-- Following instructions: Claude carries out complex multi-step tasks precisely, without drifting from the requirements
+- Following instructions: it's built for complex multi-step tasks with precise requirements
 - Code: one of its strongest areas. Check current independent benchmarks (for example, SWE-bench), since rankings shift every few months
 - Long documents: it analyzes, summarizes and finds contradictions in contracts and reports
 - Honesty: Anthropic puts a lot of weight on it. The model tries to admit when it doesn't know something, but hallucinations (AI confidently making things up) still happen, so double-check anything important
@@ -105,9 +105,9 @@ Current prices and the model list are on the [What's current](https://aimayak.co
 - Image generation isn't Claude's main strength: for pictures, people usually turn to separate services, such as ChatGPT Images or Nano Banana in Gemini
 - Limited multimodality: through the API it takes text and images as input; it doesn't process audio or video directly
 
-**Claude Code** is Anthropic's specialized tool for developers, and it's at the center of this course. It isn't just Claude in a browser. It's an agent that can read files, write code, run commands in the terminal (the text window where you type commands to your computer's operating system) and manage projects. It's included in the paid plans (Pro and up).
+**Claude Code** is Anthropic's agent for people who build software and automations. In this course it shows up near the end: in the first-build module and in the library. It isn't just Claude in a browser. It's an agent that can read files, write code, run commands in the terminal (the text window where you type commands to your computer's operating system) and manage projects. It's included in the paid plans (Pro and up).
 
-🎨 **Picture this:** Claude is like a very smart, thoughtful senior colleague. Doesn't rush, thinks before answering, admits when it doesn't know something. Rarely wrong, but sometimes slower than you'd like.
+🎨 **Picture this:** Claude is like a very smart, thoughtful senior colleague. Doesn't rush, thinks before answering, tries to admit when it doesn't know something. It still makes mistakes, so people double-check anything important, and it's sometimes slower than you'd like.
 
 ---
 
@@ -132,7 +132,7 @@ The names and the lineup change every few months: for example, GPT-5.5 leaves Ch
 - ChatGPT: the app for a broad audience, with Free, Go ($8), Plus ($20), Pro (from $100) and Business plans; monthly prices as of October 2026
 - Work: an agent mode for long tasks (documents, spreadsheets, presentations); it shares limits with Codex
 - Codex: the product for software development: background agents, reviewing changes
-- Image generation is built into ChatGPT (the gpt-image-2 model); DALL-E 2 and 3 were shut off in the API on May 12, 2026
+- Image generation is built into ChatGPT (ChatGPT Images); the older DALL-E 2 and 3 models were shut off in the API on May 12, 2026
 - Whisper: open-source speech-to-text
 - Shut down: the Sora app (April 26, 2026), the Sora API (September 24, 2026), the Assistants API (August 26, 2026)
 
@@ -156,25 +156,25 @@ The names and the lineup change every few months: for example, GPT-5.5 leaves Ch
 
 ### 5. Gemini (Google / DeepMind): a closer look
 
-Google has put more resources into AI than any other company: it has DeepMind (the makers of AlphaGo and AlphaFold), Google Brain and its own TPUs (Tensor Processing Units, special chips built for AI).
+Google invests heavily in AI: it has the Google DeepMind lab (the makers of AlphaGo and AlphaFold; the Google Brain team merged into it in 2023) and its own AI chips, called TPUs (Tensor Processing Units).
 
 **The Gemini lineup as of October 2026:**
 
 | What | What's special |
 |-----|-------------|
-| Gemini 3.6 Flash | A fast model; the default on the free plan (since July 21, 2026) |
+| Gemini 3.6 Flash | A fast model for everyday tasks, available for free (released July 21, 2026) |
 | Gemini 3.1 Pro | The top model; limited on Free |
 | Deep Think | A deep-reasoning mode, on the Ultra plan |
 | Gemini 4 (Argon) | Announced September 30, 2026; not publicly available yet |
 
 US plans (as of October 2026): Free, Google AI Plus ($4.99), Google AI Pro ($19.99), Google AI Ultra ($99.99 or $199.99 a month). Outside the US, prices are set in local currency. Current prices and versions are on the [What's current](https://aimayak.com/en/now/) page.
 
-**Context window.** Several Gemini models have a 1-million-token window (check the model's documentation for exact numbers). That used to be a market record, but as of October 2026, Claude Fable 5.1, Opus 5.5 and Sonnet 5.5 have a 1M window too. For scale: 1 million tokens is roughly 555,000 to 750,000 words, or 5 to 10 average-length books. You can load the entire codebase (all the source code of a project) of a large project and analyze it as a whole.
+**Context window.** Several Gemini models have a 1-million-token window (check the model's documentation for exact numbers). That once set Gemini apart, but as of October 2026, Claude Fable 5.1, Opus 5.5 and Sonnet 5.5 and the GPT-6 models have a window of about 1M too. For scale: 1 million tokens is roughly 555,000 to 750,000 English words, or 5 to 10 average-length books. You can load the entire codebase (all the source code of a project) of a large project and analyze it as a whole.
 
 **Gemini's multimodality:**
 - Text: yes
 - Images: yes
-- Video: yes (rare among the flagship models)
+- Video: yes (through the API, Claude and GPT-6 take only text and images as input)
 - Audio: yes
 - Code: yes
 
@@ -184,52 +184,54 @@ In breadth of multimodality, Gemini is one of the strongest (taking video as inp
 
 **Google Search integration:** through Google AI Studio and inside Google's products, Gemini has access to fresh data from search.
 
-**Some history:** Gemini (previously called Bard) used to lag behind Claude and GPT in quality. In 2025-2026 the gap narrowed a lot, especially on tasks with long context and multimodality.
+**Some history:** Google's assistant was first called Bard; it was renamed Gemini in February 2024. To compare its quality with Claude and GPT, look at current independent rankings and try your own tasks: the standings change with every release.
 
-**The 2026 renames:** since July 16, 2026, NotebookLM has been called Gemini Notebook, and on September 30, 2026, Google announced that Skills will replace Gems; existing Gems are set to carry over automatically.
+**The 2026 renames:** since July 16, 2026, NotebookLM has been called Gemini Notebook. And on September 30, 2026, Google announced that Skills will replace Gems (saved sets of instructions); personal Gems are set to carry over automatically in November 2026.
 
 **Gemini's strengths:**
 - A large context window, up to 1 million tokens
-- Real multimodality (text + images + video + audio + code)
+- Takes text, images, video, audio and PDFs as input
 - Google Workspace integration
 - Access to Google Search
-- Competitive prices, especially for the Flash versions
+- Low-cost Flash models and a free tier in the API
 
 **Weaknesses:**
-- Historically weaker at following instructions precisely; it's improving
-- A smaller ecosystem of partner integrations than OpenAI
+- Prices and features depend on your country: some features aren't available everywhere
+- The top model is limited on the free plan, and Deep Think is only on Ultra
 - Product and plan names change often, so check the current terms
 
-🎨 **Picture this:** Gemini is like a Google employee who knows every one of the company's products by heart, handles files in any format, and can watch video and listen to audio. But outside the Google world, it's sometimes less flexible than the competition.
+🎨 **Picture this:** Gemini is like a Google employee who knows every one of the company's products by heart and works with text, pictures, video and sound. It's most useful to people who already live in Google's services.
 
 ---
 
 ### 6. Open models: Llama (Meta) and others
 
-Meta is the company that owns Facebook, Instagram and WhatsApp. In 2023-2024 it made a fundamental decision: release the Llama models with open weights. That changed the whole market.
+Meta is the company that owns Facebook, Instagram and WhatsApp. In 2023-2024 it released the Llama models with open weights, which made it possible to run strong models on your own hardware.
 
 **Why did Meta release open models?**
 
-Their business logic: more developers use Llama → more specialists know Meta's technology → Meta has an easier time attracting talent. On top of that, they wanted open models to become the industry standard, which weakens the position of OpenAI and Anthropic.
+Mark Zuckerberg explained it in an open letter in July 2024. Meta doesn't sell access to AI models, so releasing them openly doesn't cut into its revenue. An open model gets improved by the whole community and becomes a shared standard. And Meta itself doesn't want to depend on competitors' closed platforms.
 
-**An important 2026 update.** In April 2026, Meta introduced a closed model, Muse Spark, and the Meta AI assistant now runs on it rather than on Llama. Previously released Llama models are still available to download, but Meta's main focus has shifted to its closed lineup. Other companies release open weights today too: DeepSeek (V4 under the MIT license), Alibaba (some Qwen models), Mistral (some models). The principles below hold for any open model; in the table, Llama is just an example of model sizes.
+**An important 2026 update.** In April 2026, Meta introduced a model called Muse Spark, and the Meta AI assistant now runs on it rather than on Llama. Muse Spark's weights aren't published: you get it through Meta's products, select partners get it through an API, and about future versions Meta says only that it hopes to open-source them. Previously released Llama models are still available to download. Other companies release open weights today too: DeepSeek (V4 under the MIT license), Alibaba (the Qwen models), Mistral (some models). The principles below hold for any open model; in the table, Llama is just an example of model sizes.
 
 **Size examples (the Llama 3.x family):**
 
-| Model | Parameters | RAM (memory) | Quality |
+| Model | Parameters | File size in Ollama | Where it runs |
 |--------|-----------|--------------------------|---------|
-| Llama 3.1 8B | 8 billion | 6-8 GB | Good for its size |
-| Llama 3.3 70B | 70 billion | 40-48 GB | Very high |
-| Llama 3.1 405B | 405 billion | ~250 GB | Close to the best models of its time |
+| Llama 3.1 8B | 8 billion | 4.9 GB | An ordinary modern computer |
+| Llama 3.3 70B | 70 billion | 43 GB | A powerful workstation with a lot of memory |
+| Llama 3.1 405B | 405 billion | 243 GB | A server. When it came out in July 2024, Meta called it the first open model on the level of the best closed ones |
+
+The whole model loads into memory, so your computer needs more free memory than the size of the file.
 
 **What "open weights" means:**
-- You download the model's weights (its numerical parameters): a big file, anywhere from 4 GB to 240+ GB
+- You download the model's weights (its numerical parameters): a big file, from a couple of gigabytes for small models to 240+ GB for the largest
 - You run it locally with special software
 - Your data doesn't go anywhere; everything stays on your computer
 - You can fine-tune the model (train it further) on your own data
 - The model itself is free, but the license may come with restrictions: read the terms
 
-**Ollama** is one of the most popular tools for running open models. It's free for personal use. It works on Mac, Windows and Linux. Installation takes about 5 minutes.
+**Ollama** is one of the most popular tools for running open models. Running models on your own computer with it is free (the paid plans are only for cloud features). It works on Mac, Windows and Linux. Installation takes a few minutes.
 
 **When to choose an open model (Llama or another one):**
 
@@ -247,9 +249,9 @@ Their business logic: more developers use Llama → more specialists know Meta's
 - No dependence on an outside API
 
 **Weaknesses:**
-- You need a powerful computer: at least 16 GB of RAM for Llama 8B, 64+ GB for 70B
+- You need memory: more free memory than the size of the model file (about 5 GB for the 8B version, 43 GB for 70B)
 - A model you can run on a home computer usually trails the top closed models on tasks that demand precision
-- No multimodality in the base versions
+- Many open models work with text only; only certain versions understand images
 - It takes technical setup
 
 🎨 **Picture this:** an open model is like Linux: free, powerful, full control, but you need technical know-how. Claude, ChatGPT and Gemini are like macOS: you pay for convenience, speed and quality right out of the box.
@@ -266,35 +268,34 @@ Mistral AI was founded in 2023 in France by three researchers from Google DeepMi
 - **Models through the API** for developers, some of them with open weights. Mistral doesn't say on its pricing pages which models run inside Vibe; see the company's website for the list of models and licenses.
 - Historically known for the Mistral Large, Mixtral and Codestral models (Codestral specializes in code).
 
-**Mixture of Experts**: an architecture Mistral popularized with its Mixtral 8x7B model. Instead of one big neural network, there are several specialized "experts." For each request, only some of them switch on (in Mixtral, 2 out of 8). The result: the quality of a big model at the resource cost of a small one. Many model makers use this idea today.
+**Mixture of Experts**: an architecture Mistral popularized with its Mixtral 8x7B model. Instead of one big neural network, there are several specialized "experts." For each request, only some of them switch on (in Mixtral, 2 out of 8). The idea: quality closer to a big model at a resource cost closer to a small one. Many model makers use this idea today.
 
 **Why Mistral matters:**
 
-**GDPR compliance** (General Data Protection Regulation, the EU's data protection law): the regulation limits transferring personal data outside the EU without proper safeguards. As a French company, Mistral supports keeping data in the EU, so if you work with large European companies, it's often easier to get Mistral through their review. But "GDPR-friendly" doesn't mean "safe by default": read the data processing terms. For example, on Vibe's free plan your data goes into model training by default; you can turn that off in the privacy settings.
+**GDPR compliance** (General Data Protection Regulation, the EU's data protection law): the regulation limits transferring personal data outside the EU without proper safeguards. Mistral, a French company, stores data in the EU by default, so if you work with large European companies, it's often easier to get Mistral through their review. But "GDPR-friendly" doesn't mean "safe by default": read the data processing terms. For example, on Vibe's free plan your data goes into model training by default; you can turn that off in the privacy settings.
 
 **Mistral's strengths:**
-- Efficient architecture: good quality at a relatively low price
-- European data compliance: GDPR, DORA (the Digital Operational Resilience Act, an EU law for the financial sector)
+- Price: the Pro plan is $14.99 a month, compared with $20 for Claude Pro and ChatGPT Plus (October 2026)
+- A European company: data is stored in the EU by default
 - Some models have open weights, so you can run them locally
-- Strong multilingual ability, especially in European languages
-- Coding options (the Vibe Code mode): an alternative for development work
+- European languages: the company describes its top model as natively fluent in English, French, Spanish, German and Italian
+- A mode for programming (Vibe Code)
 
 **Weaknesses:**
-- A smaller ecosystem of integrations than OpenAI or Anthropic
-- On hard analytical tasks, Mistral's flagship models usually don't top the rankings: test them on your own examples
-- Fewer public benchmarks and case studies
+- On the free plan, messages and web searches are limited
+- In the independent LMArena rankings, Mistral's models aren't in the top ten as of October 2026: test them on your own examples
 
-🎨 **Picture this:** Mistral is like Airbus: the European option alongside the American manufacturers. Technically comparable, and it solves the problem of regulatory requirements inside Europe.
+🎨 **Picture this:** Mistral is like Airbus: the European option alongside the American manufacturers. People choose it when it matters that the provider and the data are in Europe.
 
 ---
 
 ### 8. Other players worth knowing
 
-**Grok (SpaceXAI, formerly xAI):** in February 2026, SpaceX bought xAI, and the company now goes by SpaceXAI. The current lineup is Grok 4.x. It searches the web and X in real time, handles voice, and creates images and video. You can start for free at grok.com; check the site for paid plan prices.
+**Grok (SpaceXAI, formerly xAI):** in February 2026, SpaceX bought xAI, and the company now goes by SpaceXAI. The current lineup is Grok 4.x. It searches the web and X in real time, handles voice, and creates images and video. You can start for free at grok.com; paid plan prices are on the [What's current](https://aimayak.com/en/now/) page.
 
-**Qwen (Alibaba Cloud):** Alibaba's family of models, some with open weights. It's especially good with Chinese. For businesses focused on Asia, it's a significant player. New versions come out several times a year; check the site for the current one.
+**Qwen (Alibaba Cloud):** Alibaba's family of models. The open versions are released under the permissive Apache 2.0 license and, according to the developers, support more than a hundred languages. The models are built in China, so people often consider them for work in Chinese and for Asian markets. New versions come out several times a year; check the site for the current one.
 
-**DeepSeek (China):** caused a sensation in early 2025 by posting strong results at a much lower training cost. The current lineup is DeepSeek V4 (V4.1-Flash came out in September 2026), with weights published under the MIT license. Data privacy remains an important question: according to the service's privacy policy, data is stored and processed in the People's Republic of China, so don't paste client data into the chat. To opt out of training on your data, send a request to privacy@deepseek.com.
+**DeepSeek (China):** became widely known in January 2025, when it released its R1 reasoning model with open weights. The current lineup is DeepSeek V4 (V4.1-Flash came out in September 2026), with weights published under the MIT license. Data privacy remains an important question: according to the service's privacy policy, data is stored and processed in the People's Republic of China, so don't paste client data into the chat. To opt out of training on your data, send a request to privacy@deepseek.com.
 
 **Meta AI** runs on the Muse Spark model and is built into Meta's apps (WhatsApp, Instagram and others). **Perplexity** is a search engine that gives answers with links to its sources; it uses models from different companies. **Microsoft Copilot** is Microsoft's assistant: the paid Copilot Pro is no longer sold, and the Microsoft 365 Premium plan ($19.99 a month as of October 2026) replaced it. Details on each one are on the pages of the [Tools](https://aimayak.com/en/tools/) section.
 
@@ -302,7 +303,7 @@ Mistral AI was founded in 2023 in France by three researchers from Google DeepMi
 
 ### 9. Comparison table, as of October 2026
 
-| Model | Company | API price* | Context window | Multimodality | Open weights |
+| Model | Company | API price* | Context window | What it takes as input | Open weights |
 |--------|----------|-----------|----------------|-------------------|---------------|
 | Claude Haiku 4.5 | Anthropic | $ | 200K | Text + images | No |
 | Claude Sonnet 5.5 | Anthropic | $$ | 1M | Text + images | No |
@@ -314,7 +315,7 @@ Mistral AI was founded in 2023 in France by three researchers from Google DeepMi
 | Gemini 3.x Flash | Google | $ | up to 1M (see docs) | Text + images + video + audio | No |
 | Gemini 3.1 Pro | Google | $$ | up to 1M (see docs) | Text + images + video + audio | No |
 | DeepSeek V4.1-Flash | DeepSeek | $ | see docs | Text + images | Yes (MIT) |
-| Llama 3.x | Meta | Free\*\* | 128K | Text only | Yes |
+| Llama 3.3 70B | Meta | Free\*\* | 128K | Text only | Yes |
 
 \*Prices are approximate and refer to the API: $ = up to $1 per million input tokens, $$ = about $2, $$$ = about $4, $$$$ = $10 and up. Exact prices and versions: [What's current](https://aimayak.com/en/now/).
 
@@ -335,7 +336,7 @@ Writing code / building a system → precise instruction-following matters most
   → Claude (Sonnet 5.5 or Opus 5.5) + Claude Code
 
 Analyzing a very long document (100+ pages, a book, a codebase)
-  → a model with a 1M-token window: Claude Sonnet / Opus / Fable or Gemini
+  → a model with a window of about 1M tokens: Claude Sonnet / Opus / Fable, Gemini or GPT-6
 
 Working with images + voice + video in one request
   → ChatGPT or Gemini
@@ -353,7 +354,7 @@ Hard math / logic / algorithm problems
   → reasoning mode in Claude or ChatGPT, or Gemini Deep Think
 
 Starting from zero, want to try it for free
-  → claude.ai (free plan) or chatgpt.com (free)
+  → claude.ai, chatgpt.com or gemini.google.com: all three have a free plan
 
 Want local AI with no dependence on the internet
   → Ollama + any open model that fits your computer
@@ -381,7 +382,7 @@ The takeaway: don't memorize specific numbers; they'll go out of date. Remember 
 
 ### 12. Why this course chose Claude Code
 
-We study Claude Code, and it's a deliberate choice, not fandom.
+In the lessons where we build something (the first-build module and the library), this course uses Claude Code. It's a deliberate choice, not fandom. You don't need it for the early modules: a regular chat is enough there.
 
 **Reason 1: Code quality.** Claude is among the strongest models for programming. Check current independent benchmarks (SWE-bench is a test built on solving real GitHub issues); rankings change with every release.
 
@@ -389,7 +390,7 @@ We study Claude Code, and it's a deliberate choice, not fandom.
 
 **Reason 3: Claude Code as a specialized tool.** It's not just a chat on top of an API. It's an agent wired into the terminal, the file system and git (a version control system that keeps the history of your changes). Other companies have their own coding agents (for example, OpenAI's Codex, Cursor, Devin Desktop), and the ideas in this course carry over to them. Claude Code was chosen because it's a convenient tool for showing the practice.
 
-**Reason 4: Following instructions.** Complex workflows (agents, hooks, skills) need a model that carries out multi-step instructions precisely, without drifting. Claude handles that well.
+**Reason 4: Following instructions.** Complex workflows (with agents, automatic rules and skills) need a model that carries out multi-step instructions precisely, without drifting. Claude handles that well.
 
 **What this does NOT mean:**
 
@@ -405,8 +406,8 @@ Understand the whole landscape, and know one tool really well: that's the right 
 
 ### Exercise 1. A side-by-side test (20 min)
 
-1. Sign up at **claude.ai** (free; you'll need an email)
-2. Sign up at **chatgpt.com** (free; you'll need an email), or use any other assistant from the [Tools](https://aimayak.com/en/tools/) section
+1. Open **claude.ai** (free). If you haven't signed up yet, you'll need an email and a phone number that can receive a verification code by text
+2. Open **chatgpt.com** (free; you need an email to sign up), or use Gemini or any other assistant from the [Tools](https://aimayak.com/en/tools/) section
 3. Give both of them the same prompt:
 
 ```
@@ -415,26 +416,26 @@ with an example for $1,000 at 10% a year over 10 years.
 No formulas; use an everyday analogy instead.
 ```
 
-4. Compare the answers: which is clearer? Which is more accurate? Which is better organized?
+4. Compare the answers: which is clearer? Which is better organized? And check the accuracy: after 10 years the total should come to about $2,594 (multiply $1,000 by 1.1 ten times in a row)
 
-There's no right answer here; this is your own hands-on comparison.
+There's no right answer to "which is clearer"; that's your own hands-on comparison. The final amount, though, is something you can check, and that's a good habit to build.
 
 ---
 
 ### Exercise 2. Try local AI (30 min, optional)
 
-1. Go to **ollama.com**, then download and install Ollama (free for personal use; works on Mac, Windows and Linux)
-2. Open the terminal and run:
+1. You need a computer for this one; it won't work on a phone. Go to **ollama.com**, then download and install Ollama (running models on your own computer is free; it works on Mac, Windows and Linux)
+2. On Mac and Windows, a chat window opens after installation, and you can pick and download a model right there. The other way is to open the terminal (a window for typing text commands) and run:
 
-   ```
+   ```bash
    ollama pull llama3.2
    ollama run llama3.2
    ```
 
-3. Talk to the local model. It runs entirely on your computer, with no internet and no API key
+3. Talk to the model. It runs entirely on your computer: once it's downloaded, it needs no internet and no API key (an access key)
 4. Notice the difference in speed and quality compared with claude.ai
 
-Llama 3.2 comes in a 3B-parameter version that runs on any modern Mac. If that model is no longer in the Ollama catalog, pick any small model from the catalog.
+llama3.2 is a small Llama 3.2 model with 3 billion parameters; the file takes up about 2 GB. If that model is no longer in the Ollama catalog, pick any small model from the catalog.
 
 ---
 
@@ -452,7 +453,7 @@ Save your answer. At the end of the course, it'll be interesting to reread it an
 
 **There's no "best AI," only the best one for a particular task.** Just as there's no best car, period, only the best one for your road.
 
-**Claude is a strong choice for code, long documents and precise instruction-following.** That's why the course is built around Claude Code.
+**Claude is a strong choice for code, long documents and precise instruction-following.** That's why the course uses Claude Code in the lessons where we build.
 
 **Gemini is a strong choice for multimodal tasks and the Google world.** Video and audio as input, Workspace integration.
 
@@ -493,9 +494,9 @@ Save your answer. At the end of the course, it'll be interesting to reread it an
 
 ## Next lesson
 
-**→ [The investment roadmap](00e-investment-roadmap.md): what to pay for at each level, and what to skip.** After that comes [The agentic AI market](01-agentic-market.md).
+**→ [Writing with AI](67-ai-copywriting.md): the first lesson of the module "AI for everyday work: writing, email, meetings, translation."**
 
-We're moving from finding your way among the models to the question of budget, and to understanding the market: why agentic AI systems are changing the industry right now.
+You've picked your models. Next we put them to work on everyday tasks: writing, email, meetings, presentations, translation. We'll come back to your subscription budget in the lesson [How much to spend on AI](00e-investment-roadmap.md), and to agents in the lesson [What is an AI agent, and why it matters now](01-agentic-market.md) near the end of the course.
 
 ---
 

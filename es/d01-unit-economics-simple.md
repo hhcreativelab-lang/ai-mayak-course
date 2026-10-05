@@ -47,7 +47,7 @@ María hornea pasteles en casa y los vende por Instagram y Facebook. Un pastel c
 | Ingredientes | $14 |
 | Caja y empaque | $3 |
 | Envío | $5 |
-| **Total de costos variables** | **$22** |
+| **Total de costos variables** (en dinero; el tiempo de María lo contamos más abajo) | **$22** |
 
 **Margen por pastel:** $50 − $22 = **$28**.
 
@@ -169,4 +169,4 @@ La IA es buena para hacer cuentas y explicarlas, pero puede equivocarse en la ar
 
 → **[Cómo ponerle precio a tus servicios](d02-pricing-simple.md)**: el precio mínimo, el mercado y el valor para tu cliente.
 
-Para profundizar: [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md) (la economía unitaria de un negocio con IA en tres niveles).
+Para profundizar (una lección opcional de la biblioteca): [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md) (la economía unitaria de un negocio con IA en tres niveles).

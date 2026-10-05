@@ -10,9 +10,11 @@ AI image generation in 2026 is like the smartphone camera in 2010. Anyone can pr
 
 The market splits into 5 main players, each with its own specialty. Midjourney is the artist. ChatGPT Images is the generalist that's already at your fingertips. Flux brings open models and speed. Recraft is the vector specialist. Ideogram is the typographer. There's no single all-around champion. A professional keeps 2 or 3 tools in their pipeline and knows which one is stronger where.
 
-In this lesson we'll take an honest look at price ballparks, professional workflows for different tasks, legal pitfalls, and the anti-patterns that separate an "AI picture" from production-ready material.
+In this lesson we'll take an honest look at how pricing works, professional workflows for different tasks, legal pitfalls, and the anti-patterns that separate an "AI picture" from production-ready material.
 
-A heads-up: this market changes faster than any other. Version names and terms in this lesson are as of October 2026; for current prices and versions, check the [What's current](https://aimayak.com/en/now/) page and [the Tools catalog](https://aimayak.com/en/tools/). Where an example doesn't work without a number, the number carries a date; everywhere else, the price is replaced with a link to the service's pricing page.
+You don't need to write any code in this lesson: the exercise in the Practice section is done in a browser or on your phone. The script examples are marked optional; they're for readers who program.
+
+A heads-up: this market changes faster than any other. Version names and terms in this lesson are as of October 2026; for current prices and versions, check the [What's current](https://aimayak.com/en/now/) page and [the Tools catalog](https://aimayak.com/en/tools/). Service prices in this lesson are replaced with links to each service's pricing page, and the numbers in the cost examples are made up.
 
 🎨 **Picture this:** the kitchen of a good restaurant. The chef doesn't own one all-purpose knife; there's a whole set. A fillet knife for fish, a paring knife for vegetables, a cleaver for bones. You could cut everything with one knife, but it would be slow and sloppy. Image generation works the same way: one tool for every job means mediocre results everywhere.
 
@@ -30,20 +32,20 @@ The key question is **not "which tool is best"** but "what am I making, and for 
 
 **Pick ChatGPT Images (the GPT Image models) if:**
 - ✓ You need photorealism plus text in the image
-- ✓ You already use ChatGPT (a basic image mode is available even on the free plan)
-- ✓ You want a simple API without fiddling with settings
+- ✓ You already use ChatGPT (images are available even on the free plan, within limits)
+- ✓ You don't want to fiddle with settings: you just describe the picture in words
 - ✓ You need quick mockups for presentations
 
 **Pick Flux if:**
 - ✓ You need speed and volume (100+ images a day)
 - ✓ You want photorealism with photographic precision
-- ✓ You need open weights or want to run it on your own machine (with a powerful graphics card)
+- ✓ You need a model with open weights, meaning one you can download and run on your own machine (with a powerful graphics card)
 - ✓ You'll check the license up front: it differs from one Flux model to another
 
 **Pick Recraft if:**
 - ✓ You're making logos, vector graphics, icons
 - ✓ You're working on brand identity or infographics
-- ✓ You need SVG files as output
+- ✓ You need SVG files as output (a vector format: the image scales without losing quality and can be edited piece by piece)
 - ✓ You need professional-grade text in images
 
 **Pick Ideogram if:**
@@ -64,11 +66,12 @@ The key question is **not "which tool is best"** but "what am I making, and for 
 - **Aspect ratio (AR)**: the proportions of the output image. 16:9 for YouTube, 9:16 for Reels/TikTok, 1:1 for Instagram, 4:5 for FB
 - **Seed**: a number that controls randomness. Same prompt + same seed = same result
 - **Style reference (sref)**: a reference image the model copies the style from
-- **Character reference (cref)**: a reference image that keeps a character's appearance the same across generations
+- **Character reference**: a reference image that keeps a character's appearance the same across generations. In Midjourney V8 this is done with the Edit Model; the `--cref` parameter remains only in older versions
 - **Inpainting**: editing one part of an image while keeping the rest
 - **Outpainting**: extending an image beyond its borders (extend canvas)
-- **Negative prompt**: a description of what should NOT appear in the image
-- **Guidance scale (CFG)**: how strictly the model follows the prompt. Ballparks: 7-8 for photorealism, 4-6 for creative work (they depend on the model, and not every service has this setting)
+- **Negative prompt**: a description of what should NOT appear in the image. Not every model has one
+- **Guidance scale (CFG)**: how strictly the model follows the prompt. Each model has its own scale, and not every service has this setting
+- **API**: a way to plug the service into your own program. Developers need it; you don't need it to make images on the service's website
 
 ---
 
@@ -78,17 +81,17 @@ The key question is **not "which tool is best"** but "what am I making, and for 
 
 #### Midjourney V8
 
-The oldest and most recognizable player. It puts the emphasis on artistic quality. V8.2 came out in July 2026 (July 24, 2026), with improved aesthetics and personalization to your taste. Starting with V8, there's an HD mode with native 2K resolution and higher, plus more accurate text in the frame; there's an Edit Model for making changes based on references, and you can turn images into short videos.
+The oldest and most recognizable player. It puts the emphasis on artistic quality. Since July 24, 2026, the default version is V8.2, with improved aesthetics and personalization to your taste. Starting with V8, there's an HD mode that renders images at 2K right away, plus more accurate text in the frame. Edits by description and work with reference images go through the Edit Model, and you can turn images into short videos.
 
-**Price:** paid subscriptions only, starting with the Basic plan (current prices: [What's current](https://aimayak.com/en/now/) and Midjourney's plans page). Higher plans give you more fast GPU time and hidden generations (stealth mode). There's no free plan. HD mode and some other features use up more GPU time. Exact plans: [https://www.midjourney.com/account](https://www.midjourney.com/account)
+**Price:** paid subscriptions only; there's no free plan. The cheapest plan is called Basic. Higher plans give you more fast generation time (the service counts it in minutes of work by its graphics cards), and the Pro and Mega plans add Stealth Mode, which keeps your images hidden from other people. HD mode uses up more generation time. Plans and prices: [https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)
 
-**Workflow:** a web app on a subscription. Before that, the main way in was a Discord bot with the slash commands `/imagine`, `/blend` and `/describe`; parameters like `--ar` go at the end of the prompt.
+**Workflow:** a web app on a subscription. Before that, the main way in was a Discord bot with the slash commands `/imagine`, `/blend` and `/describe`, and it still works. Parameters like `--ar` go at the end of the prompt.
 
 **Strengths:**
 - Strong artistic styling
 - Style and character references for consistency
 - A huge community with shared presets
-- Stealth mode on higher plans: your generations aren't publicly visible
+- Stealth Mode on the Pro and Mega plans: your generations aren't publicly visible
 
 **Weaknesses:**
 - No official public API (check the service's website for the current status)
@@ -102,19 +105,19 @@ The oldest and most recognizable player. It puts the emphasis on artistic qualit
 
 #### ChatGPT Images / GPT Image (OpenAI)
 
-DALL-E 2 and DALL-E 3 were shut off in the OpenAI API on May 12, 2026. They were replaced by the GPT Image family of models: in the API these are `gpt-image-2` and `gpt-image-2.5`. Inside ChatGPT, image generation is built in: the basic mode is available even on the free plan, and Thinking mode on paid plans. Version 2.0 (April 2026) renders text better, including text in non-Latin scripts. Version 2.5 (September 8, 2026) added sketching right in the chat, poster templates, and edits based on comments you place on the image itself.
+DALL-E 2 and DALL-E 3 were shut off in the OpenAI API on May 12, 2026. They were replaced by the GPT Image family of models: in the API these are `gpt-image-2` and two `gpt-image-2.5` models. Inside ChatGPT, image generation is built in and is called ChatGPT Images: it's available on every plan, including the free one, while images with thinking are only on paid plans. Version 2.0 (April 2026) renders text better, including text in non-Latin scripts. Version 2.5 (September 8, 2026) added templates and, in the mobile app, hand-drawn sketches right in the chat and edits based on comments you place on the image itself.
 
-**Price:** in ChatGPT, image generation is included in your plan, within its limits. In the API you pay by tokens for `gpt-image-2`, and the cost of a single image depends on its size and quality. Current rates: [What's current](https://aimayak.com/en/now/) and OpenAI's pricing page. Current prices: [https://developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing)
+**Price:** in ChatGPT, image generation is included in your plan, within its limits. In the API you pay by tokens (the units the bill is counted in), and the cost of a single image depends on its size and quality. Current prices: [https://developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing)
 
 **Strengths:**
 - Handles long, descriptive prompts well
 - You can edit by description right in the conversation
 - Text in the frame (noticeably better in version 2.0 and later)
-- A simple REST API
+- A simple API for developers
 
 **Weaknesses:**
 - Fewer manual settings than open models
-- The "AI look" is more noticeable than with Flux
+- The "AI look" can be more noticeable than with Flux: compare on your own task
 - Filters sometimes block harmless requests
 
 **Best for:** quick mockups for slides, photorealistic product shots, images for blog posts when you need something fast and without fuss.
@@ -123,22 +126,22 @@ DALL-E 2 and DALL-E 3 were shut off in the OpenAI API on May 12, 2026. They were
 
 #### Flux (Black Forest Labs)
 
-A team of former Stability AI people launched Flux in 2024. As of October 2026, the company's website (bfl.ai) lists the FLUX 3 family: FLUX 3 Image (launched October 1, 2026), FLUX 3 Video, and FLUX Tools for precise editing. You can use it through the Playground in your browser, through the API, or by downloading the open weights and running them on your own machine. Without code, the easiest way in is a hub service like Krea, which already offers FLUX 3 Image.
+A team of former Stability AI people launched Flux in 2024. As of October 2026, the company's website (bfl.ai) lists the FLUX 3 family: FLUX 3 Image (launched October 1, 2026), FLUX 3 Video, and FLUX Tools for precise editing. You can use it in the Playground (a page where you try a model right in your browser) or through the API; some of the models have open weights you can download and run on your own machine. Without code, the easiest way in is a hub service like Krea, which gathers models from different companies, Flux among them.
 
 Earlier (Flux 1), the family was split into the fast Schnell, Dev with a non-commercial license, and Pro, available only through the API. You'll still see those names in older materials, but newer versions have a different lineup of models and different licenses. **The license depends on the model: before any commercial use, open the model's page and read the terms.**
 
-**Price:** with API providers (fal.ai, Replicate and others), you pay per image; prices vary by version and change over time. Check your chosen provider's pricing: [https://fal.ai/models](https://fal.ai/models). Running the open weights yourself is free, but you need a powerful graphics card.
+**Price:** with API providers (fal.ai, Replicate and others), you pay per image; prices vary by version and change over time. Check your chosen provider's pricing: [https://fal.ai/models](https://fal.ai/models). Running open weights yourself means no per-image fee, but you need a powerful graphics card, and commercial use may require a license.
 
 **Strengths:**
 - Strong photorealism
 - Speed (the fast versions respond in seconds)
 - Open weights for some of the models
-- LoRA support for fine-tuning to your brand
+- LoRA support: a small add-on used to further train the model on your own images so it keeps your brand's style
 - Inpainting/outpainting through the editing tools (FLUX Tools)
 
 **Weaknesses:**
-- Text in images is weaker than Ideogram's
-- Less artistic style than Midjourney
+- For text in images, people more often pick Ideogram: compare on your own task
+- Usually a less artistic style than Midjourney
 - The lineup of versions and licenses changes quickly
 
 **Best for:** e-commerce product shots, real estate photos, food photography, fashion, any photorealism at volume.
@@ -149,7 +152,7 @@ Earlier (Flux 1), the family was split into the fast Schnell, Dev with a non-com
 
 A startup focused on vector graphics and brand identity. The V4 model came out on February 17, 2026, and V4.1 on May 14, 2026; the website also offers a fast V4.1 Flash. It can produce editable vector graphics (SVG), lets you set up your own style without training a model, and can make mockups, upscale images and remove backgrounds.
 
-**Price:** you can try it for free; for paid plan terms (credits, API access), see the pricing page: [https://www.recraft.ai/pricing](https://www.recraft.ai/pricing)
+**Price:** you can try it for free, but on the Free plan your images are owned by Recraft, are publicly visible and aren't licensed for commercial use. Paid plans give you ownership and commercial rights. For plan terms (credits, API access), see the pricing page: [https://www.recraft.ai/pricing](https://www.recraft.ai/pricing)
 
 **Strengths:**
 - Native vector output (SVG)
@@ -158,19 +161,19 @@ A startup focused on vector graphics and brand identity. The V4 model came out o
 - Icons, logos and infographics are its strong suit
 
 **Weaknesses:**
-- Not for photorealism
-- Fewer ready-made styles than Midjourney
+- Photorealism isn't its main strength
+- For artistic illustration, people more often pick Midjourney
 - Plans are credit-based: estimate your usage in advance
 
 **Best for:** logos, UI icons, infographics, a brand identity package, presentations.
 
 ---
 
-#### Ideogram 4.0
+#### Ideogram
 
-Launched by former Google Brain researchers. It specializes in images with lettering: posters, covers, banners, packaging. Ideogram 4.0 (June 3, 2026) is an open-weights model with a commercial license: dense multilingual text, control over where a logo or headline goes using frames (bounding boxes), and 2K output. It works on the website and through the API.
+Launched by former Google Brain researchers. It specializes in images with lettering: posters, covers, banners, packaging. Ideogram 4.0 (June 3, 2026) is an open-weights model: dense multilingual text, control over where a logo or headline goes using frames (bounding boxes), and 2K output. You can download the weights and run them yourself, but commercial use of the weights requires a separate license from Ideogram. On September 30, 2026, Ideogram 4.5 came out: a model for precise editing of existing images. It works on the website and through the API.
 
-**Price:** there's a free plan; for paid subscriptions and API terms, see this page: [https://ideogram.ai/manage-subscription/subscribe](https://ideogram.ai/manage-subscription/subscribe)
+**Price:** there's a free plan (images made on it are visible to everyone); for paid subscriptions and API terms, see this page: [https://ideogram.ai/pricing](https://ideogram.ai/pricing)
 
 **Strengths:**
 - One of the best for text in images
@@ -179,9 +182,9 @@ Launched by former Google Brain researchers. It specializes in images with lette
 - There's a free plan
 
 **Weaknesses:**
-- Average photorealism
+- Photorealism isn't its main strength
 - Less artistic flexibility than Midjourney
-- API access depends on your plan
+- You can keep your images hidden from others only on paid plans
 
 **Best for:** posters with long text, social media ads, podcast covers, typographic compositions.
 
@@ -197,7 +200,7 @@ Launched by former Google Brain researchers. It specializes in images with lette
 | Vector / logo | Recraft | Credit-based plans | ✅ |
 | Photo + short text | ChatGPT Images | Included in ChatGPT; the API bills by tokens | ✅ |
 | Fast prototyping | Fast Flux versions | Per image, through a provider | ✅ |
-| Self-hosting (any volume) | Open-weights models (Flux, Ideogram 4.0) | Your own graphics card | ✅ |
+| Self-hosting (any volume) | Open-weights models (Flux, Ideogram 4.0); check the license for commercial use | Your own graphics card | ✅ |
 
 Specific prices aren't in the table because they change often. Do the math with the formulas in "Real costs" below.
 
@@ -205,7 +208,7 @@ Specific prices aren't in the table because they change often. Do the math with 
 
 ### Professional workflows
 
-One tool gives you one result. A combination of tools gives you a production pipeline. Here are 4 workflows that cover most of what a content marketer or designer needs to do.
+One tool gives you one result. A combination of tools gives you a production pipeline. Here are 4 workflows that cover most of what a content marketer or designer needs to do. All four can be done by hand on the services' websites; the script in Workflow B is an optional extra.
 
 #### Workflow A: Social media content (an Instagram poster)
 
@@ -243,7 +246,7 @@ Photopea: overlay text + background → final PNG 1080x1920
 **Setup cost:** $0 (you pay per use through the API).
 **Cost:** the provider's price per image × the number of images (plus a margin for failed attempts).
 
-**Pipeline:**
+**Pipeline** (optional: an example for people who write Python scripts; without code, you make the same images one at a time on Krea or in the bfl.ai Playground):
 ```python
 # batch_products.py: a simplified example
 # the model ID on fal.ai changes; check it on the model's page
@@ -253,11 +256,10 @@ products = ["ceramic mug", "wireless headphones", "leather wallet"]
 
 for product in products:
     result = fal_client.run(
-        "fal-ai/flux-pro",
+        "fal-ai/flux-pro/v1.1",
         arguments={
             "prompt": f"professional product photography, {product}, white background, studio lighting, soft shadow, commercial e-commerce style",
-            "image_size": "square_hd",
-            "num_inference_steps": 28
+            "image_size": "square_hd"
         }
     )
     # save result["images"][0]["url"]
@@ -277,7 +279,7 @@ Compare this with what you currently pay for product photography, but keep the l
 3. **Flux**: photorealistic mockups (business cards, packaging)
 
 **Time:** 4-8 hours for the full package.
-**Setup cost:** subscriptions for the length of the project (Recraft, Midjourney) + pay-per-image with a Flux provider; see the pricing pages.
+**Setup cost:** subscriptions for the length of the project (Midjourney, and a paid Recraft plan so that the rights to the logo are yours) + pay-per-image with a Flux provider; see the pricing pages.
 **Cost per package:** what you spend on generations + your time.
 
 **Pipeline:**
@@ -334,11 +336,13 @@ Quality depends heavily on the prompt. Here are the main techniques that separat
 
 Putting the names of living artists and studios into prompts is contested territory (copyright, ethics). It's safer to describe the style in words: lighting, palette, texture, composition.
 
-**Negative prompts (Flux, Ideogram):**
+**Negative prompts (Ideogram and some open models):**
 ```
 prompt: "modern office interior"
-negative_prompt: "no people, no text, no logos, no clutter, no plants"
+negative_prompt: "people, text, logos, clutter, plants"
 ```
+
+A negative prompt simply lists what you don't want, without the word "no." Flux has no negative prompt: describe what should be in the image instead. Midjourney has the `--no` parameter for this.
 
 **Aspect ratios (ALWAYS set one):**
 - `--ar 16:9`: YouTube thumbnails, desktop wallpapers
@@ -348,23 +352,27 @@ negative_prompt: "no people, no text, no logos, no clutter, no plants"
 - `--ar 3:2`: DSLR-style photography
 - `--ar 21:9`: cinematic, ultrawide banners
 
-**Quality flags (Midjourney; parameters change between versions, so see the docs for the current version for the full list):**
+That's how you write aspect ratios in Midjourney. In ChatGPT and other services you pick the ratio with a button or say it in words: "16:9 format."
+
+**Midjourney parameters (for V8; the set changes between versions, so see the service's docs for the full list):**
 ```
---q 2          # double quality (slower, costs more)
+--hd           # a 2K image instead of the standard one (uses more generation time)
 --s 250        # medium stylization
 --s 750        # strong stylization (more artistic)
 --chaos 50     # more variation among the 4 results
 ```
 
-**Guidance scale (Flux and other open models; ChatGPT Images doesn't have this setting):**
-- 4-6: creative, the model improvises
-- 7-8: the sweet spot for photorealism
-- 9-10: follows the prompt rigidly (can look "forced")
+The `--q` quality parameter from earlier versions doesn't work in V8.
+
+**Guidance scale (in open models; ChatGPT Images doesn't have this setting).** Each model has its own scale, so start from the default value (for Flux on fal.ai it's 3.5) and change it a little at a time:
+- below the default: the model improvises more
+- around the default: usually the best balance
+- well above it: the model follows the prompt rigidly, but the image can look unnatural
 
 **Consistency through references:**
 ```
-Midjourney sref: --sref https://example.com/style.png
-Midjourney cref: --cref https://example.com/character.png  (newer versions may use different parameters for characters)
+Midjourney, style: --sref https://example.com/style.png
+Midjourney, character: in V8 you attach a reference image through the Edit Model (up to 4 references); the --cref parameter remains only in older versions
 Flux: what you can do depends on the version and the provider
 ```
 
@@ -408,21 +416,21 @@ In 2024, the main problems were six fingers, weird eyes and melted hands. By 202
 This is an important chapter that many people skip. In 2026 the landscape got more complicated. This is general information, not legal advice: laws differ from country to country, and for anything serious you need a lawyer.
 
 **Copyright on AI-generated images:**
-- **USA:** the US Copyright Office decided in 2023 (and confirmed in 2025) that purely AI-generated images **cannot be registered for copyright**. Only when there's significant human modification (for example, a serious rework in Photoshop)
+- **USA:** the US Copyright Office decided in 2023 (and confirmed in 2025) that purely AI-generated images **cannot be registered for copyright**. Protection is possible only for what a human contributed: substantial reworking, selection, arrangement
 - **EU:** unclear; regulators are still discussing it
-- **What it means in practice:** purely generated images aren't protected by copyright in the US, so it's hard to stop other people from copying them. Protection comes in when you do substantial editing
+- **What it means in practice:** purely generated images aren't protected by copyright in the US, so it's hard to stop other people from copying them. The more of your own work there is in the final piece, the stronger your position
 
 Learn more: [https://www.copyright.gov/ai/](https://www.copyright.gov/ai/)
 
-**Commercial use, service by service:** terms change and depend on the plan, so instead of a ready answer, the table tells you what to check.
+**Commercial use, service by service:** terms change and depend on the plan, so for the most part the table tells you what to check rather than giving a ready answer.
 
 | Service | What to check before commercial use |
 |---|---|
 | Midjourney | Subscription terms: commercial use depends on your plan and on the size of your company (Terms of Service page) |
 | ChatGPT Images / GPT Image | OpenAI's terms of use: rights to the output and restrictions on content |
 | Flux | The specific model's license: some versions are non-commercial (the old Dev), others have different terms; read the model's page |
-| Recraft | Plan terms: which plan allows commercial use |
-| Ideogram | The open-weights 4.0 model is stated to come with a commercial license; on the service itself, the terms depend on your plan |
+| Recraft | On the Free plan, images are owned by Recraft and aren't licensed for commercial use; paid plans give you ownership and commercial rights (as of October 2026) |
+| Ideogram | On the service's website, commercial use is allowed, but images made on the free plan are visible to everyone; running the open 4.0 weights yourself for commercial purposes requires a license from Ideogram (as of October 2026) |
 
 **Likeness (images of real people):**
 - Each service has its own rules about images of real people, especially public figures
@@ -431,8 +439,8 @@ Learn more: [https://www.copyright.gov/ai/](https://www.copyright.gov/ai/)
 
 **Watermarking and labeling:**
 - Google (Nano Banana in Gemini): images are marked with an invisible SynthID watermark
-- Other services use different labels (for example, C2PA metadata); check the rules of the specific service
-- Trend for 2026-2027: the EU AI Act introduces labeling requirements for generated content; check current sources for deadlines and details
+- Other services use different labels (for example, C2PA metadata, a record of where a file came from); check the rules of the specific service
+- In the EU, the AI Act's requirements for marking generated content (Article 50) have applied since August 2, 2026; check current sources for who they cover and how
 
 **Best practice:** add an "AI-generated" label if you use the images in marketing. For e-commerce product shots, check the platform's rules.
 
@@ -449,17 +457,17 @@ cost per image = monthly subscription price / number of images you actually made
 
 **For an API (pay per image):**
 ```
-monthly spend = number of images × price per image × (1 + share of failed attempts)
+monthly spend = number of images you need × number of options per image × price per image
 ```
 
-The share of failed attempts is usually substantial: people generate 4-8 options and pick one.
+People usually generate 4-8 options and pick one, so you pay for every image you generate, not just the one you end up using.
 
 **For running it on your own machine (open weights):**
 ```
 payback period (months) = graphics card price / (monthly API spend you're replacing − electricity)
 ```
 
-An example with made-up numbers (plug in your own): a graphics card costs $1,500 and the API runs you $50 a month, so it pays for itself in about 30 months; at $200 a month, in about 8. Running it yourself makes sense if you generate a lot and steadily, and also need privacy or full control.
+An example with made-up numbers (plug in your own; electricity is left out of the example): a graphics card costs $1,500 and the API runs you $50 a month, so it pays for itself in about 30 months; at $200 a month, in about 8. Running it yourself makes sense if you generate a lot and steadily, and also need privacy or full control.
 
 Compare subscriptions and APIs at the same volume: take your own 1,000 images a month and run the numbers through each formula.
 
@@ -479,8 +487,8 @@ Compare subscriptions and APIs at the same volume: take your own 1,000 images a 
 
 **Video generation:**
 - Runway: Gen-4.5; Kling: VIDEO 3.0 (4.0 was announced at the end of September 2026); Luma: Ray 3.2
-- Google Flow: video in Gemini and Flow is made by Gemini Omni (which replaced Veo 3.1)
-- Sora (OpenAI) has been shut down: the website and app since April 26, 2026 (check OpenAI's announcement), the API since September 24, 2026
+- Google Flow: Google's video studio; it runs the Gemini Omni models (released in May 2026) and Veo 3.1
+- Sora (OpenAI) has been shut down: the website and app since April 26, 2026, the API since September 24, 2026
 - Pika: short clips and a set of apps
 - A separate lesson on video generation: [AI video generation](71-ai-video-generation.md)
 
@@ -491,14 +499,14 @@ Compare subscriptions and APIs at the same volume: take your own 1,000 images a 
 **Inpainting / editing:**
 - FLUX Tools: precise, targeted editing
 - Adobe Firefly: built right into Photoshop
-- Ideogram: editing images with text instructions
-- ChatGPT Images: edits based on comments placed on the image itself (version 2.5)
+- Ideogram 4.5: precise editing of existing images from a description
+- ChatGPT Images: edits based on comments placed on the image itself (version 2.5, in the mobile app)
 
 ---
 
 ### Anti-patterns
 
-❌ **Using default settings**: the output comes out generic. Always set the aspect ratio, style and quality.
+❌ **Using default settings**: the output comes out generic. Always set the aspect ratio and style.
 
 ❌ **Not setting an aspect ratio**: the model makes a 1:1 image when you need 16:9 for YouTube. You can't crop it without losing quality.
 
@@ -510,9 +518,9 @@ Compare subscriptions and APIs at the same volume: take your own 1,000 images a 
 
 ❌ **One tool for every job**: Midjourney for a logo = a weak result compared with Recraft. Each task gets its own tool.
 
-❌ **Hardcoded prompts**: you don't keep template prompts in a library, so you write every prompt from scratch. Create a `prompts/` folder.
+❌ **Hardcoded prompts**: you don't keep template prompts in a library, so you write every prompt from scratch. Keep them in a note, a document or a `prompts/` folder.
 
-❌ **Ignoring the commercial license**: some Flux versions have a non-commercial license; using them commercially without checking the terms = a violation. Check the terms of the model and your plan before using anything in production.
+❌ **Ignoring the commercial license**: some Flux versions have a non-commercial license, and Recraft's Free plan doesn't allow commercial use. Check the terms of the model and your plan before using anything in production.
 
 ---
 
@@ -521,14 +529,15 @@ Compare subscriptions and APIs at the same volume: take your own 1,000 images a 
 No prices here: they change, so use the formulas above and the current pricing pages.
 
 **Beginner (hobby, learning):**
-- Flux through free playgrounds or hubs
-- Ideogram: free plan
+- ChatGPT or Gemini: images are included in the free plan, within limits
+- Ideogram: free plan (images made on it are visible to everyone)
 - Photopea (a free Photoshop alternative in your browser)
 - **Total: $0/month**
 
 **Content marketer (Instagram account, blog, regular content):**
 - Midjourney (the entry-level plan; current price on the pricing page)
-- Ideogram and Recraft: free plans
+- Ideogram: free plan
+- Recraft: a paid plan if the logos and icons go into your work; the Free plan doesn't allow commercial use
 - Canva for final assembly (you don't always need the paid plan)
 - **Total: the Midjourney subscription + whatever else you decide to pay for**
 
@@ -541,7 +550,7 @@ No prices here: they change, so use the formulas above and the current pricing p
 
 **Professional studio (high volume, brand consistency):**
 - Everything listed above
-- Your own graphics card for open models: a one-time purchase plus electricity
+- Your own graphics card for open models: a one-time purchase plus electricity (and a license, if the model requires one)
 - Higher-tier Recraft and Adobe Creative Cloud plans
 - **Total: calculate each line item separately**
 
@@ -551,16 +560,29 @@ No prices here: they change, so use the formulas above and the current pricing p
 
 ## Practice
 
-### Step 1: Set up Flux through fal.ai
+The exercise below needs no code: all you need is a browser or a phone. Steps 1-4 after it are written for people who write Python scripts. They're optional: if you don't program, skip them and go to Step 5.
 
-The fastest start is Flux through fal.ai: you can try it in the playground with no code, and for scripts you need a key. Model IDs on fal.ai change as new versions come out: before you run anything, open the page of the model you want and use its current ID in place of the ones in the examples below.
+**No-code exercise: an image for your own project (about 30 minutes)**
+
+1. Open [chatgpt.com](https://chatgpt.com) or [gemini.google.com](https://gemini.google.com) and sign in. Images are included even in the free plans, but the number you can make per day is limited.
+2. In the message box, describe what to draw: what's in the picture, the style, the lighting and the aspect ratio. For example: "Create a cover image for a post about home baking: warm morning light, a wooden table, fresh bread, top-down view, 4:5 format, no text."
+3. Wait for the result (it can take a couple of minutes) and ask for one change in plain words: "make the light cooler," "remove the knife," "leave empty space at the top for a headline."
+4. Ask for two more options and pick the best of the three.
+5. Save the image: open it and use the save button (in ChatGPT it's called Save).
+6. Repeat the same request in [Ideogram](https://ideogram.ai), adding lettering: "with a big headline that says 'Bread in an hour.'" Compare where the text came out cleaner. On Ideogram's free plan your images are visible to everyone, so don't use personal photos or data there.
+
+**Check yourself:** you have at least two saved images (one without text and one with), and you can say which service handled the lettering better.
+
+### Step 1 (optional, for people who program): Set up Flux through fal.ai
+
+The fastest start for scripts is Flux through fal.ai: you can try a model in the playground with no code, and for scripts you need a key. Model IDs on fal.ai change as new versions come out: before you run anything, open the page of the model you want and use its current ID in place of the ones in the examples below.
 
 ```bash
 # Sign up at fal.ai (Google login)
 # Check the trial credit terms when you sign up
 
 # Install the Python SDK
-pip install fal-client python-dotenv pillow
+pip install fal-client python-dotenv pillow requests aiohttp
 
 # Create a .env file
 echo "FAL_KEY=your-fal-key-here" > .env
@@ -570,7 +592,7 @@ Get your FAL_KEY here: [https://fal.ai/dashboard/keys](https://fal.ai/dashboard/
 
 ---
 
-### Step 2: A simple generator on a fast Flux version
+### Step 2 (optional): A simple generator on a fast Flux version
 
 ```python
 # flux_simple.py: the minimum to get started (check the model ID on fal.ai)
@@ -600,6 +622,7 @@ def generate_image(prompt: str, output_path: str, aspect_ratio: str = "square"):
     # Save it
     image_url = result["images"][0]["url"]
     image_data = requests.get(image_url).content
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     Path(output_path).write_bytes(image_data)
     print(f"Saved: {output_path}")
     return output_path
@@ -613,7 +636,7 @@ if __name__ == "__main__":
     )
 ```
 
-**Aspect ratios for Flux:**
+**Image sizes for Flux on fal.ai:**
 - `square_hd`: 1024x1024
 - `square`: 512x512
 - `portrait_4_3`: 768x1024
@@ -623,7 +646,7 @@ if __name__ == "__main__":
 
 ---
 
-### Step 3: Batch-generate product shots
+### Step 3 (optional): Batch-generate product shots
 
 ```python
 # batch_products.py: generate 10 products in parallel
@@ -631,8 +654,10 @@ import os
 import fal_client
 import asyncio
 import aiohttp
+from dotenv import load_dotenv
 from pathlib import Path
 
+load_dotenv()  # reads FAL_KEY from the .env file
 os.environ["FAL_KEY"] = os.getenv("FAL_KEY", "your-key")
 
 # placeholder value: use the price per image from your provider's pricing page
@@ -669,7 +694,6 @@ async def generate_one(session, product: str, idx: int):
             "prompt": prompt,
             "image_size": "square_hd",
             "num_images": 1,
-            "guidance_scale": 7.5,
         }
     )
     result = await handler.get()
@@ -709,15 +733,17 @@ python batch_products.py
 
 ---
 
-### Step 4: Combine Flux + Ideogram for YouTube thumbnails
+### Step 4 (optional): Combine Flux + Ideogram for YouTube thumbnails
 
 ```python
 # youtube_thumbnails.py: a thumbnail pipeline
 import os
 import fal_client
 import requests
+from dotenv import load_dotenv
 from pathlib import Path
 
+load_dotenv()  # reads FAL_KEY from the .env file
 os.environ["FAL_KEY"] = os.getenv("FAL_KEY")
 
 def generate_background(topic: str, save_path: str):
@@ -736,13 +762,12 @@ def generate_background(topic: str, save_path: str):
 
 
 def generate_text_overlay(hook_text: str, save_path: str):
-    """Ideogram makes the text overlay (it's also available through fal.ai)."""
+    """Ideogram makes the lettering on a transparent background (it's also available through fal.ai)."""
     result = fal_client.run(
-        "fal-ai/ideogram/v2",  # check the current Ideogram version on fal.ai
+        "fal-ai/ideogram/v3/generate-transparent",  # check the current Ideogram version on fal.ai
         arguments={
-            "prompt": f"big bold text '{hook_text}' on transparent background, white text with red outline, condensed sans-serif font, dramatic typography for YouTube thumbnail",
+            "prompt": f"big bold text '{hook_text}', white text with red outline, condensed sans-serif font, dramatic typography for YouTube thumbnail",
             "aspect_ratio": "16:9",
-            "style": "design",
         }
     )
     url = result["images"][0]["url"]
@@ -784,6 +809,10 @@ if __name__ == "__main__":
 
 ### Step 5: A prompt library: save the prompts that work
 
+Without code: start a note or a document and collect the prompts that gave you good results. Next to each one, write down which task it worked for and in which service. In a month you'll have your own set of ready-made starting points.
+
+If you write scripts, it's handier to keep prompts in folders and files:
+
 ```bash
 mkdir -p prompts/{product,thumbnail,social,brand}
 ```
@@ -791,35 +820,32 @@ mkdir -p prompts/{product,thumbnail,social,brand}
 ```yaml
 # prompts/product/ecommerce-white-bg.yaml
 name: "E-commerce white background"
-model: "flux-pro"
+model: "fal-ai/flux-pro/v1.1"
 template: |
   professional product photography, {product},
   pure white background, soft studio lighting from top-left,
   subtle natural shadow underneath, centered composition,
   commercial e-commerce style, photorealistic, high detail,
-  sharp focus, no people, no text, no logos
+  sharp focus, empty background
 params:
   image_size: "square_hd"
-  guidance_scale: 7.5
-  num_inference_steps: 28
-negative_prompt: "blurry, low quality, distorted, watermark, signature"
 notes: |
   - Test 4 generations per product, pick best
   - Post-process: subtle shadow enhancement in Photoshop
   - Cost: per the provider's pricing page
 ```
 
-**Tip:** create `.claude/agents/image-prompt-engineer.md`, an agent that reads these YAML files and builds the final prompts for each task.
+**Tip** (optional, for people who work in Claude Code): create `.claude/agents/image-prompt-engineer.md`, a helper that reads these YAML files and builds the final prompts for each task.
 
 ---
 
 ## Tools and resources
 
-- **[Midjourney](https://www.midjourney.com)**: official site, Discord access, web app
+- **[Midjourney](https://www.midjourney.com)**: official site: works in the browser, with a Discord bot as well
 - **[ChatGPT Images (GPT Image)](https://learn.chatgpt.com/docs/image-generation)**: image generation built into ChatGPT
 - **[OpenAI API Pricing](https://developers.openai.com/api/docs/pricing)**: current API prices for gpt-image-2 and gpt-image-2.5
 - **[Black Forest Labs (Flux)](https://bfl.ai)**: the official Flux site, technical details
-- **[fal.ai](https://fal.ai)**: the main provider for the Flux API, with a playground for testing
+- **[fal.ai](https://fal.ai)**: one of the API providers for Flux, with a playground for testing
 - **[Replicate](https://replicate.com)**: an alternative API host for Flux, Stable Diffusion and other models
 - **[Recraft](https://www.recraft.ai)**: vector graphics + brand identity
 - **[Ideogram](https://ideogram.ai)**: the go-to tool for text in images
@@ -835,15 +861,15 @@ notes: |
 ## Checklist: a professional pipeline
 
 ✅ A main model is picked for each use case (not one tool for everything)
-✅ The workflow is standardized (written down in the project README)
-✅ A prompt library is set up (a `prompts/` folder with YAML/JSON templates)
+✅ The workflow is standardized (written down in a note or in the project README)
+✅ A prompt library is set up (a note, a document or a `prompts/` folder)
 ✅ The aspect ratio is set for each platform (16:9, 9:16, 1:1, 4:5)
 ✅ A post-processing pipeline is in place (at least grain + color grading)
 ✅ Legal check: the commercial use license fits the use case
-✅ A backup workflow in case the main API goes down (an open model running locally as a fallback)
+✅ A backup tool is ready in case your main one is unavailable
 ✅ Cost tracking: you know the cost per asset for budgeting
 ✅ Disclosure policy: AI-generated images are labeled wherever ethics or the law require it
-✅ Source files (PSD, source images) are kept in `/sources` for reuse
+✅ Source files (editor files, source images) are kept in a separate folder for reuse
 
 ---
 
@@ -853,7 +879,7 @@ notes: |
 
 > Quality depends heavily on the prompt. Aspect ratio, negative prompts, style references and guidance scale aren't "options"; they're required settings (wherever the service supports them). Default settings = generic output.
 
-> The legal landscape in 2026 isn't straightforward. AI images aren't protected by copyright in the US. The commercial license depends on the model and the plan. Check the license **before** you use images in production, not after.
+> The legal landscape in 2026 isn't straightforward. Purely AI-generated images can't be protected by copyright in the US. The commercial license depends on the model and the plan. Check the license **before** you use images in production, not after.
 
 > Post-processing is the difference between an "AI picture" and production-ready material. Spend at least 5 minutes on grain, color grading and tiny imperfections, and the image stops looking machine-made (and still label it as AI-generated where that's required).
 
@@ -861,4 +887,4 @@ notes: |
 
 ## Next lesson
 
-→ [What Skills are](19-skills-intro.md): the start of the module on reusable expertise. If you need video, see [AI video generation](71-ai-video-generation.md).
+→ [AI video generation: Runway, Kling, Luma and more](71-ai-video-generation.md): how to get a short clip from text or an image.

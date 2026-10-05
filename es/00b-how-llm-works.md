@@ -36,22 +36,22 @@ Lo primero: la IA no lee palabras. Ve tokens, las unidades de texto más pequeñ
 
 Un token no es una palabra. Es un trozo de texto que el modelo de lenguaje trata como una pieza que ya no puede dividir. A veces un token es una palabra entera. A veces es parte de una palabra. A veces es un solo carácter.
 
-**Ejemplos (con palabras en inglés):**
+**Ejemplos (con palabras en inglés; las cifras son aproximadas, porque cada modelo corta el texto a su manera):**
 - La palabra `cat` ("gato") = 1 token (corta y común)
-- La palabra `catastrophe` ("catástrofe") = 3 tokens: `cat` + `ast` + `rophe`
+- La palabra `catastrophe` ("catástrofe") puede dividirse en 3 tokens: `cat` + `ast` + `rophe`
 - Una palabra larga y poco común como `anthropomorphism` ("antropomorfismo") = varios tokens
 - Las palabras de otros idiomas suelen dividirse en más pedazos que las del inglés
 
-Un detalle importante: **el inglés es el idioma "más barato" en tokens.** Muchos otros idiomas necesitan más tokens para decir lo mismo, en algunos casos aproximadamente entre 1.5 y 2 veces más. Eso afecta directamente el costo, porque pagas por tokens.
+Un detalle importante: **el inglés es el idioma "más barato" en tokens.** Muchos otros idiomas necesitan bastantes más tokens para decir lo mismo (la proporción exacta depende del modelo y del texto). Eso importa porque en tokens se cuentan los límites de tu chat, y en tokens pagan los desarrolladores que usan la API (la conexión con la que los programas le hablan a la IA).
 
-Una regla práctica aproximada: **1,000 tokens ≈ 750 palabras** en inglés. El texto en otros idiomas suele ocupar más tokens para la misma cantidad de significado.
+Una regla práctica aproximada, según Anthropic: **1,000 tokens ≈ 750 palabras** en inglés. Los modelos de Claude más nuevos cortan el texto en pedazos más pequeños, así que en ellos 1,000 tokens equivalen más bien a unas 555 palabras. El texto en otros idiomas suele ocupar más tokens para la misma cantidad de significado.
 
 🎨 **Imagínalo así:** un token es una pieza de Lego. La IA no ve las palabras como objetos únicos. Ve piezas de distintos tamaños con las que se arman las palabras. La palabra "cat" es una pieza. La palabra "catastrophe" son tres: "cat", "ast" y "rophe". Cuando la IA escribe un texto, va colocando pieza tras pieza. De izquierda a derecha. Una a la vez. Cada pieza nueva depende de todas las anteriores.
 
 **Por qué importa en la práctica:**
-- Pagas por tokens, no por palabras: cuanto más corto y concreto sea tu prompt, más barato
-- Los textos largos en otros idiomas pueden costar más que el mismo texto en inglés
-- Un prompt compacto, sin relleno, puede bajar bastante los costos sin perder calidad
+- El uso se cuenta en tokens, no en palabras: en el chat, los tokens gastan tu límite; en la API, los desarrolladores pagan por ellos. Cuanto más corto y concreto sea tu prompt (tu solicitud a la IA), menos gastas
+- Los textos largos en otros idiomas pueden ocupar más tokens que el mismo texto en inglés
+- Un prompt compacto, sin relleno, puede bajar bastante el gasto sin perder calidad
 
 ---
 
@@ -61,7 +61,7 @@ Una regla práctica aproximada: **1,000 tokens ≈ 750 palabras** en inglés. El
 
 La respuesta: el preentrenamiento (la primera etapa del entrenamiento de un modelo de lenguaje).
 
-Imagina que Anthropic reúne una biblioteca gigante de textos. No solo grande: inimaginablemente grande. Wikipedia en más de 100 idiomas, millones de libros, artículos científicos, código en GitHub, Reddit, Stack Overflow, noticias, foros, documentos legales. A esto se le llama corpus (del latín "cuerpo": una gran colección de textos que se usa para entrenar).
+Imagina que los creadores del modelo reúnen una biblioteca gigante de textos. No solo grande: inimaginablemente grande. Enciclopedias en muchos idiomas, libros, artículos científicos, código de programas, noticias, foros, documentos legales. A esto se le llama corpus (del latín "cuerpo": una gran colección de textos que se usa para entrenar).
 
 Después el modelo se entrena con ese corpus: billones de tokens, meses de cálculo en miles de chips especializados.
 
@@ -97,7 +97,7 @@ Hay un ejemplo famoso: vector("rey") - vector("hombre") + vector("mujer") ≈ ve
 
 ### 4. El transformer y el mecanismo de atención
 
-En 2017, Google publicó un artículo llamado "Attention Is All You Need" ("La atención es todo lo que necesitas"). Ese artículo cambió la historia de la IA.
+En 2017, investigadores de Google publicaron un artículo llamado "Attention Is All You Need" ("La atención es todo lo que necesitas"). Ese artículo cambió la historia de la IA.
 
 El transformer (una arquitectura de red neuronal inventada en Google en 2017) es el tipo de diseño que se volvió la base de todos los modelos de lenguaje modernos: GPT, Claude, Gemini, Llama.
 
@@ -124,21 +124,21 @@ La ventana de contexto (la cantidad máxima de texto que la IA puede tener a la 
 Todo lo que está dentro de la ventana de contexto, la IA lo "ve" y lo toma en cuenta. Todo lo que queda fuera no existe para la IA en ese momento.
 
 **Tamaños de la ventana de contexto (a octubre de 2026, para Claude en la API):**
-- Claude Fable 5.1, Opus 5.5, Sonnet 5.5: **1,000,000 tokens** ≈ 555,000 palabras (en texto en inglés con el tokenizador actual) ≈ 1,800 páginas de libro
-- Claude Haiku 4.5: 200,000 tokens ≈ 150,000 palabras ≈ 500 páginas
+- Claude Fable 5.1, Opus 5.5, Sonnet 5.5: **1,000,000 tokens** ≈ 555,000 palabras en inglés (estos modelos cortan el texto en tokens más pequeños que los anteriores) ≈ 1,800 páginas de libro
+- Claude Haiku 4.5: 200,000 tokens ≈ 150,000 palabras en inglés ≈ 500 páginas
 
 ChatGPT, Gemini y otros asistentes también tienen ventanas de cientos de miles o millones de tokens, pero las cifras exactas dependen del modelo y del plan: revisa la documentación del proveedor y la página [Lo vigente](https://aimayak.com/now/). En una app normal (por ejemplo, el chat de claude.ai), la cantidad disponible para ti puede ser distinta a la de la API.
 
 Son números grandes. Pero en el trabajo real, el contexto se gasta más rápido de lo que crees: el prompt de sistema (las instrucciones de fondo que la app le da al modelo), el historial de la conversación, los documentos que subes y las propias respuestas de la IA ocupan espacio en la ventana de contexto.
 
 **Qué pasa cuando el contexto se llena:**
-Las partes anteriores de la conversación quedan "empujadas fuera", y la IA deja de tomarlas en cuenta. Lo vas a notar: la IA "olvida" lo que se dijo al principio de un chat largo. No es falta de inteligencia; es un límite físico de la arquitectura.
+Las partes anteriores de la conversación quedan "empujadas fuera", y la IA deja de tomarlas en cuenta. Lo vas a notar: la IA "olvida" lo que se dijo al principio de un chat largo. No es falta de inteligencia; es un límite propio de cómo funciona el modelo.
 
 🎨 **Imagínalo así:** un escritorio. Todo lo que está sobre el escritorio lo puedes ver y tomar al instante. Esa es la ventana de contexto de la IA. Lo que está en el cajón tendrías que sacarlo (eso es la memoria a largo plazo, que la IA básica no tiene). Lo que dejaste en casa está completamente fuera de tu alcance. Cuando el escritorio se llena demasiado, los papeles viejos se resbalan al piso y desaparecen de tu vista. Una ventana de contexto de cientos de miles de tokens, o de un millón, es un escritorio muy grande. Pero igual tiene bordes.
 
 **Conclusiones prácticas:**
-- Un contexto grande es cómodo. Pero cuesta más (pagas por cada token de la solicitud)
-- Para proyectos largos, usa `/compact` en Claude Code: comprime el historial sin perder lo esencial
+- Un contexto grande es cómodo. Pero cuesta más: en la API pagas por cada token de la solicitud, y en el chat una conversación larga gasta tu límite más rápido
+- Para más adelante, cuando llegues a Claude Code (el agente para programar, casi al final del curso): en proyectos largos, su comando `/compact` comprime el historial de la conversación y conserva lo esencial
 - Organiza tus conversaciones: abre un chat nuevo para cada tarea nueva en lugar de meter todo en uno
 
 ---
@@ -190,7 +190,7 @@ El modelo toma tokens de menor probabilidad: elecciones "inesperadas". Las respu
 
 🎨 **Imagínalo así:** la perilla de especias de un chef. Temperatura 0 es un platillo sin sal ni pimienta: predecible, siempre igual, seguro. Temperatura 1 es la receta de siempre: sabrosa y conocida. Temperatura 2 es el chef echando todo lo que hay en el especiero en cantidades al azar: a veces genial, muchas veces incomible. Para Claude, Anthropic eligió la "temperatura de la cocina" por su cuenta: en los modelos de Claude más nuevos de la API ya no puedes cambiarla, mientras que en varios otros modelos todavía sí.
 
-**Guía práctica:**
+**Guía práctica (donde tu herramienta te deje ajustar la temperatura):**
 - Escribir código / extraer datos → temperatura de 0 a 0.3
 - Conversación normal / análisis → temperatura de 0.7 a 1.0
 - Lluvia de ideas / escritura creativa → temperatura de 1.0 a 1.3
@@ -211,7 +211,7 @@ Dicho de forma sencilla: una red neuronal es una función matemática con miles 
 
 Más parámetros ≠ un mejor modelo. Es un error común. Lo que importa no es la cantidad, sino la calidad del entrenamiento, los datos y la arquitectura. Modelos más nuevos y más pequeños suelen superar a sus antecesores más grandes.
 
-🎨 **Imagínalo así:** los parámetros son como las sinapsis del cerebro humano (una sinapsis es un punto de conexión entre células nerviosas, donde las señales pasan de una a otra). El cerebro de un recién nacido tiene aproximadamente 100 billones de sinapsis. El de un adulto tiene menos, porque las conexiones que no se usan desaparecen. Aun así, un adulto es más inteligente que un bebé, porque las conexiones que quedan están bien ajustadas. Número de sinapsis ≠ inteligencia. Número de parámetros ≠ la potencia de un modelo. Lo que lo decide todo es cómo están ajustados.
+🎨 **Imagínalo así:** los parámetros son como las sinapsis del cerebro humano (una sinapsis es un punto de conexión entre células nerviosas, donde las señales pasan de una a otra). En los primeros años de vida, el cerebro de un niño crea una cantidad enorme de conexiones nuevas y después las "poda": las conexiones que no se usan se eliminan, y los circuitos del cerebro se vuelven más eficientes. Un adulto es más inteligente que un niño pequeño no porque tenga más conexiones, sino porque las que quedan están bien ajustadas. Número de sinapsis ≠ inteligencia. Número de parámetros ≠ la potencia de un modelo. Lo que lo decide todo es cómo están ajustados.
 
 ---
 
@@ -260,7 +260,7 @@ La IA no "sabe" datos como una persona sabe algo que leyó en una fuente confiab
 **Cómo protegerte:**
 - Verifica siempre los datos importantes en una fuente independiente
 - Revisa dos veces fechas, nombres y estadísticas
-- Usa Claude con búsqueda web (herramientas) para información actual
+- Para información actual, pídele a Claude que busque en internet (tiene búsqueda web integrada) y revisa los enlaces que cita
 - Pregúntale a Claude: "¿Estás seguro de esto? ¿Qué tan probable es que te equivoques?". Los modelos entrenados para ser honestos muchas veces admiten su incertidumbre
 
 ---
@@ -269,16 +269,16 @@ La IA no "sabe" datos como una persona sabe algo que leyó en una fuente confiab
 
 Esto no es una clase académica. Cada sección tiene un uso directo en tu trabajo.
 
-**Tokens → ahorrar dinero:**
-Pagas por tokens. Cuando entiendes qué es un token:
-- Escribes prompts más compactos (menos relleno = menos tokens = menor costo)
-- Sabes que el inglés suele ser el idioma más barato en tokens, así que si trabajas en otro idioma y el costo importa, puedes escribir tus prompts en inglés
+**Tokens → cuidar tu límite y tu dinero:**
+Los tokens gastan tu límite en el chat, y en la API cuestan dinero. Cuando entiendes qué es un token:
+- Escribes prompts más compactos (menos relleno = menos tokens = menos gasto)
+- Sabes que el inglés suele ser el idioma más barato en tokens, así que un documento largo en español gasta tu límite más rápido que el mismo documento en inglés
 - No cargas documentos enteros al contexto, solo las partes que necesitas
 
 **Ventana de contexto → trabajar con documentos grandes:**
 Sabiendo que el contexto tiene límites:
 - Divides los documentos grandes en partes y los trabajas uno por uno
-- Usas `/compact` en Claude Code cuando un chat se alarga
+- Más adelante, en Claude Code, usas el comando `/compact` cuando una conversación se alarga
 - Abres un chat nuevo para cada tarea nueva en lugar de meter todo en uno
 
 **Temperatura → consistencia o creatividad:**
@@ -306,7 +306,7 @@ Aquí hay una lista de palabras. Para cada una, dime más o menos cuántos token
 cat, catastrophe, computer, AI, internationalization, hello, hola, computadora, anthropomorphism, i18n
 ```
 
-Mira la respuesta. Después compárala con la documentación de Anthropic sobre el conteo de tokens: [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting) (en inglés). El conteo se hace a través de la API (la interfaz que usan los desarrolladores); la página aparte del tokenizador que antes estaba en un enlace más viejo ya no existe. La cantidad de tokens depende del modelo, y distintas generaciones usan distintos tokenizadores, así que la respuesta de Claude es solo una estimación aproximada.
+Mira la respuesta. Es una estimación aproximada: la cantidad de tokens depende del modelo, y el conteo exacto solo se obtiene a través de la API (la interfaz que usan los desarrolladores). La documentación de Anthropic explica cómo funciona: [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting) (en inglés). Tú no tienes que contar nada: basta con ver que las palabras cortas y comunes ocupan un token, y las largas o poco comunes, varios.
 
 Objetivo: darte una idea de cómo cambia el número de tokens entre idiomas y entre palabras.
 
@@ -325,6 +325,8 @@ Inventa un nombre poco común para una cafetería al estilo del realismo mágico
 Toma cualquier artículo largo de internet (de al menos 5,000 palabras). Pégalo en un chat con Claude y haz una pregunta sobre detalles del principio del artículo. Después pregunta por detalles del final. Compara qué tan precisas son las respuestas.
 
 Luego prueba dividir el mismo artículo en dos solicitudes y fíjate si cambia la calidad de las respuestas.
+
+Qué esperar: un artículo de este tamaño cabe entero en la ventana de contexto, así que Claude debería responder igual de bien sobre el principio y sobre el final. El "olvido" solo empieza en conversaciones muy largas.
 
 **Ejercicio 4: Detectar alucinaciones**
 
@@ -352,4 +354,6 @@ Objetivo: crear el reflejo de verificar los datos importantes.
 
 ## Próxima lección
 
-→ [Comparación de modelos de IA](00c-ai-models-comparison.md): Claude, GPT, Gemini, Llama, Mistral. Cuándo elegir cuál, las diferencias reales, los precios y cómo debería elegir un negocio.
+→ [La historia de la IA](00-what-is-ai.md): de Turing a Claude, de dónde salió todo esto y por qué el punto de quiebre está pasando ahora.
+
+La comparación de los asistentes (Claude, ChatGPT, Gemini y otros) viene en el módulo siguiente, en la lección [Comparación de modelos de IA](00c-ai-models-comparison.md).

@@ -10,13 +10,15 @@ Los profesionales pasan una parte considerable de su día de trabajo en el corre
 
 Esto no es "la IA en lugar de ti". Es la IA como filtro y como primer borrador. Tú sigues haciendo clic en "Enviar". Solo que tardas una fracción del tiempo en llegar ahí.
 
+Cómo está organizada esta lección: primero va el camino sin código. Ordenas el correo y recibes borradores en un chat normal de Claude. Con eso alcanza para el correo de todos los días, y la práctica empieza ahí. Las secciones y tareas marcadas "para quienes construyen" traen código en Python: son solo para quienes arman su propia automatización, y los demás pueden saltárselas.
+
 🎨 **Imagínalo así:** un asistente de correo con IA es como el vocero de una presidencia. El presidente no escribe cada respuesta en persona. El vocero conoce sus posturas y su estilo, sabe lo que el presidente nunca diría y prepara el texto. El presidente lo lee, cambia un par de palabras y lo aprueba. El poder y las decisiones siguen siendo del presidente; lo que se libera es tiempo.
 
 ---
 
 ## Conceptos clave
 
-- **Gmail MCP**: Claude lee tu bandeja de entrada, ordena tus correos y escribe borradores de respuesta directamente en Claude Code. (MCP es una forma estándar de conectar apps y servicios externos a Claude.)
+- **Conectar Gmail**: Claude lee tu bandeja de entrada, ordena tus correos y escribe borradores de respuesta. Conectas tu correo con un conector ya hecho o mediante MCP (una forma estándar de conectar apps y servicios externos a Claude).
 - **Borradores automáticos**: un borrador de respuesta escrito con tu estilo; lo apruebas en lugar de escribirlo
 - **Flujo Inbox Zero (bandeja en cero)**: en la mañana Claude revisa todo, y tú recibes una lista por prioridad
 - **Apollo / Hunter.io**: herramientas para encontrar las direcciones de correo correctas y hacer prospección en frío
@@ -40,28 +42,30 @@ Con IA:
 
 - Claude lee todo y lo ordena: urgente / espera tu respuesta / solo información / spam
 - Para los 20 correos que necesitan respuesta, escribe borradores
-- Tú lees los borradores, editas alrededor del 20% y apruebas el resto
+- Tú lees los borradores, editas algunos y apruebas el resto
 - Total: 25-30 minutos
 
 En este ejemplo inventado, ahorras más o menos de 70 a 115 minutos al día. Pon tus propios números.
 
 ---
 
-### Gmail MCP: Claude lee tu bandeja de entrada
+### Conectar Gmail: Claude lee tu bandeja de entrada
 
-Hay varias formas de conectar Gmail a Claude. Una vez conectado, Claude puede leer tus correos, buscarlos por criterios y escribir borradores de respuesta. Le hablas a Claude como le hablarías a un asistente.
+La forma más sencilla no conecta nada: copia un correo en un chat de Claude y pide un borrador de respuesta. Funciona en cualquier plan y con cualquier servicio de correo, y para unos cuantos correos al día es todo lo que necesitas.
+
+Si recibes mucho correo, puedes conectar tu bandeja. Entonces Claude lee tus correos por su cuenta, los busca por criterios y escribe borradores de respuesta. Le hablas a Claude como le hablarías a un asistente.
 
 **Formas de conectarlo (a octubre de 2026):**
 
-- **El conector de Gmail / Google Workspace en la configuración de Claude** (en los planes de pago): el camino más sencillo. Revisa el centro de ayuda de Claude para ver qué acciones admite.
-- **El servidor MCP oficial de Gmail de Google** (Google Workspace Developer Preview). Según la documentación de Google, busca correos e hilos, lee mensajes, crea borradores y aplica etiquetas; enviar correos no está en su lista de funciones. Vas a necesitar un proyecto de Google Cloud, un cliente OAuth y un plan de Claude que admita conectores personalizados.
+- **El conector de Gmail en Claude** (planes Pro, Max, Team y Enterprise): el camino más sencillo. En Claude, abre Customize → Connectors (Personalizar → Conectores), busca Gmail, elige Connect (Conectar) e inicia sesión en tu cuenta de Google. Luego actívalo en un chat: el botón + debajo del cuadro de mensaje → Connectors → Gmail. Según la documentación de Claude, el conector solo lee y busca correos: no puede crear, enviar ni modificar mensajes. Claude escribe el borrador en el chat, y tú lo pasas a tu correo.
+- **El servidor MCP oficial de Gmail de Google** (Google Workspace Developer Preview). Según la documentación de Google, busca correos e hilos, lee mensajes, crea borradores y aplica etiquetas; enviar correos no está en su lista de funciones. Vas a necesitar un proyecto de Google Cloud, un cliente OAuth (una forma de iniciar sesión con Google) y un plan Pro, Max, Team o Enterprise de Claude. Este camino es para quienes construyen.
 - **Servidores MCP y hubs de terceros** (por ejemplo, Composio): cómodos, pero un tercero obtiene acceso a tu correo. Revisa los permisos, la reputación de la empresa y su política de conservación de datos.
 
 **Regla de acceso:** da los permisos mínimos (leer y crear borradores), y el envío déjalo para ti. Si es una cuenta del trabajo, revisa la política de IA de tu empleador antes de conectar cualquier cosa.
 
 ```
-# El servidor oficial de Gmail de Google se conecta a Claude como conector personalizado:
-# Settings → Connectors → Add custom connector (Configuración → Conectores → Agregar conector personalizado)
+# Para quienes construyen: el servidor oficial de Gmail de Google se conecta a Claude como conector personalizado:
+# Customize → Connectors → Add custom connector (Personalizar → Conectores → Agregar conector personalizado)
 # Remote MCP server URL: https://gmailmcp.googleapis.com/mcp/v1
 # El Client ID y el Secret de OAuth se crean en Google Cloud Console
 # (instrucciones: developers.google.com/workspace/gmail/api/guides/configure-mcp-server)
@@ -84,11 +88,11 @@ Claude lee los correos y te da una tabla con las categorías más borradores lis
 
 ---
 
-### Borradores automáticos: un CLAUDE.md para tu estilo de correo
+### Borradores con tu estilo: una descripción de tu estilo para Claude
 
-Para que los borradores suenen como tú y no como un texto corporativo de plantilla, describe tu estilo en el archivo CLAUDE.md del proyecto (Claude Code lo lee como instrucciones fijas) o en un prompt de sistema.
+Para que los borradores suenen como tú y no como un texto corporativo de plantilla, describe tu estilo. En un chat normal, pega esa descripción al inicio de la conversación (y guárdala en tus notas para tenerla a la mano). En Claude Code, la misma descripción va en el archivo CLAUDE.md del proyecto, que Claude Code lee como instrucciones fijas. En código, se pasa como prompt de sistema.
 
-**Ejemplo de CLAUDE.md para un asistente de correo:**
+**Ejemplo de descripción de estilo (en Claude Code, es el contenido de tu archivo CLAUDE.md):**
 
 ```markdown
 # Mi estilo de correo
@@ -117,9 +121,9 @@ que nuestras consultas están disponibles en una gran variedad de planes de prec
 
 ---
 
-### Script de Python: un borrador de respuesta automático
+### Para quienes construyen: un script de Python que redacta la respuesta
 
-Si quieres integrarlo a tu propio sistema sin MCP, llama directamente a la API:
+Esta sección es opcional. Es para quienes escriben código y quieren integrar los borradores a su propio sistema mediante la API (la forma en que los programas hablan con Claude directamente, sin el chat). Si no programas, sáltate el código y pasa a la sección de secuencias de correos.
 
 ```python
 import anthropic
@@ -135,7 +139,7 @@ def draft_reply(incoming_email: str, context: str = "") -> str:
     """
     response = client.messages.create(
         model="claude-sonnet-5-5",  # ID de modelo vigentes: mira la documentación de Anthropic
-        max_tokens=500,
+        max_tokens=4000,  # con margen a propósito: el "razonamiento" del modelo cuenta dentro de este límite
         system="""Eres un asistente personal de correo. Escribes respuestas con este estilo:
         
         - Cortas y al punto: no más de 100-150 palabras
@@ -158,7 +162,8 @@ Contexto adicional para la respuesta: {context if context else 'ninguno'}
 Escribe un borrador de respuesta."""
         }]
     )
-    return response.content[0].text
+    # La respuesta puede traer bloques de "razonamiento": nos quedamos solo con el texto
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 def classify_email(email_text: str) -> dict:
@@ -184,7 +189,8 @@ Correo:
         }]
     )
     import json
-    return json.loads(response.content[0].text)
+    text = "".join(block.text for block in response.content if block.type == "text")
+    return json.loads(text)
 
 
 # Ejemplo de uso
@@ -214,14 +220,14 @@ if __name__ == "__main__":
 
 ### Apollo + Hunter.io: IA para el correo en frío
 
-Apollo y Hunter.io resuelven el problema de "encontrar el correo de esta persona". Claude convierte los contactos que encuentras en correos personalizados.
+Esta sección es para quienes buscan clientes; puedes volver a ella cuando llegues al módulo de los primeros clientes. Apollo y Hunter.io resuelven el problema de "encontrar el correo de trabajo de esta persona". Claude convierte los contactos que encuentras en correos personalizados. Sin código, se hace a mano: busca la dirección en el sitio de Apollo o de Hunter, pega en un chat de Claude lo que sabes de la persona y pide un correo que siga las reglas del prompt de abajo. Las conexiones y el script son para quienes construyen.
 
 🎨 **Imagínalo así:** Apollo más Claude es como una red de pesca con carnada inteligente. La red (Apollo) encuentra a las personas correctas. La carnada (Claude) se hace para cada una en particular, no se saca de una plantilla. El pez (un posible cliente) tiene más probabilidades de picar.
 
 ```
 # Cómo te conectas depende del hub o servicio que elijas:
 # mira la documentación de Apollo, Hunter o del hub MCP para el formato del comando y cómo iniciar sesión.
-# No pongas claves de API en la URL de la solicitud: guárdalas en variables de entorno.
+# Guarda las claves de API en variables de entorno y mándalas en un encabezado de la solicitud, no en la URL.
 ```
 
 **Una advertencia sobre el correo en frío:** escribirles a personas que no conoces está regulado por leyes contra el spam y de privacidad (qué te da motivo para escribirle a alguien, una forma fácil de darse de baja, cómo guardas los contactos). En Estados Unidos, el correo comercial está sujeto a la ley federal CAN-SPAM; otros países tienen sus propias reglas. Revisa las reglas de donde estás tú y de donde está tu destinatario. Claude escribe el texto; la responsabilidad de enviarlo sigue siendo tuya.
@@ -261,8 +267,9 @@ def find_email(domain: str, first_name: str, last_name: str) -> str:
             "domain": domain,
             "first_name": first_name,
             "last_name": last_name,
-            "api_key": HUNTER_API_KEY,
-        }
+        },
+        # La clave va en un encabezado, no en la URL, para que no quede en registros ni en el historial
+        headers={"X-API-KEY": HUNTER_API_KEY},
     )
     data = response.json()
     if data.get("data", {}).get("email"):
@@ -280,7 +287,7 @@ def write_cold_email(
     
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=300,
+        max_tokens=4000,  # con margen a propósito: el "razonamiento" del modelo cuenta dentro de este límite
         system=f"""Escribes correos en frío personalizados en este idioma: {language}.
         
         Reglas:
@@ -302,7 +309,8 @@ Estoy abierto a alianzas por recomendación y a operaciones compartidas con otra
 Escribe un correo en frío."""
         }]
     )
-    return response.content[0].text
+    # La respuesta puede traer bloques de "razonamiento": nos quedamos solo con el texto
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 # Lista de contactos para la prospección
@@ -349,7 +357,7 @@ print("Guardado en cold_outreach.csv")
 
 ### Secuencia de correos: del registro a un trato
 
-Una secuencia de correos es una cadena de correos que se envía de forma automática después de que alguien se registra o hace algo. Claude escribe todos los correos una vez; tú los configuras en Lemlist (u otro servicio de correo) o en tu propio script.
+Una secuencia de correos es una cadena de correos que se envía de forma automática después de que alguien se registra o hace algo. Claude escribe todos los correos una vez. Sin código: pídele a Claude en un chat que escriba los cuatro correos del diagrama de abajo y pégalos en un servicio de correo (Lemlist u otro), donde configuras el calendario de envío. En cada correo deja una forma de darse de baja. El script que está debajo del diagrama es para quienes construyen.
 
 ```
 Alguien llena un formulario en tu sitio web
@@ -387,7 +395,7 @@ def generate_welcome_email(
     
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=400,
+        max_tokens=4000,  # con margen a propósito: el "razonamiento" del modelo cuenta dentro de este límite
         system="""Escribes un correo de bienvenida para alguien interesado
         en comprar o rentar casa en Querétaro.
         
@@ -403,7 +411,8 @@ Se muda desde: {city_of_origin}
 Escribe un correo de bienvenida."""
         }]
     )
-    return response.content[0].text
+    # La respuesta puede traer bloques de "razonamiento": nos quedamos solo con el texto
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 def select_value_content(interest: str, knowledge_base: dict) -> str:
@@ -425,7 +434,7 @@ Elige el contenido más relevante y escribe un correo de 120-150 palabras.
 Usa datos concretos del contenido que elegiste."""
         }]
     )
-    return response.content[0].text
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 # Base de conocimiento (en la vida real se lee de archivos o de una base de datos; los datos de abajo son inventados, solo para ilustrar)
@@ -455,24 +464,28 @@ print(value_email)
 
 ### Flujo Inbox Zero: una rutina matutina de 20 minutos
 
-Una rutina práctica para todos los días:
+Inbox Zero (bandeja en cero) es el hábito de dejar tu bandeja vacía todos los días. Una rutina práctica:
 
 ```
-7:00 a. m.  Claude (vía Gmail MCP o un script) lee todos los correos nuevos de la noche
+7:00 a. m.  Claude lee todos los correos nuevos de la noche
+            Sin código: abres un chat con Gmail conectado y usas el prompt de la sección Conectar Gmail
+            Con código: el script corre solo
             Los ordena: urgente / normal / para tu información / spam
             Escribe borradores para todo lo que necesita respuesta
 
-7:10 a. m.  Abres el resumen (un archivo, o un mensaje para ti mismo en Slack o por correo)
+7:10 a. m.  Abres el resumen (la respuesta en tu chat; con el script, un archivo o un mensaje para ti mismo en Slack o por correo)
             Ves: 3 urgentes, 8 normales, 12 para tu información
 
 7:10-7:30   Revisas los borradores de los correos urgentes
-            Editas si hace falta (normalmente el 20-30% necesita cambios)
+            Editas si hace falta (siempre hay borradores que necesitan cambios)
             Envías
             Normales: los programas para esta tarde o mañana
             Para tu información: los archivas con un clic
 
 7:30 a. m.  Bandeja en cero. Tu día empezó.
 ```
+
+El script de abajo es para quienes construyen: hace el mismo ordenado y los mismos borradores sin el chat.
 
 ```python
 import anthropic
@@ -517,7 +530,9 @@ Cuerpo: {email['body'][:500]}"""
         )
         
         import json
-        classification = json.loads(classification_response.content[0].text)
+        classification = json.loads(
+            "".join(block.text for block in classification_response.content if block.type == "text")
+        )
         category = classification["category"]
         
         email_data = {
@@ -530,7 +545,7 @@ Cuerpo: {email['body'][:500]}"""
         if classification["needs_reply"] and category in ["urgent", "normal"]:
             draft_response = client.messages.create(
                 model="claude-sonnet-5-5",
-                max_tokens=300,
+                max_tokens=4000,  # con margen a propósito: el "razonamiento" del modelo cuenta dentro de este límite
                 system=f"""Eres un asistente de correo. Sobre la persona para quien escribes:
 {your_context}
 
@@ -544,7 +559,10 @@ Asunto: {email['subject']}
 Cuerpo: {email['body']}"""
                 }]
             )
-            email_data["draft"] = draft_response.content[0].text
+            # La respuesta puede traer bloques de "razonamiento": nos quedamos solo con el texto
+            email_data["draft"] = "".join(
+                block.text for block in draft_response.content if block.type == "text"
+            )
         
         results[category].append(email_data)
     
@@ -611,7 +629,7 @@ print(brief)
 
 ### Correo en varios idiomas: un sistema, dos idiomas
 
-Si algunos de tus clientes te escriben en español y otros en inglés, Claude puede detectar el idioma y responder en ese idioma de forma automática. Tú sigues leyendo cada borrador antes de enviarlo; si no lees inglés, el resumen en español te dice de qué trata el correo, y conviene que alguien que domine el idioma revise todo lo importante.
+Si algunos de tus clientes te escriben en español y otros en inglés, Claude puede detectar el idioma y responder en ese idioma de forma automática. Sin código: pega el correo en un chat y pídele a Claude "responde en el idioma del correo y dame un resumen de una línea en español". Tú sigues leyendo cada borrador antes de enviarlo; si no lees inglés, el resumen en español te dice de qué trata el correo, y conviene que alguien que domine el idioma revise todo lo importante. El código de abajo es para quienes construyen (continúa el script de la sección anterior).
 
 ```python
 def multilingual_reply(incoming_email: str, your_context: str) -> dict:
@@ -621,7 +639,7 @@ def multilingual_reply(incoming_email: str, your_context: str) -> dict:
     """
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=500,
+        max_tokens=4000,  # con margen a propósito: el "razonamiento" del modelo cuenta dentro de este límite
         system=f"""Eres un asistente de correo bilingüe (español + inglés).
 
 Sobre la persona para quien escribes:
@@ -645,7 +663,9 @@ Devuelve JSON:
         }]
     )
     import json
-    return json.loads(response.content[0].text)
+    # La respuesta puede traer bloques de "razonamiento": nos quedamos solo con el texto
+    text = "".join(block.text for block in response.content if block.type == "text")
+    return json.loads(text)
 
 
 # Prueba
@@ -664,15 +684,17 @@ print(f"\nBorrador de respuesta:\n{result['draft']}")
 
 ## Práctica
 
-1. Conecta Gmail a Claude: usa el conector de Gmail / Google Workspace en la configuración de Claude o el servidor MCP oficial de Gmail de Google (ver arriba). Dale los permisos mínimos: leer y crear borradores, sin enviar.
+Las tareas 1 a 3 se hacen en un chat normal, sin código. Las tareas 4 y 5 son para quienes construyen.
 
-2. Escribe un script `email_classifier.py` con las funciones `classify_email` y `draft_reply` de esta lección. Pruébalo con 5 correos de tu bandeja (quita antes los datos de los clientes: no mandes información personal de otras personas a servicios con los que no tienes permiso de compartirla).
+1. Elige 5 correos reales que tengas que responder. Pégalos en un chat de Claude uno por uno y pide un borrador de respuesta. Quita antes los datos personales de otras personas: no los mandes a servicios con los que no tienes permiso de compartirlos. Terminaste cuando tengas 5 borradores.
 
-3. Crea un CLAUDE.md para tu asistente de correo: describe tu estilo, enumera de 3 a 5 frases prohibidas y agrega un ejemplo de una buena respuesta y uno de una mala.
+2. Escribe una descripción de tu estilo siguiendo el ejemplo de esta lección: tus reglas, de 3 a 5 frases prohibidas, un ejemplo de una buena respuesta y uno de una mala. Pégala al inicio de un chat nuevo y pide borradores para los mismos 5 correos. Compáralos con la primera ronda: los segundos deberían sonar como tú. (Si trabajas en Claude Code, guarda la descripción como CLAUDE.md.)
 
-4. Configura `process_inbox` + `format_daily_brief`, ejecútalos con tu propio correo y fíjate qué tan buenos son los borradores.
+3. Si tienes un plan de pago de Claude, conecta Gmail con el conector (Customize → Connectors, ver arriba) y haz una revisión matutina: usa el prompt de la sección Conectar Gmail y revisa que Claude haya ordenado bien tus correos en urgentes, normales y para tu información. ¿No tienes plan de pago? Haz lo mismo con 10 correos pegados en un chat.
 
-5. Elige una tarea de prospección en frío (5-10 contactos) y prueba `write_cold_email` con datos reales.
+4. Para quienes construyen: escribe un script `email_classifier.py` con las funciones `classify_email` y `draft_reply` de esta lección y pruébalo con los mismos 5 correos. Luego configura `process_inbox` + `format_daily_brief`, ejecútalos con tu propio correo y fíjate qué tan buenos son los borradores. Si conectas el servidor MCP oficial de Gmail de Google, dale los permisos mínimos: leer y crear borradores, sin enviar.
+
+5. Para quienes construyen y buscan clientes: elige una tarea de prospección en frío (5-10 contactos) y prueba `write_cold_email` con datos reales. Antes de enviar nada, revisa cada correo y las reglas de envíos masivos del país de tu destinatario.
 
 ---
 
@@ -694,7 +716,7 @@ print(f"\nBorrador de respuesta:\n{result['draft']}")
 
 > El correo no se trata en realidad de escribir texto. Se trata de tomar decisiones: a quién responder, qué decir y cuándo. Claude se encarga de la parte mecánica (escribir el texto con tu estilo). Las decisiones siguen siendo tuyas.
 
-> Los borradores automáticos solo funcionan si Claude conoce tu estilo. Dedica 30 minutos a un CLAUDE.md con buenos y malos ejemplos; se paga solo todos los días.
+> Los borradores solo salen bien si Claude conoce tu estilo. Dedica 30 minutos a una descripción de tu estilo con buenos y malos ejemplos; se paga sola todos los días.
 
 > La bandeja en cero es posible. Ordenar más borradores para el correo entrante reduce bastante el tiempo que pasas en el correo. La clave: no automatices por completo el envío; quédate con la revisión final.
 

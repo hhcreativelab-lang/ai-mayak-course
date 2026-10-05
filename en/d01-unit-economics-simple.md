@@ -47,7 +47,7 @@ Maria bakes cakes at home and sells them through Instagram and Facebook. One cak
 | Ingredients | $14 |
 | Box and packaging | $3 |
 | Delivery | $5 |
-| **Total variable costs** | **$22** |
+| **Total variable costs** (in cash; we'll count Maria's time below) | **$22** |
 
 **Margin on one cake:** $50 − $22 = **$28**.
 
@@ -169,4 +169,4 @@ AI is good at doing math and explaining it, but it can slip on arithmetic or qui
 
 → **[How to price your services](d02-pricing-simple.md)**: the price floor, the market and the value to your client.
 
-To go deeper: [Unit economics of an AI stack](99b-unit-economics-deep.md) (the unit economics of an AI business at three levels).
+To go deeper (an optional library lesson): [Unit economics of an AI stack](99b-unit-economics-deep.md) (the unit economics of an AI business at three levels).

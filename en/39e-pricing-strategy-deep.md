@@ -1,8 +1,8 @@
 # How to price an AI product: value, tiers, packaging
 
-**Time:** about 35 min reading + 60 min practice
+**Time:** about 35 min reading + 270 min practice (steps 1–3; steps 4–5 come after launch)
 
-The dollar amounts, percentages and pricing ladders in this lesson are made-up examples that explain the method. They aren't market statistics, and they aren't a forecast of what you'll earn. Work out your own numbers for your own market and your own customers. For the beginner version, see the lesson [How to set your price](d02-pricing-simple.md).
+The dollar amounts, percentages and pricing ladders in this lesson are made-up examples that explain the method. They aren't market statistics, and they aren't a forecast of what you'll earn. Work out your own numbers for your own market and your own customers. For the beginner version, see the lesson [How to set your price](d02-pricing-simple.md). This lesson is about pricing a product with a subscription: your own AI service, or a service with a monthly fee. If you only sell one-off projects for now, read the theory and come back to the practice once you have a product.
 
 ---
 
@@ -10,13 +10,13 @@ The dollar amounts, percentages and pricing ladders in this lesson are made-up e
 
 Pricing isn't just "what it costs." It's a signal of value, a filter for customers and your source of revenue. Three jobs in one number.
 
-Most founders are afraid of pricing. "I'll charge $9 so at least someone buys," and then they can't raise it for two years. Meanwhile, competitors charge $99 for the same features and bring in **noticeably more money** with the same number of customers. They often get better customers, too, and higher retention (more customers stay).
+Many founders are afraid of pricing. "I'll charge $9 so at least someone buys," and then they can't raise it for two years. Meanwhile, competitors charge $99 for the same features and bring in **noticeably more money** with the same number of customers. They often get better customers, too, and higher retention (more customers stay).
 
 Price isn't the last step in building a product. It's the **first signal** a customer sees after the description. $9 says "this is a toy." $999 says "this is a serious tool." What's inside may be identical, but the customer's perception, expectations and behavior are **different**.
 
-For AI products the problem is sharper: the value is often 10 to 100 times the cost. The API (pay-per-use access to an AI model) costs $0.10, and the value to the customer is $50. Charge $0.20 (cost plus margin) and you leave $49.80 on the table. A competitor will take it.
+For AI products the problem is sharper: the value can be tens or even hundreds of times the cost. The API (pay-per-use access to an AI model) costs $0.10, and the value to the customer is $50. Charge $0.20 (cost plus margin) and you leave $49.80 on the table. A competitor will take it.
 
-In this lesson we'll cover how to price an AI product the right way: the value-based approach, a 3-tier structure, psychological triggers, and how to package it all within 30 days.
+In this lesson we'll cover how to price an AI product the right way: the value-based approach, a 3-tier structure, psychological triggers, and a 30-day plan for testing your price.
 
 🎨 **Picture this:** a restaurant. The chef doesn't set the price as "what the ingredients and the gas cost." The price is "what a guest is willing to pay for this evening." A steak costs $80 not because the beef is more expensive, but because of the atmosphere, the name and the expectations. The same steak at a roadside diner costs $15. Similar product, different value, different price. An AI product works the same way.
 
@@ -65,7 +65,7 @@ Any pricing approach comes down to one of three philosophies: count up from your
 
 The approach: "The API costs $0.10, I'll add a 100% margin → I sell it for $0.20."
 
-**The problem for AI:** the value is often 10 to 100 times the cost. If an AI tool saves a customer 10 hours of work ($500-1,000 of value) and you price by cost at $5, that customer would **happily** have paid $100. You leave $95 on the table with every sale.
+**The problem for AI:** the value can be tens or even hundreds of times the cost. If an AI tool saves a customer 10 hours of work ($500-1,000 of value) and you price by cost at $5, that customer would **happily** have paid $100. You leave $95 on the table with every sale.
 
 **When cost-based pricing makes sense:**
 - Commodity products (cloud hosting, raw API resale)
@@ -87,7 +87,7 @@ Pricing based on competitors is a sign that you don't have your own understandin
 - A direct alternative (your product does the same thing, just better on one dimension)
 - Deliberate positioning ("we're 50% cheaper than X")
 
-**For AI products:** rarely. Most AI products target a new use case or a specific niche, where there's no direct comparison.
+**For AI products:** rarely. Many AI products target a new use case or a specific niche, where there's no direct comparison.
 
 #### Model C: Value-based (right for AI)
 
@@ -95,13 +95,13 @@ The approach: measure the value to the customer → charge 10-20% of that value.
 
 **The logic:**
 - The customer gets $5,000 a month in value → they're willing to pay $500-1,000 a month
-- It's an "easy yes": a clear ROI (return on investment), paid back within 1-2 weeks of use
+- It's an "easy yes": a clear ROI (return on investment), and each month's fee pays for itself within the first week
 - The margin is high (cost $50-100, revenue $500-1,000)
 - The customer is happy (they save $4,000-4,500 net)
 
 **This is a common approach to AI pricing in 2026.** Many AI SaaS products (software sold as a subscription) work this way: the price is tied to the value for the customer.
 
-🎨 **Picture this:** a family doctor vs. a surgeon. A family doctor charges around $150 for an office visit (the going market rate). A surgeon charges $50,000 for an operation that saves a life, because that value can't be compared with a standard rate. AI is often the "surgeon": it solves an expensive problem fast. Your pricing should reflect that.
+🎨 **Picture this:** a family doctor vs. a surgeon. A family doctor charges, say, $150 for an office visit (the going market rate). A surgeon charges $50,000 for an operation that saves a life, because that value can't be compared with a standard rate. AI is often the "surgeon": it solves an expensive problem fast. Your pricing should reflect that.
 
 ---
 
@@ -125,7 +125,7 @@ Value comes in four types. For any given AI product, usually 1 or 2 of them appl
 - × the customer's current revenue
 - Result: $ value per month from the revenue boost
 
-**Example:** an AI sales tool lifts conversion by 5%. The customer does $20,000 a month in sales. Uplift = $1,000 a month. Value = **$1,000 a month**.
+**Example:** an AI sales tool lifts sales by 5%. The customer does $20,000 a month in sales. Uplift = $1,000 a month. Value = **$1,000 a month**.
 
 **Cost reduction:**
 - The % reduction in existing costs
@@ -274,7 +274,7 @@ Within value-based pricing and 3 tiers, there are **levers** that change exactly
 | **Per-user** | Scales with team size | Collaboration tools (Slack, Notion) |
 | **Per-usage** | Scales with consumption | AI APIs, voice minutes, transactions |
 | **Flat monthly** | Simple, predictable | The subscription standard (Spotify, Netflix) |
-| **Annual discount** | Improves cash flow and retention | 10-20% off for paying yearly |
+| **Annual discount** | Improves cash flow and retention | 15-20% off for paying yearly |
 | **Free trial** | Lower friction | Self-serve products |
 | **Freemium** | Land and expand in the mass market | A mass-adoption play (Notion, Figma) |
 | **Custom enterprise** | Captures high willingness to pay | The top 5-10% of prospects |
@@ -305,11 +305,11 @@ Should you show "tokens" (the small chunks of text AI models are billed by) on y
 - Hide them: a black box, which breeds distrust
 - **Compromise:** show "AI requests" or "credits" instead of tokens. Everyone understands those.
 
-**Example:** "10,000 AI requests/month ≈ 500 long emails + 200 code reviews."
+**Example:** "10,000 credits/month ≈ 500 long emails (10 credits each) + 200 code reviews (25 credits each)."
 
 #### Cost variance (important for AI)
 
-Some users use 100 times more than others. With single-tier flat pricing, power users eat your margin.
+Some users can use 100 times more than others. With single-tier flat pricing, power users eat your margin.
 
 **A plan for outliers:**
 - A hard cap (after X usage, the service slows down or stops)
@@ -346,12 +346,12 @@ Pricing isn't only math. The psychology of perception has a noticeable effect on
 **Ending in 9 (charm pricing)**
 - $29 feels lower than $30 (the brain sees "twenty-something")
 - Often works in B2C (selling to consumers)
-- Matters less in B2B (selling to businesses), but doesn't hurt
+- Probably matters less in B2B (selling to businesses), but doesn't hurt
 
 **Anchor (expensive option first)**
 - Show the Enterprise tier first on the page
 - The middle tier then feels affordable
-- Put a "Most popular" badge on your target tier
+- Put a "Recommended" badge on your target tier; say "Most popular" only once it's true
 
 **Decoy (an asymmetric option)**
 - A "bad" tier between good options pushes people toward the target one
@@ -364,11 +364,11 @@ Pricing isn't only math. The psychology of perception has a noticeable effect on
 
 **Money-back guarantee**
 - "30-day money-back guarantee" lowers the perceived risk
-- It usually raises conversion
-- Actual refunds are rare if the product is good (offer the guarantee only if you're ready to give the money back)
+- It often helps conversion
+- When the product is good, refund requests tend to be uncommon (offer the guarantee only if you're ready to give the money back)
 
 **Showing the annual discount**
-- "Pay $299 a year, save $89" lands harder than "$25/month" (the same yearly price divided by 12)
+- "Pay $278 a year, save $70" (a $29/month plan at 20% off) lands harder than "$23/month" (the same yearly price divided by 12)
 - Show the savings explicitly
 - Default to monthly, highlight annual
 
@@ -392,7 +392,7 @@ An annual subscription is one of the strongest levers for cash flow and retentio
 
 **The compromise:**
 - Default: monthly
-- Annual visible, with the savings spelled out ("Save $89/year")
+- Annual visible, with the savings spelled out ("Save $70/year")
 - Let customers switch from monthly to annual at any time
 
 Don't go annual-only. It cuts out part of your addressable market: the customers who want to try the product without a commitment.
@@ -413,7 +413,8 @@ After 12-18 months, you'll want to raise prices. You'll have more features, more
 **2. Announce it 30-60 days ahead**
 - Email + an in-app notice
 - Explain the "why" (new features, more value)
-- DON'T say "we raised prices." Say "we added X, and the new pricing reflects that value."
+- Say it plainly: the new price, the date it takes effect and how to cancel. Don't hide the increase behind vague wording
+- In some places the law sets how and when you must give notice of a subscription price increase; check the rules where your customers live
 
 **3. Frame it as more value**
 - A new tier with extra features
@@ -421,14 +422,14 @@ After 12-18 months, you'll want to raise prices. You'll have more features, more
 - New sign-ups go on the new pricing
 
 **4. Test new pricing on new sign-ups first**
-- 30-60 days of A/B testing (new sign-ups see the new prices)
+- For 30-60 days, new sign-ups see the new prices
 - Measure the impact on conversion and churn
 - Adjust before the full rollout
 
 **5. Communicate value before price**
 - Start the email with "what's new" (3 features)
-- Put the price change at the very end of the email
-- It's context, not an announcement
+- Then state the new price and the date clearly. Don't bury it in fine print at the bottom
+- The customer should see at a glance what changes and when
 
 🎨 **Picture this:** a landlord who renovates. You don't tell your tenants "you're paying more now." You say "I redid the place: new kitchen, new bathroom, so here's the new rent." The way people take it changes completely.
 
@@ -450,7 +451,7 @@ After 12-18 months, you'll want to raise prices. You'll have more features, more
 
 ❌ **A free tier that gives away too much**
 - If the free tier solves 80% of the problem, there's no reason to upgrade
-- Free should be a **trailer** (5-10% of the capability) for the paid plans
+- Free should be a **trailer** (say, 5-10% of the capability) for the paid plans
 - Notion and Figma have well-balanced free tiers
 
 ❌ **Custom pricing for everyone**
@@ -471,7 +472,7 @@ After 12-18 months, you'll want to raise prices. You'll have more features, more
 ❌ **Not raising prices for 2 years**
 - Inflation alone opens a gap
 - It looks cheap (the signal: low quality or a dying product)
-- Raise prices at least once a year
+- Review your prices at least once a year
 
 ---
 
@@ -486,7 +487,7 @@ A/B testing prices isn't like A/B testing a user interface. The risk is high.
 
 **DO this instead:**
 - **Sequential A/B:** 30 days at price X, 30 days at price Y, then compare
-- **Cohort A/B:** new sign-ups in Cohort A see the old price, Cohort B sees the new one (be open about it: "limited-time pricing")
+- **Cohort A/B:** people who signed up before a set date see the old price, and people who sign up after it see the new one. Be open about it ("the old price is available until such-and-such date"), and only if that's true
 - **Page-level A/B:** different landing pages lead to different pricing pages (when the traffic sources are clearly different)
 
 **Measure several things together:**
@@ -560,7 +561,7 @@ Take the **low** estimate (not the optimistic one). Better to undersell the valu
 
 **4. Document it, with a source:**
 
-Not "well, probably $5,000 a month." Instead: "From interviews with 5 customers: average time saved 12 hours/month × $50/hour = $600/month."
+Not "well, probably $5,000 a month." Instead: "From interviews with 5 customers (or potential customers): average time saved 12 hours/month × $50/hour = $600/month."
 
 **Output:** a "Customer value analysis" document with a specific $ value figure.
 
@@ -628,7 +629,7 @@ Support: Dedicated CSM + Slack channel
 - Custom contract
 - SLA
 - Sales-led
-- Min commitment: $[2X-5X annually]
+- Min commitment: $[amount per year]
 ```
 
 **Sanity check:**
@@ -653,7 +654,7 @@ A pricing page is a **conversion page**, not an information dump. These 7 elemen
 
 ## 2. 3 pricing cards
 - [ ] Starter card
-- [ ] Pro card (with a "Most Popular" badge)
+- [ ] Pro card (with a "Recommended" badge; use "Most Popular" only once it's true)
 - [ ] Business card
 
 Per card:
@@ -694,7 +695,7 @@ Per card:
 
 CTA means call to action: the button that tells the visitor what to do next.
 
-**Pro tip:** look at the Linear, Notion and Figma pricing pages. They've been refining them for years, so copy the structure (not the prices). The prices on those pages change; look at the current ones.
+**Pro tip:** look at the Linear, Notion and Figma pricing pages. They're well-known examples of a clear pricing page, so copy the structure (not the prices). The prices on those pages change; look at the current ones.
 
 ---
 
@@ -764,28 +765,28 @@ This becomes your pricing memory. A year from now, you won't remember why it's e
 
 ## Readiness checklist
 
-✅ **Customer value quantified** ($X/month, with customer interviews as the source)
-✅ **3 tiers designed** with the rule of 3x ($29/$99/$299 or similar)
-✅ **Tier features mapped** (what's in each, building up progressively)
-✅ **Annual discount calculated** (15-20% off, clearly visible)
-✅ **Pricing page live** with all 7 elements (hero, pricing cards, enterprise CTA, trust signals, FAQ, comparison table, footer)
-✅ **Money-back guarantee** announced (30 days by default, only if you'll honor it)
-✅ **A/B testing plan** ready (sequential, not simultaneous)
-✅ **pricing.md** written, with a decision log
-✅ **30-day review** scheduled (conversion, tier split, churn)
-✅ **Grandfathering policy** decided (for future price increases)
+- ✅ **Customer value quantified** ($X/month, with customer interviews as the source)
+- ✅ **3 tiers designed** with the rule of 3x ($29/$99/$299 or similar)
+- ✅ **Tier features mapped** (what's in each, building up progressively)
+- ✅ **Annual discount calculated** (15-20% off, clearly visible)
+- ✅ **Pricing page live** with all 7 elements (hero, pricing cards, enterprise CTA, trust signals, FAQ, comparison table, footer)
+- ✅ **Money-back guarantee** announced (30 days by default, only if you'll honor it)
+- ✅ **Price testing plan** ready (sequential, not simultaneous)
+- ✅ **pricing.md** written, with a decision log
+- ✅ **30-day review** scheduled (conversion, tier split, churn)
+- ✅ **Grandfathering policy** decided (for future price increases)
 
-If you're at 8 out of 10, you're ready to launch. If you're under 6 out of 10, go back to Step 1.
+If you're at 8 out of 10, you're ready to launch. At 6 or 7, finish what's missing. If you're under 6 out of 10, go back to Step 1 of the practice.
 
 ---
 
 ## Tools and resources
 
-- **[Stripe Pricing Page](https://stripe.com/pricing)**: an example of hybrid pricing (per use + flat)
+- **[Stripe Pricing Page](https://stripe.com/pricing)**: an example of pay-as-you-go pricing: a fee on each payment (a percentage plus a fixed amount), with no monthly fee
 - **[Linear Pricing Page](https://linear.app/pricing)**: a clean tier example
 - **[Notion Pricing Page](https://www.notion.com/pricing)**: a freemium + tiers reference
 - **[Prices for AI assistants and APIs](https://aimayak.com/en/now/)**: current numbers for your margin math
-- **Books:** "Monetizing Innovation" (Madhavan Ramanujam), "Pricing Done Right" (Tim Smith)
+- **Books:** "Monetizing Innovation" (Madhavan Ramanujam and Georg Tacke), "Pricing Done Right" (Tim J. Smith)
 
 ---
 
@@ -807,13 +808,13 @@ If you're at 8 out of 10, you're ready to launch. If you're under 6 out of 10, g
 
 ## Related lessons
 
-- [Pricing](39-monetization-pricing.md): an introduction to pricing models
+- [Pricing](39-monetization-pricing.md): the previous lesson, on pricing a service by its value to the client
 - [Real monetization case studies](47-monetization-cases.md): pricing examples
-- [Unit economics of an AI stack](99b-unit-economics-deep.md): LTV, CAC (customer acquisition cost) and payback period in detail
-- [Funnel design for AI products](42b-funnel-design-ai-products.md): the pricing page inside your funnel
+- [Unit economics of an AI stack](99b-unit-economics-deep.md): LTV, CAC (customer acquisition cost) and payback period in detail; a library lesson, optional
+- [Funnel design for AI products](42b-funnel-design-ai-products.md): the pricing page inside your funnel; a library lesson, optional
 
 ---
 
 ## Next lesson
 
-→ [MCP Builder: building your own MCP server](40-mcp-builder.md)
+→ [How to find your first clients through people you know](38-monetization-clients.md)

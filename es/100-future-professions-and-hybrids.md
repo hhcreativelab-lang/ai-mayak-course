@@ -30,8 +30,8 @@ La IA no llegó al mundo del trabajo **como una mejora**. Llegó como un incendi
 
 Este es un mapa de consulta de profesiones y un pronóstico basado en escenarios, no datos de investigación.
 
-- Se quitaron las estimaciones de salarios, los porcentajes de crecimiento y los tamaños de mercado: no se verificaron con fuentes primarias. Para cifras actuales de tu país y de tu puesto, revisa bolsas de trabajo y encuestas salariales
-- Los pronósticos para 2027–2030 son escenarios del autor y pueden no cumplirse
+- Se quitaron las estimaciones de salarios, los porcentajes de crecimiento y los tamaños de mercado: no se verificaron con fuentes primarias. Para cifras actuales de tu país y de tu puesto, revisa las estadísticas laborales oficiales de tu país (las publica el instituto nacional de estadística o el ministerio de trabajo), además de bolsas de trabajo y encuestas salariales
+- Las estrellas de demanda (⭐) y los pronósticos para 2027–2030 son estimaciones y escenarios del autor, no mediciones, y pueden no cumplirse
 - Sobre medicina, derecho y finanzas: la IA ayuda a un profesional, pero no reemplaza el trabajo que requiere licencia ni da asesoría personal
 - Esto no es asesoría financiera ni de inversión, ni una promesa de ingresos
 
@@ -69,7 +69,7 @@ Trabajos que **no existían antes de 2022**. Aparecieron como resultado directo 
 
 ### A1. Ingeniería de IA / Construcción (15 profesiones)
 
-Son **los constructores de la era de la IA**. La categoría más demandada de 2026.
+Son **los constructores de la era de la IA**. La categoría de la que más se habla en 2026.
 
 ---
 
@@ -85,7 +85,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Conocer las particularidades de cada modelo
 - **Demanda:** ⭐⭐⭐⭐ (el nivel junior se está llenando; todavía faltan personas de nivel senior)
 - **Cómo llegar:**
-  1. Toma el curso de Prompt Engineering de Anthropic
+  1. Completa el tutorial interactivo gratuito de ingeniería de prompts de Anthropic (está en GitHub, en inglés)
   2. Arma 5 prompts de portafolio con impacto medido
   3. Contribuye a bibliotecas abiertas de prompts (PromptHub)
 - **Imagínalo así:** un enólogo. Las mismas uvas se convierten en un gran vino o en un vino malísimo, según en qué manos caigan.
@@ -135,7 +135,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 - **Qué hace:** Diseña sistemas de varios agentes. Decide quién delega a quién, cómo se coordinan los agentes y cómo funciona la orquestación.
 - **Habilidades clave:**
   - Patrones de diseño de agentes (orquestador, supervisor, enjambre)
-  - LangGraph, AutoGen, Anthropic Agent SDK
+  - LangGraph, Microsoft Agent Framework (el sucesor de AutoGen), Claude Agent SDK
   - Manejo del estado entre agentes
   - Propagación de errores
   - Presupuesto de costos a nivel de agente
@@ -144,7 +144,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 - **Cómo llegar:**
   1. Una base como ingeniero senior
   2. Construye 2-3 sistemas de agentes en producción
-  3. Da una charla en el AI Engineering Summit
+  3. Da una charla en una conferencia de AI Engineer (World's Fair, Code Summit)
 - **Imagínalo así:** un director de orquesta. Cada agente es un músico. El director no toca, pero sin él solo hay ruido.
 
 ---
@@ -190,7 +190,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 
 - **Qué hace:** Diseña evals (pruebas sistemáticas) para aplicaciones de LLM. Lanzar algo sin evals es como volar sin instrumentos.
 - **Habilidades clave:**
-  - Frameworks de evaluación (Anthropic evals, LangSmith, Braintrust)
+  - Frameworks de evaluación (LangSmith, Braintrust)
   - Patrones de LLM como juez (LLM-as-judge)
   - Curaduría de conjuntos de datos de referencia (golden datasets)
   - Pruebas de regresión para prompts
@@ -251,7 +251,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Agrupar solicitudes en lotes
   - Análisis a nivel de token (los modelos más nuevos pueden contar el mismo texto como un número distinto de tokens, así que mide con tus propios datos)
   - Tableros de costos
-- **Demanda:** ⭐⭐⭐⭐ (crece cuando la factura de LLM de una empresa pasa de \$50K al mes)
+- **Demanda:** ⭐⭐⭐⭐ (crece cuando la factura de LLM de una empresa se vuelve un gasto importante)
 - **Cómo llegar:**
   1. Un ingeniero con mentalidad de negocio
   2. Publica un caso de estudio de cómo ahorraste \$X
@@ -267,7 +267,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Algoritmos HNSW, IVF
   - Elección del modelo de embeddings
   - Equilibrio entre costo y rendimiento
-- **Demanda:** ⭐⭐⭐ (especializada, un mercado más pequeño, pero bien pagada)
+- **Demanda:** ⭐⭐⭐ (especializada, un mercado más pequeño)
 - **Cómo llegar:**
   1. Una base como ingeniero de bases de datos
   2. Especialízate en una base de datos vectorial
@@ -279,7 +279,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 
 - **Qué hace:** Diseña pipelines de ML/IA de principio a fin (datos → entrenamiento → publicación → monitoreo).
 - **Habilidades clave:**
-  - Plataformas de MLOps (MLflow, Vertex AI, SageMaker)
+  - Plataformas de MLOps (MLflow, SageMaker, Gemini Enterprise Agent Platform de Google Cloud, antes Vertex AI)
   - Ingeniería de datos
   - Control de versiones de modelos
   - CI/CD para modelos
@@ -317,7 +317,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Arquitectura Transformer a fondo
   - Entrenamiento distribuido
   - Kernels de CUDA propios (nivel avanzado)
-- **Demanda:** ⭐⭐ (un nicho estrecho, pero de los mejor pagados de la industria)
+- **Demanda:** ⭐⭐ (un nicho estrecho con una barrera de entrada muy alta)
 - **Cómo llegar:**
   1. Un doctorado o experiencia equivalente en investigación
   2. Artículos publicados
@@ -329,7 +329,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 
 - **Qué hace:** Infraestructura de inferencia. Hace que los modelos corran más rápido y más barato en clústeres de GPU.
 - **Habilidades clave:**
-  - vLLM, SGLang, TGI a fondo
+  - vLLM y SGLang a fondo
   - Fundamentos de CUDA
   - Optimización de memoria de GPU
   - Estrategias de procesamiento por lotes
@@ -352,7 +352,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 - **Habilidades clave:**
   - Claude/GPT para textos largos
   - Midjourney/gpt-image-2/Flux para imágenes
-  - Suno/Udio para música
+  - Suno para música
   - Runway/Kling para video
   - Coherencia con la voz de la marca
   - Adaptar contenido a varias plataformas
@@ -365,19 +365,19 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 
 ---
 
-#### 17. Compositor musical con IA (AI Music Composer, especialista en Suno/Udio)
+#### 17. Compositor musical con IA (AI Music Composer, especialista en Suno)
 
 - **Qué hace:** Genera música con herramientas de IA para uso comercial (jingles, música ambiental, bandas sonoras).
 - **Habilidades clave:**
-  - Suno (versiones actuales del modelo: mira [Lo vigente](https://aimayak.com/now/)), Udio, con prompts dominados a fondo
+  - Suno (versiones actuales del modelo: mira [Lo vigente](https://aimayak.com/now/)) y generadores parecidos, con prompts dominados a fondo
   - Fundamentos de teoría musical (para guiar a la IA)
   - Edición de audio (Logic, Ableton para la posproducción)
   - Conocimiento de derechos de autor
-- **Demanda:** ⭐⭐⭐ (en crecimiento, pero la regulación es impredecible)
+- **Demanda:** ⭐⭐⭐ (en crecimiento, pero las reglas cambian seguido: Udio, por ejemplo, desactivó la descarga de pistas tras su acuerdo de 2025 con Universal Music)
 - **Cómo llegar:**
-  1. Aprende Suno + Udio
+  1. Aprende Suno y un generador de música más
   2. Un curso intensivo de teoría musical
-  3. Vende en Pond5, AudioJungle
+  3. Antes de vender, lee la licencia de tu plan y las reglas del sitio donde vas a vender: bibliotecas de stock como Pond5 y AudioJungle no aceptan pistas generadas con IA
 - **Imagínalo así:** un escultor. El barro (lo que genera la IA) es el material. La forma (tu gusto) es el arte.
 
 ---
@@ -390,7 +390,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Storyboard (guion gráfico)
   - Posproducción (DaVinci Resolve)
   - Fundamentos de cinematografía
-- **Demanda:** ⭐⭐⭐⭐ (crecimiento explosivo en 2026)
+- **Demanda:** ⭐⭐⭐⭐ (crece rápido en 2026)
 - **Cómo llegar:**
   1. Domina 2 herramientas de video con IA
   2. Arma 10 piezas de portafolio
@@ -459,7 +459,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 
 #### 23. Creador de cómics / manga con IA (AI Comic / Manga Creator)
 
-- **Qué hace:** Produce cómics/manga con IA. Es un nicho, pero puede pagar bien en la autopublicación.
+- **Qué hace:** Produce cómics/manga con IA. Es un nicho, sobre todo en la autopublicación.
 - **Habilidades clave:**
   - Coherencia de personajes (entrenamiento de LoRA)
   - Composición de viñetas
@@ -542,7 +542,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Gestión del cambio
   - Saber usar la IA
   - Responsabilidad sobre pérdidas y ganancias (P&L)
-- **Demanda:** ⭐⭐⭐⭐ (una ola de contrataciones en empresas de la lista Fortune 500)
+- **Demanda:** ⭐⭐⭐⭐ (las empresas grandes están creando estos puestos)
 - **Imagínalo así:** un general que reforma el ejército en plena guerra.
 
 ---
@@ -555,7 +555,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Dar capacitaciones
   - Diseño de flujos de trabajo
   - Manejo de las partes interesadas
-- **Demanda:** ⭐⭐⭐⭐⭐ (el segmento de empresas medianas es la fiebre del oro)
+- **Demanda:** ⭐⭐⭐⭐⭐ (en las empresas medianas está la mayor parte de este trabajo)
 - **Imagínalo así:** un instructor de manejo para gente que siempre ha ido de copiloto.
 
 ---
@@ -581,7 +581,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Marcos de cumplimiento
   - Documentación rigurosa
   - Preparación para auditorías
-- **Demanda:** ⭐⭐⭐⭐ (la aplicación de la EU AI Act en 2026-2027)
+- **Demanda:** ⭐⭐⭐⭐ (la EU AI Act entra en aplicación por etapas hasta 2028)
 - **Imagínalo así:** un auditor de la autoridad fiscal, pero para la IA. Aburrido, pero necesario.
 
 ---
@@ -648,7 +648,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Dominio de un campo (en un área específica)
   - Pensamiento crítico
   - Un método de calificación consistente
-- **Demanda:** ⭐⭐⭐⭐ (los laboratorios de vanguardia contratan en grandes cantidades)
+- **Demanda:** ⭐⭐⭐⭐ (los laboratorios de IA y sus contratistas contratan para este trabajo)
 - **Imagínalo así:** un maestro calificando una serie interminable de exámenes.
 
 ---
@@ -672,8 +672,8 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Diseño creativo de ataques
   - Mentalidad de seguridad
   - Documentación
-  - Protocolos de red team de Anthropic/OpenAI
-- **Demanda:** ⭐⭐⭐⭐⭐ (Anthropic y OpenAI contratan a muchos)
+  - Métodos de red teaming publicados por los laboratorios de IA
+- **Demanda:** ⭐⭐⭐⭐⭐ (los laboratorios de vanguardia tienen equipos de red team propios)
 - **Imagínalo así:** un ladrón de bancos profesional al que le pagan por encontrar los huecos.
 
 ---
@@ -685,7 +685,7 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
   - Metodología de investigación
   - Análisis estadístico
   - Entender el funcionamiento interno de los LLM
-- **Demanda:** ⭐⭐⭐ (un nicho estrecho, pero bien pagado)
+- **Demanda:** ⭐⭐⭐ (un nicho estrecho)
 - **Imagínalo así:** un zoólogo que estudia una especie nueva. Solo que la especie es la IA, y la creamos sin entenderla del todo.
 
 ---
@@ -808,16 +808,16 @@ Son **los constructores de la era de la IA**. La categoría más demandada de 20
 
 ---
 
-#### 49. Desarrollador de apps para lentes inteligentes (Smart Glasses App Developer: Meta Ray-Ban, Apple Vision)
+#### 49. Desarrollador de apps para lentes inteligentes (Smart Glasses App Developer: Ray-Ban Meta, Apple Vision Pro)
 
-- **Qué hace:** Apps para lentes y visores de realidad aumentada con asistentes de IA (Meta Ray-Ban, Apple Vision Pro).
+- **Qué hace:** Apps para lentes y visores de realidad aumentada con asistentes de IA (Ray-Ban Meta, Apple Vision Pro).
 - **Habilidades clave:**
   - SDK de realidad aumentada (Meta, Apple)
   - Integración de LLM
   - UX de voz
   - Patrones de IA siempre activa
 - **Demanda:** ⭐⭐⭐ (un mercado temprano que podría despegar en 2027+)
-- **Imagínalo así:** un desarrollador de apps para iPhone en 2008. Entras temprano, y de ahí salen los grandes ganadores.
+- **Imagínalo así:** un desarrollador de apps para iPhone en 2008. La plataforma es joven, y todavía nadie sabe qué apps van a importar.
 
 ---
 
@@ -847,7 +847,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** La IA investiga, redacta borradores de contratos y resume jurisprudencia. Desaparece buena parte de la rutina.
 - **Dónde sigue la persona:** Estrategia, relación con los clientes, audiencias en tribunales, decisiones de criterio, negociación. La asesoría legal y la licencia siguen en manos del abogado.
-- **Herramientas de IA:** Harvey, CoCounsel, Lexis+AI, flujos de trabajo propios con Claude
+- **Herramientas de IA:** Harvey, CoCounsel, Lexis+ with Protégé (antes Lexis+ AI), flujos de trabajo propios con Claude
 
 ---
 
@@ -855,7 +855,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** La IA ayuda con el diagnóstico (radiología, patología), redacta notas y sugiere opciones de tratamiento.
 - **Dónde sigue la persona:** La relación con el paciente, las decisiones de criterio, los procedimientos, las decisiones éticas. El diagnóstico y la decisión sobre el tratamiento siguen en manos del médico con licencia.
-- **Herramientas de IA:** Abridge, Nuance DAX, herramientas de radiología con IA (Aidoc), herramientas propias de cada especialidad
+- **Herramientas de IA:** Abridge, Microsoft Dragon Copilot (absorbió a Nuance DAX), herramientas de radiología con IA (Aidoc), herramientas propias de cada especialidad
 
 ---
 
@@ -935,7 +935,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** La búsqueda de candidatos se automatiza. La IA hace el primer filtro. El emparejamiento se vuelve más inteligente.
 - **Dónde sigue la persona:** Construir relaciones, cerrar con los candidatos, evaluar el encaje cultural.
-- **Herramientas de IA:** Eightfold, Paradox, flujos de trabajo propios
+- **Herramientas de IA:** Eightfold, Paradox (ahora parte de Workday), flujos de trabajo propios
 
 ---
 
@@ -979,7 +979,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** La IA escribe los primeros borradores. La IA se encarga del contenido en volumen. La IA genera variantes de titulares.
 - **Dónde sigue la persona:** Voz, estrategia, edición, ganchos, gusto.
-- **Herramientas de IA:** Claude, GPT, Copy.ai, Jasper
+- **Herramientas de IA:** Claude, GPT, Jasper
 
 ---
 
@@ -1012,7 +1012,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 - **Qué cambia:** Licenciar una voz clonada. Dobles digitales. Doblajes internacionales sin volver a grabar.
 - **Dónde sigue la persona:** Actuación en vivo, trabajo frente a cámara, rango emocional real.
 - **Herramientas de IA:** licencias de ElevenLabs, servicios de dobles digitales
-- **Nota:** Los acuerdos de SAG-AFTRA (el sindicato de actores de EE. UU.) de 2023 regulan el uso de la IA
+- **Nota:** Desde 2023, los contratos colectivos de SAG-AFTRA (el sindicato de actores de EE. UU.) incluyen reglas sobre el uso de la IA
 
 ---
 
@@ -1028,7 +1028,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Los cuadros intermedios (in-betweens) se automatizan. Sincronización labial con IA. La animación de fondos se genera.
 - **Dónde sigue la persona:** Poses clave, actuación, ritmo de la historia.
-- **Herramientas de IA:** Cascadeur, ToonBoom AI, Runway
+- **Herramientas de IA:** Cascadeur, Toon Boom, Runway
 
 ---
 
@@ -1105,7 +1105,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Consultas SQL en lenguaje cotidiano. Generación de reportes. Detección de hallazgos.
 - **Dónde sigue la persona:** Hacer las preguntas correctas, el contexto del negocio, el manejo de las partes interesadas.
-- **Herramientas de IA:** Hex, Hex Magic, análisis de datos con Claude
+- **Herramientas de IA:** Hex (con su agente de IA integrado), análisis de datos con Claude
 
 ---
 
@@ -1141,7 +1141,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Diseño de menús con ayuda de la IA. Optimización nutricional. Pronósticos de inventario.
 - **Dónde sigue la persona:** Cocinar, el sabor, la creatividad, dirigir la cocina.
-- **Herramientas de IA:** flujos de trabajo propios con Claude, BlueCart AI, Toast AI
+- **Herramientas de IA:** flujos de trabajo propios con Claude, funciones de IA en software para restaurantes (pedidos, inventario, punto de venta)
 
 ---
 
@@ -1149,7 +1149,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** La IA arma programas personalizados. Análisis de la técnica a partir de video. El seguimiento del progreso se automatiza.
 - **Dónde sigue la persona:** Motivación, acompañamiento presencial, dinámica de grupo.
-- **Herramientas de IA:** Future, Tonal AI, herramientas propias
+- **Herramientas de IA:** Tonal, apps de entrenamiento como Future, herramientas propias
 
 ---
 
@@ -1165,7 +1165,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** El diagnóstico es 2 veces más rápido (la IA lee los códigos y los síntomas). Mantenimiento predictivo.
 - **Dónde sigue la persona:** La reparación física, la confianza del cliente, los casos complejos.
-- **Herramientas de IA:** Bosch ESI, herramientas propias de los concesionarios
+- **Herramientas de IA:** software de diagnóstico de Bosch, herramientas propias de los concesionarios
 
 ---
 
@@ -1181,7 +1181,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Detección de fugas con sensores IoT (internet de las cosas) + IA. Diagnóstico del sistema más inteligente. Cotizaciones generadas con IA.
 - **Dónde sigue la persona:** El trabajo físico, las llamadas de emergencia.
-- **Herramientas de IA:** Flo by Moen, plataformas de plomería inteligente
+- **Herramientas de IA:** Moen Flo, plataformas de plomería inteligente
 
 ---
 
@@ -1197,7 +1197,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Explorar diseños con IA. Optimización de materiales. La planeación del corte CNC se automatiza.
 - **Dónde sigue la persona:** El oficio, los acabados, las construcciones complejas.
-- **Herramientas de IA:** Fusion 360 AI, Rhino + Grasshopper
+- **Herramientas de IA:** Autodesk Fusion, Rhino + Grasshopper
 
 ---
 
@@ -1205,7 +1205,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Automatización de pedidos. Sugerencias de diseño. Pronósticos de inventario.
 - **Dónde sigue la persona:** El arte de hacer arreglos, los eventos de los clientes, el gusto.
-- **Herramientas de IA:** Bloomerang, herramientas propias
+- **Herramientas de IA:** software para florerías, herramientas propias
 
 ---
 
@@ -1241,7 +1241,7 @@ Un trabajo existente + IA = una nueva versión de ese trabajo. No "la IA reempla
 
 - **Qué cambia:** Análisis de la postura a través de una cámara. Secuencias personalizadas con IA.
 - **Dónde sigue la persona:** Energía, presencia, ajustes con las manos.
-- **Herramientas de IA:** YogiFi, herramientas propias
+- **Herramientas de IA:** tapetes de yoga inteligentes y apps que siguen la postura, herramientas propias
 
 ---
 
@@ -1271,61 +1271,61 @@ Una lista honesta. No para asustarte: para darte una dirección práctica.
 
 - **Con qué la reemplaza la IA:** DeepL, GPT, Claude (la calidad en los pares de idiomas más comunes ya es alta)
 - **Qué pueden hacer los profesionales:** Pasar al híbrido #55, Especialista en traducción con IA (poseditar + una especialidad)
-- **Plazo:** Crítico en 2026-2027
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026-2027
 
 ### 2. Redacción de primeros borradores (contenido genérico)
 
-- **Con qué la reemplaza la IA:** Claude, GPT, Jasper, Copy.ai (suficientemente buenos para contenido SEO masivo)
+- **Con qué la reemplaza la IA:** Claude, GPT, Jasper (suficientemente buenos para contenido SEO masivo)
 - **Qué hacer:** El híbrido #67, Redactor potenciado con IA (un rol de estrategia + edición)
-- **Plazo:** Crítico en 2026
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026
 
 ### 3. Atención al cliente de nivel 1 (por chat)
 
 - **Con qué la reemplaza la IA:** Intercom Fin, Zendesk AI, Ada (resuelven una parte importante de las solicitudes rutinarias)
 - **Qué hacer:** Pasar al nivel 2/nivel 3 (casos delicados, escalamientos)
-- **Plazo:** Crítico en 2026-2027
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026-2027
 
 ### 4. Captura de datos
 
 - **Con qué la reemplaza la IA:** OCR + extracción con IA (Hyperscience, flujos de trabajo propios)
 - **Qué hacer:** Especialista en calidad de datos, diseño de flujos de trabajo con IA
-- **Plazo:** Crítico en 2026 (ya se está reduciendo rápido)
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026 (ya se está reduciendo rápido)
 
 ### 5. Contabilidad básica
 
 - **Con qué la reemplaza la IA:** Vic.ai, Botkeeper, QuickBooks AI
 - **Qué hacer:** El híbrido #53, Contador potenciado con IA (asesoría, estrategia)
-- **Plazo:** Crítico en 2027-2028
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2027-2028
 
 ### 6. Investigación legal rutinaria (asistente jurídico de nivel inicial)
 
-- **Con qué la reemplaza la IA:** Harvey, CoCounsel, Lexis+AI
+- **Con qué la reemplaza la IA:** Harvey, CoCounsel, Lexis+ with Protégé
 - **Qué hacer:** Pasar al entrenamiento de IA, a la ingeniería de prompts para despachos de abogados o a una especialidad
-- **Plazo:** Crítico en 2027
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2027
 
 ### 7. Fotografía de stock (genérica)
 
 - **Con qué la reemplaza la IA:** Midjourney, Flux, gpt-image-2 (imágenes baratas y suficientemente buenas)
 - **Qué hacer:** El híbrido #68, Fotógrafo híbrido (una especialidad, eventos, contenido exclusivo)
-- **Plazo:** Crítico en 2026
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026
 
 ### 8. Locución comercial genérica
 
 - **Con qué la reemplaza la IA:** ElevenLabs, voces propias
 - **Qué hacer:** La profesión #19, Director de voz con IA, o actuación especializada (voces premium)
-- **Plazo:** Crítico en 2026-2027
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026-2027
 
 ### 9. Diseño gráfico básico (plantillas)
 
 - **Con qué lo reemplaza la IA:** Canva AI, Figma AI, Midjourney
 - **Qué hacer:** El híbrido #66, Diseñador nativo de IA (un rol de estrategia + marca)
-- **Plazo:** Crítico en 2027
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2027
 
 ### 10. Código rutinario (boilerplate)
 
 - **Con qué lo reemplaza la IA:** Cursor, Copilot, Claude Code
 - **Qué hacer:** El híbrido #60, Ingeniero asistido por IA (arquitectura + criterio de nivel senior)
-- **Plazo:** Crítico en 2026 (el mercado para desarrolladores junior ya cambió)
+- **Plazo:** según la estimación del autor, la mayor presión llega en 2026 (el mercado para desarrolladores junior ya cambió)
 
 ---
 
@@ -1433,22 +1433,22 @@ INICIO
 
 ## <a id="salary-benchmarks"></a>💰 Referencias salariales 2026 (panorama general)
 
-Se quitaron las tablas de salarios y los multiplicadores regionales: no se verificaron con fuentes primarias, y las cifras dependen mucho del país y la ciudad, la empresa, el nivel de la persona y qué tan bien negocie. Para cifras actuales de tu puesto y tu zona, revisa bolsas de trabajo y encuestas salariales, no esta guía.
+Se quitaron las tablas de salarios y los multiplicadores regionales: no se verificaron con fuentes primarias, y las cifras dependen mucho del país y la ciudad, la empresa, el nivel de la persona y qué tan bien negocie. Para cifras actuales de tu puesto y tu zona, revisa las estadísticas laborales oficiales de tu país, bolsas de trabajo y encuestas salariales, no esta guía.
 
 ---
 
-## <a id="top-10"></a>⭐ Las 10 profesiones emergentes principales 2026-2030 (alta demanda)
+## <a id="top-10"></a>⭐ Las 10 profesiones emergentes principales 2026-2030 (estimación del autor)
 
 1. **Ingeniero de aplicaciones de IA (AI Application Engineer)**: la principal profesión nueva de esta era
 2. **Arquitecto de agentes de IA (AI Agent Architect)**: el auge de los sistemas multiagente
-3. **Seguridad de IA / Red Team (AI Safety / Red Team)**: los laboratorios de vanguardia contratan en grandes cantidades
+3. **Seguridad de IA / Red Team (AI Safety / Red Team)**: los laboratorios de vanguardia tienen equipos dedicados
 4. **Ingeniero de prompts (Prompt Engineer)** (todavía fuerte en el nivel junior): es fácil entrar
-5. **Desarrollador de agentes de voz con IA (AI Voice Agent Developer)**: el mercado de Vapi/Bland.ai está explotando
-6. **Abogado potenciado con IA (AI-Augmented Lawyer)**: Harvey + programación → un cambio masivo de rol
-7. **Especialista en adopción de IA (AI Adoption Specialist)** (grandes empresas): las empresas de la lista Fortune 500 están en modo pánico
+5. **Desarrollador de agentes de voz con IA (AI Voice Agent Developer)**: hay demanda de agentes telefónicos hechos con plataformas como Vapi y Bland
+6. **Abogado potenciado con IA (AI-Augmented Lawyer)**: herramientas como Harvey están cambiando el trabajo del día a día
+7. **Especialista en adopción de IA (AI Adoption Specialist)** (grandes empresas): las grandes empresas necesitan ayuda para poner la IA en marcha
 8. **Productor de contenido con IA (AI Content Producer)**: una economía de contenido nativa de IA
 9. **Ingeniero de optimización de costos de IA (AI Cost Optimization Engineer)**: las empresas ya vieron sus facturas
-10. **Responsable de ética / cumplimiento de IA (AI Ethics / Compliance Officer)**: la aplicación de la EU AI Act
+10. **Responsable de ética / cumplimiento de IA (AI Ethics / Compliance Officer)**: la EU AI Act entra en aplicación por etapas
 
 ---
 
@@ -1470,10 +1470,10 @@ Después de leer esta guía:
 
 ## 🎬 Consejos prácticos de este curso
 
-1. **No estudies "IA"; estudia a fondo una herramienta concreta.** Domina Claude Code → es más fácil aprender Cursor → es más fácil aprender lo que venga después.
+1. **No estudies "IA"; estudia a fondo una herramienta concreta.** Domina una herramienta (Claude, por ejemplo) → la segunda te cuesta menos → y la siguiente también.
 2. **Construye, no solo aprendas.** Un proyecto en producción vale más que 10 cursos.
 3. **Especialidad + IA.** Un ingeniero de IA genérico se vuelve intercambiable. Un ingeniero de IA que además sabe de salud, derecho o finanzas tiene un foso de protección.
-4. **Haz contactos en la comunidad de IA.** X (antes Twitter), Hacker News, el AI Engineering Summit.
+4. **Haz contactos en la comunidad de IA.** X (antes Twitter), Hacker News, las conferencias de AI Engineer.
 5. **No persigas el salario más alto.** Elige una profesión con demanda duradera para 5-10 años (Sección A1, A3.26, A3.27, B1).
 
 ---
@@ -1515,6 +1515,7 @@ Para ver qué lecciones importan para una profesión específica, revisa la pág
 🔥 **El bosque está cambiando. Algunos árboles caen, brotan semillas y salen retoños nuevos de los tocones viejos. Elige tu lugar en el nuevo bosque.**
 
 ---
+
 ## 🆕 AMPLIACIÓN V2.0: 200 profesiones + un pronóstico hasta 2030
 
 > **Agregado:** 2026-05-11. Versión 2.0.
@@ -1559,9 +1560,9 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
   - Protocolos de seguridad cerca de personas
   - ML básico (una intuición de cómo funciona el RLHF)
   - Solución de fallas en mecatrónica
-- **Demanda:** ⭐⭐⭐⭐ (Tesla Optimus y Figure apuntan a un despliegue más amplio en 2026-2027)
+- **Demanda:** ⭐⭐⭐⭐ (varios fabricantes anunciaron planes de un despliegue más amplio; toma las fechas como planes, no como hechos)
 - **Cómo llegar:**
-  1. Un bootcamp en una de las empresas de robots (Figure, Agility)
+  1. Un puesto inicial de operador o técnico en una empresa de robótica (Figure, Agility y otras)
   2. Arma un equipo de teleoperación en tu garaje + graba un conjunto de datos
   3. Una contribución de código abierto al framework LeRobot
 - **Imagínalo así:** un titiritero del siglo XXI. La marioneta aprende sola; tu trabajo es mostrarle los primeros 1,000 movimientos.
@@ -1588,14 +1589,14 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
 
 #### 53. Desarrollador de apps para lentes inteligentes (Smart Glasses Application Developer)
 
-- **Qué hace:** Crea apps para Meta Ray-Ban, Apple Vision y Snap Spectacles, además de capas de IA en tiempo real sobre lo que ves.
+- **Qué hace:** Crea apps para Ray-Ban Meta, Apple Vision Pro y Snap Specs, además de capas de IA en tiempo real sobre lo que ves.
 - **Habilidades clave:**
   - SDK de AR/VR (Meta SDK, ARKit, WebXR)
   - Visión por computadora (detección de objetos, OCR)
   - UX centrada en la voz (no hay teclado)
   - Presupuestos de latencia (<100ms es crítico)
   - Diseño para la privacidad (la cámara siempre está lista)
-- **Demanda:** ⭐⭐⭐⭐ (los lentes Ray-Ban de Meta se venden bien; Apple Vision apenas empieza)
+- **Demanda:** ⭐⭐⭐⭐ (un mercado temprano: varios fabricantes ya venden lentes con IA, y las plataformas de apps son jóvenes)
 - **Cómo llegar:**
   1. Una base en desarrollo móvil (iOS/Android)
   2. Un portafolio de AR (3 apps en producción)
@@ -1613,7 +1614,7 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
   - ML en el dispositivo (TinyML, cuantización)
   - Procesamiento de audio siempre activo
   - Fusión de sensores (micrófono + acelerómetro + GPS)
-- **Demanda:** ⭐⭐⭐ (la categoría todavía se está formando, y fracasos tempranos como el Humane AI Pin volvieron cautelosa a la gente)
+- **Demanda:** ⭐⭐⭐ (la categoría todavía se está formando: Humane, que hizo uno de los primeros pines de IA, vendió su tecnología a HP en 2025)
 - **Cómo llegar:**
   1. Una base en sistemas embebidos
   2. Una certificación en ML en el dispositivo
@@ -1631,7 +1632,7 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
   - Aprendizaje por refuerzo
   - Simulación (CARLA, el Waymo Open Dataset)
   - Ingeniería de casos de seguridad (safety case)
-- **Demanda:** ⭐⭐⭐⭐ (Waymo se expande, Tesla cambia de rumbo, Wayve consigue inversión)
+- **Demanda:** ⭐⭐⭐⭐ (concentrada en unas pocas empresas con mucho financiamiento, como Waymo, Tesla y Wayve)
 - **Cómo llegar:**
   1. Una carrera en computación + una especialización en ML
   2. Un doctorado en robótica (opcional, pero ayuda para puestos de investigación)
@@ -1685,7 +1686,7 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
   - ML con datos neuronales
   - Biocompatibilidad y regulación médica (FDA)
   - C/C++ para decodificadores en tiempo real
-- **Demanda:** ⭐⭐ (estrecha: 5-10 empresas en todo el mundo, pero podría despegar pronto)
+- **Demanda:** ⭐⭐ (estrecha: un puñado de empresas en todo el mundo, aunque el campo está creciendo)
 - **Cómo llegar:**
   1. Un doctorado en neurociencia o ingeniería eléctrica
   2. Un posdoctorado en un laboratorio de BCI
@@ -1701,7 +1702,7 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
   - Sistemas de visión industrial (Cognex, Keyence)
   - Programación de PLC
   - ML para mantenimiento predictivo
-  - Diseño generativo (Autodesk Fusion AI)
+  - Diseño generativo (Autodesk Fusion)
   - Nociones de Lean / Six Sigma
 - **Demanda:** ⭐⭐⭐⭐ (Industria 4.0 + la ola de relocalización de la producción)
 - **Cómo llegar:**
@@ -1745,7 +1746,7 @@ Son **los exploradores**. Justo en la frontera.
   - Teoría de juegos, teoría de la decisión
   - Filosofía (utilitarismo, deontología)
   - Metodología de investigación
-- **Demanda:** ⭐⭐⭐⭐⭐ (la principal categoría de investigación de la década)
+- **Demanda:** ⭐⭐⭐⭐⭐ (una de las áreas de investigación centrales de la década)
 - **Cómo llegar:**
   1. Un doctorado en ML o el programa MATS
   2. Anthropic Fellows, o postúlate directamente
@@ -1763,7 +1764,7 @@ Son **los exploradores**. Justo en la frontera.
   - Parcheo de activaciones (activation patching)
   - Autoencoders dispersos (sparse autoencoders)
   - Herramientas de visualización
-- **Demanda:** ⭐⭐⭐⭐ (un campo pequeño, pero Anthropic + Apollo Research están creciendo)
+- **Demanda:** ⭐⭐⭐⭐ (un campo pequeño, con equipos en unos pocos laboratorios)
 - **Cómo llegar:**
   1. Un doctorado en ML enfocado en interpretabilidad
   2. Replica los artículos de punta de Anthropic
@@ -1778,13 +1779,13 @@ Son **los exploradores**. Justo en la frontera.
 - **Habilidades clave:**
   - Entrenamiento distribuido (DeepSpeed, Megatron)
   - Las matemáticas de las leyes de escalamiento (Chinchilla, etc.)
-  - Presupuestos de cómputo para entrenamientos de \$100M+
+  - Presupuestos de cómputo para entrenamientos muy grandes
   - Análisis de modos de falla
   - Inferencia estadística
-- **Demanda:** ⭐⭐⭐ (5-10 puestos en todo el mundo, pero de importancia crítica)
+- **Demanda:** ⭐⭐⭐ (un puñado de lugares en todo el mundo, pero de importancia crítica)
 - **Cómo llegar:**
   1. Un doctorado en ML con experiencia en modelos grandes
-  2. Entrenamientos en la industria de \$1M+
+  2. Experiencia en la industria con entrenamientos grandes
   3. Postúlate a un laboratorio de frontera
 - **Imagínalo así:** un cartógrafo en un continente inexplorado. Cada paso cuesta millones, así que más te vale saber a dónde vas.
 
@@ -1871,7 +1872,7 @@ Son **los exploradores**. Justo en la frontera.
   - ML clásico a fondo
   - Álgebra lineal avanzada
   - Optimización consciente del hardware (IBM, IonQ)
-- **Demanda:** ⭐⭐ (estrecha: 10-20 empresas en todo el mundo, pero con futuro)
+- **Demanda:** ⭐⭐ (estrecha: pocas empresas y laboratorios nacionales; una apuesta a largo plazo)
 - **Cómo llegar:**
   1. Un doctorado en física con enfoque cuántico
   2. Un cruce hacia ML
@@ -1907,7 +1908,7 @@ Son **los exploradores**. Justo en la frontera.
   - Diseño de arquitecturas neuronales
   - Datos de fMRI / electrofisiología
   - Metodología de investigación entre disciplinas
-- **Demanda:** ⭐⭐⭐ (Numenta, BrainGate, laboratorios académicos)
+- **Demanda:** ⭐⭐⭐ (Apical Intelligence, antes Numenta; BrainGate; laboratorios académicos)
 - **Cómo llegar:**
   1. Un doctorado en neurociencia
   2. Una especialidad computacional
@@ -1926,17 +1927,17 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
 
 #### 71. Asistente de radiología con IA (AI Radiologist Assistant)
 
-- **Qué hace:** Usa IA (Aidoc, Viz.ai, Annalise) para priorizar radiografías, tomografías y resonancias magnéticas. Un humano en el circuito para las decisiones críticas.
+- **Qué hace:** Usa IA (Aidoc, Viz.ai, Harrison.ai) para priorizar radiografías, tomografías y resonancias magnéticas. Un humano en el circuito para las decisiones críticas.
 - **Habilidades clave:**
   - Bases de radiología (o ser radiólogo certificado)
   - Manejo de herramientas de IA
   - Manejo de datos DICOM
   - Integración en el flujo de trabajo clínico
   - Protocolos de seguridad del paciente
-- **Demanda:** ⭐⭐⭐⭐ (el número de productos de IA autorizados por la FDA sigue creciendo rápido)
+- **Demanda:** ⭐⭐⭐⭐ (la lista de dispositivos médicos con IA autorizados por la FDA sigue creciendo)
 - **Cómo llegar:**
   1. Un título de médico + una residencia en radiología
-  2. Alfabetización en IA + certificación en Aidoc/Viz.ai
+  2. Alfabetización en IA + capacitación en las herramientas que usa tu hospital (Aidoc, Viz.ai)
   3. Un puesto liderando la adopción en un hospital
 - **Imagínalo así:** radiólogo + IA = piloto + piloto automático. La IA revisa cada imagen; el humano toma la decisión. Trabajo más rápido, y se escapan menos cosas.
 
@@ -1951,7 +1952,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Cumplimiento de HIPAA
   - API de EHR (Epic, Oracle Health, antes Cerner)
   - ML que preserva la privacidad
-- **Demanda:** ⭐⭐⭐⭐ (todo hospital quiere aprovechar los datos de sus EHR)
+- **Demanda:** ⭐⭐⭐⭐ (los hospitales quieren aprovechar los datos de sus EHR)
 - **Cómo llegar:**
   1. Una base como ingeniero de NLP
   2. Una certificación en el dominio de la salud
@@ -2028,7 +2029,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   1. Un médico patólogo + IA, o ML + una certificación en patología
   2. Un trabajo en la industria
   3. Experiencia con herramientas aprobadas por la FDA
-- **Imagínalo así:** un microscopio con los ojos de 10,000 patólogos. Ve lo que una persona pasa por alto.
+- **Imagínalo así:** un microscopio con los ojos de 10,000 patólogos. Puede detectar lo que a un ojo cansado se le escaparía.
 
 ---
 
@@ -2077,7 +2078,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Inferencia estadística
   - Conocimiento regulatorio
   - Economía de la salud
-- **Demanda:** ⭐⭐⭐ (Deep 6 AI, Saama, Medable)
+- **Demanda:** ⭐⭐⭐ (Saama, Medable)
 - **Cómo llegar:**
   1. Una base en la industria farmacéutica o en investigación clínica
   2. Una certificación en ML / ciencia de datos
@@ -2100,7 +2101,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   1. Una maestría en salud pública (MPH) o una carrera en epidemiología
   2. Habilidades de ciencia de datos
   3. Un trabajo en el gobierno o en una organización sin fines de lucro
-- **Imagínalo así:** un vigía en la muralla de la ciudad. Ve venir una epidemia semanas antes de que estalle.
+- **Imagínalo así:** un vigía en la muralla de la ciudad. Vigila las primeras señales de un brote.
 
 ---
 
@@ -2117,7 +2118,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Diseño de evaluaciones
   - Mapeo curricular
   - Gestión del cambio en las escuelas
-- **Demanda:** ⭐⭐⭐⭐ (todos los distritos escolares andan apurados)
+- **Demanda:** ⭐⭐⭐⭐ (muchos distritos escolares todavía están definiendo cómo manejar la IA)
 - **Cómo llegar:**
   1. Una base como docente
   2. Una certificación en EdTech / alfabetización en IA
@@ -2213,7 +2214,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Microestructura del mercado
   - Frameworks de backtesting
   - Gestión de riesgos
-- **Demanda:** ⭐⭐⭐⭐⭐ (Renaissance, Two Sigma, D. E. Shaw, Citadel: todos están contratando)
+- **Demanda:** ⭐⭐⭐⭐⭐ (fondos cuantitativos como Renaissance, Two Sigma, D. E. Shaw y Citadel)
 - **Cómo llegar:**
   1. Un doctorado en matemáticas, física o computación
   2. Una pasantía en un fondo cuantitativo
@@ -2231,7 +2232,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Inferencia en tiempo real
   - Cumplimiento normativo (KYC, AML)
   - Robustez ante ataques adversarios
-- **Demanda:** ⭐⭐⭐⭐ (todo banco, procesador de pagos y fintech)
+- **Demanda:** ⭐⭐⭐⭐ (bancos, procesadores de pagos y fintechs)
 - **Cómo llegar:**
   1. Una base como ingeniero de ML
   2. Un trabajo en una fintech
@@ -2267,7 +2268,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Automatización de flujos de trabajo
   - Registros de auditoría
   - Cumplimiento en varias jurisdicciones
-- **Demanda:** ⭐⭐⭐⭐ (el cumplimiento es un cuello de botella en todos los bancos)
+- **Demanda:** ⭐⭐⭐⭐ (el cumplimiento es un cuello de botella en muchos bancos)
 - **Cómo llegar:**
   1. Experiencia en cumplimiento o en el área legal
   2. Una certificación en ingeniería
@@ -2307,7 +2308,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Estándares de contabilidad de carbono (GHG Protocol)
   - Análisis de datos satelitales
   - Modelos climáticos
-  - Marcos regulatorios ESG (CSRD, SEC)
+  - Marcos regulatorios ESG (la CSRD de la UE y las reglas de tu país)
   - Integración de datos
 - **Demanda:** ⭐⭐⭐⭐ (las reglas de reportes de sustentabilidad de la UE como la CSRD, incluso con los retrasos recientes, más la presión de los inversionistas)
 - **Cómo llegar:**
@@ -2327,7 +2328,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - IoT / cómputo en el borde
   - Análisis geoespacial
   - Métricas de sustentabilidad
-- **Demanda:** ⭐⭐⭐ (John Deere, Climate Corp, Indigo Ag, FBN)
+- **Demanda:** ⭐⭐⭐ (John Deere, Climate FieldView, Indigo Ag, FBN)
 - **Cómo llegar:**
   1. Experiencia en AgTech o agronomía
   2. Una certificación en IA / datos
@@ -2345,7 +2346,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Manejo de contextos largos
   - Precisión en las citas
   - Secreto profesional + confidencialidad
-- **Demanda:** ⭐⭐⭐⭐⭐ (Harvey + miles de startups de tecnología legal)
+- **Demanda:** ⭐⭐⭐⭐⭐ (Harvey + muchas startups de tecnología legal)
 - **Cómo llegar:**
   1. Una base como ingeniero de ML
   2. Una certificación en el dominio legal o una alianza
@@ -2381,10 +2382,10 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Bases de biomecánica
   - ML para series de tiempo
   - Visualización
-- **Demanda:** ⭐⭐⭐ (la NBA, la NFL, clubes de futbol, la F1: todos están contratando)
+- **Demanda:** ⭐⭐⭐ (la NBA, la NFL, clubes de futbol, equipos de F1)
 - **Cómo llegar:**
   1. Una base en ciencia de datos
-  2. Una certificación en analítica deportiva (SSAC)
+  2. Un curso de analítica deportiva, o un proyecto que puedas presentar en una conferencia como la MIT Sloan Sports Analytics Conference (SSAC)
   3. Un trabajo con un equipo o en medios deportivos
 - **Imagínalo así:** un entrenador con microscopio. Ve lo que una persona no puede: micropatrones en el movimiento, el cansancio, una oportunidad.
 
@@ -2403,7 +2404,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
 - **Cómo llegar:**
   1. Una base en ciberseguridad (OSCP, etc.)
   2. Una especialidad en ML
-  3. Un trabajo en la industria (CrowdStrike, Mandiant, Palo Alto)
+  3. Un trabajo en la industria (CrowdStrike, Mandiant, Palo Alto Networks)
 - **Imagínalo así:** un guía de safari que rastrea hackers. La IA te ayuda a ver las huellas en una selva de logs.
 
 ---
@@ -2439,7 +2440,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
 - **Cómo llegar:**
   1. Una base en ingeniería eléctrica de potencia
   2. Una certificación en ML
-  3. Un trabajo en una empresa de servicios eléctricos o de software para redes (el equipo de Tesla Powerwall, AutoGrid, GridX)
+  3. Un trabajo en una empresa de servicios eléctricos o de software para redes (el equipo de Tesla Powerwall, Uplight, GridX)
 - **Imagínalo así:** el director de orquesta de la red eléctrica. Equilibra millones de dispositivos cada segundo.
 
 ---
@@ -2499,7 +2500,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Manejo fluido de herramientas de IA
   - Toma de decisiones en tiempo real
   - Multitarea (vigilar a la vez a la IA y al paciente)
-- **Demanda:** ⭐⭐⭐⭐ (todos los hospitales de primer nivel lo quieren)
+- **Demanda:** ⭐⭐⭐⭐ (hay demanda en los hospitales grandes)
 - **Cómo llegar:**
   1. Título de médico + residencia quirúrgica + subespecialidad (fellowship)
   2. Una certificación en cirugía robótica
@@ -2517,10 +2518,10 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Métodos de control de calidad
   - Manejo de un flujo de trabajo de alto volumen
   - Comunicación con pacientes
-- **Demanda:** ⭐⭐⭐⭐ (faltan radiólogos, y la IA resuelve el problema del volumen)
+- **Demanda:** ⭐⭐⭐⭐ (faltan radiólogos, y la IA ayuda con la carga de trabajo)
 - **Cómo llegar:**
   1. Título de médico + residencia en radiología
-  2. Una certificación en herramientas de IA (Aidoc, Annalise.ai)
+  2. Capacitación en herramientas de IA (Aidoc, Harrison.ai)
   3. Un rol como referente de IA del hospital
 - **Imagínalo así:** ojo de halcón + IA = un radiólogo. La IA revisa cada sombra; la persona toma la decisión.
 
@@ -2576,7 +2577,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   1. Un título en odontología (DDS/DMD)
   2. Una certificación en herramientas de IA
   3. Gestión de consultorio
-- **Imagínalo así:** un dentista y un radiólogo en una sola persona. La IA encuentra lo que el ojo pasa por alto.
+- **Imagínalo así:** un dentista y un radiólogo en una sola persona. La IA puede señalar lo que al ojo se le podría escapar.
 
 ---
 
@@ -2607,7 +2608,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Flujos de trabajo de telerrehabilitación
   - Compromiso del paciente
   - Medición de resultados
-- **Demanda:** ⭐⭐⭐⭐ (Sword Health y Hinge Health se volvieron empresas grandes)
+- **Demanda:** ⭐⭐⭐⭐ (plataformas como Sword Health y Hinge Health)
 - **Cómo llegar:**
   1. Un título en fisioterapia (DPT)
   2. Formación en una plataforma de fisioterapia a distancia
@@ -2636,14 +2637,14 @@ Son **especialistas de nicho donde se cruzan las industrias**.
 
 #### 109. Optometrista + IA = Especialista en visión con IA (AI Vision Specialist)
 
-- **Qué hace:** Un optometrista + escaneos de retina con IA (Eyenuk, IDx-DR) para detectar retinopatía diabética, glaucoma y degeneración macular (AMD).
+- **Qué hace:** Un optometrista + escaneos de retina con IA (Eyenuk, LumineticsCore, antes IDx-DR) para detectar retinopatía diabética, glaucoma y degeneración macular (AMD).
 - **Habilidades clave:**
   - Una base en optometría (OD)
   - Dominio de herramientas de detección con IA
   - Educación del paciente
   - Rutas de referencia a especialistas
   - Integración con telesalud
-- **Demanda:** ⭐⭐⭐ (crecen las herramientas aprobadas por la FDA en EE. UU.; centros ópticos de Walmart y Costco)
+- **Demanda:** ⭐⭐⭐ (en EE. UU. ya se usan herramientas de detección con IA autorizadas por la FDA)
 - **Cómo llegar:**
   1. Un título en optometría (OD)
   2. Una certificación en herramientas de IA
@@ -2654,14 +2655,14 @@ Son **especialistas de nicho donde se cruzan las industrias**.
 
 #### 110. Cardiólogo + IA = Especialista en cardiología con IA (AI Cardiology Specialist)
 
-- **Qué hace:** Un cardiólogo + IA en electrocardiograma, ecocardiograma y resonancia cardiaca (Ultromics, Caption Health). Ayuda a detectar problemas del corazón antes.
+- **Qué hace:** Un cardiólogo + IA en electrocardiograma, ecocardiograma y resonancia cardiaca (Ultromics y herramientas parecidas). Ayuda a detectar problemas del corazón antes.
 - **Habilidades clave:**
   - Una base de médico + cardiología
   - Dominio de herramientas de imagen con IA
   - Integración de datos de dispositivos vestibles (Apple Watch, KardiaMobile)
   - Herramientas de IA para pacientes
   - Control de calidad
-- **Demanda:** ⭐⭐⭐⭐⭐ (las enfermedades del corazón son la causa de muerte n.º 1, y las herramientas de IA están maduras)
+- **Demanda:** ⭐⭐⭐⭐⭐ (las enfermedades cardiovasculares son la principal causa de muerte en el mundo, y las herramientas de IA para ellas están relativamente maduras)
 - **Cómo llegar:**
   1. Título de médico + subespecialidad en cardiología
   2. Una certificación en imagen con IA
@@ -2683,7 +2684,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Conciencia de los sesgos
   - Conocimiento de las libertades civiles
   - Trabajo con la comunidad
-- **Demanda:** ⭐⭐⭐ (Axon domina; la controversia sigue)
+- **Demanda:** ⭐⭐⭐ (Axon es el proveedor más conocido; el debate sobre estas herramientas sigue)
 - **Cómo llegar:**
   1. La academia de policía
   2. Una certificación en cámaras corporales con IA
@@ -2832,7 +2833,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   1. Una maestría en salud pública (MPH)
   2. Formación en ciencia de datos
   3. Un empleo en los CDC de EE. UU., la OMS o una secretaría de salud
-- **Imagínalo así:** un vigía de epidemias. La IA ve un brote días antes de que salga en las noticias.
+- **Imagínalo así:** un vigía de epidemias. La IA puede captar las señales de un brote antes de que salga en las noticias.
 
 ---
 
@@ -2885,7 +2886,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Pedagogía
   - Vinculación con la industria
   - Comunicación pública
-- **Demanda:** ⭐⭐⭐⭐ (toda universidad necesita un curso de ética de la IA)
+- **Demanda:** ⭐⭐⭐⭐ (cada vez más universidades ofrecen cursos de ética de la IA)
 - **Cómo llegar:**
   1. Un doctorado en filosofía
   2. Una especialización en ética de la IA
@@ -2961,7 +2962,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Interpretación de datos
   - Autodisciplina
   - Trabajo con entrenadores
-- **Demanda:** ⭐⭐⭐ (todo atleta de élite tiene un equipo de datos)
+- **Demanda:** ⭐⭐⭐ (los atletas de élite trabajan cada vez más con equipos de datos)
 - **Cómo llegar:**
   1. Excelencia deportiva (un camino)
   2. Dominio de los datos
@@ -3051,7 +3052,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Periodización
   - Entrenamiento específico del deporte
   - Comunicación con los atletas
-- **Demanda:** ⭐⭐⭐⭐ (todo equipo profesional)
+- **Demanda:** ⭐⭐⭐⭐ (equipos profesionales)
 - **Cómo llegar:**
   1. Un título en ciencias del ejercicio + CSCS
   2. Formación en herramientas de IA (Catapult, Whoop)
@@ -3069,7 +3070,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Biomecánica
   - Interpretación de estudios de imagen
   - Relación con los jugadores
-- **Demanda:** ⭐⭐⭐⭐ (una lesión = millones perdidos, y la IA ayuda)
+- **Demanda:** ⭐⭐⭐⭐ (las lesiones les cuestan caro a los equipos, y la IA ayuda a manejar el riesgo)
 - **Cómo llegar:**
   1. Título de médico + subespecialidad en medicina deportiva
   2. Una certificación en herramientas de IA
@@ -3163,7 +3164,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Dominio de herramientas de IA
   - Buena condición física
   - Conciencia de seguridad
-- **Demanda:** ⭐⭐⭐⭐ (la escala de Amazon, y todos los demás la siguen)
+- **Demanda:** ⭐⭐⭐⭐ (los almacenes grandes se automatizan primero, y los demás los siguen)
 - **Cómo llegar:**
   1. Conseguir empleo en un almacén
   2. Formación para trabajar con robots
@@ -3325,7 +3326,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Control estadístico de procesos
   - Lectura de especificaciones
   - Comunicación
-- **Demanda:** ⭐⭐⭐⭐ (toda fábrica)
+- **Demanda:** ⭐⭐⭐⭐ (fábricas de todo tipo)
 - **Cómo llegar:**
   1. Formación en control de calidad
   2. Una certificación en herramientas de IA
@@ -3343,7 +3344,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Gestión de proveedores
   - Manejo de excepciones
   - Análisis de datos
-- **Demanda:** ⭐⭐⭐⭐ (toda empresa que envía mercancía)
+- **Demanda:** ⭐⭐⭐⭐ (empresas que envían y transportan mercancía)
 - **Cómo llegar:**
   1. Una carrera en logística
   2. Formación en herramientas de IA
@@ -3361,12 +3362,12 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Negociación
   - Revisión de contratos
   - Análisis del gasto
-- **Demanda:** ⭐⭐⭐ (toda empresa de la lista Fortune 500)
+- **Demanda:** ⭐⭐⭐ (empresas grandes)
 - **Cómo llegar:**
   1. Una carrera en compras
   2. Formación en herramientas de IA
   3. Una especialidad (directas/indirectas, servicios)
-- **Imagínalo así:** comprador + IA = conoce el mercado mejor que los propios proveedores. Ahorra millones.
+- **Imagínalo así:** comprador + IA = conoce el mercado tan bien como los propios proveedores. Menos pagos de más.
 
 ---
 
@@ -3478,8 +3479,8 @@ Ampliamos la lista de 10 a 25: aquí van 15 más.
 
 #### 19. Repartidor de periódicos
 
-- **Qué se está reemplazando:** Suscripciones digitales, una industria impresa que se apaga.
-- **Qué sobrevive:** Ya casi no existe (un servicio heredado para lectores mayores).
+- **Qué se está reemplazando:** Suscripciones digitales, una industria impresa que se achica.
+- **Qué sobrevive:** Un servicio mucho más pequeño (se mantiene sobre todo para suscriptores de muchos años).
 - **Imagínalo así:** el chico en bicicleta a las 5 a. m. ya no está. En su lugar aparece una notificación push.
 
 ---
@@ -3767,9 +3768,9 @@ Operar infraestructura de IA en las propias instalaciones (Ollama, LM Studio, vL
 
 **Ganadores a largo plazo (estables durante el cambio hacia la IA):**
 
-- **Seguridad / ética / cumplimiento en IA**: nunca desaparece, se paga con prima
-- **Profesionales aumentados con IA** (médicos, abogados, etc. con conocimiento profundo de su área): más productividad = más ingresos
-- **Consultores de estrategia de IA**: ayudan a las empresas a adoptar la IA (toda gran empresa necesita guías)
+- **Seguridad / ética / cumplimiento en IA**: la necesidad no desaparece
+- **Profesionales aumentados con IA** (médicos, abogados, etc. con conocimiento profundo de su área): más productividad, que puede traducirse en más ingresos
+- **Consultores de estrategia de IA**: ayudan a las empresas a adoptar la IA (las grandes empresas necesitan guías)
 - **Directores creativos**: el gusto importa (la IA ejecuta, una persona decide)
 - **Ventas / relaciones**: la gente le compra a la gente (transacciones de alta confianza)
 
@@ -3785,7 +3786,7 @@ Operar infraestructura de IA en las propias instalaciones (Ollama, LM Studio, vL
 
 ## <a id="section-g"></a>🌍 Sección G: Cambios geográficos 2026-2030
 
-| Región | En crecimiento | En declive | Por qué |
+| Región | Probablemente crece | Probablemente decae | Por qué |
 |--------|---------|-----------|-----|
 | **San Francisco / Nueva York** | Seguridad de IA, investigación de frontera, IA en derecho/finanzas | Ingeniería genérica | El trabajo remoto con IA la vuelve commodity |
 | **Londres / Berlín** | Cumplimiento, regulación, ética de la IA | Menos competitivas en tecnología pura | Un polo para el cumplimiento de la Ley de IA de la UE |
@@ -3904,7 +3905,7 @@ Para 2030, la mayoría de los trabajadores del conocimiento encajará en uno de 
 
 - Trabajo profundo + algo de tiempo con clientes o pacientes
 - Aprendizaje continuo (las herramientas de IA se actualizan cada trimestre)
-- Más productividad = más ingresos (pero con riesgo de agotamiento)
+- Más productividad, que puede traducirse en más ingresos (pero con riesgo de agotamiento)
 - Muchas veces ligado a una ciudad (clientes, hospitales, juzgados)
 
 **Imagínalo así:** un atleta olímpico en su propio campo. La IA es el entrenador + la analítica + el marcador.
@@ -3960,7 +3961,7 @@ Para 2030, la mayoría de los trabajadores del conocimiento encajará en uno de 
 - **Trabajador manual + IA (Hands Worker + AI)** (Arquetipo 4): los oficios + AR (electricista, plomero). Protegido de los cambios durante años (el trabajo es físico).
 - **Educador-guía (Educator-Navigator)** (Arquetipo 5): enseña a las personas a vivir con la IA. La demanda está creciendo.
 - **Centinela del cumplimiento (Compliance Sentinel)** (Arquetipo 6): un experto en regulación. Un puesto estable y protegido.
-- **Investigador en seguridad (Safety Researcher)** (Arquetipo 7): premium, nivel máximo. Nicho estrecho, pero de alto nivel.
+- **Investigador en seguridad (Safety Researcher)** (Arquetipo 7): un rol de investigación estrecho y de alto nivel.
 
 ---
 
@@ -4005,7 +4006,7 @@ El orden es una estimación del autor (demanda, perspectivas, estabilidad a 5 a�
 
 ## <a id="salary-2030"></a>💰 Referencias salariales 2030 (por región)
 
-El pronóstico salarial por región se eliminó: no hay forma de verificarlo. Cuando planees tu carrera, apóyate en datos actuales de tu país y tu ciudad, y en tus propias conversaciones con personas del sector.
+El pronóstico salarial por región se eliminó: no hay forma de verificarlo. Cuando planees tu carrera, apóyate en datos actuales de tu país y tu ciudad (estadísticas laborales oficiales, vacantes), y en tus propias conversaciones con personas del sector.
 
 ---
 
@@ -4032,7 +4033,7 @@ Después de 200 profesiones y un pronóstico:
 - Lee esta guía completa
 - Elige 5 profesiones candidatas
 - Encuentra dónde se cruzan tu área y las herramientas de IA
-- Investiga los sueldos en **tu propia** zona (con vacantes actuales y encuestas salariales)
+- Investiga los sueldos en **tu propia** zona (con estadísticas laborales oficiales, vacantes actuales y encuestas salariales)
 
 **Días 31-60: Valida.**
 

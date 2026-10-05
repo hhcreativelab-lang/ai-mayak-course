@@ -1,14 +1,14 @@
 # Prospección en frío que sí recibe respuestas: correo, LinkedIn, video
 
-**Tiempo:** unos 30 min de lectura + 45 min de práctica
+**Tiempo:** unos 30 min de lectura + 180 min de práctica (puedes repartir la práctica en 2 o 3 días)
 
-Los números de esta lección (tasas de respuesta, volúmenes, precios de herramientas) son guías aproximadas para hacer las cuentas, no estadísticas ni una promesa de resultados. Mide los tuyos. Para ver los precios actuales de las herramientas, revisa el sitio de cada una y la sección [Herramientas](https://aimayak.com/tools/).
+Los números de esta lección (tasas de respuesta, volúmenes) son guías aproximadas para hacer las cuentas, no estadísticas ni una promesa de resultados. Mide los tuyos. Para ver los precios actuales de las herramientas, revisa el sitio de cada una y la sección [Herramientas](https://aimayak.com/tools/).
 
 ---
 
 ## Lo esencial
 
-Tienes un producto. Tu página de aterrizaje funciona. Pero tu bandeja de entrada está vacía y nadie agenda una cita en tu Calendly. Es una situación conocida para muchos fundadores independientes: el producto está listo y los clientes no aparecen.
+Tienes un servicio o un producto, y una página que lo describe. Pero tu bandeja de entrada está vacía y nadie agenda una llamada. Es una situación conocida para mucha gente que trabaja por su cuenta: todo está listo y los clientes no aparecen.
 
 La prospección en frío (escribirle a alguien que todavía no te conoce para ofrecerle algo) da miedo porque recordamos los años noventa: vendedores por teléfono que llamaban a la hora de la cena, propaganda que llenaba el buzón, "¡Compre nuestro seguro ahora mismo!". Eso no funciona en 2026, y no debería.
 
@@ -25,7 +25,7 @@ Un buen mensaje en frío se lee como si un conocido muy listo hubiera entendido 
 La mayoría de los mensajes en frío son malos porque venden **lo que haces** en lugar de **lo que la otra persona obtiene**.
 
 ❌ "Tengo un producto SaaS que automatiza reportes con analítica de IA e integración con Slack."
-✅ "La mayoría de los equipos de finanzas se pasan el viernes armando a mano el reporte semanal. Mis clientes recuperaron ese viernes."
+✅ "Muchos equipos de finanzas se pasan el viernes armando a mano el reporte semanal. Mis clientes recuperaron ese viernes."
 
 El primero habla de ti. El segundo habla de ellos. La persona que lee tu mensaje debería pensar "Ah, esa es justo mi situación", no "Ah, otra oferta de SaaS".
 
@@ -35,12 +35,12 @@ El primero habla de ti. El segundo habla de ellos. La persona que lee tu mensaje
 
 - **ICP (perfil de cliente ideal)**: un retrato preciso de la persona a la que le vendes: puesto, tamaño de la empresa, industria y un dolor concreto
 - **Tasa de respuesta**: la proporción de mensajes enviados que reciben respuesta. Entre más preciso tu ICP y tu investigación, más sube. No tenemos referencias de mercado confiables, así que mide la tuya
-- **Secuencia**: una serie de 3-4 mensajes de seguimiento después del primer contacto
+- **Secuencia**: un primer mensaje más 2 a 4 seguimientos si no hay respuesta (de 3 a 5 contactos en total)
 - **Calentamiento (warmup)**: ir "calentando" poco a poco un dominio de correo antes de enviar en volumen (si no, terminas en spam)
 - **Señal de personalización**: un dato concreto sobre el destinatario que demuestra que no estás enviando en masa
 - **CTA (llamado a la acción)**: la única petición concreta al final del mensaje, normalmente "¿una llamada de 15 minutos?"
 - **Multicanal (multi-touch)**: una serie de contactos por distintos canales (correo → LinkedIn → X, antes Twitter)
-- **Mensaje en video con Loom**: un mensaje personal corto en video (15-30 segundos) donde compartes tu pantalla y recorres su sitio web
+- **Mensaje en video con Loom**: un mensaje personal corto en video (de hasta 90 segundos) donde compartes tu pantalla y recorres su sitio web. Loom es un servicio para grabar tu pantalla y tu cámara
 
 ---
 
@@ -136,6 +136,8 @@ Saludos,
 
 ### Plantilla de mensaje directo en LinkedIn
 
+Con una cuenta gratis de LinkedIn solo puedes escribirles a tus contactos, así que primero manda una solicitud de conexión (mira la secuencia más abajo). InMail, el mensaje a alguien que no es tu contacto, solo viene con los planes de pago.
+
 ```
 Hola, [Nombre]:
 
@@ -156,6 +158,8 @@ No te quiero vender nada. De verdad tengo curiosidad de cómo lo hacen.
 - Algo útil sin condiciones: das antes de pedir
 
 ### Plantilla de mensaje directo en X (Twitter)
+
+En X no le puedes escribir a cualquiera: mucha gente tiene cerrados en su configuración los mensajes de desconocidos. Si no aparece el botón de mensaje, elige otro canal.
 
 ```
 Hola, [nombre], tu hilo sobre [tema] estuvo muy acertado.
@@ -184,7 +188,7 @@ Este es tu "arpón": 5-10 a la semana, dirigidos a tus prospectos más valiosos.
 
 **Herramienta:** Loom https://www.loom.com tiene un plan gratis con límites (mira el sitio)
 
-**Consejo:** incluye la miniatura de vista previa del video en tu primer mensaje; hace una gran diferencia en la tasa de clics (CTR). Loom genera la miniatura automáticamente.
+**Consejo:** en el mensaje con el enlace al video, di en una frase qué hay en el video y cuánto dura, para que la persona sepa por qué vale la pena abrirlo.
 
 ---
 
@@ -233,7 +237,7 @@ Empieza con un volumen que puedas sostener sin dejar de investigar de verdad: so
 
 | Herramienta | Qué hace | Precio |
 |---|---|---|
-| **Apollo** | Encuentra correos + datos de LinkedIn | mira el sitio; los precios cambian |
+| **Apollo** | Base de contactos: encuentra personas y correos, envía secuencias | mira el sitio; los precios cambian |
 | **Hunter** | Busca y verifica correos | mira el sitio (tiene plan gratis) |
 | **Lemlist** | Automatiza secuencias + pruebas A/B | mira el sitio |
 | **Clay** | Enriquecimiento de datos + personalización con IA | mira el sitio |
@@ -241,7 +245,9 @@ Empieza con un volumen que puedas sostener sin dejar de investigar de verdad: so
 | **Loom** | Mensajes en video con pantalla compartida | mira el sitio (tiene plan gratis) |
 | **LinkedIn Sales Navigator** | Mejores filtros + InMail | mira el sitio |
 
-Los precios de servicios como estos cambian seguido, así que no los ponemos aquí. Antes de comprar, suma lo que te cuesta tu conjunto de herramientas y compáralo con lo que debería dejarte (puedes hacer las cuentas con la lección [La economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md)).
+Los precios de servicios como estos cambian seguido, así que no los ponemos aquí. Antes de comprar, suma lo que te cuesta tu conjunto de herramientas y compáralo con lo que debería dejarte: ya viste cómo hacer esas cuentas en la lección [Economía unitaria en simple](d01-unit-economics-simple.md). En la biblioteca hay un recorrido más a fondo, opcional: [La economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md).
+
+Para tus primeros 50 correos basta con tu correo de siempre y la hoja de la lección anterior. Las herramientas de abajo son para cuando tu volumen crezca.
 
 **Un conjunto para empezar:**
 - Apollo para encontrar contactos
@@ -262,23 +268,25 @@ Los precios de servicios como estos cambian seguido, así que no los ponemos aqu
 
 **La regla principal:** buena parte de las respuestas no llegan con tu primer mensaje, sino con un seguimiento.
 
-### Secuencia de correo (14 días, 4 contactos)
+### Secuencia de correo (15 días, 4 contactos)
 
 ```
-Día 1: Mensaje en frío inicial
+Día 0: Mensaje en frío inicial
    ↓ (si no hay respuesta)
-Día 3: Seguimiento #1
-   "Quería asegurarme de que mi mensaje anterior no se perdiera.
-   Sin ninguna presión."
+Día 4: Seguimiento #1, otro caso u otro dolor
+   "Algo más para agregar a mi mensaje anterior: aquí hay otra situación
+   donde esto ayudó: [otro caso]. Tal vez se parece más a la tuya."
    ↓
-Día 7: Seguimiento #2
+Día 9: Seguimiento #2, algo útil
    "Te mando una cosa más que te puede servir, aunque no
    lleguemos a hablar: [enlace a un artículo o caso de éxito relevante]"
    ↓
-Día 14: Correo final de cierre
+Día 15: Correo final de cierre
    "Cierro el tema. Parece que no es el momento.
    La puerta queda abierta si algo cambia. Mucho éxito con [su proyecto]."
 ```
+
+El ritmo es el mismo de la [lección anterior](45-cold-outreach.md): de 3 a 5 días hábiles entre correos.
 
 **Por qué 4 y no 7:**
 - Demasiados seguimientos se sienten insistentes y dañan la reputación de tu dominio
@@ -314,7 +322,7 @@ Prospectar en frío sin pruebas A/B es disparar a ciegas.
 **El proceso:**
 - Prueba 2 versiones al mismo tiempo, 50 mensajes cada una
 - Espera 7 días (incluido el seguimiento #1)
-- Elige la ganadora y escribe 2 versiones nuevas
+- Elige la versión que recibió más respuestas y escribe 2 nuevas. Con 50 correos por versión, la diferencia es una pista, no una prueba
 - Repite varias rondas: tu tasa de respuesta suele subir, pero cuánto varía de persona a persona
 
 **Herramienta:** plataformas como Lemlist traen pruebas A/B integradas, así que no tienes que contar a mano
@@ -340,8 +348,8 @@ Esta puede ser tu mayor ventaja en 2026. La IA acelera mucho la prospección con
 
 **Buena práctica:** **la IA ayuda a investigar, una persona escribe.** Usa Claude para leer su perfil de LinkedIn y darte 3 datos. Luego escribe tú el mensaje, con esos datos.
 
-**Un flujo de trabajo con Claude Code:**
-Lee las páginas públicas del prospecto y de la empresa (LinkedIn no permite leer perfiles de forma automática: abre tú el perfil y pega el texto en el prompt). Ejecuta esto desde la terminal:
+**Un flujo de trabajo con Claude:**
+Abre tú el perfil del prospecto y el sitio web de la empresa, copia el texto y pégalo en el prompt (LinkedIn no permite leer perfiles de forma automática). Lo más fácil es pegar el prompt (el texto entre comillas de abajo) en un chat normal de Claude. Si ya tienes instalado Claude Code (el curso llega a él en el módulo "Tu primera creación sin código"), el mismo prompt se ejecuta desde la terminal con un solo comando:
 
 ```bash
 # Script: investigar a un prospecto → generar una frase de apertura
@@ -350,10 +358,10 @@ Extrae: tema de su publicación reciente, noticias de la empresa, responsabilida
 Sugiere 3 frases de apertura para un mensaje en frío que conecten su trabajo con [mi solución]."
 ```
 
-**Herramientas para automatizar:**
+**Herramientas para automatizar esto cuando tu volumen crezca:**
 - **Clay**: enriquecimiento de datos con IA (mira el sitio para ver precios)
-- **Un worker propio**: un programa pequeño que escribes tú; solo pagas los tokens de la API
-- **Lemlist + sintaxis Liquid**: variables en tus plantillas
+- **Un programa pequeño propio**: lo escribes tú o con Claude Code, y solo pagas el uso de la IA
+- **Lemlist + sintaxis Liquid**: variables en tus plantillas (ponen el nombre, la empresa y otros datos)
 
 ---
 
@@ -395,27 +403,33 @@ La prospección en frío no está prohibida, pero sí está regulada. No conocer
 - Antes de escribirle a alguien en otro país, revisa también las reglas de ese país
 
 **CAN-SPAM (Estados Unidos), en términos generales:**
-- Incluye una dirección postal física en el pie del correo
-- Usa un asunto honesto (nada de "Re: nuestra conversación" cuando no hubo ninguna conversación)
-- Haz fácil darse de baja (un enlace para cancelar la suscripción o instrucciones claras)
-- Atiende las solicitudes de baja en un plazo de 10 días hábiles
+- La ley también cubre el correo entre empresas (B2B), no solo el correo a consumidores
+- No engañes: nombre y dirección del remitente honestos, y un asunto que corresponda al contenido (nada de "Re: nuestra conversación" cuando no hubo ninguna conversación)
+- Deja claro que el mensaje es una oferta comercial
+- Incluye tu dirección postal física válida (también sirve un apartado postal registrado en el servicio de correos)
+- Haz fácil darse de baja (un enlace o instrucciones claras) y atiende las solicitudes de baja en un plazo de 10 días hábiles
+- La guía oficial para negocios: [ftc.gov](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) (en inglés)
 
-**RGPD/GDPR (Unión Europea):**
-- La base legal para el correo en frío B2B depende del país y de la situación (muchas veces es el "interés legítimo", pero no en todas partes)
-- Responde rápido a las solicitudes de baja y de borrado de datos, dentro de los plazos legales
-- Seudonimiza los datos personales en tu CRM (guarda códigos en lugar de nombres cuando puedas)
-- No uses correos personales de consumidores (el correo en frío B2C es una zona gris)
+**Unión Europea (RGPD/GDPR y las reglas europeas sobre mensajes comerciales):**
+- No puedes mandar correos comerciales a personas particulares sin su consentimiento previo (la excepción: tus propios clientes, cuando les ofreces servicios parecidos)
+- Para el correo a empresas, las reglas dependen del país: en algunos basta el "interés legítimo"; en otros también hace falta consentimiento
+- Si alguien te pide que no le escribas más, deja de hacerlo de inmediato. Responde las solicitudes sobre sus datos (verlos, borrarlos) en un plazo máximo de un mes
+- Guarda solo los datos personales que de verdad necesitas, y cuídalos
+- La página oficial de la UE para empresas: [europa.eu](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_es.htm)
 
 **Canadá (CASL):**
-- Los mensajes comerciales normalmente requieren consentimiento (expreso, o implícito bajo ciertas condiciones) y una opción de baja que funcione
-- Si escribes a Canadá o desde Canadá, revisa el texto vigente de la ley
+- Necesitas el consentimiento del destinatario: expreso, o implícito (la ley detalla las condiciones y los plazos del consentimiento implícito)
+- El mensaje tiene que mostrar quién eres y cómo contactarte: tu nombre o el de tu negocio, una dirección postal, y un teléfono, correo o sitio web
+- Necesitas una opción de baja que funcione, y las solicitudes de baja se atienden en un plazo de 10 días hábiles
+- La ley aplica a los mensajes que se envían desde Canadá o se leen en Canadá. La página oficial: [canada.ca](https://ised-isde.canada.ca/site/canada-anti-spam-legislation/en) (en inglés y francés)
 
 **Otros países:**
-- Muchos países tienen sus propias leyes de datos personales. Un correo de trabajo con el nombre de un empleado también puede contar como dato personal; consúltalo con un abogado
+- Muchos países tienen sus propias leyes de datos personales y de publicidad. Un correo de trabajo con el nombre de un empleado también puede contar como dato personal; consúltalo con un abogado
+- Las llamadas, los SMS y las apps de mensajería muchas veces tienen reglas aparte: revísalas antes de tu primera llamada
 
 **Los términos de servicio de LinkedIn:**
 - LinkedIn limita cuántas invitaciones y mensajes puedes enviar; los límites exactos no se publican y cambian
-- Restringen las cuentas por actividad masiva: mantén un volumen pequeño y hazlo a mano, sin automatizar el navegador
+- Restringen las cuentas por actividad masiva: mantén un volumen pequeño y hazlo a mano. Los programas que envían mensajes por ti o copian datos de los perfiles están prohibidos por las Condiciones de uso
 - Sales Navigator te da más margen, pero no ilimitado
 
 **La regla práctica:**
@@ -468,7 +482,7 @@ Esto no es asesoría legal: las leyes cambian, así que antes de enviar nada, re
 - [ ] Herramientas elegidas y configuradas (como mínimo: una forma de encontrar contactos y una de enviar secuencias)
 - [ ] Meta de volumen semanal fijada (50-200 mensajes)
 - [ ] Secuencia (4 contactos) lista
-- [ ] Dominio calentado (con Smartlead: 2 semanas de calentamiento antes de subir el volumen)
+- [ ] Dominio calentado, si envías con una plataforma de prospección (Smartlead, por ejemplo, recomienda al menos 2 semanas de calentamiento, y más para un dominio nuevo)
 - [ ] Calendly o algo equivalente para agendar llamadas
 - [ ] Hoja de seguimiento: enviados / respondidos / llamada agendada / cerrados
 - [ ] Listo para ajustar durante las primeras 2 semanas según tus resultados A/B
@@ -481,15 +495,14 @@ Si marcaste las 10, empieza. Si son menos de 7, cierra los huecos que faltan ant
 
 ### Paso 1: Encuentra tus primeros 20 prospectos (1 hora)
 
-```bash
-# Abre Apollo (o LinkedIn Sales Navigator, si tienes acceso)
-# Filtros:
-#   - Industria: la industria de tu ICP
-#   - Tamaño de la empresa: 10-50 empleados (para empezar)
-#   - Puesto: tu persona objetivo (p. ej. "Head of Operations" o gerente de operaciones)
-#   - Ubicación: tu zona objetivo (un país, un estado o una zona metropolitana)
-# Exporta 50 contactos a un archivo CSV
-```
+Abre Apollo (o LinkedIn Sales Navigator, si tienes acceso) y pon estos filtros. La interfaz de Apollo está en inglés:
+
+- **Industry & Keywords** (industria): la industria de tu ICP
+- **# of Employees** (número de empleados): de 10 a 50 para empezar
+- **Job Titles** (puesto): la persona a la que le escribes (por ejemplo, "Head of Operations" o gerente de operaciones)
+- **Location** (ubicación): tu zona objetivo (un país, un estado o una ciudad)
+
+Pasa 20 contactos a tu propia hoja. Exportar a un archivo y el número de contactos que puedes sacar dependen de tu plan de Apollo (mira la página de precios en su sitio); tus primeros 20 también los puedes copiar a mano.
 
 Arma una tabla:
 ```
@@ -513,13 +526,13 @@ Usa una plantilla de esta lección. Para cada mensaje:
 ### Paso 4: Envía (15 min)
 
 - 5 mensajes el primer día
-- Seguimiento #1 tres días después
+- Seguimiento #1 cuatro días después
 - Registra todo en tu hoja
 
 ### Paso 5: Ajusta (una semana después)
 
 - ¿Cuántas respuestas de 5?
-- ¿Qué funcionó en los mensajes que se abrieron?
+- ¿Qué mensajes recibieron respuesta y qué tenían en común?
 - Ajusta tu plantilla y vuelve a empezar
 
 **Meta para tu primer mes:** envía 50 mensajes personalizados y anota qué funcionó. Los resultados dependen de tu nicho y de tu trabajo. Esta es tu base.
@@ -528,12 +541,12 @@ Usa una plantilla de esta lección. Para cada mensaje:
 
 ## Herramientas y recursos
 
-- **[Apollo](https://www.apollo.io)**: busca correos + datos de LinkedIn + secuencias
+- **[Apollo](https://www.apollo.io)**: una base de contactos: encuentra personas y correos, envía secuencias
 - **[Lemlist](https://lemlist.com)**: secuencias de correo en frío, pruebas A/B, calentamiento
 - **[Loom](https://www.loom.com)**: mensajes en video con pantalla compartida (tiene plan gratis)
 - **[Smartlead](https://www.smartlead.ai)**: correo en frío + calentamiento automático del dominio
 - **[Clay](https://www.clay.com)**: enriquecimiento de datos y personalización con IA
-- **[LinkedIn Sales Navigator](https://business.linkedin.com/sales-solutions/sales-navigator)**: filtros avanzados + InMail
+- **[LinkedIn Sales Navigator](https://business.linkedin.com/sales-solutions/sales-navigator)**: filtros avanzados + InMail (mensajes de pago a personas que no son tus contactos)
 - **[Hunter](https://hunter.io)**: busca y verifica correos (el plan gratis incluye 50 créditos al mes, a octubre de 2026)
 - **[Calendly](https://calendly.com)**: para agendar llamadas (tiene plan gratis)
 
@@ -555,13 +568,15 @@ Los precios de estos servicios cambian: revisa sus sitios web.
 
 ## Lecciones relacionadas
 
-- [Tus primeros clientes](38-monetization-clients.md): la base para prospectar
+- [Tus primeros clientes](38-monetization-clients.md): la base: primero los contactos cercanos
 - [Cómo elegir un nicho](38b-niche-selection-methodology.md): definir tu nicho y tu ICP
-- [Sistema de generación de prospectos](39-lead-generation.md): de dónde salen tus prospectos
-- [IA para el correo](73-ai-email-communications.md): automatizar el correo con IA (avanzado)
+- [Sistema de generación de prospectos](39-lead-generation.md): una lección opcional de la biblioteca sobre cómo armar una lista de contactos de forma automática
+- [IA para el correo](73-ai-email-communications.md): la lección que ya tomaste sobre el correo y los borradores
 
 ---
 
 ## Siguiente lección
 
-→ [Imanes de prospectos que convierten](39d-lead-magnets-funnels.md)
+→ [Cómo manejar las objeciones y cerrar el trato](45b-closing-objections.md)
+
+Cómo juntar prospectos con un material gratis y útil lo vemos en el siguiente módulo: [Imanes de prospectos](39d-lead-magnets-funnels.md).

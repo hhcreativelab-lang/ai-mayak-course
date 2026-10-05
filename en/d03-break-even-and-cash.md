@@ -179,6 +179,8 @@ Recalculate at least one row by hand: AI sometimes makes mistakes with running t
 
 ## Next lesson
 
-→ **[What AI tools really cost and how to stop overpaying](d04-ai-stack-costs.md)**: how to add up your AI costs and stop paying for what you don't need.
+→ **[Packaging your services](42-packaging.md)**: how to turn your service into two or three clear options with a price.
 
-To go deeper: [Unit economics of an AI stack](99b-unit-economics-deep.md) (a full financial model of an AI business).
+You already added up your AI subscriptions in [What AI tools really cost and how to stop overpaying](d04-ai-stack-costs.md): take that total for your fixed-costs line.
+
+To go deeper (an optional library lesson): [Unit economics of an AI stack](99b-unit-economics-deep.md) (a full financial model of an AI business).

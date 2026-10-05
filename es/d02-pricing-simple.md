@@ -90,7 +90,7 @@ Un solo precio pone al cliente ante una decisión de "sí o no". Tres paquetes l
 | Estándar | 20 publicaciones, un plan mensual, respuestas a comentarios frecuentes | $300 |
 | Premium | 20 publicaciones, respuestas, un informe mensual, 4 videos cortos | $480 |
 
-El paquete Básico sigue por encima del mínimo. El Premium incluye más trabajo, así que su mínimo también es más alto; revísalo por separado. Cuando los clientes ven tres opciones, muchos eligen la de en medio. Más sobre paquetes: [Convertir automatizaciones en productos](42-packaging.md).
+El paquete Básico sigue por encima del mínimo. El Premium incluye más trabajo, así que su mínimo también es más alto; revísalo por separado. Cuando los clientes ven tres opciones, muchos eligen la de en medio. Más sobre paquetes más adelante en el curso: [la lección sobre cómo empaquetar tus servicios](42-packaging.md).
 
 ### Por qué no cobrar por hora
 
@@ -174,4 +174,4 @@ Muéstrame dónde están débiles mis cuentas. No inventes nuevos precios de mer
 
 → **[Punto de equilibrio y flujo de efectivo](d03-break-even-and-cash.md)**: cuántos clientes necesitas para cubrir tus costos, y por qué la ganancia en papel no es lo mismo que el dinero en tu cuenta.
 
-Para profundizar en precios: [Precios basados en valor](39-monetization-pricing.md) (poner precio a partir del valor que creas) y [Ponerle precio a un producto de IA](39e-pricing-strategy-deep.md) (planes y niveles para productos de IA).
+Más adelante en el curso, el tema de precios sigue con [Precios basados en valor](39-monetization-pricing.md) (poner precio a partir del valor que creas) y [Ponerle precio a un producto de IA](39e-pricing-strategy-deep.md) (planes y niveles para productos de IA).

@@ -1,16 +1,16 @@
 # Cold outreach that gets replies: email, LinkedIn, video
 
-**Time:** about 30 min reading + 45 min practice
+**Time:** about 30 min reading + 180 min practice (you can spread the practice over 2–3 days)
 
-The numbers in this lesson (reply rates, volumes, tool prices) are rough guides for doing the math, not statistics and not a promise of results. Measure your own. For current tool prices, check each tool's website and the [Tools](https://aimayak.com/en/tools/) section.
+The numbers in this lesson (reply rates, volumes) are rough guides for doing the math, not statistics and not a promise of results. Measure your own. For current tool prices, check each tool's website and the [Tools](https://aimayak.com/en/tools/) section.
 
 ---
 
 ## The gist
 
-You have a product. Your landing page works. But your inbox is empty and nobody is booking time on your Calendly. It's a familiar spot for a lot of indie founders: the product is ready, and the customers aren't there.
+You have a service or a product, and a page that describes it. But your inbox is empty and nobody is booking a call. It's a familiar spot for a lot of freelancers and solo founders: everything is ready, and the customers aren't there.
 
-Cold outreach feels scary because we remember the 1990s: telemarketers calling at dinnertime, junk mail stuffing the mailbox, "Buy our insurance right now!" That doesn't work in 2026, and it shouldn't.
+Cold outreach (writing to people who don't know you yet) feels scary because we remember the 1990s: telemarketers calling at dinnertime, junk mail stuffing the mailbox, "Buy our insurance right now!" That doesn't work in 2026, and it shouldn't.
 
 Modern cold outreach is a **tactful introduction between two people who don't know each other yet**. You don't write "buy from me." You write "I think I understand your problem, I have a solution for it, would you like to take a look?" It isn't knocking on doors. It's a note that lands on the right desk on the right day.
 
@@ -25,7 +25,7 @@ A good cold message reads as if a sharp acquaintance happened to understand exac
 Most cold messages are bad because they sell **what you do** instead of **what the other person gets**.
 
 ❌ "I have a SaaS product that automates reports with AI analytics and a Slack integration."
-✅ "Most finance teams spend Friday pulling the weekly report together by hand. My clients got that Friday back."
+✅ "Many finance teams spend Friday pulling the weekly report together by hand. My clients got that Friday back."
 
 The first one is about you. The second is about them. The person reading your message should think, "Oh, that's exactly my situation," not "Oh, another SaaS pitch."
 
@@ -35,12 +35,12 @@ The first one is about you. The second is about them. The person reading your me
 
 - **ICP (ideal customer profile)**: a precise picture of the person you sell to: job title, company size, industry and a specific pain
 - **Reply rate**: the share of messages you send that get a reply. The sharper your ICP and research, the higher it goes. We don't have reliable market benchmarks, so measure your own
-- **Sequence**: a series of 3-4 follow-up messages after the first touch
+- **Sequence**: a first message plus 2 to 4 follow-ups if there's no reply (3 to 5 touches in all)
 - **Warmup**: gradually warming up an email domain before you send at volume (otherwise you end up in spam)
 - **Personalization signal**: a specific fact about the recipient that proves you're not sending in bulk
 - **CTA (call to action)**: the one specific ask at the end of the message, usually "15-minute call?"
 - **Multi-touch**: a series of touches across different channels (email → LinkedIn → X, formerly Twitter)
-- **Loom DM**: a short personal video message (15-30 seconds) where you share your screen and walk through their website
+- **Loom DM**: a short personal video message (up to 90 seconds) where you share your screen and walk through their website. Loom is a screen-and-camera recording service; DM stands for direct message
 
 ---
 
@@ -136,6 +136,8 @@ Not the right fit? Just reply "no thanks" and I won't follow up.
 
 ### LinkedIn DM template
 
+On a free LinkedIn account you can only message people you're already connected with, so send a connection request first (see the sequence below). InMail, a message to someone outside your connections, comes only with paid plans.
+
 ```
 Hi [Name],
 
@@ -156,6 +158,8 @@ No pitch here. I'm genuinely curious how you do it.
 - A value-add with no strings attached: you give before you ask
 
 ### X (Twitter) DM template
+
+You can't DM everyone on X: many people keep messages from strangers turned off in their settings. If there's no message button, pick another channel.
 
 ```
 Hey [name], your thread on [topic] was spot on.
@@ -184,7 +188,7 @@ This is your "spear": 5-10 a week, aimed at your most valuable prospects.
 
 **Tool:** Loom https://www.loom.com has a free plan with limits (see the site)
 
-**Tip:** include the video's preview thumbnail in your first message; it makes a big difference to the click-through rate (CTR). Loom generates the thumbnail automatically.
+**Tip:** in the message with the video link, say in one sentence what's in the video and how long it is, so the person knows why it's worth opening.
 
 ---
 
@@ -233,7 +237,7 @@ Start with a volume you can keep up while still doing real research: that's a fe
 
 | Tool | What it does | Price |
 |---|---|---|
-| **Apollo** | Finds emails + LinkedIn data | see the site; prices change |
+| **Apollo** | Contact database: finds people and email addresses, sends sequences | see the site; prices change |
 | **Hunter** | Email finder + verifier | see the site (has a free plan) |
 | **Lemlist** | Sequence automation + A/B tests | see the site |
 | **Clay** | Data enrichment + AI personalization | see the site |
@@ -241,7 +245,9 @@ Start with a volume you can keep up while still doing real research: that's a fe
 | **Loom** | Video DMs with screen share | see the site (has a free plan) |
 | **LinkedIn Sales Navigator** | Better filtering + InMail | see the site |
 
-Prices for services like these change often, so they aren't listed here. Before you buy, add up what your stack costs and compare it with what it should bring in (you can run the numbers with the lesson [The unit economics of an AI stack](99b-unit-economics-deep.md)).
+Prices for services like these change often, so they aren't listed here. Before you buy, add up what your stack costs and compare it with what it should bring in: you already saw how to run those numbers in the lesson [Unit economics made simple](d01-unit-economics-simple.md). A deeper, optional walkthrough is in the library: [The unit economics of an AI stack](99b-unit-economics-deep.md).
+
+For your first 50 emails, your regular email and the spreadsheet from the previous lesson are enough. The tools below are for when your volume grows.
 
 **A starter stack:**
 - Apollo to find contacts
@@ -262,23 +268,25 @@ Prices for services like these change often, so they aren't listed here. Before 
 
 **The main rule:** a good share of replies come not from your first message but from a follow-up.
 
-### Email sequence (14 days, 4 touches)
+### Email sequence (15 days, 4 touches)
 
 ```
-Day 1: Initial cold message
+Day 0: Initial cold message
    ↓ (if no reply)
-Day 3: Follow-up #1
-   "Wanted to make sure my last note didn't get buried.
-   No pressure at all."
+Day 4: Follow-up #1, a different case or a different pain point
+   "One more thing to add to my last note: here's another situation
+   where this helped: [another case]. It may be closer to yours."
    ↓
-Day 7: Follow-up #2
+Day 9: Follow-up #2, something useful
    "Sending one more thing that might help, whether or not
    we end up talking: [link to relevant article/case study]"
    ↓
-Day 14: Final break-up email
+Day 15: Final break-up email
    "Closing the loop. Sounds like it's not the right time.
    The door's open if anything changes. Best of luck with [their project]."
 ```
+
+The rhythm is the same as in the [previous lesson](45-cold-outreach.md): 3 to 5 business days between emails.
 
 **Why 4, not 7:**
 - Too many follow-ups come across as pushy and hurt your domain's reputation
@@ -314,7 +322,7 @@ Cold outreach without A/B testing is shooting in the dark.
 **The process:**
 - Test 2 versions at the same time, 50 messages each
 - Wait 7 days (including follow-up #1)
-- Pick the winner and write 2 new versions
+- Pick the version that got more replies and write 2 new ones. With 50 emails per version, the difference is a hint, not proof
 - Repeat for several rounds: your reply rate usually goes up, but how much varies from person to person
 
 **Tool:** platforms like Lemlist have built-in A/B testing, so you don't have to count by hand
@@ -340,8 +348,8 @@ This can be your biggest edge in 2026. AI speeds up researched outreach a lot wi
 
 **Best practice:** **AI helps with the research, a person writes.** Use Claude to read their LinkedIn profile and give you 3 facts. Then you write the message yourself, using those facts.
 
-**A workflow with Claude Code:**
-Read the prospect's and the company's public pages (LinkedIn doesn't allow profiles to be read automatically: open the profile yourself and paste the text into the prompt). Run this from the terminal:
+**A workflow with Claude:**
+Open the prospect's profile and the company website yourself, copy the text and paste it into the prompt (LinkedIn doesn't allow profiles to be read automatically). The easiest way is to paste the prompt (the text in quotes below) into a regular Claude chat. If you already have Claude Code installed (the course gets to it in the "Your first build without code" module), the same prompt runs from the terminal as one command:
 
 ```bash
 # Script: research a prospect → generate an opening line
@@ -350,10 +358,10 @@ Extract: recent post topic, company news, role responsibilities.
 Suggest 3 opening lines for cold outreach connecting their work to [my solution]."
 ```
 
-**Tools for automation:**
+**Tools for automating this once your volume grows:**
 - **Clay**: AI data enrichment (see the site for pricing)
-- **A custom worker**: a small program you write yourself; you pay only for API tokens
-- **Lemlist + Liquid syntax**: variables in your templates
+- **A small program of your own**: you write it yourself or with Claude Code, and pay only for the AI usage
+- **Lemlist + Liquid syntax**: variables in your templates (they fill in the name, company and other details)
 
 ---
 
@@ -390,27 +398,33 @@ Suggest 3 opening lines for cold outreach connecting their work to [my solution]
 Cold outreach isn't banned, but it is regulated. Not knowing the rules doesn't get you off the hook.
 
 **CAN-SPAM (United States), in general terms:**
-- Include a physical mailing address in the email footer
-- Use an honest subject line (no "Re: our conversation" when there was no conversation)
-- Make opting out easy (an unsubscribe link or clear instructions)
-- Honor opt-out requests within 10 business days
+- The law covers business-to-business email too, not only email to consumers
+- Don't mislead: honest "From" name and address, and a subject line that matches the content (no "Re: our conversation" when there was no conversation)
+- Make it clear that the message is a commercial offer
+- Include your valid physical mailing address (a P.O. box registered with the Postal Service counts)
+- Make opting out easy (an unsubscribe link or clear instructions) and honor opt-out requests within 10 business days
+- The official guide for businesses: [ftc.gov](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 
-**GDPR (European Union):**
-- The legal basis for B2B cold email depends on the country and the situation (often it's "legitimate interest," but not everywhere)
-- Respond quickly to requests to opt out and delete someone's data, within the legal deadlines
-- Pseudonymize personal data in your CRM (store codes instead of names where you can)
-- Don't use personal (consumer) email addresses (B2C cold email is a gray area)
+**European Union (GDPR and the EU rules on electronic marketing):**
+- You can't send marketing email to private individuals without their prior consent (the exception: your own customers, when you offer them similar services)
+- For email to companies, the rules depend on the country: in some, "legitimate interest" is enough; in others, you need consent as well
+- If someone asks you to stop writing, stop right away. Answer requests about their data (to see it, to delete it) within one month
+- Keep only the personal data you actually need, and keep it safe
+- The EU's official page for businesses: [europa.eu](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_en.htm)
 
 **Canada (CASL):**
-- Commercial messages usually require consent (express, or implied under certain conditions) and a working unsubscribe option
-- If you're emailing into Canada or from Canada, check the current text of the law
+- You need the recipient's consent: express, or implied (the law spells out the conditions and time limits for implied consent)
+- The message has to show who you are and how to reach you: your name or business name, a mailing address, and a phone number, email or website
+- You need a working unsubscribe option, and unsubscribe requests have to be honored within 10 business days
+- The law applies to messages sent from Canada or read in Canada. The official page: [canada.ca](https://ised-isde.canada.ca/site/canada-anti-spam-legislation/en)
 
 **Other countries:**
-- Many countries have their own personal data laws. A work email address with an employee's name in it can count as personal data too; check with a lawyer
+- Many countries have their own personal data and advertising laws. A work email address with an employee's name in it can count as personal data too; check with a lawyer
+- Phone calls, text messages and messaging apps often have separate rules: check them before your first call
 
 **LinkedIn's terms of service:**
 - LinkedIn limits how many invitations and messages you can send; the exact limits aren't published and they change
-- Accounts get restricted for mass activity: keep your volume small and do it by hand, with no browser automation
+- Accounts get restricted for mass activity: keep your volume small and do it by hand. Software that sends messages for you or copies profile data is prohibited by the User Agreement
 - Sales Navigator gives you more room, but not unlimited room
 
 **The practical rule:**
@@ -463,7 +477,7 @@ This isn't legal advice: laws change, so before you send anything, check the cur
 - [ ] Tool stack chosen and set up (at minimum: a way to find contacts and a way to send sequences)
 - [ ] Weekly volume target set (50-200 messages)
 - [ ] Sequence (4 touches) ready
-- [ ] Domain warmed up (with Smartlead: 2 weeks of warmup before you scale up)
+- [ ] Domain warmed up, if you send through an outreach platform (Smartlead, for example, recommends at least 2 weeks of warmup, and longer for a new domain)
 - [ ] Calendly or an equivalent for booking calls
 - [ ] Tracking spreadsheet: sent / replied / call booked / closed
 - [ ] Ready to adjust over the first 2 weeks based on your A/B results
@@ -476,15 +490,14 @@ If all 10 are checked, start. If fewer than 7, close the remaining gaps before y
 
 ### Step 1: Find your first 20 prospects (1 hour)
 
-```bash
-# Open Apollo (or LinkedIn Sales Navigator, if you have access)
-# Filters:
-#   - Industry: your ICP industry
-#   - Company size: 10-50 employees (for a starter)
-#   - Title: your target persona (e.g. "Head of Operations")
-#   - Location: your target geography (a country, state or metro area)
-# Export 50 contacts to a CSV file
-```
+Open Apollo (or LinkedIn Sales Navigator, if you have access) and set these filters:
+
+- **Industry & Keywords**: your ICP's industry
+- **# of Employees**: 10-50 to start with
+- **Job Titles**: the person you're writing to (for example, "Head of Operations")
+- **Location**: your target area (a country, state or metro area)
+
+Move 20 contacts into your own spreadsheet. Exporting to a file and the number of contacts you can pull depend on your Apollo plan (see the pricing page on their site); you can also copy your first 20 by hand.
 
 Set up a table:
 ```
@@ -508,13 +521,13 @@ Use a template from this lesson. For each message:
 ### Step 4: Send (15 min)
 
 - 5 messages on day one
-- Follow-up #1 three days later
+- Follow-up #1 four days later
 - Track everything in your spreadsheet
 
 ### Step 5: Iterate (a week later)
 
 - How many replies out of 5?
-- What worked in the messages that got opened?
+- Which messages got replies, and what did they have in common?
 - Adjust your template and go again
 
 **Goal for your first month:** send 50 personalized messages and write down what worked. Results depend on your niche and on your work. This is your foundation.
@@ -523,12 +536,12 @@ Use a template from this lesson. For each message:
 
 ## Tools and resources
 
-- **[Apollo](https://www.apollo.io)**: find emails + LinkedIn data + sequences
+- **[Apollo](https://www.apollo.io)**: a contact database: finds people and email addresses, sends sequences
 - **[Lemlist](https://lemlist.com)**: cold email sequences, A/B testing, warmup
 - **[Loom](https://www.loom.com)**: video DMs with screen share (has a free plan)
 - **[Smartlead](https://www.smartlead.ai)**: cold email + automatic domain warmup
 - **[Clay](https://www.clay.com)**: AI-powered data enrichment and personalization
-- **[LinkedIn Sales Navigator](https://business.linkedin.com/sales-solutions/sales-navigator)**: advanced filtering + InMail
+- **[LinkedIn Sales Navigator](https://business.linkedin.com/sales-solutions/sales-navigator)**: advanced filtering + InMail (paid messages to people outside your connections)
 - **[Hunter](https://hunter.io)**: email finder + verification (the free plan includes 50 credits a month, as of October 2026)
 - **[Calendly](https://calendly.com)**: call booking (has a free plan)
 
@@ -550,13 +563,15 @@ Prices for these services change: check their websites.
 
 ## Related lessons
 
-- [Your first clients](38-monetization-clients.md): the foundation for outreach
+- [Your first clients](38-monetization-clients.md): the foundation: warm contacts come first
 - [Choosing a niche](38b-niche-selection-methodology.md): defining your niche and your ICP
-- [Lead generation system](39-lead-generation.md): where your prospects come from
-- [AI for email](73-ai-email-communications.md): AI email automation (advanced)
+- [Lead generation system](39-lead-generation.md): an optional library lesson on building a contact list automatically
+- [AI for email](73-ai-email-communications.md): the lesson you've already taken on email and drafts
 
 ---
 
 ## Next lesson
 
-→ [Lead magnets that convert](39d-lead-magnets-funnels.md)
+→ [How to handle objections and close the deal](45b-closing-objections.md)
+
+Collecting leads with a useful free resource comes in the next module: [Lead magnets](39d-lead-magnets-funnels.md).

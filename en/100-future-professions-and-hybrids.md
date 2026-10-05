@@ -30,8 +30,8 @@ AI didn't arrive in the working world **as an upgrade**. It arrived like a fores
 
 This is a reference map of careers and a scenario-based forecast, not research data.
 
-- Salary estimates, growth percentages and market sizes have been removed: they weren't verified against primary sources. For current numbers for your state and your job title, check job boards and salary surveys
-- The 2027–2030 forecasts are the author's scenarios, and they may not come true
+- Salary estimates, growth percentages and market sizes have been removed: they weren't verified against primary sources. For current numbers for your state and your job title, check official labor statistics (in the US, the Occupational Outlook Handbook from the Bureau of Labor Statistics, bls.gov/ooh), plus job boards and salary surveys
+- The demand stars (⭐) and the 2027–2030 forecasts are the author's estimates and scenarios, not measurements, and they may not come true
 - On medicine, law and finance: AI helps a professional, but it doesn't replace licensed work and doesn't give personal advice
 - This is not financial or investment advice and not a promise of income
 
@@ -69,7 +69,7 @@ Jobs that **didn't exist before 2022**. They appeared as a direct result of gene
 
 ### A1. AI Engineering / Building (15 careers)
 
-These are **the builders of the AI era**. The hottest category of 2026.
+These are **the builders of the AI era**. The most talked-about category of 2026.
 
 ---
 
@@ -85,7 +85,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Knowing each model's quirks
 - **Demand:** ⭐⭐⭐⭐ (the junior level is getting crowded; senior people are still in short supply)
 - **How to get there:**
-  1. Take Anthropic's Prompt Engineering course
+  1. Work through Anthropic's free interactive prompt engineering tutorial (it's on GitHub)
   2. Build 5 portfolio prompts with measured impact
   3. Contribute to open prompt libraries (PromptHub)
 - **Picture this:** a winemaker. The same grapes turn into a great bottle or into swill, depending on whose hands they're in.
@@ -135,7 +135,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 - **What they do:** Design multi-agent systems. Decide who delegates to whom, how agents coordinate, and how orchestration works.
 - **Key skills:**
   - Agent design patterns (orchestrator, supervisor, swarm)
-  - LangGraph, AutoGen, Anthropic Agent SDK
+  - LangGraph, Microsoft Agent Framework (the successor to AutoGen), Claude Agent SDK
   - State management between agents
   - Error propagation
   - Cost budgeting at the agent level
@@ -144,7 +144,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 - **How to get there:**
   1. A senior engineer foundation
   2. Build 2-3 agent systems in production
-  3. Speak at the AI Engineering Summit
+  3. Speak at an AI Engineer conference (the World's Fair, the Code Summit)
 - **Picture this:** an orchestra conductor. Each agent is a musician. The conductor doesn't play, but without one you get noise.
 
 ---
@@ -190,7 +190,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 - **What they do:** Design evals (systematic tests) for LLM applications. Shipping without evals is like flying without instruments.
 - **Key skills:**
-  - Eval frameworks (Anthropic evals, LangSmith, Braintrust)
+  - Eval frameworks (LangSmith, Braintrust)
   - LLM-as-judge patterns
   - Golden dataset curation
   - Regression testing for prompts
@@ -251,7 +251,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Request batching
   - Token-level analytics (newer models may count the same text as a different number of tokens, so measure on your own data)
   - Cost dashboards
-- **Demand:** ⭐⭐⭐⭐ (grows once a company's LLM bill passes \$50K/month)
+- **Demand:** ⭐⭐⭐⭐ (grows once a company's LLM bill becomes a real budget line)
 - **How to get there:**
   1. An engineer with a business mindset
   2. Publish a case study of saving \$X
@@ -267,7 +267,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - HNSW, IVF algorithms
   - Embedding model selection
   - Cost-performance tradeoffs
-- **Demand:** ⭐⭐⭐ (specialized, a smaller market, but well paid)
+- **Demand:** ⭐⭐⭐ (specialized, a smaller market)
 - **How to get there:**
   1. A database engineer foundation
   2. Specialize in one vector DB
@@ -279,7 +279,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 - **What they do:** Design end-to-end ML/AI pipelines (data → training → deployment → monitoring).
 - **Key skills:**
-  - MLOps platforms (MLflow, Vertex AI, SageMaker)
+  - MLOps platforms (MLflow, SageMaker, Google Cloud's Gemini Enterprise Agent Platform, formerly Vertex AI)
   - Data engineering
   - Model versioning
   - CI/CD for models
@@ -317,7 +317,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Transformer architecture in depth
   - Distributed training
   - Custom CUDA kernels (advanced level)
-- **Demand:** ⭐⭐ (a narrow niche, but among the best paid in the industry)
+- **Demand:** ⭐⭐ (a narrow niche with a very high entry bar)
 - **How to get there:**
   1. A PhD or equivalent research experience
   2. Published papers
@@ -329,7 +329,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 - **What they do:** Inference infrastructure. Make models faster and cheaper to run on GPU clusters.
 - **Key skills:**
-  - vLLM, SGLang, TGI in depth
+  - vLLM and SGLang in depth
   - CUDA basics
   - GPU memory optimization
   - Batching strategies
@@ -352,7 +352,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 - **Key skills:**
   - Claude/GPT for long-form
   - Midjourney/gpt-image-2/Flux for images
-  - Suno/Udio for music
+  - Suno for music
   - Runway/Kling for video
   - Brand voice consistency
   - Multi-platform repurposing
@@ -365,19 +365,19 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 ---
 
-#### 17. AI Music Composer (Suno/Udio specialist)
+#### 17. AI Music Composer (Suno specialist)
 
 - **What they do:** Generate music with AI tools for commercial use (jingles, ambient, soundtracks).
 - **Key skills:**
-  - Suno (current model versions: see [What's current](https://aimayak.com/en/now/)), Udio, with in-depth prompting
+  - Suno (current model versions: see [What's current](https://aimayak.com/en/now/)) and similar generators, with in-depth prompting
   - Music theory basics (to guide the AI)
   - Audio editing (Logic, Ableton for post-production)
   - Copyright awareness
-- **Demand:** ⭐⭐⭐ (growing, but regulation is unpredictable)
+- **Demand:** ⭐⭐⭐ (growing, but the rules keep changing: Udio, for example, turned off track downloads after its 2025 deal with Universal Music)
 - **How to get there:**
-  1. Learn Suno + Udio
+  1. Learn Suno and one more music generator
   2. A music theory crash course
-  3. Sell on Pond5, AudioJungle
+  3. Before you sell, read the license of your plan and the rules of the marketplace: stock libraries such as Pond5 and AudioJungle don't accept AI-generated tracks
 - **Picture this:** a sculptor. The clay (the AI output) is the material. The shape (your taste) is the art.
 
 ---
@@ -390,7 +390,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Storyboarding
   - Post-production (DaVinci Resolve)
   - Cinematography basics
-- **Demand:** ⭐⭐⭐⭐ (explosive growth in 2026)
+- **Demand:** ⭐⭐⭐⭐ (growing fast in 2026)
 - **How to get there:**
   1. Master 2 AI video tools
   2. Build 10 portfolio pieces
@@ -459,7 +459,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 #### 23. AI Comic / Manga Creator
 
-- **What they do:** Produce comics/manga with AI. A niche, but it can pay well in self-publishing.
+- **What they do:** Produce comics/manga with AI. A niche, mostly in self-publishing.
 - **Key skills:**
   - Character consistency (LoRA training)
   - Panel layout
@@ -542,7 +542,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Change management
   - AI literacy
   - P&L responsibility
-- **Demand:** ⭐⭐⭐⭐ (a Fortune 500 hiring wave)
+- **Demand:** ⭐⭐⭐⭐ (large companies are creating these roles)
 - **Picture this:** a general reforming the army in the middle of a war.
 
 ---
@@ -555,7 +555,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Delivering training
   - Workflow design
   - Stakeholder management
-- **Demand:** ⭐⭐⭐⭐⭐ (the mid-market is the gold rush)
+- **Demand:** ⭐⭐⭐⭐⭐ (mid-size companies are where most of this work is)
 - **Picture this:** a driving instructor for people who've only ever been passengers.
 
 ---
@@ -581,7 +581,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Compliance frameworks
   - Rigorous documentation
   - Audit preparation
-- **Demand:** ⭐⭐⭐⭐ (EU AI Act enforcement in 2026-2027)
+- **Demand:** ⭐⭐⭐⭐ (the EU AI Act takes effect in stages through 2028)
 - **Picture this:** an IRS auditor for AI. Boring, but necessary.
 
 ---
@@ -648,7 +648,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Domain expertise (in a specific field)
   - Critical thinking
   - A consistent rating method
-- **Demand:** ⭐⭐⭐⭐ (frontier labs hire in large numbers)
+- **Demand:** ⭐⭐⭐⭐ (AI labs and their contractors hire for this work)
 - **Picture this:** a teacher grading an endless series of exams.
 
 ---
@@ -672,8 +672,8 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Creative attack design
   - A security mindset
   - Documentation
-  - Anthropic/OpenAI red team protocols
-- **Demand:** ⭐⭐⭐⭐⭐ (Anthropic and OpenAI hire many)
+  - Red-teaming methods published by AI labs
+- **Demand:** ⭐⭐⭐⭐⭐ (frontier labs keep dedicated red teams)
 - **Picture this:** a professional bank burglar who gets paid to find the holes.
 
 ---
@@ -685,7 +685,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
   - Research methodology
   - Statistical analysis
   - Understanding LLM internals
-- **Demand:** ⭐⭐⭐ (a narrow niche, but well paid)
+- **Demand:** ⭐⭐⭐ (a narrow niche)
 - **Picture this:** a zoologist studying a new species. Only the species is AI, and we created it without fully understanding it.
 
 ---
@@ -808,16 +808,16 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 ---
 
-#### 49. Smart Glasses App Developer (Meta Ray-Ban, Apple Vision)
+#### 49. Smart Glasses App Developer (Ray-Ban Meta, Apple Vision Pro)
 
-- **What they do:** Apps for AR glasses and headsets with AI assistants (Meta Ray-Ban, Apple Vision Pro).
+- **What they do:** Apps for AR glasses and headsets with AI assistants (Ray-Ban Meta, Apple Vision Pro).
 - **Key skills:**
   - AR SDKs (Meta, Apple)
   - LLM integration
   - Voice UX
   - Always-on AI patterns
 - **Demand:** ⭐⭐⭐ (an early market that could take off in 2027+)
-- **Picture this:** an iPhone app developer in 2008. Get in early, and the big winners come from there.
+- **Picture this:** an iPhone app developer in 2008. The platform is young, and nobody knows yet which apps will matter.
 
 ---
 
@@ -847,7 +847,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** AI does research, drafts contracts and summarizes case law. A large share of the routine goes away.
 - **Where the human stays:** Strategy, client relationships, court appearances, judgment calls, negotiation. Legal advice and the license stay with the attorney.
-- **AI tools:** Harvey, CoCounsel, Lexis+AI, custom Claude workflows
+- **AI tools:** Harvey, CoCounsel, Lexis+ with Protégé (formerly Lexis+ AI), custom Claude workflows
 
 ---
 
@@ -855,7 +855,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** AI helps with diagnostics (radiology, pathology), drafts notes and suggests treatment options.
 - **Where the human stays:** Patient interaction, judgment calls, procedures, ethical decisions. The diagnosis and the treatment decision stay with the licensed physician.
-- **AI tools:** Abridge, Nuance DAX, AI radiology tools (Aidoc), specialty-specific tools
+- **AI tools:** Abridge, Microsoft Dragon Copilot (it absorbed Nuance DAX), AI radiology tools (Aidoc), specialty-specific tools
 
 ---
 
@@ -935,7 +935,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** Sourcing is automated. AI does the first screening. Matching gets smarter.
 - **Where the human stays:** Building relationships, closing candidates, assessing culture fit.
-- **AI tools:** Eightfold, Paradox, custom workflows
+- **AI tools:** Eightfold, Paradox (now part of Workday), custom workflows
 
 ---
 
@@ -979,7 +979,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** AI writes the first drafts. AI handles bulk content. AI generates headline variants.
 - **Where the human stays:** Voice, strategy, editing, hooks, taste.
-- **AI tools:** Claude, GPT, Copy.ai, Jasper
+- **AI tools:** Claude, GPT, Jasper
 
 ---
 
@@ -1012,7 +1012,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 - **What changes:** Licensing a cloned voice. Digital doubles. International dubs without re-recording.
 - **Where the human stays:** Live performance, on-camera work, real emotional range.
 - **AI tools:** ElevenLabs licensing, digital double services
-- **Note:** The 2023 SAG-AFTRA agreements regulate the use of AI
+- **Note:** Since 2023, SAG-AFTRA's union contracts have included rules on the use of AI
 
 ---
 
@@ -1028,7 +1028,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** In-betweens are automated. AI lip sync. Background animation is generated.
 - **Where the human stays:** Key poses, performance, story timing.
-- **AI tools:** Cascadeur, ToonBoom AI, Runway
+- **AI tools:** Cascadeur, Toon Boom, Runway
 
 ---
 
@@ -1105,7 +1105,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** SQL queries in plain English. Report generation. Insight detection.
 - **Where the human stays:** Asking the right questions, business context, stakeholder management.
-- **AI tools:** Hex, Hex Magic, Claude data analysis
+- **AI tools:** Hex (with its built-in AI agent), Claude data analysis
 
 ---
 
@@ -1141,7 +1141,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** AI-assisted menu design. Nutrition optimization. Inventory forecasts.
 - **Where the human stays:** Cooking, taste, creativity, running the kitchen.
-- **AI tools:** Custom Claude workflows, BlueCart AI, Toast AI
+- **AI tools:** Custom Claude workflows, AI features in restaurant software (ordering, inventory, point of sale)
 
 ---
 
@@ -1149,7 +1149,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** AI builds personalized programs. Form analysis from video. Progress tracking is automated.
 - **Where the human stays:** Motivation, hands-on coaching, group dynamics.
-- **AI tools:** Future, Tonal AI, custom tools
+- **AI tools:** Tonal, coaching apps such as Future, custom tools
 
 ---
 
@@ -1165,7 +1165,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** Diagnosis is 2x faster (AI reads the codes and the symptoms). Predictive maintenance.
 - **Where the human stays:** The physical repair, customer trust, complex cases.
-- **AI tools:** Bosch ESI, custom dealer tools
+- **AI tools:** Bosch diagnostic software, custom dealer tools
 
 ---
 
@@ -1181,7 +1181,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** Leak detection with IoT sensors + AI. Smarter system diagnostics. AI-generated quotes.
 - **Where the human stays:** The physical work, emergency calls.
-- **AI tools:** Flo by Moen, smart plumbing platforms
+- **AI tools:** Moen Flo, smart plumbing platforms
 
 ---
 
@@ -1197,7 +1197,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** Exploring designs with AI. Material optimization. CNC planning is automated.
 - **Where the human stays:** Craftsmanship, finishing, complex builds.
-- **AI tools:** Fusion 360 AI, Rhino + Grasshopper
+- **AI tools:** Autodesk Fusion, Rhino + Grasshopper
 
 ---
 
@@ -1205,7 +1205,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** Order automation. Design suggestions. Inventory forecasts.
 - **Where the human stays:** The craft of arranging, client events, taste.
-- **AI tools:** Bloomerang, custom tools
+- **AI tools:** Flower shop software, custom tools
 
 ---
 
@@ -1241,7 +1241,7 @@ An existing job + AI = a new version of it. Not "AI replaces", but "AI augments"
 
 - **What changes:** Form analysis through a camera. AI-personalized sequences.
 - **Where the human stays:** Energy, presence, hands-on adjustments.
-- **AI tools:** YogiFi, custom tools
+- **AI tools:** Smart yoga mats and pose-tracking apps, custom tools
 
 ---
 
@@ -1271,61 +1271,61 @@ An honest list. Not to scare you: to give you practical direction.
 
 - **What AI replaces it with:** DeepL, GPT, Claude (quality on popular language pairs is already high)
 - **What professionals can do:** Move to hybrid #55, AI Translation Specialist (post-editing + a specialty)
-- **Timeline:** Critical 2026-2027
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026-2027
 
 ### 2. First-draft copywriting (commodity content)
 
-- **What AI replaces it with:** Claude, GPT, Jasper, Copy.ai (good enough for mass SEO content)
+- **What AI replaces it with:** Claude, GPT, Jasper (good enough for mass SEO content)
 - **What to do:** Hybrid #67, AI-Augmented Writer (a strategy + editing role)
-- **Timeline:** Critical 2026
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026
 
 ### 3. Tier-1 customer support (chat-based)
 
 - **What AI replaces it with:** Intercom Fin, Zendesk AI, Ada (they close a significant share of routine requests)
 - **What to do:** Move to Tier 2/Tier 3 (sensitive cases, escalations)
-- **Timeline:** Critical 2026-2027
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026-2027
 
 ### 4. Data entry
 
 - **What AI replaces it with:** OCR + AI extraction (Hyperscience, custom workflows)
 - **What to do:** Data quality specialist, AI workflow design
-- **Timeline:** Critical 2026 (it's already shrinking fast)
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026 (it's already shrinking fast)
 
 ### 5. Basic bookkeeping
 
 - **What AI replaces it with:** Vic.ai, Botkeeper, QuickBooks AI
 - **What to do:** Hybrid #53, AI-Enabled Accountant (advisory, strategy)
-- **Timeline:** Critical 2027-2028
+- **Timeline:** by the author's estimate, the pressure is strongest in 2027-2028
 
 ### 6. Routine legal research (entry-level paralegal)
 
-- **What AI replaces it with:** Harvey, CoCounsel, Lexis+AI
+- **What AI replaces it with:** Harvey, CoCounsel, Lexis+ with Protégé
 - **What to do:** Move into AI training, prompt engineering for law firms, or a specialty
-- **Timeline:** Critical 2027
+- **Timeline:** by the author's estimate, the pressure is strongest in 2027
 
 ### 7. Stock photography (commodity)
 
 - **What AI replaces it with:** Midjourney, Flux, gpt-image-2 (cheap, good-enough images)
 - **What to do:** Hybrid #68, AI-Hybrid Photographer (a specialty, events, exclusive content)
-- **Timeline:** Critical 2026
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026
 
 ### 8. Generic commercial voice-over
 
 - **What AI replaces it with:** ElevenLabs, custom voices
 - **What to do:** Career #19, AI Voice Director, or specialty acting (premium voices)
-- **Timeline:** Critical 2026-2027
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026-2027
 
 ### 9. Basic graphic design (templates)
 
 - **What AI replaces it with:** Canva AI, Figma AI, Midjourney
 - **What to do:** Hybrid #66, AI-Native Designer (a strategy + brand role)
-- **Timeline:** Critical 2027
+- **Timeline:** by the author's estimate, the pressure is strongest in 2027
 
 ### 10. Routine code (boilerplate)
 
 - **What AI replaces it with:** Cursor, Copilot, Claude Code
 - **What to do:** Hybrid #60, AI-Assisted Engineer (architecture + senior judgment)
-- **Timeline:** Critical 2026 (the junior developer market has already changed)
+- **Timeline:** by the author's estimate, the pressure is strongest in 2026 (the junior developer market has already changed)
 
 ---
 
@@ -1433,22 +1433,22 @@ Do I work in a trade / in services?
 
 ## <a id="salary-benchmarks"></a>💰 Salary benchmarks 2026 (overview)
 
-The salary tables and regional multipliers have been removed: they weren't verified against primary sources, and the numbers depend heavily on the state and city, the company, the person's level and how well they negotiate. For current numbers for your job title and your area, look at job boards and salary surveys, not at this guide.
+The salary tables and regional multipliers have been removed: they weren't verified against primary sources, and the numbers depend heavily on the state and city, the company, the person's level and how well they negotiate. For current numbers for your job title and your area, look at official labor statistics (in the US, bls.gov), job boards and salary surveys, not at this guide.
 
 ---
 
-## <a id="top-10"></a>⭐ Top 10 emerging careers 2026-2030 (high demand)
+## <a id="top-10"></a>⭐ Top 10 emerging careers 2026-2030 (the author's estimate)
 
 1. **AI Application Engineer**: the main new career of the era
 2. **AI Agent Architect**: the multi-agent systems boom
-3. **AI Safety / Red Team**: frontier labs hire in large numbers
+3. **AI Safety / Red Team**: frontier labs keep dedicated teams
 4. **Prompt Engineer** (still strong at the junior level): easy to get into
-5. **AI Voice Agent Developer**: the Vapi/Bland.ai market is exploding
-6. **AI-Augmented Lawyer**: Harvey + coding → a massive role shift
-7. **AI Adoption Specialist** (enterprise): the Fortune 500 is in panic mode
+5. **AI Voice Agent Developer**: phone agents built on platforms like Vapi and Bland are in demand
+6. **AI-Augmented Lawyer**: tools like Harvey are changing the day-to-day work
+7. **AI Adoption Specialist** (enterprise): large companies need help rolling AI out
 8. **AI Content Producer**: an AI-native content economy
 9. **AI Cost Optimization Engineer**: companies have seen their bills
-10. **AI Ethics / Compliance Officer**: EU AI Act enforcement
+10. **AI Ethics / Compliance Officer**: the EU AI Act is taking effect in stages
 
 ---
 
@@ -1470,10 +1470,10 @@ After reading this guide:
 
 ## 🎬 Practical advice from this course
 
-1. **Don't study "AI"; study a specific tool in depth.** Master Claude Code → it's easier to learn Cursor → it's easier to learn the next thing.
+1. **Don't study "AI"; study a specific tool in depth.** Master one tool (Claude, for example) → the second one comes easier → and so does the next.
 2. **Build, don't just learn.** One production project beats 10 courses.
 3. **Specialty + AI.** A generic AI engineer becomes a commodity. An AI engineer plus healthcare, legal or finance knowledge has a moat.
-4. **Network in the AI community.** X (formerly Twitter), Hacker News, the AI Engineering Summit.
+4. **Network in the AI community.** X (formerly Twitter), Hacker News, AI Engineer conferences.
 5. **Don't chase the highest salary.** Choose a career with durable demand for 5-10 years (Section A1, A3.26, A3.27, B1).
 
 ---
@@ -1560,9 +1560,9 @@ These are **the hands of the AI era**. Software meets hardware.
   - Safety protocols around live people
   - Basic ML (an intuition for RLHF)
   - Mechatronics troubleshooting
-- **Demand:** ⭐⭐⭐⭐ (Tesla Optimus and Figure are aiming for wider rollout in 2026-2027)
+- **Demand:** ⭐⭐⭐⭐ (several makers have announced plans for a wider rollout; treat the dates as plans, not facts)
 - **How to get there:**
-  1. A bootcamp at one of the robot companies (Figure, Agility)
+  1. An entry-level operator or technician job at a robotics company (Figure, Agility and others)
   2. Build a teleoperation rig in your garage + record a dataset
   3. An open-source contribution to the LeRobot framework
 - **Picture this:** a 21st-century puppeteer. The puppet learns on its own; your job is to show it the first 1,000 moves.
@@ -1589,14 +1589,14 @@ These are **the hands of the AI era**. Software meets hardware.
 
 #### 53. Smart Glasses Application Developer
 
-- **What they do:** Build apps for Meta Ray-Ban, Apple Vision and Snap Spectacles, plus real-time AI overlays.
+- **What they do:** Build apps for Ray-Ban Meta, Apple Vision Pro and Snap Specs, plus real-time AI overlays.
 - **Key skills:**
   - AR/VR SDKs (Meta SDK, ARKit, WebXR)
   - Computer vision (object detection, OCR)
   - Voice-first UX (there's no keyboard)
   - Latency budgets (<100ms is critical)
   - Privacy design (the camera is always ready)
-- **Demand:** ⭐⭐⭐⭐ (Meta's Ray-Ban glasses are selling well; Apple Vision is just getting started)
+- **Demand:** ⭐⭐⭐⭐ (an early market: several makers already ship AI glasses, and the app platforms are young)
 - **How to get there:**
   1. A mobile dev foundation (iOS/Android)
   2. An AR portfolio (3 production apps)
@@ -1614,7 +1614,7 @@ These are **the hands of the AI era**. Software meets hardware.
   - On-device ML (TinyML, quantization)
   - Always-on audio processing
   - Sensor fusion (microphone + accelerometer + GPS)
-- **Demand:** ⭐⭐⭐ (the category is still taking shape, and early flops like the Humane AI Pin made people cautious)
+- **Demand:** ⭐⭐⭐ (the category is still taking shape: Humane, the maker of an early AI pin, sold its technology to HP in 2025)
 - **How to get there:**
   1. An embedded systems foundation
   2. An on-device ML certification
@@ -1632,7 +1632,7 @@ These are **the hands of the AI era**. Software meets hardware.
   - Reinforcement learning
   - Simulation (CARLA, the Waymo Open Dataset)
   - Safety case engineering
-- **Demand:** ⭐⭐⭐⭐ (Waymo is expanding, Tesla is pivoting, Wayve is raising money)
+- **Demand:** ⭐⭐⭐⭐ (concentrated in a few well-funded companies such as Waymo, Tesla and Wayve)
 - **How to get there:**
   1. A CS degree + an ML specialization
   2. A robotics PhD (optional, but it helps for research roles)
@@ -1686,7 +1686,7 @@ These are **the hands of the AI era**. Software meets hardware.
   - ML on neural data
   - Biocompatibility and medical regulation (FDA)
   - C/C++ for real-time decoders
-- **Demand:** ⭐⭐ (narrow: 5-10 companies worldwide, but it could take off soon)
+- **Demand:** ⭐⭐ (narrow: a handful of companies worldwide, though the field is growing)
 - **How to get there:**
   1. A neuroscience or EE PhD
   2. A postdoc in a BCI lab
@@ -1702,7 +1702,7 @@ These are **the hands of the AI era**. Software meets hardware.
   - Industrial vision systems (Cognex, Keyence)
   - PLC programming
   - Predictive maintenance ML
-  - Generative design (Autodesk Fusion AI)
+  - Generative design (Autodesk Fusion)
   - Lean / Six Sigma awareness
 - **Demand:** ⭐⭐⭐⭐ (Industry 4.0 + the onshoring wave)
 - **How to get there:**
@@ -1746,7 +1746,7 @@ These are **the explorers**. Right at the frontier.
   - Game theory, decision theory
   - Philosophy (utilitarianism, deontology)
   - Research methodology
-- **Demand:** ⭐⭐⭐⭐⭐ (the main research category of the decade)
+- **Demand:** ⭐⭐⭐⭐⭐ (one of the central research areas of the decade)
 - **How to get there:**
   1. An ML PhD or the MATS program
   2. Anthropic Fellows, or apply directly
@@ -1764,7 +1764,7 @@ These are **the explorers**. Right at the frontier.
   - Activation patching
   - Sparse autoencoders
   - Visualization tools
-- **Demand:** ⭐⭐⭐⭐ (a small field, but Anthropic + Apollo Research are scaling)
+- **Demand:** ⭐⭐⭐⭐ (a small field with teams at a few labs)
 - **How to get there:**
   1. An ML PhD focused on interpretability
   2. Replicate Anthropic's state-of-the-art papers
@@ -1779,13 +1779,13 @@ These are **the explorers**. Right at the frontier.
 - **Key skills:**
   - Distributed training (DeepSpeed, Megatron)
   - The math of scaling laws (Chinchilla, etc.)
-  - Compute budgeting for \$100M+ training runs
+  - Compute budgeting for very large training runs
   - Failure mode analysis
   - Statistical inference
-- **Demand:** ⭐⭐⭐ (5-10 places worldwide, but critically important)
+- **Demand:** ⭐⭐⭐ (a handful of places worldwide, but critically important)
 - **How to get there:**
   1. An ML PhD with large-model experience
-  2. Industry training runs of \$1M+
+  2. Industry experience with large training runs
   3. Apply to a frontier lab
 - **Picture this:** a mapmaker on an unexplored continent. Every step costs millions, so you'd better know where you're going.
 
@@ -1872,7 +1872,7 @@ These are **the explorers**. Right at the frontier.
   - Classical ML in depth
   - Advanced linear algebra
   - Hardware-aware optimization (IBM, IonQ)
-- **Demand:** ⭐⭐ (narrow: 10-20 companies worldwide, but future-proof)
+- **Demand:** ⭐⭐ (narrow: a small number of companies and national labs; a long-term bet)
 - **How to get there:**
   1. A physics PhD with a quantum focus
   2. An ML crossover
@@ -1908,7 +1908,7 @@ These are **the explorers**. Right at the frontier.
   - Neural architecture design
   - fMRI / electrophysiology data
   - Cross-domain research methodology
-- **Demand:** ⭐⭐⭐ (Numenta, BrainGate, academic labs)
+- **Demand:** ⭐⭐⭐ (Apical Intelligence, formerly Numenta; BrainGate; academic labs)
 - **How to get there:**
   1. A neuroscience PhD
   2. A computational specialty
@@ -1927,17 +1927,17 @@ These are **the doctors of the AI era**. Where the stakes are highest.
 
 #### 71. AI Radiologist Assistant
 
-- **What they do:** Use AI (Aidoc, Viz.ai, Annalise) to triage X-rays, CT and MRI scans. A human in the loop for critical decisions.
+- **What they do:** Use AI (Aidoc, Viz.ai, Harrison.ai) to triage X-rays, CT and MRI scans. A human in the loop for critical decisions.
 - **Key skills:**
   - Radiology basics (or a board-certified radiologist)
   - AI tool literacy
   - Handling DICOM data
   - Clinical workflow integration
   - Patient safety protocols
-- **Demand:** ⭐⭐⭐⭐ (the number of FDA-cleared AI products keeps growing fast)
+- **Demand:** ⭐⭐⭐⭐ (the FDA's list of AI-enabled medical devices keeps growing)
 - **How to get there:**
   1. An MD + a radiology residency
-  2. AI literacy + Aidoc/Viz.ai certification
+  2. AI literacy + training on the tools your hospital uses (Aidoc, Viz.ai)
   3. A role leading adoption at a hospital
 - **Picture this:** radiologist + AI = pilot + autopilot. AI looks at every image; the human makes the call. Faster work, and fewer things slip through.
 
@@ -1952,7 +1952,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - HIPAA compliance
   - EHR APIs (Epic, Oracle Health, formerly Cerner)
   - Privacy-preserving ML
-- **Demand:** ⭐⭐⭐⭐ (every hospital wants to mine its EHR data)
+- **Demand:** ⭐⭐⭐⭐ (hospitals want to put their EHR data to use)
 - **How to get there:**
   1. An NLP engineer foundation
   2. A healthcare domain certification
@@ -2029,7 +2029,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   1. An MD in pathology + AI, or ML + a pathology certification
   2. An industry job
   3. Experience with FDA-approved tools
-- **Picture this:** a microscope with the eyes of 10,000 pathologists. It sees what a person misses.
+- **Picture this:** a microscope with the eyes of 10,000 pathologists. It can catch what a tired eye might miss.
 
 ---
 
@@ -2078,7 +2078,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - Statistical inference
   - Regulatory awareness
   - Health economics
-- **Demand:** ⭐⭐⭐ (Deep 6 AI, Saama, Medable)
+- **Demand:** ⭐⭐⭐ (Saama, Medable)
 - **How to get there:**
   1. A pharma or clinical research foundation
   2. An ML/data science certification
@@ -2101,7 +2101,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   1. An MPH or an epidemiology degree
   2. Data science skills
   3. A job in government or at a nonprofit
-- **Picture this:** a lookout on the city wall. Sees an epidemic coming weeks before it breaks out.
+- **Picture this:** a lookout on the city wall. Watches for the first signs of an outbreak.
 
 ---
 
@@ -2118,7 +2118,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - Assessment design
   - Curriculum mapping
   - Change management in schools
-- **Demand:** ⭐⭐⭐⭐ (every school district is scrambling)
+- **Demand:** ⭐⭐⭐⭐ (many school districts are still working out how to handle AI)
 - **How to get there:**
   1. A teaching foundation
   2. An EdTech / AI literacy certification
@@ -2214,7 +2214,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - Market microstructure
   - Backtesting frameworks
   - Risk management
-- **Demand:** ⭐⭐⭐⭐⭐ (Renaissance, Two Sigma, D. E. Shaw, Citadel: they're all hiring)
+- **Demand:** ⭐⭐⭐⭐⭐ (quant funds such as Renaissance, Two Sigma, D. E. Shaw and Citadel)
 - **How to get there:**
   1. A PhD in math, physics or CS
   2. An internship at a quant fund
@@ -2232,7 +2232,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - Real-time inference
   - Regulatory compliance (KYC, AML)
   - Adversarial robustness
-- **Demand:** ⭐⭐⭐⭐ (every bank, payment processor and fintech)
+- **Demand:** ⭐⭐⭐⭐ (banks, payment processors and fintechs)
 - **How to get there:**
   1. An ML engineer foundation
   2. A job at a fintech
@@ -2268,7 +2268,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - Workflow automation
   - Audit trails
   - Compliance across jurisdictions
-- **Demand:** ⭐⭐⭐⭐ (compliance is a bottleneck at every bank)
+- **Demand:** ⭐⭐⭐⭐ (compliance is a bottleneck at many banks)
 - **How to get there:**
   1. A compliance or legal background
   2. An engineering certification
@@ -2308,7 +2308,7 @@ These are **narrow specialists where industries meet**.
   - Carbon accounting standards (GHG Protocol)
   - Satellite data analysis
   - Climate models
-  - ESG regulatory frameworks (CSRD, SEC)
+  - ESG regulatory frameworks (the EU's CSRD and the rules of your own country)
   - Data integration
 - **Demand:** ⭐⭐⭐⭐ (EU sustainability reporting rules such as the CSRD, even with recent delays, plus investor pressure)
 - **How to get there:**
@@ -2328,7 +2328,7 @@ These are **narrow specialists where industries meet**.
   - IoT / edge compute
   - Geospatial analysis
   - Sustainability metrics
-- **Demand:** ⭐⭐⭐ (John Deere, Climate Corp, Indigo Ag, FBN)
+- **Demand:** ⭐⭐⭐ (John Deere, Climate FieldView, Indigo Ag, FBN)
 - **How to get there:**
   1. An AgTech or agronomy background
   2. An AI/data certification
@@ -2346,7 +2346,7 @@ These are **narrow specialists where industries meet**.
   - Long-context handling
   - Citation accuracy
   - Privilege + confidentiality
-- **Demand:** ⭐⭐⭐⭐⭐ (Harvey + thousands of legal tech startups)
+- **Demand:** ⭐⭐⭐⭐⭐ (Harvey + many legal tech startups)
 - **How to get there:**
   1. An ML engineer foundation
   2. A legal domain certification or a partnership
@@ -2382,10 +2382,10 @@ These are **narrow specialists where industries meet**.
   - Biomechanics basics
   - Time-series ML
   - Visualization
-- **Demand:** ⭐⭐⭐ (the NBA, NFL, soccer clubs, F1: they're all hiring)
+- **Demand:** ⭐⭐⭐ (the NBA, NFL, soccer clubs, F1 teams)
 - **How to get there:**
   1. A data science foundation
-  2. A sports analytics certification (SSAC)
+  2. A sports analytics course, or a project you can show at a conference such as the MIT Sloan Sports Analytics Conference (SSAC)
   3. A job with a team or in sports media
 - **Picture this:** a coach with a microscope. Sees what a person can't: micro-patterns in movement, fatigue, an opening.
 
@@ -2404,7 +2404,7 @@ These are **narrow specialists where industries meet**.
 - **How to get there:**
   1. A cybersecurity foundation (OSCP, etc.)
   2. An ML specialty
-  3. An industry job (CrowdStrike, Mandiant, Palo Alto)
+  3. An industry job (CrowdStrike, Mandiant, Palo Alto Networks)
 - **Picture this:** a safari guide who tracks hackers. AI helps you spot the tracks in a jungle of logs.
 
 ---
@@ -2440,7 +2440,7 @@ These are **narrow specialists where industries meet**.
 - **How to get there:**
   1. A power engineering foundation
   2. An ML certification
-  3. A job at a utility or a grid software company (the Tesla Powerwall team, AutoGrid, GridX)
+  3. A job at a utility or a grid software company (the Tesla Powerwall team, Uplight, GridX)
 - **Picture this:** the conductor of the power grid. Balances millions of devices every second.
 
 ---
@@ -2500,7 +2500,7 @@ These are **narrow specialists where industries meet**.
   - Fluency with AI tools
   - Real-time decision-making
   - Multitasking (watching both the AI and the patient)
-- **Demand:** ⭐⭐⭐⭐ (every top hospital wants this)
+- **Demand:** ⭐⭐⭐⭐ (in demand at large hospitals)
 - **How to get there:**
   1. An MD + a surgical residency + a fellowship
   2. A robotic surgery certification
@@ -2518,10 +2518,10 @@ These are **narrow specialists where industries meet**.
   - Quality assurance methods
   - Managing a high-volume workflow
   - Patient communication
-- **Demand:** ⭐⭐⭐⭐ (a radiologist shortage, and AI solves the throughput problem)
+- **Demand:** ⭐⭐⭐⭐ (a radiologist shortage, and AI helps with the workload)
 - **How to get there:**
   1. An MD + a radiology residency
-  2. An AI tool certification (Aidoc, Annalise.ai)
+  2. Training on AI tools (Aidoc, Harrison.ai)
   3. A role as the hospital's AI champion
 - **Picture this:** a hawk's eye + AI = a radiologist. AI looks at every shadow; the human makes the call.
 
@@ -2577,7 +2577,7 @@ These are **narrow specialists where industries meet**.
   1. A DDS/DMD degree
   2. An AI tool certification
   3. Practice management
-- **Picture this:** a dentist and a radiologist in one person. AI finds what the eye misses.
+- **Picture this:** a dentist and a radiologist in one person. AI can flag what the eye might miss.
 
 ---
 
@@ -2608,7 +2608,7 @@ These are **narrow specialists where industries meet**.
   - Tele-rehab workflows
   - Patient engagement
   - Measuring outcomes
-- **Demand:** ⭐⭐⭐⭐ (Sword Health and Hinge Health have grown into large companies)
+- **Demand:** ⭐⭐⭐⭐ (platforms such as Sword Health and Hinge Health)
 - **How to get there:**
   1. A DPT degree
   2. Training on a tele-PT platform
@@ -2637,14 +2637,14 @@ These are **narrow specialists where industries meet**.
 
 #### 109. Optometrist + AI = AI Vision Specialist
 
-- **What they do:** An optometrist + AI retinal scans (Eyenuk, IDx-DR) to detect diabetic retinopathy, glaucoma and AMD.
+- **What they do:** An optometrist + AI retinal scans (Eyenuk, LumineticsCore, formerly IDx-DR) to detect diabetic retinopathy, glaucoma and AMD.
 - **Key skills:**
   - An OD foundation
   - Literacy in AI screening tools
   - Patient education
   - Referral pathways
   - Telehealth integration
-- **Demand:** ⭐⭐⭐ (FDA-approved tools are growing; Walmart and Costco vision centers)
+- **Demand:** ⭐⭐⭐ (FDA-cleared AI screening tools are already in use)
 - **How to get there:**
   1. An OD degree
   2. An AI tool certification
@@ -2655,14 +2655,14 @@ These are **narrow specialists where industries meet**.
 
 #### 110. Cardiologist + AI = AI Cardiology Specialist
 
-- **What they do:** A cardiologist + AI on ECG, echo and cardiac MRI (Ultromics, Caption Health). Helps spot heart problems earlier.
+- **What they do:** A cardiologist + AI on ECG, echo and cardiac MRI (Ultromics and similar tools). Helps spot heart problems earlier.
 - **Key skills:**
   - An MD + cardiology foundation
   - Literacy in AI imaging tools
   - Integrating wearable data (Apple Watch, KardiaMobile)
   - Patient-facing AI tools
   - Quality assurance
-- **Demand:** ⭐⭐⭐⭐⭐ (heart disease is the #1 killer, and the AI tools are mature)
+- **Demand:** ⭐⭐⭐⭐⭐ (cardiovascular disease is the leading cause of death worldwide, and AI tools for it are relatively mature)
 - **How to get there:**
   1. An MD + a cardiology fellowship
   2. An AI imaging certification
@@ -2684,7 +2684,7 @@ These are **narrow specialists where industries meet**.
   - Bias awareness
   - Knowledge of civil liberties
   - Community engagement
-- **Demand:** ⭐⭐⭐ (Axon dominates; the controversy continues)
+- **Demand:** ⭐⭐⭐ (Axon is the best-known vendor; the debate over these tools continues)
 - **How to get there:**
   1. The police academy
   2. An AI body cam certification
@@ -2833,7 +2833,7 @@ These are **narrow specialists where industries meet**.
   1. An MPH degree
   2. Data science training
   3. A job at the CDC, the WHO or a state health department
-- **Picture this:** a lookout for epidemics. AI sees an outbreak days before it makes the news.
+- **Picture this:** a lookout for epidemics. AI can pick up the signs of an outbreak before it makes the news.
 
 ---
 
@@ -2886,7 +2886,7 @@ These are **narrow specialists where industries meet**.
   - Pedagogy
   - Engaging with industry
   - Public communication
-- **Demand:** ⭐⭐⭐⭐ (every university needs an AI ethics course)
+- **Demand:** ⭐⭐⭐⭐ (more and more universities offer AI ethics courses)
 - **How to get there:**
   1. A philosophy PhD
   2. An AI ethics specialization
@@ -2962,7 +2962,7 @@ These are **narrow specialists where industries meet**.
   - Interpreting data
   - Self-discipline
   - Working with coaches
-- **Demand:** ⭐⭐⭐ (every elite athlete has a data team)
+- **Demand:** ⭐⭐⭐ (elite athletes increasingly work with data teams)
 - **How to get there:**
   1. Athletic excellence (one path)
   2. Data literacy
@@ -3052,7 +3052,7 @@ These are **narrow specialists where industries meet**.
   - Periodization
   - Sport-specific training
   - Communicating with athletes
-- **Demand:** ⭐⭐⭐⭐ (every pro team)
+- **Demand:** ⭐⭐⭐⭐ (pro teams)
 - **How to get there:**
   1. An exercise science degree + CSCS
   2. AI tool training (Catapult, Whoop)
@@ -3070,7 +3070,7 @@ These are **narrow specialists where industries meet**.
   - Biomechanics
   - Interpreting imaging
   - Relationships with players
-- **Demand:** ⭐⭐⭐⭐ (an injury = millions lost, and AI helps)
+- **Demand:** ⭐⭐⭐⭐ (injuries are costly for teams, and AI helps manage the risk)
 - **How to get there:**
   1. An MD + a sports medicine fellowship
   2. An AI tool certification
@@ -3164,7 +3164,7 @@ These are **narrow specialists where industries meet**.
   - AI tool literacy
   - Physical fitness
   - Safety awareness
-- **Demand:** ⭐⭐⭐⭐ (Amazon's scale, and everyone follows)
+- **Demand:** ⭐⭐⭐⭐ (large warehouses automate first, and others follow)
 - **How to get there:**
   1. Get hired at a warehouse
   2. Robot training
@@ -3326,7 +3326,7 @@ These are **narrow specialists where industries meet**.
   - Statistical process control
   - Reading specifications
   - Communication
-- **Demand:** ⭐⭐⭐⭐ (every factory)
+- **Demand:** ⭐⭐⭐⭐ (factories of every kind)
 - **How to get there:**
   1. QC training
   2. An AI tool certification
@@ -3344,7 +3344,7 @@ These are **narrow specialists where industries meet**.
   - Vendor management
   - Handling exceptions
   - Data analysis
-- **Demand:** ⭐⭐⭐⭐ (every shipper)
+- **Demand:** ⭐⭐⭐⭐ (shippers and carriers)
 - **How to get there:**
   1. A logistics career
   2. AI tool training
@@ -3362,12 +3362,12 @@ These are **narrow specialists where industries meet**.
   - Negotiation
   - Contract review
   - Spend analysis
-- **Demand:** ⭐⭐⭐ (every Fortune 500 company)
+- **Demand:** ⭐⭐⭐ (large companies)
 - **How to get there:**
   1. A procurement career
   2. AI tool training
   3. A specialty (direct/indirect, services)
-- **Picture this:** buyer + AI = knows the market better than the vendors do. Saves millions.
+- **Picture this:** buyer + AI = knows the market as well as the vendors do. Fewer overpayments.
 
 ---
 
@@ -3479,8 +3479,8 @@ We're expanding the list from 10 to 25: here are 15 more.
 
 #### 19. Newspaper Delivery
 
-- **What's being replaced:** Digital subscriptions, a dying print industry.
-- **What survives:** It barely exists anymore (a legacy service for older readers).
+- **What's being replaced:** Digital subscriptions, a shrinking print industry.
+- **What survives:** A much smaller service (kept mostly for long-time subscribers).
 - **Picture this:** the kid on a bike at 5 a.m. is gone. A push notification shows up instead.
 
 ---
@@ -3525,11 +3525,11 @@ We're expanding the list from 10 to 25: here are 15 more.
 
 ---
 
-#### 25. Travel Typist
+#### 25. Travel Booking Clerk
 
 - **What's being replaced:** Self-service booking + AI assistants.
 - **What survives:** Specialty corporate travel managers.
-- **Picture this:** the typist at the travel agency is on the way out. The corporate travel architect stays.
+- **Picture this:** the clerk who types up bookings at the travel agency is on the way out. The corporate travel architect stays.
 
 ---
 
@@ -3768,9 +3768,9 @@ Running on-premises AI infrastructure (Ollama, LM Studio, vLLM).
 
 **Long-term winners (stable through the AI shift):**
 
-- **AI Safety / Ethics / Compliance**: never goes away, paid at a premium
-- **AI-augmented professionals** (doctors, lawyers, etc. with deep domain knowledge): higher productivity = higher earnings
-- **AI Strategy Consultants**: helping companies adopt AI (every enterprise needs guides)
+- **AI Safety / Ethics / Compliance**: the need doesn't go away
+- **AI-augmented professionals** (doctors, lawyers, etc. with deep domain knowledge): higher productivity, which can mean higher earnings
+- **AI Strategy Consultants**: helping companies adopt AI (large companies need guides)
 - **Creative directors**: taste matters (AI executes, a human decides)
 - **Sales / relationships**: people buy from people (high-trust transactions)
 
@@ -3786,7 +3786,7 @@ Running on-premises AI infrastructure (Ollama, LM Studio, vLLM).
 
 ## <a id="section-g"></a>🌍 Section G: Geographic shifts 2026-2030
 
-| Region | Growing | Declining | Why |
+| Region | Likely to grow | Likely to decline | Why |
 |--------|---------|-----------|-----|
 | **San Francisco / NYC** | AI safety, frontier research, AI in legal/finance | Generic engineering | Remote AI work commoditizes it |
 | **London / Berlin** | Compliance, regulation, AI ethics | Less competitive in pure tech | A hub for EU AI Act compliance |
@@ -3905,7 +3905,7 @@ By 2030, most knowledge workers will fit one of 3 archetypes:
 
 - Deep work + occasional time with clients or patients
 - Continuous learning (AI tools update quarterly)
-- Higher productivity = higher earnings (but a risk of burnout)
+- Higher productivity, which can mean higher earnings (but a risk of burnout)
 - Often anchored to a city (clients, hospitals, courts)
 
 **Picture this:** an Olympic athlete in their own field. AI is the coach + the analytics + the scoreboard.
@@ -3961,7 +3961,7 @@ By 2030, most knowledge workers will fit one of 3 archetypes:
 - **Hands Worker + AI** (Archetype 4): the trades + AR (electrician, plumber). Protected from disruption for years (the work is physical).
 - **Educator-Navigator** (Archetype 5): teaches people to live with AI. Demand is growing.
 - **Compliance Sentinel** (Archetype 6): a regulation expert. A stable, protected role.
-- **Safety Researcher** (Archetype 7): premium, top tier. Narrow, but high-level.
+- **Safety Researcher** (Archetype 7): a narrow, high-level research role.
 
 ---
 
@@ -4006,7 +4006,7 @@ The order is the author's estimate (demand, prospects, stability over 5 years), 
 
 ## <a id="salary-2030"></a>💰 Salary benchmarks 2030 (regional)
 
-The regional salary forecast has been removed: there's no way to verify it. When you plan your career, rely on current data for your state and city, and on your own conversations with people in the field.
+The regional salary forecast has been removed: there's no way to verify it. When you plan your career, rely on current data for your state and city (official labor statistics, job postings), and on your own conversations with people in the field.
 
 ---
 
@@ -4033,7 +4033,7 @@ After 200 careers and a forecast:
 - Read this whole guide
 - Pick 5 candidate careers
 - Find where your domain and AI tools overlap
-- Look up pay in **your own** area (from current job postings and salary surveys)
+- Look up pay in **your own** area (from official labor statistics, current job postings and salary surveys)
 
 **Days 31-60: Validate.**
 

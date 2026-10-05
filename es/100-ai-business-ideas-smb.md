@@ -2399,6 +2399,7 @@ Antes de elegir una idea, elige un **modelo**. El modelo define tu flujo de caja
 ---
 
 <a id="section-e"></a>
+
 ## Sección E. 30 nichos con poca oferta por ahora (2026)
 
 🎨 **Imagínalo así:** en las grandes ciudades hay un restaurante en cada esquina. En las afueras y en los pueblos, el mercado está abierto. Los negocios con IA funcionan igual. **Los nichos saturados ya están ocupados. Donde hay poca oferta, el mercado está abierto.**
@@ -3708,8 +3709,6 @@ A propósito, aquí no aparecen los tamaños de mercado ni el tiempo hasta los p
 - No quieres ceder participación
 
 **Quién da este tipo de dinero:** el mercado cambia rápido, así que busca empresas actuales en reseñas recientes
-
-También puedes revisar si hay programas de apoyo o financiamiento para emprendedores de tu país.
 
 ---
 

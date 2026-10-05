@@ -36,22 +36,22 @@ First things first: AI doesn't read words. It sees tokens, the smallest units of
 
 A token isn't a word. It's a chunk of text that the language model treats as one piece it can't split further. Sometimes a token is a whole word. Sometimes it's part of a word. Sometimes it's a single character.
 
-**Examples:**
+**Examples (rough numbers: every model splits text its own way):**
 - The word `cat` = 1 token (short and common)
-- The word `catastrophe` = 3 tokens: `cat` + `ast` + `rophe`
+- The word `catastrophe` can split into 3 tokens: `cat` + `ast` + `rophe`
 - A long, rare word like `anthropomorphism` = several tokens
 - Words in other languages often split into more pieces than English words do
 
-An important detail: **English is the "cheapest" language in tokens.** Many other languages need more tokens to say the same thing, in some cases roughly 1.5 to 2 times as many. That directly affects cost, because you pay for tokens.
+An important detail: **English is the "cheapest" language in tokens.** Many other languages need noticeably more tokens to say the same thing (the exact ratio depends on the model and the text). That matters because tokens are what your chat limits are counted in, and what developers pay for in the API (the connection programs use to talk to AI).
 
-A rough rule of thumb: **1,000 tokens ≈ 750 words** in English. Text in other languages usually takes more tokens for the same amount of meaning.
+A rough rule of thumb from Anthropic: **1,000 tokens ≈ 750 words** in English. The newest Claude models split text into smaller pieces, so for them 1,000 tokens hold closer to 555 words. Text in other languages usually takes more tokens for the same amount of meaning.
 
 🎨 **Picture this:** a token is a Lego brick. AI doesn't see words as single objects. It sees bricks of different sizes that words are built from. The word "cat" is one brick. The word "catastrophe" is three: "cat," "ast" and "rophe." When AI writes text, it lays down brick after brick. Left to right. One at a time. Each new brick depends on all the ones before it.
 
 **Why this matters in practice:**
-- You pay for tokens, not words: the shorter and more specific your prompt, the cheaper it is
-- Long texts in other languages can cost more than the same text in English
-- A tight prompt with no filler can noticeably cut costs without hurting quality
+- Usage is counted in tokens, not words: in the chat app, tokens use up your limit; in the API, developers pay for them. The shorter and more specific your prompt (your request to the AI), the less you use
+- Long texts in other languages can use more tokens than the same text in English
+- A tight prompt with no filler can noticeably cut usage without hurting quality
 
 ---
 
@@ -61,7 +61,7 @@ How does Claude know what the word "cat" means? How does it know that "The sun i
 
 The answer: pre-training (the first stage of training a language model).
 
-Imagine Anthropic gathering a giant library of text. Not just big: unimaginably big. Wikipedia in 100+ languages, millions of books, scientific papers, code on GitHub, Reddit, Stack Overflow, news, forums, legal documents. This is called a corpus (from the Latin word for "body": a large collection of text used for training).
+Imagine the model's developers gathering a giant library of text. Not just big: unimaginably big. Encyclopedias in many languages, books, scientific papers, computer code, news, forums, legal documents. This is called a corpus (from the Latin word for "body": a large collection of text used for training).
 
 Then the model trains on that corpus: trillions of tokens, months of computing on thousands of specialized chips.
 
@@ -97,7 +97,7 @@ There's a famous example: vector("king") - vector("man") + vector("woman") ≈ v
 
 ### 4. The transformer and the attention mechanism
 
-In 2017, Google published a paper called "Attention Is All You Need." That paper changed the history of AI.
+In 2017, researchers at Google published a paper called "Attention Is All You Need." That paper changed the history of AI.
 
 The transformer (a neural network architecture invented at Google in 2017) is the type of design that became the foundation of every modern language model: GPT, Claude, Gemini, Llama.
 
@@ -124,21 +124,21 @@ The context window (the maximum amount of text AI can keep in view during one co
 Everything inside the context window, AI "sees" and takes into account. Everything outside it doesn't exist for AI at that moment.
 
 **Context window sizes (as of October 2026, for Claude in the API):**
-- Claude Fable 5.1, Opus 5.5, Sonnet 5.5: **1,000,000 tokens** ≈ 555,000 words (for English text with the current tokenizer) ≈ 1,800 book pages
-- Claude Haiku 4.5: 200,000 tokens ≈ 150,000 words ≈ 500 pages
+- Claude Fable 5.1, Opus 5.5, Sonnet 5.5: **1,000,000 tokens** ≈ 555,000 English words (these models split text into smaller tokens than earlier ones did) ≈ 1,800 book pages
+- Claude Haiku 4.5: 200,000 tokens ≈ 150,000 English words ≈ 500 pages
 
 ChatGPT, Gemini and other assistants also have windows measured in hundreds of thousands or millions of tokens, but the exact numbers depend on the model and the plan: check the provider's documentation and the [What's current](https://aimayak.com/en/now/) page. In a regular app (for example, the chat at claude.ai), the amount available to you may differ from the API.
 
 These are big numbers. But in real work, context gets used up faster than you'd think: the system prompt (the background instructions the app gives the model), the conversation history, uploaded documents and AI's own answers all take up room in the context window.
 
 **What happens when the context fills up:**
-Earlier parts of the conversation get "pushed out," and AI stops taking them into account. You'll notice it: AI "forgets" what was said at the start of a long chat. That isn't stupidity; it's a physical limit of the architecture.
+Earlier parts of the conversation get "pushed out," and AI stops taking them into account. You'll notice it: AI "forgets" what was said at the start of a long chat. That isn't stupidity; it's a limit built into how the model works.
 
 🎨 **Picture this:** a desk. Everything on the desk, you can see and grab right away. That's AI's context window. Whatever is in the drawer, you'd have to pull out (that's long-term memory, which basic AI doesn't have). Whatever you left at home is out of reach entirely. When the desk gets too full, old papers slide onto the floor and drop out of sight. A context window of hundreds of thousands of tokens, or a million, is a very big desk. But it still has edges.
 
 **Practical takeaways:**
-- A big context is convenient. But it costs more (you pay for every token in the request)
-- For long projects, use `/compact` in Claude Code: it compresses the history without losing the essentials
+- A big context is convenient. But it costs more: in the API you pay for every token in the request, and in the chat app a long conversation uses up your limit faster
+- For later, when you get to Claude Code (the coding agent near the end of the course): on long projects, its `/compact` command compresses the conversation history while keeping the essentials
 - Organize your conversations: start a new chat for a new task instead of dragging everything into one
 
 ---
@@ -190,7 +190,7 @@ The model takes lower-probability tokens: "unexpected" choices. Answers become c
 
 🎨 **Picture this:** a chef's spice dial. Temperature 0 is a dish with no salt or pepper: predictable, always the same, safe. Temperature 1 is the standard recipe: tasty and familiar. Temperature 2 is the chef throwing in everything on the spice rack in random amounts: sometimes brilliant, often inedible. For Claude, Anthropic chose the "kitchen temperature" itself: on the newest Claude models in the API you can no longer change it, while on a number of other models you still can.
 
-**Practical guidelines:**
+**Practical guidelines (where your tool lets you set the temperature):**
 - Writing code / extracting data → temperature 0 to 0.3
 - Regular conversation / analysis → temperature 0.7 to 1.0
 - Brainstorming / creative writing → temperature 1.0 to 1.3
@@ -211,7 +211,7 @@ Put simply: a neural network is a math function with billions of variables. Trai
 
 More parameters ≠ a better model. That's a common misconception. What matters isn't the count; it's the quality of the training, the data and the architecture. Newer, smaller models often outperform larger predecessors.
 
-🎨 **Picture this:** parameters are like the synapses in a human brain (a synapse is a connection point between nerve cells, where signals pass from one to the next). A newborn's brain has roughly 100 trillion synapses. An adult's has fewer, because unused connections die off. Yet an adult is smarter than a baby, because the connections that remain are tuned the right way. Number of synapses ≠ intelligence. Number of parameters ≠ the power of a model. What decides everything is how they're tuned.
+🎨 **Picture this:** parameters are like the synapses in a human brain (a synapse is a connection point between nerve cells, where signals pass from one to the next). In the first few years of life, a child's brain builds a huge number of new connections and then prunes them: unused connections are cleared away, and the brain's circuits become more efficient. An adult is smarter than a toddler not because there are more connections, but because the ones that remain are tuned the right way. Number of synapses ≠ intelligence. Number of parameters ≠ the power of a model. What decides everything is how they're tuned.
 
 ---
 
@@ -260,7 +260,7 @@ AI doesn't "know" facts the way a person knows something they read in a reliable
 **How to protect yourself:**
 - Always verify important facts in an independent source
 - Double-check dates, names and statistics
-- Use Claude with web search (tools) for current information
+- For current information, ask Claude to search the web (it has web search built in) and look at the links it cites
 - Ask Claude: "Are you sure about this? How likely is it that you're wrong?" Models trained to be honest often admit uncertainty
 
 ---
@@ -269,16 +269,16 @@ AI doesn't "know" facts the way a person knows something they read in a reliable
 
 This isn't an academic lecture. Every section has a direct use in your work.
 
-**Tokens → saving money:**
-You pay for tokens. Once you understand what a token is, you:
-- Write more compact prompts (less filler = fewer tokens = lower cost)
-- Know that English is usually the cheapest language in tokens, so if you work in another language and cost matters, you can write your prompts in English
+**Tokens → saving your limit and your money:**
+Tokens use up your limit in the chat app, and in the API they cost money. Once you understand what a token is, you:
+- Write more compact prompts (less filler = fewer tokens = less usage)
+- Know that English is usually the cheapest language in tokens, so a long document in another language uses up your limit faster
 - Don't load entire documents into the context, only the parts you need
 
 **Context window → working with big documents:**
 Knowing that context has limits, you:
 - Split big documents into parts and work through them one at a time
-- Use `/compact` in Claude Code when a chat gets long
+- Later, in Claude Code, use the `/compact` command when a conversation gets long
 - Start a new chat for a new task instead of dragging everything into one
 
 **Temperature → consistency or creativity:**
@@ -306,7 +306,7 @@ Here's a list of words. For each one, tell me roughly how many tokens it takes:
 cat, catastrophe, computer, AI, internationalization, hello, hola, computadora, anthropomorphism, i18n
 ```
 
-Look at the answer. Then compare it with Anthropic's documentation on counting tokens: [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting). Counting is done through the API (the interface developers use); the separate tokenizer page that used to live at an older link no longer exists. The number of tokens depends on the model, and different generations use different tokenizers, so Claude's answer is only a rough estimate.
+Look at the answer. It's a rough estimate: the number of tokens depends on the model, and an exact count is only available through the API (the interface developers use). Anthropic's documentation explains how that works: [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting). You don't need to count anything yourself: it's enough to see that short, common words take one token, while long or rare ones take several.
 
 Goal: get a feel for how token counts differ between languages and between words.
 
@@ -325,6 +325,8 @@ Did the answers match? Differ slightly? Differ a lot? That's temperature in acti
 Take any long article from the internet (at least 5,000 words). Paste it into a chat with Claude and ask a question about details from the beginning of the article. Then ask about details from the end. Compare how accurate the answers are.
 
 Then try splitting the same article into two requests and see whether the quality of the answers changes.
+
+What to expect: an article this size fits into the context window whole, so Claude should answer about the beginning and the end equally well. "Forgetting" only starts in very long conversations.
 
 **Exercise 4: A hallucination check**
 
@@ -352,4 +354,6 @@ Goal: build the reflex of verifying important facts.
 
 ## Next lesson
 
-→ [Comparing AI models](00c-ai-models-comparison.md): Claude, GPT, Gemini, Llama, Mistral. When to pick which, the real differences, pricing, and how a business should choose.
+→ [The history of AI](00-what-is-ai.md): from Turing to Claude, where all this came from and why the turning point is happening now.
+
+A comparison of the assistants (Claude, ChatGPT, Gemini and others) comes in the next module, in the lesson [Comparing AI models](00c-ai-models-comparison.md).

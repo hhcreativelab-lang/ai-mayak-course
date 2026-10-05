@@ -8,7 +8,7 @@
 
 Anthropic ofrece **5 niveles de acceso a Claude** (más la API, que va aparte). Cada nivel trae su propio conjunto de funciones, su propio precio y sus propios límites. Si eliges el equivocado, o pagas de más o chocas con el tope cada par de horas.
 
-Lo más importante que debes entender desde el principio: **Claude Code no funciona con una cuenta gratuita.** Así que si te preguntas si Claude Code es gratis, la respuesta corta es no. Una cuenta gratuita te da el chat en claude.ai, en la app de escritorio y en tu celular. Para usar Claude en la terminal o en VS Code necesitas un plan de pago (como mínimo Pro) o una clave de API con cobro por token.
+Lo más importante que debes entender desde el principio: **Claude Code no funciona con una cuenta gratuita.** Así que si te preguntas si Claude Code es gratis, la respuesta corta es no. Una cuenta gratuita te da el chat en claude.ai, en la app de escritorio y en tu celular. Para usar Claude Code (en la app de escritorio, en la terminal o en VS Code) necesitas un plan de pago (como mínimo Pro) o una clave de API con cobro por token.
 
 Esta lección es un mapa a octubre de 2026. Los precios y los límites cambian, así que siempre revisa las cifras vigentes en la página [Lo vigente](https://aimayak.com/now/) y en la página oficial de precios. Abajo: quién recibe qué por su dinero, qué plan le conviene a quién y cómo funcionan los pagos.
 
@@ -33,18 +33,20 @@ La uso de 6 a 8 horas al día (desarrollador / constructor)
 La uso intensamente más de 8 horas al día (tiempo completo en Claude Code)
   → Max 20x ($200/mes)
 
-Tengo un equipo de 5 o más personas y necesitamos proyectos compartidos
+Somos dos o más y necesitamos proyectos compartidos y una sola factura
   → Team Standard ($25/puesto con pago mensual, $20/puesto con pago anual)
   → Team Premium ($125/puesto con pago mensual, $100/puesto con pago anual; 5 veces el uso de Standard)
 
-Industria regulada (salud/finanzas) o más de 100 usuarios
-  → Enterprise ($20/puesto + uso de la API, a través de una llamada con ventas)
+Una empresa grande o una industria regulada (salud/finanzas)
+  → Enterprise ($20/puesto al mes con pago anual + uso a precios de la API)
 
-Estoy creando un programa, chatbot o Worker que llama a Claude desde código
+Estoy creando un programa o chatbot que llama a Claude desde código
   → API (una cuenta aparte y un cobro aparte, no Pro/Max)
 ```
 
 **La opción por defecto para la mayoría de los constructores:** Pro ($20). Cubre la mayoría de las tareas. Pasa a Max cuando de verdad choques con el límite varias veces por semana.
+
+Las horas de este esquema son una guía aproximada. Anthropic no mide tu límite en horas, sino en cuánto trabajo haces: qué tan largas son tus conversaciones, qué tan grandes son tus archivos y qué modelo eliges. La única señal confiable es qué tan seguido chocas con el límite.
 
 🎨 **Imagínalo así:** una bici vs. una camioneta 4x4. Para ir a la tienda a unas cuadras, toma la bici. Para caminos de terracería, toma la camioneta. No compres una Land Cruiser para ir por un litro de leche.
 
@@ -53,14 +55,14 @@ Estoy creando un programa, chatbot o Worker que llama a Claude desde código
 ## Conceptos clave
 
 - **Plan (también llamado tier o nivel):** el nivel de tu suscripción a Claude. Decide qué modelos puedes usar, tu límite de mensajes y qué funciones tienes
-- **Límite de uso:** cuánto puedes usar Claude en un periodo determinado. No es un número fijo de mensajes: las conversaciones largas, los archivos grandes y los modelos más pesados lo consumen más rápido
+- **Límite de uso:** cuánto puedes usar Claude en un periodo determinado. No es un número fijo de mensajes: las conversaciones largas, los archivos grandes y los modelos más pesados lo consumen más rápido. Se reinicia cada cinco horas, y los planes de pago tienen además un límite semanal
 - **Claude Code:** un agente de IA para programar que funciona en la terminal, en VS Code, en la app de escritorio o en el navegador. Requiere un plan de pago (Pro, Max, Team, Enterprise) o una clave de API
-- **Fable / Opus / Sonnet / Haiku:** cuatro familias de modelos. Haiku es rápido y barato, Sonnet es el equilibrio, Opus es más inteligente y es el predeterminado en las suscripciones, y Fable es el más potente y el más caro
+- **Fable / Opus / Sonnet / Haiku:** cuatro familias de modelos. Haiku es rápido y barato, Sonnet es el equilibrio, Opus es más inteligente y es el predeterminado en Claude Code en los planes de pago, y Fable es el más potente y el más caro
 - **Token:** una unidad de texto. Aproximadamente 4 caracteres, o 0.75 de una palabra, de texto en inglés. Un texto en inglés de 1,500 palabras ≈ 2,000 tokens
 - **Prompt caching (caché de prompts):** Anthropic guarda en caché el contexto que se repite; leer de la caché cuesta el 10% del precio de entrada (todavía menos en algunos modelos)
 - **Batch API:** un modo asíncrono. Envías solicitudes, Claude las procesa en un plazo de 24 horas y obtienes un 50% de descuento
 - **Computer Use:** una función en research preview (versión de prueba temprana) en la que Claude controla tu computadora (mueve el cursor, escribe). En la app está disponible en Pro y Max
-- **Console:** un panel de cuenta aparte en platform.claude.com (antes console.claude.com) donde administras las claves de API y el cobro de la API (no Pro/Max)
+- **Console:** un panel de cuenta aparte en platform.claude.com (la dirección anterior, console.anthropic.com, lleva al mismo lugar) donde administras las claves de API y el cobro de la API (no Pro/Max)
 
 ---
 
@@ -71,8 +73,8 @@ Estoy creando un programa, chatbot o Worker que llama a Claude desde código
 **Qué obtienes:**
 
 - claude.ai en el navegador, más las apps de escritorio y de celular
-- Un límite de mensajes pequeño que depende de la demanda (el número exacto no es fijo)
-- Los modelos Sonnet y Haiku (Opus no está incluido en Free)
+- Un límite de uso pequeño que se reinicia cada cinco horas. No hay un número fijo de mensajes: depende de qué tan largas y complejas sean tus conversaciones
+- Los modelos Sonnet y Haiku (Opus y Fable no están incluidos en Free)
 - Artifacts, Skills, búsqueda web, creación de archivos, memoria
 - Projects (proyectos): hasta 5
 - **SIN Claude Code**
@@ -80,14 +82,14 @@ Estoy creando un programa, chatbot o Worker que llama a Claude desde código
 
 **Para quién es:**
 
-- Un estudiante de bachillerato o universidad que prueba la IA por primera vez
+- Una persona adulta que prueba la IA por primera vez (Claude es para mayores de 18 años)
 - Un periodista que escribe un artículo a la semana con ayuda de la IA
 - Cualquiera que quiera ver "cómo funciona esto" antes de pagar por algo
 
 **Cuándo subir de plan:**
 
-- Chocas seguido con el límite diario y quieres seguir trabajando
-- Te das cuenta de que quieres trabajar en la terminal o en VS Code
+- Chocas seguido con el límite y quieres seguir trabajando
+- Te das cuenta de que quieres trabajar en Claude Code
 - Necesitas más de cinco Projects o más uso
 
 **Enlace:** [claude.ai](https://claude.ai) (el registro es gratis)
@@ -100,24 +102,24 @@ Estoy creando un programa, chatbot o Worker que llama a Claude desde código
 
 Este es **el plan básico de trabajo**. La mayoría de la gente empieza aquí.
 
-**Qué obtienes:**
+**Qué obtienes (todo lo de Free, más):**
 
-- Más uso que en Free (según la página de precios: 5 veces más por sesión de 5 horas, más límites semanales)
-- Opus 5.5 (el modelo predeterminado en Claude Code), Sonnet 5.5, Haiku 4.5; Fable 5.1 mediante créditos de uso
-- **Claude Code** en la terminal, en VS Code, en la app de escritorio y en el navegador: la diferencia principal con Free
-- Subir archivos en el chat (PDF, imágenes, documentos)
-- Projects: carpetas con contexto persistente (conectas tu código y Claude lo recuerda)
-- Artifacts: una vista previa de HTML/código directamente en el chat
-- Claude Cowork, Research, Claude Design / Slides / Docs
+- Más uso: según la página de precios, al menos 5 veces más por sesión de 5 horas que en Free, con un límite semanal encima
+- Opus 5.5 (el modelo predeterminado en Claude Code), Sonnet 5.5, Haiku 4.5. Fable 5.1 se paga aparte, con créditos de uso (usage credits: uso adicional a precios de la API, además de tu suscripción)
+- **Claude Code** en la app de escritorio, en la terminal, en VS Code y en el navegador: la diferencia principal con Free
+- Projects sin el tope de cinco: carpetas donde Claude tiene a la mano tus documentos e instrucciones
+- Research (búsqueda más profunda en muchas fuentes), Claude Design, Slides y Docs
+- Cowork: Claude realiza por su cuenta tareas de varios pasos y puede ejecutarlas según un horario (desde septiembre de 2026, Anthropic está integrando Cowork al chat normal)
+- Claude en Chrome y en Microsoft 365
 - Computer Use (research preview, se activa en la configuración de la app)
 
-**Ahorro:** el plan anual de $200/año sale en $17/mes (vs. $20 con pago mensual), cerca de 15% menos.
+**Ahorro:** el plan anual cuesta $200, que sale en unos $16.67 al mes (la página de precios lo redondea a $17) en lugar de $20. Son $40 al año, cerca de 17% menos.
 
 **Límites de Claude Code:**
 
-- Los límites se cuentan por sesión de 5 horas y por semana; los números exactos dependen del modelo y de la demanda
+- Los límites se cuentan por sesión de 5 horas y por semana, y el chat y Claude Code gastan de la misma bolsa. Anthropic no publica números exactos
 - Para ver cuánto te queda: el comando `/usage` en Claude Code, o la página Usage en la configuración
-- Los modelos más potentes (Opus, Fable) consumen el límite más rápido que Sonnet y Haiku. En las suscripciones, Fable funciona con créditos de uso
+- Los modelos más potentes (Opus, Fable) consumen el límite más rápido que Sonnet y Haiku. En Pro, Fable no entra en el límite y se paga con créditos de uso
 
 **⚠️ Nota importante sobre el tokenizador:** los modelos 4.7 y posteriores (incluidos Opus 5.5, Sonnet 5.5 y Fable 5.1) usan un tokenizador nuevo: el mismo texto ocupa cerca de 30% más tokens que en Sonnet 4.6 y anteriores. Vas a gastar tu límite más rápido de lo que sugiere la cantidad de texto.
 
@@ -130,9 +132,9 @@ Este es **el plan básico de trabajo**. La mayoría de la gente empieza aquí.
 
 **Cuándo subir de plan:**
 
-- Chocas con el límite de Opus varias veces por semana
+- Chocas con el límite varias veces por semana
 - Trabajas en Claude Code más de 6 horas al día
-- Ves el mensaje "Approaching limit" (te acercas al límite) más de una vez al día
+- El aviso de que te acercas al límite aparece casi todos los días
 
 **Enlace:** [claude.com/pricing](https://claude.com/pricing) o [claude.ai/upgrade](https://claude.ai/upgrade)
 
@@ -142,12 +144,13 @@ Este es **el plan básico de trabajo**. La mayoría de la gente empieza aquí.
 
 ### Nivel 3: Claude Max (desde $100/mes, dos niveles)
 
-Max es para quienes trabajan con Claude **mucho**. Hay dos niveles: 5x y 20x el límite de Pro (precios a octubre de 2026).
+Max es para quienes trabajan con Claude **mucho**. Hay dos niveles: 5x y 20x el límite de Pro (precios a octubre de 2026). Max solo se cobra por mes; no hay opción anual.
 
 #### Max 5x (desde $100/mes)
 
 - 5 veces el límite de Pro por sesión de 5 horas
 - Las mismas funciones que Pro
+- Fable está incluido: puedes gastar en él hasta el 50% de tu límite semanal
 - Acceso anticipado a funciones nuevas
 - Acceso prioritario en horas pico
 - Límites de salida más altos
@@ -161,7 +164,7 @@ Max es para quienes trabajan con Claude **mucho**. Hay dos niveles: 5x y 20x el 
 **Para quién es:**
 
 - Un desarrollador que pasa de 6 a 8 horas al día en Claude Code (Max 5x)
-- Una agencia de IA que atiende a 5 o más clientes a la vez (Max 5x o 20x)
+- Un especialista que lleva solo varios proyectos de clientes a la vez (Max 5x o 20x)
 - Un constructor que trabaja intensamente más de 8 horas al día (Max 20x)
 - Un fundador que trabaja solo y produce mucho contenido y código cada día
 
@@ -180,20 +183,20 @@ Max es para quienes trabajan con Claude **mucho**. Hay dos niveles: 5x y 20x el 
 
 ### Nivel 4: Claude Team (dos niveles: Standard y Premium)
 
-Este es **el plan de equipo** para pequeñas empresas. En 2026, Anthropic dividió Team en dos niveles:
+Este es **el plan de equipo** para pequeñas empresas: equipos de 2 a 150 personas. Pagas por puesto (seat), es decir, por cada miembro. Hay dos tipos de puesto, y puedes combinarlos en un mismo equipo:
 
 #### Team Standard
 
 - **Mensual:** $25/puesto/mes
 - **Anual:** $20/puesto/mes, un ahorro del 20%
-- Todas las funciones de Claude, SSO, facturación centralizada
+- Todas las funciones de Claude, más uso que en Pro
 
 #### Team Premium
 
 - **Mensual:** $125/puesto/mes
 - **Anual:** $100/puesto/mes
 - **5 veces más uso** que los puestos Standard
-- Límites más altos en los modelos pesados
+- Fable está incluido (hasta el 50% del límite semanal); en un puesto Standard, Fable se paga con créditos de uso
 
 **Qué obtienes (en ambos):**
 
@@ -203,7 +206,7 @@ Este es **el plan de equipo** para pequeñas empresas. En 2026, Anthropic dividi
 - Controles de administrador: quién puede hacer qué
 - Integración con SSO (inicio de sesión único)
 - Analítica de uso del equipo: ves quién usó cuánto
-- Espacios de trabajo separados para los miembros del equipo
+- Por defecto, el contenido de tu equipo no se usa para entrenar modelos
 
 **Lo que Team NO te da (eso ya es terreno de Enterprise):**
 
@@ -219,7 +222,7 @@ Este es **el plan de equipo** para pequeñas empresas. En 2026, Anthropic dividi
 
 **Para quién es:**
 
-- Una startup de 5 a 50 personas (Standard para uso moderado, Premium si dependen mucho de Opus)
+- Una empresa pequeña de hasta 150 personas (Standard para uso moderado, Premium para quienes pasan días enteros en Claude Code)
 - Una pequeña agencia de IA con equipo
 - Un negocio familiar donde 3 a 5 personas usan IA todos los días
 
@@ -229,37 +232,36 @@ Este es **el plan de equipo** para pequeñas empresas. En 2026, Anthropic dividi
 
 ---
 
-### Nivel 5: Claude Enterprise (precio personalizado)
+### Nivel 5: Claude Enterprise (precio por puesto más uso)
 
-**Qué obtienes:**
+**Qué obtienes (todo lo de Team, más):**
 
-- Aprovisionamiento SCIM
-- Registros de auditoría completos
-- Preparado para HIPAA (para el sector salud)
-- Un DPA (Data Processing Agreement, acuerdo de procesamiento de datos) para el GDPR (el reglamento europeo de protección de datos)
-- Lista de IP permitidas (IP allowlisting)
+- Aprovisionamiento SCIM (administración automática de las cuentas de usuario)
+- Registros de auditoría
+- Una opción preparada para HIPAA (para datos de salud)
+- La Compliance API y periodos propios de retención de datos
+- Lista de IP permitidas (IP allowlisting) y control de acceso a nivel de red
 - Claude Security (beta)
-- SSO avanzado + controles de administrador
-- Límites de uso y acceso a modelos personalizados
-- Un gerente de soporte dedicado
+- Acceso por roles con permisos detallados
+- Límites de gasto por usuario y para toda la organización
 
 **Precio (a octubre de 2026):**
 
-- **$20/puesto al mes, con pago anual, + uso de la API:** un híbrido de "puesto + consumo"
-- El uso de la API se cobra aparte, con las tarifas oficiales de los modelos
-- Lo típico son contratos anuales
-- El precio final se negocia con el equipo de ventas
+- **$20/puesto al mes, con pago anual, + uso a precios de la API:** pagas el puesto y lo que de verdad usas
+- El uso se cobra con las tarifas oficiales de los modelos
+- Solo con pago anual
+- Puedes contratarlo tú mismo en la página de precios o pedirle una cotización al equipo de ventas
 
 **Para quién es:**
 
-- Empresas de más de 100 personas
+- Empresas grandes
 - Industrias reguladas (salud, finanzas, legal)
-- Empresas SaaS empresariales que integran Claude en su producto
-- Contratos de gobierno y cuasi gubernamentales
+- Organizaciones que necesitan SCIM, registros de auditoría y sus propios periodos de retención de datos
+- Clientes de gobierno y cuasi gubernamentales
 
-**Cómo se compra:** a través del equipo de ventas de Anthropic (Contact Sales), no en el sitio de autoservicio
+**Cómo se compra:** la página de precios tiene un botón "Get Enterprise plan" (para contratarlo tú mismo) y una forma de hablar con un especialista de ventas
 
-**Enlace:** [claude.com/pricing](https://claude.com/pricing) → Contact Sales
+**Enlace:** [claude.com/pricing](https://claude.com/pricing) → Get Enterprise plan o Contact sales
 
 🎨 **Imagínalo así:** un jet privado con tripulación. Caro, totalmente a la medida, hecho para trabajos específicos. Comprarlo "por si acaso" no tiene sentido. Comprarlo cuando de verdad vuelas al extranjero por trabajo cada semana sí lo tiene.
 
@@ -345,7 +347,7 @@ Los nombres y precios de los modelos de OpenAI cambian seguido; revisa las cifra
 |---|---|---|
 | Escritura en caché, 5 min | **1.25x** (25% más que el precio base de entrada) | 5 minutos |
 | Escritura en caché, 1 hora | **2.0x** (el doble del precio) | 1 hora |
-| Lectura de caché (acierto) | **0.1x, un 90% de descuento** (0.05x en Opus 5.5; para otros modelos, consulta la página oficial de precios) | mientras la caché siga activa |
+| Lectura de caché (acierto) | **0.1x, un 90% de descuento** (0.05x en Opus 5.5, 0.025x en Fable 5.1) | mientras la caché siga activa; cada lectura la prolonga |
 
 **Ejemplos en Sonnet 5.5 ($2/MTok de entrada):**
 
@@ -371,7 +373,7 @@ Los nombres y precios de los modelos de OpenAI cambian seguido; revisa las cifra
 
 **Para quién es:**
 
-- Un desarrollador que crea un Cloudflare Worker, un chatbot o una automatización
+- Un desarrollador que crea un chatbot, un servicio o una automatización
 - Una empresa SaaS que integra Claude en su producto
 - Cualquier programa que llame a Claude desde código más de 100 veces al día
 
@@ -381,7 +383,7 @@ Los nombres y precios de los modelos de OpenAI cambian seguido; revisa las cifra
 - Necesitas integrar Claude en tu propio producto
 - Tu volumen de llamadas supera lo que Pro te da a través del chat
 
-**Enlace:** [platform.claude.com](https://platform.claude.com) (Console) → Billing → Add credit
+**Enlace:** [platform.claude.com](https://platform.claude.com) (Console) → la página Billing, donde recargas saldo
 
 **El monto mínimo de recarga y los métodos de pago** aparecen en Console → Billing.
 
@@ -393,13 +395,13 @@ Los nombres y precios de los modelos de OpenAI cambian seguido; revisa las cifra
 
 | Función | Free | Pro | Max 5x | Max 20x | Team Standard | Team Premium | Enterprise | API |
 |---|---|---|---|---|---|---|---|---|
-| **Precio mensual** | $0 | $20/mes | desde $100/mes | $200/mes | $25/puesto | $125/puesto | $20/puesto + API | pago por uso |
-| **Precio anual** | — | $17/mes ($200/año) | — | — | $20/puesto | $100/puesto | $20/puesto (pago anual) | — |
-| **Claude Code** | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | con tu propio código |
-| **Uso** | límite pequeño | 5x Free por sesión | 5x Pro | 20x Pro | más que Pro | 5x Standard | personalizado | niveles Start / Build / Scale |
-| **Modelos** | Sonnet, Haiku | Opus, Sonnet, Haiku; Fable con créditos de uso | todos los disponibles | todos los disponibles | todos los disponibles | todos los disponibles | todos los disponibles | todos (precios arriba) |
-| **Projects** | hasta 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | a través de la API |
-| **Espacio de trabajo compartido** | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | — |
+| **Precio mensual** | $0 | $20/mes | desde $100/mes | $200/mes | $25/puesto | $125/puesto | — | pago por uso |
+| **Precio anual** | — | $17/mes ($200/año) | — | — | $20/puesto | $100/puesto | $20/puesto + uso a precios de la API | — |
+| **Claude Code** | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ con una clave de API, cobro por token |
+| **Uso** | límite pequeño | al menos 5x Free por sesión | 5x Pro | 20x Pro | más que Pro | 5x Standard | se cobra por uso | niveles de límites Start / Build / Scale |
+| **Modelos** | Sonnet, Haiku | Opus, Sonnet, Haiku; Fable con créditos de uso | todos; Fable hasta el 50% del límite semanal | todos; Fable hasta el 50% del límite semanal | Opus, Sonnet, Haiku; Fable con créditos de uso | todos; Fable hasta el 50% del límite semanal | todos los disponibles | todos (precios arriba) |
+| **Projects** | hasta 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| **Proyectos compartidos del equipo** | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | — |
 | **SSO** | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ + SCIM | claves de API |
 | **Preparado para HIPAA** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | — |
 | **Computer Use** (en la app) | ❌ | research preview | research preview | research preview | ❌ | ❌ | ❌ | a través de la API |
@@ -418,7 +420,7 @@ Sin unas 6 a 8 horas reales de trabajo al día, Max no se paga. Pro ya te da bas
 
 Para el chat interactivo, la API suele ser **más cara** que Pro: con cada respuesta, todo el historial de la conversación va en la solicitud. Un ejemplo en Sonnet 5.5 (precios a octubre de 2026): 100 solicitudes al día, cada una con 20K tokens de entrada y 1K tokens de salida = 2M de entrada × $2 + 0.1M de salida × $10 = $5 al día, o cerca de $150 al mes. Pro cuesta un fijo de $20 (o $17 con pago anual).
 
-La API es más barata solo para la **automatización en código**: un Worker hace 5K llamadas al día, cada una con 500 tokens de entrada y 100 tokens de salida = 2.5M × $2 + 0.5M × $10 = $10 al día. Nunca llegarías a ese volumen platicando.
+La API es más barata solo para la **automatización en código**: un servicio hace 5K llamadas al día, cada una con 500 tokens de entrada y 100 tokens de salida = 2.5M × $2 + 0.5M × $10 = $10 al día. Nunca llegarías a ese volumen platicando.
 
 **❌ "Pro + API reemplaza a Team"**
 
@@ -429,19 +431,19 @@ Solo en parte. Pro + API te da acceso personal más automatización. Pero NO te 
 - Controles de administrador
 - Analítica de uso del equipo
 
-Si 3 personas trabajan juntas, Pro × 3 = $60 (o $51 con pago anual). Con 5 o más personas, Team Standard tiene más sentido ($100/mes con pago anual por 5 puestos).
+Si 3 personas trabajan juntas, Pro × 3 = $60 (o $51 con pago anual). Si necesitan proyectos compartidos y una sola factura, Team Standard tiene más sentido: $100/mes por 5 puestos, con pago anual.
 
 **❌ "Free alcanza para todo"**
 
-Para el chat, tal vez. Para Claude Code, **no**: simplemente no está disponible en Free. Si quieres escribir código en la terminal, necesitas un plan de pago (como mínimo Pro) o una clave de API.
+Para el chat, tal vez. Para Claude Code, **no**: simplemente no está disponible en Free. Para trabajar en Claude Code necesitas un plan de pago (como mínimo Pro) o una clave de API.
 
 **❌ "Compré Pro, así que Claude Code funciona de inmediato"**
 
-No de inmediato. Pro te da el **derecho** a usar Claude Code, pero todavía necesitas una terminal o VS Code, y Claude Code se instala aparte. Mira la lección [Cómo instalar y configurar Claude Code](05-setup.md).
+No de inmediato. Pro te da el **derecho** a usar Claude Code, pero todavía tienes que instalarlo. Lo más fácil es la app de escritorio de Claude y su pestaña Code, que es la próxima lección. La ruta con terminal y VS Code está en la lección de la biblioteca [Cómo instalar y configurar Claude Code](05-setup.md).
 
 **❌ "Puedo pausar mi suscripción"**
 
-No cuentes con una pausa. Revisa en Settings → Billing qué opciones ofrece tu plan: cancelar, cambiar de plan u otra cosa. Antes de cancelar, guarda tus Projects y conversaciones importantes, y consulta las condiciones de retención de datos en el centro de ayuda oficial.
+No cuentes con una pausa: la página de precios solo describe cancelar y cambiar de plan. Puedes cancelar cuando quieras en Settings → Billing → Cancel. Tu plan sigue activo hasta el final del periodo que ya pagaste; para evitar el siguiente cargo, cancela al menos 24 horas antes de la fecha de renovación. Cancelar no borra tus datos: tus chats, proyectos y archivos se quedan en tu cuenta, aunque algunas funciones no están disponibles en Free.
 
 ---
 
@@ -453,11 +455,12 @@ Anthropic ofrece acceso y recibe pagos solo en los países admitidos. EE. UU. es
 
 - Una tarjeta de crédito o débito es el método principal para las suscripciones y la API
 - A los clientes Enterprise se les puede facturar bajo contrato
-- Otros métodos dependen de la plataforma y de tu país; mira Settings → Billing
+- También puedes suscribirte en la app del celular con la App Store o Google Play; en ese caso cancelas desde la tienda de apps
+- Otros métodos dependen de tu país; mira Settings → Billing
 
 **Una tarjeta de respaldo:**
 
-Un pago puede fallar por razones cotidianas: la protección contra fraudes de tu banco marca el cargo por error, o cambia tu dirección IP. Agrega a tu cuenta una segunda tarjeta de otro banco y asegúrate de que tenga fondos o crédito disponible suficientes.
+Un pago puede fallar por razones cotidianas: por ejemplo, la protección contra fraudes de tu banco marca el cargo por error. Agrega a tu cuenta una segunda tarjeta de otro banco y asegúrate de que tenga fondos o crédito disponible suficientes.
 
 **Si falla un pago:**
 
@@ -465,7 +468,7 @@ Un pago puede fallar por razones cotidianas: la protección contra fraudes de tu
 2. Actualiza tu tarjeta o agrega una de respaldo
 3. Si nada funciona, contacta al soporte de Anthropic desde tu cuenta e incluye los datos de la transacción
 
-**Reembolsos:** las condiciones de reembolso dependen del plan y de la región. Consulta las reglas vigentes en el centro de ayuda de Anthropic ([support.claude.com](https://support.claude.com)); para Team y Enterprise, revisa tu contrato.
+**Reembolsos:** por regla general, los pagos no se reembolsan. Las excepciones son los casos previstos en los términos de servicio de Anthropic y lo que exija la ley local: en el Espacio Económico Europeo y el Reino Unido, por ejemplo, hay un periodo de desistimiento de 14 días. El reembolso se pide en la app, desde el menú Get help; si te suscribiste con la App Store, el reembolso lo gestiona Apple. Los detalles están en el centro de ayuda de Anthropic ([support.claude.com](https://support.claude.com)); para Team y Enterprise, revisa tu contrato.
 
 **Renovación automática:**
 
@@ -482,7 +485,7 @@ Un constructor muchas veces necesita más de un plan a la vez. Es normal:
 **Pro + API** (la combinación más común para un desarrollador que trabaja solo)
 
 - Pro a $20 (o $17 con pago anual) para el chat y Claude Code
-- La API a $20-50/mes para tus propios Workers y automatizaciones
+- La API a $20-50/mes para tus propios programas y automatizaciones
 - Total: $37-70/mes, que cubre bien la mayoría de las tareas
 
 **Max 5x + API** (para un constructor serio)
@@ -577,4 +580,6 @@ Antes de comprar una suscripción:
 
 ## Próxima lección
 
-→ [Cómo instalar y configurar Claude Code](05-setup.md): instala Claude Code, configura la terminal y VS Code, y ejecuta tu primer comando
+→ [Claude Code de escritorio: empieza sin la terminal](05b-claude-code-desktop.md): tu primer paso en Claude Code, en la app de escritorio de Claude
+
+En la biblioteca, opcional: [Cómo instalar y configurar Claude Code](05-setup.md): Claude Code en la terminal y en VS Code

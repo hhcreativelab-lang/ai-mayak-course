@@ -1,8 +1,8 @@
 # Cómo ponerle precio a un producto de IA: valor, niveles, paquetes
 
-**Tiempo:** unos 35 min de lectura + 60 min de práctica
+**Tiempo:** unos 35 min de lectura + 270 min de práctica (pasos 1–3; los pasos 4–5 van después del lanzamiento)
 
-Las cantidades en dólares, los porcentajes y las escaleras de precios de esta lección son ejemplos inventados que explican el método. No son estadísticas de mercado ni un pronóstico de lo que vas a ganar. Calcula tus propios números para tu propio mercado y tus propios clientes. Para la versión para principiantes, mira la lección [Cómo poner tu precio](d02-pricing-simple.md).
+Las cantidades en dólares, los porcentajes y las escaleras de precios de esta lección son ejemplos inventados que explican el método. No son estadísticas de mercado ni un pronóstico de lo que vas a ganar. Calcula tus propios números para tu propio mercado y tus propios clientes. Para la versión para principiantes, mira la lección [Cómo poner tu precio](d02-pricing-simple.md). Esta lección trata del precio de un producto con suscripción: tu propio servicio de IA o un servicio con pago mensual. Si por el momento solo vendes proyectos únicos, lee la teoría y regresa a la práctica cuando tengas un producto.
 
 ---
 
@@ -10,13 +10,13 @@ Las cantidades en dólares, los porcentajes y las escaleras de precios de esta l
 
 El precio no es solo "lo que cuesta". Es una señal de valor, un filtro de clientes y tu fuente de ingresos. Tres trabajos en un solo número.
 
-La mayoría de los fundadores le tienen miedo al precio. "Voy a cobrar $9 para que al menos alguien compre", y luego no pueden subirlo en dos años. Mientras tanto, los competidores cobran $99 por las mismas funciones y obtienen **bastante más dinero** con el mismo número de clientes. Muchas veces también consiguen mejores clientes y mejor retención (se quedan más clientes).
+Muchos fundadores le tienen miedo al precio. "Voy a cobrar $9 para que al menos alguien compre", y luego no pueden subirlo en dos años. Mientras tanto, los competidores cobran $99 por las mismas funciones y obtienen **bastante más dinero** con el mismo número de clientes. Muchas veces también consiguen mejores clientes y mejor retención (se quedan más clientes).
 
 El precio no es el último paso al construir un producto. Es la **primera señal** que ve un cliente después de la descripción. $9 dice "esto es un juguete". $999 dice "esto es una herramienta seria". Lo que hay adentro puede ser idéntico, pero la percepción, las expectativas y el comportamiento del cliente son **distintos**.
 
-En los productos de IA el problema es más fuerte: el valor muchas veces es de 10 a 100 veces el costo. La API (el acceso de pago por uso a un modelo de IA) cuesta $0.10, y el valor para el cliente es de $50. Si cobras $0.20 (costo más margen), dejas $49.80 sobre la mesa. Un competidor se los va a llevar.
+En los productos de IA el problema es más fuerte: el valor puede ser decenas o hasta cientos de veces el costo. La API (el acceso de pago por uso a un modelo de IA) cuesta $0.10, y el valor para el cliente es de $50. Si cobras $0.20 (costo más margen), dejas $49.80 sobre la mesa. Un competidor se los va a llevar.
 
-En esta lección vemos cómo ponerle precio a un producto de IA de la forma correcta: el enfoque basado en valor, una estructura de 3 niveles, los detonantes psicológicos y cómo empaquetarlo todo en 30 días.
+En esta lección vemos cómo ponerle precio a un producto de IA de la forma correcta: el enfoque basado en valor, una estructura de 3 niveles, los detonantes psicológicos y un plan de 30 días para probar tu precio.
 
 🎨 **Imagínalo así:** un restaurante. El chef no pone el precio según "lo que cuestan los ingredientes y el gas". El precio es "lo que un comensal está dispuesto a pagar por esta noche". Un corte cuesta $80 no porque la carne sea más cara, sino por el ambiente, el nombre y las expectativas. El mismo corte en una fonda de carretera cuesta $15. Producto parecido, valor distinto, precio distinto. Un producto de IA funciona igual.
 
@@ -65,7 +65,7 @@ Cualquier forma de poner precios se reduce a una de tres filosofías: contar des
 
 El enfoque: "La API cuesta $0.10, le sumo un margen del 100% → lo vendo en $0.20".
 
-**El problema para la IA:** el valor muchas veces es de 10 a 100 veces el costo. Si una herramienta de IA le ahorra a un cliente 10 horas de trabajo ($500-1,000 de valor) y tú cobras según el costo, $5, ese cliente habría pagado **con gusto** $100. Dejas $95 sobre la mesa en cada venta.
+**El problema para la IA:** el valor puede ser decenas o hasta cientos de veces el costo. Si una herramienta de IA le ahorra a un cliente 10 horas de trabajo ($500-1,000 de valor) y tú cobras según el costo, $5, ese cliente habría pagado **con gusto** $100. Dejas $95 sobre la mesa en cada venta.
 
 **Cuándo tiene sentido cobrar según el costo:**
 - Productos básicos (alojamiento en la nube, reventa de una API sin cambios)
@@ -87,7 +87,7 @@ Poner precios según los competidores es una señal de que no tienes tu propia i
 - Una alternativa directa (tu producto hace lo mismo, solo que mejor en un aspecto)
 - Un posicionamiento deliberado ("somos 50% más baratos que X")
 
-**Para productos de IA:** pocas veces. La mayoría de los productos de IA apuntan a un uso nuevo o a un nicho concreto, donde no hay comparación directa.
+**Para productos de IA:** pocas veces. Muchos productos de IA apuntan a un uso nuevo o a un nicho concreto, donde no hay comparación directa.
 
 #### Modelo C: Basado en valor (correcto para la IA)
 
@@ -95,13 +95,13 @@ El enfoque: mide el valor para el cliente → cobra el 10-20% de ese valor.
 
 **La lógica:**
 - El cliente recibe $5,000 al mes en valor → está dispuesto a pagar $500-1,000 al mes
-- Es un "sí fácil": un ROI (retorno de la inversión) claro, que se recupera en 1-2 semanas de uso
+- Es un "sí fácil": un ROI (retorno de la inversión) claro, y el pago de cada mes se recupera en la primera semana
 - El margen es alto (costo $50-100, ingreso $500-1,000)
 - El cliente queda contento (ahorra $4,000-4,500 netos)
 
 **Es un enfoque común para ponerle precio a la IA en 2026.** Muchos productos SaaS de IA (software que se vende como suscripción) funcionan así: el precio está ligado al valor para el cliente.
 
-🎨 **Imagínalo así:** un médico general frente a un cirujano. Un médico general cobra unos $150 por una consulta (la tarifa normal del mercado). Un cirujano cobra $50,000 por una operación que salva una vida, porque ese valor no se puede comparar con una tarifa estándar. La IA muchas veces es el "cirujano": resuelve rápido un problema caro. Tu precio debe reflejarlo.
+🎨 **Imagínalo así:** un médico general frente a un cirujano. Un médico general cobra, digamos, $150 por una consulta (la tarifa normal del mercado). Un cirujano cobra $50,000 por una operación que salva una vida, porque ese valor no se puede comparar con una tarifa estándar. La IA muchas veces es el "cirujano": resuelve rápido un problema caro. Tu precio debe reflejarlo.
 
 ---
 
@@ -125,7 +125,7 @@ El valor viene en cuatro tipos. Para cualquier producto de IA, normalmente aplic
 - × los ingresos actuales del cliente
 - Resultado: valor en $ al mes por el aumento de ingresos
 
-**Ejemplo:** una herramienta de ventas con IA sube la conversión un 5%. El cliente vende $20,000 al mes. Aumento = $1,000 al mes. Valor = **$1,000 al mes**.
+**Ejemplo:** una herramienta de ventas con IA sube las ventas un 5%. El cliente vende $20,000 al mes. Aumento = $1,000 al mes. Valor = **$1,000 al mes**.
 
 **Reducción de costos:**
 - El % de reducción de los costos que ya existen
@@ -274,7 +274,7 @@ Dentro de los precios basados en valor y de los 3 niveles, hay **palancas** que 
 | **Por usuario** | Crece con el tamaño del equipo | Herramientas de colaboración (Slack, Notion) |
 | **Por uso** | Crece con el consumo | APIs de IA, minutos de voz, transacciones |
 | **Tarifa mensual fija** | Sencilla, predecible | El estándar de las suscripciones (Spotify, Netflix) |
-| **Descuento anual** | Mejora el flujo de efectivo y la retención | 10-20% de descuento por pagar el año |
+| **Descuento anual** | Mejora el flujo de efectivo y la retención | 15-20% de descuento por pagar el año |
 | **Prueba gratis** | Menos fricción | Productos de autoservicio |
 | **Freemium** | Entrar al mercado masivo y luego crecer dentro de cada cliente | Una estrategia de adopción masiva (Notion, Figma) |
 | **Empresarial a la medida** | Capta la alta disposición a pagar | El 5-10% más alto de los prospectos |
@@ -305,11 +305,11 @@ Si cobras por cada "solicitud", los clientes muchas veces **tienen miedo** de ha
 - Esconderlos: una caja negra, que genera desconfianza
 - **Punto medio:** muestra "solicitudes de IA" o "créditos" en lugar de tokens. Eso lo entiende todo el mundo.
 
-**Ejemplo:** "10,000 solicitudes de IA al mes ≈ 500 correos largos + 200 revisiones de código."
+**Ejemplo:** "10,000 créditos al mes ≈ 500 correos largos (10 créditos cada uno) + 200 revisiones de código (25 créditos cada una)."
 
 #### La variación del costo (importante en la IA)
 
-Algunos usuarios usan 100 veces más que otros. Con una tarifa fija de un solo nivel, los usuarios intensivos se comen tu margen.
+Algunos usuarios pueden usar 100 veces más que otros. Con una tarifa fija de un solo nivel, los usuarios intensivos se comen tu margen.
 
 **Un plan para los casos extremos:**
 - Un tope duro (después de X de uso, el servicio se hace más lento o se detiene)
@@ -346,12 +346,12 @@ El precio no es solo matemáticas. La psicología de la percepción tiene un efe
 **Terminar en 9 (precio psicológico)**
 - $29 se siente más bajo que $30 (el cerebro ve "veintitantos")
 - Muchas veces funciona en B2C (venta a consumidores)
-- Importa menos en B2B (venta a empresas), pero no estorba
+- Probablemente importa menos en B2B (venta a empresas), pero no estorba
 
 **Ancla (la opción cara primero)**
 - Muestra primero el nivel Enterprise en la página
 - Así el nivel de en medio se siente accesible
-- Pon una etiqueta de "El más popular" en tu nivel objetivo
+- Pon una etiqueta de "Recomendado" en tu nivel objetivo; di "El más popular" solo cuando sea verdad
 
 **Señuelo (una opción asimétrica)**
 - Un nivel "malo" entre opciones buenas empuja a la gente hacia el nivel objetivo
@@ -364,11 +364,11 @@ El precio no es solo matemáticas. La psicología de la percepción tiene un efe
 
 **Garantía de devolución del dinero**
 - "Garantía de devolución de 30 días" baja el riesgo que se percibe
-- Normalmente sube la conversión
-- Los reembolsos reales son pocos si el producto es bueno (ofrece la garantía solo si estás listo para devolver el dinero)
+- Muchas veces ayuda a la conversión
+- Cuando el producto es bueno, las solicitudes de reembolso suelen ser poco comunes (ofrece la garantía solo si estás listo para devolver el dinero)
 
 **Mostrar el descuento anual**
-- "Paga $299 al año y ahorra $89" pega más fuerte que "$25 al mes" (el mismo precio anual dividido entre 12)
+- "Paga $278 al año y ahorra $70" (un plan de $29 al mes con 20% de descuento) pega más fuerte que "$23 al mes" (el mismo precio anual dividido entre 12)
 - Muestra el ahorro de forma explícita
 - Deja mensual como opción predeterminada y resalta la anual
 
@@ -392,7 +392,7 @@ Una suscripción anual es una de las palancas más fuertes para el flujo de efec
 
 **El punto medio:**
 - Predeterminado: mensual
-- Anual visible, con el ahorro bien explicado ("Ahorra $89 al año")
+- Anual visible, con el ahorro bien explicado ("Ahorra $70 al año")
 - Deja que los clientes pasen de mensual a anual cuando quieran
 
 No ofrezcas solo el plan anual. Te quita una parte de tu mercado: los clientes que quieren probar el producto sin compromiso.
@@ -413,7 +413,8 @@ Después de 12-18 meses, vas a querer subir los precios. Vas a tener más funcio
 **2. Avisa con 30-60 días de anticipación**
 - Correo + un aviso dentro de la app
 - Explica el "por qué" (funciones nuevas, más valor)
-- NO digas "subimos los precios". Di "agregamos X, y el nuevo precio refleja ese valor".
+- Dilo con claridad: el precio nuevo, la fecha en que empieza a aplicar y cómo cancelar. No escondas el aumento detrás de palabras vagas
+- En algunos lugares la ley fija cómo y cuándo debes avisar de un aumento en el precio de una suscripción; revisa las reglas del lugar donde viven tus clientes
 
 **3. Preséntalo como más valor**
 - Un nivel nuevo con funciones extra
@@ -421,14 +422,14 @@ Después de 12-18 meses, vas a querer subir los precios. Vas a tener más funcio
 - Quienes se registran a partir de ahora entran con los precios nuevos
 
 **4. Prueba los precios nuevos primero con los registros nuevos**
-- 30-60 días de prueba A/B (los registros nuevos ven los precios nuevos)
+- Durante 30-60 días, los registros nuevos ven los precios nuevos
 - Mide el efecto en la conversión y en las cancelaciones
 - Ajusta antes de aplicarlo a todos
 
 **5. Comunica el valor antes que el precio**
 - Empieza el correo con "qué hay de nuevo" (3 funciones)
-- Pon el cambio de precio hasta el final del correo
-- Es contexto, no un anuncio
+- Después di con claridad el precio nuevo y la fecha. No lo escondas en letra chica al final
+- El cliente debe ver de un vistazo qué cambia y cuándo
 
 🎨 **Imagínalo así:** un casero que remodela. No les dices a tus inquilinos "ahora pagan más". Les dices "arreglé el lugar: cocina nueva, baño nuevo, así que esta es la nueva renta". La forma en que la gente lo toma cambia por completo.
 
@@ -450,7 +451,7 @@ Después de 12-18 meses, vas a querer subir los precios. Vas a tener más funcio
 
 ❌ **Un nivel gratis que regala demasiado**
 - Si el nivel gratis resuelve el 80% del problema, no hay razón para subir de plan
-- Lo gratis debe ser un **tráiler** (5-10% de la capacidad) de los planes de pago
+- Lo gratis debe ser un **tráiler** (digamos, 5-10% de la capacidad) de los planes de pago
 - Notion y Figma tienen niveles gratis bien equilibrados
 
 ❌ **Precio a la medida para todos**
@@ -471,7 +472,7 @@ Después de 12-18 meses, vas a querer subir los precios. Vas a tener más funcio
 ❌ **No subir los precios en 2 años**
 - La inflación sola abre una brecha
 - Se ve barato (la señal: baja calidad o un producto que se está muriendo)
-- Sube los precios al menos una vez al año
+- Revisa tus precios al menos una vez al año
 
 ---
 
@@ -486,7 +487,7 @@ Una prueba A/B de precios no es como una prueba A/B de la interfaz. El riesgo es
 
 **Haz esto en su lugar:**
 - **A/B secuencial:** 30 días al precio X, 30 días al precio Y, y luego comparas
-- **A/B por cohortes:** los registros nuevos de la cohorte A ven el precio viejo y los de la cohorte B ven el nuevo (sé abierto al respecto: "precio por tiempo limitado")
+- **A/B por cohortes:** quienes se registraron antes de una fecha ven el precio viejo, y quienes se registran después ven el nuevo. Dilo abiertamente ("el precio anterior está disponible hasta tal fecha"), y solo si es verdad
 - **A/B por página:** distintas páginas de aterrizaje llevan a distintas páginas de precios (cuando las fuentes de tráfico son claramente distintas)
 
 **Mide varias cosas juntas:**
@@ -560,7 +561,7 @@ Toma el estimado **bajo** (no el optimista). Es mejor quedarte corto con el valo
 
 **4. Documéntalo, con una fuente:**
 
-No "pues, probablemente $5,000 al mes". Mejor: "Según entrevistas con 5 clientes: tiempo ahorrado promedio de 12 horas/mes × $50/hora = $600/mes."
+No "pues, probablemente $5,000 al mes". Mejor: "Según entrevistas con 5 clientes (o posibles clientes): tiempo ahorrado promedio de 12 horas/mes × $50/hora = $600/mes."
 
 **Resultado:** un documento de "Análisis del valor para el cliente" con una cifra concreta de valor en $.
 
@@ -628,7 +629,7 @@ Soporte: CSM dedicado + canal de Slack
 - Contrato a la medida
 - SLA
 - Vendido por el equipo de ventas
-- Compromiso mínimo: $[2X-5X al año]
+- Compromiso mínimo: $[monto al año]
 ```
 
 **Revisión rápida:**
@@ -653,7 +654,7 @@ Una página de precios es una **página de conversión**, no un montón de infor
 
 ## 2. 3 tarjetas de precio
 - [ ] Tarjeta Starter
-- [ ] Tarjeta Pro (con una etiqueta de "El más popular")
+- [ ] Tarjeta Pro (con una etiqueta de "Recomendado"; usa "El más popular" solo cuando sea verdad)
 - [ ] Tarjeta Business
 
 En cada tarjeta:
@@ -694,7 +695,7 @@ En cada tarjeta:
 
 CTA significa llamado a la acción: el botón que le dice al visitante qué hacer después.
 
-**Consejo:** mira las páginas de precios de Linear, Notion y Figma. Llevan años afinándolas, así que copia la estructura (no los precios). Los precios de esas páginas cambian; mira los actuales.
+**Consejo:** mira las páginas de precios de Linear, Notion y Figma. Son ejemplos conocidos de una página de precios clara, así que copia la estructura (no los precios). Los precios de esas páginas cambian; mira los actuales.
 
 ---
 
@@ -764,28 +765,28 @@ Esto se vuelve la memoria de tus precios. Dentro de un año no vas a recordar po
 
 ## Lista de verificación para el lanzamiento
 
-✅ **Valor para el cliente cuantificado** ($X/mes, con entrevistas a clientes como fuente)
-✅ **3 niveles diseñados** con la regla del 3x ($29/$99/$299 o parecido)
-✅ **Funciones de cada nivel definidas** (qué hay en cada uno, de forma progresiva)
-✅ **Descuento anual calculado** (15-20% de descuento, bien visible)
-✅ **Página de precios publicada** con los 7 elementos (sección principal, tarjetas de precio, CTA para empresas, señales de confianza, preguntas frecuentes, tabla comparativa, pie de página)
-✅ **Garantía de devolución** anunciada (30 días por defecto, solo si la vas a cumplir)
-✅ **Plan de pruebas A/B** listo (secuencial, no simultáneo)
-✅ **pricing.md** escrito, con un registro de decisiones
-✅ **Revisión a 30 días** agendada (conversión, reparto entre niveles, cancelaciones)
-✅ **Política de precio para clientes actuales** decidida (para futuros aumentos)
+- ✅ **Valor para el cliente cuantificado** ($X/mes, con entrevistas a clientes como fuente)
+- ✅ **3 niveles diseñados** con la regla del 3x ($29/$99/$299 o parecido)
+- ✅ **Funciones de cada nivel definidas** (qué hay en cada uno, de forma progresiva)
+- ✅ **Descuento anual calculado** (15-20% de descuento, bien visible)
+- ✅ **Página de precios publicada** con los 7 elementos (sección principal, tarjetas de precio, CTA para empresas, señales de confianza, preguntas frecuentes, tabla comparativa, pie de página)
+- ✅ **Garantía de devolución** anunciada (30 días por defecto, solo si la vas a cumplir)
+- ✅ **Plan de pruebas de precios** listo (secuencial, no simultáneo)
+- ✅ **pricing.md** escrito, con un registro de decisiones
+- ✅ **Revisión a 30 días** agendada (conversión, reparto entre niveles, cancelaciones)
+- ✅ **Política de precio para clientes actuales** decidida (para futuros aumentos)
 
-Si tienes 8 de 10, estás listo para lanzar. Si tienes menos de 6 de 10, regresa al Paso 1.
+Si tienes 8 de 10, estás listo para lanzar. Con 6 o 7, termina lo que falta. Si tienes menos de 6 de 10, regresa al Paso 1 de la práctica.
 
 ---
 
 ## Herramientas y recursos
 
-- **[Página de precios de Stripe](https://stripe.com/pricing)**: un ejemplo de precio combinado (por uso + fijo)
+- **[Página de precios de Stripe](https://stripe.com/pricing)**: un ejemplo de pago por uso: una comisión por cada pago (un porcentaje más un monto fijo), sin cuota mensual
 - **[Página de precios de Linear](https://linear.app/pricing)**: un ejemplo limpio de niveles
 - **[Página de precios de Notion](https://www.notion.com/pricing)**: una referencia de freemium + niveles
 - **[Precios de asistentes y APIs de IA](https://aimayak.com/now/)**: números actuales para las cuentas de tu margen
-- **Libros:** "Monetizing Innovation" (Madhavan Ramanujam), "Pricing Done Right" (Tim Smith) (en inglés)
+- **Libros:** "Monetizing Innovation" (Madhavan Ramanujam y Georg Tacke), "Pricing Done Right" (Tim J. Smith) (en inglés)
 
 ---
 
@@ -807,13 +808,13 @@ Si tienes 8 de 10, estás listo para lanzar. Si tienes menos de 6 de 10, regresa
 
 ## Lecciones relacionadas
 
-- [Precios](39-monetization-pricing.md): una introducción a los modelos de precio
+- [Precios](39-monetization-pricing.md): la lección anterior, sobre el precio de un servicio según su valor para el cliente
 - [Casos reales de monetización](47-monetization-cases.md): ejemplos de precios
-- [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md): LTV, CAC (costo de adquisición de clientes) y plazo de recuperación en detalle
-- [Diseño de embudos para productos de IA](42b-funnel-design-ai-products.md): la página de precios dentro de tu embudo
+- [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md): LTV, CAC (costo de adquisición de clientes) y plazo de recuperación en detalle; lección de la biblioteca, opcional
+- [Diseño de embudos para productos de IA](42b-funnel-design-ai-products.md): la página de precios dentro de tu embudo; lección de la biblioteca, opcional
 
 ---
 
 ## Siguiente lección
 
-→ [MCP Builder: crea tu propio servidor MCP](40-mcp-builder.md)
+→ [Cómo encontrar tus primeros clientes entre la gente que conoces](38-monetization-clients.md)

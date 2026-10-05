@@ -18,20 +18,22 @@ Consulting is **you as the product**. The client isn't buying a box. They're buy
 
 This lesson is a 30-day plan for starting an AI consulting practice from scratch and getting to the point where you offer your first client a retainer (a monthly fee for ongoing help). The amounts in this lesson are examples for doing the math, not an income forecast and not a price recommendation: your results depend on your niche, your market and your work.
 
+This is a compressed scenario. It assumes you already have a niche, service packages and a first case study or two from the earlier lessons. If you're starting from zero, take the same steps at a calmer pace: the general 90-day plan comes two lessons from now, in [Graduation: your 30-60-90 day AI business plan](49-graduation.md).
+
 ---
 
-## 🎯 Where you'll be on Day 30
+## 🎯 What the plan aims for by Day 30
 
-After 30 days of working the plan:
+If you work the plan, by the end of 30 days you should have:
 
-- ✅ **Your first client**: a retainer proposal sent or signed (you and the client agree on the terms)
+- ✅ **A first retainer proposal**: sent to a client or already signed (you and the client agree on the terms; whether and when they sign is up to them)
 - ✅ **A reusable engagement playbook**: a step-by-step process you can repeat with clients #2, #3 and #4
 - ✅ **Personal brand assets**: a LinkedIn profile, a landing page and one case study
 - ✅ **A pipeline of 3-5 prospects** for month 2 (warm ones, not cold)
 - ✅ **Your first case study**: your first client as social proof for the next ones
-- ✅ **Confidence**: you know the process works because you've been through it yourself
+- ✅ **Experience**: you've been through the whole process once and know which steps work for you and which to change
 
-This is a target for 30 days, not a guarantee: the timing and the outcome depend on your niche, your market and your work.
+This is a target for 30 days, not a guarantee: the timing and the outcome depend on your niche, your market and your work. Getting to a first client can take longer than a month. If it does, the order of the steps stays the same and the weeks stretch.
 
 ---
 
@@ -41,8 +43,8 @@ Consulting isn't sold "by the hour." You sell **a result plus access to an exper
 
 | Service | How to set the price | When to use it |
 |---|---|---|
-| **Discovery audit** | a small one-time fee | The week 1 entry point, a low commitment for the client |
-| **Implementation project** | a fixed fee per project | Weeks 2-4, after the audit, with a defined scope |
+| **Discovery audit** (a one-time review of where AI can save the company time) | a small one-time fee | The entry point, a low commitment for the client: you offer it at the end of week 1 and deliver it in weeks 2-3 |
+| **Implementation project** | a fixed fee per project | After the audit (from week 4), with a defined scope |
 | **Monthly retainer** | a monthly fee | Ongoing support after implementation |
 | **Hourly emergency work** | a higher hourly rate | Urgent tasks outside the retainer's scope |
 
@@ -166,7 +168,7 @@ It reminds me of work we did with [similar company/industry]:
 they cut [specific metric] by [X%] by bringing AI into
 [specific function].
 
-I'm offering a free 30-minute audit for [niche] companies. In one call
+I'm offering a free 30-minute review call for [niche] companies. In one call
 we usually find a few quick wins [specifics from your real experience].
 
 Worth a conversation? My calendar is here: [Calendly link]
@@ -176,33 +178,35 @@ Best,
 [LinkedIn]
 ```
 
+Keep the line about work with a similar company only if that work really happened. If you don't have a case yet, cut it and say what you noticed about their processes instead.
+
 A LinkedIn message template (shorter):
 
 ```
 Hi [First Name], I saw that [Company] recently [specific thing].
 
 I help [niche] companies put AI to work: [a specific result from your real case].
-I'm doing free 30-minute audits. Interested?
+I'm doing free 30-minute review calls. Interested?
 
 Calendar: [Calendly link]
 ```
 
 **Step 3: Send 20 messages a day**
 
-20 a day × 2 days = 40 messages. Track your numbers:
-- Open rate (if it's low, the subject line is the problem)
+20 a day × 2 days = 40 messages. Write to the rest of your list next week. Track your numbers:
+- Open rate (you only see it if you send through an outreach tool with tracking; if it's low, the subject line is the problem)
 - Reply rate (if it's low, the message isn't relevant to them)
 - The share that turns into booked calls (if it's low, you aren't hooking into a real pain)
 
 There are no universal benchmarks, so compare your first batches with each other. Don't promise savings you haven't measured.
 
-**Never send a generic mass blast.** Spend 1-2 minutes personalizing each message (mention a specific post, project or piece of company news). Cold email is regulated by law (for example, the CAN-SPAM Act in the US, CASL in Canada and the GDPR in the EU): check the rules where you are and where the people you're writing to are.
+**Never send a generic mass blast.** Spend 1-2 minutes personalizing each message (mention a specific post, project or piece of company news). Cold email is regulated by law (for example, the CAN-SPAM Act in the US, CASL in Canada and the GDPR in the EU): check the rules where you are and where the people you're writing to are. The legal section of the lesson [Cold outreach that gets replies](39c-cold-outreach-deep.md) covers the basics.
 
 ---
 
 ### Days 5-7: Discovery calls
 
-By the end of week 1 you should have **5-10 discovery calls booked**.
+The plan's target for the end of week 1 is **5-10 discovery calls booked**. If you have fewer, that's common with cold messages: keep writing, and add warm contacts, people who already know you (see the lesson [How to find your first clients](38-monetization-clients.md)).
 
 **Discovery call template (30 minutes):**
 
@@ -231,7 +235,7 @@ MINUTES 25-30: Next step (call to action)
 
 **After every discovery call:**
 
-Log it in your CRM (the free version of HubSpot is often enough to start):
+Log it in your CRM (the tool or spreadsheet where you track clients and deals; the free version of HubSpot is often enough to start):
 - Pain points (what hurts)
 - Budget signal (did money come up?)
 - Authority (can this person make the decision, or do you need someone else?)
@@ -242,7 +246,7 @@ Log it in your CRM (the free version of HubSpot is often enough to start):
 
 ---
 
-## WEEK 2: Sign your first client
+## WEEK 2: Proposal and contract
 
 Goal for the week: **send a proposal and agree on terms** (when they sign and pay a deposit depends on the client).
 
@@ -307,11 +311,11 @@ The minimum a contract should cover:
 - **Confidentiality**: a baseline NDA
 - **Limitation of liability**: standard protection for you
 
-Don't write a contract from scratch. Bonsai has ready-made templates for consulting agreements that you can customize in about 30 minutes. Have a lawyer review the final contract: this lesson isn't legal advice.
+Don't write a contract from scratch. Bonsai has ready-made templates for consulting agreements that you can adapt to your project. Have a lawyer review the final contract: contract rules differ by state and by country, and this lesson isn't legal advice.
 
 **Step 2: Collect the 50% deposit**
 
-Use Stripe or another invoicing service. Don't start work until the deposit has arrived: a client who stalls on the deposit is a red flag for payment problems later.
+Use Stripe (it isn't available in every country; the list is at stripe.com/global) or another payment service that works where you are. Don't start work until the deposit has arrived: a client who stalls on the deposit is a red flag for payment problems later.
 
 **Step 3: Kickoff call (60-90 minutes)**
 
@@ -386,7 +390,7 @@ After the discovery interviews you have 10-30 pages of raw notes. Now you turn t
    - Effort: hours or weeks to implement
    - Risk: low / medium / high
    - Dependencies: what has to happen first
-   - Recommended priority: P0/P1/P2
+   - Recommended priority: P0, P1 or P2 (P0 = do first)
 
 4. RECOMMENDED ROADMAP (1-2 pages)
    - Phase 1 (weeks 1-4): Quick wins, no infrastructure changes
@@ -406,16 +410,18 @@ After the discovery interviews you have 10-30 pages of raw notes. Now you turn t
    - Budget: $X to commit
 ```
 
-**A framework for ranking opportunities (RICE):**
+**A way to rank opportunities (a simplified version of the RICE method):**
 
-| Criterion | Weight | Score 1-10 |
+Give each opportunity four scores from 1 to 10:
+
+| Criterion | What you rate | Score 1-10 |
 |---|---|---|
-| Reach (how many people benefit) | 1x | ? |
-| Impact (how much it helps them) | 2x | ? |
-| Confidence (how sure you are it'll work) | 1x | ? |
-| Effort (inverse: less effort is better) | 1.5x | ? |
+| Reach | how many people it helps | ? |
+| Impact | how much it helps them | ? |
+| Confidence | how sure you are it'll work | ? |
+| Effort | how much work it takes (more work = a higher score) | ? |
 
-Total score = Reach × Impact × Confidence / Effort. Rank the opportunities by total score.
+Total score = Reach × Impact × Confidence / Effort. Rank the opportunities by total score: the higher the score, the sooner it's worth doing.
 
 ---
 
@@ -451,13 +457,13 @@ Total score = Reach × Impact × Confidence / Effort. Rank the opportunities by 
 - Sign the implementation contract or set a decision date
 ```
 
-**The goal of the meeting** isn't "get some feedback." It's **a signed commitment to the implementation phase**.
+**The goal of the meeting** isn't "get some feedback." It's **a signed commitment to the implementation phase**, or at least a set decision date.
 
 ---
 
 ## WEEK 4: Implementation and the retainer pitch
 
-Goal for the week: **your first quick win demonstrated + a retainer signed**.
+Goal for the week: **show your first quick win and offer a monthly retainer** (whether and when the client signs is their call).
 
 ### Days 22-25: Your first quick win
 
@@ -535,7 +541,7 @@ These numbers are your evidence when you pitch the retainer.
 
 **Day 29: Pipeline review**
 
-From 50 messages and 10 discovery calls (a made-up example), you might end up with:
+From a list of 50 companies and 10 discovery calls (a made-up example), you might end up with:
 - 1 client (if everything went well)
 - 2-3 hot prospects who haven't signed
 - 5-7 warm prospects who need a follow-up
@@ -561,7 +567,7 @@ This playbook is **an asset that grows with every client**. Client #2 should go 
 
 ## 💼 Service packages: 3 tiers
 
-Standardize your pricing: it saves time on every deal. The amount of work in each package below is an example structure; you set the prices yourself.
+Standardize your pricing: it saves time on every deal. The amount of work in each package below is an example structure; you set the prices yourself. You worked through how to build packages in the lesson [Packaging your AI services into three clear offers](42-packaging.md).
 
 ### Starter
 
@@ -596,7 +602,9 @@ Standardize your pricing: it saves time on every deal. The amount of work in eac
 
 ## 🎯 Niche ideas for 2026
 
-**Niches with bigger budgets:**
+The table below is the author's rough guide, not market statistics: check the demand in your own niche.
+
+**Niches where budgets tend to be bigger:**
 
 | Niche | Why it pays | How hard it is to break in |
 |---|---|---|
@@ -643,14 +651,14 @@ In law, healthcare and finance, you automate the admin work and paperwork around
 | **Calendly** | see the plans on their website | Booking discovery calls |
 | **PandaDoc** | see the plans on their website | Proposals (or Better Proposals) |
 | **Bonsai** | see the plans on their website | Contracts + invoicing in one place |
-| **Stripe** | fees vary by country (in the US, 2.9% + 30¢ as of October 2026) | Payment processing |
+| **Stripe** | fees vary by country (in the US, 2.9% + 30¢ as of October 2026) | Payment processing (not available in every country) |
 | **Notion / Carrd** | free tiers available | Landing page + internal docs |
 | **Loom** | see the plans on their website | Async video for clients |
 | **Claude Pro / API** | Pro $20/month (as of October 2026), or the API, billed per token | Doing the actual client work |
 
 Add up the plans for the services you choose yourself. Start with the minimum (free tiers plus one paid tool for finding clients) and add the rest as you need it. Current prices: [What's current](https://aimayak.com/en/now/).
 
-What you don't need: a corporate website, a custom CRM, a fancy office, business cards, or a registered company on day one. When the time comes, the common options for a solo consultant in the US are a sole proprietorship or an LLC; choose the setup with your accountant or a lawyer.
+What you don't need: a corporate website, a custom CRM, a fancy office, business cards, or a registered company on day one. When the time comes, the common options for a solo consultant in the US are a sole proprietorship or an LLC; choose the setup with your accountant or a lawyer. The rules for working for yourself and for taxes differ by state and by country, so check them before you send your first invoice.
 
 ---
 
@@ -679,11 +687,11 @@ There are no income figures here: they depend on your niche, your market and you
 
 ---
 
-## ✅ What you have at the end of Day 30
+## ✅ Your checklist for the end of Day 30
 
-A concrete inventory:
+Check yourself against this list:
 
-- ✅ Your first client: a proposal sent or signed
+- ✅ A first proposal sent to a client (or already signed, if the client was ready)
 - ✅ A repeatable engagement playbook (notes on what worked)
 - ✅ Personal brand assets (LinkedIn + landing page + 1 case study)
 - ✅ A pipeline of 3-5 prospects (warm, not cold)
@@ -691,9 +699,9 @@ A concrete inventory:
 - ✅ Tested outreach templates (you know what works in your niche)
 - ✅ A refined discovery call script (from 10 calls)
 - ✅ A proposal template (tested on at least one client)
-- ✅ Confidence: you know the process works
+- ✅ Experience: you've been through the whole process once and know what to change
 
-This is **a starting point you can act on right away**. The outcome depends on your niche, your market and your work.
+This is **a starting point you can act on right away**. If some items are missing, keep working the same steps next month: the outcome depends on your niche, your market and your work.
 
 ---
 
@@ -702,13 +710,13 @@ This is **a starting point you can act on right away**. The outcome depends on y
 This is a rough outline of stages, not an income forecast.
 
 **Months 1-3:** Foundation
-- Month 1: your first client
+- Month 1: the 30-day plan from this lesson
 - Months 2-3: widen your funnel and look for the next clients
 
 **Months 4-6:** Growth
 - Grow through a repeatable process, not one-time luck
 - Spend 1-2 hours a week on content (LinkedIn posts, case studies)
-- Start getting inbound leads (referrals + content)
+- Inbound leads may start coming in (referrals + content)
 
 **Months 7-9:** Optimize
 - Review your clients and packages: which ones are worth your time and which aren't
@@ -726,7 +734,7 @@ The actual income and workload depend on your niche, your market and your work.
 ## Related lessons
 
 - [Your first clients](38-monetization-clients.md): where to find them and how to close
-- [A lead generation system](39-lead-generation.md): outbound, inbound and referrals
+- [Finding potential clients](39-lead-generation.md): an optional lesson in the deep-dive library on collecting lists of companies into a spreadsheet
 - [Cold outreach with Claude](45-cold-outreach.md): subject lines, follow-ups and sequencing
 - [The factory model: templates and repeatability](48-factory-model.md): how to set up solo consulting as a business
 
@@ -758,10 +766,10 @@ The actual income and workload depend on your niche, your market and your work.
 
 > 30 days of following the plan give you a direction: a first proposal to a client + a reusable playbook + a pipeline. The result isn't guaranteed: it depends on your niche, your market and the quality of your outreach. Track your funnel on your own data: how many contacts → replies → calls → proposals → agreements.
 
-> A one-person consulting practice with no employees and no outside funding is also a standalone, detachable project in your portfolio (see [Detachable projects](106-modular-architecture-detachability.md)). Income figures depend on your niche, your market and your work, which is why this lesson doesn't give any.
+> A one-person consulting practice with no employees and no outside funding is also a standalone, detachable project in your portfolio (see [Detachable projects](106-modular-architecture-detachability.md), an optional lesson in the deep-dive library). Income figures depend on your niche, your market and your work, which is why this lesson doesn't give any.
 
 ---
 
 ## Next lesson
 
-→ [Packaging your AI services into three clear offers](42-packaging.md): when consulting turns into a repeatable package
+→ [The factory model: templates for repeatable client work](48-factory-model.md): how to get faster with every similar project

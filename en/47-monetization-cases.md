@@ -6,11 +6,13 @@
 
 ## The gist
 
-Five X-rays. Each case is an X-ray of a client's business: you can see the problem, what's broken inside, the fix and the result in numbers. This isn't theory. These are breakdowns of typical projects, with the numbers, the tech stack, the mistakes and what worked.
+Five X-rays. Each case is an X-ray of a client's business: you can see the problem, what's broken inside, the fix and the result in numbers. These are teaching examples: they show how a project like this is put together and how the math works, with the numbers, the tools, the mistakes and what worked.
 
-If you've been searching for AI side hustles that actually work, this is what that work looks like up close: a business with a real problem, a build, and the math behind the price.
+If you've been searching for AI side hustles, this is what that kind of work can look like up close: a business with a problem, a build, and the math behind the price.
 
-⚠️ **Important:** the numbers in these cases are illustrative. They're template calculations meant to teach you how to work out payback. They are not a report on real clients and not a promise of income. Your rates, project prices and timelines will be different. Plug your own numbers into the formula in the "ROI calculator" section.
+⚠️ **Important:** the numbers in these cases are illustrative. They're template calculations meant to teach you how to work out payback. They are not a report on real clients, not a typical result and not a promise of income. Your rates, project prices and timelines will be different. Plug your own numbers into the formula in the "ROI calculator" section.
+
+You don't need to memorize the tool names in the "Stack" lines. What matters for now is three things: what the problem was, what was built, and how the payoff was calculated.
 
 ---
 
@@ -18,7 +20,7 @@ If you've been searching for AI side hustles that actually work, this is what th
 
 - **ROI calculation**: how to work out what a project pays back to the client (ROI, return on investment: what the client gets back for the money spent)
 - **Time-to-value**: how many days it takes before the client starts getting results
-- **Client testimonial structure**: how to collect testimonials that help you sell
+- **Client testimonial**: what a testimonial that helps you sell looks like (there's a sample in Case 1)
 - **Recurring vs one-time**: a one-off project vs monthly support
 - **A stack for each type of task**: what to use and why
 
@@ -47,7 +49,7 @@ Plus the risk of errors (it happened: a report went out with another client's da
 
 **Solution:**
 A newsletter automation pipeline on Cloudflare Workers + Trigger.dev:
-- Every Sunday at 11 p.m., Workers pull metrics from three APIs
+- Every Sunday at 11 p.m., Workers pull metrics from three services through their APIs (an API is a way for one program to request data from another)
 - Claude Haiku writes the narrative part (trends, anomalies, recommendations)
 - The system builds a PDF with Puppeteer
 - A Slack bot sends the agency director a preview with two buttons: "Send to all" / "Edit"
@@ -69,10 +71,11 @@ A newsletter automation pipeline on Cloudflare Workers + Trigger.dev:
 Development cost: $2,800 (Pro package)
 API costs per month: ~$50 (Claude Haiku + services)
 Payback: about 5 months: $2,800 / ($7,020 / 12 - $50)
-First-year ROI: ($7,020 - $600 API - $2,800 project) / $2,800 = 129%
+First-year ROI: ($7,020 - $3,400) / $3,400 = 106%
+  where $3,400 = $2,800 project + $600 API for the year
 ```
 
-(The "Pro package" is the middle tier of a Basic/Pro/Enterprise lineup, as in the lesson on packaging your services.)
+(The "Pro package" is the middle tier of a Basic/Pro/Enterprise lineup. A later lesson covers how to package your services this way.)
 
 **Build time:** 9 business days
 
@@ -85,10 +88,10 @@ First-year ROI: ($7,020 - $600 API - $2,800 project) / $2,800 = 129%
 
 ### Case 2: A lead generation system for a B2B SaaS company
 
-**Client:** a B2B SaaS company (project management software), 8 people, selling to small businesses in Latin America
+**Client:** a B2B SaaS company (it sells subscription software to other businesses, in this case project management software), 8 people, selling to small businesses in Latin America
 
 **Problem:**
-An SDR (sales development rep) searched LinkedIn for potential customers by hand, wrote personalized emails, sent them and kept the CRM up to date. Each lead took 25-30 minutes. That's 8-10 leads a day at most. Conversion to a call: 8%.
+An SDR (sales development rep) searched LinkedIn for potential customers by hand, wrote personalized emails, sent them and kept the CRM (the software that tracks customers and deals) up to date. Each lead took 25-30 minutes. That's 8-10 leads a day at most. Conversion to a call: 8%.
 
 **Cost of the problem:**
 ```
@@ -100,13 +103,13 @@ Result: 160-200 leads a month, 13-16 calls
 **Solution:**
 A lead gen pipeline with Claude:
 - It's started by hand with a command like "find 20 leads in [niche]"
-- A subagent uses data from LinkedIn and Apollo.io to find them (access to the LinkedIn API is restricted: check the platform's terms)
-- A second subagent looks up details on LinkedIn for personalization (their latest post, job openings, company news)
+- A subagent (a separate helper inside Claude Code with its own task) finds companies and contacts through Apollo.io, a paid database of business contacts with an official API
+- A second subagent gathers details for personalization from public sources: the company's website, news, job openings. The program doesn't collect LinkedIn profiles: LinkedIn's rules prohibit that
 - Claude Sonnet writes a personalized first email for each lead
 - The system loads everything into HubSpot CRM
-- The SDR sees 20 ready-to-go leads with personalized emails and clicks "Send" on each one (2-3 minutes to review)
+- The SDR sees 20 ready-to-go leads with personalized emails, reviews each one (2-3 minutes) and clicks "Send" personally
 
-**Stack:** Claude Code (orchestrator), Claude Sonnet API, LinkedIn data, Apollo.io API, HubSpot CRM API, Slack bot (notifications)
+**Stack:** Claude Code (runs the subagents), Claude Sonnet API, Apollo.io API, HubSpot CRM API, Slack bot (notifications)
 
 **Result:**
 
@@ -115,7 +118,7 @@ A lead gen pipeline with Claude:
 | Leads per day | 8-10 | 40-50 (with 2 hours of SDR work) |
 | Time per lead | 25-30 min | 2-3 min (review and send) |
 | Conversion to a call | 8% | 14% (better personalization) |
-| Calls per month | 13-16 | 75-90 |
+| Calls per month | 13-16 | 112-140 (40-50 leads × 20 working days × 14%) |
 
 **Project finances:**
 ```
@@ -127,7 +130,7 @@ Extra revenue from the new calls: the client ran those numbers themselves
 
 **Build time:** 14 business days
 
-**Mistake along the way:** LinkedIn has strict rate limits (caps on how many requests you can send in a given time), and the first version got blocked. The fix: add a delay between requests and cache profile data in Cloudflare KV. That's now a standard part of the lead gen template. Before you launch, read LinkedIn's terms of use: automated collection of profile data may be against the platform's rules.
+**Mistake along the way:** the first version collected profile data from LinkedIn on its own, and the account was quickly restricted. LinkedIn's User Agreement explicitly prohibits collecting data with software and bots. The fix: automated collection from LinkedIn was dropped completely. Contacts come from Apollo.io through its official API, and the SDR opens a LinkedIn profile by hand when needed. That's now a rule of the template: before you launch, read the terms of every platform you take data from.
 
 **Time-to-value:** the SDR got the first 20 ready-to-go leads on day 3 of development (an early look at the work in progress). This matters: the client sees progress early.
 
@@ -135,7 +138,7 @@ Extra revenue from the new calls: the client ran those numbers themselves
 
 ### Case 3: An executive assistant for a small-business CEO
 
-🎨 **Picture this:** an AI executive assistant is a personal assistant who never gets sick, never takes vacation and remembers everything. It reads the email, prepares a briefing before every meeting and writes the reports. The CEO works on strategy; the assistant handles day-to-day operations.
+🎨 **Picture this:** an AI executive assistant is a personal assistant who never gets sick and never takes vacation. It reads the email, prepares a briefing before every meeting and writes the reports. The CEO works on strategy; the assistant handles day-to-day operations. A person still reviews and approves the work.
 
 **Client:** the CEO of a property management company: 15 properties, a team of 4
 
@@ -145,7 +148,7 @@ The CEO spent 15-20 hours a week on operational routine: answering routine tenan
 **Cost of the problem:**
 ```
 CEO's rate: $150/hour (their own estimate)
-15 hours of routine × $150 = $2,250/week = $9,000/month
+15 hours of routine × $150 = $2,250/week ≈ $9,750/month ($117,000 a year)
 Or put another way: 15 hours of routine = 15 hours not spent on strategy
 ```
 
@@ -177,7 +180,7 @@ One hour before a meeting (based on Google Calendar), it gathers the latest emai
 Development: $5,500 (3 modules)
 Monthly support: $750/month
 API costs: ~$80/month
-Savings for the client: ~$9,000/month (by the client's own estimate)
+Savings for the client: ~$9,750/month (by the client's own estimate of an hour's worth)
 Payback: less than 1 month
 ```
 
@@ -194,7 +197,7 @@ Payback: less than 1 month
 **Client:** an independent YouTube creator in personal finance, 180K subscribers
 
 **Problem:**
-90% of the creator's time went into pre-production: finding topics (5-6 hours), writing the script (4-6 hours), preparing the YouTube description and tags (1 hour), writing a thumbnail brief for the designer (30 min). Total: 11-14 hours before filming even started.
+Most of the creator's time went into pre-production: finding topics (5-6 hours), writing the script (4-6 hours), preparing the YouTube description and tags (1 hour), writing a thumbnail brief for the designer (30 min). Total: 11-14 hours before filming even started.
 
 **Solution:**
 A content pipeline in three stages:
@@ -203,12 +206,12 @@ A content pipeline in three stages:
 Once a week, a subagent analyzes YouTube trends in the niche through the YouTube Data API, Reddit (r/personalfinance) and Google Trends. Claude picks out 10 promising topics and explains each choice (search volume, competition, fit with the audience). The creator chooses 1-2 of them in 10 minutes.
 
 **Stage 2: Script generation**
-For the chosen topic, Claude Opus (picked for quality) writes a full script in the channel's style, using 5 of the best past scripts as examples. Structure: hook → problem → main content (3-5 sections) → CTA (call to action). The creator spends 30-60 minutes editing instead of 4-6 hours writing.
+For the chosen topic, Claude Opus (a stronger, more expensive model, picked for quality) writes a full script in the channel's style, using 5 of the best past scripts as examples. Structure: hook → problem → main content (3-5 sections) → CTA (call to action). The creator spends 30-60 minutes editing instead of 4-6 hours writing.
 
 **Stage 3: Distribution pack**
 From the finished script, automatically: a YouTube description (SEO-optimized), 15 tags, a thumbnail brief for the designer, a thread for Twitter/X, and a short-form version for Shorts. All in 5 minutes.
 
-**Stack:** Trigger.dev (weekly schedule), Claude Opus API (scripts), Claude Haiku API (distribution), YouTube Data API, Reddit API, Google Trends (scraping), Slack (delivery)
+**Stack:** Trigger.dev (weekly schedule), Claude Opus API (scripts), Claude Haiku API (distribution), YouTube Data API, Reddit Data API (access only after Reddit approves it), Google Trends (the official API is still in alpha, by application; without it the data is exported by hand), Slack (delivery)
 
 **Result:**
 
@@ -223,7 +226,7 @@ From the finished script, automatically: a YouTube description (SEO-optimized), 
 Development: $2,400 (Pro package)
 Monthly support: $350/month (updates as the platforms change)
 API costs: ~$120/month (Claude Opus for scripts costs more)
-Model: fully recurring = predictable monthly revenue
+Payment model: one-time development + monthly support = more predictable revenue
 ```
 
 **Build time:** 11 business days
@@ -267,13 +270,14 @@ Development: $4,200 (a complex integration, 4 APIs)
 Monthly support: $600/month (the WhatsApp API needs monitoring)
 API costs: ~$90/month
 Savings: 8 agents × 20 min/day × 22 days × $25/hour = $1,467/month
-Payback: about 3 months on the time saved alone; about 5-6 months
-         once support and API costs are subtracted
+Payback: about 3 months on the time saved alone ($4,200 / $1,467);
+         about 5-6 months once support and API costs are subtracted:
+         $4,200 / ($1,467 - $600 - $90)
 ```
 
-**Build time:** 17 business days (WhatsApp Business API verification took 4 days)
+**Build time:** 17 business days (4 of them went to Meta's business verification for the WhatsApp Business API)
 
-**The main lesson:** the WhatsApp Business API requires business verification by Meta. Build a buffer of several business days into the timeline (in this case it took 4 days), and warn the client up front.
+**The main lesson:** you can start using the WhatsApp Business API right away, but with a starting cap on how many people you can message. To raise it, the agency went through Meta's business verification. Build a buffer of several business days for it into the timeline (in this case it took 4 days), and warn the client up front. One more thing: a system like this handles clients' personal data. The agency has to tell its clients about it and follow the privacy laws that apply to it.
 
 ---
 
@@ -295,9 +299,9 @@ Payback: about 3 months on the time saved alone; about 5-6 months
 
 **Exercise: an ROI calculation for your own potential project**
 
-1. Pick one person from your Trust Map (the list of warm contacts you made in an earlier lesson) whose pain point you know
+1. Pick one business owner or professional you know whose work problem you understand. (Later, in the lesson on first clients, you'll gather people like this into a list.)
 
-2. Fill in the case template:
+2. Fill in the case template. For now, rough guesses are fine in the "Stack" and "Project price" lines: you'll come back to them in the modules on your offer and your price.
    ```
    Client (type): ____________
    Problem: ____________
@@ -332,12 +336,15 @@ Payback: about 3 months on the time saved alone; about 5-6 months
 Current cost of the process:
   [hours/week] × [rate $/hour] × 52 weeks = [annual cost of the problem]
 
+Savings per year:
+  [annual cost of the problem] × [expected reduction, %]
+
 Cost of the automation:
   [one-time development] + [monthly support × 12] + [API costs × 12] = [annual cost of the solution]
 
 ROI = (Savings - Cost of the solution) / Cost of the solution × 100%
 
-Payback = Development cost / Monthly savings = [X months]
+Payback = Development cost / (Monthly savings - support - API) = [X months]
 ```
 
 **Example (from Case 1):**
@@ -351,10 +358,12 @@ Payback = $2,800 / ($7,020/12 - $50 API) = 5.2 months
 **Example (from Case 3, the executive assistant):**
 ```
 Annual cost of the problem: 15 h/week × $150/hour × 52 = $117,000
-Annual cost of the solution: $5,500 + $9,000 + $960 = $15,460
-ROI = ($117,000 - $15,460) / $15,460 = 557%
-Payback = $5,500 / ($9,000 - $750 support - $80 API) = 0.7 months
+Annual cost of the solution: $5,500 + $9,000 support + $960 API = $15,460
+ROI = ($117,000 - $15,460) / $15,460 = 657%
+Payback = $5,500 / ($9,750 - $750 support - $80 API) = 0.6 months
 ```
+
+To keep things simple, both examples assume the automation removes all of the routine (a 100% reduction). In real life some time is still spent on review: in Case 1 it's 10 minutes a week. So in your own calculation, use the honest percentage from the template, or your ROI will come out inflated.
 
 Build this calculation once in Google Sheets and use it in every sales conversation.
 
@@ -364,7 +373,7 @@ Build this calculation once in Google Sheets and use it in every sales conversat
 
 - **ROI in words, not on paper.** "You'll save a lot of time" doesn't convince anyone. "$23,040 a year in savings on a $3,500 investment, paid back in 2 months" does. Show an Excel or Google Sheets file with the formulas.
 - **Inflating the ROI.** If the automation really covers 70% of the work, don't say 100%. An honest ROI builds trust. And if the client sees the real result beat what you promised, they'll tell their friends.
-- **Leaving API costs out of the math.** Claude API, Apify, Gmail API: all of it costs money. $50-150/month for APIs: always include it in the cost of the solution you show the client.
+- **Leaving API costs out of the math.** Claude API, data-collection services like Apify, paid contact databases like Apollo: all of it costs money. $50-150/month for APIs: always include it in the cost of the solution you show the client.
 - **Ignoring opportunity cost.** A CEO spending 15 hours on routine = 15 hours NOT spent on strategy. The cost isn't only $150/hour × 15; it's also the deals and decisions that never happened.
 
 ---
@@ -379,10 +388,10 @@ Build this calculation once in Google Sheets and use it in every sales conversat
 
 ## Tools and resources
 
-- **Trigger.dev**: [trigger.dev](https://trigger.dev/): deploys workflows that run on a schedule; has a free plan (as of October 2026, with a $5 monthly credit)
-- **Apollo.io**: [apollo.io](https://www.apollo.io/): a database of B2B contacts for lead gen projects
+- **Trigger.dev**: [trigger.dev](https://trigger.dev/): runs tasks on a schedule; has a free plan (the terms are on the service's pricing page)
+- **Apollo.io**: [apollo.io](https://www.apollo.io/): a database of business contacts with an official API, for lead gen projects
 - **HubSpot**: a CRM with a free tier and an API
-- **WhatsApp Business API**: through [Meta for Developers](https://developers.facebook.com/); requires business verification (Meta sets the timeline, so build in a buffer)
+- **WhatsApp Business API**: through [Meta for Developers](https://developers.facebook.com/); you can start without business verification, but with a starting cap on how many people you can message. Business verification is one of the ways to raise the cap; Meta sets the timeline, so build in a buffer
 - **Claude API pricing**: [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing): for accurate API costs in your ROI math; a summary is on the [What's current](https://aimayak.com/en/now/) page
 - **Google Sheets**: for building your ROI calculator (build it once, use it for every client)
 
@@ -396,10 +405,10 @@ Build this calculation once in Google Sheets and use it in every sales conversat
 
 > Show results early. Give an interim demo on day 3-5. The client sees progress, and trust grows.
 
-> An ROI calculation sells better than any words. Numbers remove doubt.
+> An ROI calculation is more convincing than general promises. Numbers remove doubt, as long as they're honest.
 
 ---
 
 ## Next lesson
 
-→ [Factory Model](48-factory-model.md): templates and repeatability
+→ [100+ AI business ideas](100-ai-business-ideas-smb.md): a reference of ideas; pick the niche you'll start with

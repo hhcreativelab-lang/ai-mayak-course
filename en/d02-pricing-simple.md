@@ -90,7 +90,7 @@ One price puts the client in front of a "yes or no" choice. Three packages turn 
 | Standard | 20 posts, a monthly plan, answers to common comments | $300 |
 | Premium | 20 posts, answers, a monthly report, 4 short videos | $480 |
 
-The Basic package is still above the floor. Premium includes more work, so its floor is higher too; check it separately. When clients see three options, many pick the middle one. More on packages: [Packaging automations into products](42-packaging.md).
+The Basic package is still above the floor. Premium includes more work, so its floor is higher too; check it separately. When clients see three options, many pick the middle one. More on packages later in the course: [the lesson on packaging your services](42-packaging.md).
 
 ### Why not charge by the hour
 
@@ -174,4 +174,4 @@ Show me where my math is weak. Don't make up new market prices.
 
 → **[Break-even and cash flow](d03-break-even-and-cash.md)**: how many clients you need to break even, and why profit on paper isn't the same as money in your bank account.
 
-To go deeper on pricing: [Value-based pricing](39-monetization-pricing.md) (pricing from the value you create) and [Pricing an AI product](39e-pricing-strategy-deep.md) (plans and tiers for AI products).
+Later in the course, pricing continues with [Value-based pricing](39-monetization-pricing.md) (pricing from the value you create) and [Pricing an AI product](39e-pricing-strategy-deep.md) (plans and tiers for AI products).

@@ -6,11 +6,13 @@
 
 ## Lo esencial
 
-Cinco radiografías. Cada caso es una radiografía del negocio de un cliente: se ve el problema, qué está roto por dentro, la solución y el resultado en cifras. Esto no es teoría. Son análisis de proyectos típicos, con las cifras, las herramientas usadas, los errores y lo que funcionó.
+Cinco radiografías. Cada caso es una radiografía del negocio de un cliente: se ve el problema, qué está roto por dentro, la solución y el resultado en cifras. Son ejemplos para aprender: muestran cómo se arma un proyecto así y cómo se hacen las cuentas, con las cifras, las herramientas usadas, los errores y lo que funcionó.
 
-Si has buscado formas de ganar dinero con IA que de verdad funcionen, así se ve ese trabajo de cerca: un negocio con un problema real, una construcción y las cuentas detrás del precio.
+Si has buscado formas de ganar dinero con IA, así puede verse ese trabajo de cerca: un negocio con un problema, una construcción y las cuentas detrás del precio.
 
-⚠️ **Importante:** las cifras de estos casos son ilustrativas. Son cálculos de plantilla para enseñarte a calcular el retorno. No son un reporte de clientes reales ni una promesa de ingresos. Tus tarifas, los precios de tus proyectos y tus plazos van a ser distintos. Pon tus propias cifras en la fórmula de la sección "Calculadora de ROI".
+⚠️ **Importante:** las cifras de estos casos son ilustrativas. Son cálculos de plantilla para enseñarte a calcular el retorno. No son un reporte de clientes reales, ni un resultado típico, ni una promesa de ingresos. Tus tarifas, los precios de tus proyectos y tus plazos van a ser distintos. Pon tus propias cifras en la fórmula de la sección "Calculadora de ROI".
+
+No necesitas memorizar los nombres de las herramientas de las líneas "Herramientas". Por ahora importan tres cosas: cuál era el problema, qué se construyó y cómo se calculó el beneficio.
 
 ---
 
@@ -18,7 +20,7 @@ Si has buscado formas de ganar dinero con IA que de verdad funcionen, así se ve
 
 - **Cálculo del ROI**: cómo calcular cuánto le regresa un proyecto al cliente (ROI, return on investment o retorno de la inversión: lo que el cliente recupera por el dinero que gastó)
 - **Tiempo hasta el valor (time-to-value)**: cuántos días pasan antes de que el cliente empiece a ver resultados
-- **Estructura de un testimonio de cliente**: cómo reunir testimonios que te ayuden a vender
+- **Testimonio de cliente**: cómo se ve un testimonio que te ayuda a vender (hay un ejemplo en el Caso 1)
 - **Recurrente vs. único**: un proyecto de una sola vez vs. soporte mensual
 - **Un conjunto de herramientas para cada tipo de tarea**: qué usar y por qué
 
@@ -47,7 +49,7 @@ Más el riesgo de errores (pasó: salió un reporte con los datos de otro client
 
 **Solución:**
 Un flujo automático de boletines en Cloudflare Workers + Trigger.dev:
-- Cada domingo a las 11 p.m., Workers saca las métricas de tres API
+- Cada domingo a las 11 p.m., Workers saca las métricas de tres servicios por medio de sus API (una API es la vía por la que un programa le pide datos a otro)
 - Claude Haiku escribe la parte narrativa (tendencias, anomalías, recomendaciones)
 - El sistema arma un PDF con Puppeteer
 - Un bot de Slack le manda al director de la agencia una vista previa con dos botones: "Enviar a todos" / "Editar"
@@ -69,10 +71,11 @@ Un flujo automático de boletines en Cloudflare Workers + Trigger.dev:
 Costo de desarrollo: $2,800 (paquete Pro)
 Costos de API al mes: ~$50 (Claude Haiku + servicios)
 Retorno: unos 5 meses: $2,800 / ($7,020 / 12 - $50)
-ROI del primer año: ($7,020 - $600 API - $2,800 proyecto) / $2,800 = 129%
+ROI del primer año: ($7,020 - $3,400) / $3,400 = 106%
+  donde $3,400 = $2,800 del proyecto + $600 de API en el año
 ```
 
-(El "paquete Pro" es el nivel intermedio de una oferta Básico/Pro/Empresarial, como en la lección sobre cómo empaquetar tus servicios.)
+(El "paquete Pro" es el nivel intermedio de una oferta Básico/Pro/Empresarial. Más adelante hay una lección sobre cómo empaquetar así tus servicios.)
 
 **Tiempo de construcción:** 9 días hábiles
 
@@ -85,10 +88,10 @@ ROI del primer año: ($7,020 - $600 API - $2,800 proyecto) / $2,800 = 129%
 
 ### Caso 2: Un sistema de generación de prospectos para una empresa SaaS B2B
 
-**Cliente:** una empresa SaaS B2B (software de gestión de proyectos), 8 personas, que vende a pequeños negocios en América Latina
+**Cliente:** una empresa SaaS B2B (vende software por suscripción a otras empresas; en este caso, software de gestión de proyectos), 8 personas, que vende a pequeños negocios en América Latina
 
 **Problema:**
-Un SDR (sales development rep, la persona que consigue prospectos para ventas) buscaba clientes potenciales en LinkedIn a mano, escribía correos personalizados, los mandaba y mantenía el CRM al día. Cada prospecto le tomaba 25-30 minutos. Eso es 8-10 prospectos al día como máximo. Conversión a una llamada: 8%.
+Un SDR (sales development rep, la persona que consigue prospectos para ventas) buscaba clientes potenciales en LinkedIn a mano, escribía correos personalizados, los mandaba y mantenía al día el CRM (el programa donde se registran clientes y tratos). Cada prospecto le tomaba 25-30 minutos. Eso es 8-10 prospectos al día como máximo. Conversión a una llamada: 8%.
 
 **Costo del problema:**
 ```
@@ -100,13 +103,13 @@ Resultado: 160-200 prospectos al mes, 13-16 llamadas
 **Solución:**
 Un flujo de generación de prospectos con Claude:
 - Se inicia a mano con un comando como "encuentra 20 prospectos en [nicho]"
-- Un subagente usa datos de LinkedIn y Apollo.io para encontrarlos (el acceso a la API de LinkedIn es restringido: revisa las condiciones de la plataforma)
-- Un segundo subagente busca detalles en LinkedIn para personalizar (su publicación más reciente, vacantes, noticias de la empresa)
+- Un subagente (un ayudante aparte dentro de Claude Code, con su propia tarea) encuentra empresas y contactos por medio de Apollo.io, una base de datos de contactos de negocios, de pago y con API oficial
+- Un segundo subagente reúne detalles para personalizar a partir de fuentes públicas: el sitio de la empresa, noticias, vacantes. El programa no recolecta perfiles de LinkedIn: las reglas de LinkedIn lo prohíben
 - Claude Sonnet escribe un primer correo personalizado para cada prospecto
 - El sistema carga todo en HubSpot CRM
-- El SDR ve 20 prospectos listos con correos personalizados y hace clic en "Enviar" en cada uno (2-3 minutos de revisión)
+- El SDR ve 20 prospectos listos con correos personalizados, revisa cada uno (2-3 minutos) y hace clic en "Enviar" él mismo
 
-**Herramientas:** Claude Code (orquestador), API de Claude Sonnet, datos de LinkedIn, Apollo.io API, HubSpot CRM API, bot de Slack (avisos)
+**Herramientas:** Claude Code (dirige a los subagentes), API de Claude Sonnet, Apollo.io API, HubSpot CRM API, bot de Slack (avisos)
 
 **Resultado:**
 
@@ -115,7 +118,7 @@ Un flujo de generación de prospectos con Claude:
 | Prospectos al día | 8-10 | 40-50 (con 2 horas de trabajo del SDR) |
 | Tiempo por prospecto | 25-30 min | 2-3 min (revisar y enviar) |
 | Conversión a una llamada | 8% | 14% (mejor personalización) |
-| Llamadas al mes | 13-16 | 75-90 |
+| Llamadas al mes | 13-16 | 112-140 (40-50 prospectos × 20 días hábiles × 14%) |
 
 **Finanzas del proyecto:**
 ```
@@ -127,7 +130,7 @@ Ingresos extra por las nuevas llamadas: el cliente hizo esas cuentas por su lado
 
 **Tiempo de construcción:** 14 días hábiles
 
-**Error en el camino:** LinkedIn tiene límites de frecuencia estrictos (topes a cuántas solicitudes puedes mandar en cierto tiempo), y la primera versión fue bloqueada. La solución: poner una pausa entre solicitudes y guardar en caché los datos de los perfiles en Cloudflare KV. Ahora eso es parte estándar de la plantilla de generación de prospectos. Antes de lanzar, lee las condiciones de uso de LinkedIn: la recolección automática de datos de perfiles puede ir contra las reglas de la plataforma.
+**Error en el camino:** la primera versión recolectaba por su cuenta datos de perfiles de LinkedIn, y la cuenta quedó restringida muy pronto. Las Condiciones de uso de LinkedIn prohíben de forma expresa recolectar datos con programas y bots. La solución: se quitó por completo la recolección automática en LinkedIn. Los contactos salen de Apollo.io por medio de su API oficial, y el SDR abre a mano un perfil de LinkedIn cuando hace falta. Ahora es una regla de la plantilla: antes de lanzar, lee las condiciones de cada plataforma de la que tomas datos.
 
 **Tiempo hasta el valor:** el SDR recibió los primeros 20 prospectos listos el día 3 del desarrollo (un primer vistazo al trabajo en curso). Esto importa: el cliente ve avances pronto.
 
@@ -135,7 +138,7 @@ Ingresos extra por las nuevas llamadas: el cliente hizo esas cuentas por su lado
 
 ### Caso 3: Un asistente ejecutivo para el director de un pequeño negocio
 
-🎨 **Imagínalo así:** un asistente ejecutivo con IA es un asistente personal que nunca se enferma, nunca se va de vacaciones y se acuerda de todo. Lee el correo, prepara un resumen antes de cada reunión y escribe los reportes. El director trabaja en la estrategia; el asistente se encarga de la operación diaria.
+🎨 **Imagínalo así:** un asistente ejecutivo con IA es un asistente personal que nunca se enferma y nunca se va de vacaciones. Lee el correo, prepara un resumen antes de cada reunión y escribe los reportes. El director trabaja en la estrategia; el asistente se encarga de la operación diaria. Una persona sigue revisando y aprobando el trabajo.
 
 **Cliente:** el director general (CEO) de una empresa de administración de inmuebles: 15 propiedades, un equipo de 4
 
@@ -145,7 +148,7 @@ El director dedicaba 15-20 horas a la semana a la rutina operativa: contestar po
 **Costo del problema:**
 ```
 Tarifa del director: $150/hora (su propia estimación)
-15 horas de rutina × $150 = $2,250/semana = $9,000/mes
+15 horas de rutina × $150 = $2,250/semana ≈ $9,750/mes ($117,000 al año)
 O dicho de otra forma: 15 horas de rutina = 15 horas sin dedicar a la estrategia
 ```
 
@@ -177,7 +180,7 @@ Una hora antes de una reunión (según Google Calendar), reúne los correos más
 Desarrollo: $5,500 (3 módulos)
 Soporte mensual: $750/mes
 Costos de API: ~$80/mes
-Ahorro para el cliente: ~$9,000/mes (según la propia estimación del cliente)
+Ahorro para el cliente: ~$9,750/mes (según lo que el propio cliente estima que vale su hora)
 Retorno: menos de 1 mes
 ```
 
@@ -194,7 +197,7 @@ Retorno: menos de 1 mes
 **Cliente:** un creador independiente de YouTube sobre finanzas personales, 180 mil suscriptores
 
 **Problema:**
-El 90% del tiempo del creador se iba en la preproducción: buscar temas (5-6 horas), escribir el guion (4-6 horas), preparar la descripción y las etiquetas de YouTube (1 hora), escribir las indicaciones de la miniatura para el diseñador (30 min). Total: 11-14 horas antes de empezar a grabar.
+La mayor parte del tiempo del creador se iba en la preproducción: buscar temas (5-6 horas), escribir el guion (4-6 horas), preparar la descripción y las etiquetas de YouTube (1 hora), escribir las indicaciones de la miniatura para el diseñador (30 min). Total: 11-14 horas antes de empezar a grabar.
 
 **Solución:**
 Un flujo de contenido en tres etapas:
@@ -203,12 +206,12 @@ Un flujo de contenido en tres etapas:
 Una vez a la semana, un subagente analiza las tendencias de YouTube en el nicho con la YouTube Data API, Reddit (r/personalfinance) y Google Trends. Claude elige 10 temas prometedores y explica cada elección (volumen de búsqueda, competencia, afinidad con la audiencia). El creador escoge 1-2 en 10 minutos.
 
 **Etapa 2: Generación del guion**
-Para el tema elegido, Claude Opus (escogido por calidad) escribe un guion completo con el estilo del canal, usando como ejemplo 5 de los mejores guiones anteriores. Estructura: gancho → problema → contenido principal (3-5 secciones) → CTA (llamado a la acción). El creador pasa 30-60 minutos editando en lugar de 4-6 horas escribiendo.
+Para el tema elegido, Claude Opus (un modelo más potente y más caro, escogido por calidad) escribe un guion completo con el estilo del canal, usando como ejemplo 5 de los mejores guiones anteriores. Estructura: gancho → problema → contenido principal (3-5 secciones) → CTA (llamado a la acción). El creador pasa 30-60 minutos editando en lugar de 4-6 horas escribiendo.
 
 **Etapa 3: Paquete de distribución**
-A partir del guion terminado, de forma automática: una descripción para YouTube (optimizada para SEO), 15 etiquetas, las indicaciones de la miniatura para el diseñador, un hilo para Twitter/X y una versión corta para Shorts. Todo en 5 minutos.
+A partir del guion terminado, de forma automática: una descripción para YouTube (con palabras clave para que aparezca en las búsquedas, lo que se llama SEO), 15 etiquetas, las indicaciones de la miniatura para el diseñador, un hilo para Twitter/X y una versión corta para Shorts. Todo en 5 minutos.
 
-**Herramientas:** Trigger.dev (calendario semanal), API de Claude Opus (guiones), API de Claude Haiku (distribución), YouTube Data API, Reddit API, Google Trends (extracción de datos), Slack (entrega)
+**Herramientas:** Trigger.dev (calendario semanal), API de Claude Opus (guiones), API de Claude Haiku (distribución), YouTube Data API, Reddit Data API (acceso solo con aprobación de Reddit), Google Trends (la API oficial sigue en alfa, con acceso por solicitud; sin ella, los datos se exportan a mano), Slack (entrega)
 
 **Resultado:**
 
@@ -223,7 +226,7 @@ A partir del guion terminado, de forma automática: una descripción para YouTub
 Desarrollo: $2,400 (paquete Pro)
 Soporte mensual: $350/mes (actualizaciones cuando cambian las plataformas)
 Costos de API: ~$120/mes (Claude Opus para los guiones cuesta más)
-Modelo: totalmente recurrente = ingresos mensuales predecibles
+Modelo de pago: desarrollo una sola vez + soporte mensual = ingresos más predecibles
 ```
 
 **Tiempo de construcción:** 11 días hábiles
@@ -267,13 +270,14 @@ Desarrollo: $4,200 (una integración compleja, 4 API)
 Soporte mensual: $600/mes (la API de WhatsApp necesita monitoreo)
 Costos de API: ~$90/mes
 Ahorro: 8 agentes × 20 min/día × 22 días × $25/hora = $1,467/mes
-Retorno: unos 3 meses solo por el tiempo ahorrado; unos 5-6 meses
-         ya restando el soporte y los costos de API
+Retorno: unos 3 meses solo por el tiempo ahorrado ($4,200 / $1,467);
+         unos 5-6 meses ya restando el soporte y los costos de API:
+         $4,200 / ($1,467 - $600 - $90)
 ```
 
-**Tiempo de construcción:** 17 días hábiles (la verificación de la WhatsApp Business API tomó 4 días)
+**Tiempo de construcción:** 17 días hábiles (4 de ellos se fueron en la verificación del negocio ante Meta para la WhatsApp Business API)
 
-**La lección principal:** la WhatsApp Business API exige que Meta verifique el negocio. Deja un margen de varios días hábiles en el calendario (en este caso tomó 4 días) y avísale al cliente desde el principio.
+**La lección principal:** puedes empezar a usar la WhatsApp Business API de inmediato, pero con un tope inicial de personas a las que puedes escribir. Para subirlo, la inmobiliaria pasó por la verificación del negocio de Meta. Deja para eso un margen de varios días hábiles en el calendario (en este caso tomó 4 días) y avísale al cliente desde el principio. Algo más: por un sistema así pasan datos personales de los clientes. La inmobiliaria tiene que avisarles y cumplir la ley de datos personales de su país.
 
 ---
 
@@ -295,9 +299,9 @@ Retorno: unos 3 meses solo por el tiempo ahorrado; unos 5-6 meses
 
 **Ejercicio: un cálculo de ROI para tu propio proyecto potencial**
 
-1. Elige a una persona de tu Mapa de Confianza (la lista de contactos cercanos que hiciste en una lección anterior) cuyo problema conozcas
+1. Elige a un dueño de negocio o profesional que conozcas y cuyo problema de trabajo entiendas. (Más adelante, en la lección sobre los primeros clientes, vas a reunir a personas así en una lista.)
 
-2. Llena la plantilla del caso:
+2. Llena la plantilla del caso. Por ahora, las líneas "Herramientas" y "Precio del proyecto" llénalas con un aproximado: vas a volver a ellas en los módulos sobre tu oferta y tu precio.
    ```
    Cliente (tipo): ____________
    Problema: ____________
@@ -332,12 +336,15 @@ Retorno: unos 3 meses solo por el tiempo ahorrado; unos 5-6 meses
 Costo actual del proceso:
   [horas/semana] × [tarifa $/hora] × 52 semanas = [costo anual del problema]
 
+Ahorro al año:
+  [costo anual del problema] × [reducción esperada, %]
+
 Costo de la automatización:
   [desarrollo único] + [soporte mensual × 12] + [costos de API × 12] = [costo anual de la solución]
 
 ROI = (Ahorro - Costo de la solución) / Costo de la solución × 100%
 
-Retorno = Costo de desarrollo / Ahorro mensual = [X meses]
+Retorno = Costo de desarrollo / (Ahorro mensual - soporte - API) = [X meses]
 ```
 
 **Ejemplo (del Caso 1):**
@@ -351,10 +358,12 @@ Retorno = $2,800 / ($7,020/12 - $50 API) = 5.2 meses
 **Ejemplo (del Caso 3, el asistente ejecutivo):**
 ```
 Costo anual del problema: 15 h/semana × $150/hora × 52 = $117,000
-Costo anual de la solución: $5,500 + $9,000 + $960 = $15,460
-ROI = ($117,000 - $15,460) / $15,460 = 557%
-Retorno = $5,500 / ($9,000 - $750 soporte - $80 API) = 0.7 meses
+Costo anual de la solución: $5,500 + $9,000 soporte + $960 API = $15,460
+ROI = ($117,000 - $15,460) / $15,460 = 657%
+Retorno = $5,500 / ($9,750 - $750 soporte - $80 API) = 0.6 meses
 ```
+
+Para simplificar, los dos ejemplos suponen que la automatización quita toda la rutina (una reducción del 100%). En la vida real queda algo de tiempo de revisión: en el Caso 1 son 10 minutos a la semana. Por eso, en tu propio cálculo usa el porcentaje honesto de la plantilla; si no, tu ROI va a salir inflado.
 
 Arma este cálculo una vez en Google Sheets y úsalo en cada conversación de venta.
 
@@ -364,7 +373,7 @@ Arma este cálculo una vez en Google Sheets y úsalo en cada conversación de ve
 
 - **ROI de palabra, no en papel.** "Vas a ahorrar mucho tiempo" no convence a nadie. "$23,040 al año de ahorro con una inversión de $3,500, recuperada en 2 meses" sí. Muestra un archivo de Excel o de Google Sheets con las fórmulas.
 - **Inflar el ROI.** Si la automatización de verdad cubre el 70% del trabajo, no digas 100%. Un ROI honesto genera confianza. Y si el cliente ve que el resultado real supera lo que prometiste, se lo va a contar a sus conocidos.
-- **Dejar los costos de API fuera de las cuentas.** API de Claude, Apify, Gmail API: todo cuesta. $50-150/mes en API: inclúyelo siempre en el costo de la solución que le muestras al cliente.
+- **Dejar los costos de API fuera de las cuentas.** API de Claude, servicios de recolección de datos como Apify, bases de contactos de pago como Apollo: todo cuesta. $50-150/mes en API: inclúyelo siempre en el costo de la solución que le muestras al cliente.
 - **Ignorar el costo de oportunidad.** Un director que pasa 15 horas en la rutina = 15 horas que NO dedica a la estrategia. El costo no es solo $150/hora × 15; también son los tratos y las decisiones que nunca pasaron.
 
 ---
@@ -379,10 +388,10 @@ Arma este cálculo una vez en Google Sheets y úsalo en cada conversación de ve
 
 ## Herramientas y recursos
 
-- **Trigger.dev**: [trigger.dev](https://trigger.dev/): pone en marcha flujos que corren con un calendario; tiene plan gratis (a octubre de 2026, con un crédito mensual de $5)
-- **Apollo.io**: [apollo.io](https://www.apollo.io/): una base de datos de contactos B2B para proyectos de generación de prospectos
+- **Trigger.dev**: [trigger.dev](https://trigger.dev/): ejecuta tareas con un calendario; tiene plan gratis (las condiciones están en la página de precios del servicio)
+- **Apollo.io**: [apollo.io](https://www.apollo.io/): una base de datos de contactos de negocios con API oficial, para proyectos de generación de prospectos
 - **HubSpot**: un CRM con un nivel gratis y una API
-- **WhatsApp Business API**: a través de [Meta for Developers](https://developers.facebook.com/); exige la verificación del negocio (Meta pone los plazos, así que deja un margen)
+- **WhatsApp Business API**: a través de [Meta for Developers](https://developers.facebook.com/); puedes empezar sin verificar el negocio, pero con un tope inicial de personas a las que puedes escribir. La verificación del negocio es una de las formas de subir ese tope; Meta pone los plazos, así que deja un margen
 - **Precios de la API de Claude**: [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing): para tener costos de API precisos en tus cuentas de ROI; hay un resumen en la página [Lo vigente](https://aimayak.com/now/)
 - **Google Sheets**: para armar tu calculadora de ROI (la armas una vez y la usas con cada cliente)
 
@@ -396,10 +405,10 @@ Arma este cálculo una vez en Google Sheets y úsalo en cada conversación de ve
 
 > Muestra resultados pronto. Haz una demostración parcial el día 3-5. El cliente ve avances y la confianza crece.
 
-> Un cálculo de ROI vende mejor que cualquier palabra. Las cifras quitan las dudas.
+> Un cálculo de ROI convence más que las promesas generales. Las cifras quitan las dudas, siempre que sean honestas.
 
 ---
 
 ## Siguiente lección
 
-→ [El modelo de fábrica](48-factory-model.md): plantillas y repetibilidad
+→ [Más de 100 ideas de negocio con IA](100-ai-business-ideas-smb.md): una guía de ideas; elige el nicho con el que vas a empezar

@@ -16,22 +16,24 @@ La consultoría es **tú como producto**. El cliente no compra una caja. Compra 
 
 🎨 **Imagínalo así:** un consultor es un **médico con consultorio particular**. No una farmacia (un producto), no un hospital (una agencia), no una aseguradora (SaaS). Un médico, un paciente, un problema concreto, y se paga directamente por la consulta. Cara por hora, pero el paciente paga porque confía en el médico, no porque el precio sea bajo.
 
-Esta lección es un plan de 30 días para arrancar una práctica de consultoría en IA desde cero y llegar al punto de ofrecerle a tu primer cliente un retainer (una cuota mensual por ayuda continua). Los montos de esta lección son ejemplos para hacer cuentas, no un pronóstico de ingresos ni una recomendación de precios: tus resultados dependen de tu nicho, tu mercado y tu trabajo.
+Esta lección es un plan de 30 días para arrancar una práctica de consultoría en IA desde cero y llegar al punto de ofrecerle a tu primer cliente una iguala mensual (en inglés, retainer: una cuota fija cada mes por ayuda continua). Los montos de esta lección son ejemplos para hacer cuentas, no un pronóstico de ingresos ni una recomendación de precios: tus resultados dependen de tu nicho, tu mercado y tu trabajo.
+
+Este es un escenario comprimido. Supone que ya tienes un nicho, paquetes de servicio y uno o dos casos de las lecciones anteriores. Si empiezas de cero, da los mismos pasos a un ritmo más tranquilo: el plan general de 90 días viene dos lecciones más adelante, en [Graduación: tu plan de negocio con IA a 30-60-90 días](49-graduation.md).
 
 ---
 
-## 🎯 Dónde estarás el día 30
+## 🎯 A qué apunta el plan para el día 30
 
-Después de 30 días de seguir el plan:
+Si sigues el plan, al terminar los 30 días deberías tener:
 
-- ✅ **Tu primer cliente**: una propuesta de retainer enviada o firmada (tú y el cliente acuerdan los términos)
+- ✅ **Una primera propuesta de iguala mensual**: enviada a un cliente o ya firmada (tú y el cliente acuerdan los términos; si firma y cuándo, lo decide él)
 - ✅ **Un manual de trabajo reutilizable**: un proceso paso a paso que puedes repetir con los clientes n.º 2, n.º 3 y n.º 4
 - ✅ **Activos de marca personal**: un perfil de LinkedIn, una página de aterrizaje y un caso de estudio
 - ✅ **Una cartera de 3-5 prospectos** para el mes 2 (tibios, no fríos)
 - ✅ **Tu primer caso de estudio**: tu primer cliente como prueba social para los siguientes
-- ✅ **Confianza**: sabes que el proceso funciona porque ya lo recorriste
+- ✅ **Experiencia**: ya recorriste todo el proceso una vez y sabes qué pasos te funcionan y cuáles cambiar
 
-Es una meta para 30 días, no una garantía: los tiempos y el resultado dependen de tu nicho, tu mercado y tu trabajo.
+Es una meta para 30 días, no una garantía: los tiempos y el resultado dependen de tu nicho, tu mercado y tu trabajo. Llegar al primer cliente puede tomar más de un mes. Si es así, el orden de los pasos se mantiene y las semanas se alargan.
 
 ---
 
@@ -41,23 +43,23 @@ La consultoría no se vende "por hora". Vendes **un resultado más acceso a un e
 
 | Servicio | Cómo fijar el precio | Cuándo usarlo |
 |---|---|---|
-| **Auditoría de diagnóstico** | una tarifa única pequeña | La puerta de entrada de la semana 1, un compromiso bajo para el cliente |
-| **Proyecto de implementación** | una tarifa fija por proyecto | Semanas 2-4, después de la auditoría, con un alcance definido |
-| **Retainer mensual** | una cuota mensual | Soporte continuo después de la implementación |
-| **Trabajo urgente por hora** | una tarifa por hora más alta | Tareas urgentes fuera del alcance del retainer |
+| **Auditoría de diagnóstico** (una revisión única de dónde la IA le ahorra tiempo a la empresa) | una tarifa única pequeña | La puerta de entrada, un compromiso bajo para el cliente: la ofreces al final de la semana 1 y la entregas en las semanas 2-3 |
+| **Proyecto de implementación** | una tarifa fija por proyecto | Después de la auditoría (desde la semana 4), con un alcance definido |
+| **Iguala mensual** | una cuota fija cada mes | Soporte continuo después de la implementación |
+| **Trabajo urgente por hora** | una tarifa por hora más alta | Tareas urgentes fuera del alcance de la iguala |
 
 Los montos reales los fijas tú, según tus costos (tiempo, herramientas), el valor del resultado para el cliente y las tarifas habituales en tu nicho.
 
 **Cómo funciona el embudo:**
 
 ```
-Auditoría  →  Implementación    →  Retainer
+Auditoría  →  Implementación    →  Iguala mensual
 (entrada)     (prueba de valor)    (recurrente)
 ```
 
-🎨 **Imagínalo así:** una agencia de autos. La prueba de manejo (la auditoría) → la venta del auto (la implementación) → los servicios de mantenimiento periódicos (el retainer). Nadie compra un auto sin probarlo, y nadie agenda un servicio para un auto que no tiene.
+🎨 **Imagínalo así:** una agencia de autos. La prueba de manejo (la auditoría) → la venta del auto (la implementación) → los servicios de mantenimiento periódicos (la iguala mensual). Nadie compra un auto sin probarlo, y nadie agenda un servicio para un auto que no tiene.
 
-**Nunca empieces con un retainer grande.** El cliente todavía no te conoce, así que es un paso demasiado grande. Una auditoría pequeña es la "primera cita", donde los dos descubren si hay química.
+**Nunca empieces con una iguala grande.** El cliente todavía no te conoce, así que es un paso demasiado grande. Una auditoría pequeña es la "primera cita", donde los dos descubren si hay química.
 
 ---
 
@@ -166,7 +168,7 @@ Me recuerda a un trabajo que hicimos con [empresa/industria similar]:
 redujeron [métrica concreta] en [X%] al llevar la IA a
 [función concreta].
 
-Estoy ofreciendo una auditoría gratuita de 30 minutos para empresas de [nicho]. En una llamada
+Estoy ofreciendo una revisión gratuita de 30 minutos para empresas de [nicho]. En una llamada
 normalmente encontramos algunas mejoras rápidas [detalles de tu experiencia real].
 
 ¿Vale la pena conversar? Mi calendario está aquí: [enlace de Calendly]
@@ -176,33 +178,35 @@ Saludos,
 [LinkedIn]
 ```
 
+Deja la frase sobre el trabajo con una empresa similar solo si ese trabajo existió de verdad. Si todavía no tienes un caso, quítala y di qué notaste en sus procesos.
+
 Una plantilla de mensaje para LinkedIn (más corta):
 
 ```
 Hola, [Nombre]. Vi que [Empresa] recientemente [algo concreto].
 
 Ayudo a empresas de [nicho] a poner la IA a trabajar: [un resultado concreto de tu caso real].
-Estoy haciendo auditorías gratuitas de 30 minutos. ¿Te interesa?
+Estoy haciendo revisiones gratuitas de 30 minutos. ¿Te interesa?
 
 Calendario: [enlace de Calendly]
 ```
 
 **Paso 3: Envía 20 mensajes al día**
 
-20 al día × 2 días = 40 mensajes. Lleva el registro de tus números:
-- Tasa de apertura (si es baja, el problema es el asunto)
+20 al día × 2 días = 40 mensajes. Al resto de tu lista escríbele la semana siguiente. Lleva el registro de tus números:
+- Tasa de apertura (solo la ves si envías con una herramienta de prospección que la mida; si es baja, el problema es el asunto)
 - Tasa de respuesta (si es baja, el mensaje no les resulta relevante)
 - La proporción que se convierte en llamadas agendadas (si es baja, no estás tocando un dolor real)
 
 No hay referencias universales, así que compara tus primeros envíos entre sí. No prometas ahorros que no hayas medido.
 
-**Nunca mandes un envío masivo genérico.** Dedica 1-2 minutos a personalizar cada mensaje (menciona una publicación, un proyecto o una noticia concreta de la empresa). El correo en frío está regulado por ley (por ejemplo, la CAN-SPAM Act en EE. UU., la CASL en Canadá y el GDPR en la Unión Europea, además de las normas de tu país): revisa las reglas de donde estás tú y de donde están las personas a las que les escribes.
+**Nunca mandes un envío masivo genérico.** Dedica 1-2 minutos a personalizar cada mensaje (menciona una publicación, un proyecto o una noticia concreta de la empresa). El correo en frío está regulado por ley (por ejemplo, la CAN-SPAM Act en EE. UU., la CASL en Canadá y el GDPR en la Unión Europea, además de las normas de tu país): revisa las reglas de donde estás tú y de donde están las personas a las que les escribes. Lo básico está en la sección legal de la lección [Prospección en frío que sí recibe respuestas](39c-cold-outreach-deep.md).
 
 ---
 
 ### Días 5-7: Llamadas de diagnóstico
 
-Para el final de la semana 1 deberías tener **5-10 llamadas de diagnóstico agendadas**.
+La meta del plan para el final de la semana 1 son **5-10 llamadas de diagnóstico agendadas**. Si tienes menos, es normal con mensajes en frío: sigue escribiendo y suma contactos cercanos, gente que ya te conoce (mira la lección [Cómo encontrar tus primeros clientes](38-monetization-clients.md)).
 
 **Plantilla de llamada de diagnóstico (30 minutos):**
 
@@ -231,7 +235,7 @@ MINUTOS 25-30: Siguiente paso (llamado a la acción)
 
 **Después de cada llamada de diagnóstico:**
 
-Regístrala en tu CRM (la versión gratuita de HubSpot muchas veces alcanza para empezar):
+Regístrala en tu CRM (el programa o la tabla donde llevas el registro de clientes y tratos; la versión gratuita de HubSpot muchas veces alcanza para empezar):
 - Puntos de dolor (lo que duele)
 - Señal de presupuesto (¿se habló de dinero?)
 - Autoridad (¿esta persona puede tomar la decisión o hace falta alguien más?)
@@ -242,7 +246,7 @@ Regístrala en tu CRM (la versión gratuita de HubSpot muchas veces alcanza para
 
 ---
 
-## SEMANA 2: Firma a tu primer cliente
+## SEMANA 2: Propuesta y contrato
 
 Meta de la semana: **enviar una propuesta y acordar los términos** (cuándo firman y pagan un anticipo depende del cliente).
 
@@ -273,7 +277,7 @@ Meta de la semana: **enviar una propuesta y acordar los términos** (cuándo fir
 5. INVERSIÓN (1 página)
    - Auditoría de diagnóstico: [precio] (1 semana; entregable: un informe detallado)
    - Implementación: [precio] (3 semanas; entregable: una solución de IA funcionando)
-   - Retainer continuo: [precio]/mes (optimización continua)
+   - Iguala mensual: [precio]/mes (optimización continua)
    - Total del año 1: [monto]
    - Cálculo del ROI: solo con números que hayas medido o acordado con el cliente
 
@@ -307,11 +311,11 @@ Lo mínimo que debe cubrir un contrato:
 - **Confidencialidad**: un acuerdo de confidencialidad (NDA) básico
 - **Limitación de responsabilidad**: protección estándar para ti
 
-No escribas un contrato desde cero. Bonsai tiene plantillas listas de contratos de consultoría que puedes adaptar en unos 30 minutos. Pide a un abogado que revise el contrato final, de acuerdo con las normas de tu país: esta lección no es asesoría legal.
+No escribas un contrato desde cero. Bonsai tiene plantillas listas de contratos de consultoría que puedes adaptar a tu proyecto. Pide a un abogado que revise el contrato final, de acuerdo con las normas de tu país: esta lección no es asesoría legal.
 
 **Paso 2: Cobra el anticipo del 50%**
 
-Usa Stripe u otro servicio de facturación. No empieces a trabajar hasta que llegue el anticipo: un cliente que da largas con el anticipo es un foco rojo de problemas de pago más adelante.
+Usa Stripe (no está disponible en todos los países; en América Latina, a octubre de 2026, solo aparece en Brasil y México: revisa stripe.com/global) u otro servicio de cobro que funcione en tu país. No empieces a trabajar hasta que llegue el anticipo: un cliente que da largas con el anticipo es un foco rojo de problemas de pago más adelante.
 
 **Paso 3: Llamada de arranque (60-90 minutos)**
 
@@ -386,7 +390,7 @@ Después de las entrevistas de diagnóstico tienes 10-30 páginas de notas en br
    - Esfuerzo: horas o semanas de implementación
    - Riesgo: bajo / medio / alto
    - Dependencias: qué tiene que pasar antes
-   - Prioridad recomendada: P0/P1/P2
+   - Prioridad recomendada: P0, P1 o P2 (P0 = hacer primero)
 
 4. HOJA DE RUTA RECOMENDADA (1-2 páginas)
    - Fase 1 (semanas 1-4): Mejoras rápidas, sin cambios de infraestructura
@@ -396,7 +400,7 @@ Después de las entrevistas de diagnóstico tienes 10-30 páginas de notas en br
 5. INVERSIÓN NECESARIA
    - Herramientas/suscripciones: $X/mes
    - Consultoría (implementación): $Y pago único
-   - Continuo (retainer): $Z/mes
+   - Continuo (iguala mensual): $Z/mes
    - Total del año 1: $W
    - ROI esperado: $Q (proporción Q/W)
 
@@ -406,16 +410,18 @@ Después de las entrevistas de diagnóstico tienes 10-30 páginas de notas en br
    - Presupuesto: $X a comprometer
 ```
 
-**Un método para ordenar las oportunidades (RICE):**
+**Una forma de ordenar las oportunidades (versión simplificada del método RICE):**
 
-| Criterio | Peso | Puntuación 1-10 |
+Ponle a cada oportunidad cuatro puntuaciones del 1 al 10:
+
+| Criterio | Qué calificas | Puntuación 1-10 |
 |---|---|---|
-| Reach, alcance (a cuántas personas beneficia) | 1x | ? |
-| Impact, impacto (cuánto les ayuda) | 2x | ? |
-| Confidence, confianza (qué tan seguro estás de que funcionará) | 1x | ? |
-| Effort, esfuerzo (inverso: menos esfuerzo es mejor) | 1.5x | ? |
+| Alcance (Reach) | a cuántas personas ayuda | ? |
+| Impacto (Impact) | cuánto les ayuda | ? |
+| Confianza (Confidence) | qué tan seguro estás de que funcionará | ? |
+| Esfuerzo (Effort) | cuánto trabajo requiere (más trabajo = puntuación más alta) | ? |
 
-Puntuación total = Alcance × Impacto × Confianza / Esfuerzo. Ordena las oportunidades por su puntuación total.
+Puntuación total = Alcance × Impacto × Confianza / Esfuerzo. Ordena las oportunidades por su puntuación total: entre más alta, antes conviene hacerla.
 
 ---
 
@@ -451,13 +457,13 @@ Puntuación total = Alcance × Impacto × Confianza / Esfuerzo. Ordena las oport
 - Firmar el contrato de implementación o fijar una fecha de decisión
 ```
 
-**La meta de la reunión** no es "recibir comentarios". Es **un compromiso firmado para la fase de implementación**.
+**La meta de la reunión** no es "recibir comentarios". Es **un compromiso firmado para la fase de implementación**, o al menos una fecha de decisión acordada.
 
 ---
 
-## SEMANA 4: Implementación y la propuesta de retainer
+## SEMANA 4: Implementación y la propuesta de iguala mensual
 
-Meta de la semana: **tu primera mejora rápida demostrada + un retainer firmado**.
+Meta de la semana: **mostrar tu primera mejora rápida y proponer una iguala mensual** (si el cliente firma y cuándo, lo decide él).
 
 ### Días 22-25: Tu primera mejora rápida
 
@@ -494,11 +500,11 @@ DESPUÉS:
 - Valor en dinero: $25/hora × 500 = $12,500/año ahorrados
 ```
 
-Estos números son tu evidencia cuando propongas el retainer.
+Estos números son tu evidencia cuando propongas la iguala mensual.
 
 ---
 
-### Días 26-28: Muestra los resultados y propón el retainer
+### Días 26-28: Muestra los resultados y propón la iguala mensual
 
 **Reunión de resultados (60 minutos):**
 
@@ -515,13 +521,13 @@ Estos números son tu evidencia cuando propongas el retainer.
 - "Esta fue una oportunidad de la auditoría. Hay 4-5 más."
 - "Para implementarlas todas, necesitamos una colaboración continua."
 
-45-60 min: Propuesta de retainer
+45-60 min: Propuesta de iguala mensual
 - Niveles (Inicial, Crecimiento, Escala, con precios según tus paquetes)
 - "Para tu situación, recomiendo [nivel]"
 - Firmar o fijar una fecha de decisión
 ```
 
-**Beneficios del retainer para el cliente (tus argumentos):**
+**Beneficios de la iguala mensual para el cliente (tus argumentos):**
 
 - Mejora continua (no una implementación de una sola vez)
 - Acceso prioritario (respuestas rápidas a sus preguntas)
@@ -535,7 +541,7 @@ Estos números son tu evidencia cuando propongas el retainer.
 
 **Día 29: Revisión de la cartera**
 
-De 50 mensajes y 10 llamadas de diagnóstico (un ejemplo inventado), podrías terminar con:
+De una lista de 50 empresas y 10 llamadas de diagnóstico (un ejemplo inventado), podrías terminar con:
 - 1 cliente (si todo salió bien)
 - 2-3 prospectos calientes que no han firmado
 - 5-7 prospectos tibios que necesitan seguimiento
@@ -561,7 +567,7 @@ Este manual es **un activo que crece con cada cliente**. El cliente n.º 2 deber
 
 ## 💼 Paquetes de servicio: 3 niveles
 
-Estandariza tus precios: te ahorra tiempo en cada trato. La cantidad de trabajo en cada paquete de abajo es una estructura de ejemplo; los precios los fijas tú.
+Estandariza tus precios: te ahorra tiempo en cada trato. La cantidad de trabajo en cada paquete de abajo es una estructura de ejemplo; los precios los fijas tú. Cómo armar paquetes ya lo trabajaste en la lección [Cómo empaquetar tus servicios de IA en tres ofertas claras](42-packaging.md).
 
 ### Inicial (Starter)
 
@@ -596,7 +602,9 @@ Estandariza tus precios: te ahorra tiempo en cada trato. La cantidad de trabajo 
 
 ## 🎯 Ideas de nicho para 2026
 
-**Nichos con presupuestos más grandes:**
+La tabla de abajo es una guía aproximada del autor, no una estadística de mercado: comprueba la demanda en tu propio nicho.
+
+**Nichos donde los presupuestos suelen ser más grandes:**
 
 | Nicho | Por qué paga | Qué tan difícil es entrar |
 |---|---|---|
@@ -626,7 +634,7 @@ En derecho, salud y finanzas, automatizas el trabajo administrativo y el papeleo
 | Cobrar por debajo de tus propios costos | No es sostenible: te agotas y no puedes invertir en marketing | Calcula tu piso: tiempo + herramientas + impuestos (pregúntale a tu contador cuánto apartar, según las reglas de la autoridad fiscal de tu país) |
 | Sin nicho (solo "consultor de IA") | No está claro qué decirle a quién, así que el marketing se vuelve imposible | Industria × Función, en 15 palabras o menos |
 | Alcance sin definir | El crecimiento del alcance (el trabajo no deja de crecer) se come tu ganancia; el cliente cree que "todo está incluido" | Especifica en el contrato lo que NO está incluido |
-| Solo auditoría, sin retainer | Ingresos de una sola vez, así que siempre estás buscando clientes nuevos | La auditoría es la puerta de entrada a un retainer, no la meta |
+| Solo auditoría, sin iguala mensual | Ingresos de una sola vez, así que siempre estás buscando clientes nuevos | La auditoría es la puerta de entrada a una iguala mensual, no la meta |
 | Hacer tú el trabajo en lugar de capacitar al equipo | No escala: el cliente depende de ti para siempre | Capacita al equipo del cliente; esa es tu palanca |
 | Sin contrato (un trato de palabra) | Un dolor de cabeza legal cuando cambia el alcance | Firma siempre un contrato, incluso con amigos |
 | Hacer descuentos sin cambiar el alcance | Rebaja tu valor; el cliente piensa "podría haber pagado menos" | Cambiar el precio = cambiar el alcance |
@@ -643,14 +651,14 @@ En derecho, salud y finanzas, automatizas el trabajo administrativo y el papeleo
 | **Calendly** | revisa los planes en su sitio | Agendar llamadas de diagnóstico |
 | **PandaDoc** | revisa los planes en su sitio | Propuestas (o Better Proposals) |
 | **Bonsai** | revisa los planes en su sitio | Contratos + facturación en un solo lugar |
-| **Stripe** | las comisiones varían según el país (en EE. UU., 2.9% + 30¢ a octubre de 2026) | Procesamiento de pagos |
+| **Stripe** | las comisiones varían según el país (en EE. UU., 2.9% + 30¢ a octubre de 2026) | Procesamiento de pagos (no está disponible en todos los países) |
 | **Notion / Carrd** | hay planes gratuitos | Página de aterrizaje + documentos internos |
 | **Loom** | revisa los planes en su sitio | Video asíncrono para clientes |
 | **Claude Pro / API** | Pro $20/mes (a octubre de 2026), o la API, que se cobra por token | Hacer el trabajo real para los clientes |
 
 Suma tú mismo los planes de los servicios que elijas. Empieza con lo mínimo (planes gratuitos más una herramienta de pago para encontrar clientes) y agrega lo demás a medida que lo necesites. Precios actuales: [Lo vigente](https://aimayak.com/now/).
 
-Lo que no necesitas: un sitio web corporativo, un CRM hecho a la medida, una oficina elegante, tarjetas de presentación ni una empresa registrada desde el primer día. Cuando llegue el momento, elige con tu contador o un abogado una figura legal para tu negocio según las normas de tu país (en EE. UU., las opciones comunes para un consultor que trabaja solo son la empresa unipersonal o la LLC).
+Lo que no necesitas: un sitio web corporativo, un CRM hecho a la medida, una oficina elegante, tarjetas de presentación ni una empresa registrada desde el primer día. Cuando llegue el momento, elige con tu contador o un abogado una figura legal para tu negocio según las normas de tu país (en EE. UU., las opciones comunes para un consultor que trabaja solo son la empresa unipersonal o la LLC). Las reglas para trabajar por tu cuenta y los impuestos cambian de un país a otro: revísalas antes de enviar tu primera factura.
 
 ---
 
@@ -662,28 +670,28 @@ Lo que no necesitas: un sitio web corporativo, un CRM hecho a la medida, una ofi
 - Toma en cuenta las horas que dedicas a buscar clientes y a tareas administrativas
 - Compara el resultado con tu tarifa mínima: si es menor, cambia la cantidad de trabajo, el precio o lo que incluye el paquete
 
-**Por qué un retainer es mejor que cobrar por hora:**
+**Por qué una iguala mensual es mejor que cobrar por hora:**
 
-Por hora, vendes tiempo. Con un retainer, vendes **acceso más resultados**. Un cliente por hora tratará de reducir tus horas. Un cliente con retainer paga por tranquilidad: estás de su lado.
+Por hora, vendes tiempo. Con una iguala, vendes **acceso más resultados**. Un cliente por hora tratará de reducir tus horas. Un cliente con iguala paga por tranquilidad: estás de su lado.
 
 **Formas de crecer:**
 
 | Camino | La idea | Notas |
 |---|---|---|
-| **Varios retainers** | Un número pequeño de clientes continuos | Predecible, pero limitado por tus horas |
+| **Varias igualas** | Un número pequeño de clientes continuos | Predecible, pero limitado por tus horas |
 | **Menos clientes, trabajo más profundo** | Paquetes más grandes y más caros | Más tiempo por cliente |
-| **Híbrido** | Retainers + proyectos aparte | Más flexible en la carga de trabajo |
+| **Híbrido** | Igualas + proyectos aparte | Más flexible en la carga de trabajo |
 | **Un asistente administrativo** | Delegas la agenda y el papeleo | Te libera tiempo para los clientes |
 
 Aquí no hay cifras de ingresos: dependen de tu nicho, tu mercado y tu trabajo.
 
 ---
 
-## ✅ Lo que tienes al final del día 30
+## ✅ Tu lista de control para el final del día 30
 
-Un inventario concreto:
+Revísate con esta lista:
 
-- ✅ Tu primer cliente: una propuesta enviada o firmada
+- ✅ Una primera propuesta enviada a un cliente (o ya firmada, si el cliente estaba listo)
 - ✅ Un manual de trabajo repetible (notas sobre lo que funcionó)
 - ✅ Activos de marca personal (LinkedIn + página de aterrizaje + 1 caso de estudio)
 - ✅ Una cartera de 3-5 prospectos (tibios, no fríos)
@@ -691,9 +699,9 @@ Un inventario concreto:
 - ✅ Plantillas de prospección probadas (sabes qué funciona en tu nicho)
 - ✅ Un guion de llamada de diagnóstico afinado (con 10 llamadas)
 - ✅ Una plantilla de propuesta (probada con al menos un cliente)
-- ✅ Confianza: sabes que el proceso funciona
+- ✅ Experiencia: ya recorriste todo el proceso una vez y sabes qué cambiar
 
-Es **un punto de partida con el que puedes actuar de inmediato**. El resultado depende de tu nicho, tu mercado y tu trabajo.
+Es **un punto de partida con el que puedes actuar de inmediato**. Si te faltan puntos, sigue con los mismos pasos el mes siguiente: el resultado depende de tu nicho, tu mercado y tu trabajo.
 
 ---
 
@@ -702,13 +710,13 @@ Es **un punto de partida con el que puedes actuar de inmediato**. El resultado d
 Es un esquema aproximado de etapas, no un pronóstico de ingresos.
 
 **Meses 1-3:** Bases
-- Mes 1: tu primer cliente
+- Mes 1: el plan de 30 días de esta lección
 - Meses 2-3: amplía tu embudo y busca los siguientes clientes
 
 **Meses 4-6:** Crecimiento
 - Crece con un proceso repetible, no con suerte de una sola vez
 - Dedica 1-2 horas a la semana a contenido (publicaciones en LinkedIn, casos de estudio)
-- Empieza a recibir prospectos que llegan solos (recomendaciones + contenido)
+- Pueden empezar a llegar prospectos por su cuenta (recomendaciones + contenido)
 
 **Meses 7-9:** Optimizar
 - Revisa tus clientes y paquetes: cuáles valen tu tiempo y cuáles no
@@ -716,7 +724,7 @@ Es un esquema aproximado de etapas, no un pronóstico de ingresos.
 
 **Meses 10-12:** Crecer o especializarte
 - **Camino A (solo premium):** menos clientes, trabajo más profundo
-- **Camino B (híbrido):** retainers más proyectos de implementación aparte
+- **Camino B (híbrido):** igualas más proyectos de implementación aparte
 - **Camino C (convertirlo en producto):** lanzar un curso o plantillas como producto aparte
 
 Los ingresos y la carga de trabajo reales dependen de tu nicho, tu mercado y tu trabajo.
@@ -726,7 +734,7 @@ Los ingresos y la carga de trabajo reales dependen de tu nicho, tu mercado y tu 
 ## Lecciones relacionadas
 
 - [Tus primeros clientes](38-monetization-clients.md): dónde encontrarlos y cómo cerrar
-- [Un sistema de generación de prospectos](39-lead-generation.md): prospección activa, prospectos que llegan solos y recomendaciones
+- [Búsqueda de clientes potenciales](39-lead-generation.md): una lección opcional de la biblioteca avanzada sobre cómo reunir listas de empresas en una tabla
 - [Prospección en frío con Claude](45-cold-outreach.md): asuntos, seguimientos y secuencias
 - [El modelo de fábrica: plantillas y repetibilidad](48-factory-model.md): cómo organizar la consultoría individual como negocio
 
@@ -752,16 +760,16 @@ Los ingresos y la carga de trabajo reales dependen de tu nicho, tu mercado y tu 
 
 > La consultoría eres tú como producto. No escala como un SaaS, pero arranca más rápido, porque no hay software que construir ni infraestructura que mantener. Le sirve a quien quiere poner a trabajar lo que sabe de IA sin una gran inversión inicial; el resultado depende de tu nicho, tu mercado y tu trabajo.
 
-> El embudo: Auditoría → Implementación → Retainer. Nunca empieces con un retainer: es un paso demasiado grande para un cliente que todavía no te conoce. La auditoría es la primera cita; el retainer es el matrimonio.
+> El embudo: Auditoría → Implementación → Iguala mensual. Nunca empieces con una iguala: es un paso demasiado grande para un cliente que todavía no te conoce. La auditoría es la primera cita; la iguala es el matrimonio.
 
 > Nicho = Industria × Función. "Consultor de IA" no es para nadie. "IA para abogados de inmigración" deja claro a quién le vendes. Sin nicho, el marketing, el crecimiento y los clientes recurrentes quedan fuera de tu alcance.
 
 > 30 días de seguir el plan te dan una dirección: una primera propuesta a un cliente + un manual de trabajo reutilizable + una cartera de prospectos. El resultado no está garantizado: depende de tu nicho, tu mercado y la calidad de tu prospección. Mide tu embudo con tus propios datos: cuántos contactos → respuestas → llamadas → propuestas → acuerdos.
 
-> Una práctica de consultoría de una sola persona, sin empleados y sin financiamiento externo, también es un proyecto independiente y separable dentro de tu portafolio (mira [Proyectos separables](106-modular-architecture-detachability.md)). Las cifras de ingresos dependen de tu nicho, tu mercado y tu trabajo; por eso esta lección no da ninguna.
+> Una práctica de consultoría de una sola persona, sin empleados y sin financiamiento externo, también es un proyecto independiente y separable dentro de tu portafolio (mira [Proyectos separables](106-modular-architecture-detachability.md), una lección opcional de la biblioteca avanzada). Las cifras de ingresos dependen de tu nicho, tu mercado y tu trabajo; por eso esta lección no da ninguna.
 
 ---
 
 ## Próxima lección
 
-→ [Empaqueta tus servicios de IA en tres ofertas claras](42-packaging.md): cuando la consultoría se convierte en un paquete repetible
+→ [El modelo de fábrica: plantillas para un trabajo con clientes que se repite](48-factory-model.md): cómo ir más rápido con cada proyecto parecido

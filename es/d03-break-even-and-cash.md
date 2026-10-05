@@ -179,6 +179,8 @@ Recalcula a mano al menos una fila: la IA a veces se equivoca con los saldos acu
 
 ## Siguiente lección
 
-→ **[Cuánto cuestan de verdad las herramientas de IA y cómo dejar de pagar de más](d04-ai-stack-costs.md)**: cómo sumar tus gastos en IA y dejar de pagar por lo que no necesitas.
+→ **[Cómo empaquetar tus servicios](42-packaging.md)**: cómo convertir tu servicio en dos o tres opciones claras con precio.
 
-Para profundizar: [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md) (un modelo financiero completo de un negocio con IA).
+Tus suscripciones de IA ya las sumaste en [Cuánto cuestan de verdad las herramientas de IA y cómo dejar de pagar de más](d04-ai-stack-costs.md): toma ese total para tu línea de costos fijos.
+
+Para profundizar (una lección opcional de la biblioteca): [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md) (un modelo financiero completo de un negocio con IA).
