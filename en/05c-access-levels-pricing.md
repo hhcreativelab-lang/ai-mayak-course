@@ -10,7 +10,7 @@ Anthropic offers **5 levels of access to Claude** (plus the API, which is separa
 
 The most important thing to understand from the start: **Claude Code doesn't work on a free account.** So if you're wondering whether Claude Code is free, the short answer is no. A free account gives you the chat at claude.ai, in the desktop app and on your phone. To use Claude in the terminal or in VS Code, you need a paid plan (Pro at minimum) or an API key with pay-per-token billing.
 
-This lesson is a map as of October 2026. Prices and limits change, so always check the current numbers on the [What's current](https://aimayak.com/now/) page and on the official pricing page. Below: who gets what for their money, which plan fits whom, and how paying works.
+This lesson is a map as of October 2026. Prices and limits change, so always check the current numbers on the [What's current](https://aimayak.com/en/now/) page and on the official pricing page. Below: who gets what for their money, which plan fits whom, and how paying works.
 
 🎨 **Picture this:** AI access works like a cell phone plan. Free is the basic plan for the occasional call. Pro is the everyday plan you actually work on. Max is the premium plan for heavy users. Team is the family plan for a group. The API is a cab with the meter running: you pay for every second of the ride. Enterprise is a private jet with a pilot on contract.
 
@@ -282,7 +282,7 @@ The API is **a different story**. It's not a monthly subscription; it's pay-as-y
 - You can have Pro for chat and the API for your own programs at the same time
 - The API is paid through the Console at platform.claude.com (a separate account dashboard)
 
-**Prices as of October 2026** (per million tokens, from Anthropic's official pricing page; current numbers are always on the [What's current](https://aimayak.com/now/) page):
+**Prices as of October 2026** (per million tokens, from Anthropic's official pricing page; current numbers are always on the [What's current](https://aimayak.com/en/now/) page):
 
 #### Claude (Anthropic)
 

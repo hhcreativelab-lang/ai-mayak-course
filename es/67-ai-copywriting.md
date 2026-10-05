@@ -8,6 +8,8 @@
 
 Pedirle a la IA simplemente "escríbeme una publicación" te da un texto genérico de IA que todo el mundo reconoce y nadie lee. Lo que funciona es una cadena de prompts de varios pasos, más un archivo de voz de marca que le enseña a Claude a escribir con tu estilo.
 
+Todo en esta lección se hace en un chat normal de Claude, en tu navegador o en tu teléfono. No hace falta programar. La tarea con código al final de la práctica es opcional: es para quienes construyen sus propias herramientas.
+
 🎨 **Imagínalo así:** pedirle a Claude un texto sin contexto es como pedirle a un pintor "algo bonito". Vas a tener un cuadro, pero no va a ser tuyo. Una cadena de prompts es un encargo bien hecho para el pintor: estilo, paleta, formato, ambiente, imágenes de referencia. Así no recibes "algo", sino exactamente lo que tenías en mente.
 
 ---
@@ -18,7 +20,7 @@ Pedirle a la IA simplemente "escríbeme una publicación" te da un texto genéri
 - La cadena de prompts: idea → esquema → borrador → edición → versión final (5 pasos)
 - Un archivo de voz de marca: un contexto fijo que hace que Claude suene como tú
 - Formatos: publicaciones de LinkedIn e Instagram, guiones de YouTube, landing pages, correo (cada uno tiene sus propias reglas)
-- Generación por lotes: 30 publicaciones a la vez con un solo paquete de prompts
+- Generación por lotes: 30 borradores de publicaciones a la vez con un solo prompt
 - Detectores de IA: lo que funciona son los detalles concretos, no el disfraz
 
 ---
@@ -50,7 +52,7 @@ Sin contexto, Claude escribe para "el lector promedio de un texto promedio". Tu 
 
 ### La cadena de prompts: 5 pasos de la idea al texto final
 
-En lugar de un prompt grande, haces una secuencia de pasos pequeños y precisos.
+En lugar de un prompt grande, haces una secuencia de pasos pequeños y precisos. Cada paso es un mensaje aparte en el mismo chat.
 
 **Paso 1: Idea → Enfoque**
 
@@ -58,7 +60,7 @@ En lugar de un prompt grande, haces una secuencia de pasos pequeños y precisos.
 Tema: [sobre qué quieres escribir]
 Público: [quién lo va a leer]
 Objetivo del texto: [qué debería hacer o sentir el lector]
-Enfoque: [una mirada menos obvia del tema]
+Enfoque: [una mirada menos obvia del tema, si ya tienes una; si no, borra esta línea]
 
 Propón 5 enfoques distintos para una publicación sobre este tema.
 Una frase por enfoque. Sin relleno.
@@ -83,7 +85,7 @@ Solo los títulos de las secciones y una línea sobre lo que cubre cada una.
 
 Escribe un borrador que siga el esquema al pie de la letra.
 Detalles concretos en lugar de afirmaciones generales.
-Ejemplos de la vida real.
+Usa solo los ejemplos y los números que yo te di. Si necesitas más, pregúntame.
 ```
 
 **Paso 4: Borrador → Edición**
@@ -111,7 +113,7 @@ Revisión final:
 Dame el texto final.
 ```
 
-Una cadena así toma más tiempo que una sola solicitud, pero el resultado es de otro nivel.
+Una cadena así toma más tiempo que una sola solicitud, pero el texto sale notablemente mejor. Lee tú mismo la versión final antes de publicarla: revisar los datos, los números y los nombres te toca a ti.
 
 ---
 
@@ -158,7 +160,7 @@ Un archivo de voz de marca es un documento que le das a Claude antes de cada tex
 
 CTA viene de call to action, llamada a la acción: lo único que le pides al lector que haga.
 
-Si organizas tus archivos con el sistema PARA, este archivo va en `areas/marketing/brand-voice.md` (detalles: [Organiza tus carpetas: el sistema PARA para emprendedores con IA](66-folder-structure-philosophy.md)). Para no tener que pegar el archivo cada vez, puedes convertirlo en una Skill de Claude: a octubre de 2026, las Skills están disponibles en todos los planes.
+`brand-voice.md` es un archivo de texto normal: escríbelo en cualquier editor o app de notas y pega su texto al inicio de un chat. Si organizas tus archivos con el sistema PARA, este archivo va en `areas/marketing/brand-voice.md` (es una lección opcional de la biblioteca: [Organiza tus carpetas: el sistema PARA para emprendedores con IA](66-folder-structure-philosophy.md)). Para no tener que pegar el archivo cada vez, puedes convertirlo en una Skill (habilidad) de Claude: una instrucción guardada que Claude carga por su cuenta cuando sirve para la tarea. Las Skills están en Customize → Skills (Personalizar → Habilidades) y, a octubre de 2026, están disponibles en todos los planes.
 
 🎨 **Imagínalo así:** un archivo de voz de marca es como la guía de bienvenida que le darías a un nuevo redactor de tu equipo. Sin ella, escribe "bien". Con ella, escribe como tú.
 
@@ -235,7 +237,7 @@ Este es mi calendario de contenido del mes. Temas:
 ...
 30. [tema 30]
 
-Voz de marca: [pégala o menciona el archivo]
+Voz de marca: [pega el texto o adjunta el archivo]
 Formato: publicación de LinkedIn, de hasta 600 caracteres cada una
 
 Escribe las 30 publicaciones, una tras otra.
@@ -243,7 +245,7 @@ Numera cada una.
 Pon un separador --- entre publicaciones.
 ```
 
-El resultado: 30 publicaciones terminadas con una sola solicitud. Después editas las mejores y archivas el resto.
+El resultado: 30 borradores de publicaciones con una sola solicitud. Después pules los mejores y archivas el resto.
 
 **Importante:** el modo por lotes baja la calidad de cada publicación individual. Úsalo para borradores, no para textos finales.
 
@@ -251,7 +253,7 @@ El resultado: 30 publicaciones terminadas con una sola solicitud. Después edita
 
 ### ¿Y los detectores de IA?
 
-La verdad es sencilla: los detectores de IA no detectan el "estilo IA", detectan lo predecible. Además se equivocan en ambas direcciones y no pueden probar quién escribió un texto. Así que la meta no es burlar una revisión; es escribir textos concretos que la gente de verdad disfrute leer.
+Un detector de IA es un servicio que intenta adivinar si un texto lo escribió una máquina. La verdad es sencilla: los detectores de IA no detectan el "estilo IA", detectan lo predecible. Además se equivocan en ambas direcciones y no pueden probar quién escribió un texto. Así que la meta no es burlar una revisión; es escribir textos concretos que la gente de verdad disfrute leer.
 
 Lo que hace predecible un texto:
 
@@ -274,8 +276,8 @@ Agrega esto a tu prompt:
 
 ```
 En el texto, incluye:
-- Un número concreto de una experiencia real
-- Un detalle inesperado
+- Un número concreto de mi propia experiencia: [escribe el número]
+- Un detalle inesperado: [escribe el detalle]
 - Una frase que suene como si la estuvieras diciendo en voz alta
 ```
 
@@ -285,7 +287,7 @@ Dale a Claude tú mismo el número real y el detalle real. Si lo dejas adivinar,
 
 ## Práctica
 
-1. Crea un archivo `brand-voice.md` para tu proyecto (usa la plantilla de esta lección):
+1. Crea un archivo `brand-voice.md` para tu proyecto con la plantilla de esta lección. Sirve cualquier editor de texto o app de notas: necesitas el archivo para pegar su texto en un chat. Terminaste cuando todas las secciones están llenas y en los ejemplos hay 2-3 textos tuyos de verdad. El comando de abajo es solo para quienes trabajan en una terminal y guardan sus archivos en carpetas; los demás pueden saltárselo:
 
 ```bash
 mkdir -p ~/workspace/areas/marketing
@@ -312,7 +314,7 @@ Califica este texto en una escala del 1 al 10 según estos criterios:
 Para cada criterio: una calificación y una frase sobre qué mejorar.
 ```
 
-4. Genera un lote de 10 borradores de publicaciones:
+4. Genera un lote de 10 borradores de publicaciones. Escribe tu lista de 10 temas directamente en el chat. El comando de abajo crea la misma lista como archivo en una terminal; es opcional:
 
 ```bash
 # Crea un archivo con tus temas
@@ -324,7 +326,7 @@ echo "1. [tema 1]
 
 Dale a Claude la lista de temas más tu voz de marca, recibe 10 borradores y elige los 3 mejores.
 
-5. Para quienes van más avanzados: construye un script generador en Python:
+5. Opcional, para quienes construyen sus propias herramientas y ya trabajan con código: un script generador en Python. Los demás pueden saltarse esta tarea; la lección está completa sin ella.
 
 ```python
 import os
@@ -345,7 +347,7 @@ topics = [
 for i, topic in enumerate(topics, 1):
     message = client.messages.create(
         model="claude-sonnet-5-5",  # para los ID de modelo vigentes, mira la documentación de Anthropic
-        max_tokens=1024,
+        max_tokens=4000,  # con margen a propósito: el "razonamiento" del modelo cuenta dentro de este límite
         messages=[{
             "role": "user",
             "content": f"""Voz de marca:
@@ -355,11 +357,13 @@ Escribe una publicación de LinkedIn sobre: {topic}
 Hasta 600 caracteres. Gancho en la primera línea."""
         }]
     )
-    
+    # La respuesta puede traer bloques de "razonamiento": nos quedamos solo con el texto
+    text = "".join(block.text for block in message.content if block.type == "text")
+
     with open(f"posts/post-{i:02d}.md", "w", encoding="utf-8") as f:
         f.write(f"# Publicación {i}: {topic}\n\n")
-        f.write(message.content[0].text)
-    
+        f.write(text)
+
     print(f"Publicación {i} lista")
 ```
 
@@ -370,7 +374,7 @@ El script lee tu clave de API desde la variable de entorno `ANTHROPIC_API_KEY`. 
 ## Herramientas y recursos
 
 - **[Claude.ai](https://claude.ai)**: tu herramienta principal para la cadena de prompts
-- **[Anthropic API](https://claude.com/api)**: para la generación por lotes con código (precios y modelos: [Lo vigente](https://aimayak.com/es/now/))
+- **[Anthropic API](https://claude.com/api)**: para la generación por lotes con código (precios y modelos: [Lo vigente](https://aimayak.com/now/))
 - **[Hemingway App](https://hemingwayapp.com)**: revisa qué tan fácil de leer es tu texto (funciona en inglés)
 - **[QuillBot](https://quillbot.com)**: para reformular en el pulido final
 - **[GPTZero](https://gptzero.me)**: un detector de IA por el que puedes pasar tu texto (para ver cómo estás)
@@ -389,4 +393,6 @@ El script lee tu clave de API desde la variable de entorno `ANTHROPIC_API_KEY`. 
 
 ## Qué sigue
 
-→ [Voz con IA: ElevenLabs, texto a voz y contenido de audio](68-voice-tts-elevenlabs.md): convertir tus textos terminados en audio
+→ [IA para el correo: una bandeja más inteligente, borradores y respuestas](73-ai-email-communications.md): ordenar tu bandeja y preparar borradores de respuesta
+
+Opcional, en la biblioteca: [Voz con IA: ElevenLabs, texto a voz y contenido de audio](68-voice-tts-elevenlabs.md): convertir tus textos terminados en audio

@@ -227,7 +227,7 @@ The process:
 - **[Coolors](https://coolors.co)**: a color palette generator, if you don't know what to pick
 - **[Lighthouse](https://developer.chrome.com/docs/lighthouse)**: audits a site's performance and accessibility (built into Chrome DevTools)
 
-Current prices and versions: [What's current](https://aimayak.com/now/).
+Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 ---
 

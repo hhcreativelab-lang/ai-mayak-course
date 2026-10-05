@@ -41,7 +41,7 @@ The same skills work for everyday translation too: a reply to a Spanish-speaking
 | MCP integration | ✅ official | ⚠️ check the documentation | ✅ native |
 | Languages | English, Spanish and other major languages | a huge number, including rare ones | all the major ones |
 
-The quality ratings in the table are the author's rough guide, not an independent test: try them on your own texts. Current prices and versions: [What's current](https://aimayak.com/now/).
+The quality ratings in the table are the author's rough guide, not an independent test: try them on your own texts. Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 **Bottom line:** DeepL for bulk translation of structured content (product listings, email templates, documents). Claude for cultural adaptation, creative writing and specialized material. Google Translate as a backup for rare languages.
 
@@ -395,7 +395,7 @@ What goes through the pipeline:
 - Claude (adaptation, about 10% of the volume): per token, usually a small part of the budget
 - **Total:** usually far less than paying a freelancer to translate everything from scratch. Rates depend on the market and the language, so run the numbers for yourself.
 
-Current prices and versions: [What's current](https://aimayak.com/now/).
+Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 ---
 

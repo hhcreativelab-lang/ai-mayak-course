@@ -2,7 +2,7 @@
 
 **Tiempo:** unos 25 min de lectura + 15 min para planear tu presupuesto
 
-> ⚠️ **Los precios de esta lección son a octubre de 2026, y cambian seguido.** Para ver los precios y planes actuales, consulta la página [Lo vigente](https://aimayak.com/es/now/). Donde no verificamos un precio exacto, la lección dice "revisa el sitio". Esta lección no es asesoría financiera y no promete ningún ingreso: los niveles de abajo son niveles de gasto, no un pronóstico de ingresos.
+> ⚠️ **Los precios de esta lección son a octubre de 2026, y cambian seguido.** Para ver los precios y planes actuales, consulta la página [Lo vigente](https://aimayak.com/now/). Donde no verificamos un precio exacto, la lección dice "revisa el sitio". Esta lección no es asesoría financiera y no promete ningún ingreso: los niveles de abajo son niveles de gasto, no un pronóstico de ingresos.
 
 ---
 
@@ -19,6 +19,8 @@ Lo que gastas en IA **no crece en línea recta**. Eso es lo principal que hay qu
 
 Entre más subes, menos aporta cada dólar extra. Así que la regla es sencilla: **no compres más de lo que necesitas ahora mismo**. Las herramientas de IA no son una compra de "me llevo todo y luego veo". El enfoque es "entiende dónde estás → compra el nivel que necesitas → sube cuando toques el techo".
 
+Si usas la IA en tu propio trabajo y no estás creando tus propios productos, solo necesitas los Niveles 0-2. Los Niveles 3-5 están escritos para quienes crean sus propios servicios y atienden clientes, así que puedes leerlos por encima.
+
 🎨 **Imagínalo así:** las herramientas de IA son como la ropa. Un guardarropa básico ($50): jeans, playeras, tenis. Un traje de trabajo ($200): para la oficina. Un esmoquin y un abrigo elegante ($2,000): para ocasiones especiales. Si vas a una oficina todos los días, necesitas el traje. Si trabajas desde casa escribiendo código, con jeans basta. **Comprar lo que no necesitas = dinero colgado en tu clóset con la etiqueta puesta, porque nunca lo usas.**
 
 ---
@@ -29,11 +31,11 @@ Entre más subes, menos aporta cada dólar extra. Así que la regla es sencilla:
 Solo lo estoy probando, es la primera vez
   → Nivel 0 ($0/mes: planes gratis)
 
-Uso la IA 30+ min al día, para uso personal
+Uso la IA todos los días y llego al límite del plan gratis
   → Nivel 1 ($20/mes: Claude Pro o similar)
 
-Hago contenido o marketing como freelancer
-  → Nivel 2 ($50/mes: nivel Plus)
+Hago contenido o marketing para clientes
+  → Nivel 2 (hasta $50/mes: una suscripción más herramientas de contenido)
 
 Estoy creando un producto o trabajo con IA 6-8 horas al día
   → Nivel 3 ($200/mes: nivel Max)
@@ -62,7 +64,7 @@ Abajo: qué incluye cada nivel, para quién es y **qué NO necesitas comprar**.
 
 | Herramienta | Qué es gratis | Enlace |
 |---|---|---|
-| **Claude.ai Free** | Chat con un límite diario de mensajes, un modelo estándar, búsqueda web, artifacts | https://claude.com/pricing |
+| **Claude.ai Free** | Chat con un límite de mensajes, un modelo estándar, búsqueda web, artifacts | https://claude.com/pricing |
 | **ChatGPT Free** | Chat con límites; por defecto, un modelo ligero de la familia GPT-5.6 (Luna) | https://chatgpt.com |
 | **Gemini Free** | Chat con Gemini 3.6 Flash, con acceso limitado a Gemini 3.1 Pro | https://gemini.google.com |
 | **DeepSeek** | Chat gratis con la línea V4 actual (los datos se guardan en China, así que no pegues nada sensible) | https://chat.deepseek.com |
@@ -83,12 +85,12 @@ Las empresas no publican límites fijos de mensajes, y los cambian, por eso la t
 - ❌ **Trabajo real en producción** (un producto en funcionamiento que usa gente real): vas a agotar los límites rápido
 - ❌ **Claude Code**: no está disponible en el plan gratis de Claude (esta es la mayor desventaja)
 - ❌ **Acceso a la API para tus propios scripts** (la API es la forma en que tus propios programas hablan directamente con la IA): necesita una cuenta de facturación aparte
-- ❌ **Funciones de voz**: necesitas servicios de pago de texto a voz y de voz a texto (ElevenLabs, OpenAI Whisper API)
+- ❌ **Voz en off para proyectos comerciales**: el plan gratis de ElevenLabs no incluye licencia comercial
 - ❌ **Documentos largos**: la cantidad de texto con la que puedes trabajar es limitada
 
 ### Cuándo pasar a un nivel de pago
 
-Observa tu primera semana de uso regular. Si de forma constante pasas 3+ horas al día con la IA, los límites de Free te van a empezar a frenar. Esa es tu señal.
+Cuando usas la IA con regularidad y llegas al límite del plan gratis varios días seguidos, al punto de que te estorba para trabajar. Esa es tu señal.
 
 ### 🎨 Imagina el Nivel 0
 
@@ -118,7 +120,7 @@ Qué incluye (verificado el 4 de octubre de 2026):
 - ✅ Artifacts y Skills
 - ✅ Límites más altos que en el plan gratis
 
-Fable 5.1 (el modelo más capaz) hay que activarlo a mano, y en las suscripciones su uso puede descontarse de los créditos de uso.
+Fable 5.1 (el modelo más capaz) hay que activarlo a mano, y en el plan Pro se cobra aparte, con créditos de uso (usage credits: un pago por uso adicional a tu suscripción).
 
 **Enlace:** https://claude.com/pricing
 
@@ -126,7 +128,7 @@ Fable 5.1 (el modelo más capaz) hay que activarlo a mano, y en las suscripcione
 
 | Alternativa | Cuándo elegirla en lugar de Claude Pro | Enlace |
 |---|---|---|
-| **ChatGPT Plus $20/mes** | Si quieres generación de imágenes integrada, modo de voz y el modo Work | https://learn.chatgpt.com/docs/pricing |
+| **ChatGPT Plus $20/mes** | Si quieres generación de imágenes integrada, modo de voz y el modo Work (un agente para tareas de varios pasos) | https://learn.chatgpt.com/docs/pricing |
 | **ChatGPT Go $8/mes** | Si tu presupuesto es ajustado y quieres más que el plan gratis por menos que Plus | https://learn.chatgpt.com/docs/pricing |
 | **Cursor Pro** (revisa el precio en el sitio) | Si trabajas mucho con código y quieres un editor con IA integrada | https://cursor.com/pricing |
 | **Google AI Pro $19.99/mes** (EE. UU.) | Si trabajas en Google Workspace (Gmail, Docs) | https://gemini.google/subscriptions |
@@ -156,7 +158,7 @@ El guardarropa básico de un adulto. Jeans, una camisa de botones, tenis. No es 
 
 ---
 
-## Nivel 2: $50/mes (nivel Plus)
+## Nivel 2: $50/mes (una suscripción más herramientas de contenido)
 
 ### Para quién es
 
@@ -166,7 +168,7 @@ El guardarropa básico de un adulto. Jeans, una camisa de botones, tenis. No es 
 - Un traductor o redactor con varios clientes
 - Quien hace marketing de contenidos en una empresa pequeña
 
-### Herramientas base (alrededor de $30-50/mes)
+### Herramientas base (desde unos $26/mes)
 
 | Herramienta | Precio (octubre de 2026) | Para qué sirve | Enlace |
 |---|---|---|---|
@@ -177,7 +179,7 @@ El guardarropa básico de un adulto. Jeans, una camisa de botones, tenis. No es 
 | **Vercel Hobby** | $0, **solo para proyectos personales, no comerciales** | Hosting de apps Next.js / React para aprender y experimentar | https://vercel.com/pricing |
 | **Cursor Pro** (opcional) | revisa el sitio | Si escribes mucho código | https://cursor.com/pricing |
 
-**Total: unos $26/mes para lo básico, más Cursor si lo agregas.** Para un proyecto comercial en Vercel necesitas un plan de pago (Pro, $20/mes por desarrollador) u otro hosting.
+**Total: unos $26/mes para lo básico** (Claude Pro y ElevenLabs Starter); Cursor, si lo necesitas, se paga aparte. Los complementos de la tabla de abajo suben el total: la referencia para este nivel es hasta $50 al mes. Para un proyecto comercial en Vercel necesitas un plan de pago (Pro, $20/mes por desarrollador) u otro hosting.
 
 ### Complementos opcionales (si el trabajo lo pide)
 
@@ -267,7 +269,7 @@ Para Resend, Linear y servicios parecidos, revisa los precios en sus sitios: no 
 
 ### Cómo pensar si el Nivel 3 se paga solo
 
-Abajo hay un ejemplo hipotético de las cuentas. No es un pronóstico ni una promesa: los resultados reales dependen de tu nicho, tu mercado y tu trabajo. Para un desglose detallado, ve las lecciones [Cuánto te cuesta un cliente y cuánto te deja](d01-unit-economics-simple.md) y [Punto de equilibrio y reserva de efectivo](d03-break-even-and-cash.md).
+Abajo hay un ejemplo hipotético de las cuentas. No es un pronóstico ni una promesa: los resultados reales dependen de tu nicho, tu mercado y tu trabajo. El desglose detallado viene más adelante en el curso, en las lecciones [Economía unitaria en simple](d01-unit-economics-simple.md) y [Punto de equilibrio y flujo de efectivo](d03-break-even-and-cash.md).
 
 - Costo del nivel: $200 al mes. Si cobras $500 al mes por un servicio, un cliente cubre el nivel y deja $300 antes de impuestos y antes de contar tu tiempo.
 - Si no tienes clientes, los costos se quedan: los $200 al mes salen de todos modos. Así que no subas de nivel antes de tiempo.
@@ -322,7 +324,7 @@ El guardarropa profesional de un consultor. Un traje bien cortado, un buen porta
 
 ### Cómo pensar si el Nivel 4 se paga solo
 
-Un ejemplo hipotético de las cuentas, no un pronóstico ni una promesa. Si tus herramientas cuestan $500 al mes y le sumas otros $200 para subcontratistas y gastos inesperados, tus costos llegan a $700. Para salir tablas, los pagos de todos tus clientes juntos tienen que sumar al menos $700, y eso antes de impuestos y de tu tiempo. Cuántos clientes necesitas, y a qué precio, depende de tu nicho. Haz tus propias cuentas con el método de las lecciones [Punto de equilibrio y reserva de efectivo](d03-break-even-and-cash.md) y [Cuánto cuesta tu conjunto de herramientas de IA](d04-ai-stack-costs.md).
+Un ejemplo hipotético de las cuentas, no un pronóstico ni una promesa. Si tus herramientas cuestan $500 al mes y le sumas otros $200 para subcontratistas y gastos inesperados, tus costos llegan a $700. Para salir tablas, los pagos de todos tus clientes juntos tienen que sumar al menos $700, y eso antes de impuestos y de tu tiempo. Cuántos clientes necesitas, y a qué precio, depende de tu nicho. Haz tus propias cuentas con el método de las lecciones [Punto de equilibrio y flujo de efectivo](d03-break-even-and-cash.md) (más adelante en el curso) y [Cuánto cuestan de verdad las herramientas de IA](d04-ai-stack-costs.md) (la siguiente lección).
 
 ### 🎨 Imagina el Nivel 4
 
@@ -349,7 +351,7 @@ El guardarropa del dueño de un negocio pequeño o mediano. Unos cuantos trajes 
 | **Anthropic Enterprise** | desde $20 por usuario al mes (pago anual) más el uso a tarifas de la API | Funciones empresariales de seguridad y administración; confirma las condiciones con Anthropic |
 | **Claude Team** | Standard $25 por usuario al mes ($20 con pago anual), Premium $125 ($100 con pago anual) | Equipos de 2 a 150 personas; Claude Code está incluido en Team y Enterprise |
 | **Observabilidad** (Datadog, LangSmith y similares) | revisa sus sitios | Monitoreo y rastreo de las llamadas a modelos de IA |
-| **CRM y ventas** (HubSpot Pro y similares) | revisa sus sitios | Automatización de ventas y funciones de IA |
+| **CRM y ventas** (HubSpot Professional y similares) | revisa sus sitios | Automatización de ventas y funciones de IA |
 | **Analítica de producto** (PostHog y similares) | según el uso | Analítica de producto intensiva |
 | **Vapi, uso intensivo** | depende del volumen | Un volumen alto de llamadas de voz |
 | **Stripe** | 2.9% + 30¢ (EE. UU.); la tarifa depende del país | Procesamiento de pagos |
@@ -382,7 +384,7 @@ El guardarropa del director general de una empresa de 30-50 personas. Trajes a l
 
 ## Cuánto cuestan 3 configuraciones típicas (ejemplos hipotéticos)
 
-Abajo están las cuentas de costos de tres conjuntos típicos de herramientas. Las cifras son ilustrativas, a octubre de 2026; no son pronósticos de ingresos ni promesas de ganancias. Los resultados reales dependen de tu nicho, tu mercado y tu trabajo. Cómo ponerle precio a un servicio y encontrar tu punto de equilibrio está en las lecciones [Cómo poner tu precio](d02-pricing-simple.md) y [Punto de equilibrio y reserva de efectivo](d03-break-even-and-cash.md).
+Abajo están las cuentas de costos de tres conjuntos típicos de herramientas. Las cifras son ilustrativas, a octubre de 2026; no son pronósticos de ingresos ni promesas de ganancias. Los resultados reales dependen de tu nicho, tu mercado y tu trabajo. Cómo ponerle precio a un servicio y encontrar tu punto de equilibrio se ve más adelante en el curso, en las lecciones [Cómo ponerle precio a tus servicios](d02-pricing-simple.md) y [Punto de equilibrio y flujo de efectivo](d03-break-even-and-cash.md).
 
 ### Configuración 1: Un flujo de contenido (para un freelancer o una agencia)
 
@@ -399,7 +401,7 @@ Para ver si la configuración se paga, divide tus costos mensuales entre la cant
 
 ### Configuración 2: Un bot de soporte por voz (para un pequeño negocio)
 
-**Herramientas:** API de Anthropic (el modelo ligero Haiku 4.5) + Vapi ($0.05/min de tarifa de plataforma más proveedores de voz, del modelo y de la línea telefónica) + un número de teléfono + Cloudflare Workers ($5)
+**Herramientas:** API de Anthropic (el modelo ligero Haiku 4.5) + Vapi ($0.05/min de tarifa de plataforma más proveedores de voz, del modelo y de la línea telefónica) + un número de teléfono + Cloudflare Workers (desde $5)
 
 **Qué capacidad te da:**
 - Conversaciones por voz 24/7 sin una persona en la línea
@@ -443,7 +445,7 @@ Son estimaciones aproximadas del autor; la experiencia de cada quien es distinta
 - Documentación de Claude / OpenAI / Cloudflare: 30-80 horas
 - Experimentos e intentos fallidos: 50-150 horas
 
-**Equivalente:** $3,000-7,000 en los primeros 6 meses (si cuentas tu propio tiempo).
+**Equivalente:** 100-280 horas, es decir, $3,000-8,400 en los primeros 6 meses si cuentas tu propio tiempo a los mismos $30 por hora. También es una estimación del autor.
 
 ### 3. Un margen para experimentos y errores
 
@@ -476,9 +478,9 @@ Los impuestos dependen de dónde vives, de cómo estás dado de alta (como traba
 - ❌ **Suscripciones a GPU en la nube para correr modelos** (a menos que hagas fine-tuning): la API suele ser más barata y más rápida en volúmenes pequeños
 - ❌ **Suscripciones de "paquete de herramientas de IA"** con 20 herramientas por un solo pago: vas a usar 2-3, y el resto está ahí solo para inflar la lista
 - ❌ **Plugins y extensiones de pago que no has revisado**: muchos se vuelven obsoletos o cierran (por ejemplo, los viejos plugins de ChatGPT ya fueron reemplazados por otros mecanismos)
-- ❌ **Ofertas de por vida (lifetime deals) en AppSumo** para tus herramientas principales: las empresas muchas veces cierran en 1-2 años, y la oferta desaparece con ellas
+- ❌ **Ofertas de por vida (lifetime deals) en AppSumo** para tus herramientas principales: una empresa puede cerrar, y la oferta desaparece con ella
 - ❌ **Cursos que prometen ingresos rápidos** ("una agencia de IA en una caja" y cosas así): no existe el ingreso garantizado, y ese dinero rinde más en herramientas reales y en tus primeros proyectos
-- ❌ **Plantillas de IA premium** ($50-500 por un paquete de prompts): Claude te escribe una mejor en un minuto
+- ❌ **Plantillas de IA premium** ($50-500 por un paquete de prompts): tu asistente puede ayudarte a escribir las tuyas, a la medida de tu tarea
 - ❌ **Varias suscripciones de chat con IA a la vez** en los Niveles 0-2 (Claude Pro + ChatGPT Plus + Google AI Pro = unos $60/mes por funciones que en gran parte se repiten)
 
 ---
@@ -521,7 +523,7 @@ Después de subir de nivel, **observa 30 días** antes de volver a subir. Muchas
 
 ## Fuentes y enlaces de precios
 
-Enlaces revisados a octubre de 2026. Los precios pueden cambiar, así que revisa las páginas oficiales y la página [Lo vigente](https://aimayak.com/es/now/):
+Enlaces revisados a octubre de 2026. Los precios pueden cambiar, así que revisa las páginas oficiales y la página [Lo vigente](https://aimayak.com/now/):
 
 ### Proveedores de modelos de IA
 
@@ -571,7 +573,7 @@ Enlaces revisados a octubre de 2026. Los precios pueden cambiar, así que revisa
 
 > **El Nivel 1 ($20 por Claude Pro, o $17 con pago anual) es un inicio sensato para quien necesita Claude Code.** Claude Code no funciona en el plan gratis. Todo lo demás se agrega conforme lo necesites. Si prefieres otro asistente, elige uno de la tabla del Nivel 1.
 
-> **El panorama de modelos cambia cada pocos meses.** La lista actual de modelos de Claude, ChatGPT y Gemini y los precios de las API vive en la página [Lo vigente](https://aimayak.com/es/now/), no en el texto de esta lección.
+> **El panorama de modelos cambia cada pocos meses.** La lista actual de modelos de Claude, ChatGPT y Gemini y los precios de las API vive en la página [Lo vigente](https://aimayak.com/now/), no en el texto de esta lección.
 
 > **Los costos ocultos pesan más que los visibles.** El tiempo de configuración, el aprendizaje, un margen del 20% para experimentos, los impuestos: juntos pueden sumar varias veces más que las suscripciones mismas. Planea con eso en mente.
 
@@ -583,5 +585,5 @@ Enlaces revisados a octubre de 2026. Los precios pueden cambiar, así que revisa
 
 ## Siguiente lección
 
-→ [La evolución de la IA](00f-ai-evolution-deep.md): 76 años de historia de la IA, con más detalle
-(o → [Planes y niveles de acceso](05c-access-levels-pricing.md): el mapa completo de los planes de Claude, y [Cuánto cuesta tu conjunto de herramientas de IA](d04-ai-stack-costs.md))
+→ [Cuánto cuestan de verdad las herramientas de IA y cómo dejar de pagar de más](d04-ai-stack-costs.md): cómo sumar tus suscripciones y dejar de pagar lo que no usas
+(opcional, de la biblioteca avanzada: [La evolución de la IA](00f-ai-evolution-deep.md), la historia de la IA con más detalle; el mapa completo de los planes de Claude viene más adelante en el curso, en [Precios de Claude Code: ¿Free, Pro, Max, Team o API?](05c-access-levels-pricing.md))

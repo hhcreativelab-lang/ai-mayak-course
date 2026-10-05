@@ -50,7 +50,7 @@ Runway is a US startup and one of the market leaders, with a strong API. That's 
 
 - There's a free plan with a one-time batch of credits, and several paid plans
 - How fast credits go depends on the model: each model uses a set number of credits per second of video
-- Current prices and credit rates: [runway.com/pricing](https://runway.com/pricing), [What's current](https://aimayak.com/now/)
+- Current prices and credit rates: [runway.com/pricing](https://runway.com/pricing), [What's current](https://aimayak.com/en/now/)
 
 **What matters most for us:** the official API (application programming interface, a way for your own programs to talk to the service). You can automate the whole thing: Claude generates the prompts → a script (a small program that runs the steps for you) sends them to Runway → the videos download on their own.
 
@@ -102,7 +102,7 @@ Kling is a platform from Kuaishou (China). Its working lineup as of October 2026
 - Generation speed depends on load and on your plan: time it on your own tasks
 - Data storage questions for EU and US clients (check the terms of your agreement)
 
-**Pricing:** there's a free Basic plan and several paid plans. Current prices: [What's current](https://aimayak.com/now/).
+**Pricing:** there's a free Basic plan and several paid plans. Current prices: [What's current](https://aimayak.com/en/now/).
 
 🎨 **Picture this:** Kling is a documentary camera operator. It films movement that looks lived-in, not staged.
 
@@ -158,7 +158,7 @@ OpenAI shut down the Sora app and website on April 26, 2026, and the Sora API wa
 | Max length | see the documentation | up to 15 sec (4.0 announced at up to 30) | see the website |
 | Best for | Any content + API | Human movement, sound with lip sync | Cinematic look, frame-by-frame control |
 | Free start | one-time credits | Basic plan | free in the app |
-| Paid plans | see [What's current](https://aimayak.com/now/) | see [What's current](https://aimayak.com/now/) | see the website |
+| Paid plans | see [What's current](https://aimayak.com/en/now/) | see [What's current](https://aimayak.com/en/now/) | see the website |
 | API | ✅ | ✅ | ✅ |
 | Commercial use | paid plans | check the terms | check the terms |
 
@@ -414,7 +414,7 @@ Work out your price and terms with the lessons on pricing and unit economics (li
 - **[FFmpeg](https://ffmpeg.org)**: stitching and processing video from the command line, free
 - **[CapCut](https://www.capcut.com)**: final editing with captions and music
 - **[ElevenLabs](https://elevenlabs.io)**: voiceover
-- **Prices and versions:** [What's current](https://aimayak.com/now/)
+- **Prices and versions:** [What's current](https://aimayak.com/en/now/)
 
 ---
 

@@ -311,7 +311,7 @@ Después de recuperar la inversión: $23,040/año de ahorro neto
 - **Paddle**: [paddle.com](https://www.paddle.com/). Una alternativa a Stripe que se encarga de los impuestos por ti (útil para pagos internacionales)
 - **Gumroad**: [gumroad.com](https://gumroad.com/). Para vender productos digitales (plantillas, cursos, flujos de trabajo)
 - **Calendly**: [calendly.com](https://calendly.com/). Agenda llamadas de forma profesional, sin tanto ir y venir de mensajes
-- **Precios de la API de Claude**: [platform.claude.com/docs: pricing](https://platform.claude.com/docs/en/about-claude/pricing). Para saber exactamente cuánto cuesta la API cuando calcules tu margen. Precios y versiones actuales: [Lo vigente](https://aimayak.com/es/now/)
+- **Precios de la API de Claude**: [platform.claude.com/docs: pricing](https://platform.claude.com/docs/en/about-claude/pricing). Para saber exactamente cuánto cuesta la API cuando calcules tu margen. Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/)
 
 ---
 

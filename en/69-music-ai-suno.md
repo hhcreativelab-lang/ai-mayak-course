@@ -58,7 +58,7 @@ Go to [suno.com](https://suno.com) → "Create" → write a prompt → get two v
 - Free: no cost, 50 credits a day, the v6-mini model, songs can't be downloaded, no commercial rights
 - Pro: $8/month (less if you pay yearly), 2,500 credits a month, commercial rights, a monthly limit on song downloads
 - Premier: $24/month (less if you pay yearly), 10,000 credits a month, a higher download limit, Suno Studio
-- Current prices and terms: [suno.com/pricing](https://suno.com/pricing), [What's current](https://aimayak.com/now/)
+- Current prices and terms: [suno.com/pricing](https://suno.com/pricing), [What's current](https://aimayak.com/en/now/)
 
 **Modes** (the names in the interface change):
 
@@ -212,7 +212,7 @@ brand logo sound, 3 seconds, rising tone,
 modern tech company feel, memorable
 ```
 
-**Price:** sound effects use up credits on your ElevenLabs plan. The Free plan gives you 10,000 credits, without a commercial license (as of October 2026; current terms are on the [What's current](https://aimayak.com/now/) page); for projects you monetize, you need a paid plan.
+**Price:** sound effects use up credits on your ElevenLabs plan. The Free plan gives you 10,000 credits, without a commercial license (as of October 2026; current terms are on the [What's current](https://aimayak.com/en/now/) page); for projects you monetize, you need a paid plan.
 
 ---
 
@@ -264,7 +264,7 @@ Write 4 lines + a 2-line chorus
 - **[Soundraw](https://soundraw.io)**: background music, licensed under the service's terms
 - **[Google Lyria in Gemini](https://gemini.google/overview/music-generation/)**: tracks in the Gemini app
 - **[Freesound](https://freesound.org)**: a library of Creative Commons sounds for mixing
-- **Prices and versions:** [What's current](https://aimayak.com/now/)
+- **Prices and versions:** [What's current](https://aimayak.com/en/now/)
 
 ---
 

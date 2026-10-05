@@ -21,7 +21,7 @@ For non-programmers, this is usually the easiest way into Claude Code: you insta
 - **The Chat tab**: a regular conversation with Claude (no access to your files), the same as claude.ai in your browser
 - **The Cowork tab**: Dispatch (an ongoing conversation with Claude that you can send tasks to, including from your phone) and longer agent work (an agent is a program that carries out tasks on its own): research, documents, spreadsheets
 - **Permission modes**: how much freedom you give the agent (from "ask me about everything" to "go ahead on your own")
-- **Models**: Haiku (fast), Sonnet (faster and cheaper than Opus), Opus (the default), Fable (the longest and hardest tasks); you can switch between them in the middle of a session. Current names and versions: [What's current](https://aimayak.com/now/)
+- **Models**: Haiku (fast), Sonnet (faster and cheaper than Opus), Opus (the default), Fable (the longest and hardest tasks); you can switch between them in the middle of a session. Current names and versions: [What's current](https://aimayak.com/en/now/)
 - **Parallel sessions**: several agents working at the same time, each in its own tab
 - **Scheduled tasks**: a scheduler; the agent starts on its own, on a schedule
 
@@ -54,7 +54,7 @@ For non-programmers, this is usually the easiest way into Claude Code: you insta
 
 After downloading: open the DMG (macOS) or Setup.exe (Windows) → install it like any other app → launch it → sign in to your Anthropic account (the same one you use on claude.ai) → open the Code tab.
 
-**You need a paid plan:** Pro, Max, Team or Enterprise. Claude's free plan doesn't include Claude Code. Current plan prices: [What's current](https://aimayak.com/now/).
+**You need a paid plan:** Pro, Max, Team or Enterprise. Claude's free plan doesn't include Claude Code. Current plan prices: [What's current](https://aimayak.com/en/now/).
 
 ---
 
@@ -122,7 +122,7 @@ A "tool call" below is a single action Claude takes, such as reading a file or r
 
 To switch models: the dropdown next to the send button. It works **during a session**; you don't have to start over.
 
-Models as of October 2026 (current list: [What's current](https://aimayak.com/now/)):
+Models as of October 2026 (current list: [What's current](https://aimayak.com/en/now/)):
 
 | Model | Alias | What it's for | Speed / cost |
 |---|---|---|---|

@@ -520,7 +520,7 @@ Esto te da un contexto que Claude usará para la conclusión final.
 - **[PRAW](https://praw.readthedocs.io)**: la biblioteca de Python para la API de Reddit (necesitas una app de Reddit y acceso aprobado)
 - **[Ahrefs Free Tools](https://ahrefs.com/free-seo-tools)**: volumen de búsqueda de palabras clave, en parte gratis
 - **[Semrush Keyword Gap](https://www.semrush.com)**: compara nichos por volumen de búsqueda; las condiciones de prueba están en el sitio (Adobe compró Semrush en abril de 2026, y el producto sigue funcionando)
-- **[Anthropic API](https://console.claude.com)**: Claude para analizar datos, con cobro por token (precios: [Lo vigente](https://aimayak.com/es/now/))
+- **[Anthropic API](https://console.claude.com)**: Claude para analizar datos, con cobro por token (precios: [Lo vigente](https://aimayak.com/now/))
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Tiempo:** unos 30 min de lectura + 20 min de práctica
 
-> *Imagina que eliges un vehículo para distintos trabajos. Un Ferrari para la pista de carreras, una Land Rover para el campo, un Toyota Corolla para moverte todos los días por la ciudad. No existe "el mejor auto y punto", solo el mejor auto para un camino concreto. Los modelos de IA funcionan exactamente igual. Esta lección es tu mapa de los caminos y los autos del mercado de la IA. Los modelos y precios concretos son a octubre de 2026. Cambian rápido, así que revisa la lista actual en la página [Lo vigente](https://aimayak.com/es/now/).*
+> *Imagina que eliges un vehículo para distintos trabajos. Un Ferrari para la pista de carreras, una Land Rover para el campo, un Toyota Corolla para moverte todos los días por la ciudad. No existe "el mejor auto y punto", solo el mejor auto para un camino concreto. Los modelos de IA funcionan exactamente igual. Esta lección es tu mapa de los caminos y los autos del mercado de la IA. Los modelos y precios concretos son a octubre de 2026. Cambian rápido, así que revisa la lista actual en la página [Lo vigente](https://aimayak.com/now/).*
 
 ---
 
@@ -87,7 +87,7 @@ Anthropic la fundaron en 2021 exempleados de OpenAI, entre ellos Dario Amodei y 
 | Claude Opus 5.5 | Media | Muy alta | $4 / $20 USD | El modelo potente principal: trabajo largo con código y documentos; el predeterminado en Claude Code |
 | Claude Fable 5.1 | Más lenta | Máxima | $10 / $50 USD | Las tareas de varios pasos más difíciles; en las suscripciones consume créditos de uso |
 
-Los precios vigentes y la lista de modelos están en la página [Lo vigente](https://aimayak.com/es/now/). También hay un modelo solo por invitación (Mythos 5.1, Project Glasswing); no está disponible para usuarios comunes.
+Los precios vigentes y la lista de modelos están en la página [Lo vigente](https://aimayak.com/now/). También hay un modelo solo por invitación (Mythos 5.1, Project Glasswing); no está disponible para usuarios comunes.
 
 **Ventana de contexto:** a octubre de 2026, Fable 5.1, Opus 5.5 y Sonnet 5.5 tienen 1 millón de tokens (unas 555,000 palabras, más o menos toda la trilogía de El Señor de los Anillos y algo más); Haiku 4.5 tiene 200K tokens.
 
@@ -124,7 +124,7 @@ OpenAI hace ChatGPT, una de las apps de IA más usadas del mundo.
 | GPT-6 Luna | Rápido y barato | Preguntas diarias, procesamiento de grandes volúmenes |
 | La familia GPT-5.6 (Sol, Terra, Luna) | Los modelos del chat normal de ChatGPT | Conversaciones diarias |
 
-Los nombres y la línea cambian cada pocos meses: por ejemplo, GPT-5.5 sale de ChatGPT el 14 de octubre de 2026. La lista actual está en la página [Lo vigente](https://aimayak.com/es/now/).
+Los nombres y la línea cambian cada pocos meses: por ejemplo, GPT-5.5 sale de ChatGPT el 14 de octubre de 2026. La lista actual está en la página [Lo vigente](https://aimayak.com/now/).
 
 **Qué cambió respecto a generaciones anteriores.** Los modelos de "razonamiento" separados de la serie o, que antes tenías que elegir a mano, ahora están integrados en la línea principal: las preguntas difíciles las maneja un modo de razonamiento. Ese modo "piensa en voz alta" antes de responder. Toma más tiempo y es más preciso en problemas de lógica difíciles, pero para preguntas sencillas es demasiado y cuesta más.
 
@@ -167,7 +167,7 @@ Google ha puesto en la IA más recursos que cualquier otra empresa: tiene DeepMi
 | Deep Think | Un modo de razonamiento profundo, en el plan Ultra |
 | Gemini 4 (Argon) | Anunciado el 30 de septiembre de 2026; todavía no está disponible al público |
 
-Planes en Estados Unidos (a octubre de 2026): Free, Google AI Plus ($4.99 USD), Google AI Pro ($19.99 USD), Google AI Ultra ($99.99 o $199.99 USD al mes). Fuera de Estados Unidos, los precios se fijan en moneda local. Los precios y versiones vigentes están en la página [Lo vigente](https://aimayak.com/es/now/).
+Planes en Estados Unidos (a octubre de 2026): Free, Google AI Plus ($4.99 USD), Google AI Pro ($19.99 USD), Google AI Ultra ($99.99 o $199.99 USD al mes). Fuera de Estados Unidos, los precios se fijan en moneda local. Los precios y versiones vigentes están en la página [Lo vigente](https://aimayak.com/now/).
 
 **Ventana de contexto.** Varios modelos de Gemini tienen una ventana de 1 millón de tokens (revisa la documentación del modelo para las cifras exactas). Antes eso era un récord del mercado, pero a octubre de 2026, Claude Fable 5.1, Opus 5.5 y Sonnet 5.5 también tienen una ventana de 1M. Para darte una idea: 1 millón de tokens son más o menos de 555,000 a 750,000 palabras, o de 5 a 10 libros de largo promedio. Puedes cargar todo el codebase (todo el código fuente de un proyecto) de un proyecto grande y analizarlo completo.
 
@@ -296,7 +296,7 @@ Mistral AI se fundó en 2023 en Francia, por tres investigadores de Google DeepM
 
 **DeepSeek (China):** causó sensación a principios de 2025 al mostrar buenos resultados con un costo de entrenamiento mucho menor. La línea actual es DeepSeek V4 (V4.1-Flash salió en septiembre de 2026), con pesos publicados bajo licencia MIT. La privacidad de los datos sigue siendo una cuestión importante: según la política de privacidad del servicio, los datos se guardan y procesan en la República Popular China, así que no pegues datos de clientes en el chat. Para excluirte del entrenamiento con tus datos, envía una solicitud a privacy@deepseek.com.
 
-**Meta AI** funciona con el modelo Muse Spark y está integrado en las apps de Meta (WhatsApp, Instagram y otras). **Perplexity** es un buscador que da respuestas con enlaces a sus fuentes; usa modelos de distintas empresas. **Microsoft Copilot** es el asistente de Microsoft: el Copilot Pro de pago ya no se vende, y lo reemplazó el plan Microsoft 365 Premium ($19.99 USD al mes a octubre de 2026). Los detalles de cada uno están en las páginas de la sección [Herramientas](https://aimayak.com/es/tools/).
+**Meta AI** funciona con el modelo Muse Spark y está integrado en las apps de Meta (WhatsApp, Instagram y otras). **Perplexity** es un buscador que da respuestas con enlaces a sus fuentes; usa modelos de distintas empresas. **Microsoft Copilot** es el asistente de Microsoft: el Copilot Pro de pago ya no se vende, y lo reemplazó el plan Microsoft 365 Premium ($19.99 USD al mes a octubre de 2026). Los detalles de cada uno están en las páginas de la sección [Herramientas](https://aimayak.com/tools/).
 
 ---
 
@@ -316,7 +316,7 @@ Mistral AI se fundó en 2023 en Francia, por tres investigadores de Google DeepM
 | DeepSeek V4.1-Flash | DeepSeek | $ | ver documentación | Texto + imágenes | Sí (MIT) |
 | Llama 3.x | Meta | Gratis\*\* | 128K | Solo texto | Sí |
 
-\*Los precios son aproximados y se refieren a la API: $ = hasta $1 USD por millón de tokens de entrada, $$ = unos $2 USD, $$$ = unos $4 USD, $$$$ = $10 USD o más. Precios y versiones exactos: [Lo vigente](https://aimayak.com/es/now/).
+\*Los precios son aproximados y se refieren a la API: $ = hasta $1 USD por millón de tokens de entrada, $$ = unos $2 USD, $$$ = unos $4 USD, $$$$ = $10 USD o más. Precios y versiones exactos: [Lo vigente](https://aimayak.com/now/).
 
 \*\*Gratis = pesos abiertos, pero necesitas tu propio equipo para correr el modelo. A través de servicios de hosting de API (Together.ai, Groq, Fireworks), pagas.
 
@@ -375,7 +375,7 @@ En los últimos años, el costo de las API de IA para modelos del mismo nivel de
 - Más eficiencia en chips y algoritmos
 - Los modelos abiertos empujan hacia abajo los precios de los cerrados
 
-La conclusión: no memorices cifras concretas; van a quedar desactualizadas. Recuerda mejor el principio: revisa siempre los precios vigentes antes de lanzar un proyecto, en la página [Lo vigente](https://aimayak.com/es/now/) y en los sitios de los propios proveedores: Anthropic (claude.com/pricing), OpenAI, Google AI Studio.
+La conclusión: no memorices cifras concretas; van a quedar desactualizadas. Recuerda mejor el principio: revisa siempre los precios vigentes antes de lanzar un proyecto, en la página [Lo vigente](https://aimayak.com/now/) y en los sitios de los propios proveedores: Anthropic (claude.com/pricing), OpenAI, Google AI Studio.
 
 ---
 
@@ -406,7 +406,7 @@ Entiende todo el panorama y conoce una herramienta a fondo: ese es el enfoque co
 ### Ejercicio 1. Una prueba lado a lado (20 min)
 
 1. Regístrate en **claude.ai** (gratis; necesitas un correo)
-2. Regístrate en **chatgpt.com** (gratis; necesitas un correo), o usa cualquier otro asistente de la sección [Herramientas](https://aimayak.com/es/tools/)
+2. Regístrate en **chatgpt.com** (gratis; necesitas un correo), o usa cualquier otro asistente de la sección [Herramientas](https://aimayak.com/tools/)
 3. Dales a los dos el mismo prompt:
 
 ```

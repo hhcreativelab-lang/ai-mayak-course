@@ -2,7 +2,7 @@
 
 **Tiempo:** unos 20 min de lectura + 30 min de ejercicio
 
-> Este es material educativo, no asesoría financiera personal. Las cifras de esta lección son ejemplos inventados: los servicios de IA cambian sus planes seguido, así que la lección no da precios de productos concretos. Para ver los planes actuales, consulta la página [Lo vigente](https://aimayak.com/es/now/) y los sitios oficiales de cada servicio.
+> Este es material educativo, no asesoría financiera personal. Las cifras de esta lección son ejemplos inventados: los servicios de IA cambian sus planes seguido, así que la lección no da precios de productos concretos. Para ver los planes actuales, consulta la página [Lo vigente](https://aimayak.com/now/) y los sitios oficiales de cada servicio.
 
 ---
 
@@ -75,7 +75,7 @@ Ahora queda claro qué hacer con cada fila:
 
 ### Los costos de IA van dentro de tu precio
 
-Si tienes 6 clientes, $73 en herramientas equivalen a unos $12 por cliente al mes. Ese dinero debe estar incluido en tu precio, como parte de los costos fijos que definen tu precio mínimo en [la lección de precios](d02-pricing-simple.md). Si tus costos de IA crecen con la cantidad de trabajo (créditos, pago por uso), trátalos como un costo variable por cliente, como muestra [la lección de economía por cliente](d01-unit-economics-simple.md).
+Esta sección es para quienes ganan dinero con IA. Si tienes 6 clientes, $73 en herramientas equivalen a unos $12 por cliente al mes. Ese dinero debe estar incluido en tu precio como parte de tus costos fijos (los que no dependen de cuántos clientes tengas). Los costos fijos definen tu precio mínimo: el piso por debajo del cual trabajas con pérdida. [La lección de precios](d02-pricing-simple.md), que viene más adelante en el curso, lo explica a detalle. Si tus costos de IA crecen con la cantidad de trabajo (créditos, pago por uso), trátalos como un costo variable por cliente (un costo que crece con cada cliente nuevo); lo muestra [la lección de economía por cliente](d01-unit-economics-simple.md), que también viene más adelante.
 
 Una revisión útil: qué parte de tus ingresos se va en herramientas de IA. Si ingresas $1,800 y tus herramientas cuestan $73, es más o menos el 4%. Si esa parte crece más rápido que tus ingresos, es hora de una auditoría.
 
@@ -90,7 +90,7 @@ Una revisión útil: qué parte de tus ingresos se va en herramientas de IA. Si 
 
 ### Dónde no recortar
 
-Un servicio que te ahorra unas horas cada semana casi siempre cuesta menos que esas horas. Si una suscripción de $20 te libera 5 horas al mes y tu hora vale $20, el servicio te aporta $100 al mes. Recorta lo que no usas, no lo que funciona.
+Un servicio que te ahorra unas horas cada semana casi siempre cuesta menos que esas horas. Si una suscripción de $20 te libera 5 horas al mes y tu hora vale $20, el servicio te devuelve $100 al mes en tiempo. Recorta lo que no usas, no lo que funciona.
 
 ---
 
@@ -114,7 +114,7 @@ Un servicio que te ahorra unas horas cada semana casi siempre cuesta menos que e
 
 ### Ejercicio: audita tu propio conjunto de herramientas de IA (30 minutos)
 
-**Paso 1.** Abre los estados de cuenta de tu tarjeta y tu banco de los últimos 2–3 meses y encuentra cada pago de servicios de IA y software. Incluye las pruebas gratis que están por terminar.
+**Paso 1.** Abre los estados de cuenta de tu tarjeta y tu banco de los últimos 2–3 meses y encuentra cada pago de servicios de IA y software. Incluye las pruebas gratis que están por terminar. Si todavía no pagas ningún servicio de IA, haz el ejercicio con las herramientas que piensas pagar: anota los servicios y los precios de sus planes según la página [Lo vigente](https://aimayak.com/now/).
 
 **Paso 2.** Llena la tabla:
 
@@ -122,7 +122,7 @@ Un servicio que te ahorra unas horas cada semana casi siempre cuesta menos que e
 |---|---|---|---|---|---|
 | | | | | | |
 
-**Paso 3.** Para cada fila, toma una decisión: conservar, bajar de plan, cancelar o cambiar a pago por uso. Calcula cuánto vas a ahorrar en un año con las [Calculadoras](https://aimayak.com/es/calculators/).
+**Paso 3.** Para cada fila, toma una decisión: conservar, bajar de plan, cancelar o cambiar a pago por uso. Calcula tu ahorro del año: suma los precios mensuales de las filas que vas a quitar y multiplica por 12. Para ver cuánto cuesta todo el conjunto al mes y al año, usa la calculadora "Costo mensual de tus herramientas de IA" en la página de [Calculadoras](https://aimayak.com/calculators/).
 
 **Paso 4.** Pídele a tu asistente de IA que encuentre las duplicaciones:
 
@@ -135,12 +135,14 @@ No me des precios ni planes de memoria: si una decisión depende de un precio,
 dime qué precio debo revisar en el sitio oficial.
 ```
 
-La IA puede no conocer los planes y funciones actuales: los servicios cambian más rápido de lo que se actualiza el conocimiento de un modelo. Revisa cada decisión en el sitio oficial del servicio y en la página [Lo vigente](https://aimayak.com/es/now/).
+La IA puede no conocer los planes y funciones actuales: los servicios cambian más rápido de lo que se actualiza el conocimiento de un modelo. Revisa cada decisión en el sitio oficial del servicio y en la página [Lo vigente](https://aimayak.com/now/).
 
 **Paso 5.** Haz tres cosas hoy:
 1. Cancela lo que decidiste cancelar.
 2. Pon un límite de gasto en todo lo que pagas por uso.
 3. Agenda en tu calendario un recordatorio 2 días antes de que termine cada prueba gratis, y otra auditoría dentro de un mes.
+
+Lo que debes tener al final: una tabla con una decisión en cada fila y una sola cifra, tu ahorro del año.
 
 ---
 
@@ -156,8 +158,10 @@ La IA puede no conocer los planes y funciones actuales: los servicios cambian m�
 
 ## Siguiente lección
 
-Aquí termina el módulo El dinero en palabras simples. Lo que sigue:
+Lo que sigue en el curso:
 
-→ **[Precios basados en valor](39-monetization-pricing.md)**: cómo vender resultados, no horas.
+→ **[Profesiones del futuro: 100 profesiones nuevas e híbridas con IA](100-future-professions-and-hybrids.md)**: cómo la IA está cambiando las profesiones.
 
-Para profundizar en los costos de IA: [Cuánto gastar en IA](00e-investment-roadmap.md) (qué comprar en cada nivel de presupuesto) y [Ingeniería de costos](48b-cost-engineering.md) (cómo bajar los costos de IA de tu producto).
+Si vas por la ruta Ganar dinero con IA: cómo ponerle precio a tu servicio se ve en el módulo El dinero en palabras simples y en [Precios basados en valor](39-monetization-pricing.md) (cómo vender resultados, no horas). Eso viene más adelante.
+
+Más sobre los costos de IA: la lección anterior, [Cuánto gastar en IA](00e-investment-roadmap.md) (qué comprar en cada nivel de presupuesto), y, de la biblioteca avanzada, [Ingeniería de costos](48b-cost-engineering.md) (cómo bajar los costos de IA de tu producto).

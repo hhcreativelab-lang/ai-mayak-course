@@ -648,7 +648,7 @@ En derecho, salud y finanzas, automatizas el trabajo administrativo y el papeleo
 | **Loom** | revisa los planes en su sitio | Video asíncrono para clientes |
 | **Claude Pro / API** | Pro $20/mes (a octubre de 2026), o la API, que se cobra por token | Hacer el trabajo real para los clientes |
 
-Suma tú mismo los planes de los servicios que elijas. Empieza con lo mínimo (planes gratuitos más una herramienta de pago para encontrar clientes) y agrega lo demás a medida que lo necesites. Precios actuales: [Lo vigente](https://aimayak.com/es/now/).
+Suma tú mismo los planes de los servicios que elijas. Empieza con lo mínimo (planes gratuitos más una herramienta de pago para encontrar clientes) y agrega lo demás a medida que lo necesites. Precios actuales: [Lo vigente](https://aimayak.com/now/).
 
 Lo que no necesitas: un sitio web corporativo, un CRM hecho a la medida, una oficina elegante, tarjetas de presentación ni una empresa registrada desde el primer día. Cuando llegue el momento, elige con tu contador o un abogado una figura legal para tu negocio según las normas de tu país (en EE. UU., las opciones comunes para un consultor que trabaja solo son la empresa unipersonal o la LLC).
 

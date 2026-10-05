@@ -42,7 +42,7 @@ There are three main players in no-code automation. Each one has its own niche.
 | Who it's for | Non-technical people, small businesses | Technical users, complex scenarios | Developers, privacy-first teams |
 | Where it runs | Cloud | Cloud | Self-hosted or cloud |
 
-Current prices and versions: [What's current](https://aimayak.com/now/).
+Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 🎨 **Picture this:** Zapier is like an iPhone. It costs more, but it works right out of the box, it looks good, and there's an app for everything. Make is like Android: cheaper, more flexible, and it takes a bit of figuring out. n8n is like Linux: full control, but you'll have to roll up your sleeves.
 
@@ -175,7 +175,7 @@ A new transaction in Stripe → AI checks it for anomalies (an unusual amount, a
 
 **Zapier Team:** as of October 2026, from $69/month billed yearly ($103.50 billed monthly), more tasks, multiple users (up to 25).
 
-Current prices and versions: [What's current](https://aimayak.com/now/).
+Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 **Billing pitfalls:**
 

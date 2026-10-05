@@ -127,7 +127,7 @@ Everything inside the context window, AI "sees" and takes into account. Everythi
 - Claude Fable 5.1, Opus 5.5, Sonnet 5.5: **1,000,000 tokens** ≈ 555,000 words (for English text with the current tokenizer) ≈ 1,800 book pages
 - Claude Haiku 4.5: 200,000 tokens ≈ 150,000 words ≈ 500 pages
 
-ChatGPT, Gemini and other assistants also have windows measured in hundreds of thousands or millions of tokens, but the exact numbers depend on the model and the plan: check the provider's documentation and the [What's current](https://aimayak.com/now/) page. In a regular app (for example, the chat at claude.ai), the amount available to you may differ from the API.
+ChatGPT, Gemini and other assistants also have windows measured in hundreds of thousands or millions of tokens, but the exact numbers depend on the model and the plan: check the provider's documentation and the [What's current](https://aimayak.com/en/now/) page. In a regular app (for example, the chat at claude.ai), the amount available to you may differ from the API.
 
 These are big numbers. But in real work, context gets used up faster than you'd think: the system prompt (the background instructions the app gives the model), the conversation history, uploaded documents and AI's own answers all take up room in the context window.
 

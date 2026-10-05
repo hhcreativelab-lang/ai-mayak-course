@@ -10,7 +10,7 @@ Anthropic ofrece **5 niveles de acceso a Claude** (más la API, que va aparte). 
 
 Lo más importante que debes entender desde el principio: **Claude Code no funciona con una cuenta gratuita.** Así que si te preguntas si Claude Code es gratis, la respuesta corta es no. Una cuenta gratuita te da el chat en claude.ai, en la app de escritorio y en tu celular. Para usar Claude en la terminal o en VS Code necesitas un plan de pago (como mínimo Pro) o una clave de API con cobro por token.
 
-Esta lección es un mapa a octubre de 2026. Los precios y los límites cambian, así que siempre revisa las cifras vigentes en la página [Lo vigente](https://aimayak.com/es/now/) y en la página oficial de precios. Abajo: quién recibe qué por su dinero, qué plan le conviene a quién y cómo funcionan los pagos.
+Esta lección es un mapa a octubre de 2026. Los precios y los límites cambian, así que siempre revisa las cifras vigentes en la página [Lo vigente](https://aimayak.com/now/) y en la página oficial de precios. Abajo: quién recibe qué por su dinero, qué plan le conviene a quién y cómo funcionan los pagos.
 
 🎨 **Imagínalo así:** el acceso a la IA funciona como un plan de celular. Free es el plan básico para la llamada ocasional. Pro es el plan de todos los días con el que de verdad trabajas. Max es el plan premium para quienes lo usan mucho. Team es el plan familiar para un grupo. La API es un taxi con el taxímetro corriendo: pagas cada segundo del viaje. Enterprise es un jet privado con piloto bajo contrato.
 
@@ -282,7 +282,7 @@ La API es **otra historia**. No es una suscripción mensual; es pago por uso.
 - Puedes tener Pro para el chat y la API para tus propios programas al mismo tiempo
 - La API se paga a través de la Console en platform.claude.com (un panel de cuenta aparte)
 
-**Precios a octubre de 2026** (por millón de tokens, según la página oficial de precios de Anthropic; las cifras vigentes siempre están en la página [Lo vigente](https://aimayak.com/es/now/)):
+**Precios a octubre de 2026** (por millón de tokens, según la página oficial de precios de Anthropic; las cifras vigentes siempre están en la página [Lo vigente](https://aimayak.com/now/)):
 
 #### Claude (Anthropic)
 

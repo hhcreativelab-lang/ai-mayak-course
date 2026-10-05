@@ -178,7 +178,7 @@ Este es el **paso crítico**: sáltatelo y obtienes relleno de IA. Qué haces:
 
 ### Herramientas a octubre de 2026
 
-Los precios se omiten a propósito: cambian. Los precios y versiones vigentes están en la página [Lo vigente](https://aimayak.com/es/now/), y el catálogo de servicios en [Herramientas](https://aimayak.com/es/tools/).
+Los precios se omiten a propósito: cambian. Los precios y versiones vigentes están en la página [Lo vigente](https://aimayak.com/now/), y el catálogo de servicios en [Herramientas](https://aimayak.com/tools/).
 
 | Herramienta | Qué hace | Cuándo vale la pena |
 |---|---|---|
@@ -564,7 +564,7 @@ Si haces videos de YouTube o un pódcast:
 Cómo usarlo:
 
 - Una locución para un tutorial de YouTube: 1,500 palabras son aproximadamente 10 minutos de audio; revisa en la página de precios cuántos créditos usa eso
-- Varios idiomas: el mismo clon de voz en inglés (los modelos multilingües de ElevenLabs cubren muchos idiomas; el modelo vigente y la lista de idiomas están en su sitio y en la página [Lo vigente](https://aimayak.com/es/now/))
+- Varios idiomas: el mismo clon de voz en inglés (los modelos multilingües de ElevenLabs cubren muchos idiomas; el modelo vigente y la lista de idiomas están en su sitio y en la página [Lo vigente](https://aimayak.com/now/))
 
 Agrega una **nota de declaración** al final de cada descripción:
 > Locución generada con IA (ElevenLabs) a partir de grabaciones de mi propia voz. Guion escrito por mí.
@@ -608,7 +608,7 @@ Agrega una **nota de declaración** al final de cada descripción:
 - **[LinkedIn Creator Hub](https://www.linkedin.com/creator)**: las buenas prácticas oficiales de LinkedIn
 - **[MacWhisper](https://www.macwhisper.com)** / **[Whisper](https://github.com/openai/whisper)**: transcribir notas de voz
 - **[Anthropic Responsible Scaling Policy](https://www.anthropic.com/news/anthropics-responsible-scaling-policy)**: sobre la seguridad de los modelos de IA, no sobre contenido; para la ética del contenido, guíate por las reglas de las plataformas y la sección de ética de arriba
-- **Precios y versiones:** [Lo vigente](https://aimayak.com/es/now/); el catálogo de servicios: [Herramientas](https://aimayak.com/es/tools/)
+- **Precios y versiones:** [Lo vigente](https://aimayak.com/now/); el catálogo de servicios: [Herramientas](https://aimayak.com/tools/)
 
 ---
 

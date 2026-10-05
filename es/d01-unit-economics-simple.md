@@ -136,7 +136,7 @@ Toma tu trabajo actual o tu idea. Si todavía no tienes un negocio, elige un ser
 | Cuánto dinero y cuántas horas te cuesta encontrar un cliente | |
 | Cuántas veces compra un cliente, o cuántos meses se queda | |
 
-**Paso 2.** Calcula tu margen por cliente, tu costo de adquisición y la relación entre ambos. Comprueba tus cuentas con las [Calculadoras](https://aimayak.com/es/calculators/).
+**Paso 2.** Calcula tu margen por cliente, tu costo de adquisición y la relación entre ambos. Comprueba tus cuentas con las [Calculadoras](https://aimayak.com/calculators/).
 
 **Paso 3.** Pídele a un asistente de IA que revise tus cuentas y encuentre el punto débil. Un prompt de ejemplo:
 

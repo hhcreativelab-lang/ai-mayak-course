@@ -142,7 +142,7 @@ A 20% discount off the price took two-thirds of your earnings. To make the same 
 
 **Step 3. The value.** Answer in writing: what will the client gain or save in a month? Put it in dollars, even roughly.
 
-**Step 4. Price and packages.** Choose a price between the floor and the value, and split it into 2–3 packages. Check that each package is above its own floor. The [Calculators](https://aimayak.com/calculators/) make it easy to compare the options.
+**Step 4. Price and packages.** Choose a price between the floor and the value, and split it into 2–3 packages. Check that each package is above its own floor. The [Calculators](https://aimayak.com/en/calculators/) make it easy to compare the options.
 
 **Step 5. Check it with AI.** A sample prompt:
 

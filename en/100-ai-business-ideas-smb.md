@@ -16,7 +16,7 @@
 
 This is a learning guide to business models and ideas. It is **not a promise of income, not a forecast, and not financial or investment advice.**
 
-- The dollar amounts (prices, plans, tool costs) are rough reference points for doing the math, not research data. Real prices change: check current prices and versions of AI services on the [What's current](https://aimayak.com/now/) page and on the services' own websites
+- The dollar amounts (prices, plans, tool costs) are rough reference points for doing the math, not research data. Real prices change: check current prices and versions of AI services on the [What's current](https://aimayak.com/en/now/) page and on the services' own websites
 - The statistics and estimates in the "Why it works in 2026" lines and in the market sections are working assumptions; they haven't been checked against primary sources
 - The timelines (the "Setup time" field) assume someone with hands-on Claude Code experience
 - We deliberately don't forecast revenue. Results depend on the niche, the market, your work and some luck
@@ -1985,7 +1985,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Claude + ElevenLabs + Midjourney/gpt-image-2 + Buffer/Hypefury + PostHog
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** a content business, meaning a steady flow of posts for YouTube, Twitter and an email newsletter.
 
@@ -2005,7 +2005,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Vapi + Twilio + Claude + Calendly + Stripe
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** an AI voice agent that answers calls for restaurants, clinics and salons (idea #32)
 
@@ -2025,7 +2025,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** ConvertKit/Beehiiv + Claude + Carrd + Plausible
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** a business built on a niche email newsletter (idea #17)
 
@@ -2045,7 +2045,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Notion + HubSpot + Calendly + Claude + PandaDoc
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** solo consulting (using model #4)
 
@@ -2065,7 +2065,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Next.js + Supabase + Vercel + Stripe + Claude API
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** building a SaaS product (software sold by subscription), any of ideas 91-100
 
@@ -2085,7 +2085,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Claude + Google Business Profile + Buffer + Stripe + Calendly
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** local SEO (getting found in search) and social media management for restaurants (ideas #18, #26, #61)
 
@@ -2105,7 +2105,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Teachable/Kajabi + Claude + Loom + Canva + Stripe
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** an agency that builds courses for experts (idea #24)
 
@@ -2125,7 +2125,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Claude + ElevenLabs + Descript + YouTube
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** faceless YouTube channels where the creator never appears on camera, and AI podcasts (idea #20)
 
@@ -2145,7 +2145,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Crisp + Claude + Shopify + Stripe
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** an AI customer support desk for Shopify stores (idea #31)
 
@@ -2165,7 +2165,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Tool set:** Claude + Hypefury + ElevenLabs + Loom + Calendly
 
-**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/now/) and the services' own pricing pages.
+**What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
 **What it's for:** building a personal brand on Twitter and LinkedIn (ideas #81, #82, #83)
 
@@ -3025,7 +3025,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - A confirmed client problem (or a change of direction)
 - A first sense of price: how much local restaurants are willing to pay for a service like this (ask on your calls)
 
-**Costs:** subscriptions to tools (an AI assistant, a calendar). Current prices: [What's current](https://aimayak.com/now/)
+**Costs:** subscriptions to tools (an AI assistant, a calendar). Current prices: [What's current](https://aimayak.com/en/now/)
 
 **Common mistake:** going broad ("AI marketing for small businesses"). Stick to a narrow niche.
 

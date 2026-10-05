@@ -49,7 +49,7 @@ Otter.ai is one of the pioneers in this market. It joins Zoom, Google Meet and M
 - Integrations with work tools (see the list on their site)
 - An MCP server for connecting it to AI assistants (on paid plans). MCP is a standard way to plug a tool into an assistant like Claude.
 
-**Plans:** there's a Free plan with a monthly limit on minutes and paid plans with more minutes; current prices and limits are on otter.ai and the [What's current](https://aimayak.com/now/) page. Check the supported languages before you rely on it: if some of your meetings aren't in English, make sure your language is on Otter's list, or use a service with wider language coverage (for example, Fireflies).
+**Plans:** there's a Free plan with a monthly limit on minutes and paid plans with more minutes; current prices and limits are on otter.ai and the [What's current](https://aimayak.com/en/now/) page. Check the supported languages before you rely on it: if some of your meetings aren't in English, make sure your language is on Otter's list, or use a service with wider language coverage (for example, Fireflies).
 
 🎨 **Picture this:** Otter.ai is a court stenographer who sits in on every meeting and types everything they hear in real time. Except this one never gets tired and doesn't cost much (you should still check the transcript for mistakes).
 
@@ -425,7 +425,7 @@ if __name__ == "__main__":
 
 Plug in your own rate: hours saved per month × what an hour of your time is worth. That's the amount that goes back into productive work. The numbers in the table are illustrative.
 
-What the system costs: a subscription to a meeting service (there are free plans) + Claude API usage. At Sonnet 5.5 prices as of October 2026 ($2 per million input tokens and $10 per million output tokens), an hour-long meeting comes to roughly 15,000–20,000 input tokens, which works out to a few cents per meeting (an estimate; check it against your own recordings). Tokens are the units AI usage is billed in. Current prices: [What's current](https://aimayak.com/now/).
+What the system costs: a subscription to a meeting service (there are free plans) + Claude API usage. At Sonnet 5.5 prices as of October 2026 ($2 per million input tokens and $10 per million output tokens), an hour-long meeting comes to roughly 15,000–20,000 input tokens, which works out to a few cents per meeting (an estimate; check it against your own recordings). Tokens are the units AI usage is billed in. Current prices: [What's current](https://aimayak.com/en/now/).
 
 🎨 **Picture this:** you're hiring an assistant for the price of a subscription. It works around the clock, never asks for vacation and does one thing well: it turns meetings into concrete tasks. But checking its work is still your job.
 
@@ -499,7 +499,7 @@ Replace `MEETING_PROMPT` with whichever template from the theory section fits yo
 - **[OpenAI Whisper](https://github.com/openai/whisper)**: private offline transcription, free
 - **[mlx-whisper](https://github.com/ml-explore/mlx-examples)**: fast Whisper on Apple Silicon
 - **[MacWhisper](https://www.macwhisper.com)**: local transcription on a Mac, no code needed
-- **[Claude API](https://platform.claude.com/docs)**: analyzing transcripts; estimate the cost by tokens ([What's current](https://aimayak.com/now/))
+- **[Claude API](https://platform.claude.com/docs)**: analyzing transcripts; estimate the cost by tokens ([What's current](https://aimayak.com/en/now/))
 - **[ClickUp API v2](https://clickup.com/api)**: creating tasks
 - **[ngrok](https://ngrok.com)**: a tunnel for development, free
 - **[Railway](https://railway.app)**: hosting for the Python server, prices on the provider's site

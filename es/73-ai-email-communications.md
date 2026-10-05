@@ -686,7 +686,7 @@ print(f"\nBorrador de respuesta:\n{result['draft']}")
 - **[Lemlist](https://lemlist.com)**: correo en frío con seguimientos automáticos (condiciones en el sitio)
 - **[Instantly.ai](https://instantly.ai)**: una alternativa a Lemlist para envíos en volumen (condiciones en el sitio)
 - **[anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python)**: para los scripts de esta lección
-- **Precios y versiones:** [Lo vigente](https://aimayak.com/es/now/)
+- **Precios y versiones:** [Lo vigente](https://aimayak.com/now/)
 
 ---
 

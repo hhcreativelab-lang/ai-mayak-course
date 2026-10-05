@@ -21,7 +21,7 @@ Para quienes no programan, esta suele ser la forma más fácil de entrar a Claud
 - **La pestaña Chat**: una conversación normal con Claude (sin acceso a tus archivos), igual que claude.ai en tu navegador
 - **La pestaña Cowork**: Dispatch (una conversación continua con Claude a la que le puedes mandar tareas, incluso desde tu celular) y trabajo más largo de agentes (un agente es un programa que realiza tareas por su cuenta): investigación, documentos, hojas de cálculo
 - **Modos de permisos**: cuánta libertad le das al agente (desde "pregúntame todo" hasta "adelante, hazlo por tu cuenta")
-- **Modelos**: Haiku (rápido), Sonnet (más rápido y más barato que Opus), Opus (el predeterminado), Fable (las tareas más largas y difíciles); puedes cambiar entre ellos a mitad de una sesión. Nombres y versiones vigentes: [Lo vigente](https://aimayak.com/es/now/)
+- **Modelos**: Haiku (rápido), Sonnet (más rápido y más barato que Opus), Opus (el predeterminado), Fable (las tareas más largas y difíciles); puedes cambiar entre ellos a mitad de una sesión. Nombres y versiones vigentes: [Lo vigente](https://aimayak.com/now/)
 - **Sesiones en paralelo**: varios agentes trabajando al mismo tiempo, cada uno en su propia pestaña
 - **Tareas programadas**: un programador; el agente arranca solo, según un horario
 
@@ -54,7 +54,7 @@ Para quienes no programan, esta suele ser la forma más fácil de entrar a Claud
 
 Después de descargarla: abre el DMG (macOS) o el Setup.exe (Windows) → instálala como cualquier otra app → ábrela → inicia sesión en tu cuenta de Anthropic (la misma que usas en claude.ai) → abre la pestaña Code.
 
-**Necesitas un plan de pago:** Pro, Max, Team o Enterprise. El plan gratuito de Claude no incluye Claude Code. Precios vigentes de los planes: [Lo vigente](https://aimayak.com/es/now/).
+**Necesitas un plan de pago:** Pro, Max, Team o Enterprise. El plan gratuito de Claude no incluye Claude Code. Precios vigentes de los planes: [Lo vigente](https://aimayak.com/now/).
 
 ---
 
@@ -122,7 +122,7 @@ Abajo, una "tool call" (llamada a herramienta) es una sola acción que hace Clau
 
 Para cambiar de modelo: el menú desplegable junto al botón de enviar. Funciona **durante una sesión**; no tienes que empezar de nuevo.
 
-Modelos a octubre de 2026 (lista vigente: [Lo vigente](https://aimayak.com/es/now/)):
+Modelos a octubre de 2026 (lista vigente: [Lo vigente](https://aimayak.com/now/)):
 
 | Modelo | Alias | Para qué sirve | Velocidad / costo |
 |---|---|---|---|

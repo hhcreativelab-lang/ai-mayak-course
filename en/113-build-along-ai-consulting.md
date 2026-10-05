@@ -648,7 +648,7 @@ In law, healthcare and finance, you automate the admin work and paperwork around
 | **Loom** | see the plans on their website | Async video for clients |
 | **Claude Pro / API** | Pro $20/month (as of October 2026), or the API, billed per token | Doing the actual client work |
 
-Add up the plans for the services you choose yourself. Start with the minimum (free tiers plus one paid tool for finding clients) and add the rest as you need it. Current prices: [What's current](https://aimayak.com/now/).
+Add up the plans for the services you choose yourself. Start with the minimum (free tiers plus one paid tool for finding clients) and add the rest as you need it. Current prices: [What's current](https://aimayak.com/en/now/).
 
 What you don't need: a corporate website, a custom CRM, a fancy office, business cards, or a registered company on day one. When the time comes, the common options for a solo consultant in the US are a sole proprietorship or an LLC; choose the setup with your accountant or a lawyer.
 

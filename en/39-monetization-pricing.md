@@ -311,7 +311,7 @@ After payback: $23,040/year in net savings
 - **Paddle**: [paddle.com](https://www.paddle.com/). An alternative to Stripe that takes care of taxes for you (handy for international payments)
 - **Gumroad**: [gumroad.com](https://gumroad.com/). For selling digital products (templates, courses, workflows)
 - **Calendly**: [calendly.com](https://calendly.com/). Professional call booking without the back-and-forth
-- **Claude API pricing**: [platform.claude.com/docs: pricing](https://platform.claude.com/docs/en/about-claude/pricing). So you know exactly what the API costs when you calculate your margin. Current prices and versions: [What's current](https://aimayak.com/now/)
+- **Claude API pricing**: [platform.claude.com/docs: pricing](https://platform.claude.com/docs/en/about-claude/pricing). So you know exactly what the API costs when you calculate your margin. Current prices and versions: [What's current](https://aimayak.com/en/now/)
 
 ---
 

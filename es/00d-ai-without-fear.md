@@ -31,7 +31,7 @@ Estás en el lugar correcto si:
 
 Sáltate esta lección si:
 - Ya usas la IA desde hace tiempo y no te da miedo
-- Buscas una descripción técnica de los modelos (eso no está aquí; mira la lección [La historia de la IA](00-what-is-ai.md))
+- Buscas una descripción técnica de los modelos (eso no está aquí; mira la lección [Cómo funciona un LLM por dentro](00b-how-llm-works.md))
 
 ---
 
@@ -56,7 +56,7 @@ Las investigaciones sobre cómo la IA generativa afecta el mercado laboral (incl
 
 ### Lo que CRECE gracias a la IA
 
-Puestos nuevos que no existían hace 3 años:
+Puestos nuevos que casi no existían hace unos años:
 
 - **Auditor de IA**: revisa que los sistemas de IA funcionen bien y no tengan sesgos
 - **Ingeniero de prompts**: configura la IA para las tareas específicas de una empresa
@@ -80,7 +80,7 @@ Un buen traductor se queda. Pero ya no traduce manuales de aspiradoras; eso lo h
 
 Tres pasos:
 
-1. **Averigua** qué tareas de tu trabajo están en riesgo (busca "riesgo de automatización [tu profesión]" y revisa la sección [Profesiones](https://aimayak.com/es/professions/) de este sitio)
+1. **Averigua** qué tareas de tu trabajo están en riesgo (busca "riesgo de automatización [tu profesión]" y revisa la sección [Profesiones](https://aimayak.com/professions/) de este sitio)
 2. **Aprende** las tareas de ese mismo trabajo que la IA no va a reemplazar (decisiones complejas, empatía, responsabilidad)
 3. **Usa** la IA como herramienta para liberar tiempo para lo difícil
 
@@ -105,9 +105,9 @@ Los grandes modelos de hoy (Claude, ChatGPT, Gemini) funcionan, en esencia, así
 Son matemáticas complejas, pero **no es comprensión**. Es "predecir la siguiente palabra" a la escala de todo internet.
 
 La IA no tiene:
-- Metas (solo lo que se le pide en el prompt)
+- Metas (solo lo que se le pide en el prompt, es decir, en tu solicitud)
 - Un cuerpo
-- Memoria entre sesiones (a menos que hayas activado la función de memoria)
+- Memoria propia entre conversaciones (las apps agregan una función de memoria aparte, que puedes revisar y desactivar en la configuración)
 - Comprensión de lo que son la muerte, el amor o el miedo
 - Ganas de "dominar el mundo" (eso es la trama de una película)
 
@@ -222,14 +222,14 @@ Los servicios cambian el nombre de sus opciones de vez en cuando. Antes de pegar
 
 | Plan | Precio | Qué incluye |
 |---|---|---|
-| Claude Free | $0 | Un número limitado de mensajes por día, un modelo básico, búsqueda web, Artifacts |
-| Claude Pro | $20 USD al mes ($17 USD al mes con pago anual) | Límites más altos, modelos más potentes, Claude Code y Cowork |
+| Claude Free | $0 | Un número limitado de mensajes (el límite se reinicia cada cinco horas), un modelo básico, búsqueda web, Artifacts (documentos y miniaplicaciones que Claude arma en una ventana aparte) |
+| Claude Pro | $20 USD al mes ($17 USD al mes con pago anual) | Límites más altos, modelos más potentes, Claude Code (un agente para programar) |
 | Claude Max | desde $100 USD al mes | 5x o 20x los límites de uso de Pro |
 | ChatGPT Go | $8 USD al mes | Un plan económico con límites más altos |
 | ChatGPT Plus | $20 USD al mes | Más uso y funciones que Free |
 | Cursor (planes de pago) | ver cursor.com/pricing | Un editor de código con IA |
 
-Los planes y los límites cambian: para cifras actuales, mira la página [Lo vigente](https://aimayak.com/es/now/). Estos son precios de Estados Unidos; en otros países pueden ser distintos.
+Los planes y los límites cambian: para cifras actuales, mira la página [Lo vigente](https://aimayak.com/now/). Estos son precios de Estados Unidos; en otros países pueden ser distintos.
 
 Este curso te muestra cómo usar un asistente de IA para parte de tus tareas rutinarias. No va a reemplazar a un asistente humano, pero sí te va a quitar parte del trabajo de encima.
 
@@ -279,6 +279,8 @@ Si tus respuestas son "no / sí / no", replantea cómo la usas. Puede que te est
 ### La realidad en 2026
 
 En Estados Unidos, según una encuesta del Pew Research Center publicada en enero de 2025, alrededor de una cuarta parte de los adolescentes (26%) dijo haber usado ChatGPT para tareas escolares, el doble que en 2023. Para datos más recientes, mira los informes de Pew sobre cómo usan la IA los adolescentes (febrero de 2026). Las cifras cambian de un país a otro, pero la dirección es la misma: los niños ya la usan.
+
+Eso sí, los servicios tienen reglas de edad (a octubre de 2026): Claude es solo para adultos de 18 años o más, y ChatGPT admite usuarios desde los 13 con permiso de su madre o su padre. La lección [IA para tu familia](00g-ai-for-family.md) lo explica con detalle.
 
 ### Cómo responder como madre o padre
 
@@ -338,7 +340,7 @@ Tres reglas:
 
 ### Más en el curso
 
-Este tema se ve a fondo en la lección [Regulación y cumplimiento en IA](61c-ai-regulation-compliance.md), con detalles por país, por profesión y casos típicos.
+Este tema se ve a fondo en la lección [Regulación y cumplimiento en IA](61c-ai-regulation-compliance.md), con detalles por país, por profesión y casos típicos. Esa lección está en la biblioteca avanzada y no es obligatoria para el curso principal.
 
 ---
 
@@ -380,7 +382,7 @@ Tres niveles de verificación, según lo que esté en juego:
 
 ### Más en el curso
 
-La ética de la IA y la verificación se ven a fondo en la lección [Ética y seguridad en IA](61b-ai-ethics-safety.md): formas de revisar respuestas, herramientas para contrastar y una lista de temas en los que la IA se equivoca una y otra vez.
+La ética de la IA y la verificación se ven a fondo en la lección [Ética y seguridad en IA](61b-ai-ethics-safety.md), en el módulo siguiente: formas de revisar respuestas, herramientas para contrastar y una lista de temas en los que la IA se equivoca una y otra vez.
 
 🎨 **Imagínalo así:** la IA es como un compañero de trabajo muy seguro de sí mismo que a veces dice disparates pero nunca admite que no sabe. Revisa dos veces todo lo importante.
 
@@ -424,7 +426,7 @@ Antes de seguir, revisa (✅):
 - [ ] Entiendo la privacidad: nada de datos personales de clientes, contraseñas ni datos médicos en el chat
 - [ ] Estoy listo para enseñarles a mis hijos sobre la IA (si tengo hijos), no para prohibírsela
 - [ ] Conozco las reglas de mi país y de mi área (si mi profesión está regulada)
-- [ ] Estoy listo para seguir: a la lección [La historia de la IA](00-what-is-ai.md) o a la lección de introducción [Tus primeros 30 minutos con la IA](00pre-your-first-30-minutes.md)
+- [ ] Estoy listo para seguir: a la lección [Cómo funciona un LLM por dentro](00b-how-llm-works.md) o, si me salté el comienzo, a [Tus primeros 30 minutos con la IA](00pre-your-first-30-minutes.md)
 
 Si marcaste todas las casillas, estás listo. Los miedos quedaron atrás; manos a la obra.
 
@@ -445,4 +447,4 @@ Todas las fuentes mencionadas en esta lección, para que lo verifiques por tu cu
 
 ## Próxima lección
 
-→ [La historia de la IA](00-what-is-ai.md): de dónde salió todo esto y hacia dónde va. Si todavía no hiciste [Tus primeros 30 minutos con la IA](00pre-your-first-30-minutes.md) (el comienzo de todo), puedes empezar por ahí.
+→ [Cómo funciona un LLM por dentro](00b-how-llm-works.md): qué pasa dentro de un asistente, explicado sin matemáticas. Después viene [La historia de la IA](00-what-is-ai.md). Si todavía no hiciste [Tus primeros 30 minutos con la IA](00pre-your-first-30-minutes.md) (el comienzo de todo), empieza por ahí.

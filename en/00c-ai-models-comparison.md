@@ -2,7 +2,7 @@
 
 **Time:** about 30 min reading + 20 min practice
 
-> *Picture choosing a vehicle for different jobs. A Ferrari for the racetrack, a Land Rover for off-road, a Toyota Camry for your daily drive around town. There's no "best car, period," only the best car for a particular road. AI models work exactly the same way. This lesson is your map of the roads and the cars in the AI market. The specific models and prices are as of October 2026. They change fast, so check the current list on the [What's current](https://aimayak.com/now/) page.*
+> *Picture choosing a vehicle for different jobs. A Ferrari for the racetrack, a Land Rover for off-road, a Toyota Camry for your daily drive around town. There's no "best car, period," only the best car for a particular road. AI models work exactly the same way. This lesson is your map of the roads and the cars in the AI market. The specific models and prices are as of October 2026. They change fast, so check the current list on the [What's current](https://aimayak.com/en/now/) page.*
 
 ---
 
@@ -87,7 +87,7 @@ Anthropic was founded in 2021 by former OpenAI employees, including Dario Amodei
 | Claude Opus 5.5 | Medium | Very high | $4 / $20 | The main strong model: long work with code and documents; the default in Claude Code |
 | Claude Fable 5.1 | Slower | Maximum | $10 / $50 | The hardest multi-step tasks; on subscriptions it draws on usage credits |
 
-Current prices and the model list are on the [What's current](https://aimayak.com/now/) page. There's also an invitation-only model (Mythos 5.1, Project Glasswing); it isn't available to regular users.
+Current prices and the model list are on the [What's current](https://aimayak.com/en/now/) page. There's also an invitation-only model (Mythos 5.1, Project Glasswing); it isn't available to regular users.
 
 **Context window:** as of October 2026, Fable 5.1, Opus 5.5 and Sonnet 5.5 have 1 million tokens (about 555,000 words, roughly the whole Lord of the Rings trilogy and then some); Haiku 4.5 has 200K tokens.
 
@@ -124,7 +124,7 @@ OpenAI makes ChatGPT, one of the most widely used AI apps in the world.
 | GPT-6 Luna | Fast and cheap | Everyday questions, high-volume processing |
 | The GPT-5.6 family (Sol, Terra, Luna) | The models in the regular ChatGPT chat | Everyday conversations |
 
-The names and the lineup change every few months: for example, GPT-5.5 leaves ChatGPT on October 14, 2026. The current list is on the [What's current](https://aimayak.com/now/) page.
+The names and the lineup change every few months: for example, GPT-5.5 leaves ChatGPT on October 14, 2026. The current list is on the [What's current](https://aimayak.com/en/now/) page.
 
 **What changed compared with earlier generations.** The separate "reasoning" models of the o-series, which you used to have to pick by hand, are now built into the main lineup: hard questions are handled by a reasoning mode. That mode "thinks out loud" before it answers. It takes more time and is more accurate on hard logic problems, but on simple questions it's overkill and costs more.
 
@@ -167,7 +167,7 @@ Google has put more resources into AI than any other company: it has DeepMind (t
 | Deep Think | A deep-reasoning mode, on the Ultra plan |
 | Gemini 4 (Argon) | Announced September 30, 2026; not publicly available yet |
 
-US plans (as of October 2026): Free, Google AI Plus ($4.99), Google AI Pro ($19.99), Google AI Ultra ($99.99 or $199.99 a month). Outside the US, prices are set in local currency. Current prices and versions are on the [What's current](https://aimayak.com/now/) page.
+US plans (as of October 2026): Free, Google AI Plus ($4.99), Google AI Pro ($19.99), Google AI Ultra ($99.99 or $199.99 a month). Outside the US, prices are set in local currency. Current prices and versions are on the [What's current](https://aimayak.com/en/now/) page.
 
 **Context window.** Several Gemini models have a 1-million-token window (check the model's documentation for exact numbers). That used to be a market record, but as of October 2026, Claude Fable 5.1, Opus 5.5 and Sonnet 5.5 have a 1M window too. For scale: 1 million tokens is roughly 555,000 to 750,000 words, or 5 to 10 average-length books. You can load the entire codebase (all the source code of a project) of a large project and analyze it as a whole.
 
@@ -296,7 +296,7 @@ Mistral AI was founded in 2023 in France by three researchers from Google DeepMi
 
 **DeepSeek (China):** caused a sensation in early 2025 by posting strong results at a much lower training cost. The current lineup is DeepSeek V4 (V4.1-Flash came out in September 2026), with weights published under the MIT license. Data privacy remains an important question: according to the service's privacy policy, data is stored and processed in the People's Republic of China, so don't paste client data into the chat. To opt out of training on your data, send a request to privacy@deepseek.com.
 
-**Meta AI** runs on the Muse Spark model and is built into Meta's apps (WhatsApp, Instagram and others). **Perplexity** is a search engine that gives answers with links to its sources; it uses models from different companies. **Microsoft Copilot** is Microsoft's assistant: the paid Copilot Pro is no longer sold, and the Microsoft 365 Premium plan ($19.99 a month as of October 2026) replaced it. Details on each one are on the pages of the [Tools](https://aimayak.com/tools/) section.
+**Meta AI** runs on the Muse Spark model and is built into Meta's apps (WhatsApp, Instagram and others). **Perplexity** is a search engine that gives answers with links to its sources; it uses models from different companies. **Microsoft Copilot** is Microsoft's assistant: the paid Copilot Pro is no longer sold, and the Microsoft 365 Premium plan ($19.99 a month as of October 2026) replaced it. Details on each one are on the pages of the [Tools](https://aimayak.com/en/tools/) section.
 
 ---
 
@@ -316,7 +316,7 @@ Mistral AI was founded in 2023 in France by three researchers from Google DeepMi
 | DeepSeek V4.1-Flash | DeepSeek | $ | see docs | Text + images | Yes (MIT) |
 | Llama 3.x | Meta | Free\*\* | 128K | Text only | Yes |
 
-\*Prices are approximate and refer to the API: $ = up to $1 per million input tokens, $$ = about $2, $$$ = about $4, $$$$ = $10 and up. Exact prices and versions: [What's current](https://aimayak.com/now/).
+\*Prices are approximate and refer to the API: $ = up to $1 per million input tokens, $$ = about $2, $$$ = about $4, $$$$ = $10 and up. Exact prices and versions: [What's current](https://aimayak.com/en/now/).
 
 \*\*Free = open weights, but you need your own hardware to run the model. Through API hosting services (Together.ai, Groq, Fireworks), you pay.
 
@@ -375,7 +375,7 @@ Over the past few years, the cost of AI APIs for models at the same quality leve
 - Better efficiency in chips and algorithms
 - Open models pushing down the prices of closed ones
 
-The takeaway: don't memorize specific numbers; they'll go out of date. Remember the principle instead: always check current prices before you launch a project, on the [What's current](https://aimayak.com/now/) page and on the providers' own sites: Anthropic (claude.com/pricing), OpenAI, Google AI Studio.
+The takeaway: don't memorize specific numbers; they'll go out of date. Remember the principle instead: always check current prices before you launch a project, on the [What's current](https://aimayak.com/en/now/) page and on the providers' own sites: Anthropic (claude.com/pricing), OpenAI, Google AI Studio.
 
 ---
 
@@ -406,7 +406,7 @@ Understand the whole landscape, and know one tool really well: that's the right 
 ### Exercise 1. A side-by-side test (20 min)
 
 1. Sign up at **claude.ai** (free; you'll need an email)
-2. Sign up at **chatgpt.com** (free; you'll need an email), or use any other assistant from the [Tools](https://aimayak.com/tools/) section
+2. Sign up at **chatgpt.com** (free; you'll need an email), or use any other assistant from the [Tools](https://aimayak.com/en/tools/) section
 3. Give both of them the same prompt:
 
 ```

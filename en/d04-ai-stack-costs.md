@@ -2,7 +2,7 @@
 
 **Time:** about 20 min reading + 30 min exercise
 
-> This is educational material, not personal financial advice. The numbers in this lesson are made-up examples: AI services change their plans often, so the lesson doesn't quote prices for specific products. For current plans, see the [What's current](https://aimayak.com/now/) page and the services' official websites.
+> This is educational material, not personal financial advice. The numbers in this lesson are made-up examples: AI services change their plans often, so the lesson doesn't quote prices for specific products. For current plans, see the [What's current](https://aimayak.com/en/now/) page and the services' official websites.
 
 ---
 
@@ -75,7 +75,7 @@ Now it's clear what to do with each row:
 
 ### AI costs belong in your price
 
-If you have 6 clients, $73 on tools works out to about $12 per client per month. That money should be built into your price, as part of the fixed costs that set your price floor in [the pricing lesson](d02-pricing-simple.md). If your AI costs grow with the amount of work (credits, pay-as-you-go), treat them as a variable cost per client, the way [the unit economics lesson](d01-unit-economics-simple.md) shows.
+This section is for people who earn with AI. If you have 6 clients, $73 on tools works out to about $12 per client per month. That money should be built into your price as part of your fixed costs (the ones that don't depend on how many clients you have). Fixed costs set your price floor: the minimum below which you're working at a loss. [The pricing lesson](d02-pricing-simple.md), later in the course, covers it in detail. If your AI costs grow with the amount of work (credits, pay-as-you-go), treat them as a variable cost per client (a cost that grows with each new client); [the unit economics lesson](d01-unit-economics-simple.md), also still ahead, shows how.
 
 A useful check: what share of your revenue goes to AI tools. If you bring in $1,800 and your setup costs $73, that's about 4%. If that share grows faster than your revenue, it's time for an audit.
 
@@ -90,7 +90,7 @@ A useful check: what share of your revenue goes to AI tools. If you bring in $1,
 
 ### Where not to cut
 
-A service that saves you a few hours every week almost always costs less than those hours. If a $20 subscription frees up 5 hours a month and your hour is worth $20, the service brings you $100 a month. Cut what you don't use, not what's working.
+A service that saves you a few hours every week almost always costs less than those hours. If a $20 subscription frees up 5 hours a month and your hour is worth $20, the service gives you back $100 worth of time a month. Cut what you don't use, not what's working.
 
 ---
 
@@ -114,7 +114,7 @@ A service that saves you a few hours every week almost always costs less than th
 
 ### Exercise: audit your own AI setup (30 minutes)
 
-**Step 1.** Open your card and bank statements for the last 2–3 months and find every payment for AI services and software. Include free trials that are about to end.
+**Step 1.** Open your card and bank statements for the last 2–3 months and find every payment for AI services and software. Include free trials that are about to end. If you don't pay for any AI services yet, do the exercise for the setup you're planning to pay for: fill in the services and their plan prices from the [What's current](https://aimayak.com/en/now/) page.
 
 **Step 2.** Fill in the table:
 
@@ -122,7 +122,7 @@ A service that saves you a few hours every week almost always costs less than th
 |---|---|---|---|---|---|
 | | | | | | |
 
-**Step 3.** For each row, make a decision: keep, downgrade, cancel, or switch to paying per use. Figure out how much you'll save in a year with the [Calculators](https://aimayak.com/calculators/).
+**Step 3.** For each row, make a decision: keep, downgrade, cancel, or switch to paying per use. Work out your yearly savings: add up the monthly prices of the rows you're dropping and multiply by 12. To see what the whole setup costs per month and per year, use the "Monthly cost of your AI tool stack" calculator on the [Calculators](https://aimayak.com/en/calculators/) page.
 
 **Step 4.** Ask your AI assistant to find the overlaps:
 
@@ -135,12 +135,14 @@ Don't quote prices or plans from memory: if a decision depends on a price,
 tell me which price I should check on the official website.
 ```
 
-AI may not know current plans and features: services change faster than a model's knowledge gets updated. Check every decision against the service's official website and the [What's current](https://aimayak.com/now/) page.
+AI may not know current plans and features: services change faster than a model's knowledge gets updated. Check every decision against the service's official website and the [What's current](https://aimayak.com/en/now/) page.
 
 **Step 5.** Do three things today:
 1. Cancel what you decided to cancel.
 2. Set a spending limit on everything you pay for by usage.
 3. Put a reminder in your calendar 2 days before each free trial ends, plus a repeat audit one month from now.
+
+What you should end up with: a table with a decision for every row, and one number, your savings for the year.
 
 ---
 
@@ -156,8 +158,10 @@ AI may not know current plans and features: services change faster than a model'
 
 ## Next lesson
 
-That's the end of the Money in plain English module. Up next:
+Next in the course:
 
-→ **[Value-based pricing](39-monetization-pricing.md)**: how to sell results, not hours.
+→ **[Jobs of the future: 100 new and hybrid AI careers](100-future-professions-and-hybrids.md)**: how AI is changing professions.
 
-To go deeper on AI costs: [How much to spend on AI](00e-investment-roadmap.md) (what to buy at each budget level) and [Cost engineering](48b-cost-engineering.md) (how to lower your product's AI costs).
+If you're on the Earn with AI path: pricing your service is covered in the Money in plain words module and in [Value-based pricing](39-monetization-pricing.md) (how to sell results, not hours). Those are still ahead.
+
+More on AI costs: the previous lesson, [How much to spend on AI](00e-investment-roadmap.md) (what to buy at each budget level), and, from the deep-dive library, [Cost engineering](48b-cost-engineering.md) (how to lower your product's AI costs).

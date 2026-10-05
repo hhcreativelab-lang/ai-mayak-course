@@ -49,7 +49,7 @@ Otter.ai es uno de los pioneros de este mercado. Se une a Zoom, Google Meet y Mi
 - Integraciones con herramientas de trabajo (ver la lista en su sitio)
 - Un servidor MCP para conectarlo con asistentes de IA (en los planes de pago). MCP es una forma estándar de conectar una herramienta a un asistente como Claude.
 
-**Planes:** hay un plan Free con un límite mensual de minutos y planes de pago con más minutos; los precios y límites actuales están en otter.ai y en la página [Lo vigente](https://aimayak.com/es/now/). Revisa los idiomas compatibles antes de depender de él: si tus reuniones son en español u otro idioma distinto del inglés, asegúrate de que tu idioma esté en la lista de Otter, o usa un servicio que cubra más idiomas (por ejemplo, Fireflies).
+**Planes:** hay un plan Free con un límite mensual de minutos y planes de pago con más minutos; los precios y límites actuales están en otter.ai y en la página [Lo vigente](https://aimayak.com/now/). Revisa los idiomas compatibles antes de depender de él: si tus reuniones son en español u otro idioma distinto del inglés, asegúrate de que tu idioma esté en la lista de Otter, o usa un servicio que cubra más idiomas (por ejemplo, Fireflies).
 
 🎨 **Imagínalo así:** Otter.ai es un taquígrafo de juzgado que se sienta en cada reunión y escribe todo lo que oye en tiempo real. Solo que este nunca se cansa y no cuesta mucho (igual conviene revisar la transcripción por si tiene errores).
 
@@ -425,7 +425,7 @@ if __name__ == "__main__":
 
 Pon tu propia tarifa: horas ahorradas al mes × lo que vale una hora de tu tiempo. Esa es la cantidad que regresa al trabajo productivo. Las cifras de la tabla son ilustrativas.
 
-Lo que cuesta el sistema: una suscripción a un servicio de reuniones (hay planes gratis) + el uso de la API de Claude. Con los precios de Sonnet 5.5 a octubre de 2026 ($2 por millón de tokens de entrada y $10 por millón de tokens de salida), una reunión de una hora equivale más o menos a 15,000–20,000 tokens de entrada, lo que sale en unos cuantos centavos por reunión (una estimación; compruébala con tus propias grabaciones). Los tokens son las unidades en las que se cobra el uso de la IA. Precios actuales: [Lo vigente](https://aimayak.com/es/now/).
+Lo que cuesta el sistema: una suscripción a un servicio de reuniones (hay planes gratis) + el uso de la API de Claude. Con los precios de Sonnet 5.5 a octubre de 2026 ($2 por millón de tokens de entrada y $10 por millón de tokens de salida), una reunión de una hora equivale más o menos a 15,000–20,000 tokens de entrada, lo que sale en unos cuantos centavos por reunión (una estimación; compruébala con tus propias grabaciones). Los tokens son las unidades en las que se cobra el uso de la IA. Precios actuales: [Lo vigente](https://aimayak.com/now/).
 
 🎨 **Imagínalo así:** contratas a un asistente por el precio de una suscripción. Trabaja día y noche, nunca pide vacaciones y hace una sola cosa bien: convierte las reuniones en tareas concretas. Pero revisar su trabajo sigue siendo tu responsabilidad.
 
@@ -499,7 +499,7 @@ Reemplaza `MEETING_PROMPT` con la plantilla de la sección de teoría que vaya c
 - **[OpenAI Whisper](https://github.com/openai/whisper)**: transcripción privada sin conexión, gratis
 - **[mlx-whisper](https://github.com/ml-explore/mlx-examples)**: Whisper rápido en Apple Silicon
 - **[MacWhisper](https://www.macwhisper.com)**: transcripción local en una Mac, sin código
-- **[Claude API](https://platform.claude.com/docs)**: análisis de transcripciones; calcula el costo por tokens ([Lo vigente](https://aimayak.com/es/now/))
+- **[Claude API](https://platform.claude.com/docs)**: análisis de transcripciones; calcula el costo por tokens ([Lo vigente](https://aimayak.com/now/))
 - **[ClickUp API v2](https://clickup.com/api)**: creación de tareas
 - **[ngrok](https://ngrok.com)**: un túnel para desarrollo, gratis
 - **[Railway](https://railway.app)**: hosting para el servidor de Python, precios en el sitio del proveedor

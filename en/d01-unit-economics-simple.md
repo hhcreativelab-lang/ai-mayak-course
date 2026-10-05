@@ -136,7 +136,7 @@ Take your current work or your idea. If you don't have a business yet, pick a se
 | How much money and how many hours it takes to find one customer | |
 | How many times a customer buys, or how many months they stay | |
 
-**Step 2.** Work out your margin per customer, your acquisition cost and the ratio between them. Check yourself with the [Calculators](https://aimayak.com/calculators/).
+**Step 2.** Work out your margin per customer, your acquisition cost and the ratio between them. Check yourself with the [Calculators](https://aimayak.com/en/calculators/).
 
 **Step 3.** Ask an AI assistant to check your math and find the weak spot. A sample prompt:
 

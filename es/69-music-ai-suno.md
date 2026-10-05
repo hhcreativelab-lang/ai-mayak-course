@@ -58,7 +58,7 @@ Entra a [suno.com](https://suno.com) → "Create" (Crear) → escribe un prompt 
 - Free: sin costo, 50 créditos al día, el modelo v6-mini, no se pueden descargar canciones, sin derechos comerciales
 - Pro: $8/mes (menos si pagas el año), 2,500 créditos al mes, derechos comerciales, un límite mensual de descargas de canciones
 - Premier: $24/mes (menos si pagas el año), 10,000 créditos al mes, un límite de descargas más alto, Suno Studio
-- Precios y condiciones actuales: [suno.com/pricing](https://suno.com/pricing), [Lo vigente](https://aimayak.com/es/now/)
+- Precios y condiciones actuales: [suno.com/pricing](https://suno.com/pricing), [Lo vigente](https://aimayak.com/now/)
 
 **Modos** (los nombres en la interfaz cambian):
 
@@ -212,7 +212,7 @@ sonido de logo de marca, 3 segundos, tono ascendente,
 sensación de empresa tecnológica moderna, fácil de recordar
 ```
 
-**Precio:** los efectos de sonido gastan créditos de tu plan de ElevenLabs. El plan Free te da 10,000 créditos, sin licencia comercial (a octubre de 2026; las condiciones actuales están en la página [Lo vigente](https://aimayak.com/es/now/)); para proyectos que monetizas, necesitas un plan de pago.
+**Precio:** los efectos de sonido gastan créditos de tu plan de ElevenLabs. El plan Free te da 10,000 créditos, sin licencia comercial (a octubre de 2026; las condiciones actuales están en la página [Lo vigente](https://aimayak.com/now/)); para proyectos que monetizas, necesitas un plan de pago.
 
 ---
 
@@ -264,7 +264,7 @@ Escribe 4 líneas + un coro de 2 líneas
 - **[Soundraw](https://soundraw.io)**: música de fondo, con licencia según las condiciones del servicio
 - **[Google Lyria en Gemini](https://gemini.google/overview/music-generation/)**: canciones en la app de Gemini
 - **[Freesound](https://freesound.org)**: una biblioteca de sonidos Creative Commons para mezclar
-- **Precios y versiones:** [Lo vigente](https://aimayak.com/es/now/)
+- **Precios y versiones:** [Lo vigente](https://aimayak.com/now/)
 
 ---
 

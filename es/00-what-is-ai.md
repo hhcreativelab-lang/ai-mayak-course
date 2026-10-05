@@ -224,7 +224,7 @@ Después del éxito de ChatGPT vino una etapa que la industria llama "la carrera
 
 **Imagina esta etapa:** algo así como la carrera espacial, pero entre empresas y a la vista de todos. Cada gran empresa tecnológica invirtió miles de millones de dólares en investigación de IA. Google, Microsoft, Amazon, Meta y Apple declararon la IA su principal prioridad estratégica.
 
-La carrera no ha terminado: durante 2025 y 2026, las líneas de modelos de Claude, ChatGPT, Gemini y otros se renovaron varias veces. Para la lista actual, mira la página [Lo vigente](https://aimayak.com/es/now/). En esta lección vemos la historia, no la última versión.
+La carrera no ha terminado: durante 2025 y 2026, las líneas de modelos de Claude, ChatGPT, Gemini y otros se renovaron varias veces. Para la lista actual, mira la página [Lo vigente](https://aimayak.com/now/). En esta lección vemos la historia, no la última versión.
 
 ---
 
@@ -238,7 +238,7 @@ Tres señales distinguen el momento actual de todos los anteriores:
 
 Un token es la unidad de texto más pequeña que la IA "procesa". En inglés, un token equivale más o menos a 0.75 de una palabra. La API cobra por cada millón de tokens.
 
-En apenas unos años, el precio de un modelo con el mismo nivel de calidad bajó varias veces, mientras que los modelos de primer nivel se volvieron bastante más potentes. Por ejemplo, Claude Opus 4.1 costaba $15 USD por millón de tokens de entrada, mientras que Claude Opus 5.5 cuesta $4 USD a octubre de 2026 (precios vigentes: [Lo vigente](https://aimayak.com/es/now/)). Eso pone la automatización con IA al alcance también de los negocios pequeños. Pero los modelos más potentes siguen siendo caros, y la cuenta crece según cuánto los uses, así que calcula el costo por adelantado.
+En apenas unos años, el precio de un modelo con el mismo nivel de calidad bajó varias veces, mientras que los modelos de primer nivel se volvieron bastante más potentes. Por ejemplo, Claude Opus 4.1 costaba $15 USD por millón de tokens de entrada, mientras que Claude Opus 5.5 cuesta $4 USD a octubre de 2026 (precios vigentes: [Lo vigente](https://aimayak.com/now/)). Eso pone la automatización con IA al alcance también de los negocios pequeños. Pero los modelos más potentes siguen siendo caros, y la cuenta crece según cuánto los uses, así que calcula el costo por adelantado.
 
 **Señal 2: Las API están abiertas para todos**
 
@@ -288,7 +288,7 @@ Tres ejercicios, ligeros y prácticos:
 
 ### Ejercicio 1: Tu primera conversación con Claude
 
-Abre **claude.ai** en tu navegador. Si no tienes cuenta, regístrate; el plan básico es gratis. Si Claude no está disponible donde estás, por ejemplo durante un viaje al extranjero (la lista de países donde funciona está en la [página de Anthropic](https://www.anthropic.com/supported-countries)), usa cualquier otro asistente de IA: encontrarás opciones en la sección [Herramientas](https://aimayak.com/es/tools/).
+Abre **claude.ai** en tu navegador. Si no tienes cuenta, regístrate; el plan básico es gratis. Si Claude no está disponible donde estás, por ejemplo durante un viaje al extranjero (la lista de países donde funciona está en la [página de Anthropic](https://www.anthropic.com/supported-countries)), usa cualquier otro asistente de IA: encontrarás opciones en la sección [Herramientas](https://aimayak.com/tools/).
 
 Pregunta esto:
 ```

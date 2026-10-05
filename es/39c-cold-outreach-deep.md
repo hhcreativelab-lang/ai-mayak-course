@@ -2,7 +2,7 @@
 
 **Tiempo:** unos 30 min de lectura + 45 min de práctica
 
-Los números de esta lección (tasas de respuesta, volúmenes, precios de herramientas) son guías aproximadas para hacer las cuentas, no estadísticas ni una promesa de resultados. Mide los tuyos. Para ver los precios actuales de las herramientas, revisa el sitio de cada una y la sección [Herramientas](https://aimayak.com/es/tools/).
+Los números de esta lección (tasas de respuesta, volúmenes, precios de herramientas) son guías aproximadas para hacer las cuentas, no estadísticas ni una promesa de resultados. Mide los tuyos. Para ver los precios actuales de las herramientas, revisa el sitio de cada una y la sección [Herramientas](https://aimayak.com/tools/).
 
 ---
 

@@ -32,7 +32,7 @@ Las estimaciones del tamaño del mercado de la IA agéntica varían mucho de una
 Para darte una idea de la dirección: en 2025, Gartner pronosticó que para finales de 2026 hasta el 40% de las aplicaciones empresariales incluirían agentes de IA para tareas específicas, frente a menos del 5% en 2025. Es un pronóstico, no un hecho. Pero muestra la escala: la tecnología ya está dentro de productos que la gente usa todos los días.
 
 **Lo que está pasando ahora mismo:**
-- Las funciones agénticas ya vienen integradas en productos cotidianos: Claude tiene Claude Code y Cowork, ChatGPT tiene un modo Work para tareas, y la mayoría de los asistentes grandes ya tienen modos de "agente". Qué está disponible en cada plan lo encuentras en la página [Lo vigente](https://aimayak.com/es/now/).
+- Las funciones agénticas ya vienen integradas en productos cotidianos: Claude tiene Claude Code y Cowork, ChatGPT tiene un modo Work para tareas, y la mayoría de los asistentes grandes ya tienen modos de "agente". Qué está disponible en cada plan lo encuentras en la página [Lo vigente](https://aimayak.com/now/).
 - Empresas de banca, comercio, logística, medios y otros sectores están lanzando agentes. Los resultados varían: en algunos lugares la mejora se nota de inmediato, y en otros los sistemas tienen que volver a quedar bajo supervisión humana (mira el ejemplo de Klarna más abajo).
 
 La conclusión prudente: muchas empresas intentan poner agentes en marcha, y no todas lo logran. Quienes saben construir sistemas agénticos y revisar qué tan bien funcionan tienen una ventaja, sobre todo donde no hay una persona técnica en el equipo.
@@ -45,7 +45,7 @@ La conclusión prudente: muchas empresas intentan poner agentes en marcha, y no 
 
 Todavía en 2023, los modelos de lenguaje "alucinaban" con frecuencia (una alucinación es cuando la IA inventa un dato con toda seguridad) y daban respuestas seguras pero falsas. En producción, eso es un problema serio: si un sistema envía correos a clientes de forma automática con datos falsos, eso no es automatización, es un desastre.
 
-Desde mediados de 2024, los modelos insignia (Claude 3.5 Sonnet, GPT-4o y Gemini 1.5 Pro; las líneas de modelos han cambiado varias veces desde entonces, y la lista actual está en la página [Lo vigente](https://aimayak.com/es/now/)) alcanzaron un nivel de confiabilidad con el que se pueden usar para tareas repetitivas de negocio. No son perfectos, pero sí lo bastante buenos para construir sistemas de producción con una revisión humana razonable.
+Desde mediados de 2024, los modelos insignia (Claude 3.5 Sonnet, GPT-4o y Gemini 1.5 Pro; las líneas de modelos han cambiado varias veces desde entonces, y la lista actual está en la página [Lo vigente](https://aimayak.com/now/)) alcanzaron un nivel de confiabilidad con el que se pueden usar para tareas repetitivas de negocio. No son perfectos, pero sí lo bastante buenos para construir sistemas de producción con una revisión humana razonable.
 
 **Factor 2: apareció la infraestructura**
 

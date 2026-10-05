@@ -2,7 +2,7 @@
 
 **Time:** about 30 min reading + 45 min practice
 
-The numbers in this lesson (reply rates, volumes, tool prices) are rough guides for doing the math, not statistics and not a promise of results. Measure your own. For current tool prices, check each tool's website and the [Tools](https://aimayak.com/tools/) section.
+The numbers in this lesson (reply rates, volumes, tool prices) are rough guides for doing the math, not statistics and not a promise of results. Measure your own. For current tool prices, check each tool's website and the [Tools](https://aimayak.com/en/tools/) section.
 
 ---
 

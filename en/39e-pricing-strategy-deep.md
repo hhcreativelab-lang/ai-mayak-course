@@ -333,7 +333,7 @@ Want a sanity check on your prices? Build your own table from the public pricing
 | Voice AI | fill in (per minute) | fill in | Custom |
 | AI consulting retainer | fill in | fill in | fill in |
 
-How to fill it in: take 5-10 direct competitors, open their pricing pages, and write down the prices of their three tiers and the date you checked. For an example of current prices for AI assistants and APIs, see [What's current](https://aimayak.com/now/).
+How to fill it in: take 5-10 direct competitors, open their pricing pages, and write down the prices of their three tiers and the date you checked. For an example of current prices for AI assistants and APIs, see [What's current](https://aimayak.com/en/now/).
 
 **Use it as a guide, not a law.** Your value may be higher or lower, and your pricing should reflect that.
 
@@ -784,7 +784,7 @@ If you're at 8 out of 10, you're ready to launch. If you're under 6 out of 10, g
 - **[Stripe Pricing Page](https://stripe.com/pricing)**: an example of hybrid pricing (per use + flat)
 - **[Linear Pricing Page](https://linear.app/pricing)**: a clean tier example
 - **[Notion Pricing Page](https://www.notion.com/pricing)**: a freemium + tiers reference
-- **[Prices for AI assistants and APIs](https://aimayak.com/now/)**: current numbers for your margin math
+- **[Prices for AI assistants and APIs](https://aimayak.com/en/now/)**: current numbers for your margin math
 - **Books:** "Monetizing Innovation" (Madhavan Ramanujam), "Pricing Done Right" (Tim Smith)
 
 ---

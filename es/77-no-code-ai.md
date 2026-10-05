@@ -128,7 +128,7 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 | **Integraciones de API** | Con plugins o Zapier (una plataforma que conecta distintas apps entre sí) | Cualquiera, de forma nativa |
 | **Ideal para** | Páginas de aterrizaje, MVP, pequeños negocios | SaaS, productos complejos |
 
-**Regla práctica:** si el proyecto es estándar (una página de aterrizaje, un sitio de negocio sencillo, un catálogo básico) y no necesita lógica a la medida, usa lo sin código. Si tiene un área de cuenta para clientes, integraciones o requisitos poco comunes, usa un híbrido o Claude Code puro. Precios y versiones vigentes: [Lo vigente](https://aimayak.com/es/now/).
+**Regla práctica:** si el proyecto es estándar (una página de aterrizaje, un sitio de negocio sencillo, un catálogo básico) y no necesita lógica a la medida, usa lo sin código. Si tiene un área de cuenta para clientes, integraciones o requisitos poco comunes, usa un híbrido o Claude Code puro. Precios y versiones vigentes: [Lo vigente](https://aimayak.com/now/).
 
 ---
 
@@ -281,7 +281,7 @@ Luego publícalo con el comando: npx vercel --prod
 
 Después de publicar, Claude Code te va a mostrar la URL. Mándasela al cliente para que la apruebe.
 
-**Sobre los planes gratis.** El plan Hobby de Vercel es solo para proyectos personales, no comerciales. Para el sitio de un cliente (comercial) necesitas un plan de pago de Vercel (Pro, desde $20/mes por desarrollador a octubre de 2026; consulta [Lo vigente](https://aimayak.com/es/now/)) u otro hosting, como Cloudflare Pages.
+**Sobre los planes gratis.** El plan Hobby de Vercel es solo para proyectos personales, no comerciales. Para el sitio de un cliente (comercial) necesitas un plan de pago de Vercel (Pro, desde $20/mes por desarrollador a octubre de 2026; consulta [Lo vigente](https://aimayak.com/now/)) u otro hosting, como Cloudflare Pages.
 
 ---
 

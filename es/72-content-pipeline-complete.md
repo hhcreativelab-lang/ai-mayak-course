@@ -329,7 +329,7 @@ Cron (lunes 09:00)
   → Aviso por Slack o correo: "X publicaciones listas, esperando revisión"
 ```
 
-Alternativas a n8n: **Make** (antes Integromat) y **Zapier**, ambos servicios en la nube que cobran por créditos y tareas (precios: [Lo vigente](https://aimayak.com/es/now/)). Más en [Zapier AI](79-zapier-ai.md).
+Alternativas a n8n: **Make** (antes Integromat) y **Zapier**, ambos servicios en la nube que cobran por créditos y tareas (precios: [Lo vigente](https://aimayak.com/now/)). Más en [Zapier AI](79-zapier-ai.md).
 
 ---
 
@@ -518,7 +518,7 @@ Agrega 30 entradas a calendar.json (todas con approved: true). Corre el orquesta
 - **[OpenAI Images](https://platform.openai.com/docs/guides/images)**: generar portadas (el modelo gpt-image-2; DALL-E 2 y 3 se apagaron en la API el 12 de mayo de 2026)
 - **[jq](https://jqlang.github.io/jq/)**: una herramienta de línea de comandos para trabajar con JSON en bash
 - **[Schedule](https://schedule.readthedocs.io)**: programación tipo cron en Python para corridas locales
-- **Precios y versiones:** [Lo vigente](https://aimayak.com/es/now/)
+- **Precios y versiones:** [Lo vigente](https://aimayak.com/now/)
 
 ---
 

@@ -244,8 +244,8 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 - **What they do:** Cut the LLM bill through model routing, caching and prompt compression.
 - **Key skills:**
-  - Model tiering (picking the model for the task: Haiku / Sonnet / Opus / Fable; check prices on the [What's current](https://aimayak.com/now/) page)
-  - Prompt caching (with Anthropic, reading from the cache costs a small fraction of the regular input price, while writing to the cache costs extra; current rates are on the [What's current](https://aimayak.com/now/) page)
+  - Model tiering (picking the model for the task: Haiku / Sonnet / Opus / Fable; check prices on the [What's current](https://aimayak.com/en/now/) page)
+  - Prompt caching (with Anthropic, reading from the cache costs a small fraction of the regular input price, while writing to the cache costs extra; current rates are on the [What's current](https://aimayak.com/en/now/) page)
   - Batch API: a 50% discount for asynchronous processing
   - Semantic caching
   - Request batching
@@ -369,7 +369,7 @@ These are **the builders of the AI era**. The hottest category of 2026.
 
 - **What they do:** Generate music with AI tools for commercial use (jingles, ambient, soundtracks).
 - **Key skills:**
-  - Suno (current model versions: see [What's current](https://aimayak.com/now/)), Udio, with in-depth prompting
+  - Suno (current model versions: see [What's current](https://aimayak.com/en/now/)), Udio, with in-depth prompting
   - Music theory basics (to guide the AI)
   - Audio editing (Logic, Ableton for post-production)
   - Copyright awareness

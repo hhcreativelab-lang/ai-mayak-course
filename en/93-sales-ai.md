@@ -653,7 +653,7 @@ python lead_qualification_system.py
 - **HubSpot CRM**: a CRM for storing customer data, with a free plan (check the site for paid plans; see also the lesson [CRM on autopilot](90-crm-autopilot.md))
 - **Lemlist / Instantly**: email outreach automation
 - **Notion**: a place to keep your sales playbook
-- **Claude API**: the model names in the code are as of October 2026; current prices and versions are on the [What's current](https://aimayak.com/now/) page
+- **Claude API**: the model names in the code are as of October 2026; current prices and versions are on the [What's current](https://aimayak.com/en/now/) page
 
 ---
 

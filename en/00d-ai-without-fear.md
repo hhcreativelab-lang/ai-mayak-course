@@ -31,7 +31,7 @@ You're in the right place if:
 
 Skip this lesson if:
 - You've been using AI for a while and it doesn't scare you
-- You're looking for a technical description of the models (that's not here; see the lesson [The history of AI](00-what-is-ai.md))
+- You're looking for a technical description of the models (that's not here; see the lesson [How an LLM works inside](00b-how-llm-works.md))
 
 ---
 
@@ -56,7 +56,7 @@ Research on how generative AI affects the job market (including work by the McKi
 
 ### What's GROWING because of AI
 
-New roles that didn't exist 3 years ago:
+New roles that barely existed a few years ago:
 
 - **AI auditor**: checks that AI systems work correctly and aren't biased
 - **Prompt engineer**: sets up AI for a company's specific tasks
@@ -80,7 +80,7 @@ A good translator stays. But they don't translate vacuum cleaner manuals anymore
 
 Three steps:
 
-1. **Find out** which tasks in your job are at risk (search for "automation risk [your job]" and check the [Professions](https://aimayak.com/professions/) section of this site)
+1. **Find out** which tasks in your job are at risk (search for "automation risk [your job]" and check the [Professions](https://aimayak.com/en/professions/) section of this site)
 2. **Learn** the tasks in that same job that AI won't replace (complex decisions, empathy, responsibility)
 3. **Use** AI as a tool to free up time for the hard stuff
 
@@ -105,9 +105,9 @@ Today's large models (Claude, ChatGPT, Gemini) basically work like this:
 It's complex math, but it's **not understanding**. It's "predict the next word" at the scale of the whole internet.
 
 AI doesn't have:
-- Goals (only what it's told in the prompt)
+- Goals (only what it's told in the prompt, meaning your request)
 - A body
-- Memory between sessions (unless you've turned on the memory feature)
+- Memory of its own between conversations (apps add a separate memory feature, which you can review and turn off in the settings)
 - An understanding of what death, love or fear are
 - A wish to "take over the world" (that's a movie plot)
 
@@ -222,14 +222,14 @@ Services rename their settings from time to time. Before you paste anything sens
 
 | Plan | Price | What you get |
 |---|---|---|
-| Claude Free | $0 | A limited number of messages per day, a basic model, web search, Artifacts |
-| Claude Pro | $20/month ($17/month billed yearly) | Higher limits, stronger models, Claude Code and Cowork |
+| Claude Free | $0 | A limited number of messages (the limit resets every five hours), a basic model, web search, Artifacts (documents and mini-apps Claude builds in a side window) |
+| Claude Pro | $20/month ($17/month billed yearly) | Higher limits, stronger models, Claude Code (an agent for programming) |
 | Claude Max | from $100/month | 5x or 20x the usage limits of Pro |
 | ChatGPT Go | $8/month | A low-cost plan with higher limits |
 | ChatGPT Plus | $20/month | More usage and features than Free |
 | Cursor (paid plans) | see cursor.com/pricing | An AI code editor |
 
-Plans and limits change: for current numbers, see the [What's current](https://aimayak.com/now/) page. These are US prices; in other countries they differ.
+Plans and limits change: for current numbers, see the [What's current](https://aimayak.com/en/now/) page. These are US prices; in other countries they differ.
 
 This course shows you how to use an AI assistant for some of your routine tasks. It won't replace a human assistant, but it will take part of the work off your plate.
 
@@ -280,6 +280,8 @@ If your answers are "no / yes / no," rethink how you use it. You may be overdoin
 ### The reality in 2026
 
 In the US, according to a Pew Research Center survey published in January 2025, about a quarter of teens (26%) said they had used ChatGPT for schoolwork, double the share in 2023. For newer data, see Pew's reports on how teens use AI (February 2026). The numbers differ from country to country, but the direction is the same: kids are already using it.
+
+Services do have age rules (as of October 2026): Claude is for adults 18 and older only, and ChatGPT allows users from 13 with a parent's permission. The lesson [AI for your family](00g-ai-for-family.md) covers this in detail.
 
 ### How to respond as a parent
 
@@ -336,7 +338,7 @@ Three rules:
 
 ### More in the course
 
-This topic is covered in depth in the lesson [AI regulation and compliance](61c-ai-regulation-compliance.md), with details by country, profession and typical cases.
+This topic is covered in depth in the lesson [AI regulation and compliance](61c-ai-regulation-compliance.md), with details by country, profession and typical cases. That lesson is part of the deep-dive library and isn't required for the core course.
 
 ---
 
@@ -378,7 +380,7 @@ Three levels of checking, depending on the stakes:
 
 ### More in the course
 
-AI ethics and verification are covered in depth in the lesson [AI ethics and safety](61b-ai-ethics-safety.md): ways to check answers, cross-checking tools and a list of topics where AI is chronically wrong.
+AI ethics and verification are covered in depth in the lesson [AI ethics and safety](61b-ai-ethics-safety.md) in the next module: ways to check answers, cross-checking tools and a list of topics where AI is chronically wrong.
 
 🎨 **Picture this:** AI is like a very confident coworker who sometimes talks nonsense but never admits they don't know. Double-check anything important.
 
@@ -422,7 +424,7 @@ Before you move on, check yourself (✅):
 - [ ] I understand privacy: no clients' personal information, passwords or medical details in the chat
 - [ ] I'm ready to teach my kids about AI (if I have kids), not ban it
 - [ ] I know the rules in my state and my field (if my profession is regulated)
-- [ ] I'm ready to move on: to the lesson [The history of AI](00-what-is-ai.md) or to the intro lesson [Your first 30 minutes with AI](00pre-your-first-30-minutes.md)
+- [ ] I'm ready to move on: to the lesson [How an LLM works inside](00b-how-llm-works.md), or, if I skipped the very beginning, to [Your first 30 minutes with AI](00pre-your-first-30-minutes.md)
 
 If every box is checked, you're ready. The fears are out of the way; let's get to work.
 
@@ -443,4 +445,4 @@ Every source mentioned in this lesson, so you can check for yourself:
 
 ## Next lesson
 
-→ [The history of AI](00-what-is-ai.md): where all this came from and where it's going. If you haven't done [Your first 30 minutes with AI](00pre-your-first-30-minutes.md) yet (the very beginning), you can start there.
+→ [How an LLM works inside](00b-how-llm-works.md): what goes on inside an assistant, explained without math. After that comes [The history of AI](00-what-is-ai.md). If you haven't done [Your first 30 minutes with AI](00pre-your-first-30-minutes.md) yet (the very beginning), start there.

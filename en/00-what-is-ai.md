@@ -224,7 +224,7 @@ After ChatGPT's success came a period the industry calls "the model race." Every
 
 **Picture this period:** something like the space race, except between companies and out in the open. Every major tech company poured billions of dollars into AI research. Google, Microsoft, Amazon, Meta and Apple all declared AI their top strategic priority.
 
-The race hasn't ended: over 2025 and 2026 the Claude, ChatGPT, Gemini and other model lineups were replaced several times. For the current list, see the [What's current](https://aimayak.com/now/) page. In this lesson we're looking at the history, not at the latest version.
+The race hasn't ended: over 2025 and 2026 the Claude, ChatGPT, Gemini and other model lineups were replaced several times. For the current list, see the [What's current](https://aimayak.com/en/now/) page. In this lesson we're looking at the history, not at the latest version.
 
 ---
 
@@ -238,7 +238,7 @@ Three signs set the current moment apart from all the earlier ones:
 
 A token is the smallest unit of text that AI "processes." In English, a token is about 0.75 of a word. The API charges per million tokens.
 
-In just a few years, the price of a model at the same level of quality has dropped several times over, while the top-tier models have become noticeably stronger. For example, Claude Opus 4.1 cost $15 per million input tokens, while Claude Opus 5.5 costs $4 as of October 2026 (current prices: [What's current](https://aimayak.com/now/)). That puts AI automation within reach of small businesses too. But the strongest models are still expensive, and the bill grows with how much you use, so work out the cost in advance.
+In just a few years, the price of a model at the same level of quality has dropped several times over, while the top-tier models have become noticeably stronger. For example, Claude Opus 4.1 cost $15 per million input tokens, while Claude Opus 5.5 costs $4 as of October 2026 (current prices: [What's current](https://aimayak.com/en/now/)). That puts AI automation within reach of small businesses too. But the strongest models are still expensive, and the bill grows with how much you use, so work out the cost in advance.
 
 **Sign 2: APIs are open to everyone**
 
@@ -288,7 +288,7 @@ Three exercises, light and practical:
 
 ### Exercise 1: Your first conversation with Claude
 
-Open **claude.ai** in your browser. If you don't have an account, sign up; the basic plan is free. If Claude isn't available where you are, for example while you're traveling abroad (the list of supported countries is on [Anthropic's page](https://www.anthropic.com/supported-countries)), use any other AI assistant: you'll find options in the [Tools](https://aimayak.com/tools/) section.
+Open **claude.ai** in your browser. If you don't have an account, sign up; the basic plan is free. If Claude isn't available where you are, for example while you're traveling abroad (the list of supported countries is on [Anthropic's page](https://www.anthropic.com/supported-countries)), use any other AI assistant: you'll find options in the [Tools](https://aimayak.com/en/tools/) section.
 
 Ask this:
 ```

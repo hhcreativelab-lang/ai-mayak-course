@@ -12,7 +12,7 @@ The market splits into 5 main players, each with its own specialty. Midjourney i
 
 In this lesson we'll take an honest look at price ballparks, professional workflows for different tasks, legal pitfalls, and the anti-patterns that separate an "AI picture" from production-ready material.
 
-A heads-up: this market changes faster than any other. Version names and terms in this lesson are as of October 2026; for current prices and versions, check the [What's current](https://aimayak.com/now/) page and [the Tools catalog](https://aimayak.com/tools/). Where an example doesn't work without a number, the number carries a date; everywhere else, the price is replaced with a link to the service's pricing page.
+A heads-up: this market changes faster than any other. Version names and terms in this lesson are as of October 2026; for current prices and versions, check the [What's current](https://aimayak.com/en/now/) page and [the Tools catalog](https://aimayak.com/en/tools/). Where an example doesn't work without a number, the number carries a date; everywhere else, the price is replaced with a link to the service's pricing page.
 
 🎨 **Picture this:** the kitchen of a good restaurant. The chef doesn't own one all-purpose knife; there's a whole set. A fillet knife for fish, a paring knife for vegetables, a cleaver for bones. You could cut everything with one knife, but it would be slow and sloppy. Image generation works the same way: one tool for every job means mediocre results everywhere.
 
@@ -80,7 +80,7 @@ The key question is **not "which tool is best"** but "what am I making, and for 
 
 The oldest and most recognizable player. It puts the emphasis on artistic quality. V8.2 came out in July 2026 (July 24, 2026), with improved aesthetics and personalization to your taste. Starting with V8, there's an HD mode with native 2K resolution and higher, plus more accurate text in the frame; there's an Edit Model for making changes based on references, and you can turn images into short videos.
 
-**Price:** paid subscriptions only, starting with the Basic plan (current prices: [What's current](https://aimayak.com/now/) and Midjourney's plans page). Higher plans give you more fast GPU time and hidden generations (stealth mode). There's no free plan. HD mode and some other features use up more GPU time. Exact plans: [https://www.midjourney.com/account](https://www.midjourney.com/account)
+**Price:** paid subscriptions only, starting with the Basic plan (current prices: [What's current](https://aimayak.com/en/now/) and Midjourney's plans page). Higher plans give you more fast GPU time and hidden generations (stealth mode). There's no free plan. HD mode and some other features use up more GPU time. Exact plans: [https://www.midjourney.com/account](https://www.midjourney.com/account)
 
 **Workflow:** a web app on a subscription. Before that, the main way in was a Discord bot with the slash commands `/imagine`, `/blend` and `/describe`; parameters like `--ar` go at the end of the prompt.
 
@@ -104,7 +104,7 @@ The oldest and most recognizable player. It puts the emphasis on artistic qualit
 
 DALL-E 2 and DALL-E 3 were shut off in the OpenAI API on May 12, 2026. They were replaced by the GPT Image family of models: in the API these are `gpt-image-2` and `gpt-image-2.5`. Inside ChatGPT, image generation is built in: the basic mode is available even on the free plan, and Thinking mode on paid plans. Version 2.0 (April 2026) renders text better, including text in non-Latin scripts. Version 2.5 (September 8, 2026) added sketching right in the chat, poster templates, and edits based on comments you place on the image itself.
 
-**Price:** in ChatGPT, image generation is included in your plan, within its limits. In the API you pay by tokens for `gpt-image-2`, and the cost of a single image depends on its size and quality. Current rates: [What's current](https://aimayak.com/now/) and OpenAI's pricing page. Current prices: [https://developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing)
+**Price:** in ChatGPT, image generation is included in your plan, within its limits. In the API you pay by tokens for `gpt-image-2`, and the cost of a single image depends on its size and quality. Current rates: [What's current](https://aimayak.com/en/now/) and OpenAI's pricing page. Current prices: [https://developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing)
 
 **Strengths:**
 - Handles long, descriptive prompts well
@@ -828,7 +828,7 @@ notes: |
 - **[Lexica](https://lexica.art)**: search by prompts and styles
 - **[PromptHero](https://prompthero.com)**: a library of prompts that work
 - **[US Copyright Office on AI](https://www.copyright.gov/ai/)**: the official US position on copyright for AI images
-- Current prices and versions: [What's current](https://aimayak.com/now/)
+- Current prices and versions: [What's current](https://aimayak.com/en/now/)
 
 ---
 

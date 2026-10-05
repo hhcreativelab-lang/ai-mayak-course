@@ -42,7 +42,7 @@ Gamma ([gamma.app](https://gamma.app)) is one of the fastest ways to get from an
 - Documents (nicely formatted docs)
 - Web pages (public landing pages)
 
-**Pricing (as of October 2026):** Gamma lets you start for free, generation runs on credits, and limits and export options depend on the plan. Current details: [gamma.app/pricing](https://gamma.app/pricing), [What's current](https://aimayak.com/now/).
+**Pricing (as of October 2026):** Gamma lets you start for free, generation runs on credits, and limits and export options depend on the plan. Current details: [gamma.app/pricing](https://gamma.app/pricing), [What's current](https://aimayak.com/en/now/).
 
 **What Gamma does well:**
 
@@ -362,7 +362,7 @@ Ask Claude to write a script that:
 - **[python-pptx](https://python-pptx.readthedocs.io)**: a library for generating PPTX files with code
 - **[Google Slides API](https://developers.google.com/slides)**: presentations in the cloud through an API
 - **[Canva Presentations](https://www.canva.com)**: an alternative with a big template library
-- **Prices and versions:** [What's current](https://aimayak.com/now/)
+- **Prices and versions:** [What's current](https://aimayak.com/en/now/)
 
 ---
 

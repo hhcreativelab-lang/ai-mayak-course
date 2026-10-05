@@ -42,7 +42,7 @@ En la automatización sin código hay tres jugadores principales. Cada uno tiene
 | Para quién es | Personas sin perfil técnico, pequeños negocios | Usuarios técnicos, escenarios complejos | Desarrolladores, equipos que priorizan la privacidad |
 | Dónde corre | Nube | Nube | En tu propio servidor o en la nube |
 
-Precios y versiones actuales: [Lo vigente](https://aimayak.com/es/now/).
+Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 
 🎨 **Imagínalo así:** Zapier es como un iPhone. Cuesta más, pero funciona desde que lo sacas de la caja, se ve bien y hay una app para todo. Make es como Android: más barato, más flexible, y hay que entenderle un poco. n8n es como Linux: control total, pero te vas a tener que arremangar.
 
@@ -175,7 +175,7 @@ Una transacción nueva en Stripe → la IA revisa si tiene algo raro (un monto p
 
 **Zapier Team:** a octubre de 2026, desde $69/mes con pago anual ($103.50 con pago mensual), más tareas, varios usuarios (hasta 25).
 
-Precios y versiones actuales: [Lo vigente](https://aimayak.com/es/now/).
+Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 
 **Trampas del cobro:**
 

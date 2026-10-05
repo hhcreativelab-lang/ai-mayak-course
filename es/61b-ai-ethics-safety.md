@@ -246,7 +246,7 @@ Cuando escribes datos de clientes en claude.ai, ChatGPT o cualquier otro servici
 - Los datos se guardan en los servidores de la empresa durante cierto tiempo
 - Si hay una filtración de datos, la responsabilidad puede caer sobre ti
 
-A octubre de 2026, así funciona en Claude: en los planes Free, Pro y Max, tus chats se usan para entrenar solo si está activada la opción de ayudar a mejorar Claude (claude.ai/settings/data-privacy-controls). Con esa opción activada, los datos se guardan hasta 5 años; desactivada, 30 días. Team, Enterprise y la API no entrenan modelos con tus datos de forma predeterminada. Otros servicios tienen su propia configuración; para ver cómo desactivarla, revisa la página [Lo vigente](https://aimayak.com/es/now/).
+A octubre de 2026, así funciona en Claude: en los planes Free, Pro y Max, tus chats se usan para entrenar solo si está activada la opción de ayudar a mejorar Claude (claude.ai/settings/data-privacy-controls). Con esa opción activada, los datos se guardan hasta 5 años; desactivada, 30 días. Team, Enterprise y la API no entrenan modelos con tus datos de forma predeterminada. Otros servicios tienen su propia configuración; para ver cómo desactivarla, revisa la página [Lo vigente](https://aimayak.com/now/).
 
 El **GDPR** (Reglamento General de Protección de Datos, una ley europea de 2018) y leyes parecidas en otros países exigen:
 

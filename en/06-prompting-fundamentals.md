@@ -1,38 +1,38 @@
-# How to write a good prompt for Claude Code
+# How to write a good prompt
 
-**Time:** about 35 min reading + 20 min practice
+**Time:** about 15 min reading + 20 min practice
 
 ---
 
 ## The gist
 
-A prompt (the text request you give an AI) is a work order for an agent (a program that carries out tasks on its own). A vague work order gets a poor result, and that isn't the contractor's fault. A clear work order gets an accurate result much sooner, often on the first try. This lesson teaches you how to write good work orders for Claude Code. The same principles work in any AI assistant (ChatGPT, Gemini, Claude in your browser): the only thing that changes is where you paste the text.
+A prompt is the text request you give an AI: the task you're handing it. Think of it as a work order for a contractor. A vague work order gets a poor result, and that isn't the contractor's fault. A clear work order gets an accurate result much sooner, often on the first try. This lesson teaches you how to write good work orders for any AI assistant: Claude, ChatGPT, Gemini. The examples come from everyday work: an email, a summary, a plan. If you go on to build with Claude Code later (it's an agent, a program that carries out tasks on your computer on its own), the principles stay the same, and there's a short note in this lesson for that.
 
 ---
 
 ## Key concepts
 
-- Claude Code = a brilliant contractor with access to your tools
+- An AI assistant = a capable contractor who knows only what you've told it
 - How specific your prompt is directly decides the quality of the result
 - The difference between a bad prompt and a good one, with real examples
-- Plan Mode: use it when you're not sure what you want
+- Questions and a plan first: what to do when you're not sure what you want (in Claude Code this is called Plan Mode)
 - How the quality of the output depends on how well you understand the subject
 
 ---
 
 ## Theory
 
-### Claude Code is a contractor, not a magician
+### AI is a contractor, not a magician
 
-It's tempting to think of Claude Code as a magic wand: "I say what I want and get it done." A better way to think about it:
+It's tempting to think of AI as a magic wand: "I say what I want and get it done." A better way to think about it:
 
-**Claude Code is a brilliant contractor** with a huge amount of experience who can build almost anything. But it only has access to what you've given it:
+**An AI assistant is a capable contractor** with broad knowledge who can write, calculate, explain and plan. But it only has what you've given it:
 
-- The files in the project folder you opened
-- The tools you've connected
-- The information you described in the task
+- The text of your request
+- The files and documents you attached to the conversation
+- What's already been said in this conversation (and, if the assistant's memory feature is on, some things from earlier ones)
 
-It doesn't know your brand, your customers or your design preferences unless you explain them.
+It doesn't know your company, your customers or the tone you usually write in unless you explain them.
 
 That's exactly why **vague requests get vague results**, and specific requests get precise results.
 
@@ -43,23 +43,23 @@ That's exactly why **vague requests get vague results**, and specific requests g
 Let's take apart a typical bad request:
 
 ```
-Build me a website for a dog-walking business
+Write an email to a customer about a delayed order
 ```
 
-What the agent can't tell from this request:
+What the assistant can't tell from this request:
 
-- What style and colors? (Buttoned-up corporate? Playful and bright?)
-- Which sections? (Just a home page? Prices? Reviews? A booking form?)
-- Which city or area? (Does it need a map?)
-- One page or several?
-- Does it need a booking form? Online payment?
-- What language? (English only, or Spanish too?)
-- Is there a logo?
+- Who is the customer, and how formal should you be with them?
+- What exactly is delayed, and by how long?
+- What's the reason, and should the email mention it?
+- What are you offering to make up for it: a discount, free delivery, nothing?
+- What tone: formal or warm?
+- How long should the email be?
+- Who is it from, and what contact details go at the end?
 
-The agent will make something. But that "something" will be based on its guesses, not on what you actually need. As a result you'll get:
+The assistant will write something. But that "something" will be based on its guesses, not on your situation. As a result you'll get:
 
-- 3-4 rounds of revisions ("no, that's not it, do it like this")
-- A lot of tokens used up (tokens are the small chunks of text an AI reads and writes)
+- 3-4 rounds of revisions ("no, that's not it, rewrite this part")
+- Wasted time and extra messages that count against your plan's limit
 - Frustration
 
 ### Anatomy of a good prompt
@@ -67,23 +67,22 @@ The agent will make something. But that "something" will be based on its guesses
 The same request, written well:
 
 ```
-Build a landing page for a dog-walking business in Austin, Texas.
+Write an email to a customer about a delayed order.
 
-Requirements:
-- Hero section: headline "Professional Dog Walking", subheadline "Every day, any weather, experienced walkers", button "Book a Walk"
-- Services section: 3 cards: solo walk (1 hour, $35), group walk (1.5 hours, $25), training + walk (2 hours, $55)
-- Reviews section: 3 blocks with a quote and the client's name (make them up)
-- Booking form: name, phone, dog's breed, service choice, "Request a Booking" button
-- Footer: phone (512) 555-0123, email hello@example.com, Instagram @dogwalk_austin
-
-Style: color scheme blue #2563EB and white, system font, cards with rounded corners
-Tech: HTML and CSS only, no frameworks, a single index.html file
-Responsive: works on phones
+Who I am: the manager of a small custom furniture shop.
+Who it's for: Maria, a repeat customer who ordered kitchen cabinets from us.
+What happened: we promised delivery on March 15, but the cabinet doors arrived from our supplier with defects. The new date is March 29.
+What we're offering: free delivery and installation.
+Tone: warm and respectful, no corporate jargon, no long excuses.
+Length: 120 words or fewer.
+At the end: leave a spot for my phone number and sign it "Dan, shop manager."
 ```
 
-Now the agent has very little left to guess, so the first version usually lands close to what you wanted, with far fewer rounds of revisions.
+Now the assistant has very little left to guess, so the first version usually lands close to what you wanted, with far fewer rounds of revisions.
 
-**What changed:** you gave specifics on every point the agent would otherwise have had to guess.
+**What changed:** you gave specifics on every point the assistant would otherwise have had to guess.
+
+💡 Leave real last names, phone numbers and addresses out of the prompt, and add them to the finished email yourself. The lesson on AI safety later in this module explains why.
 
 ### The five parts of a good prompt
 
@@ -91,88 +90,89 @@ Now the agent has very little left to guess, so the first version usually lands 
 
 **1. The result (what you get in the end)**
 
-Not "create an automation," but "create a Python script (Python is a programming language) that..."
+Not "help me with this report," but "turn this report into a half-page summary."
 
-**2. Context (why you need it)**
+**2. Context (why you need it and who it's for)**
 
-Context is everything in the conversation that the AI can see, so this is where you tell it the purpose: "This script will run every day at 9:00 a.m. and send..."
+Context is everything in the conversation that the assistant can see, so this is where you tell it the purpose: "My director will read the summary before a meeting with the bank and will have five minutes."
 
 **3. Constraints (what not to do)**
 
-"Don't use any outside libraries except requests. Don't create a database, just a CSV file."
+"Don't add any numbers that aren't in my text. No filler. No more than 150 words."
 
 **4. Examples (what it should look like)**
 
-"The email format: the subject line is 'Report for [date]', and the body is a table with the columns Name, Amount, Status."
+"Use this format: a headline, three takeaways with numbers, one line on the biggest risk." Even better, paste a sample: "Here's my last summary; match its style."
 
 **5. Definition of done (how to check it)**
 
-"It's done when the script runs without errors, creates a report.csv file and sends an email to test@example.com."
+"It's done when the summary covers revenue, costs and the biggest risk, and every number comes from my report."
 
 You don't always need all five; sometimes two or three are enough. But the more complex the task, the more each one matters.
 
-### Plan Mode: when you're not sure what you want
+### Plan first (Plan Mode): when you're not sure what you want
 
-🎨 **Picture this:** Plan Mode is like meeting with an architect before construction starts. You say: "I want a cozy house for a family with kids." The architect asks questions: How many kids? Do you need a garage? What's the budget? Then they bring you a plan, not a construction crew. First you look at the blueprint, and only then do you give the go-ahead to break ground.
+🎨 **Picture this:** it's like meeting with an architect before construction starts. You say: "I want a cozy house for a family with kids." The architect asks questions: How many kids? Do you need a garage? What's the budget? Then they bring you a plan, not a construction crew. First you look at the blueprint, and only then do you give the go-ahead to break ground.
 
-Sometimes you know the problem but not how to solve it technically. Or you know the result you want but don't understand what parts it should be made of.
+Sometimes you know the problem but not how to approach it. Or you can picture the result but don't understand what parts it should be made of.
 
-That's what **Plan Mode** in Claude Code is for.
-
-How to turn it on: write your request and add at the end "Before you start, ask me clarifying questions," or switch Plan Mode on in the interface. In the terminal you cycle through the modes with Shift+Tab (or type the `/plan` command); in the desktop app you pick the mode from the list next to the send button.
+There's a simple technique for that: ask the assistant to **ask you questions and show you a plan first**, and to start the actual work only after you say yes. Just add this to the end of your request: "Before you start, ask me clarifying questions." It works in any assistant.
 
 Example:
 
 ```
-I want to automate a daily email digest of real estate news for my clients.
-Before you start, ask me clarifying questions so you understand exactly what to build.
+I need to organize moving our office to a new address within one month.
+Before you make a plan, ask me clarifying questions so you understand the situation.
+Then show me a short plan, and only after I say yes, break it down day by day.
 ```
 
-The agent will ask questions like:
+The assistant will ask questions like:
 
-- "Where should the news come from: specific websites, or an API (Application Programming Interface: a way for one program to request data from another)?"
-- "How many news items should each email include?"
-- "Should it be personalized by each client's city?"
-- "Where do you keep your client list: Google Sheets, a CRM (Customer Relationship Management: software for keeping track of your customers), a CSV file?"
-- "What time should it go out?"
+- "How many people work in the office?"
+- "What's being moved: just equipment and documents, or furniture too?"
+- "Is there a hard date for being out of the old space?"
+- "What's the budget, and who's in charge of the move?"
+- "Can work stop for a day or two, or does the move have to happen with no downtime?"
 
-After you answer, the agent puts together a plan, and only then does it start building.
+After you answer, the assistant puts together a plan, and only then does it fill in the details.
 
-**When to use Plan Mode:**
+**When to use this technique:**
 
-- The task is complicated and has many moving parts
+- The task is big and has many moving parts
 - You're not sure how to break it into pieces
-- You want to make sure the agent understood you before it starts
+- You want to make sure the assistant understood you before it starts
 - A mistake would be expensive (a lot of time or money)
+
+💡 **If you go on to build with Claude Code.** This technique has its own mode there, called Plan Mode: Claude studies the project and proposes a plan first, and starts changing files only after you approve it. In the terminal (a window for typing text commands) you cycle through the modes with Shift+Tab or type the `/plan` command; in the desktop app you pick the mode from the list next to the send button. The five parts of a prompt are the same there: result, context, constraints, an example and a definition of done.
 
 ### Quality depends on how well you understand the work
 
 Here's an uncomfortable truth that's worth accepting early on:
 
-**The better you understand the subject, the better the agent's result.**
+**The better you understand the subject, the better the result.**
 
-If you ask an agent to build newsletter automation but don't understand how email newsletters work (SPF/DKIM, unsubscribes, bounce handling), you won't be able to tell whether the agent did a good job. You'll get something that works in theory but may have hidden problems.
+Say you ask an assistant to put together a budget for a kitchen remodel, but you don't know what goes into one: materials, labor, permits, delivery, debris removal, a cushion for surprises. Then you won't be able to tell whether it did a good job. You'll get a tidy table that looks convincing but may be missing half the line items.
 
-If you do understand how newsletters work, you'll give the right instructions, notice when the agent misses something important and be able to check the result.
+If you do understand how a remodel budget works, you'll give the right instructions, notice when the assistant misses something and be able to check the result.
 
-This doesn't mean you have to become a developer. But you do need to understand the **business process** you're automating:
+This doesn't mean you have to become an expert in everything. But you do need to understand the **task you're handing off**:
 
-- How does the process work today (by hand)?
-- What edge cases come up (the unusual situations that break the normal routine)?
-- What does "done right" mean for this process?
+- How is it done today (by hand)?
+- What unusual cases come up?
+- What does "done right" mean for this task?
 
-That's why the best builders of agent systems are people who understood a field first (marketing, sales, finance, logistics) and learned the tools afterward.
+That's why the people who usually get the most out of AI are the ones who know their own field well (marketing, sales, finance, logistics) and learn the tool afterward.
 
 ### Revisions are normal, not a failure
 
 🎨 **Picture this:** an artist makes thumbnail sketches, then a rough draft, then the detailed painting. Nobody expects a finished canvas from the first brushstroke. Your first prompt is your rough sketch. The goal isn't "perfect from scratch" but "reach the goal in as few steps as possible."
 
-Even a well-written prompt rarely gives a perfect result on the first try. And that's fine.
+A revision is one more pass: you look at the answer and ask for a fix. Even a well-written prompt rarely gives a perfect result on the first try. And that's fine.
 
-The pattern for working with an agent (the percentages below are a rough guide, not a measurement):
+How working with an assistant usually goes (the percentages below are a rough guide, not a measurement):
 
 1. You write a good prompt → you get 70-80% of what you need
-2. You see what's off → you send a follow-up prompt with specific fixes
+2. You see what's off → you ask for specific fixes in the same chat
 3. You get to 90-95% → one more pass on the small details
 4. Done
 
@@ -182,17 +182,17 @@ A bad prompt gets you 30-40% on the first try and needs 5-7 revisions.
 
 A good prompt gets you 70-80% on the first try and needs 1-2 revisions.
 
-The difference is 3-4 revisions. On complex tasks, that's hours of work.
+The difference is several extra rounds on every task. On big tasks, that's hours of work.
 
 ### Cheat sheet: bad prompt → good prompt
 
 | Bad prompt | Good prompt | Why it's better |
 |---|---|---|
-| "Make a website" | "Create a landing page in HTML+CSS, one page, blue and white, sections: hero, services, form" | Specific result, style, structure |
-| "Write a script" | "Write a Python script that reads a CSV, keeps the rows where the amount is > 1000 and saves them to a new CSV" | Language, input, logic, output |
-| "Automate email" | "Create a workflow (a sequence of steps that runs on its own): every Monday, collect 5 news items from RSS, generate an HTML email and send it through the Gmail API to the list in Google Sheets" | Schedule, source, format, channel, recipients |
-| "Fix the bug" | "In main.py, line 42: TypeError: expected str, got int. The process_data function gets a number instead of a string from the API response" | File, line, error type, context |
-| "Make it look nice" | "Add: 8px rounded corners, card shadows, 24px spacing between sections, Inter font" | Specific design settings |
+| "Write an email" | "Write an email to a client about moving our meeting from June 10 to June 12: polite, 80 words or fewer, offer two time slots" | Who it's for, what it's about, tone, length |
+| "Summarize this" | "Summarize this report in half a page for my director: the three main takeaways and one risk, using only facts from the text" | Length, reader, structure, no making things up |
+| "Make a plan" | "Make a two-week plan for getting ready for my vacation: a day-by-day to-do list, plus a separate list of what to hand off to a coworker" | Time frame, format, what matters |
+| "Fix this text" | "Fix the errors and typos in this text. Don't change the meaning or the style. List your changes at the end" | What to fix, what to leave alone, how to report back |
+| "Make it look nice" | "Reformat this text: short paragraphs, subheadings, a bulleted list instead of the long run-on sentence" | Specific settings instead of "nice" |
 
 ---
 
@@ -202,32 +202,34 @@ The difference is 3-4 revisions. On complex tasks, that's hours of work.
 
 **Step 1: The bad prompt (5 min):**
 
-1. Open Claude Code in an empty folder
+1. Open your assistant (Claude, ChatGPT or Gemini) and start a new chat
 2. Type this prompt exactly as written:
    ```
-   Create a form for collecting customer inquiries
+   Write a job posting for our company
    ```
 
-3. Look at what you got. Write down: what's missing? What did the agent decide for you?
+3. Look at what you got. Write down: what's missing? What did the assistant decide for you?
 
 **Step 2: The good prompt (10 min):**
 
-1. Write a new prompt using the five parts:
-   - **Result:** "Create an HTML form..."
-   - **Context:** "...for clients to book a first consultation about [your topic]"
-   - **Fields:** list the exact fields you need
-   - **Style:** colors, fonts, the overall look
-   - **Definition of done:** "The form must work without any JavaScript frameworks" (JavaScript is a programming language)
-2. Run this prompt
+1. Start another new chat, so the first answer doesn't influence the second, and write a prompt using the five parts:
+   - **Result:** "Write a job posting for a [job title]..."
+   - **Context:** "...at [your company, or a made-up one]. The posting will go on [website or social network]. We're looking for someone who [the main requirement]"
+   - **Constraints:** length and what to leave out, for example: "150 words or fewer, no phrases like 'fast-paced environment' or 'we're like a family'"
+   - **Example:** describe the format ("short paragraphs and bulleted lists") or paste a posting you like
+   - **Definition of done:** "The posting covers responsibilities, requirements, pay and benefits, and how to apply"
+2. Send this prompt
 3. Compare the result with the first one
 
 **Step 3: Review (5 min):**
 
 Answer these for yourself:
 
-- How many revisions did the first prompt need?
-- How many did the second one need?
-- What did you have to explain separately the first time?
+- How many rounds of revisions would the first posting have needed before you could publish it?
+- How many would the second one need?
+- Which parts of the second prompt would you have had to explain separately the first time?
+
+Here's an easy way to check yourself: the second posting has all four blocks from your definition of done, while in the first one the assistant made some of them up or left them out.
 
 ---
 
@@ -237,45 +239,45 @@ Answer these for yourself:
 
 ✅ **Instead:** Start with the essentials (result + context), get a first version, then refine step by step. Two or three short prompts beat one giant one.
 
-❌ **Mistake:** Not stating your constraints: "don't use frameworks," "Python only," "no database."
+❌ **Mistake:** Not stating your constraints: "no longer than one page," "no jargon," "don't make up numbers."
 
-✅ **Instead:** Without constraints, the agent picks its own set of technologies. If it matters to you what gets used, say so explicitly. Constraints save you revisions.
+✅ **Instead:** Without constraints, the assistant decides for itself how long the answer is and what kind of language it uses. If it matters to you, say so explicitly. Constraints save you revisions.
 
-❌ **Mistake:** Not checking the result and deploying it (deploying means putting it live, publishing it) "as is."
+❌ **Mistake:** Not checking the result and passing it along "as is."
 
-✅ **Instead:** Always check: does it run without errors, does it do what you expected, does it handle edge cases? Use Plan Mode if you're not sure how to break the task down.
+✅ **Instead:** Always check: are the facts and numbers right (an assistant can make mistakes and make things up), is the tone right, is there anything extra? If you're not sure how to break the task down, ask for questions and a plan first.
 
 ---
 
 ## Tools and resources
 
-- **[Claude Code](https://code.claude.com/docs/en/overview)**: the main tool in this lesson
-- **[Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)**: the official guide to writing prompts
-- **[Anthropic API docs](https://docs.anthropic.com/en/api/getting-started)**: API documentation (to understand how the model works)
-- **[Claude Code docs: CLI usage](https://code.claude.com/docs/en/getting-started)**: how to use Claude Code effectively
+- **[Claude Code](https://code.claude.com/docs/en/overview)**: Anthropic's agent for people who go on to build; you don't need it for this lesson
+- **[Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)**: Anthropic's official guide to writing prompts
+- **[Anthropic API docs](https://docs.anthropic.com/en/api/getting-started)**: documentation for developers who connect Claude to their own software; beginners don't need it
+- **[Claude Code docs: setup](https://code.claude.com/docs/en/getting-started)**: how to install and set up Claude Code
 
-→ See the lesson [The Default Shift](03-default-shift-mindset.md): the contractor mindset behind good prompts
+→ See the lesson [The Default Shift](03-default-shift-mindset.md): how to give an assistant tasks the way you'd give them to a contractor (it comes next)
 
-→ See the lesson [Installing and setting up Claude Code](05-setup.md): if you haven't set up your workspace yet
+→ Optional, from the library: [Installing and setting up Claude Code](05-setup.md): if you decide to install Claude Code
 
-→ See the lesson [CLAUDE.md](07-claude-md.md): a system prompt that's always on (so you don't have to repeat your context)
+→ Optional, from the library: [CLAUDE.md](07-claude-md.md): a standing set of instructions for Claude Code, so you don't have to repeat your context in every request
 
-→ See the lesson [Managing context: advanced techniques](29-context-management-advanced.md): how to scale your prompting up for complex systems
+→ Optional, from the library: [Managing context: advanced techniques](29-context-management-advanced.md): how to work with prompts in large projects
 
 ---
 
 ## Key takeaways
 
-> A bad prompt = a bad work order. The agent will make something, but not what you need.
+> A bad prompt = a bad work order. The assistant will make something, but not what you need.
 
 > The five parts of a good prompt: result, context, constraints, examples, definition of done.
 
-> Plan Mode: use it when you don't know how to break a task into parts. The agent will ask the right questions.
+> Not sure how to break a task into parts? Ask for questions and a plan first. In Claude Code there's a Plan Mode for this.
 
-> The quality of the result depends on how well you understand the subject. The agent builds from your blueprints.
+> The quality of the result depends on how well you understand the subject. The assistant builds from your blueprints.
 
 ---
 
 ## Next lesson
 
-→ [CLAUDE.md: your project's system prompt](07-claude-md.md)
+→ [The Default Shift](03-default-shift-mindset.md): how to make AI your first helper at work

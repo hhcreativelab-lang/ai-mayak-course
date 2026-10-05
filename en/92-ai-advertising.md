@@ -512,7 +512,7 @@ print(analysis["analysis"])
 - **Flux**: bfl.ai, the Black Forest Labs site (generating ad images from a prompt)
 - **Meta Ad Library**: facebook.com/ads/library (see the ads your competitors are running)
 - **Google Keyword Planner**: Google's keyword planning tool
-- **Anthropic SDK**: for building Claude into your ad workflows; the model names in the code are as of October 2026. Current prices and versions: [What's current](https://aimayak.com/now/)
+- **Anthropic SDK**: for building Claude into your ad workflows; the model names in the code are as of October 2026. Current prices and versions: [What's current](https://aimayak.com/en/now/)
 
 ---
 

@@ -128,7 +128,7 @@ That creates a concrete business opportunity: becoming a "builder for hire," som
 | **API integrations** | Through plugins or Zapier (a platform that connects different apps to each other) | Any of them, natively |
 | **Best for** | Landing pages, MVPs, small businesses | SaaS, complex products |
 
-**Rule of thumb:** if the project is standard (a landing page, a simple business site, a basic catalog) and doesn't need custom logic, go no-code. If it has a customer account area, integrations or unusual requirements, go hybrid or pure Claude Code. Current prices and versions: [What's current](https://aimayak.com/now/).
+**Rule of thumb:** if the project is standard (a landing page, a simple business site, a basic catalog) and doesn't need custom logic, go no-code. If it has a customer account area, integrations or unusual requirements, go hybrid or pure Claude Code. Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 ---
 
@@ -281,7 +281,7 @@ Then deploy with the command: npx vercel --prod
 
 After the deploy, Claude Code will show you the URL. Send it to the client for approval.
 
-**About free plans.** Vercel's Hobby plan is only for personal, non-commercial projects. For a client's (commercial) site you need a paid Vercel plan (Pro, from $20/month per developer as of October 2026; see [What's current](https://aimayak.com/now/)) or a different host, such as Cloudflare Pages.
+**About free plans.** Vercel's Hobby plan is only for personal, non-commercial projects. For a client's (commercial) site you need a paid Vercel plan (Pro, from $20/month per developer as of October 2026; see [What's current](https://aimayak.com/en/now/)) or a different host, such as Cloudflare Pages.
 
 ---
 

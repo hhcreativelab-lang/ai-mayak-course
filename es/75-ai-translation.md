@@ -41,7 +41,7 @@ Las mismas habilidades sirven también para la traducción de todos los días: u
 | Integración MCP | ✅ oficial | ⚠️ revisa la documentación | ✅ nativa |
 | Idiomas | inglés, español y otros idiomas principales | una enorme cantidad, incluidos los poco comunes | todos los principales |
 
-Las calificaciones de calidad de la tabla son una guía aproximada del autor, no una prueba independiente: pruébalas con tus propios textos. Precios y versiones vigentes: [Lo vigente](https://aimayak.com/es/now/).
+Las calificaciones de calidad de la tabla son una guía aproximada del autor, no una prueba independiente: pruébalas con tus propios textos. Precios y versiones vigentes: [Lo vigente](https://aimayak.com/now/).
 
 **En resumen:** DeepL para traducir en volumen contenido estructurado (fichas de producto, plantillas de correo, documentos). Claude para la adaptación cultural, la escritura creativa y el material especializado. Google Translate como respaldo para idiomas poco comunes.
 
@@ -395,7 +395,7 @@ Lo que pasa por el flujo:
 - Claude (adaptación, cerca del 10% del volumen): por token, normalmente una parte pequeña del presupuesto
 - **Total:** normalmente mucho menos que pagarle a un traductor freelance para traducir todo desde cero. Las tarifas dependen del mercado y del idioma, así que haz tus propias cuentas.
 
-Precios y versiones vigentes: [Lo vigente](https://aimayak.com/es/now/).
+Precios y versiones vigentes: [Lo vigente](https://aimayak.com/now/).
 
 ---
 

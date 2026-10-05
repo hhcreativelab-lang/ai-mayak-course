@@ -329,7 +329,7 @@ Cron (Monday 09:00)
   → Slack or email notification: "X posts ready, waiting for review"
 ```
 
-Alternatives to n8n: **Make** (formerly Integromat) and **Zapier**, both cloud services that charge by credits and tasks (prices: [What's current](https://aimayak.com/now/)). More in [Zapier AI](79-zapier-ai.md).
+Alternatives to n8n: **Make** (formerly Integromat) and **Zapier**, both cloud services that charge by credits and tasks (prices: [What's current](https://aimayak.com/en/now/)). More in [Zapier AI](79-zapier-ai.md).
 
 ---
 
@@ -518,7 +518,7 @@ Add 30 entries to calendar.json (all with approved: true). Run the orchestrator 
 - **[OpenAI Images](https://platform.openai.com/docs/guides/images)**: generating covers (the gpt-image-2 model; DALL-E 2 and 3 were turned off in the API on May 12, 2026)
 - **[jq](https://jqlang.github.io/jq/)**: a command-line tool for working with JSON in bash
 - **[Schedule](https://schedule.readthedocs.io)**: cron-like scheduling in Python for local runs
-- **Prices and versions:** [What's current](https://aimayak.com/now/)
+- **Prices and versions:** [What's current](https://aimayak.com/en/now/)
 
 ---
 

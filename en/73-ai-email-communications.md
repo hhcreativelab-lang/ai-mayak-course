@@ -10,13 +10,15 @@ Professionals spend a noticeable chunk of the workday on email (check your own t
 
 This isn't "AI instead of you." It's AI as a filter and a first draft. You still click "Send." You just spend a fraction of the time getting there.
 
+How this lesson is organized: the no-code route comes first. You sort email and get drafts in a regular Claude chat. That's enough for everyday email, and the practice starts there. Sections and tasks marked "for builders" contain Python code: they're only for people who are putting together their own automation, and everyone else can skip them.
+
 🎨 **Picture this:** an AI email assistant is like the White House press secretary. The President doesn't write every answer personally. The press secretary knows the President's positions and style, knows what the President would never say, and prepares the text. The President reads it, changes a couple of words and signs off. The power and the decisions stay with the President; what gets freed up is time.
 
 ---
 
 ## Key concepts
 
-- **Gmail MCP**: Claude reads your inbox, sorts your emails and writes draft replies right inside Claude Code. (MCP is a standard way to plug outside apps and services into Claude.)
+- **Connecting Gmail**: Claude reads your inbox, sorts your emails and writes draft replies. You connect your mail with a ready-made connector or through MCP (a standard way to plug outside apps and services into Claude).
 - **Auto-drafts**: a draft reply written in your style; you approve it instead of writing it
 - **Inbox Zero workflow**: in the morning Claude goes through everything, and you get a prioritized list
 - **Apollo / Hunter.io**: tools for finding the right email addresses and doing cold outreach
@@ -40,28 +42,30 @@ With AI:
 
 - Claude reads everything and sorts it: urgent / waiting on your reply / just information / spam
 - For the 20 emails that need a reply, it writes drafts
-- You read the drafts, edit about 20% of them and approve the rest
+- You read the drafts, edit some of them and approve the rest
 - Total: 25-30 minutes
 
 In this made-up example, you save roughly 70 to 115 minutes a day. Plug in your own numbers.
 
 ---
 
-### Gmail MCP: Claude reads your inbox
+### Connecting Gmail: Claude reads your inbox
 
-There are several ways to connect Gmail to Claude. Once it's connected, Claude can read your emails, search them by criteria and write draft replies. You talk to Claude the way you'd talk to an assistant.
+The simplest way connects nothing: copy an email into a Claude chat and ask for a draft reply. It works on any plan and with any email provider, and for a few emails a day it's all you need.
+
+If you get a lot of email, you can connect your mailbox. Then Claude reads your emails itself, searches them by criteria and writes draft replies. You talk to Claude the way you'd talk to an assistant.
 
 **Ways to connect (as of October 2026):**
 
-- **The Gmail / Google Workspace connector in Claude's settings** (on paid plans): the simplest route. Check Claude's help center to see which actions it supports.
-- **Google's official Gmail MCP server** (Google Workspace Developer Preview). According to Google's documentation, it searches emails and threads, reads messages, creates drafts and applies labels; sending email is not on its list of capabilities. You'll need a Google Cloud project, an OAuth client and a Claude plan that supports custom connectors.
+- **The Gmail connector in Claude** (Pro, Max, Team and Enterprise plans): the simplest route. In Claude, open Customize → Connectors, find Gmail, select Connect and sign in to your Google account. Then turn it on in a chat: the + button below the message box → Connectors → Gmail. According to Claude's documentation, the connector only reads and searches email: it can't create, send or change messages. Claude writes the draft in the chat, and you move it into your mailbox.
+- **Google's official Gmail MCP server** (Google Workspace Developer Preview). According to Google's documentation, it searches emails and threads, reads messages, creates drafts and applies labels; sending email is not on its list of capabilities. You'll need a Google Cloud project, an OAuth client (a way to sign in through Google) and a Claude Pro, Max, Team or Enterprise plan. This route is for builders.
 - **Third-party MCP servers and hubs** (for example, Composio): convenient, but a third party gets access to your email. Check the permissions, the company's reputation and its data retention policy.
 
 **Access rule:** give the minimum permissions (read and draft), and keep sending for yourself. If it's a work account, check your employer's AI policy before you connect anything.
 
 ```
-# Google's official Gmail server connects to Claude as a custom connector:
-# Settings → Connectors → Add custom connector
+# For builders: Google's official Gmail server connects to Claude as a custom connector:
+# Customize → Connectors → Add custom connector
 # Remote MCP server URL: https://gmailmcp.googleapis.com/mcp/v1
 # The OAuth Client ID and Secret are created in Google Cloud Console
 # (instructions: developers.google.com/workspace/gmail/api/guides/configure-mcp-server)
@@ -84,11 +88,11 @@ Claude reads the emails and gives you a table with the categories plus ready-mad
 
 ---
 
-### Auto-drafts: a CLAUDE.md for your email style
+### Drafts in your style: a style description for Claude
 
-To make the drafts sound like you and not like boilerplate corporate text, describe your style in the project's CLAUDE.md file (Claude Code reads it as standing instructions) or in a system prompt.
+To make the drafts sound like you and not like boilerplate corporate text, describe your style. In a regular chat, paste that description at the start of the conversation (and keep it in your notes so it's handy). In Claude Code, the same description goes in the project's CLAUDE.md file, which Claude Code reads as standing instructions. In code, you pass it as the system prompt.
 
-**Sample CLAUDE.md for an email assistant:**
+**Sample style description (in Claude Code, this is the content of your CLAUDE.md file):**
 
 ```markdown
 # My email style
@@ -117,9 +121,9 @@ know that our consultations are available under a variety of pricing plans..."
 
 ---
 
-### Python script: auto-drafting a reply
+### For builders: a Python script that drafts a reply
 
-If you want to build this into your own system without MCP, call the API directly:
+This section is optional. It's for people who write code and want to build drafts into their own system through the API (the way programs talk to Claude directly, without the chat). If you don't code, skip the code and go on to the section on email sequences.
 
 ```python
 import anthropic
@@ -135,7 +139,7 @@ def draft_reply(incoming_email: str, context: str = "") -> str:
     """
     response = client.messages.create(
         model="claude-sonnet-5-5",  # current model IDs: see Anthropic's documentation
-        max_tokens=500,
+        max_tokens=4000,  # generous on purpose: the model's "thinking" counts toward this limit
         system="""You are a personal email assistant. You write replies in this style:
         
         - Short and to the point: no more than 100-150 words
@@ -158,7 +162,8 @@ Extra context for the reply: {context if context else 'none'}
 Write a draft reply."""
         }]
     )
-    return response.content[0].text
+    # The reply may contain "thinking" blocks: keep only the text
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 def classify_email(email_text: str) -> dict:
@@ -184,7 +189,8 @@ Email:
         }]
     )
     import json
-    return json.loads(response.content[0].text)
+    text = "".join(block.text for block in response.content if block.type == "text")
+    return json.loads(text)
 
 
 # Example usage
@@ -214,14 +220,14 @@ if __name__ == "__main__":
 
 ### Apollo + Hunter.io: AI for cold email
 
-Apollo and Hunter.io solve the "find this person's email address" problem. Claude turns the contacts you find into personalized emails.
+This section is for people who are looking for clients; you can come back to it when you reach the module on first clients. Apollo and Hunter.io solve the "find this person's work email address" problem. Claude turns the contacts you find into personalized emails. Without code, you do it by hand: look up the address on the Apollo or Hunter website, paste what you know about the person into a Claude chat and ask for an email that follows the rules in the prompt below. The connections and the script are for builders.
 
 🎨 **Picture this:** Apollo plus Claude is like a fishing net with smart bait. The net (Apollo) finds the right people. The bait (Claude) is made for each one personally, not stamped out from a template. The fish (a potential client) is more likely to bite.
 
 ```
 # How you connect depends on the hub or service you choose:
 # see the Apollo, Hunter or MCP hub documentation for the command format and how to sign in.
-# Don't put API keys in the request URL: keep them in environment variables.
+# Keep API keys in environment variables and send them in a request header, not in the URL.
 ```
 
 **A word on cold email:** emailing people you don't know is regulated by anti-spam and privacy laws (what gives you grounds to email someone, an easy way to unsubscribe, how you store contacts). In the US, commercial email falls under the federal CAN-SPAM Act; other countries have their own rules. Check the rules where you are and where your recipient is. Claude writes the text; responsibility for sending it stays with you.
@@ -261,8 +267,9 @@ def find_email(domain: str, first_name: str, last_name: str) -> str:
             "domain": domain,
             "first_name": first_name,
             "last_name": last_name,
-            "api_key": HUNTER_API_KEY,
-        }
+        },
+        # The key goes in a header, not in the URL, so it doesn't end up in logs and history
+        headers={"X-API-KEY": HUNTER_API_KEY},
     )
     data = response.json()
     if data.get("data", {}).get("email"):
@@ -280,7 +287,7 @@ def write_cold_email(
     
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=300,
+        max_tokens=4000,  # generous on purpose: the model's "thinking" counts toward this limit
         system=f"""You write personalized cold emails in this language: {language}.
         
         Rules:
@@ -302,7 +309,8 @@ I'm open to referral partnerships and co-op deals with other real estate agencie
 Write a cold email."""
         }]
     )
-    return response.content[0].text
+    # The reply may contain "thinking" blocks: keep only the text
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 # Contact list for outreach
@@ -349,7 +357,7 @@ print("Saved to cold_outreach.csv")
 
 ### Email sequence: from sign-up to a deal
 
-An email sequence is a chain of emails that goes out automatically after someone signs up or takes an action. Claude writes all the emails once; you set them up in Lemlist (or another email service) or in your own script.
+An email sequence is a chain of emails that goes out automatically after someone signs up or takes an action. Claude writes all the emails once. Without code: ask Claude in a chat to write the four emails in the diagram below, then paste them into an email service (Lemlist or another one) where you set the schedule. Give people a way to unsubscribe in every email. The script under the diagram is for builders.
 
 ```
 Someone fills out a form on your website
@@ -387,7 +395,7 @@ def generate_welcome_email(
     
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=400,
+        max_tokens=4000,  # generous on purpose: the model's "thinking" counts toward this limit
         system="""You write a welcome email to someone who is interested
         in buying or renting a home in San Antonio.
         
@@ -403,7 +411,8 @@ Moving from: {city_of_origin}
 Write a welcome email."""
         }]
     )
-    return response.content[0].text
+    # The reply may contain "thinking" blocks: keep only the text
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 def select_value_content(interest: str, knowledge_base: dict) -> str:
@@ -425,7 +434,7 @@ Pick the most relevant content and write a 120-150 word email.
 Use specific facts from the content you picked."""
         }]
     )
-    return response.content[0].text
+    return "".join(block.text for block in response.content if block.type == "text")
 
 
 # Knowledge base (in real life it's read from files or a database; the data below is made up, for illustration only)
@@ -455,24 +464,28 @@ print(value_email)
 
 ### Inbox Zero workflow: a 20-minute morning routine
 
-A practical routine for every day:
+Inbox Zero is the habit of clearing your inbox completely every day. A practical routine:
 
 ```
-7:00 a.m.  Claude (via Gmail MCP or a script) reads every new email from overnight
+7:00 a.m.  Claude reads every new email from overnight
+           No code: you open a chat with Gmail connected and use the prompt from the Connecting Gmail section
+           With code: the script runs on its own
            Sorts them: urgent / normal / FYI / spam
            Writes drafts for everything that needs a reply
 
-7:10 a.m.  You open the brief (a file, or a message to yourself in Slack or email)
+7:10 a.m.  You open the brief (the reply in your chat; for the script, a file or a message to yourself in Slack or email)
            You see: 3 urgent, 8 normal, 12 FYI
 
 7:10-7:30  You go through the drafts for the urgent emails
-           Edit if needed (usually 20-30% need changes)
+           Edit if needed (some drafts always need changes)
            Send
            Normal ones: schedule for this evening or tomorrow
            FYI: archive with one click
 
 7:30 a.m.  Inbox Zero. Your day has started.
 ```
+
+The script below is for builders: it does the same sorting and drafting without the chat.
 
 ```python
 import anthropic
@@ -517,7 +530,9 @@ Body: {email['body'][:500]}"""
         )
         
         import json
-        classification = json.loads(classification_response.content[0].text)
+        classification = json.loads(
+            "".join(block.text for block in classification_response.content if block.type == "text")
+        )
         category = classification["category"]
         
         email_data = {
@@ -530,7 +545,7 @@ Body: {email['body'][:500]}"""
         if classification["needs_reply"] and category in ["urgent", "normal"]:
             draft_response = client.messages.create(
                 model="claude-sonnet-5-5",
-                max_tokens=300,
+                max_tokens=4000,  # generous on purpose: the model's "thinking" counts toward this limit
                 system=f"""You are an email assistant. About the person you write for:
 {your_context}
 
@@ -544,7 +559,10 @@ Subject: {email['subject']}
 Body: {email['body']}"""
                 }]
             )
-            email_data["draft"] = draft_response.content[0].text
+            # The reply may contain "thinking" blocks: keep only the text
+            email_data["draft"] = "".join(
+                block.text for block in draft_response.content if block.type == "text"
+            )
         
         results[category].append(email_data)
     
@@ -611,7 +629,7 @@ print(brief)
 
 ### Multilingual email: one system, two languages
 
-If some of your clients write in English and others write in Spanish, Claude can figure out the language and reply in it automatically. You still read every draft before it goes out; if you don't read Spanish yourself, the English summary tells you what the email is about, and it's worth having a fluent speaker look over anything important.
+If some of your clients write in English and others write in Spanish, Claude can figure out the language and reply in it automatically. Without code: paste the email into a chat and ask Claude to "reply in the email's language and give me a one-line summary in English." You still read every draft before it goes out; if you don't read Spanish yourself, the English summary tells you what the email is about, and it's worth having a fluent speaker look over anything important. The code below is for builders (it continues the script from the previous section).
 
 ```python
 def multilingual_reply(incoming_email: str, your_context: str) -> dict:
@@ -621,7 +639,7 @@ def multilingual_reply(incoming_email: str, your_context: str) -> dict:
     """
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=500,
+        max_tokens=4000,  # generous on purpose: the model's "thinking" counts toward this limit
         system=f"""You are a bilingual email assistant (English + Spanish).
 
 About the person you write for:
@@ -645,7 +663,9 @@ Return JSON:
         }]
     )
     import json
-    return json.loads(response.content[0].text)
+    # The reply may contain "thinking" blocks: keep only the text
+    text = "".join(block.text for block in response.content if block.type == "text")
+    return json.loads(text)
 
 
 # Test
@@ -664,15 +684,17 @@ print(f"\nDraft reply:\n{result['draft']}")
 
 ## Practice
 
-1. Connect Gmail to Claude: use the Gmail / Google Workspace connector in Claude's settings or Google's official Gmail MCP server (see above). Give it the minimum permissions: read and draft, no sending.
+Tasks 1-3 are done in a regular chat, with no code. Tasks 4 and 5 are for builders.
 
-2. Write an `email_classifier.py` script with the `classify_email` and `draft_reply` functions from this lesson. Test it on 5 emails from your inbox (strip out client details first: don't send other people's personal information to services you don't have permission to share it with).
+1. Pick 5 real emails you need to answer. Paste them into a Claude chat one at a time and ask for a draft reply. Strip out other people's personal details first: don't send them to services you don't have permission to share them with. You're done when you have 5 drafts.
 
-3. Create a CLAUDE.md for your email assistant: describe your style, list 3-5 banned phrases, and add an example of a good reply and an example of a bad one.
+2. Write a description of your style, following the sample in this lesson: your rules, 3-5 banned phrases, an example of a good reply and an example of a bad one. Paste it at the start of a new chat and ask for drafts of the same 5 emails. Compare them with the first round: the second set should sound like you. (If you work in Claude Code, save the description as CLAUDE.md.)
 
-4. Set up `process_inbox` + `format_daily_brief`, run them on your own email and see how good the drafts are.
+3. If you're on a paid Claude plan, connect Gmail with the connector (Customize → Connectors, see above) and do a morning triage: use the prompt from the Connecting Gmail section and check that Claude sorted your emails into urgent, normal and FYI correctly. No paid plan? Do the same with 10 emails pasted into a chat.
 
-5. Pick one cold outreach task (5-10 contacts) and try `write_cold_email` on real data.
+4. For builders: write an `email_classifier.py` script with the `classify_email` and `draft_reply` functions from this lesson and test it on the same 5 emails. Then set up `process_inbox` + `format_daily_brief`, run them on your own email and see how good the drafts are. If you connect Google's official Gmail MCP server, give it the minimum permissions: read and draft, no sending.
+
+5. For builders who are looking for clients: pick one cold outreach task (5-10 contacts) and try `write_cold_email` on real data. Before you send anything, check every email and the bulk-email rules where your recipient lives.
 
 ---
 
@@ -686,7 +708,7 @@ print(f"\nDraft reply:\n{result['draft']}")
 - **[Lemlist](https://lemlist.com)**: cold email with automatic follow-ups (terms on the site)
 - **[Instantly.ai](https://instantly.ai)**: an alternative to Lemlist for sending at volume (terms on the site)
 - **[anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python)**: for the scripts in this lesson
-- **Prices and versions:** [What's current](https://aimayak.com/now/)
+- **Prices and versions:** [What's current](https://aimayak.com/en/now/)
 
 ---
 
@@ -694,7 +716,7 @@ print(f"\nDraft reply:\n{result['draft']}")
 
 > Email isn't really about writing text. It's about making decisions: who to answer, what to say and when. Claude takes the mechanical part (writing the text in your style). The decisions stay with you.
 
-> Auto-drafts only work if Claude knows your style. Spend 30 minutes on a CLAUDE.md with good and bad examples; it pays off every day.
+> Drafts only come out well if Claude knows your style. Spend 30 minutes on a style description with good and bad examples; it pays off every day.
 
 > Inbox Zero is doable. Sorting plus drafts for incoming mail noticeably cuts the time you spend on email. The key: don't fully automate sending; keep the final review for yourself.
 

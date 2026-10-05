@@ -142,7 +142,7 @@ Un descuento del 20% sobre el precio se llevó dos tercios de tus ganancias. Par
 
 **Paso 3. El valor.** Responde por escrito: ¿qué ganará o ahorrará el cliente en un mes? Ponlo en dólares, aunque sea aproximado.
 
-**Paso 4. Precio y paquetes.** Elige un precio entre el mínimo y el valor, y divídelo en 2–3 paquetes. Revisa que cada paquete esté por encima de su propio mínimo. Las [Calculadoras](https://aimayak.com/es/calculators/) facilitan comparar las opciones.
+**Paso 4. Precio y paquetes.** Elige un precio entre el mínimo y el valor, y divídelo en 2–3 paquetes. Revisa que cada paquete esté por encima de su propio mínimo. Las [Calculadoras](https://aimayak.com/calculators/) facilitan comparar las opciones.
 
 **Paso 5. Revísalo con IA.** Un prompt de ejemplo:
 

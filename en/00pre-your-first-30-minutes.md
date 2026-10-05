@@ -12,7 +12,7 @@ This lesson is for you if you:
 - Worry you'll "break something on the computer"
 - Don't know where to get AI or what it costs
 - Keep hearing about AI but have never tried it
-- Are a grandparent, a manager outside tech, a high school student, or anyone else who's just starting out
+- Are a grandparent, a manager outside tech, or any other adult who's just starting out
 
 If you've already spent at least an hour talking to AI, skip ahead to the next lesson, [AI without fear](00d-ai-without-fear.md).
 
@@ -23,7 +23,7 @@ If you've already spent at least an hour talking to AI, skip ahead to the next l
 Opening AI for the first time is like a 90-year-old making her very first video call. It feels scary. It seems complicated. It seems like you need to know "something special." In reality, it's three buttons.
 
 In 30 minutes you will:
-1. Sign up at claude.ai (you'll need an email address)
+1. Sign up at claude.ai (you'll need an email address and a cell phone that can receive text messages)
 2. Ask your first 3 questions
 3. See 7 everyday tasks AI handles in a minute
 4. Learn what not to do
@@ -58,27 +58,28 @@ It can NOT (in a regular chat, without connected apps and permissions):
 
 What to do:
 1. Open any web browser (Chrome, Safari, Edge, any of them)
-2. In the address bar at the top, type **claude.ai** and press Enter
-3. You'll see a sign-up button, **"Sign Up"** or **"Continue with email"** (the wording may differ a little; either way it means "create an account"). Click it
-4. Enter your email (any address works: Gmail, Outlook, iCloud, Yahoo)
-5. If you're asked for a password, make one up (at least 8 characters) and write it down somewhere safe
-6. Check your inbox: you'll get an email with a 6-digit code
-7. Enter that code back on claude.ai
+2. In the address bar at the top, type **claude.ai** and press Enter (on a phone, tap Go on the keyboard)
+3. There's no separate "Sign up" button: new and returning users start on the same page. Type your email into the **"Enter your email"** box and tap **"Continue with email"**. Any address works: Gmail, Outlook, iCloud, Yahoo. If you have a Google or Apple account, you can tap **"Continue with Google"** or **"Continue with Apple"** instead
+4. You don't need to make up a password: Claude doesn't use passwords. Instead, you'll get an email with a login link (the sender's address ends in @mail.anthropic.com). If it doesn't show up, check your spam folder
+5. Open that email on the same device and tap the link, and you'll land in Claude. If you open the email on a different device (you started on a computer but read email on your phone), the link shows a code: type it in where you started
+6. As a new user, you'll be asked to verify your phone number: enter your cell number, wait for the text message with a code, type the code in and tap **"Verify code."** You can't skip this step, and landlines and internet (VoIP) numbers won't work
+7. Answer the couple of questions Claude asks (for example, what to call you) and keep tapping the button to continue
 8. Done. You're in.
 
 **Cost: $0 (zero dollars).** The free plan works without a credit card, without a subscription, without a catch.
 
-If Claude ever isn't available to you, for example while you're traveling abroad, the steps in this lesson work the same way in another assistant: see the comparison in [Comparing AI models](00c-ai-models-comparison.md), and current plans and supported countries on the [What's current](https://aimayak.com/now/) page.
+**Age.** Claude is for adults: under Anthropic's rules, you must be at least 18 to use it.
 
-🎨 **Picture this:** it's like signing up for any new app: email, a code from your inbox, and you're in. That's it.
+Claude doesn't work in every country: the official list is at [anthropic.com/supported-countries](https://www.anthropic.com/supported-countries), and signing up takes a phone number from a supported country. If Claude isn't available to you, for example while you're traveling abroad, Steps 2 to 4 of this lesson (first questions, everyday tasks, safety rules) work in any other assistant; only the sign-up is different. See the comparison in [Comparing AI models](00c-ai-models-comparison.md), and current plans and supported countries on the [What's current](https://aimayak.com/en/now/) page.
+
+🎨 **Picture this:** it's like signing up for any new app: your email, a link in your inbox, a code by text, and you're in. That's it.
 
 ### What you'll see on the screen
 
 Claude's main screen is simple:
-- **At the bottom**: a box where you type your question
-- **On the left**: a list of your past conversations (empty for now)
-- **Top right**: your profile icon and settings
-- **In the middle**: a greeting and a couple of example questions
+- **The message box**: in the middle or at the bottom of the screen, next to a greeting. That's where you type your question
+- **On the left**: a list of your past conversations (empty for now). On a phone, it's tucked behind the menu icon in the corner of the screen
+- **Bottom left**: your name or initials. Tap them to open Settings
 
 No complicated menus. It's a chat, like texting a friend, except there's only one person on the other end (the AI).
 
@@ -90,7 +91,7 @@ No complicated menus. It's a chat, like texting a friend, except there's only on
 
 ### Question 1: "Hi. What can you do?"
 
-Just type that into the box and press Enter (or click the arrow on the right).
+Just type that into the box and tap the arrow button next to it (on a computer, you can simply press Enter).
 
 Claude will answer in the language you wrote in. Read the whole answer. It gives you a sense of what it can do, in its own words.
 
@@ -152,9 +153,9 @@ Once you like it, the question comes up: should you pay? Here's an honest compar
 
 ### Free: $0/month
 
-- Limits: there's a usage limit on messages; the exact number depends on demand and on how long the conversation is. For most people, it's enough
-- Model: a standard one (still smart, just not the smartest); which one exactly, see [What's current](https://aimayak.com/now/)
-- Good for: 90% of people who are just starting
+- Limits: the number of messages is limited, and the limit resets every five hours; the exact number depends on demand and on how long the conversation is. For getting started, it's usually enough
+- Model: a standard one (still smart, just not the smartest); which one exactly, see [What's current](https://aimayak.com/en/now/)
+- Good for: most people who are just starting
 - **Not a fit:** if you want to work with AI 4 to 8 hours a day
 
 🎨 **Picture this:** the bus. It goes to the same places a cab does, just with stops.
@@ -180,13 +181,13 @@ Once you like it, the question comes up: should you pay? Here's an honest compar
 
 ### API: pay as you go
 
-- Price: charged per million tokens and depends on the model; in English, 1 token is about 0.75 of a word. Current prices: [What's current](https://aimayak.com/now/)
+- Price: charged per million tokens and depends on the model. A token is a small chunk of text: by Anthropic's rough estimate, about three-quarters of an English word. Current prices: [What's current](https://aimayak.com/en/now/)
 - This is for **developers** who build AI into their own apps
 - As a regular user, **you don't need it**. Ignore it until you start building software.
 
 🎨 **Picture this:** renting a car by the hour. You only pay for what you actually use. But you need a "license," meaning you need to know how to program.
 
-**Current plans:** [https://claude.com/pricing](https://claude.com/pricing) and [What's current](https://aimayak.com/now/)
+**Current plans:** [https://claude.com/pricing](https://claude.com/pricing) and [What's current](https://aimayak.com/en/now/)
 
 **Tip for beginners:** start with Free for 2 weeks. If you keep hitting the limits, move to Pro. You don't need Max unless you work with AI for many hours every day.
 
@@ -200,17 +201,17 @@ You choose where to go next. Three options:
 
 Go to the lesson [AI without fear](00d-ai-without-fear.md). It covers all the common worries ("AI will take my job," "AI is watching us," "AI will trick me").
 
-Then take [How an LLM works inside](00b-how-llm-works.md), followed by [The history of AI](00-what-is-ai.md), which explains how we got to 2026, what came before Claude and who made it. That's the same order as the Use AI in my work path on the [course page](https://aimayak.com/course/).
+Then take [How an LLM works inside](00b-how-llm-works.md) (an LLM is a language model, the engine behind any AI assistant), followed by [The history of AI](00-what-is-ai.md), which explains how we got to 2026, what came before Claude and who made it. That's the same order as the Use AI in my work path on the [course page](https://aimayak.com/en/course/).
 
 ### Option B: "I want to use it at work right away"
 
-Open the [Professions](https://aimayak.com/professions/) section. It covers 100 jobs: what AI changes, what to learn and which tools to use (accountant, teacher, doctor, designer, salesperson, lawyer and more).
+Open the [Professions](https://aimayak.com/en/professions/) section. It covers 100 jobs: what AI changes, what to learn and which tools to use (accountant, teacher, doctor, designer, salesperson, lawyer and more).
 
 Find your job, read that one page, and try one example today.
 
 ### Option C: "I want to build systems with AI"
 
-It's a long road, but a doable one. Go to the lesson [Installing Claude Code](05-setup.md), which walks you through setting up Claude Code (this is for people who want to build software). After it come the rest of the course modules.
+It's a long road, but a doable one. On the [course page](https://aimayak.com/en/course/), pick the Build my own product path: it starts with these same first lessons and leads, step by step, to the lesson [Installing Claude Code](05-setup.md). Claude Code is a program in which AI writes and edits code for you; you don't need to install it right away. Get the basics down first.
 
 A word of caution: option C takes real effort. It isn't "30 minutes and I'm a developer." It's months of practice, and everyone's timeline is different.
 
@@ -220,7 +221,7 @@ A word of caution: option C takes real effort. It isn't "30 minutes and I'm a de
 
 Go through the list. If any box isn't checked, go back to that step.
 
-- [ ] Signed up at claude.ai (email + the code from your inbox)
+- [ ] Signed up at claude.ai (email + the link from your inbox + the code by text)
 - [ ] Saw the main screen (the input box at the bottom)
 - [ ] Asked at least 3 questions ("What can you do?" + 2 of your own)
 - [ ] Read Claude's answers all the way through
@@ -237,7 +238,7 @@ Go through the list. If any box isn't checked, go back to that step.
 No. All your conversations are saved in your account, in the list on the left. Come back tomorrow and they'll be there.
 
 **"Does Claude remember me?"**
-Within one conversation, yes, it remembers the context. Between separate conversations, no, it starts from a clean slate. If you want it to remember things across chats, turn on Memory in the settings and check that it's available on your plan.
+Within one conversation, yes, it remembers everything you've said. It also remembers some things between conversations: on the Free, Pro and Max plans (as of October 2026), memory is on from the start. As you chat, Claude saves short notes about you and what you're working on, and uses them in new conversations. You can read, edit or delete those notes, or turn memory off, in Settings → Memory.
 
 **"Do I have to write in perfect English?"**
 No. Typos and casual phrasing are fine; Claude will understand you. It also works in many other languages, so you can write in Spanish or another language you're comfortable with.
@@ -269,4 +270,4 @@ It depends on your settings. On Free, Pro and Max, Anthropic uses your chats to 
 
 Next on the Use AI in my work path: [How an LLM works inside](00b-how-llm-works.md), then [The history of AI](00-what-is-ai.md).
 
-Other options from Step 6: [Professions](https://aimayak.com/professions/) (AI for your job) or [Installing Claude Code](05-setup.md) (setup for future builders).
+Other options from Step 6: [Professions](https://aimayak.com/en/professions/) (AI for your job) or [Installing Claude Code](05-setup.md) (setup for future builders).

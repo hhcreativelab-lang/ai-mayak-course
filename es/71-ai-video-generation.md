@@ -50,7 +50,7 @@ Runway es una startup de Estados Unidos y uno de los líderes del mercado, con u
 
 - Hay un plan gratis con un paquete único de créditos, y varios planes de pago
 - Qué tan rápido se gastan los créditos depende del modelo: cada modelo usa una cantidad fija de créditos por segundo de video
-- Precios actuales y tarifas de créditos: [runway.com/pricing](https://runway.com/pricing), [Lo vigente](https://aimayak.com/es/now/)
+- Precios actuales y tarifas de créditos: [runway.com/pricing](https://runway.com/pricing), [Lo vigente](https://aimayak.com/now/)
 
 **Lo que más nos importa:** la API oficial (interfaz de programación de aplicaciones, una forma de que tus propios programas hablen con el servicio). Puedes automatizar todo: Claude genera los prompts → un script (un programa pequeño que ejecuta los pasos por ti) los manda a Runway → los videos se descargan solos.
 
@@ -102,7 +102,7 @@ Kling es una plataforma de Kuaishou (China). Su línea de trabajo a octubre de 2
 - La velocidad de generación depende de la carga y de tu plan: mídela con tus propias tareas
 - Preguntas sobre el almacenamiento de datos para clientes de la UE y de Estados Unidos (revisa las condiciones de tu contrato)
 
-**Precios:** hay un plan gratis Basic y varios planes de pago. Precios actuales: [Lo vigente](https://aimayak.com/es/now/).
+**Precios:** hay un plan gratis Basic y varios planes de pago. Precios actuales: [Lo vigente](https://aimayak.com/now/).
 
 🎨 **Imagínalo así:** Kling es un camarógrafo de documentales. Filma un movimiento que se ve vivido, no actuado.
 
@@ -158,7 +158,7 @@ OpenAI cerró la app y el sitio de Sora el 26 de abril de 2026, y la API de Sora
 | Duración máxima | ver la documentación | hasta 15 s (4.0 anunciado con hasta 30) | ver el sitio |
 | Ideal para | Cualquier contenido + API | Movimiento humano, sonido con sincronización de labios | Aspecto cinematográfico, control cuadro por cuadro |
 | Para empezar gratis | créditos únicos | plan Basic | gratis en la app |
-| Planes de pago | ver [Lo vigente](https://aimayak.com/es/now/) | ver [Lo vigente](https://aimayak.com/es/now/) | ver el sitio |
+| Planes de pago | ver [Lo vigente](https://aimayak.com/now/) | ver [Lo vigente](https://aimayak.com/now/) | ver el sitio |
 | API | ✅ | ✅ | ✅ |
 | Uso comercial | planes de pago | revisa las condiciones | revisa las condiciones |
 
@@ -414,7 +414,7 @@ Define tu precio y tus condiciones con las lecciones de precios y de economía p
 - **[FFmpeg](https://ffmpeg.org)**: unir y procesar video desde la línea de comandos, gratis
 - **[CapCut](https://www.capcut.com)**: edición final con subtítulos y música
 - **[ElevenLabs](https://elevenlabs.io)**: voz en off
-- **Precios y versiones:** [Lo vigente](https://aimayak.com/es/now/)
+- **Precios y versiones:** [Lo vigente](https://aimayak.com/now/)
 
 ---
 

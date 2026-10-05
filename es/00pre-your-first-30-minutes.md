@@ -12,7 +12,7 @@ Esta lección es para ti si:
 - Te da miedo "descomponer algo en la computadora"
 - No sabes dónde se consigue la IA ni cuánto cuesta
 - Oyes hablar de la IA todo el tiempo, pero nunca la has probado
-- Eres abuelo o abuela, gerente fuera del mundo tecnológico, estudiante de bachillerato o cualquier persona que apenas empieza
+- Eres abuelo o abuela, gerente fuera del mundo tecnológico o cualquier otra persona adulta que apenas empieza
 
 Si ya pasaste al menos una hora conversando con una IA, sigue directo a la próxima lección, [IA sin miedo](00d-ai-without-fear.md).
 
@@ -23,7 +23,7 @@ Si ya pasaste al menos una hora conversando con una IA, sigue directo a la próx
 Abrir una IA por primera vez es como cuando una señora de 90 años hace su primera videollamada. Da miedo. Parece complicado. Parece que hay que saber "algo especial". En realidad son tres botones.
 
 En 30 minutos vas a:
-1. Registrarte en claude.ai (necesitas un correo electrónico)
+1. Registrarte en claude.ai (necesitas un correo electrónico y un celular que reciba mensajes de texto)
 2. Hacer tus primeras 3 preguntas
 3. Ver 7 tareas cotidianas que la IA resuelve en un minuto
 4. Saber qué no hacer
@@ -58,27 +58,28 @@ NO puede (en un chat normal, sin apps conectadas ni permisos):
 
 Qué hacer:
 1. Abre cualquier navegador (Chrome, Safari, Edge, el que sea)
-2. En la barra de direcciones de arriba, escribe **claude.ai** y presiona Enter
-3. Vas a ver un botón para registrarte, **"Sign Up"** o **"Continue with email"** (el texto puede variar un poco, y si la página aparece en español dirá algo parecido; en cualquier caso significa "crear una cuenta"). Haz clic
-4. Escribe tu correo (sirve cualquiera: Gmail, Outlook, iCloud, Yahoo)
-5. Si te pide una contraseña, inventa una (de al menos 8 caracteres) y anótala en un lugar seguro
-6. Revisa tu bandeja de entrada: te llegará un correo con un código de 6 dígitos
-7. Escribe ese código en claude.ai
+2. En la barra de direcciones de arriba, escribe **claude.ai** y presiona Enter (en el celular, toca Ir en el teclado)
+3. No hay un botón aparte para registrarse: los usuarios nuevos y los de siempre entran por la misma página. Escribe tu correo en el cuadro **"Enter your email"** ("Escribe tu correo") y toca **"Continue with email"** ("Continuar con el correo"); si la página te aparece en español, dirá algo parecido. Sirve cualquier correo: Gmail, Outlook, iCloud, Yahoo. Si tienes una cuenta de Google o de Apple, también puedes tocar **"Continue with Google"** o **"Continue with Apple"**
+4. No tienes que inventar una contraseña: Claude no usa contraseñas. En su lugar te llega un correo con un enlace para entrar (la dirección del remitente termina en @mail.anthropic.com). Si no aparece, revisa la carpeta de correo no deseado (spam)
+5. Abre ese correo en el mismo dispositivo y toca el enlace: te lleva directo a Claude. Si lo abres en otro dispositivo (empezaste en la computadora, pero lees el correo en el celular), el enlace te muestra un código: escríbelo donde empezaste
+6. Como usuario nuevo, Claude te pide verificar tu número de teléfono: escribe tu número de celular, espera el mensaje de texto con un código, escríbelo y toca **"Verify code"** ("Verificar código"). Este paso no se puede saltar, y no sirven los teléfonos fijos ni los números por internet (VoIP)
+7. Responde el par de preguntas que te hace Claude (por ejemplo, cómo quieres que te llame) y sigue tocando el botón para continuar
 8. Listo. Ya entraste.
 
 **Costo: $0 (cero dólares).** El plan gratuito funciona sin tarjeta de crédito, sin suscripción y sin trampas.
 
-Si en algún momento Claude no está disponible para ti, por ejemplo durante un viaje al extranjero, los pasos de esta lección funcionan igual en otro asistente: mira la comparación en [Comparación de modelos de IA](00c-ai-models-comparison.md), y los planes vigentes y los países donde funciona en la página [Lo vigente](https://aimayak.com/es/now/).
+**Edad.** Claude es para adultos: según las reglas de Anthropic, debes tener al menos 18 años para usarlo.
 
-🎨 **Imagínalo así:** es como registrarte en cualquier app nueva: correo, un código que llega a tu bandeja y ya estás dentro. Eso es todo.
+Claude no funciona en todos los países: la lista oficial está en [anthropic.com/supported-countries](https://www.anthropic.com/supported-countries) (en inglés), y para registrarte necesitas un número de teléfono de un país de esa lista. Si Claude no está disponible para ti, por tu país o durante un viaje al extranjero, los pasos 2 a 4 de esta lección (primeras preguntas, tareas cotidianas, reglas de seguridad) sirven con cualquier otro asistente; solo cambia el registro. Mira la comparación en [Comparación de modelos de IA](00c-ai-models-comparison.md), y los planes vigentes y los países donde funciona en la página [Lo vigente](https://aimayak.com/now/).
+
+🎨 **Imagínalo así:** es como registrarte en cualquier app nueva: tu correo, un enlace que llega a tu bandeja, un código por mensaje de texto y ya estás dentro. Eso es todo.
 
 ### Lo que vas a ver en la pantalla
 
 La pantalla principal de Claude es sencilla:
-- **Abajo**: un cuadro donde escribes tu pregunta
-- **A la izquierda**: la lista de tus conversaciones anteriores (por ahora vacía)
-- **Arriba a la derecha**: el ícono de tu perfil y la configuración
-- **Al centro**: un saludo y un par de preguntas de ejemplo
+- **El cuadro de mensaje**: al centro o abajo de la pantalla, junto a un saludo. Ahí escribes tu pregunta
+- **A la izquierda**: la lista de tus conversaciones anteriores (por ahora vacía). En el celular está escondida detrás del ícono de menú, en una esquina de la pantalla
+- **Abajo a la izquierda**: tu nombre o tus iniciales. Tócalos para abrir la configuración (Settings)
 
 Nada de menús complicados. Es un chat, como escribirle a un amigo, solo que del otro lado hay una sola persona (la IA).
 
@@ -90,7 +91,7 @@ Nada de menús complicados. Es un chat, como escribirle a un amigo, solo que del
 
 ### Pregunta 1: "Hola. ¿Qué sabes hacer?"
 
-Escríbelo tal cual en el cuadro y presiona Enter (o haz clic en la flecha de la derecha).
+Escríbelo tal cual en el cuadro y toca el botón de la flecha que está junto a él (en la computadora, basta con presionar Enter).
 
 Claude te responde en el idioma en que le escribiste. Lee toda la respuesta. Te da una idea de lo que puede hacer, en sus propias palabras.
 
@@ -152,9 +153,9 @@ Cuando le agarras el gusto, surge la pregunta: ¿conviene pagar? Aquí va una co
 
 ### Free (gratis): $0 al mes
 
-- Límites: hay un límite de mensajes; el número exacto depende de la demanda y de qué tan larga sea la conversación. Para la mayoría de las personas, alcanza
-- Modelo: uno estándar (igual de inteligente, solo que no el más potente); cuál exactamente, míralo en [Lo vigente](https://aimayak.com/es/now/)
-- Ideal para: el 90% de las personas que apenas empiezan
+- Límites: el número de mensajes es limitado y el límite se reinicia cada cinco horas; el número exacto depende de la demanda y de qué tan larga sea la conversación. Para empezar, normalmente alcanza
+- Modelo: uno estándar (igual de inteligente, solo que no el más potente); cuál exactamente, míralo en [Lo vigente](https://aimayak.com/now/)
+- Ideal para: la mayoría de las personas que apenas empiezan
 - **No te conviene:** si quieres trabajar con la IA de 4 a 8 horas al día
 
 🎨 **Imagínalo así:** el autobús. Va a los mismos lugares que un taxi, solo que con paradas.
@@ -180,13 +181,13 @@ Cuando le agarras el gusto, surge la pregunta: ¿conviene pagar? Aquí va una co
 
 ### API: pagas lo que usas
 
-- Precio: se cobra por cada millón de tokens y depende del modelo; en inglés, 1 token equivale más o menos a 0.75 de una palabra. Precios vigentes: [Lo vigente](https://aimayak.com/es/now/)
+- Precio: se cobra por cada millón de tokens y depende del modelo. Un token es un pedacito de texto: según el cálculo aproximado de Anthropic, unas tres cuartas partes de una palabra en inglés. Precios vigentes: [Lo vigente](https://aimayak.com/now/)
 - Esto es para **desarrolladores** que integran la IA en sus propias apps
 - Como usuario común, **no lo necesitas**. Ignóralo hasta que empieces a crear software.
 
 🎨 **Imagínalo así:** rentar un auto por hora. Solo pagas lo que realmente usas. Pero necesitas "licencia", es decir, saber programar.
 
-**Planes vigentes:** [https://claude.com/pricing](https://claude.com/pricing) y [Lo vigente](https://aimayak.com/es/now/)
+**Planes vigentes:** [https://claude.com/pricing](https://claude.com/pricing) y [Lo vigente](https://aimayak.com/now/)
 
 **Consejo para principiantes:** empieza con Free durante 2 semanas. Si te topas con los límites seguido, pásate a Pro. No necesitas Max a menos que trabajes con la IA muchas horas todos los días.
 
@@ -200,17 +201,17 @@ Tú eliges cómo seguir. Tres opciones:
 
 Ve a la lección [IA sin miedo](00d-ai-without-fear.md). Cubre todos los miedos comunes ("la IA me va a quitar el trabajo", "la IA nos vigila", "la IA me va a engañar").
 
-Luego sigue con [Cómo funciona un LLM por dentro](00b-how-llm-works.md) y después [La historia de la IA](00-what-is-ai.md), que explica cómo llegamos a 2026, qué hubo antes de Claude y quién lo creó. Es el mismo orden de la ruta Usar la IA en mi trabajo en la [página del curso](https://aimayak.com/es/course/).
+Luego sigue con [Cómo funciona un LLM por dentro](00b-how-llm-works.md) (un LLM es un modelo de lenguaje, el motor de cualquier asistente de IA) y después [La historia de la IA](00-what-is-ai.md), que explica cómo llegamos a 2026, qué hubo antes de Claude y quién lo creó. Es el mismo orden de la ruta Usar la IA en mi trabajo en la [página del curso](https://aimayak.com/course/).
 
 ### Opción B: "Quiero usarla en el trabajo ya mismo"
 
-Abre la sección [Profesiones](https://aimayak.com/es/professions/). Cubre 100 oficios y profesiones: qué cambia con la IA, qué aprender y qué herramientas usar (contador, maestro, médico, diseñador, vendedor, abogado y más).
+Abre la sección [Profesiones](https://aimayak.com/professions/). Cubre 100 oficios y profesiones: qué cambia con la IA, qué aprender y qué herramientas usar (contador, maestro, médico, diseñador, vendedor, abogado y más).
 
 Busca tu profesión, lee esa página y prueba un ejemplo hoy mismo.
 
 ### Opción C: "Quiero crear sistemas con IA"
 
-Es un camino largo, pero se puede. Ve a la lección [Instalar Claude Code](05-setup.md), que te guía para configurar Claude Code (esto es para quienes quieren crear software). Después vienen los demás módulos del curso.
+Es un camino largo, pero se puede. En la [página del curso](https://aimayak.com/course/), elige la ruta Crear mi propio producto: empieza con estas mismas primeras lecciones y te lleva, paso a paso, hasta la lección [Instalar Claude Code](05-setup.md). Claude Code es un programa en el que la IA escribe y corrige código por ti; no hace falta instalarlo ahora. Primero domina lo básico.
 
 Una advertencia: la opción C exige esfuerzo de verdad. No es "30 minutos y ya soy desarrollador". Son meses de práctica, y el ritmo de cada persona es distinto.
 
@@ -220,7 +221,7 @@ Una advertencia: la opción C exige esfuerzo de verdad. No es "30 minutos y ya s
 
 Revisa la lista. Si alguna casilla no está marcada, vuelve a ese paso.
 
-- [ ] Me registré en claude.ai (correo + el código que llegó a mi bandeja)
+- [ ] Me registré en claude.ai (correo + el enlace que llegó a mi bandeja + el código por mensaje de texto)
 - [ ] Vi la pantalla principal (el cuadro para escribir, abajo)
 - [ ] Hice al menos 3 preguntas ("¿Qué sabes hacer?" + 2 mías)
 - [ ] Leí las respuestas de Claude completas
@@ -237,7 +238,7 @@ Revisa la lista. Si alguna casilla no está marcada, vuelve a ese paso.
 No. Todas tus conversaciones se guardan en tu cuenta, en la lista de la izquierda. Vuelve mañana y ahí estarán.
 
 **"¿Claude se acuerda de mí?"**
-Dentro de una misma conversación, sí, recuerda el contexto. Entre conversaciones distintas, no: empieza desde cero. Si quieres que recuerde cosas de un chat a otro, activa la memoria (Memory) en la configuración y revisa que esté disponible en tu plan.
+Dentro de una misma conversación, sí: recuerda todo lo que le has dicho. También recuerda algunas cosas de una conversación a otra: en los planes Free, Pro y Max (a octubre de 2026), la memoria viene activada desde el principio. Mientras conversan, Claude guarda notas breves sobre ti y sobre lo que estás haciendo, y las usa en conversaciones nuevas. Puedes leer, corregir o borrar esas notas, o desactivar la memoria, en Settings → Memory (Configuración → Memoria).
 
 **"¿Tengo que escribir en español perfecto?"**
 No. Los errores de dedo y la forma informal de escribir no son problema; Claude te va a entender. También funciona en muchos otros idiomas, así que puedes escribir en el que te resulte más cómodo.
@@ -269,4 +270,4 @@ Depende de tu configuración. En Free, Pro y Max, Anthropic usa tus chats para e
 
 Lo que sigue en la ruta Usar la IA en mi trabajo: [Cómo funciona un LLM por dentro](00b-how-llm-works.md) y después [La historia de la IA](00-what-is-ai.md).
 
-Otras opciones del Paso 6: [Profesiones](https://aimayak.com/es/professions/) (la IA en tu trabajo) o [Instalar Claude Code](05-setup.md) (configuración para quienes van a crear).
+Otras opciones del Paso 6: [Profesiones](https://aimayak.com/professions/) (la IA en tu trabajo) o [Instalar Claude Code](05-setup.md) (configuración para quienes van a crear).

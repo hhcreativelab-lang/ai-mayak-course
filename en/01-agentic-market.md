@@ -32,7 +32,7 @@ Estimates of the size of the agentic AI market differ widely from one research f
 A sense of direction: in 2025, Gartner forecast that by the end of 2026, up to 40% of enterprise applications would include task-specific AI agents, compared with fewer than 5% in 2025. That's a forecast, not a fact. But it shows the scale: the technology is already inside products people use every day.
 
 **What's happening right now:**
-- Agentic features are built into everyday products: Claude has Claude Code and Cowork, ChatGPT has a Work mode for tasks, and most major assistants now have "agent" modes. What's available on which plan is on the [What's current](https://aimayak.com/now/) page.
+- Agentic features are built into everyday products: Claude has Claude Code and Cowork, ChatGPT has a Work mode for tasks, and most major assistants now have "agent" modes. What's available on which plan is on the [What's current](https://aimayak.com/en/now/) page.
 - Companies in banking, retail, logistics, media and more are launching agents. The results vary: in some places the gain is obvious right away, and in others the systems have to be put back under human supervision (see the Klarna example below).
 
 The careful conclusion: many companies are trying to roll out agents, and not all of them succeed. People who know how to build agentic systems and check how well they work have an advantage, especially where there's no in-house tech person.
@@ -45,7 +45,7 @@ The careful conclusion: many companies are trying to roll out agents, and not al
 
 As recently as 2023, language models often "hallucinated" (a hallucination is when AI confidently makes up a fact), giving confident but false answers. In production, that's a serious problem: if a system automatically sends emails to clients based on false data, that isn't automation, it's a disaster.
 
-Since mid-2024, the flagship models (Claude 3.5 Sonnet, GPT-4o and Gemini 1.5 Pro; the model lineups have changed several times since, and the current list is on the [What's current](https://aimayak.com/now/) page) have reached a level of reliability where they can be used for repetitive business tasks. Not perfect, but good enough to build production systems with sensible human review.
+Since mid-2024, the flagship models (Claude 3.5 Sonnet, GPT-4o and Gemini 1.5 Pro; the model lineups have changed several times since, and the current list is on the [What's current](https://aimayak.com/en/now/) page) have reached a level of reliability where they can be used for repetitive business tasks. Not perfect, but good enough to build production systems with sensible human review.
 
 **Factor 2: The infrastructure showed up**
 

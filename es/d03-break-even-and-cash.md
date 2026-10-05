@@ -145,7 +145,7 @@ Una regla sencilla para ti: decide arrancar cuando tu margen de supervivencia cu
 
 **Paso 1.** Haz la lista de todos tus costos fijos mensuales, incluyendo el mínimo que necesitas para vivir y los pagos anuales divididos entre 12.
 
-**Paso 2.** Toma tu margen por cliente de [la lección de economía unitaria](d01-unit-economics-simple.md) y calcula tu punto de equilibrio. Comprueba tus cuentas con las [Calculadoras](https://aimayak.com/es/calculators/).
+**Paso 2.** Toma tu margen por cliente de [la lección de economía unitaria](d01-unit-economics-simple.md) y calcula tu punto de equilibrio. Comprueba tus cuentas con las [Calculadoras](https://aimayak.com/calculators/).
 
 **Paso 3.** Arma una tabla de efectivo a 6 meses: cuántos clientes tendrás cada mes (sé honesto y supón un arranque lento), cuándo pagan y cuánto sale. Encuentra el mes con el saldo más bajo.
 

@@ -127,7 +127,7 @@ Todo lo que está dentro de la ventana de contexto, la IA lo "ve" y lo toma en c
 - Claude Fable 5.1, Opus 5.5, Sonnet 5.5: **1,000,000 tokens** ≈ 555,000 palabras (en texto en inglés con el tokenizador actual) ≈ 1,800 páginas de libro
 - Claude Haiku 4.5: 200,000 tokens ≈ 150,000 palabras ≈ 500 páginas
 
-ChatGPT, Gemini y otros asistentes también tienen ventanas de cientos de miles o millones de tokens, pero las cifras exactas dependen del modelo y del plan: revisa la documentación del proveedor y la página [Lo vigente](https://aimayak.com/es/now/). En una app normal (por ejemplo, el chat de claude.ai), la cantidad disponible para ti puede ser distinta a la de la API.
+ChatGPT, Gemini y otros asistentes también tienen ventanas de cientos de miles o millones de tokens, pero las cifras exactas dependen del modelo y del plan: revisa la documentación del proveedor y la página [Lo vigente](https://aimayak.com/now/). En una app normal (por ejemplo, el chat de claude.ai), la cantidad disponible para ti puede ser distinta a la de la API.
 
 Son números grandes. Pero en el trabajo real, el contexto se gasta más rápido de lo que crees: el prompt de sistema (las instrucciones de fondo que la app le da al modelo), el historial de la conversación, los documentos que subes y las propias respuestas de la IA ocupan espacio en la ventana de contexto.
 

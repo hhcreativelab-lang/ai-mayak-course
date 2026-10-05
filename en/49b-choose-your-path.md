@@ -12,7 +12,7 @@ Without this lesson, the applied lessons feel like a tool catalog: voice, video,
 
 With this lesson, you leave with one of 5 ready-made routes: 8 to 12 lessons for your goal, in the right order, and a clear sense of why you're NOT reading the rest right now.
 
-The [course page](https://aimayak.com/course/) also has three general paths by goal: the **Use AI in my work** path, the **Earn with AI** path and the **Build my own product** path. The map below is finer-grained: it picks a scenario inside the Earn with AI or Build my own product goal.
+The [course page](https://aimayak.com/en/course/) also has three general paths by goal: the **Use AI in my work** path, the **Earn with AI** path and the **Build my own product** path. The map below is finer-grained: it picks a scenario inside the Earn with AI or Build my own product goal.
 
 🎨 **Picture this:** you've finished ski school. The green runs are behind you. In front of you is a mountain with dozens of trails. Which ones are yours? Without a trail map, you'll stand at the lift for an hour reading every name. This lesson is the trail map, color-coded: your level, your direction, your distance.
 

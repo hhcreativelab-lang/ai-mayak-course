@@ -1,38 +1,38 @@
-# Cómo escribir un buen prompt para Claude Code
+# Cómo escribir un buen prompt
 
-**Tiempo:** unos 35 min de lectura + 20 min de práctica
+**Tiempo:** unos 15 min de lectura + 20 min de práctica
 
 ---
 
 ## Lo esencial
 
-Un prompt (la solicitud en texto que le das a una IA) es una orden de trabajo para un agente (un programa que realiza tareas por su cuenta). Una orden de trabajo vaga da un mal resultado, y no es culpa del contratista. Una orden de trabajo clara da un resultado preciso mucho antes, muchas veces al primer intento. Esta lección te enseña a escribir buenas órdenes de trabajo para Claude Code. Los mismos principios funcionan en cualquier asistente de IA (ChatGPT, Gemini, Claude en tu navegador): lo único que cambia es dónde pegas el texto.
+Un prompt es la solicitud en texto que le das a una IA: la tarea que le encargas. Piénsalo como una orden de trabajo para un contratista. Una orden de trabajo vaga da un mal resultado, y no es culpa del contratista. Una orden de trabajo clara da un resultado preciso mucho antes, muchas veces al primer intento. Esta lección te enseña a escribir buenas órdenes de trabajo para cualquier asistente de IA: Claude, ChatGPT, Gemini. Los ejemplos salen del trabajo de todos los días: un correo, un resumen, un plan. Si más adelante quieres construir con Claude Code (es un agente, o sea, un programa que realiza tareas por su cuenta en tu computadora), los principios son los mismos, y en esta lección hay una nota corta para eso.
 
 ---
 
 ## Conceptos clave
 
-- Claude Code = un contratista brillante con acceso a tus herramientas
+- Un asistente de IA = un contratista capaz que solo sabe lo que tú le dijiste
 - Qué tan específico es tu prompt decide directamente la calidad del resultado
 - La diferencia entre un prompt malo y uno bueno, con ejemplos reales
-- Plan Mode (modo de planificación): úsalo cuando no tengas claro lo que quieres
+- Primero preguntas y un plan: qué hacer cuando no tienes claro lo que quieres (en Claude Code esto se llama Plan Mode, modo de planificación)
 - Cómo la calidad del resultado depende de qué tan bien entiendes el tema
 
 ---
 
 ## Teoría
 
-### Claude Code es un contratista, no un mago
+### La IA es un contratista, no un mago
 
-Es tentador pensar en Claude Code como una varita mágica: "digo lo que quiero y queda hecho". Una mejor forma de verlo:
+Es tentador pensar en la IA como una varita mágica: "digo lo que quiero y queda hecho". Una mejor forma de verlo:
 
-**Claude Code es un contratista brillante** con muchísima experiencia, capaz de construir casi cualquier cosa. Pero solo tiene acceso a lo que tú le diste:
+**Un asistente de IA es un contratista capaz**, con conocimientos amplios, que sabe escribir, calcular, explicar y planear. Pero solo tiene lo que tú le diste:
 
-- Los archivos de la carpeta del proyecto que abriste
-- Las herramientas que conectaste
-- La información que describiste en la tarea
+- El texto de tu solicitud
+- Los archivos y documentos que adjuntaste a la conversación
+- Lo que ya se dijo en esta conversación (y, si el asistente tiene activada la memoria, algunas cosas de conversaciones anteriores)
 
-No conoce tu marca, a tus clientes ni tus preferencias de diseño a menos que se las expliques.
+No conoce tu empresa, a tus clientes ni el tono en que sueles escribir, a menos que se los expliques.
 
 Justamente por eso **las solicitudes vagas dan resultados vagos**, y las solicitudes específicas dan resultados precisos.
 
@@ -43,23 +43,23 @@ Justamente por eso **las solicitudes vagas dan resultados vagos**, y las solicit
 Veamos una solicitud mala típica:
 
 ```
-Hazme un sitio web para un negocio de paseo de perros
+Escribe un correo a un cliente por un pedido atrasado
 ```
 
-Lo que el agente no puede saber con esta solicitud:
+Lo que el asistente no puede saber con esta solicitud:
 
-- ¿Qué estilo y colores? (¿Corporativo y serio? ¿Divertido y colorido?)
-- ¿Qué secciones? (¿Solo una página de inicio? ¿Precios? ¿Reseñas? ¿Un formulario de reservación?)
-- ¿Qué ciudad o zona? (¿Necesita un mapa?)
-- ¿Una página o varias?
-- ¿Necesita formulario de reservación? ¿Pago en línea?
-- ¿En qué idioma? (¿Solo español, o también inglés?)
-- ¿Hay logotipo?
+- ¿Quién es el cliente y cómo le hablas: de "tú" o de "usted"?
+- ¿Qué se atrasó exactamente, y cuánto tiempo?
+- ¿Cuál es el motivo, y hay que mencionarlo?
+- ¿Qué ofreces para compensar: un descuento, entrega gratis, nada?
+- ¿Qué tono: formal o cálido?
+- ¿De qué largo debe ser el correo?
+- ¿Quién lo firma y qué datos de contacto van al final?
 
-El agente va a hacer algo. Pero ese "algo" va a estar basado en sus suposiciones, no en lo que de verdad necesitas. Como resultado vas a tener:
+El asistente va a escribir algo. Pero ese "algo" va a estar basado en sus suposiciones, no en tu situación. Como resultado vas a tener:
 
-- 3 o 4 rondas de correcciones ("no, eso no es, hazlo así")
-- Muchos tokens gastados (los tokens son los pedacitos de texto que una IA lee y escribe)
+- 3 o 4 rondas de correcciones ("no, eso no es, reescribe esta parte")
+- Tiempo perdido y mensajes de más que se descuentan del límite de tu plan
 - Frustración
 
 ### Anatomía de un buen prompt
@@ -67,23 +67,22 @@ El agente va a hacer algo. Pero ese "algo" va a estar basado en sus suposiciones
 La misma solicitud, bien escrita:
 
 ```
-Crea una landing page para un negocio de paseo de perros en Monterrey, Nuevo León.
+Escribe un correo a una clienta por un pedido atrasado.
 
-Requisitos:
-- Sección principal (hero): título "Paseo profesional de perros", subtítulo "Todos los días, con cualquier clima, paseadores con experiencia", botón "Reserva un paseo"
-- Sección de servicios: 3 tarjetas: paseo individual (1 hora, $35 USD), paseo en grupo (1.5 horas, $25 USD), entrenamiento + paseo (2 horas, $55 USD)
-- Sección de reseñas: 3 bloques con una cita y el nombre del cliente (invéntalos)
-- Formulario de reservación: nombre, teléfono, raza del perro, elección de servicio, botón "Solicitar reservación"
-- Pie de página: teléfono 81 5555 0123, correo hola@example.com, Instagram @paseoperros_mty
-
-Estilo: combinación de colores azul #2563EB y blanco, fuente del sistema, tarjetas con esquinas redondeadas
-Tecnología: solo HTML y CSS, sin frameworks, un solo archivo index.html
-Adaptable: que funcione en celulares
+Quién soy: el encargado de un pequeño taller de muebles a la medida.
+Para quién: Marina, una clienta frecuente que nos encargó los muebles de su cocina. Le hablo de "usted".
+Qué pasó: prometimos entregar el 15 de marzo, pero las puertas llegaron del proveedor con defectos. La nueva fecha es el 29 de marzo.
+Qué ofrecemos: entrega e instalación gratis.
+Tono: cálido y respetuoso, sin frases de oficina y sin excusas largas.
+Largo: 120 palabras o menos.
+Al final: deja un espacio para mi teléfono y firma como "Óscar, encargado del taller".
 ```
 
-Ahora al agente le queda muy poco por adivinar, así que la primera versión suele quedar cerca de lo que querías, con muchas menos rondas de correcciones.
+Ahora al asistente le queda muy poco por adivinar, así que la primera versión suele quedar cerca de lo que querías, con muchas menos rondas de correcciones.
 
-**Qué cambió:** diste detalles concretos en cada punto que el agente, si no, habría tenido que adivinar.
+**Qué cambió:** diste detalles concretos en cada punto que el asistente, si no, habría tenido que adivinar.
+
+💡 No pongas en el prompt apellidos, teléfonos ni direcciones reales de tus clientes: agrégalos tú al correo ya terminado. La lección sobre seguridad en IA, más adelante en este módulo, explica por qué.
 
 ### Las cinco partes de un buen prompt
 
@@ -91,88 +90,89 @@ Ahora al agente le queda muy poco por adivinar, así que la primera versión sue
 
 **1. El resultado (qué obtienes al final)**
 
-No "crea una automatización", sino "crea un script de Python (Python es un lenguaje de programación) que..."
+No "ayúdame con este informe", sino "convierte este informe en un resumen de media página".
 
-**2. Contexto (para qué lo necesitas)**
+**2. Contexto (para qué lo necesitas y para quién es)**
 
-El contexto es todo lo que la IA puede ver en la conversación, así que aquí le dices el propósito: "Este script va a correr todos los días a las 9:00 a. m. y va a enviar..."
+El contexto es todo lo que el asistente puede ver en la conversación, así que aquí le dices el propósito: "El resumen lo va a leer mi director antes de una reunión con el banco, y va a tener cinco minutos".
 
 **3. Restricciones (qué no hacer)**
 
-"No uses bibliotecas externas excepto requests. No crees una base de datos, solo un archivo CSV."
+"No agregues cifras que no estén en mi texto. Sin frases de relleno. No más de 150 palabras."
 
 **4. Ejemplos (cómo debería verse)**
 
-"El formato del correo: el asunto es 'Reporte del [fecha]', y el cuerpo es una tabla con las columnas Nombre, Monto, Estado."
+"Usa este formato: un título, tres conclusiones con cifras y una línea sobre el riesgo principal." Todavía mejor, pega una muestra: "Este es mi resumen anterior; hazlo con el mismo estilo".
 
 **5. Criterio de terminado (cómo comprobarlo)**
 
-"Está terminado cuando el script corre sin errores, crea un archivo report.csv y envía un correo a test@example.com."
+"Está terminado cuando el resumen incluye ingresos, gastos y el riesgo principal, y cada cifra sale de mi informe."
 
 No siempre necesitas las cinco; a veces bastan dos o tres. Pero cuanto más compleja la tarea, más importa cada una.
 
-### Plan Mode: cuando no tienes claro lo que quieres
+### Primero el plan (Plan Mode): cuando no tienes claro lo que quieres
 
-🎨 **Imagínalo así:** Plan Mode es como reunirte con un arquitecto antes de empezar la obra. Le dices: "Quiero una casa acogedora para una familia con niños". El arquitecto hace preguntas: ¿Cuántos niños? ¿Necesitas cochera? ¿Cuál es el presupuesto? Después te trae un plano, no una cuadrilla de albañiles. Primero revisas el plano, y solo entonces das luz verde para empezar a construir.
+🎨 **Imagínalo así:** es como reunirte con un arquitecto antes de empezar la obra. Le dices: "Quiero una casa acogedora para una familia con niños". El arquitecto hace preguntas: ¿Cuántos niños? ¿Necesitas cochera? ¿Cuál es el presupuesto? Después te trae un plano, no una cuadrilla de albañiles. Primero revisas el plano, y solo entonces das luz verde para empezar a construir.
 
-A veces conoces el problema, pero no cómo resolverlo técnicamente. O sabes el resultado que quieres, pero no entiendes de qué partes debería estar hecho.
+A veces conoces el problema, pero no sabes por dónde empezar. O te imaginas el resultado, pero no entiendes de qué partes debería estar hecho.
 
-Para eso existe **Plan Mode** en Claude Code.
-
-Cómo activarlo: escribe tu solicitud y agrega al final "Antes de empezar, hazme preguntas para aclarar", o activa Plan Mode en la interfaz. En la terminal cambias entre modos con Shift+Tab (o escribes el comando `/plan`); en la app de escritorio eliges el modo en la lista junto al botón de enviar.
+Para eso hay una técnica sencilla: pídele al asistente que **primero te haga preguntas y te muestre un plan**, y que empiece el trabajo solo después de que le digas que sí. Basta con agregar al final de tu solicitud: "Antes de empezar, hazme preguntas para aclarar". Funciona en cualquier asistente.
 
 Ejemplo:
 
 ```
-Quiero automatizar un resumen diario por correo con noticias de bienes raíces para mis clientes.
-Antes de empezar, hazme preguntas para aclarar, así entiendes exactamente qué construir.
+Necesito organizar la mudanza de nuestra oficina a una nueva dirección en un mes.
+Antes de armar el plan, hazme preguntas para aclarar la situación.
+Después muéstrame un plan corto, y solo cuando yo diga que sí, detállalo día por día.
 ```
 
-El agente va a hacer preguntas como:
+El asistente va a hacer preguntas como:
 
-- "¿De dónde deberían salir las noticias: de sitios web específicos o de una API (Application Programming Interface: una forma de que un programa le pida datos a otro)?"
-- "¿Cuántas noticias debería incluir cada correo?"
-- "¿Debería personalizarse según la ciudad de cada cliente?"
-- "¿Dónde guardas tu lista de clientes: Google Sheets, un CRM (Customer Relationship Management: un software para llevar el registro de tus clientes), un archivo CSV?"
-- "¿A qué hora debería enviarse?"
+- "¿Cuántas personas trabajan en la oficina?"
+- "¿Qué se va a mover: solo equipos y documentos, o también los muebles?"
+- "¿Hay una fecha límite para desocupar el local anterior?"
+- "¿Cuál es el presupuesto y quién está a cargo de la mudanza?"
+- "¿Se puede parar el trabajo uno o dos días, o hay que mudarse sin dejar de operar?"
 
-Después de que respondes, el agente arma un plan, y solo entonces empieza a construir.
+Después de que respondes, el asistente arma un plan, y solo entonces completa los detalles.
 
-**Cuándo usar Plan Mode:**
+**Cuándo usar esta técnica:**
 
-- La tarea es complicada y tiene muchas piezas
+- La tarea es grande y tiene muchas piezas
 - No tienes claro cómo dividirla en partes
-- Quieres asegurarte de que el agente te entendió antes de empezar
+- Quieres asegurarte de que el asistente te entendió antes de empezar
 - Un error saldría caro (mucho tiempo o dinero)
+
+💡 **Si más adelante construyes con Claude Code.** Ahí esta técnica tiene su propio modo, llamado Plan Mode (modo de planificación): Claude primero estudia el proyecto y propone un plan, y empieza a cambiar archivos solo después de que lo apruebas. En la terminal (una ventana para escribir comandos de texto) cambias entre modos con Shift+Tab o escribes el comando `/plan`; en la app de escritorio eliges el modo en la lista junto al botón de enviar. Las cinco partes del prompt son las mismas ahí: resultado, contexto, restricciones, un ejemplo y un criterio de terminado.
 
 ### La calidad depende de qué tan bien entiendes el trabajo
 
 Aquí va una verdad incómoda que conviene aceptar desde el principio:
 
-**Cuanto mejor entiendas el tema, mejor será el resultado del agente.**
+**Cuanto mejor entiendas el tema, mejor será el resultado.**
 
-Si le pides a un agente que automatice un boletín por correo pero no entiendes cómo funcionan los boletines (SPF/DKIM, bajas de suscripción, manejo de rebotes), no vas a poder saber si el agente hizo un buen trabajo. Vas a tener algo que funciona en teoría, pero que puede tener problemas ocultos.
+Supón que le pides a un asistente que arme un presupuesto para remodelar una cocina, pero no sabes qué lleva un presupuesto así: materiales, mano de obra, permisos, flete, retiro de escombro, un colchón para imprevistos. Entonces no vas a poder saber si hizo un buen trabajo. Vas a tener una tabla ordenada que se ve convincente, pero a la que le puede faltar la mitad de los conceptos.
 
-Si sí entiendes cómo funcionan los boletines, vas a dar las instrucciones correctas, vas a notar cuando el agente se salte algo importante y vas a poder revisar el resultado.
+Si sí entiendes cómo se arma un presupuesto de obra, vas a dar las instrucciones correctas, vas a notar cuando el asistente se salte algo y vas a poder revisar el resultado.
 
-Esto no quiere decir que tengas que volverte desarrollador. Pero sí necesitas entender el **proceso de negocio** que estás automatizando:
+Esto no quiere decir que tengas que volverte experto en todo. Pero sí necesitas entender la **tarea que estás encargando**:
 
-- ¿Cómo funciona el proceso hoy (a mano)?
-- ¿Qué casos especiales aparecen (las situaciones poco comunes que rompen la rutina normal)?
-- ¿Qué significa "bien hecho" para este proceso?
+- ¿Cómo se hace hoy (a mano)?
+- ¿Qué casos poco comunes aparecen?
+- ¿Qué significa "bien hecho" para esta tarea?
 
-Por eso los mejores creadores de sistemas con agentes son personas que primero entendieron un área (marketing, ventas, finanzas, logística) y después aprendieron las herramientas.
+Por eso, quienes suelen sacarle más provecho a la IA son las personas que conocen bien su área (marketing, ventas, finanzas, logística) y después aprenden la herramienta.
 
 ### Las correcciones son normales, no un fracaso
 
 🎨 **Imagínalo así:** un pintor hace bocetos pequeños, después un borrador y luego la pintura detallada. Nadie espera un cuadro terminado desde la primera pincelada. Tu primer prompt es tu boceto. La meta no es "perfecto desde cero", sino "llegar al objetivo en la menor cantidad de pasos".
 
-Incluso un prompt bien escrito rara vez da un resultado perfecto al primer intento. Y está bien.
+Una corrección es una pasada más: miras la respuesta y pides un ajuste. Incluso un prompt bien escrito rara vez da un resultado perfecto al primer intento. Y está bien.
 
-El patrón para trabajar con un agente (los porcentajes de abajo son una guía aproximada, no una medición):
+Así suele ir el trabajo con un asistente (los porcentajes de abajo son una guía aproximada, no una medición):
 
 1. Escribes un buen prompt → obtienes el 70-80% de lo que necesitas
-2. Ves qué no está bien → mandas un prompt de seguimiento con correcciones concretas
+2. Ves qué no está bien → pides correcciones concretas en el mismo chat
 3. Llegas al 90-95% → una pasada más para los detalles pequeños
 4. Listo
 
@@ -182,17 +182,17 @@ Un mal prompt te da un 30-40% al primer intento y necesita 5-7 correcciones.
 
 Un buen prompt te da un 70-80% al primer intento y necesita 1-2 correcciones.
 
-La diferencia son 3-4 correcciones. En tareas complejas, eso son horas de trabajo.
+La diferencia son varias rondas de más en cada tarea. En tareas grandes, eso son horas de trabajo.
 
 ### Resumen rápido: mal prompt → buen prompt
 
 | Mal prompt | Buen prompt | Por qué es mejor |
 |---|---|---|
-| "Haz un sitio web" | "Crea una landing page en HTML+CSS, una sola página, azul y blanco, secciones: hero, servicios, formulario" | Resultado, estilo y estructura concretos |
-| "Escribe un script" | "Escribe un script de Python que lea un CSV, se quede con las filas donde el monto sea > 1000 y las guarde en un CSV nuevo" | Lenguaje, entrada, lógica, salida |
-| "Automatiza el correo" | "Crea un flujo de trabajo (una secuencia de pasos que corre por su cuenta): cada lunes, junta 5 noticias de un RSS, genera un correo en HTML y envíalo por la API de Gmail a la lista que está en Google Sheets" | Horario, fuente, formato, canal, destinatarios |
-| "Arregla el error" | "En main.py, línea 42: TypeError: expected str, got int. La función process_data recibe un número en lugar de un texto en la respuesta de la API" | Archivo, línea, tipo de error, contexto |
-| "Hazlo bonito" | "Agrega: esquinas redondeadas de 8px, sombras en las tarjetas, 24px de espacio entre secciones, fuente Inter" | Ajustes de diseño concretos |
+| "Escribe un correo" | "Escribe un correo a un cliente para mover nuestra reunión del 10 al 12 de junio: amable, de 80 palabras o menos, y ofrece dos horarios" | Para quién, sobre qué, tono, largo |
+| "Haz un resumen" | "Resume este informe en media página para mi director: las tres conclusiones principales y un riesgo, solo con datos del texto" | Largo, lector, estructura, prohibido inventar |
+| "Haz un plan" | "Haz un plan de dos semanas para preparar mis vacaciones: una lista de pendientes día por día y, aparte, lo que tengo que dejarle a un compañero" | Plazo, formato, qué importa |
+| "Corrige el texto" | "Corrige los errores y las faltas de ortografía de este texto. No cambies el sentido ni el estilo. Al final, enumera los cambios" | Qué corregir, qué no tocar, cómo reportar |
+| "Hazlo bonito" | "Dale otro formato a este texto: párrafos cortos, subtítulos y una lista en lugar de la enumeración larga" | Ajustes concretos en lugar de "bonito" |
 
 ---
 
@@ -202,32 +202,34 @@ La diferencia son 3-4 correcciones. En tareas complejas, eso son horas de trabaj
 
 **Paso 1: El prompt malo (5 min):**
 
-1. Abre Claude Code en una carpeta vacía
+1. Abre tu asistente (Claude, ChatGPT o Gemini) y empieza un chat nuevo
 2. Escribe este prompt tal cual:
    ```
-   Crea un formulario para recibir solicitudes de clientes
+   Escribe un anuncio para una vacante en nuestra empresa
    ```
 
-3. Mira lo que obtuviste. Anota: ¿qué falta? ¿Qué decidió el agente por ti?
+3. Mira lo que obtuviste. Anota: ¿qué falta? ¿Qué decidió el asistente por ti?
 
 **Paso 2: El prompt bueno (10 min):**
 
-1. Escribe un prompt nuevo con las cinco partes:
-   - **Resultado:** "Crea un formulario en HTML..."
-   - **Contexto:** "...para que los clientes reserven una primera consulta sobre [tu tema]"
-   - **Campos:** enumera los campos exactos que necesitas
-   - **Estilo:** colores, fuentes, el aspecto general
-   - **Criterio de terminado:** "El formulario tiene que funcionar sin frameworks de JavaScript" (JavaScript es un lenguaje de programación)
-2. Ejecuta este prompt
+1. Empieza otro chat nuevo, para que la primera respuesta no influya en la segunda, y escribe un prompt con las cinco partes:
+   - **Resultado:** "Escribe un anuncio para una vacante de [puesto]..."
+   - **Contexto:** "...en [tu empresa, o una inventada]. El anuncio se va a publicar en [sitio web o red social]. Buscamos a alguien que [el requisito principal]"
+   - **Restricciones:** el largo y qué no poner, por ejemplo: "150 palabras o menos, sin frases como 'ambiente dinámico' o 'somos una gran familia'"
+   - **Ejemplo:** describe el formato ("párrafos cortos y listas") o pega un anuncio que te guste
+   - **Criterio de terminado:** "El anuncio incluye responsabilidades, requisitos, condiciones y cómo postularse"
+2. Envía este prompt
 3. Compara el resultado con el primero
 
 **Paso 3: Revisión (5 min):**
 
 Respóndete:
 
-- ¿Cuántas correcciones necesitó el primer prompt?
-- ¿Cuántas necesitó el segundo?
-- ¿Qué tuviste que explicar por separado la primera vez?
+- ¿Cuántas rondas de correcciones habría necesitado el primer anuncio para poder publicarse?
+- ¿Cuántas necesitaría el segundo?
+- ¿Qué partes del segundo prompt habrías tenido que explicar por separado la primera vez?
+
+Una forma fácil de comprobarlo: el segundo anuncio tiene los cuatro bloques de tu criterio de terminado, mientras que en el primero el asistente inventó algunos o se los saltó.
 
 ---
 
@@ -237,45 +239,45 @@ Respóndete:
 
 ✅ **En su lugar:** Empieza con lo esencial (resultado + contexto), obtén una primera versión y luego ajústala paso a paso. Dos o tres prompts cortos son mejores que uno gigante.
 
-❌ **Error:** No decir tus restricciones: "no uses frameworks", "solo Python", "sin base de datos".
+❌ **Error:** No decir tus restricciones: "no más de una página", "sin tecnicismos", "no inventes cifras".
 
-✅ **En su lugar:** Sin restricciones, el agente elige su propio conjunto de tecnologías. Si te importa qué se usa, dilo de forma explícita. Las restricciones te ahorran correcciones.
+✅ **En su lugar:** Sin restricciones, el asistente decide por su cuenta el largo y el tipo de lenguaje. Si te importa cómo debe quedar, dilo de forma explícita. Las restricciones te ahorran correcciones.
 
-❌ **Error:** No revisar el resultado y desplegarlo (desplegar es ponerlo en línea, publicarlo) "tal cual".
+❌ **Error:** No revisar el resultado y mandarlo "tal cual".
 
-✅ **En su lugar:** Revisa siempre: ¿corre sin errores?, ¿hace lo que esperabas?, ¿maneja los casos especiales? Usa Plan Mode si no tienes claro cómo dividir la tarea.
+✅ **En su lugar:** Revisa siempre: ¿los datos y las cifras son correctos (un asistente puede equivocarse e inventar)?, ¿el tono es el adecuado?, ¿sobra algo? Si no tienes claro cómo dividir la tarea, pide primero preguntas y un plan.
 
 ---
 
 ## Herramientas y recursos
 
-- **[Claude Code](https://code.claude.com/docs/en/overview)**: la herramienta principal de esta lección
-- **[Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)**: la guía oficial para escribir prompts (en inglés)
-- **[Anthropic API docs](https://docs.anthropic.com/en/api/getting-started)**: documentación de la API (para entender cómo funciona el modelo)
-- **[Claude Code docs: CLI usage](https://code.claude.com/docs/en/getting-started)**: cómo usar Claude Code con eficacia
+- **[Claude Code](https://code.claude.com/docs/en/overview)**: el agente de Anthropic para quienes después quieran construir; no lo necesitas para esta lección (documentación en inglés; hay versión en español)
+- **[Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)**: la guía oficial de Anthropic para escribir prompts (en inglés; hay versión en español)
+- **[Anthropic API docs](https://docs.anthropic.com/en/api/getting-started)**: documentación para desarrolladores que conectan Claude con sus propios programas (en inglés); si estás empezando, no la necesitas
+- **[Claude Code docs: instalación](https://code.claude.com/docs/en/getting-started)**: cómo instalar y configurar Claude Code (en inglés)
 
-→ Mira la lección [El cambio de enfoque](03-default-shift-mindset.md): la mentalidad de contratista detrás de los buenos prompts
+→ Mira la lección [El Default Shift](03-default-shift-mindset.md): cómo darle tareas a un asistente igual que a un contratista (es la que sigue)
 
-→ Mira la lección [Instalar y configurar Claude Code](05-setup.md): si todavía no preparaste tu espacio de trabajo
+→ Opcional, de la biblioteca: [Instalar y configurar Claude Code](05-setup.md): si decides instalar Claude Code
 
-→ Mira la lección [CLAUDE.md](07-claude-md.md): un prompt de sistema siempre activo (para no tener que repetir tu contexto)
+→ Opcional, de la biblioteca: [CLAUDE.md](07-claude-md.md): instrucciones permanentes para Claude Code, para no repetir tu contexto en cada solicitud
 
-→ Mira la lección [Manejo del contexto: técnicas avanzadas](29-context-management-advanced.md): cómo llevar tus prompts a sistemas complejos
+→ Opcional, de la biblioteca: [Manejo del contexto: técnicas avanzadas](29-context-management-advanced.md): cómo trabajar con prompts en proyectos grandes
 
 ---
 
 ## Ideas clave
 
-> Un mal prompt = una mala orden de trabajo. El agente va a hacer algo, pero no lo que necesitas.
+> Un mal prompt = una mala orden de trabajo. El asistente va a hacer algo, pero no lo que necesitas.
 
 > Las cinco partes de un buen prompt: resultado, contexto, restricciones, ejemplos, criterio de terminado.
 
-> Plan Mode: úsalo cuando no sepas cómo dividir una tarea en partes. El agente va a hacer las preguntas correctas.
+> ¿No sabes cómo dividir una tarea en partes? Pide primero preguntas y un plan. En Claude Code hay un Plan Mode para eso.
 
-> La calidad del resultado depende de qué tan bien entiendes el tema. El agente construye a partir de tus planos.
+> La calidad del resultado depende de qué tan bien entiendes el tema. El asistente construye a partir de tus planos.
 
 ---
 
 ## Próxima lección
 
-→ [CLAUDE.md: el prompt de sistema de tu proyecto](07-claude-md.md)
+→ [El Default Shift](03-default-shift-mindset.md): cómo hacer de la IA tu primer ayudante en el trabajo

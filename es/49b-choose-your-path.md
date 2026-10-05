@@ -12,7 +12,7 @@ Sin esta lección, las lecciones aplicadas parecen un catálogo de herramientas:
 
 Con esta lección, sales con una de 5 rutas ya armadas: de 8 a 12 lecciones para tu meta, en el orden correcto, y con claridad sobre por qué NO lees el resto por ahora.
 
-La [página del curso](https://aimayak.com/es/course/) también tiene tres rutas generales según tu meta: la ruta **Usar la IA en mi trabajo**, la ruta **Ganar dinero con IA** y la ruta **Crear mi propio producto**. El mapa de abajo es más detallado: elige un escenario dentro de la meta Ganar dinero con IA o Crear mi propio producto.
+La [página del curso](https://aimayak.com/course/) también tiene tres rutas generales según tu meta: la ruta **Usar la IA en mi trabajo**, la ruta **Ganar dinero con IA** y la ruta **Crear mi propio producto**. El mapa de abajo es más detallado: elige un escenario dentro de la meta Ganar dinero con IA o Crear mi propio producto.
 
 🎨 **Imagínalo así:** terminaste la escuela de esquí. Las pistas para principiantes quedaron atrás. Delante tienes una montaña con decenas de pistas. ¿Cuáles son las tuyas? Sin un mapa de pistas, te vas a quedar una hora junto al telesquí leyendo todos los nombres. Esta lección es el mapa de pistas, con colores: tu nivel, tu dirección, tu distancia.
 

@@ -333,7 +333,7 @@ Muchos servicios de IA usan límites de uso y los comunican con claridad. Eso es
 | IA de voz | llénalo (por minuto) | llénalo | A la medida |
 | Consultoría de IA con iguala mensual | llénalo | llénalo | llénalo |
 
-Cómo llenarla: toma 5-10 competidores directos, abre sus páginas de precios y anota los precios de sus tres niveles y la fecha en que los revisaste. Para un ejemplo de precios actuales de asistentes y APIs de IA, mira [Lo vigente](https://aimayak.com/es/now/).
+Cómo llenarla: toma 5-10 competidores directos, abre sus páginas de precios y anota los precios de sus tres niveles y la fecha en que los revisaste. Para un ejemplo de precios actuales de asistentes y APIs de IA, mira [Lo vigente](https://aimayak.com/now/).
 
 **Úsala como guía, no como ley.** Tu valor puede ser más alto o más bajo, y tu precio debe reflejarlo.
 
@@ -784,7 +784,7 @@ Si tienes 8 de 10, estás listo para lanzar. Si tienes menos de 6 de 10, regresa
 - **[Página de precios de Stripe](https://stripe.com/pricing)**: un ejemplo de precio combinado (por uso + fijo)
 - **[Página de precios de Linear](https://linear.app/pricing)**: un ejemplo limpio de niveles
 - **[Página de precios de Notion](https://www.notion.com/pricing)**: una referencia de freemium + niveles
-- **[Precios de asistentes y APIs de IA](https://aimayak.com/es/now/)**: números actuales para las cuentas de tu margen
+- **[Precios de asistentes y APIs de IA](https://aimayak.com/now/)**: números actuales para las cuentas de tu margen
 - **Libros:** "Monetizing Innovation" (Madhavan Ramanujam), "Pricing Done Right" (Tim Smith) (en inglés)
 
 ---

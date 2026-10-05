@@ -145,7 +145,7 @@ A simple rule for yourself: decide to launch when your runway covers the road to
 
 **Step 1.** List all your monthly fixed costs, including the minimum you need to live on and once-a-year payments divided by 12.
 
-**Step 2.** Take your margin per client from [the unit economics lesson](d01-unit-economics-simple.md) and calculate your break-even point. Check yourself with the [Calculators](https://aimayak.com/calculators/).
+**Step 2.** Take your margin per client from [the unit economics lesson](d01-unit-economics-simple.md) and calculate your break-even point. Check yourself with the [Calculators](https://aimayak.com/en/calculators/).
 
 **Step 3.** Build a 6-month cash table: how many clients you'll have each month (be honest and assume a slow start), when they pay, and how much goes out. Find the month with the lowest balance.
 

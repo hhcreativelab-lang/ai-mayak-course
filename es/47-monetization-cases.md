@@ -383,7 +383,7 @@ Arma este cálculo una vez en Google Sheets y úsalo en cada conversación de ve
 - **Apollo.io**: [apollo.io](https://www.apollo.io/): una base de datos de contactos B2B para proyectos de generación de prospectos
 - **HubSpot**: un CRM con un nivel gratis y una API
 - **WhatsApp Business API**: a través de [Meta for Developers](https://developers.facebook.com/); exige la verificación del negocio (Meta pone los plazos, así que deja un margen)
-- **Precios de la API de Claude**: [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing): para tener costos de API precisos en tus cuentas de ROI; hay un resumen en la página [Lo vigente](https://aimayak.com/es/now/)
+- **Precios de la API de Claude**: [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing): para tener costos de API precisos en tus cuentas de ROI; hay un resumen en la página [Lo vigente](https://aimayak.com/now/)
 - **Google Sheets**: para armar tu calculadora de ROI (la armas una vez y la usas con cada cliente)
 
 ---

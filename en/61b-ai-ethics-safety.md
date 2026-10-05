@@ -246,7 +246,7 @@ When you enter client data into claude.ai, ChatGPT or any other public AI servic
 - The data is stored on the company's servers for a certain period
 - If there's a data leak, the responsibility may fall on you
 
-As of October 2026, here's how it works for Claude: on the Free, Pro and Max plans, your chats are used for training only if the setting to help improve Claude is turned on (claude.ai/settings/data-privacy-controls). With that setting on, data is kept for up to 5 years; with it off, for 30 days. Team, Enterprise and the API don't train models on your data by default. Other services have their own settings; to see how to turn them off, check the [What's current](https://aimayak.com/now/) page.
+As of October 2026, here's how it works for Claude: on the Free, Pro and Max plans, your chats are used for training only if the setting to help improve Claude is turned on (claude.ai/settings/data-privacy-controls). With that setting on, data is kept for up to 5 years; with it off, for 30 days. Team, Enterprise and the API don't train models on your data by default. Other services have their own settings; to see how to turn them off, check the [What's current](https://aimayak.com/en/now/) page.
 
 **GDPR** (General Data Protection Regulation, a European law from 2018) and similar laws in other countries require:
 
