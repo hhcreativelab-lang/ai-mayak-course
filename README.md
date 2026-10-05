@@ -2,7 +2,7 @@
 
 The texts of the core course of [AI Mayak](https://aimayak.com), a free and open academy for adults who meet AI for the first time: three learning paths (use AI at work, earn with AI, build a product with Claude Code). No sign-up, nothing to buy. Independent project, not affiliated with Anthropic or any AI vendor.
 
-Prices and model versions change often: the only place that holds them is the [What's current](https://aimayak.com/now/) page, checked every month.
+Prices and model versions change often: the only place that holds them is the [What's current](https://aimayak.com/en/now/) page, checked every month.
 
 ## License
 
