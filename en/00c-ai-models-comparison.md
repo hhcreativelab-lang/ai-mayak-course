@@ -24,7 +24,7 @@ By the end of this lesson you'll understand:
 
 **Context window**: the maximum amount of text an AI can see and keep in mind at one time. Roughly: if the window is 200K tokens, the model can hold a 150,000-word book in memory.
 
-**Token** (the smallest unit of text for an AI): about 0.75 of an English word. "Hello" = 1 token, "Hello world" = 2 tokens. Other languages usually take more tokens per word, and each model counts a little differently. Every token costs money when you work through the API (Application Programming Interface: the channel programs use to talk to the model).
+**Token** (the smallest unit of text for an AI): a little over half an English word on current Claude models (about 0.75 on older ones). "Hello" = 1 token, "Hello world" = 2 tokens. Other languages usually take more tokens per word, and each model counts a little differently. Every token costs money when you work through the API (Application Programming Interface: the channel programs use to talk to the model).
 
 **Open source / open weights**: a model whose weights are published, so you can download it and run it on your own machine. License terms differ from model to model.
 
@@ -475,7 +475,7 @@ Save your answer. At the end of the course, it'll be interesting to reread it an
 |--------|---------|
 | LLM | Large Language Model |
 | API | Application Programming Interface: a way for programs to access a service |
-| Token | The smallest unit of text for an AI, about 0.75 of a word |
+| Token | The smallest unit of text for an AI: a little over half an English word on current Claude models |
 | Context window | The maximum amount of text a model can see at one time |
 | Benchmark | A standardized performance test |
 | Multimodal | Works with several kinds of data (text, photos, audio, video) |

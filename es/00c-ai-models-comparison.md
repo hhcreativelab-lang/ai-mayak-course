@@ -24,7 +24,7 @@ Al terminar esta lección vas a entender:
 
 **Ventana de contexto**: la cantidad máxima de texto que una IA puede ver y tener presente a la vez. Más o menos: si la ventana es de 200K tokens, el modelo puede tener en memoria un libro de 150,000 palabras.
 
-**Token** (la unidad de texto más pequeña para una IA): más o menos 0.75 de una palabra en inglés. "Hello" = 1 token, "Hello world" = 2 tokens. En español y en otros idiomas una palabra suele gastar más tokens, y cada modelo cuenta un poco distinto. Cada token cuesta dinero cuando trabajas a través de la API (Application Programming Interface: el canal que usan los programas para comunicarse con el modelo).
+**Token** (la unidad de texto más pequeña para una IA): poco más de media palabra en inglés en los modelos actuales de Claude (más o menos 0.75 en los anteriores). "Hello" = 1 token, "Hello world" = 2 tokens. En español y en otros idiomas una palabra suele gastar más tokens, y cada modelo cuenta un poco distinto. Cada token cuesta dinero cuando trabajas a través de la API (Application Programming Interface: el canal que usan los programas para comunicarse con el modelo).
 
 **Open source / pesos abiertos**: un modelo cuyos pesos están publicados, así que puedes descargarlo y correrlo en tu propia máquina. Los términos de la licencia cambian de un modelo a otro.
 
@@ -475,7 +475,7 @@ Guarda tu respuesta. Al final del curso, va a ser interesante volver a leerla y 
 |--------|---------|
 | LLM | Large Language Model (modelo de lenguaje grande) |
 | API | Application Programming Interface: una forma de que los programas accedan a un servicio |
-| Token | La unidad de texto más pequeña para una IA, más o menos 0.75 de una palabra en inglés |
+| Token | La unidad de texto más pequeña para una IA: poco más de media palabra en inglés en los modelos actuales de Claude |
 | Ventana de contexto | La cantidad máxima de texto que un modelo puede ver a la vez |
 | Benchmark | Una prueba de rendimiento estandarizada |
 | Multimodal | Trabaja con varios tipos de datos (texto, fotos, audio, video) |

@@ -236,7 +236,7 @@ Tres señales distinguen el momento actual de todos los anteriores:
 
 **Señal 1: La IA se abarata rápido**
 
-Un token es la unidad de texto más pequeña que la IA "procesa". En inglés, un token equivale más o menos a 0.75 de una palabra. La API cobra por cada millón de tokens.
+Un token es la unidad de texto más pequeña que la IA "procesa". En inglés, un token equivale a poco más de media palabra en los modelos actuales de Claude (más o menos 0.75 de palabra en modelos anteriores). La API cobra por cada millón de tokens.
 
 En apenas unos años, el precio de un modelo con el mismo nivel de calidad bajó varias veces, mientras que los modelos de primer nivel se volvieron bastante más potentes. Por ejemplo, Claude Opus 4.1 costaba $15 USD por millón de tokens de entrada, mientras que Claude Opus 5.5 cuesta $4 USD a octubre de 2026 (precios vigentes: [Lo vigente](https://aimayak.com/now/)). Eso pone la automatización con IA al alcance también de los negocios pequeños. Pero los modelos más potentes siguen siendo caros, y la cuenta crece según cuánto los uses, así que calcula el costo por adelantado.
 

@@ -236,7 +236,7 @@ Three signs set the current moment apart from all the earlier ones:
 
 **Sign 1: AI is getting cheaper fast**
 
-A token is the smallest unit of text that AI "processes." In English, a token is about 0.75 of a word. The API charges per million tokens.
+A token is the smallest unit of text that AI "processes." In English text, a token is a little over half a word on current Claude models (about 0.75 of a word on older models). The API charges per million tokens.
 
 In just a few years, the price of a model at the same level of quality has dropped several times over, while the top-tier models have become noticeably stronger. For example, Claude Opus 4.1 cost $15 per million input tokens, while Claude Opus 5.5 costs $4 as of October 2026 (current prices: [What's current](https://aimayak.com/en/now/)). That puts AI automation within reach of small businesses too. But the strongest models are still expensive, and the bill grows with how much you use, so work out the cost in advance.
 

@@ -58,7 +58,7 @@ The hours in this chart are a rough guide. Anthropic doesn't measure your limit 
 - **Usage limit:** how much you can use Claude in a given period. It isn't a fixed number of messages: long conversations, big files and heavier models use it up faster. It resets every five hours, and paid plans also have a weekly limit
 - **Claude Code:** an AI agent for programming that runs in the terminal, VS Code, the desktop app or the browser. It requires a paid plan (Pro, Max, Team, Enterprise) or an API key
 - **Fable / Opus / Sonnet / Haiku:** four model families. Haiku is fast and cheap, Sonnet is the balance, Opus is smarter and is the default in Claude Code on paid plans, and Fable is the strongest and the most expensive
-- **Token:** a unit of text. Roughly 4 characters, or 0.75 of a word, of English text. An English text of 1,500 words ≈ 2,000 tokens
+- **Token:** a unit of text. On current Claude models, roughly 2.5 characters, or a little over half a word, of English text (on older models about 4 characters, or 0.75 of a word). An English text of 1,500 words ≈ 2,700 tokens on current Claude models (about 2,000 on older ones)
 - **Prompt caching:** Anthropic caches context that repeats; reading from the cache costs 10% of the input price (even less on some models)
 - **Batch API:** an asynchronous mode. You send requests, Claude processes them within 24 hours, and you get a 50% discount
 - **Computer Use:** a feature in research preview where Claude controls your computer (moves the cursor, types). In the app, it's available on Pro and Max
