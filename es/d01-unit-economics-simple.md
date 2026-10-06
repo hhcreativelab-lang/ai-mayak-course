@@ -79,7 +79,7 @@ Andrés escribe textos para sitios web y publicaciones de redes sociales para em
 
 Margen en dinero: $300 − $19 = **$281**. Se ve muy bien.
 
-Pero Andrés dedica 8 horas al mes a cada cliente: el brief, la redacción, las correcciones, las llamadas. Decidió que su tiempo debe valer al menos **$25 la hora**. Así que el tiempo que le dedica a un cliente vale 8 × $25 = $200, y su margen honesto es $281 − $200 = **$81** al mes.
+Pero Andrés dedica 8 horas al mes a cada cliente: las indicaciones del cliente, la redacción, las correcciones, las llamadas. Decidió que su tiempo debe valer al menos **$25 la hora**. Así que el tiempo que le dedica a un cliente vale 8 × $25 = $200, y su margen honesto es $281 − $200 = **$81** al mes.
 
 **Costo de adquisición.** Andrés no pone anuncios; los clientes le llegan por conocidos. Pero dedica unas 10 horas a cada cliente nuevo: mensajes, dos consultas gratis, una propuesta por escrito. Eso es 10 × $25 = **$250**.
 
@@ -113,7 +113,7 @@ Una regla práctica común: el valor de vida de un cliente debe ser al menos 3 v
 
 ❌ **Hacer las cuentas con tu mejor cliente.** Un cliente pide cada semana, los demás piden una vez. Usa el promedio, no el récord.
 
-❌ **Olvidar las comisiones.** Tu procesador de pagos (Stripe, Square, PayPal), tu banco, las comisiones de los marketplaces, el cambio de moneda cuando un cliente paga desde el extranjero. Cada una es pequeña; juntas suman.
+❌ **Olvidar las comisiones.** Tu procesador de pagos (Stripe, Square, PayPal), tu banco, las comisiones de las plataformas de venta en línea (marketplaces), el cambio de moneda cuando un cliente paga desde el extranjero. Cada una es pequeña; juntas suman.
 
 ❌ **Darle a tu primer cliente un descuento para siempre.** Un descuento en el primer pedido se come tu margen una vez. Un descuento "para siempre" se lo come cada mes.
 

@@ -1,4 +1,4 @@
-# Elige tu camino: un mapa de la biblioteca de profundización
+# Elige tu camino: un mapa de la biblioteca avanzada
 
 **Tiempo:** unos 15 min
 
@@ -6,13 +6,13 @@
 
 ## Lo esencial
 
-Delante de ti está la biblioteca de profundización, llena de lecciones aplicadas. No las vas a leer todas. Esta lección es un mapa de a dónde debes ir *tú*. Responde 4 preguntas y tienes tu ruta.
+Delante de ti está la biblioteca avanzada, llena de lecciones aplicadas. No las vas a leer todas. Esta lección es un mapa de a dónde debes ir *tú*. Responde 4 preguntas y tienes tu ruta.
 
-Sin esta lección, las lecciones aplicadas parecen un catálogo de herramientas: voz, video, análisis, CRM, soporte, anuncios. Todo es interesante y nada se construye. Un estudiante lee las lecciones una tras otra, dos meses después recuerda el 10% y no ha lanzado nada.
+Sin esta lección, las lecciones aplicadas parecen un catálogo de herramientas: voz, video, análisis, CRM, soporte, anuncios. Todo es interesante y nada se construye. Un estudiante lee las lecciones una tras otra, dos meses después recuerda poco y no ha lanzado nada.
 
 Con esta lección, sales con una de 5 rutas ya armadas: de 8 a 12 lecciones para tu meta, en el orden correcto, y con claridad sobre por qué NO lees el resto por ahora.
 
-La [página del curso](https://aimayak.com/course/) también tiene tres rutas generales según tu meta: la ruta **Usar la IA en mi trabajo**, la ruta **Ganar dinero con IA** y la ruta **Crear mi propio producto**. El mapa de abajo es más detallado: elige un escenario dentro de la meta Ganar dinero con IA o Crear mi propio producto.
+La [página del curso](https://aimayak.com/course/) también tiene tres rutas generales según tu meta: la ruta **Usar la IA en mi trabajo**, la ruta **Ganar dinero con IA** y la ruta **Crear mi propio producto**. El mapa de abajo es más detallado: elige un escenario dentro de la meta Ganar dinero con IA o Crear mi propio producto. Si seguiste la ruta Usar la IA en mi trabajo, ya terminaste el curso principal: esta lección la puedes simplemente hojear.
 
 🎨 **Imagínalo así:** terminaste la escuela de esquí. Las pistas para principiantes quedaron atrás. Delante tienes una montaña con decenas de pistas. ¿Cuáles son las tuyas? Sin un mapa de pistas, te vas a quedar una hora junto al telesquí leyendo todos los nombres. Esta lección es el mapa de pistas, con colores: tu nivel, tu dirección, tu distancia.
 
@@ -33,7 +33,7 @@ Responde las 4 preguntas en orden. Al final tienes una de 5 rutas (A/B/C/D/E). L
 | Empresas (B2B): le vendo a empresas | **A: Agencia de IA B2B** | Necesitas casos de estudio, contacto en frío, conservación de clientes, integraciones de negocio |
 | Usuarios finales (B2C): le vendo a personas | **B: App de consumo B2C** | Necesitas buena experiencia de uso, viralidad, soporte barato, escala masiva |
 | Yo mismo (B2Me): automatizo mi propia rutina | **C: Automatización personal** | Necesitas Obsidian o Notion, un asistente ejecutivo, /loop, sin presencia pública |
-| Corporativos / grandes empresas (1,000+ personas) | **D: Consultoría corporativa** | Necesitas el ecosistema de Microsoft, cumplimiento normativo, seguridad, Teams |
+| Corporativos / grandes empresas (500+ personas) | **D: Consultoría corporativa** | Necesitas el ecosistema de Microsoft, cumplimiento normativo, seguridad, Teams |
 | Una audiencia, a través de contenido | **E: Creador de contenido** | Necesitas voz, video, redes sociales, voz de marca, SEO |
 
 Si tu respuesta es "las dos", elige el escenario principal **para los próximos 3 meses**. En 3 meses, vuelve y toma la segunda ruta.
@@ -46,13 +46,13 @@ Si tu respuesta es "las dos", elige el escenario principal **para los próximos 
 
 | Respuesta | Suma a tu ruta |
 |---|---|
-| Un servicio (tu tiempo, trabajo por proyecto) | + [Tus primeros clientes](38-monetization-clients.md), [Generación de prospectos](39-lead-generation.md), [Precios](39-monetization-pricing.md), [Portafolio y casos de estudio](41-portfolio-case-studies.md), [Contacto en frío](45-cold-outreach.md), [Entrega y conservación de clientes](46-delivery-retention.md) (la forma clásica de vender un servicio) |
+| Un servicio (tu tiempo, trabajo por proyecto) | + [Tus primeros clientes](38-monetization-clients.md), [Búsqueda de clientes potenciales](39-lead-generation.md), [Precios](39-monetization-pricing.md), [Portafolio y casos de estudio](41-portfolio-case-studies.md), [Contacto en frío](45-cold-outreach.md), [Entrega y conservación de clientes](46-delivery-retention.md) (la forma clásica de vender un servicio) |
 | Un producto (se vende sin ti, escala) | + [Empaquetado](42-packaging.md), [Casos de monetización](47-monetization-cases.md), [El modelo de fábrica](48-factory-model.md) (empaquetado, el modelo de fábrica) |
 | Contenido (suscripciones, anuncios, patrocinios) | cámbiate a la ruta E |
 | Datos o análisis | + [Análisis de producto](87-product-analytics.md), [Análisis de nichos y tendencias](88-niche-trend-analysis.md), [Inteligencia competitiva](89-competitive-intelligence.md) (análisis e inteligencia de mercado) |
 | Una suscripción SaaS | + [Pagos y cobros](97-payments-stripe.md), [MLOps para desarrolladores independientes](98-mlops-indie.md), [La arquitectura final](99-final-architecture.md) |
 
-**Algunas de estas ya las viste** antes de esta lección (en la parte del curso sobre dinero y clientes). Esto es un recordatorio: no te saltes conectarlas con tu nueva ruta.
+Si seguiste la ruta Ganar dinero con IA, **algunas de estas ya las viste** en el curso principal (los módulos sobre nicho, precio y primeros clientes). Esto es un recordatorio: no te saltes conectarlas con tu nueva ruta.
 
 ---
 
@@ -75,10 +75,10 @@ Las herramientas no son la ruta. Las herramientas te dicen **qué lecciones conc
 
 | Dónde estás | Qué sumar |
 |---|---|
-| Un MVP de fin de semana (producto mínimo viable) | lo mínimo: Claude Code + Cloudflare Workers + un MCP. Deja por ahora las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor) |
+| Un MVP de fin de semana (producto mínimo viable) | lo mínimo: Claude Code + Cloudflare Workers (un servicio donde tu código funciona todo el día) + una conexión MCP (una forma de conectar servicios externos a Claude). Deja por ahora las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las demás de los estantes de la biblioteca "Seguridad: ataques y plugins de terceros" y "Arquitectura que dura") |
 | Un producto en beta (de 10 a 50 usuarios) | + monitoreo ([Análisis de producto](87-product-analytics.md)), seguridad básica ([Seguridad en Claude Code](61-security-secrets-env.md)), un registro de auditoría ([Gestión de agentes](62-agent-management-logging.md)) |
-| Producción con clientes reales | **Las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor) son OBLIGATORIAS**: sin ellas, los problemas tienden a acumularse en cuanto clientes reales dependen de tu sistema |
-| Clientes corporativos | las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor) + [Integración con Microsoft](microsoft-integration.md) + las lecciones de cumplimiento normativo |
+| Producción con clientes reales | **Te recomendamos mucho las lecciones de patrones de producción** ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor): en cuanto clientes reales dependen de tu sistema, sin ellas los problemas tienden a acumularse |
+| Clientes corporativos | las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor) + [Integración con Microsoft](microsoft-integration.md) + las lecciones sobre leyes y normas de la IA, por ejemplo [Regulación y cumplimiento de la IA](61c-ai-regulation-compliance.md) |
 
 🎨 **Imagínalo así:** no compras un Boeing 747 para ir a la tienda de la esquina. Y no compras una motoneta para cruzar el Atlántico. Tu nivel de preparación consiste en elegir el vehículo adecuado para la distancia.
 
@@ -86,7 +86,7 @@ Las herramientas no son la ruta. Las herramientas te dicen **qué lecciones conc
 
 ## 5 rutas a partir de P1 a P4
 
-Después de las 4 preguntas, quedas en una de 5 rutas. Cada ruta es una tabla: qué lecciones, en qué orden, cuántas semanas.
+Después de las 4 preguntas, quedas en una de 5 rutas. Cada ruta es una tabla: qué lecciones, en qué orden, cuántas semanas. Las lecciones del curso principal que ya tomaste te las puedes saltar.
 
 ---
 
@@ -100,7 +100,7 @@ Después de las 4 preguntas, quedas en una de 5 rutas. Cada ruta es una tabla: q
 |---|---|---|
 | 1 | [Tus primeros clientes](38-monetization-clients.md) | mapa de confianza, conversaciones cálidas |
 | 2 | [Contacto en frío](45-cold-outreach.md) | guiones con IA, conversión |
-| 3 | [Generación de prospectos](39-lead-generation.md) | un embudo con IA |
+| 3 | [Búsqueda de clientes potenciales](39-lead-generation.md) | armar listas de empresas a las cuales escribir |
 | 4 | [Precios](39-monetization-pricing.md) | precios según el valor |
 | 5 | [Entrega y conservación de clientes](46-delivery-retention.md) | conservar clientes 12+ meses |
 | 6 | [El modelo de fábrica](48-factory-model.md) | de freelancer a agencia |
@@ -117,7 +117,7 @@ Después de las 4 preguntas, quedas en una de 5 rutas. Cada ruta es una tabla: q
 
 ### Ruta B: App de consumo B2C (vendes una app a personas)
 
-**Perfil del cliente:** usuarios finales, freemium o suscripción; necesitas viralidad.
+**Perfil del cliente:** usuarios finales, versión gratuita con funciones de pago (freemium) o suscripción; necesitas viralidad.
 
 **Lógica de la ruta:** MVP → experiencia de uso → marketing → viralidad → conservación → monetización. La escala masiva exige infraestructura barata.
 
@@ -181,7 +181,7 @@ Después de las 4 preguntas, quedas en una de 5 rutas. Cada ruta es una tabla: q
 | 7 | [Análisis de nichos y tendencias](88-niche-trend-analysis.md) | investigación interna para el cliente |
 | 8 | [Inteligencia competitiva](89-competitive-intelligence.md) | inteligencia de mercado |
 | 9 | [La arquitectura final](99-final-architecture.md) | el conjunto completo para grandes empresas |
-| 10 | Las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor), OBLIGATORIAS | patrones de producción + seguridad de plugins |
+| 10 | Las lecciones de patrones de producción ([Seguridad de plugins](101-plugin-security.md), [Defensa contra prompt injection](107b-prompt-injection-defense.md), [Hooks que niegan por diseño](107-hook-deny-by-design.md), [Un portafolio desmontable](106-modular-architecture-detachability.md) y las de su alrededor), muy recomendables | patrones de producción + seguridad de plugins |
 
 **Tiempo:** de 10 a 12 semanas (más lento, porque cada lección va a fondo).
 **Sáltate:** [Chatbots con la API de Claude](50-telegram-bots.md) (un chatbot público no es un canal corporativo en la mayoría de los casos; las empresas grandes viven en Teams), [Herramientas de voz](53-voice-tools.md) y [Edición de video](54-video-pipeline.md) (la voz y el video pueden esperar), las lecciones de la fábrica de contenido ([Copywriting con IA](67-ai-copywriting.md)–[El flujo de contenido](72-content-pipeline-complete.md); no es tu habilidad central), y [IA sin código](77-no-code-ai.md)–[Zapier AI](79-zapier-ai.md) (herramientas sin código; los corporativos quieren trabajo a la medida).
@@ -271,17 +271,17 @@ Estas lecciones son útiles pero **no críticas** para la mayoría de las rutas.
 | [Orquestación avanzada](80-ai-sandboxes-e2b.md)–[Computer use avanzado](83-computer-use-advanced.md) | equipos de 5+ agentes |
 | [Voz y tiempo real](84-voice-ai-agents-vapi.md)–[Gestores de chatbots](86-chatbot-managers.md) | si la voz es tu canal principal |
 | [MLOps para desarrolladores independientes](98-mlops-indie.md) | producción con monitoreo activo |
-| [La lección que no esperabas](100-intrigue.md) | todos, después de cualquier ruta; no te la saltes |
+| [La lección que no esperabas](100-intrigue.md) | todos: es la penúltima lección del curso principal; si te la saltaste, vuelve a ella |
 
 ---
 
 ## ❌ Errores comunes al elegir una ruta
 
-❌ **Leer todas las lecciones aplicadas seguidas durante dos meses.** A los 60 días recuerdas el 10% y no has lanzado nada. Eso es pensar en catálogo: aprender por aprender.
+❌ **Leer todas las lecciones aplicadas seguidas durante dos meses.** A los dos meses recuerdas poco y no has lanzado nada. Eso es pensar en catálogo: aprender por aprender.
 
 ❌ **Saltar entre rutas al azar.** "Empecé la ruta A, a la semana salté a la E, dos semanas después a la C." Pierdes la estructura. Una ruta es **una secuencia con lógica**, no un montón de etiquetas.
 
-❌ **Ignorar las lecciones de patrones de producción cuando ya estás en producción.** "Mis clientes me pagan, pero me salté la seguridad de plugins y el portafolio desmontable." Tarde o temprano algo se rompe en producción, y es mucho más difícil de arreglar con un cliente esperando. Estas lecciones no son opcionales cuando clientes reales dependen de tu trabajo.
+❌ **Ignorar las lecciones de patrones de producción cuando ya estás en producción.** "Mis clientes me pagan, pero me salté la seguridad de plugins y el portafolio desmontable." Tarde o temprano algo se rompe en producción, y es mucho más difícil de arreglar con un cliente esperando. Cuando clientes reales dependen de tu trabajo, te recomendamos mucho estas lecciones.
 
 ❌ **No elegir ninguna ruta ("solo estoy leyendo").** Sin una meta clara, el curso se vuelve una enciclopedia. Las enciclopedias sirven para consultar, no como camino de aprendizaje.
 
@@ -331,12 +331,12 @@ Una ruta es tu **primera pasada**. Cuando lanzas la primera versión (un MVP, un
 - [ ] Anoté las 8 a 12 lecciones de mi ruta en una app de pendientes, en Obsidian o en un cuaderno
 - [ ] Entiendo por qué NO leo las otras lecciones ahora (vuelvo a ellas cuando las necesite)
 - [ ] Sé después de qué lección de mi ruta vuelvo a las lecciones de patrones de producción (si estoy en producción)
-- [ ] Puse una fecha de inicio para mi ruta y una fecha estimada para terminarla (de 6 a 12 semanas)
+- [ ] Puse una fecha de inicio para mi ruta y una fecha estimada para terminarla (de 4 a 12 semanas, según la ruta)
 
 ---
 
 ## Siguiente lección
 
-→ [Chatbots con la API de Claude](50-telegram-bots.md): de tu primer bot a Cloudflare Workers en producción
+El curso principal termina aquí. Ahora sigue tu ruta de las tablas de arriba: abre la primera lección de la ruta que todavía no hayas tomado (las lecciones del curso principal que aparecen en tu ruta ya las conoces). La ruta A empieza con [Tus primeros clientes](38-monetization-clients.md), la B con [Sitios y apps web](15-websites-webapps.md), la C con [Un asistente ejecutivo con IA](34-executive-assistant.md), la D con [IA en apps de mensajería](76-ai-messengers.md) y la E con [Copywriting con IA](67-ai-copywriting.md).
 
-(o la primera lección de tu ruta, si empieza en otra parte)
+Si seguiste la ruta Usar la IA en mi trabajo, ya terminaste el curso: vuelve a la biblioteca cuando tengas una tarea concreta.

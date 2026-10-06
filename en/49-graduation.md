@@ -10,6 +10,8 @@ You know where you're headed: your first paying clients and steady work building
 
 ⚠️ The numbers in this plan are checkpoints for measuring yourself, not a forecast and not a promise of income. Results depend on your niche, your network, your prices and the time you put in. Some people still have no clients at day 90, and that's useful data for the next step too.
 
+This plan is calmer than the 30-day plan in the lesson [Build-Along: start an AI consulting business](113-build-along-ai-consulting.md): that one is a compressed scenario for a single service, and this is the general order for three months. The steps in both plans are the same. Pick one pace and stick to it.
+
 ---
 
 ## Key concepts
@@ -50,37 +52,26 @@ A 30-60-90 plan fixes that:
 
 **Weeks 1-2: Portfolio and positioning**
 
-```
-□ Pick a specialty (1-2 types of automation, not everything at once)
-  Example: "Newsletter Automation + Content Pipeline"
-  NOT: "I do any kind of AI project"
-
-□ Build 1-2 demo projects (from the course or new ones)
-  They need to: actually work, have real metrics, look professional
-
-□ Write 2 case studies using the Problem → Solution → Result formula (lesson [Portfolio and case studies](41-portfolio-case-studies.md))
-  No real clients yet? Write up your own projects as case studies
-
-□ Create a portfolio page in Notion (same portfolio lesson)
-  Minimum: About + 2 case studies + Services + Contact
-```
+- □ Pick a specialty (1-2 types of service, not everything at once)
+  - Example: "Newsletter Automation + Content Pipeline"
+  - NOT: "I do any kind of AI project"
+- □ Build 1-2 demo projects (from the course exercises or new ones)
+  - They need to: actually work, have real metrics, look professional
+- □ Write 2 case studies using the Problem → Solution → Result formula (lesson [Portfolio and case studies](41-portfolio-case-studies.md))
+  - No real clients yet? Write up your own projects as case studies
+- □ Create a portfolio page in Notion (same portfolio lesson)
+  - Minimum: About + 2 case studies + Services + Contact
 
 **Weeks 3-4: First conversations**
 
-```
-□ Fill in your Trust Map (lesson [First clients](38-monetization-clients.md)): at least 20 contacts
-
-□ Have 5 Warm Conversations (same lesson on first clients)
-  Goal: learn about their pain points, not sell
-
-□ Create Basic/Pro/Enterprise packages for your specialty (lesson [Packaging](42-packaging.md))
-  With prices, a scope document and an SLA (what you promise, and how fast)
-
-□ Do an ROI calculation for at least 2 potential clients (lesson [Monetization case studies](47-monetization-cases.md))
-  Concrete numbers for their pain → value of the solution → price
-
-□ Have 2-3 sales conversations (not Warm Conversations: this time you propose a project)
-```
+- □ Fill in your Trust Map (lesson [How to find your first clients](38-monetization-clients.md)): at least 20 contacts
+- □ Have 5 Warm Conversations (same lesson on first clients)
+  - Goal: learn about their pain points, not sell
+- □ Create Basic/Pro/Enterprise packages for your specialty (lesson [Packaging](42-packaging.md))
+  - With prices, a scope document and an SLA (what you promise, and how fast)
+- □ Do an ROI calculation for at least 2 potential clients (lesson [Monetization case studies](47-monetization-cases.md))
+  - Concrete numbers for their pain → value of the solution → price
+- □ Have 2-3 sales conversations (not Warm Conversations: this time you propose a project)
 
 **Day 30 milestone:**
 
@@ -105,35 +96,26 @@ A 30-60-90 plan fixes that:
 
 If you already have one by day 30, great. If not, keep the pipeline from phase 1 going and add:
 
-```
-□ Cold outreach (lesson [Cold outreach with Claude](45-cold-outreach.md)): 10-15 personalized emails a week
-  Focus: the same niche as your warm contacts
-
-□ LinkedIn activity: 3-4 posts a week about your work
-  Show the process: "Today I launched a system that..." (screenshots!)
-  Practice, not theory
-
-□ First project: even at a reduced price (the first experience matters more than the price)
-```
+- □ Cold outreach (lesson [Cold outreach with Claude](45-cold-outreach.md)): 10-15 personalized emails a week
+  - Focus: the same niche as your warm contacts
+- □ LinkedIn activity: 3-4 posts a week about your work
+  - Show the process: "Today I launched a system that..." (screenshots!)
+  - Practice, not theory
+- □ First project: even at a reduced price (the first experience matters more than the price)
 
 **Delivering your first project:**
 
-```
-□ Use the Handover Protocol from the lesson [Delivery and retention](46-delivery-retention.md)
-□ Record a Loom walkthrough video
-□ Ask for a testimonial and an NPS score (a 0-10 "would you recommend me?" rating) right after the demo
-□ Ask for referrals ("Is there anyone else who could use something like this?")
-```
+- □ Use the handoff protocol from the lesson [How to hand off a project and keep the client](46-delivery-retention.md)
+- □ Record a Loom walkthrough video
+- □ Ask for a testimonial and an NPS score (a 0-10 "would you recommend me?" rating) right after the demo
+- □ Ask for referrals ("Is there anyone else who could use something like this?")
 
 **Your first recurring revenue:**
 
-```
-□ After delivery: offer a maintenance contract at a fixed monthly price
-  "Includes monitoring, API updates (when the connected services change), and 30 minutes of consulting a month"
-
-□ Send the client a monthly report with numbers (template in the same delivery lesson)
-  It keeps the client and reminds them why they're paying
-```
+- □ After delivery: offer a maintenance contract at a fixed monthly price
+  - "Includes monitoring, API updates (when the connected services change), and 30 minutes of consulting a month"
+- □ Send the client a monthly report with numbers (template in the same delivery lesson)
+  - It keeps the client and reminds them why they're paying
 
 **Day 60 milestone:**
 
@@ -155,35 +137,27 @@ If you already have one by day 30, great. If not, keep the pipeline from phase 1
 
 **Factory Model:**
 
-```
-□ Create a template for your main type of project (lesson [Factory Model](48-factory-model.md))
-  Goal: the next project of this type goes 2x faster
-
-□ An SOP (standard operating procedure: a written step-by-step) for each type: 5 steps, 5 days, exactly what you do
-□ Update your prices: with the Factory → a higher price for the same or less time
-```
+- □ Create a template for your main type of project (lesson [Factory Model](48-factory-model.md))
+  - Goal: the next project of this type goes 2x faster
+- □ An SOP (standard operating procedure: a written step-by-step) for each type: 5 steps, 5 days, exactly what you do
+- □ Update your prices: with the Factory → a higher price for the same or less time
 
 **Growing your pipeline:**
 
-```
-□ Cold outreach: 15-20 emails a week (personalized with Claude)
-□ Ask your first clients for referrals
-□ Consider one networking event (online or in person)
-  Not to sell, but to understand the market and get seen
-```
+- □ Cold outreach: 15-20 emails a week (personalized with Claude)
+- □ Ask your first clients for referrals
+- □ Consider one networking event (online or in person)
+  - Not to sell, but to understand the market and get seen
 
 **Optimization:**
 
-```
-□ A weekly review every Friday (15 minutes):
+- □ A weekly review every Friday (15 minutes):
   - How many conversations this week?
   - How many proposals sent?
   - How many projects in the pipeline?
   - What went wrong, and what will I change?
-
-□ Revisit your positioning based on real feedback from clients
-  What do they value most? What do they ask about most often?
-```
+- □ Revisit your positioning based on real feedback from clients
+  - What do they value most? What do they ask about most often?
 
 **Day 90 milestone:**
 
@@ -201,7 +175,7 @@ If you already have one by day 30, great. If not, keep the pipeline from phase 1
 
 🎨 **Picture this:** a snowball rolling down a hill. For the first few feet you push it by hand, and it stays small. The farther it goes, the bigger it gets and the faster it rolls on its own. Referrals from your first clients, a Factory that speeds up delivery, a reputation in your niche: all of it keeps building on itself once the system is running.
 
-The usual sequence looks like this, with no dollar forecasts:
+The plan's sequence looks like this, with no dollar forecasts:
 
 ```
 Day 30:      first conversations, 1-2 demo case studies, maybe a first project
@@ -277,12 +251,10 @@ After 90 days you have a base. The next level is visibility and connections:
 
 Signs it's time:
 
-```
-□ Client income has steadily covered your expenses plus a helper's pay for 2+ months in a row
-□ You're turning down projects because you don't have the time
-□ More than 50% of your time goes to operations, not sales or strategy
-□ You have a Factory with documented SOPs
-```
+- □ Client income has steadily covered your expenses plus a helper's pay for 2+ months in a row
+- □ You're turning down projects because you don't have the time
+- □ More than 50% of your time goes to operations, not sales or strategy
+- □ You have a Factory with documented SOPs
 
 What to hand off first:
 - Initial research and data gathering to personalize outreach
@@ -295,7 +267,7 @@ Who to look for:
 - Upwork / Contra / Toptal for technical tasks
 - A virtual assistant for admin work
 
-If you're not sure how to pay a freelancer the right way (contracts, tax paperwork), ask your accountant before you hire.
+If you're not sure how to pay a freelancer the right way (contracts, tax paperwork), ask your accountant before you hire: the rules differ by state and by country.
 
 **Don't hire before your Factory is working.** Delegating chaos means paying for chaos.
 
@@ -354,6 +326,8 @@ Revenue goal by day 90: $___/month
 
 Print this table and put it up on the wall. Mark your progress every week.
 
+These are the plan's targets, not a promise: when clients and payments actually arrive depends on your niche, your market and your work. If a milestone slips, move the date and keep the order of the steps.
+
 ---
 
 ## Common mistakes
@@ -368,18 +342,18 @@ Print this table and put it up on the wall. Mark your progress every week.
 
 ## How the lessons fit together (overview)
 
-This lesson wraps up the first part of the course. Here's how the lessons connect into one system:
+This lesson wraps up the Earn with AI path. Here's how the lessons connect into one system:
 
 | Block | Lessons | What it gives you |
 |---|---|---|
-| **Foundation** | [Installing Claude Code](05-setup.md), [How to write a good prompt](06-prompting-fundamentals.md), [MCP](17-mcps-deep.md) and other lessons from the first modules | Skills for working with Claude Code, agents (programs that carry out tasks on their own) and MCP (Model Context Protocol: a standard way to connect tools to AI) |
-| **Projects** | [Your first workflow](09-first-workflow-live.md), [Deploying to Cloudflare](18-deployment-cloudflare.md) and other hands-on lessons | Real automations for your portfolio |
+| **Foundation** | [How to write a good prompt](06-prompting-fundamentals.md) and the other lessons from the first modules. Optional, in the deep-dive library: [Installing Claude Code](05-setup.md), [MCP](17-mcps-deep.md) | Knowing how to give AI a task and check the answer. In the library: working with Claude Code, agents (programs that carry out tasks on their own) and MCP (Model Context Protocol: a standard way to connect tools to AI) |
+| **Projects** | Optional, in the deep-dive library: [Your first workflow](09-first-workflow-live.md), [Deploying to Cloudflare](18-deployment-cloudflare.md) and other hands-on lessons | Automations for your portfolio, if you decide to build with code |
 | **Portfolio** | [Portfolio and case studies](41-portfolio-case-studies.md) | Case studies with numbers |
 | **Packaging** | [Packaging](42-packaging.md) | Basic/Pro/Enterprise packages |
 | **Pricing** | [Pricing](39-monetization-pricing.md) | Value-based pricing + ROI |
-| **First clients** | [First clients](38-monetization-clients.md) | Warm contacts, Trust Map |
-| **Outreach** | [Lead generation](39-lead-generation.md), [Cold outreach](45-cold-outreach.md) | Lead generation + cold email |
-| **Delivery** | [Delivery and retention](46-delivery-retention.md) | Handover + retention |
+| **First clients** | [How to find your first clients](38-monetization-clients.md) | Warm contacts, Trust Map |
+| **Outreach** | [Cold outreach](45-cold-outreach.md). Optional, in the deep-dive library: [Finding potential clients](39-lead-generation.md) | Cold email, plus lists of companies to write to |
+| **Delivery** | [How to hand off a project and keep the client](46-delivery-retention.md) | Handoff + retention |
 | **ROI case studies** | [Monetization case studies](47-monetization-cases.md) | 5 breakdowns with numbers |
 | **Scale** | [Factory Model](48-factory-model.md) | Templates and repeatability |
 | **Plan** | this lesson | 30-60-90 days |
@@ -395,7 +369,7 @@ This lesson wraps up the first part of the course. Here's how the lessons connec
 - **Contra**: [contra.com](https://contra.com/), an alternative to Upwork; as of October 2026, it says freelancers pay no commission
 - **Toptal**: [toptal.com](https://www.toptal.com/) for hiring strong technical specialists (once you scale)
 - **Fiverr**: [fiverr.com](https://www.fiverr.com/) for quick hires on one-off tasks
-- **Stripe**: [stripe.com](https://stripe.com/) to accept payments, including recurring billing for maintenance contracts
+- **Stripe**: [stripe.com](https://stripe.com/) to accept payments, including recurring billing for maintenance contracts (not available in every country)
 - **Loom**: [loom.com](https://www.loom.com/) for LinkedIn content (showing how you work)
 - **Claude API docs**: [platform.claude.com/docs](https://platform.claude.com/docs/) and **Claude Code docs**: [code.claude.com/docs](https://code.claude.com/docs) to keep learning after the course
 - **Claude Cookbooks**: [github.com/anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks), example projects built on Claude
@@ -414,19 +388,21 @@ This lesson wraps up the first part of the course. Here's how the lessons connec
 
 ---
 
-## You've reached the end of the first part of the course
+## You've finished the Earn with AI path
 
-You've gone all the way from "what is Claude Code" to "how to grow an AI business." If you're on the Earn with AI path, this is its final lesson. Next in the course come the applied topics; pick your route in the lesson [Choosing your path](49b-choose-your-path.md).
+You've gone all the way from your first conversation with AI to a 90-day plan. If you're on the Earn with AI path, this is its final lesson. In the core course, the next module is "Your first build without code: a step into Claude Code," which starts with the lesson [What is an AI agent, and why it matters now](01-agentic-market.md). The course ends with the lesson [Choose your path](49b-choose-your-path.md).
 
 **What you have now:**
-- An understanding of how agentic workflows work under the hood
-- Experience building real automations (Newsletter, Invoice, Executive Assistant)
-- Tools for running things online 24/7 (Cloudflare Workers, Trigger.dev)
-- A framework for earning with it (case studies, packages, pricing, outreach, retention)
+- The skill of giving AI a clear task and checking its answers
+- Practice using AI for writing, email, meetings and presentations
+- A niche, a way to work out your price, and service packages
+- Ways to find clients: warm contacts, cold email, content
 - A concrete 90-day plan
+
+There's no certificate at the end. On the My progress page you can make a commemorative diploma: type your name and pick your country, and it appears on a map of the Americas. You make it yourself from the lessons you've marked as done in your own browser. It's a keepsake, not proof of education, and nobody verifies it.
 
 **From here on, it's all practice:**
 
 The first conversation with a potential client is the scariest. The second is easier. By the tenth, it's routine.
 
-You tested the system in practice during this course. The next practical step is your first conversation with a potential client.
+You have the plan. The next practical step is your first conversation with a potential client.

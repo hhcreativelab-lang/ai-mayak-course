@@ -19,7 +19,7 @@ Nadie contrata a un arquitecto que solo dice "sé construir casas". Los buenos a
 - **Número de oro**: el número principal que responde "¿y eso qué?" ($X al mes ahorrados, N horas liberadas)
 - **Capturas de pantalla frente a descripciones**: las capturas convencen, las descripciones explican; necesitas las dos
 - **3 tipos de clientes**: pequeños negocios, agencias, empresas grandes; cada uno quiere algo distinto
-- **Plataformas para el portafolio**: Notion, GitHub Pages, un sitio web personal
+- **Plataformas para el portafolio**: Notion, GitHub (una página README que describe un proyecto), un sitio web personal
 
 ---
 
@@ -51,7 +51,7 @@ Quién es el cliente, qué le duele y cómo se ve eso en números:
 
 ```
 Cliente: una agencia de marketing digital, equipo de 8 personas
-Problema: cada lunes se iban 2-3 horas en armar los reportes semanales
+Problema: cada lunes se iban unas 7 horas en armar los reportes semanales
 de 12 clientes. Los datos se juntaban a mano de 4 fuentes distintas:
 Google Analytics, Meta Ads, Google Ads y el CRM.
 ```
@@ -72,8 +72,8 @@ o aprobar el envío con un clic.
 **3. Resultado (números concretos)**
 
 ```
-Antes: 2.5 horas/semana × 12 reportes = 30 horas/mes de trabajo manual
-Después: 15 minutos para revisar y aprobar los 12 reportes
+Antes: 7 horas a la semana ≈ 30 horas al mes de trabajo manual
+Después: 15 minutos a la semana para revisar y aprobar los 12 reportes ≈ 1 hora al mes
 Ahorro: 29 horas/mes = $1,450/mes (con un costo de $50/hora del ejecutivo)
 Costo del proyecto: $2,800
 Recuperación de la inversión: menos de 2 meses
@@ -101,7 +101,7 @@ El número de oro va en el primer párrafo del caso de éxito y en el título.
 
 Ejemplos:
 "Inmobiliaria ahorra 18 horas a la semana automatizando las consultas que llegan"
-"Agencia digital baja el tiempo de sus reportes de 30 horas a 15 minutos al mes"
+"Agencia digital baja el tiempo de sus reportes de 30 horas a 1 hora al mes"
 "Empresa B2B acelera la respuesta a prospectos de 4 horas a 8 minutos"
 ```
 
@@ -168,7 +168,7 @@ Página de Notion tu-portafolio
 ├── Servicios (lo que ofreces)
 ├── Casos de éxito
 │   ├── Caso 1: Inmobiliaria, 18 horas/semana
-│   ├── Caso 2: Agencia digital, reportes en 15 minutos
+│   ├── Caso 2: Agencia digital, reportes en 15 minutos a la semana
 │   └── Caso 3: Empresa B2B, prospectos atendidos en 8 minutos
 └── Contacto (enlace de Calendly)
 ```
@@ -227,7 +227,7 @@ Decisión clave: [un detalle técnico interesante].
 
 **Ejercicio: escribe tu primer caso de éxito**
 
-1. Elige un proyecto que ya hayas construido (de las lecciones del curso: Newsletter Automation, Invoice Automation, Executive Assistant, o uno tuyo)
+1. Elige una tarea que ya hayas resuelto con IA: para ti, en el trabajo o para alguien que conoces (por ejemplo, del módulo "IA para el trabajo diario": correos, reuniones, presentaciones). Si ya armaste automatizaciones con las lecciones de la biblioteca, usa una de ellas
 
 2. Llena la estructura Problema → Solución → Resultado:
    ```
@@ -239,11 +239,11 @@ Decisión clave: [un detalle técnico interesante].
 
 3. Encuentra tu número de oro: un número para el título
 
-4. Toma 3 capturas de pantalla: la estructura del código o del flujo de trabajo, el sistema funcionando, el resultado (un registro, un reporte, una hoja de cálculo)
+4. Toma 3 capturas de pantalla: antes (cómo se hacía a mano), durante (el sistema o la IA trabajando), después (el resultado: un registro, un reporte, una hoja de cálculo)
 
 5. Escribe el caso de éxito con la plantilla, sin pasar de una página tamaño carta
 
-6. Crea una página de Notion y publícala (Share → Allow anyone with link; en español, Compartir y permitir el acceso a cualquiera con el enlace)
+6. Crea una página de Notion y publícala: haz clic en Compartir arriba → abre la pestaña Publicar → haz clic en Publicar (si tu Notion está en inglés: Share → Publish → Publish)
 
 **Meta:** un caso de éxito terminado y publicado, con números concretos y capturas de pantalla. Es el primer ladrillo de tu portafolio.
 
@@ -269,7 +269,7 @@ Decisión clave: [un detalle técnico interesante].
 **Problema:** 30 horas/mes en reportes manuales para 12 clientes, 2-3 errores al mes
 **Solución:** Recolección automática de datos de GA + Meta Ads + Google Ads,
 Claude escribe la parte narrativa, el PDF se arma y se envía según un horario
-**Resultado:** 30 horas → 15 minutos/mes, 0 errores, los reportes llegan el lunes en la mañana
+**Resultado:** 30 horas → 1 hora/mes, 0 errores, los reportes llegan el lunes en la mañana
 **Herramientas:** Claude Code + Cloudflare Workers + bot de Slack + Google Sheets
 **Recuperación de la inversión:** 2 meses
 **Testimonio:** "Los lunes nuestra mercadóloga hace trabajo de verdad en lugar de copiar números"
@@ -279,7 +279,7 @@ Claude escribe la parte narrativa, el PDF se arma y se envía según un horario
 
 ## Errores comunes
 
-- **Sin números de antes/después.** "Automaticé los reportes" es una descripción. "30 horas → 15 minutos, $1,450/mes ahorrados" es un caso de éxito. Sin métricas de antes/después, un caso de éxito no vende.
+- **Sin números de antes/después.** "Automaticé los reportes" es una descripción. "30 horas → 1 hora al mes, $1,450/mes ahorrados" es un caso de éxito. Sin métricas de antes/después, un caso de éxito no vende.
 - **Escribir un "caso de éxito" sin capturas de pantalla.** Las palabras describen, las capturas demuestran. Al menos 3 capturas: ANTES (el proceso manual), DURANTE (el sistema trabajando), DESPUÉS (el resultado en los datos).
 - **Mostrar la parte técnica en lugar del resultado para el negocio.** Al cliente no le importa que usaste Cloudflare Workers. Le importa que ahorra $1,450 al mes. Pon las herramientas técnicas en letra pequeña al final.
 - **No pedir un testimonio justo después de la entrega.** El mejor momento para pedirlo es cuando el cliente ve el sistema funcionando por primera vez. Un mes después, el entusiasmo se habrá enfriado. (→ [Entrega y retención](46-delivery-retention.md): más sobre cómo conseguir testimonios)
@@ -288,9 +288,9 @@ Claude escribe la parte narrativa, el PDF se arma y se envía según un horario
 
 ## Cómo se conecta con otras lecciones
 
-- **→ [Entrega y retención](46-delivery-retention.md)**: cómo sacar un testimonio y un caso de éxito de cada proyecto que entregas
-- **→ [Paquetes](42-packaging.md)**: los casos de éxito son la prueba de valor detrás de tus paquetes
-- **→ [Casos reales de monetización](47-monetization-cases.md)**: ejemplos resueltos con números, para inspirarte
+- **→ [Entrega y retención](46-delivery-retention.md)**: viene más adelante en este módulo: cómo sacar un testimonio y un caso de éxito de cada proyecto que entregas
+- **→ [Paquetes](42-packaging.md)**: ya la viste: los casos de éxito son la prueba de valor detrás de tus paquetes
+- **→ [Casos reales de monetización](47-monetization-cases.md)**: ya la viste: ejemplos resueltos con números, para inspirarte
 
 ---
 
@@ -319,4 +319,6 @@ Claude escribe la parte narrativa, el PDF se arma y se envía según un horario
 
 ## Siguiente lección
 
-→ [Paquetes: convierte tus automatizaciones en productos](42-packaging.md)
+→ [Correo en frío y prospección en LinkedIn con Claude](45-cold-outreach.md)
+
+Cómo armar tus servicios en paquetes ya lo viste en la lección [Paquetes](42-packaging.md).

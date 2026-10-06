@@ -79,7 +79,7 @@ James writes website copy and social media posts for small companies. AI helps h
 
 Cash margin: $300 − $19 = **$281**. Looks great.
 
-But James spends 8 hours a month on each client: the brief, the writing, revisions, calls. He's decided his time should be worth at least **$25 an hour**. So the time he puts into a client is worth 8 × $25 = $200, and his honest margin is $281 − $200 = **$81** a month.
+But James spends 8 hours a month on each client: gathering the details, the writing, revisions, calls. He's decided his time should be worth at least **$25 an hour**. So the time he puts into a client is worth 8 × $25 = $200, and his honest margin is $281 − $200 = **$81** a month.
 
 **Acquisition cost.** James doesn't run ads; clients come through people he knows. But he spends about 10 hours on each new one: messages, two free consultations, a written proposal. That's 10 × $25 = **$250**.
 

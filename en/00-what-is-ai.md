@@ -45,7 +45,7 @@ That doesn't make it any less valuable. A mirror that can write code, analyze bu
 
 It all starts with one question, asked in 1950.
 
-**Alan Turing** was a British mathematician, logician and codebreaker. In 1936 he came up with the idea of a universal computing machine, what we now call a computer. During World War II he played a central role in cracking the German Enigma cipher, which, by historians' estimates, shortened the war by 2 to 4 years. One person, a few mathematical insights, and history changed.
+**Alan Turing** was a British mathematician, logician and codebreaker. In 1936 he came up with the idea of a universal computing machine, what we now call a computer. During World War II he played a central role in cracking the German Enigma cipher. By the estimate of Harry Hinsley, the official historian of British intelligence, the codebreakers' work shortened the war by two to four years. A few mathematical insights, and history took a different turn.
 
 In 1950 Turing published a paper called "Computing Machinery and Intelligence." Its first line became legendary:
 
@@ -65,11 +65,11 @@ Turing died in 1954 at the age of 41. He didn't live to see any of the revolutio
 
 Six years after Turing's paper, in the summer of 1956, an event took place in the small town of Hanover, New Hampshire, that gave all of this its name.
 
-**The Dartmouth Conference** was the first conference in history devoted specifically to artificial intelligence. It was organized by **John McCarthy**, a young mathematician at Dartmouth College.
+**The Dartmouth Conference** was the first gathering of scientists in history devoted specifically to artificial intelligence: a summer workshop that ran for almost two months. It was organized by **John McCarthy**, a young mathematician at Dartmouth College.
 
 It was McCarthy who came up with the term "artificial intelligence" and used it for the first time. Before that, scientists talked about "machine thinking," "cybernetics" (the science of control and communication in systems) and "automata." McCarthy gave the new field a precise name.
 
-The conference brought together about 10 scientists. They planned to solve the main problems of building thinking machines in a single summer. The enthusiasm was enormous.
+The conference brought together about 10 scientists. They hoped to make major progress on building thinking machines in a single summer. The enthusiasm was enormous.
 
 **Picture the moment:** it was like the early days of aviation at the start of the 20th century. The Wright brothers had just flown, and engineers around the world were sure that within 20 years everyone would be getting around in their own personal aircraft. Reality turned out to be more complicated, but the direction was right.
 
@@ -91,7 +91,7 @@ There were two of these "winters."
 
 In the early 1970s it became clear that the computers of the day were far too weak for such ambitious goals. Early AI programs could play chess at a basic level, solve algebra equations and imitate a simple conversation. But scaling up didn't work: the harder the problem, the worse the algorithms did.
 
-In 1973 the British government commissioned a report on the state of AI research. The **Lighthill Report** was scathing: researchers had promised too much and delivered too little. Funding in the UK was almost completely shut off.
+In 1973 a report on the state of AI research came out in Britain, commissioned by the country's Science Research Council. The **Lighthill Report** was scathing: researchers had promised too much and delivered too little. Funding for AI was cut at most British universities.
 
 The US agency DARPA (the Defense Advanced Research Projects Agency) cut its grants too. A period began that historians would later call the first AI winter.
 
@@ -99,7 +99,7 @@ The US agency DARPA (the Defense Advanced Research Projects Agency) cut its gran
 
 In the 1980s AI found a new direction: expert systems. The idea seemed brilliant: write down the knowledge of the best specialists as a set of rules, and the computer would give the same advice they would.
 
-The XCON system, which configured computers for DEC (Digital Equipment Corporation), saved the company $25 million a year. The medical system MYCIN made diagnoses better than many doctors. It looked as though expert systems were the way forward.
+The XCON system, which configured computers for DEC (Digital Equipment Corporation), saved the company an estimated $25 million a year. And back in the 1970s, the medical system MYCIN had matched infectious-disease specialists at choosing antibiotics in a blinded comparison. It looked as though expert systems were the way forward.
 
 But then it turned out that these systems cost millions of dollars to build and maintain. They couldn't learn: every new rule had to be written by hand. They broke down in unusual situations. They couldn't scale.
 
@@ -121,7 +121,7 @@ Can you build something like that with math? Yes. An artificial neuron is just a
 
 The key learning algorithm is **backpropagation** (short for "backward propagation of errors"). The network makes a prediction, compares it with the right answer, calculates the error, and then sends information about that error backward through the network, adjusting each weight a little at a time.
 
-**Geoffrey Hinton** is a Canadian scientist and one of the three "founding fathers" of modern neural networks. In 1986, together with colleagues, he published a key paper on backpropagation that showed how to train networks with many layers (in 2024 Hinton received the Nobel Prize in Physics for his work on neural networks). The other two founders are **Yann LeCun**, who created convolutional neural networks for recognizing images, and **Yoshua Bengio**, who helped systematize the approaches to deep learning. In 2018 all three received the Turing Award, the most prestigious award in computer science.
+**Geoffrey Hinton** is a British-Canadian scientist and one of the three "founding fathers" of modern neural networks. In 1986, together with colleagues, he published a key paper on backpropagation that showed how to train networks with many layers (in 2024 Hinton received the Nobel Prize in Physics for his work on neural networks). The other two founders are **Yann LeCun**, who created convolutional neural networks for recognizing images, and **Yoshua Bengio**, who helped systematize the approaches to deep learning. All three shared the 2018 Turing Award, the most prestigious award in computer science.
 
 **Picture a neural network:** it's like training your muscles. When you learn to ride a bike, you fall, your brain adjusts the commands it sends to your muscles, and you try again. With each attempt, the connections in your brain get tuned more precisely. A neural network does the same thing, except that instead of falling off a bike, it calculates its errors mathematically.
 
@@ -137,7 +137,7 @@ The breakthrough didn't come from a new theory. It came from two things: big dat
 
 Every year starting in 2010, a contest called **ImageNet** was held: a competition in image recognition. The task: show a program a photo, and it has to say what's in it. The database: 1.2 million photos in 1,000 categories.
 
-In 2012 Geoffrey Hinton's team entered the contest with a program called **AlexNet**, named after Hinton's student Alex Krizhevsky. AlexNet's error rate: 15.3%. The best previous result: 26.2%. A huge gap.
+In 2012 Geoffrey Hinton's team entered the contest with a program called **AlexNet**, named after Hinton's student Alex Krizhevsky. AlexNet's error rate: 15.3%. The runner-up's: 26.2%. A huge gap.
 
 What did Hinton have that the others didn't? **GPUs (graphics processing units)**. Graphics cards built for video games turned out, almost by accident, to be ideal for training neural networks: they can run millions of calculations in parallel. Hinton's team used two consumer Nvidia GTX 580 graphics cards, and that turned out to be enough to start a revolution.
 
@@ -163,7 +163,7 @@ The transformer uses an **attention mechanism**: the ability to "look at" all th
 
 **Picture this:** a translator is translating the sentence "The bank raised the interest rate on my loan" into Spanish. A bad translator handles the word "bank" without knowing what comes next and might pick the Spanish word for a riverbank. A good translator reads the whole sentence first and understands from the context ("interest rate," "loan") that this is the kind of bank that handles money. The attention mechanism does the same thing: before it handles each word, the transformer "looks at" the whole sentence.
 
-Transformers turned out to be ideal for language. They learn quickly from huge amounts of text. They scale well: the more parameters (a parameter is an adjustable number inside a neural network, the same idea as a "weight"), the smarter the model. And they can work in parallel, which makes training dozens of times faster.
+Transformers turned out to be ideal for language. They learn quickly from huge amounts of text. They scale well: you can make the model bigger, with more parameters (a parameter is an adjustable number inside a neural network, the same idea as a "weight"), and train it on more text, and the quality keeps improving. And they can process text in parallel, which makes training much faster.
 
 An **LLM (large language model)** is exactly this: a neural network built on the transformer architecture and trained on an enormous body of text. The first "L," for Large, is the key part. Large means billions or hundreds of billions of parameters.
 
@@ -177,7 +177,7 @@ In June 2020 the company **OpenAI** released **GPT-3**.
 
 GPT stands for Generative (it creates new content), Pre-trained (trained on a large body of text before anyone starts using it) and Transformer (the architecture).
 
-The third version of GPT had 175 billion parameters. For comparison, the human brain has roughly 86 billion neurons. GPT-3 isn't smarter than a person, but the scale was already in the same range.
+The third version of GPT had 175 billion parameters. For comparison, the human brain has roughly 86 billion neurons. It's a loose comparison: a model's parameter is closer to a connection between neurons than to a neuron, and the brain has far more of those.
 
 What could GPT-3 do? An incredible amount by 2020 standards. Write essays. Compose poems. Write working code. Answer questions. Translate. Imitate the style of famous authors. Solve math problems.
 
@@ -194,7 +194,7 @@ Earlier AI breakthroughs were known only to scientists and tech people. November
 On that day OpenAI launched **ChatGPT**, a chat interface on top of the GPT-3.5 model. It was a chatbot that anyone with an internet connection could talk to, no technical knowledge needed.
 
 The results beat every expectation:
-- 1 million users in the first 5 days (Instagram took 75 days)
+- 1 million users in the first 5 days (Instagram took about two and a half months)
 - 100 million users in about 2 months (by analysts' estimates at the time, the fastest-growing consumer app up to then)
 - OpenAI's servers went down under the load several times
 
@@ -206,7 +206,7 @@ What made ChatGPT special, apart from the quality of the model? Two things:
 
 **2. RLHF (reinforcement learning from human feedback)**, a special training method. After the model is trained on text from the internet, human raters train it further. They show the model two possible answers and say which one is better. This makes AI not just smart but also easy to talk to: it answers the way a person expects.
 
-**Picture this:** the first McDonald's in 1955. Hamburgers and French fries were sold in America long before that. But McDonald's came up with a system: a standard recipe, fast preparation, an affordable price, the same everywhere. AI existed before; ChatGPT made it available to everyone. That changed everything.
+**Picture this:** McDonald's in the 1950s. Hamburgers and French fries were sold in America long before that. But McDonald's built a system: a standard recipe, fast preparation, an affordable price, the same everywhere. AI existed before; ChatGPT made it available to everyone. That changed everything.
 
 ---
 
@@ -214,7 +214,7 @@ What made ChatGPT special, apart from the quality of the model? Two things:
 
 After ChatGPT's success came a period the industry calls "the model race." Every few months a new, more powerful version came out.
 
-**GPT-4** came out in March 2023. It's multimodal (able to work with different kinds of data): it understands not only text but also images. According to OpenAI, it scored in the top 10% of human test takers on the bar exam, and it passed the USMLE (the US medical licensing exam).
+**GPT-4** came out in March 2023. It's multimodal (able to work with different kinds of data): it understands not only text but also images. According to OpenAI, it scored around the top 10% of test takers on a simulated bar exam. And according to researchers at Microsoft and OpenAI, it beat the passing score on questions from the USMLE (the US medical licensing exam).
 
 **Claude 1, 2 and 3**: a series of models from Anthropic. Each version was smarter than the one before. In 2024, Claude 3 Opus became one of the best AI assistants on many benchmarks (standard performance tests).
 
@@ -222,7 +222,7 @@ After ChatGPT's success came a period the industry calls "the model race." Every
 
 **Llama**: a series of open-weight models (the numbers that make up the trained model are published) from Meta, the company behind Facebook and Instagram. Unlike GPT and Claude, Llama's weights are public. Anyone can download the model and run it on their own computer (under the terms of its license). That gave rise to a whole ecosystem of AI that runs locally, on your own machine.
 
-**Picture this period:** something like the space race, except between companies and out in the open. Every major tech company poured billions of dollars into AI research. Google, Microsoft, Amazon, Meta and Apple all declared AI their top strategic priority.
+**Picture this period:** something like the space race, except between companies and out in the open. Major tech companies poured billions of dollars into AI research. Google, Microsoft, Amazon, Meta and Apple all made AI one of their main priorities.
 
 The race hasn't ended: over 2025 and 2026 the Claude, ChatGPT, Gemini and other model lineups were replaced several times. For the current list, see the [What's current](https://aimayak.com/en/now/) page. In this lesson we're looking at the history, not at the latest version.
 
@@ -234,17 +234,17 @@ You've reached the most important section. Why now, and not in 2020, or 2022, or
 
 Three signs set the current moment apart from all the earlier ones:
 
-**Sign 1: AI is getting cheaper faster than it's getting more capable**
+**Sign 1: AI is getting cheaper fast**
 
 A token is the smallest unit of text that AI "processes." In English, a token is about 0.75 of a word. The API charges per million tokens.
 
 In just a few years, the price of a model at the same level of quality has dropped several times over, while the top-tier models have become noticeably stronger. For example, Claude Opus 4.1 cost $15 per million input tokens, while Claude Opus 5.5 costs $4 as of October 2026 (current prices: [What's current](https://aimayak.com/en/now/)). That puts AI automation within reach of small businesses too. But the strongest models are still expensive, and the bill grows with how much you use, so work out the cost in advance.
 
-**Sign 2: APIs are open to everyone**
+**Sign 2: APIs are open to every developer**
 
-Until 2023, using AI in a business meant hiring ML (machine learning) engineers and building expensive infrastructure (the technical foundation: servers, networks, storage). That took months and cost hundreds of thousands of dollars.
+It used to be that using AI in a business usually meant hiring machine learning engineers and building expensive infrastructure (the technical foundation: servers, networks, storage). That took months and a lot of money.
 
-Now you sign up in Anthropic's developer console, get an API key (a unique code that gives you access to the service), write 10 lines of code, and you have working AI automation. One person can put together a simple version over a weekend.
+Now you sign up in Anthropic's developer console, get an API key (a unique code that gives you access to the service), write about ten lines of code, and AI is answering your program. One person who can program a little can put together a simple version over a weekend.
 
 **Sign 3: Agentic AI, or AI that acts instead of just answering**
 
@@ -254,7 +254,7 @@ This is the most important shift. Until 2024, AI was reactive: you asked, it ans
 
 **Reasoning models**, such as today's Claude models with a thinking mode (in the newer models, the model decides for itself how much to think, and you set the level of effort), can "think before they answer." They break a complex task into steps, check their own conclusions and adjust their approach. That makes them much more accurate on hard tasks: programming, analysis, strategic decisions.
 
-And this is where **Claude Code** comes in, the tool this course is built around. Claude Code is Anthropic's coding agent. It's not just a chat with AI. It's an AI agent that can read your project, edit files, run commands, fix errors and deploy apps (put them live in production, where real users can reach them). It acts instead of only giving advice. As of October 2026 it works in the terminal, in VS Code and JetBrains, in the Claude desktop app, in the browser and on your phone.
+And this is where **Claude Code** comes in, the tool this course leads up to in its final modules and the subject of the deep-dive library. Claude Code is Anthropic's coding agent. It's not just a chat with AI. It's an AI agent that can read your project, edit files, run commands, fix errors and deploy apps (put them live in production, where real users can reach them). It acts instead of only giving advice. As of October 2026 it works in the terminal, in VS Code and JetBrains, in the Claude desktop app, in the browser and on your phone.
 
 **Picture the moment:** like the internet in 1995. The technology already existed: web browsers (programs for viewing web pages), email, the first websites. But most people didn't see why they needed it. A few people who got it early founded Amazon, Google, Yahoo; most people simply learned to use it over the following years, at their own pace. We're now in the early period of mass AI, and a lot is still taking shape.
 
@@ -262,13 +262,13 @@ And this is where **Claude Code** comes in, the tool this course is built around
 
 ### Part 12: Anthropic and Claude: who's behind it
 
-This course is built around Claude and Claude Code. It's worth understanding what kind of company is behind them and why that matters.
+Most examples in this course use Claude, and the final modules lead up to Claude Code. So it's worth knowing what kind of company is behind them.
 
 **Anthropic** is an American AI company founded in 2021 in San Francisco.
 
-How it started: most of Anthropic's founders previously worked at OpenAI. In 2021 **Dario Amodei**, then OpenAI's vice president of research, and his sister **Daniela Amodei**, then vice president of operations, decided to start a new company. Several key researchers left with them.
+How it started: most of Anthropic's founders previously worked at OpenAI. In 2021 **Dario Amodei**, who had been OpenAI's vice president of research, and his sister **Daniela Amodei**, who had been its vice president of safety and policy, started a new company. Several key researchers left with them.
 
-The main disagreement was about speed. The Amodeis felt OpenAI was moving too fast without paying enough attention to safety. Anthropic was founded with a different focus: "responsible AI development."
+The main difference, in the company's own words, is its focus on safety. Anthropic describes itself as an AI safety and research company, and its stated purpose is the responsible development of advanced AI.
 
 Anthropic developed a training method called **Constitutional AI**. Instead of only showing the model what's "good" and what's "bad" through human ratings, Constitutional AI gives the model a set of principles, a "constitution," and teaches it to judge its own answers against those principles. This makes Claude more consistent in following its values.
 
@@ -277,7 +277,7 @@ Anthropic developed a training method called **Constitutional AI**. Instead of o
 Why Claude, and Anthropic specifically, matter for this course:
 
 1. Claude Code is Anthropic's official development tool, built to work natively with Claude
-2. Anthropic has one of the strongest APIs in the industry for building agents
+2. Anthropic offers an API and ready-made tools for building agents
 3. Anthropic puts an emphasis on honest and safe answers, and for reliable business processes it's important that a model can say "I don't know"
 
 ---
@@ -288,7 +288,7 @@ Three exercises, light and practical:
 
 ### Exercise 1: Your first conversation with Claude
 
-Open **claude.ai** in your browser. If you don't have an account, sign up; the basic plan is free. If Claude isn't available where you are, for example while you're traveling abroad (the list of supported countries is on [Anthropic's page](https://www.anthropic.com/supported-countries)), use any other AI assistant: you'll find options in the [Tools](https://aimayak.com/en/tools/) section.
+Open **claude.ai** in your browser. If you don't have an account, sign up; the basic plan is free (the sign-up steps are in [Your first 30 minutes with AI](00pre-your-first-30-minutes.md)). If Claude isn't available where you are, for example while you're traveling abroad (the list of supported countries is on [Anthropic's page](https://www.anthropic.com/supported-countries)), use any other AI assistant: you'll find options in the [Tools](https://aimayak.com/en/tools/) section.
 
 Ask this:
 ```
@@ -326,7 +326,7 @@ A question to answer for yourself: what surprised you most about the history of 
 
 > **2017 + 2022 = the point of no return.** Transformers provided the architecture; ChatGPT provided the access. After that, AI stopped being a lab experiment.
 
-> **The turning point is happening now for three reasons:** AI is getting cheaper faster than it's getting more capable, APIs are available to everyone without specialized technical knowledge, and agentic AI has started acting on its own instead of only answering questions.
+> **The turning point is happening now for three reasons:** AI is getting cheaper fast, APIs are open to anyone who can program a little, and agentic AI has started acting on its own instead of only answering questions.
 
 > **Anthropic and Claude are this course's choice** because Claude Code makes it easy to show agentic work in practice. The principles in this lesson apply to other assistants too.
 
@@ -350,9 +350,11 @@ A question to answer for yourself: what surprised you most about the history of 
 
 ## Next lesson
 
-**→ [How an LLM works inside](00b-how-llm-works.md): no math, just plain pictures**
+**→ [AI for your family](00g-ai-for-family.md): kids, teens and seniors**
 
-In the next lesson we'll cover what a token really is, how exactly an LLM generates text word by word, what a model's "temperature" is and why the same question sometimes gets different answers, and what "200,000 tokens of context" means in practical terms.
+This is the last lesson of the first module: rules for kids of different ages, school, older parents and family projects. If the family topic isn't what you need right now, go straight to the second module and the lesson [How to write a good prompt](06-prompting-fundamentals.md), which shows how to give AI a task so you get the answer you need.
+
+And if you haven't read [How an LLM works inside](00b-how-llm-works.md) yet, take a look: it explains tokens, context and hallucinations.
 
 ---
 

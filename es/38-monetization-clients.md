@@ -6,14 +6,14 @@
 
 ## Lo esencial
 
-El cliente más caro es uno que no te conoce. El más barato es alguien que ya te conoce. El Trust Map (mapa de confianza) es un mapa de tus contactos cercanos. Una conversación cercana es la forma de convertirlos en tus primeros clientes que pagan sin poner un solo anuncio.
+El cliente más caro es uno que no te conoce. El más barato es alguien que ya te conoce. El mapa de confianza es una lista de tus contactos cercanos. Una conversación cercana es la forma de convertirlos en tus primeros clientes que pagan sin poner un solo anuncio.
 
 ## Conceptos clave
 
 - Tus primeros 3–5 proyectos son práctica pagada, no un negocio a escala completa
-- Trust Map: 20 contactos como tu base de partida
+- Mapa de confianza: 20 contactos como tu base de partida
 - Conversaciones cercanas: investiga, no vendas
-- Recomendaciones: los clientes contentos suelen estar dispuestos a recomendarte si se lo pides, pero la mayoría de los vendedores nunca lo pide
+- Recomendaciones: los clientes contentos muchas veces están dispuestos a recomendarte si se lo pides, pero pocos lo piden
 - Tu portafolio (tu colección de trabajos terminados) se arma con tus primeros proyectos
 
 ---
@@ -56,24 +56,24 @@ Un precio más bajo en tus primeros proyectos no es ser "barato". Es una decisi�
 
 ---
 
-### Trust Map: un mapa de tus contactos cercanos
+### Mapa de confianza: una lista de tus contactos cercanos
 
-🎨 **Imagínalo así:** tu Trust Map es tu tarjetero (ese viejo organizador giratorio de tarjetas de presentación). Todo dueño de negocio tiene uno, pero pocos lo revisan a propósito. Revisa el tuyo y vas a encontrar 3–5 personas que ya confían en ti y que tienen justo el problema que sabes resolver.
+🎨 **Imagínalo así:** tu mapa de confianza es tu tarjetero (ese viejo organizador giratorio de tarjetas de presentación). Todo dueño de negocio tiene uno, pero pocos lo revisan a propósito. Revisa el tuyo y vas a encontrar 3–5 personas que ya confían en ti y que tienen justo el problema que sabes resolver.
 
-Un Trust Map es una tabla sencilla con todas las personas que conoces que podrían:
+Un mapa de confianza es una tabla sencilla con todas las personas que conoces que podrían:
 - Convertirse en clientes
 - Recomendarte con alguien más
 
-**Cómo armar tu Trust Map:**
+**Cómo armar tu mapa de confianza:**
 
 Toma una hoja de papel o una hoja de cálculo y anota a todas las personas que conoces:
 - Amigos y familiares que tienen un negocio
 - Excompañeros de trabajo y exjefes
-- Gente que conociste en eventos de networking
+- Gente que conociste en eventos y reuniones de negocios
 - Personas con las que te escribiste por trabajo en los últimos 2 años
 - Contactos de LinkedIn que conoces en persona
 
-**Formato de la tabla (una plantilla de Trust Map):**
+**Formato de la tabla (una plantilla de mapa de confianza):**
 
 | Nombre | De dónde lo conozco | Negocio / puesto | Posible problema | Prioridad (1–3) |
 |---|---|---|---|---|
@@ -81,7 +81,7 @@ Toma una hoja de papel o una hoja de cálculo y anota a todas las personas que c
 | Miguel R. | Excompañero de trabajo | Agente inmobiliario | Mucho ir y venir rutinario con clientes, preparar papeleo | 2 (media) |
 | María T. | LinkedIn | Gerente de recursos humanos en una empresa de tecnología | Revisa más de 200 currículums a la semana, filtra candidatos | 2 (media) |
 | Jaime S. | Amigo de un amigo | Tiene un consultorio dental | Agenda pacientes a mano, recordatorios de citas | 1 (alta) |
-| Lucía L. | Evento de networking | Gestora de contenidos | Publica en 5 redes sociales todos los días, textos repetitivos | 2 (media) |
+| Lucía L. | Evento de negocios | Gestora de contenidos | Publica en 5 redes sociales todos los días, textos repetitivos | 2 (media) |
 
 Meta: **más de 20 contactos.** No quiere decir que todos vayan a ser clientes. Quiere decir que vas a tener con quién hablar.
 
@@ -150,8 +150,8 @@ El siguiente paso:
 
 ```
 "Oye, mencionaste que pasas 3 horas al día respondiendo correos.
-Justo tengo una herramienta que automatiza exactamente eso.
-¿Quieres que te muestre cómo funcionaría en tu caso?"
+Sé configurar la IA para que ayude con respuestas así.
+¿Quieres que te muestre cómo podría funcionar en tu caso?"
 ```
 
 La transición se siente natural: ya conoces el problema y estás ofreciendo una solución concreta.
@@ -162,9 +162,9 @@ La transición se siente natural: ya conoces el problema y estás ofreciendo una
 
 🎨 **Imagínalo así:** le construiste a tu vecino una terraza y le encanta. No pedirle una recomendación es como irte sin dejarle tu tarjeta. Y tu vecino conoce a otros tres vecinos que también quieren una terraza. Una pregunta = tres posibles clientes.
 
-En la práctica pasa así:
-- la mayoría de los clientes contentos están dispuestos a recomendarte si se lo pides
-- la mayoría de los vendedores nunca lo pide
+En la práctica muchas veces pasa así:
+- muchos clientes contentos están dispuestos a recomendarte si se lo pides
+- pero no se acuerdan solos, y los vendedores casi nunca lo piden
 
 Eso quiere decir que pierdes posibles clientes nuevos solo por no preguntar.
 
@@ -188,23 +188,23 @@ Importante: no lo pidas justo al empezar el trabajo. Solo cuando la persona ya r
 
 🎨 **Imagínalo así:** los contactos cercanos son como pescar en un estanque que conoces, donde ya viste peces. El contacto en frío es tirar la red en un lago que nunca has visto. Las dos cosas pueden funcionar, pero la segunda requiere muchísimos más intentos.
 
-El contacto en frío (escribirle a gente que no te conoce) es mucho más difícil y da pocos resultados: responde un pequeño porcentaje, y una fracción de un por ciento se convierte en cliente (las cifras exactas dependen del nicho; no tenemos estadísticas precisas).
+El contacto en frío (escribirle a gente que no te conoce) es mucho más difícil: responde poca gente, y todavía menos se convierte en cliente. Las cifras exactas dependen del nicho; mide las tuyas.
 
 Si ya recorriste tus contactos cercanos y quieres probar el contacto en frío:
 
 **Reglas:**
 1. Personalizar es obligatorio. "Veo que vendes X en Shopify y tienes más de 500 productos (SKU). ¿Manejar el catálogo a mano te quita mucho tiempo?"
-2. Sé breve. Tres frases como máximo en el primer mensaje.
+2. Sé breve. El primer mensaje son unas cuantas frases que se leen en unos 20 segundos (la fórmula del correo la vemos en la lección de contacto en frío).
 3. Termina con una pregunta concreta, no con una oferta.
 4. No vendas en el primer contacto. Pregunta y aprende.
 
-Pero empieza por tus contactos cercanos. Es probable que las 20 personas de tu Trust Map te traigan más primeros clientes que 200 correos en frío.
+Pero empieza por tus contactos cercanos. Es probable que las 20 personas de tu mapa de confianza te traigan más primeros clientes que 200 correos en frío.
 
 ---
 
 ## Práctica
 
-**Ejercicio:** arma tu Trust Map y agenda conversaciones
+**Ejercicio:** arma tu mapa de confianza y agenda conversaciones
 
 1. Crea una tabla (Google Sheets, Notion o un simple archivo de texto)
 
@@ -234,7 +234,7 @@ Pero empieza por tus contactos cercanos. Es probable que las 20 personas de tu T
 "Primero termino el curso, luego pulo mi portafolio, luego..." Eso es dejarlo para después disfrazado. Escríbeles a 5 personas esta semana. No necesitas estar 100% listo.
 
 **2. Cobrar demasiado poco**
-Un precio muy por debajo del mercado no es "un precio accesible para conseguir clientes". Da la señal de "no estoy seguro de que mi trabajo sea bueno". Calcula tu precio con la lección [Cómo poner tu precio](d02-pricing-simple.md) y súbelo con cada proyecto nuevo.
+Un precio un poco más bajo en tus primeros proyectos es una decisión consciente, como vimos arriba. Pero un precio muy por debajo del mercado no es "un precio accesible para conseguir clientes". Da la señal de "no estoy seguro de que mi trabajo sea bueno". Calcula tu precio con la lección [Cómo poner tu precio](d02-pricing-simple.md) y súbelo con cada proyecto nuevo.
 
 **3. Vender en el primer mensaje**
 ```
@@ -246,7 +246,7 @@ Un precio muy por debajo del mercado no es "un precio accesible para conseguir c
 Después de 10 conversaciones no vas a recordar lo que dijo la primera persona. Anota los problemas clave JUSTO DESPUÉS de cada conversación.
 
 **5. No pedir recomendaciones**
-La mayoría de los clientes contentos te van a recomendar si se lo pides. Solo pregunta después de un proyecto exitoso.
+Los clientes contentos muchas veces están dispuestos a recomendarte si se lo pides. Solo pregunta después de un proyecto exitoso.
 
 ---
 
@@ -291,29 +291,31 @@ que te pueda servir, ¿te parece bien que te la muestre?"
 ---
 
 ## Herramientas y recursos
-- **Google Sheets**: para tu Trust Map (sencillo y fácil para empezar)
+- **Google Sheets**: para tu mapa de confianza (sencillo y fácil para empezar)
 - **Calendly**: permite que la gente agende una llamada contigo sin tanto ir y venir: [calendly.com](https://calendly.com/)
 - **Notion**: para tu portafolio y para organizar tus notas: [notion.com](https://www.notion.com/)
 - **Loom**: para grabar videos de demostración para clientes: [loom.com](https://www.loom.com/)
-- **Stripe**: para cobrar cuando crezcas a ventas regulares: [stripe.com](https://stripe.com/)
+- **Stripe**: para cobrar cuando crezcas a ventas regulares. No está disponible en todos los países (en América Latina, a octubre de 2026, solo en México y Brasil); la lista está en stripe.com/global: [stripe.com](https://stripe.com/)
 - **Otter.ai**: transcribe tus conversaciones para que encuentres patrones (pide permiso a la otra persona antes de grabar una llamada)
 
 ---
 
 ## Ideas clave
-> Tu primer cliente está cerca: en los contactos de tu celular, en LinkedIn o en un grupo local de Facebook del que formas parte. No necesitas anuncios para encontrar a tus primeros 3–5 clientes.
+> Tu primer cliente está cerca: en los contactos de tu celular, en LinkedIn o en un grupo local de Facebook del que formas parte. Para encontrar a tus primeros 3–5 clientes, normalmente no necesitas anuncios.
 > Investiga, no vendas. Alguien que se siente comprendido (en lugar de presionado para comprar) te va a preguntar por su cuenta: "¿Me podrías ayudar con eso?"
-> La mayoría de los clientes contentos te van a recomendar si se lo pides. Pídelo siempre después de un proyecto exitoso.
+> Los clientes contentos muchas veces están dispuestos a recomendarte si se lo pides. Pídelo después de cada proyecto exitoso.
 > Los resultados dependen de tu nicho, de tu mercado y de tu trabajo: esta lección te da un método, no una garantía.
 
 ---
 
 ## Lecciones relacionadas
 
-- Más sobre este tema: [Cómo elegir un nicho](38b-niche-selection-methodology.md), [Precios](39-monetization-pricing.md), [Portafolio y casos de éxito](41-portfolio-case-studies.md), [Cómo empaquetar tu servicio](42-packaging.md), [Contacto en frío](45-cold-outreach.md)
-- [Asistente ejecutivo con IA](34-executive-assistant.md): un gran proyecto de demostración para tus primeros clientes ("mira lo que construí para mí")
+- Ya las viste: [Cómo elegir un nicho](38b-niche-selection-methodology.md), [Precios](39-monetization-pricing.md), [Cómo empaquetar tu servicio](42-packaging.md). Vienen en este módulo: [Portafolio y casos de éxito](41-portfolio-case-studies.md), [Contacto en frío](45-cold-outreach.md)
+- [Asistente ejecutivo con IA](34-executive-assistant.md): una lección opcional de la biblioteca; un buen ejemplo de proyecto para tus primeros clientes ("mira lo que construí para mí")
 
 ---
 
 ## Próxima lección
-→ [Cómo elegir un nicho: encuentra tu mercado](38b-niche-selection-methodology.md)
+→ [Portafolio y casos de éxito: cómo mostrar tu valor](41-portfolio-case-studies.md)
+
+Cómo elegir un nicho ya lo viste en el módulo "Dónde te necesitan": [Cómo elegir un nicho: encuentra tu mercado](38b-niche-selection-methodology.md).

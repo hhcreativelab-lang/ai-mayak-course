@@ -24,7 +24,7 @@ Un buen mensaje en frío se lee como si un conocido muy listo hubiera entendido 
 
 La mayoría de los mensajes en frío son malos porque venden **lo que haces** en lugar de **lo que la otra persona obtiene**.
 
-❌ "Tengo un producto SaaS que automatiza reportes con analítica de IA e integración con Slack."
+❌ "Tengo un producto SaaS (software en línea que se paga por suscripción) que automatiza reportes con analítica de IA e integración con Slack."
 ✅ "Muchos equipos de finanzas se pasan el viernes armando a mano el reporte semanal. Mis clientes recuperaron ese viernes."
 
 El primero habla de ti. El segundo habla de ellos. La persona que lee tu mensaje debería pensar "Ah, esa es justo mi situación", no "Ah, otra oferta de SaaS".

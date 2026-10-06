@@ -141,7 +141,7 @@ Tú:      Va. ¿Y si firmamos ahora y ponemos la fecha de inicio
 
 **La regla principal:** **logra que quien toma la decisión esté en la llamada.** Si estás hablando con alguien que no decide, tu trabajo no es "convencerlo para que convenza a los demás". Es conseguir acceso a quienes de verdad deciden.
 
-Quien cuenta una presentación de segunda mano pierde la mitad de los matices. Hiciste una gran presentación, y tu aliado (la persona dentro de la empresa que está de tu lado) la resume en una línea: "se ve caro".
+Quien cuenta una presentación de segunda mano pierde buena parte de los matices. Hiciste una gran presentación, y tu aliado (la persona dentro de la empresa que está de tu lado) la resume en una línea: "se ve caro".
 
 ---
 
@@ -431,6 +431,8 @@ Un descuento es una herramienta, no una forma de defenderte. Úsalo con estrateg
 | **Cambio desde un competidor** | 20-30% el primer año | Se cambian desde un competidor (ganas un cliente nuevo) |
 | **Contrato de varios años** | 10-15% al año | Un compromiso de 2-3 años |
 
+Los tamaños de la tabla son guías aproximadas del curso, no una norma del mercado. Calcula los tuyos con las lecciones de precios.
+
 **Nunca:**
 - ❌ Un descuento "porque el cliente lo pidió" sin quid pro quo
 - ❌ Un descuento de más del 30%: abarata el producto para siempre
@@ -452,7 +454,7 @@ El conjunto mínimo de condiciones que debe tener tu contrato:
 - **Política de reembolsos:** clara, y publicada en tu página de aterrizaje
 - **Propiedad de los datos:** los datos son del cliente; tú los procesas
 - **SLA (acuerdo de nivel de servicio):** disponibilidad (99.9%) y tiempo de respuesta (lo típico son 24 horas), para los niveles más altos
-- **DPA (acuerdo de procesamiento de datos):** obligatorio para clientes de la Unión Europea (por el RGPD/GDPR) y en industrias reguladas; las leyes de datos personales de tu país pueden pedir algo parecido
+- **DPA (acuerdo de procesamiento de datos):** hace falta cuando manejas datos personales por encargo de un cliente de la Unión Europea (el RGPD/GDPR pide un contrato por escrito), y muchas veces en industrias reguladas como salud y finanzas; las leyes de datos personales de tu país pueden pedir algo parecido
 
 **Condiciones de ejemplo para proyectos pequeños de IA:**
 - Contratos mensuales por defecto (poco compromiso, más fáciles de cerrar)
@@ -488,7 +490,7 @@ Los errores más frecuentes que matan tu tasa de cierre:
 
 ### Paso 1: Escribe tu guion de respuestas a objeciones
 
-Crea el archivo `sales/objections-script.md` en tu proyecto:
+Crea un documento con tus respuestas. Sirve un documento de Google o las notas de tu celular; si llevas una carpeta de proyecto en tu computadora, nombra el archivo `sales/objections-script.md`:
 
 ```markdown
 # Guion de respuestas a objeciones
@@ -531,7 +533,7 @@ Apréndetelo de memoria. No lo leas durante una llamada; la gente lo nota. Tiene
 
 ### Paso 2: Estructura de una llamada de venta de 45 minutos (plantilla)
 
-Crea `sales/call-template.md`:
+Crea un segundo documento (o el archivo `sales/call-template.md`):
 
 ```markdown
 # Plantilla de llamada de venta (45 min)
@@ -570,7 +572,7 @@ Crea `sales/call-template.md`:
 
 ### Paso 3: Plantilla del ritmo de seguimiento
 
-`sales/followup-cadence.md`:
+Un tercer documento (o el archivo `sales/followup-cadence.md`):
 
 ```markdown
 # Ritmo de seguimiento (5 contactos en 30 días, luego cada trimestre)
@@ -627,20 +629,16 @@ Aportar valor cada trimestre, no ventas.
 
 ### Paso 4: Practica objeciones con Claude en un juego de roles
 
-Usa a Claude como compañero de práctica. En este ejemplo, le presentas tu oferta a un CTO (director de tecnología):
+Usa a Claude como compañero de práctica. Abre un chat normal en claude.ai (o Claude Code, si ya lo usas) y pega el prompt de abajo. En este ejemplo, le presentas tu oferta a un CTO (director de tecnología):
 
-```bash
-# En Claude Code (también sirve un chat normal en claude.ai)
-claude
-
-> Juego de roles: eres el CTO de una startup de 50 personas que está evaluando
-> nuestra plataforma de flujos de trabajo con IA. El precio es de $5k al mes. Tu presupuesto
-> está apretado este trimestre. Yo empiezo la llamada de venta. Después de cada
-> intervención mía, dame una objeción realista de CTO, no una fácil.
-
-# Practica 5-10 veces a la semana, 15 minutos cada vez
-# Anota las respuestas que no funcionaron → mejora tu guion
 ```
+Juego de roles: eres el CTO de una startup de 50 personas que está evaluando
+nuestra plataforma de flujos de trabajo con IA. El precio es de $5,000 al mes. Tu presupuesto
+está apretado este trimestre. Yo empiezo la llamada de venta. Después de cada
+intervención mía, dame una objeción realista de CTO, no una fácil.
+```
+
+Practica 2 veces a la semana, 15 minutos cada vez. Anota las respuestas que no funcionaron y mejora tu guion.
 
 **Variaciones para practicar:**
 - "Un CTO que ya invirtió en un competidor"
@@ -680,7 +678,7 @@ Mide:
 - Tamaño promedio del trato: $N
 ```
 
-**Qué hacer con las métricas:**
+**Qué hacer con las métricas** (los umbrales de abajo son guías de trabajo del curso, no estadísticas del mercado; ajústalos cuando tengas 10-20 tratos propios):
 
 - **Demostración → propuesta menos de 60%** → mejora tu demostración (estás mostrando lo que no es)
 - **Propuesta → cierre menos de 25%** → mejora tu cierre (estás perdiendo gente que estaba lista)
@@ -729,12 +727,12 @@ Mide:
 ## Herramientas y recursos
 
 - **"Never Split the Difference"** (en español, *Rompe la barrera del no*), de Chris Voss, exnegociador de rehenes del FBI. Empatía táctica, reflejo, preguntas calibradas. Un clásico de la negociación.
-- **"SPIN Selling"**, de Neil Rackham. Situación / Problema / Implicación / Necesidad de beneficio. Un método clásico de venta B2B.
-- **[El método Sandler](https://www.sandler.com)**: un método de venta que pone el dolor del comprador antes que las funciones. Bueno para la venta consultiva (en inglés).
+- **"SPIN Selling"**, de Neil Rackham. Cuatro tipos de preguntas: de situación, de problema, de implicación y de beneficio de la solución. Un método clásico de venta B2B.
+- **[El Sandler Selling System](https://www.sandler.com)**: un método de venta que empieza por el dolor del comprador y solo después habla del producto. Bueno para la venta consultiva (en inglés).
 - **[Y Combinator: ventas para startups](https://www.ycombinator.com/library/)**: una colección de materiales sobre las primeras ventas de una startup (en inglés).
-- **"The Mom Test"**, de Rob Fitzpatrick. Cómo hacer preguntas que te den respuestas honestas en lugar de mentiras amables.
-- **[Apollo.io](https://apollo.io)**: un CRM para la prospección saliente + seguimiento del pipeline
-- **[Gong.io](https://gong.io)**: graba tus llamadas de venta para que te revises (si tu presupuesto lo permite). Avisa siempre que estás grabando y pide permiso; las reglas sobre grabar llamadas cambian según el país, y en algunos lugares todos los participantes tienen que dar su consentimiento.
+- **"The Mom Test"** (en español, *El Mom Test*), de Rob Fitzpatrick. Cómo hacer preguntas que te den respuestas honestas en lugar de mentiras amables.
+- **[Apollo.io](https://apollo.io)**: una base de contactos con secuencias de correo y llamadas: buscar clientes y mandar los primeros correos en un solo lugar
+- **[Gong.io](https://gong.io)**: graba y analiza tus conversaciones con clientes para que te revises (si tu presupuesto lo permite). Avisa siempre que estás grabando y pide permiso; las reglas sobre grabar llamadas cambian según el país, y en algunos lugares todos los participantes tienen que dar su consentimiento.
 
 ---
 
@@ -750,10 +748,10 @@ Mide:
 
 ## Lecciones relacionadas
 
-- [Tus primeros clientes](38-monetization-clients.md): cómo encontrar a tus primeros 10 clientes
-- [Generación de prospectos](39-lead-generation.md): armar un pipeline antes de cerrar
-- [Estrategia de precios para productos de IA](39e-pricing-strategy-deep.md): cómo poner un precio con el que cerrar sea realista
-- [Correo en frío con Claude](45-cold-outreach.md): cómo llegar a los prospectos que después vas a cerrar
+- [Tus primeros clientes](38-monetization-clients.md): ya la viste: cómo encontrar a tus primeros clientes entre la gente que conoces
+- [Estrategia de precios para productos de IA](39e-pricing-strategy-deep.md): ya la viste: cómo poner un precio con el que cerrar sea realista
+- [Correo en frío con Claude](45-cold-outreach.md): ya la viste: cómo llegar a los prospectos que después vas a cerrar
+- [Generación de prospectos](39-lead-generation.md): una lección opcional de la biblioteca sobre cómo armar una lista de contactos de forma automática
 
 ---
 

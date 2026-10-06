@@ -1,12 +1,12 @@
 # IA sin código para quienes no programan: v0, Webflow, Framer
 
-**Tiempo:** unos 25 min de lectura + 35 min de práctica
+**Tiempo:** unos 25 min de lectura + 60 min de práctica
 
 ---
 
 ## Lo esencial
 
-🎨 **Imagínalo así:** imagina trabajar con un arquitecto sin necesitar un dibujante. Describes con palabras lo que quieres, "una casa de tres recámaras con ventanales de piso a techo y cochera techada", y 30 segundos después tienes enfrente un diseño terminado. Nunca tomaste un lápiz, no conoces el reglamento de construcción, y aun así la casa queda con aspecto profesional. Así funcionan las herramientas de IA sin código: describes lo que quieres y ellas lo construyen. Claude Code, en esta imagen, es el contratista general al que llamas cuando necesitas una instalación eléctrica o una plomería a la medida que el plano estándar no contemplaba.
+🎨 **Imagínalo así:** imagina trabajar con un arquitecto sin necesitar un dibujante. Describes con palabras lo que quieres, "una casa de tres recámaras con ventanales de piso a techo y cochera techada", y unos minutos después tienes enfrente un diseño terminado. Nunca tomaste un lápiz, no conoces el reglamento de construcción, y aun así la casa queda con aspecto profesional. Así funcionan las herramientas de IA sin código: describes lo que quieres y ellas lo construyen. Claude Code, en esta imagen, es el contratista general al que llamas cuando necesitas una instalación eléctrica o una plomería a la medida que el plano estándar no contemplaba.
 
 Esta lección trata de construir sitios web y apps para ti y para tus clientes sin escribir a mano una sola línea de código. También trata de cuándo basta con lo sin código, y cuándo es momento de traer a Claude.
 
@@ -15,9 +15,9 @@ Esta lección trata de construir sitios web y apps para ti y para tus clientes s
 ## Conceptos clave
 
 - **IA sin código (no-code)** (crear software sin escribir código): herramientas que generan la interfaz, el contenido y la lógica de una app a partir de una descripción en lenguaje común
-- **v0** (v0.app, antes v0.dev): un servicio de Vercel que construye interfaces y apps en React a partir de un prompt (tu solicitud a la IA); puedes copiar el código que produce directo a Claude Code
-- **Webflow AI**: la IA integrada en Webflow que genera textos, imágenes y contenido del CMS sin que salgas del editor
-- **Framer AI**: crea una página de aterrizaje a partir de una sola oración, adaptada automáticamente a celulares y tabletas
+- **v0** (v0.app, antes v0.dev): un servicio de Vercel que construye interfaces y apps completas en React a partir de un prompt (tu solicitud a la IA); puedes ver el código que produce, sacarlo y seguir trabajándolo en Claude Code
+- **Webflow AI**: la IA integrada en Webflow que te ayuda a armar páginas, escribir textos y llenar el CMS (el sistema que administra el contenido del sitio) sin salir del editor
+- **Framer AI**: los agentes de Framer, que crean páginas, textos e imágenes en tu proyecto a partir de una descripción con palabras
 - **El enfoque híbrido**: v0 o Framer generan la parte visual, y Claude Code agrega la lógica de negocio, las integraciones de API (una API, o interfaz de programación de aplicaciones, es la forma en que los programas hablan entre sí) y la base de datos
 - **El nicho de "constructor por encargo"**: un servicio en el que tomas pedidos de sitios web, los construyes rápido con las herramientas de esta lección y se los entregas al cliente como producto terminado
 - **Velocidad vs. flexibilidad**: lo sin código es más rápido para trabajos estándar; Claude Code es insustituible para la lógica a la medida y el crecimiento a largo plazo
@@ -29,7 +29,7 @@ Esta lección trata de construir sitios web y apps para ti y para tus clientes s
 
 ### Por qué la IA sin código se volvió una herramienta profesional
 
-Antes, "hacer un sitio sin código" significaba una plantilla de Squarespace o Wix con bloques fijos y animaciones limitadas. Hoy, las herramientas de IA sin código generan componentes de React listos para producción, hacen que el diseño se adapte a cualquier tamaño de pantalla, configuran los campos del CMS y publican en una CDN (red de distribución de contenido). La distancia entre "lo hice yo" y "contraté a un desarrollador" se achicó tanto que un dueño de negocio sin formación técnica puede armar rápido un sitio sencillo que antes le tomaba semanas a un equipo.
+Antes, "hacer un sitio sin código" significaba una plantilla de Squarespace o Wix con bloques fijos y animaciones limitadas. Hoy, las herramientas de IA sin código generan componentes de React listos para producción, hacen que el diseño se adapte al celular y a la computadora, configuran los campos del CMS y publican en una CDN (red de distribución de contenido). La distancia entre "lo hice yo" y "contraté a un desarrollador" se achicó tanto que un dueño de negocio sin formación técnica puede armar rápido un sitio sencillo que antes le tomaba semanas a un equipo.
 
 Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo", alguien que conoce estas herramientas mejor que el cliente y al que le pagan por su criterio para elegir el conjunto de herramientas correcto y por la rapidez de entrega, no por escribir código.
 
@@ -37,9 +37,9 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 
 ### v0 (Vercel): del texto a una interfaz en React
 
-**Qué es.** v0 (en v0.app, antes v0.dev) es un servicio de Vercel, la empresa detrás de Next.js. Ahora es un agente que construye interfaces y apps completas. Escribes un prompt ("haz una tarjeta de producto con imagen, precio, un botón de agregar al carrito y una etiqueta de descuento") y obtienes código de React listo, con Tailwind CSS y shadcn/ui. Hay un plan gratis; los planes de pago funcionan con créditos según el uso de tokens (condiciones en [v0.app/pricing](https://v0.app/pricing)).
+**Qué es.** v0 (en v0.app, antes v0.dev) es un servicio de Vercel, la empresa detrás de Next.js. Ahora es un agente que construye interfaces y apps completas. Escribes un prompt ("haz una tarjeta de producto con imagen, precio, un botón de agregar al carrito y una etiqueta de descuento") y obtienes código de React listo, con Tailwind CSS y shadcn/ui. Hay un plan gratis con un límite de mensajes al día; los planes de pago funcionan con créditos que se gastan según cuánto texto entra y sale de v0 (condiciones en [v0.app/pricing](https://v0.app/pricing)).
 
-**Cómo funciona.** v0 no solo entiende "un botón", sino "un botón al estilo de Stripe con efecto al pasar el cursor y un estado de carga". El resultado es código normal de React/Next.js que copias a tu proyecto; normalmente necesita algún ajuste fino para encajar.
+**Cómo funciona.** v0 no solo entiende "un botón", sino "un botón al estilo de Stripe con efecto al pasar el cursor y un estado de carga". El resultado es un proyecto normal de React/Next.js: puedes verlo en la pestaña Code, sacarlo con GitHub (un servicio que guarda código) o publicarlo directo en Vercel. Normalmente necesita algún ajuste fino para encajar en tu proyecto.
 
 **La función estrella para el enfoque híbrido.** Pegas el código generado en Claude Code y le dices: "conecta este componente a mi API /products/:id, agrega una carga con esqueleto (skeleton) y manejo de errores". Claude Code escribe la lógica sobre la parte visual de v0.
 
@@ -47,8 +47,8 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 
 1. Describe en v0 la pantalla o el componente que necesitas
 2. Itera con prompts ("haz el título más grande", "agrega un modo oscuro")
-3. Copia el código final
-4. Pégalo en Claude Code y describe la lógica de negocio
+3. Saca el código final: desde la pestaña Code o conectando el proyecto a GitHub
+4. Pásaselo a Claude Code y describe la lógica de negocio
 5. Claude Code conecta los datos, agrega validación y publica
 
 🎨 **Imagínalo así:** v0 es un diseñador que hace un boceto en 30 segundos. Claude Code es el desarrollador que toma el boceto y lo convierte en un producto que funciona. Tú eres el gerente que les da sus encargos a los dos.
@@ -57,37 +57,37 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 
 ### Webflow AI: contenido y CMS sin el trabajo pesado
 
-**Qué es.** Webflow es un editor visual de sitios web con su propio hosting integrado. Webflow tiene funciones de IA: generar textos dentro del editor, ayuda con el contenido del CMS, traducir el sitio. Las funciones y los planes cambian, así que revisa los detalles vigentes en el sitio de Webflow.
+**Qué es.** Webflow es un editor visual de sitios web con su propio hosting integrado. Webflow tiene funciones de IA: ayuda para armar y diseñar páginas, escribir textos, llenar el CMS y traducir el sitio. Las funciones y los planes cambian, así que revisa los detalles vigentes en el sitio de Webflow.
 
-**IA en el CMS.** Creas una colección del CMS llamada "Servicios" con tres campos: nombre, descripción, precio. Activas un campo de IA para "descripción", y Webflow escribe la descripción por sí mismo con base en el nombre y el contexto del sitio. Para una agencia con 50 servicios, eso le ahorra días de trabajo a un redactor.
+**IA en el CMS.** Creas una colección del CMS llamada "Servicios" con tres campos: nombre, descripción, precio. Luego le pides a la IA que cree registros de esa colección, uno por uno o varios a la vez, y llena los campos, descripciones incluidas. Para una agencia con una lista larga de servicios, eso acelera bastante los primeros borradores, pero cada texto igual necesita que una persona lo lea y lo corrija.
 
-**Localización en Webflow.** Traducción integrada del sitio a varios idiomas: haces clic en un botón y obtienes, por ejemplo, versiones en inglés y en portugués de tu sitio en español. Para clientes internacionales esto ahorra tiempo de traducción, pero la traducción automática igual necesita que una persona la lea.
+**Localización en Webflow.** El complemento de pago Webflow Localization puede traducir tu sitio a otros idiomas con IA: por ejemplo, versiones en inglés y en portugués de tu sitio en español. Para clientes internacionales esto ahorra tiempo de traducción, pero la traducción automática igual necesita que una persona la lea.
 
-**Limitaciones.** Webflow suele costar más que Framer: pagas tanto un plan del sitio como un plan del espacio de trabajo. Para clientes con un sitio sencillo, puede ser demasiado. Pero para negocios con blog, equipo y contenido que se actualiza seguido, encaja muy bien.
+**Limitaciones.** Para publicar un sitio en tu propio dominio necesitas un plan de pago del sitio (Site plan). El plan del espacio de trabajo (Workspace) tiene una versión gratis; el de pago es para trabajar en equipo. Para clientes con un sitio sencillo, Webflow puede ser demasiado. Pero para negocios con blog, equipo y contenido que se actualiza seguido, encaja muy bien.
 
 ---
 
 ### Framer AI: una página de aterrizaje a partir de un prompt
 
-**Qué es.** Framer es una herramienta de diseño que aprendió a generar páginas de aterrizaje completas a partir de una descripción en texto. Escribes: "Una página de aterrizaje para un estudio de yoga en Bogotá. Estilo minimalista moderno, tonos cálidos, secciones: portada, quiénes somos, horario de clases, reseñas, reserva una clase de prueba", y poco después tienes una página terminada con textos, imágenes y un diseño que se adapta a cualquier pantalla.
+**Qué es.** Framer es una herramienta de diseño que aprendió a generar páginas de aterrizaje completas a partir de una descripción en texto. Escribes: "Una página de aterrizaje para un estudio de yoga en Bogotá. Estilo minimalista moderno, tonos cálidos, secciones: portada, quiénes somos, horario de clases, reseñas, reserva una clase de prueba", y poco después tienes una página con textos e imágenes que puedes seguir editando. El agente también puede preparar las versiones para celular y tableta: pídeselo y revisa el resultado.
 
-**Fortalezas.** Framer es conocido desde hace tiempo por animaciones bonitas que son difíciles de recrear en Webflow sin saber código. La IA mantiene ese nivel de calidad visual. Con el plan gratis, tu sitio se publica en un subdominio de Framer; conectar tu propio dominio requiere un plan de pago (condiciones en el sitio de Framer).
+**Fortalezas.** Framer es conocido por sus animaciones bonitas y su diseño cuidado, y la IA trabaja en el mismo editor. Con el plan gratis, tu sitio se publica en un subdominio de Framer; conectar tu propio dominio requiere un plan de pago (condiciones en el sitio de Framer).
 
-**Framer vs. Webflow.** Framer suele ser más rápido para generar páginas y se ve mejor de entrada. Webflow gana en funciones de CMS y en crecer hacia sitios grandes. Para la página de aterrizaje de un solo producto, usa Framer. Para el sitio de una empresa con catálogo, usa Webflow.
+**Framer vs. Webflow.** Para la página de aterrizaje de un solo producto, lo usual es elegir Framer. Para el sitio de una empresa con un catálogo grande y un blog, Webflow y su CMS. Compara los planes en las páginas oficiales de precios antes de elegir.
 
-**Limitación.** Framer es ante todo una herramienta para sitios web y páginas de marketing, no para apps web complejas. Si el cliente quiere un área de cuenta para sus clientes o una integración con un CRM, necesitas Webflow o un híbrido con Claude Code.
+**Limitación.** Framer es ante todo una herramienta para sitios web y páginas de marketing, no para apps web complejas. Si el cliente quiere un área de cuenta para sus clientes o una integración con un CRM, busca una herramienta para apps (Bubble, Lovable) o un híbrido con Claude Code.
 
 ---
 
 ### Bubble.io + plugins de IA: apps web completas
 
-**Qué es.** Bubble es una de las herramientas sin código más capaces para construir apps web completas: con base de datos, cuentas de usuario, lógica e integraciones de pago. Agrega funciones de IA o conecta modelos por API (OpenAI, Claude), y la app puede leer, resumir y escribir por su cuenta.
+**Qué es.** Bubble es una plataforma sin código para construir apps web completas: con base de datos, cuentas de usuario, lógica e integraciones de pago. Agrega funciones de IA o conecta modelos por API (OpenAI, Claude), y la app puede leer, resumir y escribir por su cuenta.
 
 **Proyectos típicos en Bubble.** Mercados en línea (como Airbnb, sin código), paneles de SaaS, plataformas de cursos en línea, CRM para pequeños negocios. Todo sin escribir código de servidor.
 
 **Bubble + la API de Claude.** Con un plugin o con llamadas directas a la API, conectas Claude (un LLM, un modelo de lenguaje grande). Por ejemplo: un usuario sube un documento → Bubble manda el texto a la API de Claude → Claude devuelve un resumen → Bubble lo guarda en la base de datos y se lo muestra al usuario. Eso es un producto de IA que funciona sin una sola línea de código de servidor.
 
-**La desventaja de Bubble.** Una curva de aprendizaje empinada: no vas a dominar lo básico en una tarde. Necesitas un plan de pago para lanzar, y el precio depende de cuánta carga le pone tu app a la plataforma (planes en el sitio de Bubble). El rendimiento es menor que con código escrito a mano. Es excelente para un MVP y poco tráfico; una startup que crece tarde o temprano va a necesitar migrar a código.
+**La desventaja de Bubble.** Una curva de aprendizaje empinada: no vas a dominar lo básico en una tarde. Para lanzar tu app en tu propio dominio necesitas un plan de pago, y el precio depende de cuánta carga le pone tu app a la plataforma (planes en el sitio de Bubble). Sirve bien para un MVP (la primera versión mínima de un producto) y pocos usuarios; si el producto crece mucho, tal vez tenga que pasar a código propio.
 
 ---
 
@@ -95,7 +95,7 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 
 **Qué es.** Lovable (antes GPT Engineer) es una herramienta que genera una app a partir de una descripción. Se parece a Claude Code, pero funciona desde una interfaz web, sin terminal. Describes la app en un chat, Lovable construye la interfaz y la lógica, y trae un backend integrado, Lovable Cloud (base de datos, registro e inicio de sesión), además de la publicación.
 
-**Sobre los datos de los clientes.** En algunos planes de Lovable, los datos de tu proyecto pueden usarse para entrenar modelos a menos que actives la opción de exclusión ("Data collection opt out", es decir, no participar en la recolección de datos). Revisa las condiciones vigentes en el sitio de Lovable y, para proyectos de clientes, activa la exclusión desde el principio.
+**Sobre los datos de los clientes.** Desde el 9 de septiembre de 2026, Lovable puede usar los datos de sus planes Free y Pro (prompts, archivos, código) para entrenar sus modelos. Puedes excluirte cuando quieras: Account settings → Preferences → AI model training, y apaga "Use my Lovable content for model training" (usar mi contenido para entrenar modelos). Para proyectos de clientes, apágalo desde el principio. En los planes Business y Enterprise, los datos quedan fuera del entrenamiento por defecto.
 
 **Lovable vs. Claude Code.** Con Lovable es más fácil empezar: no hay nada que instalar. Claude Code es más flexible y más capaz: funciona con cualquier conjunto de tecnologías y cualquier nube, y te da control total del código. Para un principiante que necesita un MVP rápido, Lovable. Para un producto serio que va a durar, Claude Code.
 
@@ -105,11 +105,11 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 
 ### Bolt.new: la IA de StackBlitz en el navegador
 
-**Qué es.** Bolt.new, de StackBlitz, es un generador de apps que funciona directo en tu navegador. No necesitas instalar nada: todo corre en la nube. Escribes un prompt y obtienes un proyecto funcionando con frontend y backend. El hosting y los dominios son parte del propio servicio (Bolt Cloud): una dirección gratis en bolt.host, tu propio dominio en los planes de pago.
+**Qué es.** Bolt.new, de StackBlitz, es un generador de apps que funciona directo en tu navegador. No necesitas instalar nada: todo corre en la nube. Escribes un prompt y obtienes un proyecto funcionando con frontend y backend. El hosting, una base de datos y los dominios son parte del propio servicio (Bolt Cloud): una dirección gratis en bolt.host, tu propio dominio en los planes de pago.
 
 **Fortalezas.** Bolt es muy rápido para trabajos sencillos: una página de aterrizaje, un formulario de contacto, un panel sencillo. Como está construido sobre StackBlitz, el código corre directo en el navegador, así que le puedes mostrar el resultado al cliente de inmediato, sin una publicación aparte.
 
-**Limitaciones.** La lógica de negocio compleja, las integraciones a la medida, el trabajo con bases de datos: todo eso exige pasar a Claude Code o muchas correcciones a mano.
+**Limitaciones.** La lógica de negocio compleja y las conexiones con servicios poco comunes exigen pasar a Claude Code o muchas correcciones a mano.
 
 ---
 
@@ -123,7 +123,7 @@ Eso abre una oportunidad de negocio concreta: volverte "constructor por encargo"
 | **Hosting** | Incluido en el plan o pagado aparte | Te encargas tú (Cloudflare, Vercel) |
 | **Trabajos estándar** | ✅ Excelente | Demasiado |
 | **Lógica a la medida** | ❌ Difícil o imposible | ✅ Control total |
-| **Crecimiento** | Limitado por el plan | Sin límite |
+| **Crecimiento** | Limitado por el plan | Depende de tu hosting |
 | **Mantenimiento a largo plazo** | Dependes de la plataforma | Control total |
 | **Integraciones de API** | Con plugins o Zapier (una plataforma que conecta distintas apps entre sí) | Cualquiera, de forma nativa |
 | **Ideal para** | Páginas de aterrizaje, MVP, pequeños negocios | SaaS, productos complejos |
@@ -152,7 +152,8 @@ Configurar la lógica de negocio
 ↓
 [ETAPA 3: Publicación (Cloudflare / Vercel)]
 Un solo comando con Claude Code
-CDN, SSL, dominio propio: se configuran automáticamente
+CDN y SSL (conexión segura): se configuran automáticamente
+Dominio propio: en la configuración del hosting
 ↓
 [ENTREGA AL CLIENTE]
 Capacitación (15 min): cómo editar el contenido
@@ -172,7 +173,7 @@ Este es un nicho concreto para quienes, entre los que toman este curso, tienen m
 - El MVP de una app (Bubble, o un híbrido con Claude Code)
 - El rediseño de un sitio existente (componentes de v0 + Claude Code)
 
-**Por qué pagan los clientes.** Podrían intentar Framer ellos mismos, pero pasarían una semana aprendiéndolo y otra semana en correcciones. Tú lo haces más rápido. La diferencia de precio es su tiempo multiplicado por su tarifa por hora. Los precios los pone el mercado y tus propios costos; los ingresos no están garantizados. Para calcular tu precio, revisa la lección [Cómo ponerle precio a tus servicios de IA](39-monetization-pricing.md).
+**Por qué pagan los clientes.** Podrían intentar Framer ellos mismos, pero gastarían tiempo aprendiéndolo y en correcciones. Tú lo haces más rápido. La diferencia de precio es su tiempo multiplicado por su tarifa por hora. Los precios los pone el mercado y tus propios costos; los ingresos no están garantizados. Para calcular tu precio, revisa la lección [Cómo ponerle precio a tus servicios de IA](39-monetization-pricing.md).
 
 **Cómo encontrar clientes.** Los pequeños negocios sin sitio web, o con uno anticuado, están en todas partes: restaurantes locales, estéticas, despachos de abogados, consultorios médicos, sastrerías, agencias de viajes. No necesitan un producto complejo. Necesitan un sitio web decente con un formulario de contacto a un precio razonable.
 
@@ -180,15 +181,19 @@ Este es un nicho concreto para quienes, entre los que toman este curso, tienen m
 
 ## Práctica
 
-### Ejercicio: arma una página de aterrizaje en 35 minutos con v0 + Claude Code
+### Ejercicio: arma una página de aterrizaje con v0 + Claude Code
 
 **Escenario:** un cliente te pide armar una página de aterrizaje para una escuela de inglés en línea para adultos. Necesita una portada, los beneficios, los planes de precios y un formulario de inscripción que mande cada solicitud al canal de Slack de la escuela.
+
+**Cuándo hacerlo.** El paso 1 se hace solo en v0, así que puedes hacerlo ahora. Los pasos 2-5 se hacen en Claude Code: viene con una suscripción de pago (la lección [Precios de Claude Code](05c-access-levels-pricing.md)), y la lección [Claude Code de escritorio](05b-claude-code-desktop.md) te ayuda a instalarlo. Las dos lecciones vienen más adelante en este módulo, así que vuelve a los pasos 2-5 después de ellas. Por ahora puedes publicar la página directo desde v0 con el botón Publish; para una práctica basta.
+
+**Tiempo que debes reservar:** unos 35 minutos para los pasos, más el tiempo para registrarte en v0 y Vercel y crear el webhook de Slack.
 
 ---
 
 **Paso 1: Genera el diseño en v0 (10 minutos)**
 
-Entra a [v0.app](https://v0.app) y escribe este prompt:
+Entra a [v0.app](https://v0.app), inicia sesión (registrarse es gratis) y escribe este prompt. El plan gratis limita cuántos mensajes puedes mandar al día, así que junta tus cambios en un solo mensaje cuando puedas.
 
 ```
 Crea una página de aterrizaje para una escuela de inglés en línea para adultos. Estilo: moderno,
@@ -200,13 +205,18 @@ profesional, paleta de colores azul. Secciones:
    mostrados como tarjetas con características y un botón
 4. Formulario de inscripción: nombre, correo, teléfono, horario preferido, un botón de enviar
 Usa Tailwind CSS; el componente debe estar en React. Todo el texto de la página en español.
+Pon todo el código de la página en un solo archivo, app/page.tsx, sin componentes aparte.
 ```
 
-Itera si hace falta ("haz más alta la portada", "muestra los precios lado a lado", "agrega íconos a los beneficios"). Cuando estés contento con la versión final, copia todo el código.
+Itera si hace falta ("haz más alta la portada", "muestra los precios lado a lado", "agrega íconos a los beneficios"). Cuando estés contento con la versión final, abre la pestaña **Code** en la barra de la vista previa, elige el archivo app/page.tsx y copia todo su texto.
 
 ---
 
 **Paso 2: Prepara el proyecto en Claude Code (5 minutos)**
+
+Un proyecto de Next.js necesita Node.js en tu computadora (el programa con el que funcionan proyectos así; se descarga en nodejs.org). Si no lo tienes, Claude Code te lo va a decir; pídele que te explique cómo instalarlo.
+
+Crea una carpeta vacía llamada english-school-landing, en el Finder o el Explorador de archivos, o con estos comandos en la terminal:
 
 ```bash
 # En la terminal:
@@ -214,7 +224,7 @@ mkdir english-school-landing
 cd english-school-landing
 ```
 
-Abre Claude Code en esta carpeta y escribe:
+Abre esta carpeta en Claude Code (en la app de escritorio: la pestaña Code → Select folder) y escribe:
 
 ```
 Crea un proyecto nuevo de Next.js con Tailwind CSS.
@@ -236,19 +246,20 @@ Tailwind funcione y el componente se muestre sin errores.
 [pega aquí el código de v0]
 ```
 
-Claude Code va a ordenar los imports, corregir cualquier conflicto y arrancar el proyecto.
+Claude Code va a ordenar los imports, corregir cualquier conflicto y arrancar el proyecto. Si falta algo, te va a decir qué instalar.
 
 ---
 
 **Paso 4: Manda las inscripciones a Slack (10 minutos)**
 
-Un webhook entrante (incoming webhook) es un enlace privado que publica en un canal de Slack lo que se le mande; las páginas de ayuda de Slack muestran cómo crear uno.
+Un webhook entrante (incoming webhook) es un enlace privado que publica en un canal de Slack lo que se le mande; las páginas de ayuda de Slack muestran cómo crear uno. Trata el enlace como un secreto: no lo pegues en un chat con IA ni lo compartas en público.
 
 ```
 Agrega el manejo del formulario de inscripción. Cuando un visitante haga clic en "Reserva una clase de prueba",
 los datos deben mandarse a nuestro canal de Slack con un webhook entrante.
 
-La URL de mi webhook entrante de Slack: [la URL de tu webhook]
+La URL del webhook la voy a poner yo: crea un archivo .env.local
+con una variable SLACK_WEBHOOK_URL vacía y dime dónde pegarla.
 
 Formato del mensaje en Slack:
 🎓 Nueva solicitud de clase de prueba
@@ -265,9 +276,13 @@ Agrega:
 5. Una variable de entorno para la URL del webhook
 ```
 
+Las inscripciones traen nombres y teléfonos de personas: cuídalos, y avísale al cliente que el formulario manda esos datos a Slack.
+
 ---
 
 **Paso 5: Publica en Vercel (5 minutos)**
+
+Vas a necesitar una cuenta gratis de Vercel. La primera vez que publiques, Vercel te va a pedir iniciar sesión; eso lo haces tú, en el navegador.
 
 ```
 Prepara el proyecto para publicarlo en Vercel:
@@ -278,6 +293,8 @@ Prepara el proyecto para publicarlo en Vercel:
 
 Luego publícalo con el comando: npx vercel --prod
 ```
+
+El archivo .env.local no se sube a Vercel, así que agrega la URL del webhook en la configuración de tu proyecto en Vercel (Settings → Environment Variables), o pídele ayuda a Claude Code. Sin ella, el formulario del sitio publicado no va a mandar nada.
 
 Después de publicar, Claude Code te va a mostrar la URL. Mándasela al cliente para que la apruebe.
 
@@ -290,7 +307,7 @@ Después de publicar, Claude Code te va a mostrar la URL. Mándasela al cliente 
 | Herramienta | Para qué sirve | Precio | Enlace |
 |---|---|---|---|
 | **v0** | Interfaces y apps en React a partir de un prompt | Hay plan gratis; los planes de pago funcionan con créditos | v0.app |
-| **Webflow** | Editor visual de sitios con contenido de IA | Planes de pago del sitio y del espacio de trabajo; precios en el sitio | webflow.com |
+| **Webflow** | Editor visual de sitios con funciones de IA | Plan Starter gratis (dirección en webflow.io); dominio propio con un plan de pago del sitio | webflow.com |
 | **Framer** | Páginas de aterrizaje y animaciones a partir de un prompt | Hay plan gratis; dominio propio con plan de pago | framer.com |
 | **Bubble.io** | Apps web completas sin código | Plan gratis para construir; planes de pago para lanzar | bubble.io |
 | **Lovable** | Construir apps con IA para quienes no programan | Plan gratis con límite de créditos | lovable.dev |
@@ -307,7 +324,7 @@ Después de publicar, Claude Code te va a mostrar la URL. Mándasela al cliente 
 
 ## Ideas clave
 
-> "La IA sin código no se trata de engañar al cliente. Se trata de darle un resultado en 2 días en lugar de 3 semanas. La herramienta no importa; importan el resultado y la rapidez."
+> "La IA sin código no se trata de engañar al cliente. Se trata de darle un resultado más rápido. La herramienta no importa; importan el resultado y la rapidez."
 
 > "El híbrido v0 + Claude Code es lo mejor de dos mundos: una interfaz que se ve bien sin el trabajo pesado, más libertad total en la lógica, sin los límites de una plataforma."
 
@@ -317,6 +334,6 @@ Después de publicar, Claude Code te va a mostrar la URL. Mándasela al cliente 
 
 ## Siguiente lección
 
-→ [n8n + IA](78-n8n-ai-workflows.md): flujos inteligentes con nodos de LLM
+→ [Zapier AI](79-zapier-ai.md): miles de apps y Zaps inteligentes con IA, tu primera automatización sin código
 
-Vamos a ver cómo n8n (una alternativa a Zapier que puedes correr en tu propio servidor) se vuelve un orquestador de IA capaz: vamos a conectar la API de Claude a procesos de negocio reales y a construir cadenas "disparador → IA → acción" sin una sola línea de código de servidor.
+En la biblioteca, opcional: [n8n + IA](78-n8n-ai-workflows.md): cómo n8n (una alternativa a Zapier que puedes correr en tu propio servidor) se vuelve un orquestador de IA que conecta la API de Claude a procesos de negocio reales con cadenas "disparador → IA → acción", sin código de servidor.

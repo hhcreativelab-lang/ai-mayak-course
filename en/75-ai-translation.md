@@ -16,7 +16,7 @@ The same skills work for everyday translation too: a reply to a Spanish-speaking
 
 ## Key concepts
 
-- **DeepL API**: a specialized translator with top quality for European and Latin American languages; many users say it sounds more natural than general-purpose translators
+- **DeepL API**: a specialized translator that's strong in European languages, including Spanish and Portuguese; many people find its translations more natural than those of general-purpose translators, so compare them on your own texts
 - **DeepL MCP**: the official DeepL integration for Claude Code, so translation becomes part of your workflow instead of a separate step (MCP is the standard way to plug outside services into Claude Code)
 - **i18n pipeline** (i18n is developer shorthand for "internationalization"): an automated chain: source content → machine translation → cultural adaptation → SEO metadata
 - **Glossary / term base**: a list of terms that must never be translated, or must always be translated one specific way
@@ -32,16 +32,15 @@ The same skills work for everyday translation too: a reply to a Spanish-speaking
 
 | | DeepL API | Google Translate | Claude (direct) |
 |---|---|---|---|
-| Quality, English → Spanish | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Speed | Very fast | Very fast | Slow |
+| Speed | Very fast | Very fast | Slower |
 | Price | per DeepL's plans, with a free tier | per Google Cloud pricing | per token, depends on the model |
 | Term glossary | ✅ built in | ✅ available | ⚠️ through the prompt |
-| Cultural adaptation | ❌ | ❌ | ✅ the best tool for it |
-| Keeps HTML/Markdown formatting | ✅ | ✅ | ⚠️ needs a prompt |
+| Cultural adaptation | ❌ | ❌ | ✅ does it on request |
+| Keeps HTML markup | ✅ | ✅ | ⚠️ needs a prompt |
 | MCP integration | ✅ official | ⚠️ check the documentation | ✅ native |
 | Languages | English, Spanish and other major languages | a huge number, including rare ones | all the major ones |
 
-The quality ratings in the table are the author's rough guide, not an independent test: try them on your own texts. Current prices and versions: [What's current](https://aimayak.com/en/now/).
+Translation quality isn't in the table: we have no independent test, and the result depends on the language pair and the topic. Compare the tools on your own texts. Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 **Bottom line:** DeepL for bulk translation of structured content (product listings, email templates, documents). Claude for cultural adaptation, creative writing and specialized material. Google Translate as a backup for rare languages.
 
@@ -61,7 +60,7 @@ The rest of this lesson is for people who already use Claude Code and want to tr
 
 ### DeepL MCP: translation inside Claude Code
 
-DeepL has an official MCP server (the `deepl-mcp-server` package; it needs Node.js 18 or newer). Translation becomes part of your workflow, and you don't have to switch between tabs.
+This is where the builders' part starts: you need Claude Code and a terminal. DeepL has an official MCP server (the `deepl-mcp-server` package; it needs Node.js 18 or newer). Translation becomes part of your workflow, and you don't have to switch between tabs.
 
 **Setup in `.mcp.json`:**
 
@@ -78,6 +77,8 @@ DeepL has an official MCP server (the `deepl-mcp-server` package; it needs Node.
   }
 }
 ```
+
+The key itself doesn't go in the file: Claude Code replaces `${DEEPL_API_KEY}` with the value of the environment variable, which you set in the terminal before starting Claude Code (the command is in the Practice section).
 
 Once it's connected, Claude uses DeepL within the same session:
 
@@ -171,7 +172,7 @@ def create_deepl_glossary(source_lang: str, target_lang: str) -> str | None:
         )
         return glossary.glossary_id
     except deepl.DeepLException:
-        return None   # A glossary with this name already exists: continue without it
+        return None   # DeepL didn't create the glossary (for example, it doesn't support this language pair): continue without it
 
 
 def translate_with_deepl(text: str, target_lang: str,
@@ -221,10 +222,11 @@ Return ONLY the adapted text, with no explanations."""
 
     message = claude_client.messages.create(
         model="claude-sonnet-5-5",   # current models: see the What's current page
-        max_tokens=4096,
+        max_tokens=16000,   # generous on purpose: the model's "thinking" counts toward this limit
         messages=[{"role": "user", "content": prompt}]
     )
-    return message.content[0].text
+    # The reply may contain "thinking" blocks: keep only the text
+    return "".join(block.text for block in message.content if block.type == "text")
 
 
 def generate_seo_metadata(content: str, target_lang: str,
@@ -257,10 +259,11 @@ Return ONLY the JSON, nothing else."""
         max_tokens=512,
         messages=[{"role": "user", "content": prompt}]
     )
+    text = "".join(block.text for block in message.content if block.type == "text")
     try:
-        return json.loads(message.content[0].text)
+        return json.loads(text)
     except json.JSONDecodeError:
-        return {"raw": message.content[0].text}
+        return {"raw": text}
 
 
 def run_translation_pipeline(source_file: Path, source_lang: str,
@@ -306,8 +309,9 @@ def run_translation_pipeline(source_file: Path, source_lang: str,
         # 4. SEO metadata
         seo_meta = generate_seo_metadata(adapted, lang, market)
 
-        # 5. Save the files
+        # 5. Save the files (the DeepL translation before adaptation too: it's handy to compare with the result)
         output_path.write_text(adapted, encoding="utf-8")
+        output_path.with_suffix(".deepl.md").write_text(raw_translation, encoding="utf-8")
         meta_path = output_path.with_suffix(".meta.json")
         meta_path.write_text(
             json.dumps(seo_meta, ensure_ascii=False, indent=2),
@@ -382,17 +386,17 @@ The swap: the unfamiliar FDIC → the familiar Banco del Pacífico. Local releva
 
 What goes through the pipeline:
 
-1. **Blog articles**: 3 to 5 a week, about 1,500 words each
+1. **Blog articles**: about 5 a month, roughly 1,500 words (10,000 characters) each
 2. **Property listings**: descriptions of apartments and houses in 3 languages
 3. **Email newsletters**: a weekly digest in 3 languages
 4. **Page metadata**: title, description and keywords for each language
 5. **WhatsApp and text message templates**: welcome and follow-up messages
 
-**Monthly cost:**
+**Monthly cost (articles only):**
 
-- Volume: about 150,000 characters (5 articles × 3 languages × 10,000 characters)
+- Volume: about 100,000 characters (5 articles × 2 target languages × 10,000 characters)
 - DeepL (first-pass translation): you pay according to DeepL's plans; at this volume, compare the free tier with the paid plans on DeepL's pricing page
-- Claude (adaptation, about 10% of the volume): per token, usually a small part of the budget
+- Claude (adaptation): per token. The code in this lesson adapts the whole text; to spend less, adapt only the pages that matter
 - **Total:** usually far less than paying a freelancer to translate everything from scratch. Rates depend on the market and the language, so run the numbers for yourself.
 
 Current prices and versions: [What's current](https://aimayak.com/en/now/).
@@ -405,7 +409,7 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 | Scenario | Recommendation | Relative cost |
 |---|---|---|
-| Bulk product descriptions (over 50K characters a month) | DeepL + Claude to adapt 10% | low |
+| Bulk product descriptions (over 50K characters a month) | DeepL + Claude to adapt the pages that matter | low |
 | Marketing copy | Claude directly | per Claude token |
 | Legal documents | DeepL + review by a professional | higher: needs an expert's review |
 | Technical texts with specialized terms | DeepL with a glossary | low to medium |
@@ -419,13 +423,15 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 ## Practice
 
+**No code.** Translate one real message with the prompt from the "No code needed" section, ask Claude to translate the result back into English and check the meaning. You're done when the back-translation says what you meant and you've fixed the phrases Claude flagged as ambiguous. Steps 1-4 below are for builders: they need Claude Code and a terminal.
+
 ### Step 1: Get a DeepL API key and set up the MCP (5 min)
 
 1. Sign up at [deepl.com/pro-api](https://www.deepl.com/en/pro-api): there's a free tier to start with (see DeepL's site for the volume and terms)
-2. Copy your API key (Account → API Keys)
-3. Add it to `.mcp.json` (see the code in the Theory section)
-4. Add to `.env`: `DEEPL_API_KEY=your-key`
-5. Restart Claude Code → ask: "translate 'Hello, world' into Spanish with DeepL"
+2. Copy your API key: it's in your DeepL account, in the keys section (deepl.com/your-account/keys)
+3. Add the server to `.mcp.json` (see the code in the Theory section)
+4. Set the key as an environment variable in the terminal you start Claude Code from: `export DEEPL_API_KEY="your-key"` (in Windows PowerShell: `$env:DEEPL_API_KEY="your-key"`). Don't put the key itself in `.mcp.json`
+5. Restart Claude Code, approve the deepl server when Claude Code asks, and ask: "translate 'Hello, world' into Spanish with DeepL"
 
 **Success check:** Claude uses the DeepL MCP and returns a translation.
 
@@ -435,7 +441,7 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 pip install deepl anthropic
 ```
 
-Create `glossary.json`:
+Save the pipeline code from the Theory section as `translation_pipeline.py`. Write your terms down in `glossary.json`; it's your working list:
 
 ```json
 {
@@ -450,15 +456,17 @@ Create `glossary.json`:
 }
 ```
 
-Load it with the `create_deepl_glossary()` function from the script. Test it: translate a text that includes your brand name and make sure the name didn't change.
+Then move the terms into the `GLOSSARY_TERMS` dictionary in the script: the `create_deepl_glossary()` function reads them from there. You'll check it in the next step: your brand name must not change in the translation.
 
 ### Step 3: Run the pipeline on a real text (10 min)
 
-1. Take any article or property description (at least 500 words) → `test-article.en.md`
-2. Run the pipeline:
+1. Take any article or property description (at least 500 words) and save it next to the script as `test-article.en.md`
+2. Set your Anthropic key in the same terminal: `export ANTHROPIC_API_KEY="..."`. Then save the code below as `run_test.py` and run it with `python run_test.py`:
 
 ```python
 from pathlib import Path
+from translation_pipeline import run_translation_pipeline
+
 results = run_translation_pipeline(
     source_file=Path("test-article.en.md"),
     source_lang="EN",
@@ -468,12 +476,12 @@ results = run_translation_pipeline(
 )
 ```
 
-3. Compare three versions: the original → after DeepL → after Claude's adaptation
+3. Compare three versions: the original, the DeepL translation (`test-article-es.deepl.md`) and the text after Claude's adaptation (`test-article-es.md`)
 4. Notice what the cultural adaptation changed
 
 ### Step 4: SEO metadata for each language (5 min)
 
-Open the `.meta.json` file from the previous step. Check:
+Open the `test-article-es.meta.json` file from the previous step. Check:
 
 - Title: up to 60 characters, with the keyword?
 - Meta description: up to 155 characters?
@@ -485,7 +493,7 @@ If something's off, adjust the prompt in `generate_seo_metadata()`.
 
 ## Tools and resources
 
-- **[DeepL API](https://www.deepl.com/en/pro-api)**: strong translation for European and Latin American languages, with a free tier
+- **[DeepL API](https://www.deepl.com/en/pro-api)**: strong translation for European languages, including Spanish and Portuguese, with a free tier
 - **[DeepL MCP](https://github.com/DeepL/deepl-mcp-server)**: the official integration for Claude Code
 - **[python-deepl](https://pypi.org/project/deepl/)**: the official Python SDK
 - **[Google Cloud Translation](https://cloud.google.com/translate)**: a huge number of languages, good for rare ones
@@ -501,11 +509,11 @@ DeepL's free tier → a paid plan as your volume grows + Claude for adaptation +
 
 ## Key takeaways
 
-> Machine translation translates words. Claude translates meaning. DeepL does it fast and cheap as step one; Claude gets it right as step two.
+> Machine translation translates words. Claude translates meaning. DeepL does it fast and cheap as step one; Claude makes it sound natural as step two.
 
 > A glossary is your brand's immune system in translation. One wrong translation of a product name or a legal term can cost you the trust of a whole market.
 
-> A few dollars a month for tokens and a DeepL plan, instead of paying a freelancer for every translation, isn't just a saving; it's a different business model. You can put the money you save into marketing instead of operating costs.
+> Tokens and a DeepL plan instead of paying a freelancer for every translation isn't just a saving; it's a different way of working. Still show anything important to someone who speaks the language.
 
 > Official documents are the exception: when an agency or a court asks for a certified translation, a human translator does it.
 
@@ -513,6 +521,6 @@ DeepL's free tier → a paid plan as your volume grows + Claude for adaptation +
 
 ## Next lesson
 
-→ [AI in messaging apps](76-ai-messengers.md): Slack, Microsoft Teams, WhatsApp and more
+→ [AI image generators](18c-ai-image-generation-pipeline.md): the start of the module on images, video and music: which image generator to pick for which job
 
-We'll build smart bots: answers to customer questions, deal notifications, corporate Teams integrations and access control for private group chats.
+Optional, in the library: [AI in messaging apps](76-ai-messengers.md): Slack, Microsoft Teams, WhatsApp and more. Smart bots that answer customer questions, send deal notifications and manage access to private group chats.

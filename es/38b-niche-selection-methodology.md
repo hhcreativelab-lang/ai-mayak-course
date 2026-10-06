@@ -182,13 +182,13 @@ Antes de cualquier análisis profundo, pasa el nicho por 3 preguntas. Si la resp
 
 Si puedes, el nicho existe, al menos en tu cabeza. Si no puedes, todavía no tienes nada.
 
-**P2: ¿Conoces exactamente a 5 personas, ahora mismo, que necesiten este producto?**
+**P2: ¿Conoces al menos a 5 personas, ahora mismo, que necesiten este producto?**
 
 - 5+ personas que puedes nombrar → el nicho es real, y tienes una lista de contactos cercanos (compradores posibles que ya te conocen)
 - 1-4 → investiga más; necesitas entrevistas con clientes
 - 0 → señal de alarma. No entiendes el mercado
 
-Es una regla práctica común entre los desarrolladores independientes: "si no puedes nombrar a 5 clientes, no tienes un nicho".
+Una regla práctica sencilla: si no puedes nombrar a 5 clientes, todavía no tienes un nicho.
 
 **P3: ¿Hay alternativas de pago ahora mismo?**
 
@@ -224,7 +224,7 @@ No lo decidas en una tarde. Es un proceso de 4 semanas que te puede ahorrar 12 m
 **Meta:** un análisis a fondo de los 10 mejores.
 
 Para cada uno:
-- 3 entrevistas con clientes (30 minutos cada una, por Zoom o por teléfono)
+- Entrevistas con clientes: 3 si puedes, de 30 minutos cada una (por Zoom o por teléfono). Treinta entrevistas en una semana es más de lo que casi cualquiera puede hacer: si no te alcanza el tiempo, empieza por los 3-5 nichos que se vean más fuertes
 - Busca en Reddit, Quora y X (Twitter) a personas que describan el dolor ("busco una herramienta que haga X", "odio cuando...")
 - Un análisis de las soluciones que ya existen (qué hay, qué no funciona, precios, reseñas). Cuenta también a las personas: si los negocios contratan freelancers en Upwork o publican vacantes en Indeed (o en las bolsas de trabajo de tu país) para resolver esta tarea, ya pagan por resolverla
 - Una calificación detallada con la tarjeta de 7 criterios
@@ -308,8 +308,8 @@ Son hipótesis, no demanda garantizada: pasa cada una por la tarjeta de 7 criter
 
 Eso no significa "imposible". Significa "muy caro de entrar sin un ángulo único o sin $1M+ de capital".
 
-- ❌ **"Asistente de IA para escribir"**: Jasper, Writesonic y muchos otros tomaron este mercado hace tiempo.
-- ❌ **"Generador de imágenes con IA"**: Midjourney, ChatGPT Images, Flux, Nano Banana. Sin una gran infraestructura y capital, no te metas.
+- ❌ **"Asistente de IA para escribir"**: Jasper y muchos otros tomaron este mercado hace tiempo.
+- ❌ **"Generador de imágenes con IA"**: Midjourney, la generación de imágenes integrada en ChatGPT, Flux, Nano Banana. Sin una gran infraestructura y capital, no te metas.
 - ❌ **"Plataforma de chatbots con IA"**: decenas de plataformas maduras y startups. Un océano rojo.
 - ❌ **"Generador de currículums con IA"**: muchos servicios ya hechos. Márgenes muy bajos.
 - ❌ **Herramientas genéricas de "IA para la productividad"**: Notion AI y similares. Las empresas establecidas ya lo integraron en sus propias herramientas.
@@ -384,7 +384,7 @@ Si marcaste 8 o más de las 10, fija el nicho. Si son menos, sigue investigando 
 
 ### Paso 1: Lluvia de ideas de 50 nichos
 
-Los comandos de abajo crean una carpeta y un archivo en la terminal. Si todavía no te sientes cómodo con la terminal, crea las mismas carpetas y archivos en cualquier editor de texto o en Google Docs.
+Los comandos de abajo crean una carpeta y un archivo en la terminal. Si todavía no te sientes cómodo con la terminal, crea las mismas carpetas y archivos en cualquier editor de texto o en Google Docs. Ejecuta cada bloque de comandos desde la misma carpeta de inicio, para que todas las semanas queden juntas dentro de `niche-selection`.
 
 ```bash
 mkdir -p niche-selection/week1
@@ -435,8 +435,8 @@ La plantilla de `50-niches-brainstorm.md`:
 ### Paso 2: Una plantilla de entrevista con clientes
 
 ```bash
-mkdir week2-research
-cd week2-research
+mkdir -p niche-selection/week2-research
+cd niche-selection/week2-research
 
 # Plantilla de entrevista
 touch interview-template.md
@@ -486,8 +486,8 @@ La plantilla de `interview-template.md`:
 ### Paso 3: Validación con una página de aterrizaje
 
 ```bash
-mkdir week3-validation
-cd week3-validation
+mkdir -p niche-selection/week3-validation
+cd niche-selection/week3-validation
 ```
 
 **Herramientas:**
@@ -496,15 +496,15 @@ cd week3-validation
 - Plausible (de pago, con prueba gratis; revisa las condiciones actuales): analítica
 - Tally Forms (plan gratis): para recoger correos
 
-**Estructura de la página de aterrizaje** (el "hero" es la sección de arriba de la página; un CTA, o llamado a la acción, es el botón en el que quieres que hagan clic los visitantes):
+**Estructura de la página de aterrizaje** (la "primera pantalla" es la parte de arriba de la página, lo primero que ve el visitante; el "botón de acción" es el botón en el que quieres que hagan clic; en inglés se les dice hero y CTA):
 
 ```markdown
 # Página de aterrizaje para el nicho [X]
 
-## Hero
+## Primera pantalla
 - Título: "Deja de perder horas cada semana en [tarea que duele]"
 - Subtítulo: "IA para [ICP] que hace [resultado]"
-- CTA: "Obtén acceso anticipado"
+- Botón de acción: "Obtén acceso anticipado"
 
 ## Sección del dolor
 3 puntos: lo que el cliente está perdiendo ahora mismo (tiempo, dinero, tranquilidad)
@@ -514,7 +514,7 @@ cd week3-validation
 
 ## Precios
 - "Acceso anticipado: $XX/mes (precio normal $YY)"
-- CTA: "Aparta tu lugar" (no inventes escasez: escribe solo lo que es verdad)
+- Botón de acción: "Aparta tu lugar" (no inventes escasez: escribe solo lo que es verdad)
 
 ## Prueba social
 - "Lo usan Y profesionales en despachos como Z" (si lo tienes)
@@ -613,7 +613,7 @@ Los números de esta plantilla son espacios para metas que tú mismo fijas, no u
 - **[Reddit r/Entrepreneur](https://www.reddit.com/r/Entrepreneur/)**: menciones de problemas, ideas de nichos (en inglés)
 - **[Reddit r/SaaS](https://www.reddit.com/r/SaaS/)**: qué están construyendo los fundadores y en qué nichos (en inglés)
 - **[Indie Hackers](https://www.indiehackers.com)**: actualizaciones de avance, casos de nichos (en inglés)
-- **[Y Combinator Startup School](https://www.startupschool.org)**: clases sobre cómo encontrar y evaluar nichos e ideas (en inglés)
+- **[Y Combinator Startup School](https://www.startupschool.org)**: un curso en línea gratis sobre cómo empezar una startup, que incluye cómo encontrar y evaluar ideas (en inglés)
 - **[MAKE: The Indie Startup Manual (Pieter Levels)](https://readmake.com)**: un libro de pago sobre cómo lanzar tu propio producto (en inglés)
 - **[Google Trends](https://trends.google.com)**: revisa cómo cambia con el tiempo el interés de búsqueda en un nicho
 - **[Ahrefs Free Tools](https://ahrefs.com/keyword-difficulty)**: dificultad de las palabras clave para SEO en tu nicho
@@ -623,10 +623,10 @@ Los números de esta plantilla son espacios para metas que tú mismo fijas, no u
 
 ## Lecciones relacionadas
 
-- [El mercado de la IA agéntica](01-agentic-market.md): el panorama general de dónde jugar
-- [Tus primeros clientes](38-monetization-clients.md): cómo encontrar a tus primeros clientes
-- [Casos reales de monetización](47-monetization-cases.md): cómo se relaciona el modelo de precios con el nicho
-- [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md): LTV/CAC por nicho
+- [Qué es un agente de IA y por qué importa ahora](01-agentic-market.md): el panorama general del mercado (más adelante en el curso)
+- [Tus primeros clientes](38-monetization-clients.md): cómo encontrar a tus primeros clientes (más adelante en el curso)
+- [Ganar dinero con IA: 5 casos de clientes](47-monetization-cases.md): cinco ejemplos para aprender, con el cálculo del retorno
+- [Economía unitaria de un conjunto de herramientas de IA](99b-unit-economics-deep.md): LTV/CAC por nicho (una lección opcional de la biblioteca)
 
 ---
 
@@ -646,4 +646,6 @@ Los números de esta plantilla son espacios para metas que tú mismo fijas, no u
 
 ## Siguiente lección
 
-→ [Generación de prospectos: del scraping a un archivo CSV](39-lead-generation.md)
+→ [Cómo encontrar un nicho con Google Trends y Reddit](88-niche-trend-analysis.md): cómo revisar con datos de búsqueda si la demanda de tu nicho está creciendo
+
+Si sabes programar, también hay una lección opcional en la biblioteca: [Búsqueda de clientes potenciales: de recolectar datos de sitios web a una tabla CSV](39-lead-generation.md).

@@ -19,7 +19,7 @@ Nobody hires an architect who just says "I know how to build houses." Good archi
 - **Golden number**: the one main number that answers "so what?" ($X a month saved, N hours freed up)
 - **Screenshots vs. descriptions**: screenshots convince, descriptions explain; you need both
 - **3 types of clients**: small businesses, agencies, enterprise; each one wants something different
-- **Portfolio platforms**: Notion, GitHub Pages, a personal website
+- **Portfolio platforms**: Notion, GitHub (a README page that describes a project), a personal website
 
 ---
 
@@ -51,7 +51,7 @@ Who the client is, what hurts, and how it shows up in numbers:
 
 ```
 Client: a digital marketing agency, team of 8
-Problem: every Monday, 2-3 hours went into putting together weekly
+Problem: every Monday, about 7 hours went into putting together weekly
 reports for 12 clients. The data was collected by hand from 4 different
 sources: Google Analytics, Meta Ads, Google Ads and the CRM.
 ```
@@ -72,8 +72,8 @@ or approve sending with one click.
 **3. Result (specific numbers)**
 
 ```
-Before: 2.5 hours/week × 12 reports = 30 hours/month of manual work
-After: 15 minutes to review and approve all 12 reports
+Before: 7 hours a week ≈ 30 hours a month of manual work
+After: 15 minutes a week to review and approve all 12 reports ≈ 1 hour a month
 Saved: 29 hours/month = $1,450/month (at a manager's rate of $50/hour)
 Project cost: $2,800
 Payback: under 2 months
@@ -101,7 +101,7 @@ The golden number belongs in the first paragraph of the case study and in the he
 
 Examples:
 "Real estate brokerage saves 18 hours a week by automating incoming inquiries"
-"Digital agency cuts reporting time from 30 hours to 15 minutes a month"
+"Digital agency cuts reporting time from 30 hours to 1 hour a month"
 "B2B company speeds up lead response from 4 hours to 8 minutes"
 ```
 
@@ -168,7 +168,7 @@ Notion page your-portfolio
 ├── Services (what you offer)
 ├── Case Studies
 │   ├── Case 1: Real estate brokerage, 18 hours/week
-│   ├── Case 2: Digital agency, reports in 15 minutes
+│   ├── Case 2: Digital agency, reports in 15 minutes a week
 │   └── Case 3: B2B company, leads answered in 8 minutes
 └── Contact (Calendly link)
 ```
@@ -227,7 +227,7 @@ Key decision: [one interesting technical detail].
 
 **Exercise: write your first case study**
 
-1. Pick a project you've already built (from the course lessons: Newsletter Automation, Invoice Automation, Executive Assistant, or one of your own)
+1. Pick a task you've already handled with AI: for yourself, at work or for someone you know (for example, from the "AI for everyday work" module: emails, meetings, presentations). If you've already built automations from the library lessons, use one of those
 
 2. Fill in the Problem → Solution → Result structure:
    ```
@@ -239,11 +239,11 @@ Key decision: [one interesting technical detail].
 
 3. Come up with your golden number: one number for the headline
 
-4. Take 3 screenshots: the structure of the code or workflow, the system in action, the result (a log, a report, a spreadsheet)
+4. Take 3 screenshots: before (how it was done by hand), during (the system or AI at work), after (the result: a log, a report, a spreadsheet)
 
 5. Write the case study using the template, no longer than one letter-size page
 
-6. Create a Notion page and publish it (Share → Allow anyone with link)
+6. Create a Notion page and publish it: click Share at the top → open the Publish tab → click Publish
 
 **Goal:** a finished, published case study with specific numbers and screenshots. It's the first brick in your portfolio.
 
@@ -269,7 +269,7 @@ Key decision: [one interesting technical detail].
 **Problem:** 30 hours/month on manual reports for 12 clients, 2-3 errors a month
 **Solution:** Automatic data collection from GA + Meta Ads + Google Ads,
 Claude writes the narrative part, the PDF is assembled and sent on a schedule
-**Result:** 30 hours → 15 minutes/month, 0 errors, reports arrive Monday morning
+**Result:** 30 hours → 1 hour/month, 0 errors, reports arrive Monday morning
 **Stack:** Claude Code + Cloudflare Workers + Slack bot + Google Sheets
 **Payback:** 2 months
 **Testimonial:** "On Mondays our marketer does real work instead of copying numbers"
@@ -279,7 +279,7 @@ Claude writes the narrative part, the PDF is assembled and sent on a schedule
 
 ## Common mistakes
 
-- **No before/after numbers.** "I automated reports" is a description. "30 hours → 15 minutes, $1,450/month saved" is a case study. Without before/after metrics, a case study doesn't sell.
+- **No before/after numbers.** "I automated reports" is a description. "30 hours → 1 hour a month, $1,450/month saved" is a case study. Without before/after metrics, a case study doesn't sell.
 - **Writing a "case study" with no screenshots.** Words describe, screenshots prove. At least 3 screenshots: BEFORE (the manual process), DURING (the system at work), AFTER (the result in the data).
 - **Showing the technical side instead of the business result.** The client doesn't care that you used Cloudflare Workers. They care that they save $1,450 a month. Put the tech stack in small print at the bottom.
 - **Not asking for a testimonial right after delivery.** The best moment to ask is when the client sees the working system for the first time. A month later, the excitement will have cooled off. (→ [Delivery and retention](46-delivery-retention.md): more on collecting testimonials)
@@ -288,9 +288,9 @@ Claude writes the narrative part, the PDF is assembled and sent on a schedule
 
 ## How this connects to other lessons
 
-- **→ [Delivery and retention](46-delivery-retention.md)**: how to get a testimonial and a case study out of every project you deliver
-- **→ [Packaging](42-packaging.md)**: case studies are the proof of value behind your packages
-- **→ [Real monetization case studies](47-monetization-cases.md)**: worked examples with numbers, for inspiration
+- **→ [Delivery and retention](46-delivery-retention.md)**: coming up later in this module: how to get a testimonial and a case study out of every project you deliver
+- **→ [Packaging](42-packaging.md)**: already covered: case studies are the proof of value behind your packages
+- **→ [Real monetization case studies](47-monetization-cases.md)**: already covered: worked examples with numbers, for inspiration
 
 ---
 
@@ -319,4 +319,6 @@ Claude writes the narrative part, the PDF is assembled and sent on a schedule
 
 ## Next lesson
 
-→ [Packaging: turning your automations into products](42-packaging.md)
+→ [Cold email and LinkedIn outreach with Claude](45-cold-outreach.md)
+
+You've already seen how to bundle your services into packages in the lesson [Packaging](42-packaging.md).

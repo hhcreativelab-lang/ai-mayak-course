@@ -10,6 +10,8 @@ Sales is filtering. Out of a hundred leads (people or companies who have shown s
 
 Claude makes that filtering systematic: it qualifies leads with BANT, gives each one a readiness score, writes personalized emails and prepares answers to objections. The rep walks into the conversation already knowing who's on the other end and what they care about.
 
+This lesson has a lot of Python code. If you don't program, take the prompt texts from it: they work in a regular Claude chat too, once you paste in your own notes about the client.
+
 🎨 **Picture this:** an experienced salesperson who gets a quick briefing from a colleague before every call: "This is Kevin from Northfield Supply. They're looking at competitors, the budget is there, but the CEO hasn't made the call yet, and the main objection is integration with QuickBooks." That's what Claude does for every lead, automatically.
 
 ---
@@ -29,20 +31,25 @@ Claude makes that filtering systematic: it qualifies leads with BANT, gives each
 
 ### BANT qualification: four questions that decide everything
 
-BANT is one of the oldest sales frameworks, and it still works:
+BANT is a long-standing sales framework, and it still works:
 
 - **B**udget: is there money? How much are they willing to spend?
 - **A**uthority: is this the person who makes the decision, or someone just gathering information?
 - **N**eed: is there a real need, or are they "just looking"?
 - **T**imeline: when do they plan to buy? This quarter, or "someday"?
 
-Claude pulls BANT out of any conversation: emails, chats, notes from calls and meetings:
+Claude pulls BANT out of your conversations: emails, chats, notes from calls and meetings.
 
 ```python
 import anthropic
 import json
 
 client = anthropic.Anthropic()
+
+
+def text_of(response) -> str:
+    """Collects the text of a reply: newer models may put "thinking" blocks before the text."""
+    return "".join(block.text for block in response.content if block.type == "text")
 
 def qualify_lead_bant(
     company_name: str,
@@ -54,7 +61,7 @@ def qualify_lead_bant(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=800,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Run a BANT qualification of this lead based on the information available.
@@ -71,7 +78,7 @@ Score each BANT criterion on a 0-3 scale:
 2 = some signs
 3 = clear confirmation
 
-Return JSON:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
     "bant": {{
         "budget": {{
@@ -107,7 +114,7 @@ Return JSON:
         }]
     )
 
-    result = json.loads(response.content[0].text)
+    result = json.loads(text_of(response))
 
     # Add a percentage score
     result["qualification_percent"] = round(result["total_score"] / 12 * 100)
@@ -115,7 +122,7 @@ Return JSON:
     return result
 
 
-# Test
+# A test with made-up data
 history = """
 April 15, first call:
 Kevin asked about our product and said they're "looking at options to
@@ -165,7 +172,7 @@ def score_lead_readiness(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=700,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Rate how ready this lead is to buy.
@@ -187,7 +194,7 @@ asks for a proposal or a contract
 NEGATIVE: vague answers, "we'll see", long silences with no reply,
 says it's "not my decision", keeps changing requirements, wants everything cheaper
 
-Return JSON:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
     "score": a number 0-100,
     "stage": "awareness/consideration/decision/ready_to_buy",
@@ -204,7 +211,7 @@ Return JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 ```
 
 🎨 **Picture this:** a doctor looks at the symptoms and makes a diagnosis. A salesperson looks at the signals and gives a score. Claude is a diagnostic assistant that checks every symptom on the list and doesn't get tired after the 50th lead.
@@ -234,7 +241,7 @@ def generate_followup_email(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=600,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Write a personalized follow-up email.
@@ -262,7 +269,7 @@ REQUIREMENTS:
 - No pressure, no pushiness
 - Natural language, not corporate-speak
 
-Return JSON:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
     "subject": "email subject line",
     "body": "email text",
@@ -272,10 +279,10 @@ Return JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
-# Example
+# Example (made-up data)
 email = generate_followup_email(
     contact={
         "name": "Kevin",
@@ -300,7 +307,7 @@ if email.get('ps'):
 
 Every product runs into 10-15 typical objections. An experienced salesperson knows the answer to each one. A new one gets flustered.
 
-Claude never gets flustered:
+Claude helps you keep your footing:
 
 ```python
 def handle_objection(
@@ -308,12 +315,12 @@ def handle_objection(
     product_name: str,
     product_key_benefits: list[str],
     contact_context: str = ""
-) -> dict:
+) -> str:
     """Drafts responses to an objection using several approaches"""
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=800,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""A customer raised an objection. Help me respond.
@@ -339,7 +346,7 @@ Also give:
         }]
     )
 
-    return response.content[0].text
+    return text_of(response)
 
 
 # Common objections and responses
@@ -376,7 +383,7 @@ def create_sales_advisor(playbook_content: str):
     def ask_advisor(question: str, deal_context: str) -> str:
         response = client.messages.create(
             model="claude-sonnet-5-5",
-            max_tokens=600,
+            max_tokens=8000,
             system=f"""You're an experienced sales coach. You have the company's playbook:
 
 {playbook_content}
@@ -388,11 +395,11 @@ say so. Give specific phrases a rep can use right now.""",
                 "content": f"Customer situation: {deal_context}\n\nQuestion: {question}"
             }]
         )
-        return response.content[0].text
+        return text_of(response)
 
     return ask_advisor
 
-# Usage example
+# Usage example (the company and its rules are made up)
 playbook = """
 # Sales Playbook: Techservice Inc.
 
@@ -423,13 +430,13 @@ print(advice)
 
 ### Apollo.io + Claude: personalized outreach
 
-Apollo.io is a tool for finding contacts and doing outreach (cold emails, LinkedIn). Claude adds the kind of personalization a template can't.
+Apollo.io is a service with a database of business contacts and tools for cold email. Claude adds the kind of personalization a template can't.
 
-⚠️ Cold emails and collecting contact data are regulated by anti-spam and personal data laws, and every country has its own. Before you launch, check the lessons [AI regulation and compliance](61c-ai-regulation-compliance.md) and [Cold outreach in 2026: DMs, email and voice](39c-cold-outreach-deep.md).
+⚠️ Cold emails and collecting contact data are regulated by anti-spam and personal data laws, and every country has its own: check the rules of your country and of your recipient's (in the US, the FTC's CAN-SPAM guide). Collect details from LinkedIn by hand: LinkedIn prohibits automated collection (bots, browser extensions). Before you launch, reread the lesson [Cold outreach that gets replies](39c-cold-outreach-deep.md); for more on the laws, see the library lesson [AI regulation and compliance](61c-ai-regulation-compliance.md).
 
 ```python
 def personalize_cold_outreach(
-    prospect_data: dict,  # Data from Apollo: company, title, LinkedIn activity
+    prospect_data: dict,  # About the person: company, title, what they've posted (from Apollo and LinkedIn)
     your_product: str,
     your_value_prop: str
 ) -> dict:
@@ -437,7 +444,7 @@ def personalize_cold_outreach(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=500,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Write a personalized cold email.
@@ -454,7 +461,7 @@ RULES:
 - One clear question at the end (not a "buy now" pitch)
 - Under 100 words
 
-Return JSON:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
     "subject": "subject line (up to 50 characters)",
     "opening": "the personalized first sentence",
@@ -465,7 +472,7 @@ Return JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 ```
 
 ---
@@ -476,6 +483,12 @@ Return JSON:
 
 **What we're building:** a script that takes a lead's details and returns a full qualification plus a plan for working that lead.
 
+**Without programming.** Paste your notes about a lead and the prompt text from the `full_lead_analysis()` function below into a Claude chat. You get the same qualification and plan, just without a file.
+
+**With code.** You need Python, the `anthropic` library (`pip install anthropic`) and an Anthropic API key in the `ANTHROPIC_API_KEY` environment variable. You create the key in the Claude Console (platform.claude.com); it's billed by tokens, separately from a subscription.
+
+The request to Claude includes the name, company, title and notes, but not the email or phone number: don't send more personal data than you need. If you work with real clients' data, check that your privacy policy and the laws where you work allow it.
+
 ```python
 # lead_qualification_system.py
 
@@ -485,6 +498,11 @@ from dataclasses import dataclass
 from typing import Optional
 
 client = anthropic.Anthropic()
+
+
+def text_of(response) -> str:
+    """Collects the text of a reply: newer models may put "thinking" blocks before the text."""
+    return "".join(block.text for block in response.content if block.type == "text")
 
 @dataclass
 class Lead:
@@ -504,7 +522,7 @@ def full_lead_analysis(lead: Lead) -> dict:
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1200,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Run a full lead analysis for the sales team.
@@ -519,7 +537,7 @@ Rep's notes: {lead.notes}
 INTERACTION HISTORY:
 {lead.interaction_log or "First contact, no history yet"}
 
-Return a FULL analysis as JSON:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
     "qualification": {{
         "bant_score": a number 0-12,
@@ -554,7 +572,7 @@ Return a FULL analysis as JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
 def format_lead_report(lead: Lead, analysis: dict) -> str:
@@ -601,7 +619,7 @@ RISKS:
     return report
 
 
-# ===== TEST =====
+# ===== TEST (the person and the company are made up) =====
 test_lead = Lead(
     name="Mike Thompson",
     company="Diamond Group Holdings",
@@ -649,9 +667,9 @@ python lead_qualification_system.py
 
 ## Tools and resources
 
-- **Apollo.io**: finding contacts and outreach (check the site for plans and limits)
-- **HubSpot CRM**: a CRM for storing customer data, with a free plan (check the site for paid plans; see also the lesson [CRM on autopilot](90-crm-autopilot.md))
-- **Lemlist / Instantly**: email outreach automation
+- **Apollo.io**: a contact database and cold email (check the site for plans and limits)
+- **HubSpot CRM**: a CRM for storing customer data, with a free plan (check the site for paid plans; see also the library lesson [CRM on autopilot](90-crm-autopilot.md))
+- **Lemlist / Instantly**: services for sending cold email campaigns
 - **Notion**: a place to keep your sales playbook
 - **Claude API**: the model names in the code are as of October 2026; current prices and versions are on the [What's current](https://aimayak.com/en/now/) page
 
@@ -661,7 +679,7 @@ python lead_qualification_system.py
 
 > BANT isn't bureaucracy, it's speed. Figuring out quickly whether someone is your customer respects both your time and theirs.
 >
-> Personalization isn't a luxury anymore; it's a must. People get dozens of template emails a day. One personalized email stands out right away.
+> Personalization isn't a luxury anymore; it's a must. People get lots of template emails, and one personalized email stands out right away.
 >
 > The most valuable part of sales AI isn't how fast it writes. It's consistency. Claude gives the hundredth lead the same level of analysis as the first. People get tired. AI doesn't.
 
@@ -669,4 +687,4 @@ python lead_qualification_system.py
 
 ## Next lesson
 
-→ [AI customer support: a ticket system, answers from your knowledge base (RAG), smarter support](94-ai-customer-support.md)
+→ [Build-Along: start an AI consulting business](113-build-along-ai-consulting.md)

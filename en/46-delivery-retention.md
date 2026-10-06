@@ -53,7 +53,7 @@ Access checklist:
 
 When you hand over keys and passwords, use the service's own team access or a password manager, not a plain email or chat message.
 
-**Step 2: A Loom video walkthrough (5-10 minutes)**
+**Step 2: A Loom video walkthrough (up to 5 minutes)**
 
 Record your screen while you show:
 1. How to run the main workflow (every step)
@@ -62,7 +62,7 @@ Record your screen while you show:
 4. What to do if the system stops responding (3 troubleshooting steps)
 5. How to reach you if they need help
 
-Upload it to Loom and send the client the link. Most people will watch a short video sooner than read PDF instructions.
+Upload it to Loom and send the client the link. On Loom's free plan a video can be up to 5 minutes long; if you can't fit everything in, record two short ones. Most people will watch a short video sooner than read PDF instructions.
 
 **Step 3: An SOP document (1-2 pages)**
 
@@ -195,7 +195,7 @@ The fix: a monthly report that shows the numbers.
 - [Any planned changes]
 ```
 
-This report takes 15 minutes to put together (or automate it!). It reminds the client why they pay for support.
+This report takes 15 minutes to put together (or automate it!). It reminds the client why they pay for support. Put only real numbers in it.
 
 ---
 
@@ -245,8 +245,8 @@ The best client is one who pays every month, so you don't have to go looking for
    ```
    "It's been a year since launch. I'd suggest an audit:
    we'd look at what can be optimized and which new processes
-   are worth automating. It usually runs $300-500 and gives you
-   a task list for the year ahead."
+   are worth automating. The audit costs $[X], and you come away
+   with a task list for the year ahead."
    ```
 
 ---
@@ -255,7 +255,7 @@ The best client is one who pays every month, so you don't have to go looking for
 
 **Exercise: Build a handoff kit for your project**
 
-Take a project you built during the course (Newsletter Automation or another one).
+Take any piece of work you've done with AI: for a client, for yourself or for someone you know. If you don't have one yet, make up a practice example, such as "answering routine emails for a dental office," and build the kit for that.
 
 1. Write an access checklist: everything the client should receive:
    ```
@@ -263,7 +263,7 @@ Take a project you built during the course (Newsletter Automation or another one
    □ [Service 2]: [how to hand it over]
    ```
 
-2. Record a Loom walkthrough (5-10 minutes):
+2. Record a Loom walkthrough (up to 5 minutes):
    - Show the system in action
    - Explain each step in plain language
 
@@ -291,9 +291,9 @@ Take a project you built during the course (Newsletter Automation or another one
 
 ## Related lessons
 
-- **→ [Portfolio and case studies](41-portfolio-case-studies.md)**: every delivered project is a new case study for your portfolio, and every testimonial is social proof
-- **→ [Packaging](42-packaging.md)**: the documentation levels (README / Loom / SOP) match the Basic, Pro and Enterprise packages
-- **→ [The factory model](48-factory-model.md)**: your handoff kit becomes the template for your next projects
+- **→ [Portfolio and case studies](41-portfolio-case-studies.md)**: already covered: every delivered project is a new case study for your portfolio, and every testimonial is social proof
+- **→ [Packaging](42-packaging.md)**: already covered: the documentation levels (README / Loom / SOP) match the Basic, Pro and Enterprise packages
+- **→ [The factory model](48-factory-model.md)**: coming up in the "Your 90-day plan" module: your handoff kit becomes the template for your next projects
 
 ---
 
@@ -305,7 +305,7 @@ Take a project you built during the course (Newsletter Automation or another one
 - **Slack**: shared channels for client support (many businesses already use it every day)
 - **Tally**: [tally.so](https://tally.so/). A form for collecting NPS scores and client feedback (there's a free plan)
 - **Calendly**: [calendly.com](https://calendly.com/). For booking the yearly review with the client
-- **Stripe**: [stripe.com](https://stripe.com/). For automatic recurring billing on a maintenance contract
+- **Stripe**: [stripe.com](https://stripe.com/). For automatic recurring billing on a maintenance contract. It isn't available in every country: the list is at stripe.com/global
 
 ---
 
@@ -323,4 +323,6 @@ Take a project you built during the course (Newsletter Automation or another one
 
 ## Next lesson
 
-→ [Monetization case studies](47-monetization-cases.md): 5 breakdowns with numbers
+→ [How to build a personal brand with AI](67c-personal-brand-ai.md): the first lesson of the "Getting found: content, ads and sales" module
+
+You've already seen project breakdowns with numbers in the lesson [Monetization case studies](47-monetization-cases.md).

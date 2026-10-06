@@ -1,4 +1,4 @@
-# IA para publicidad: textos de anuncios, pruebas A/B y pujas inteligentes
+# IA para publicidad: textos de anuncios, pruebas A/B e informes
 
 **Tiempo:** unos 25 min de lectura + 40 min de práctica
 
@@ -10,6 +10,8 @@ Un redactor publicitario trabaja 8 horas, escribe 5 versiones de un anuncio, se 
 
 No es solo más rápido. Es otro juego: más experimentos → más datos → mejores anuncios → muchas veces un costo por clic más bajo.
 
+Esta lección trae mucho código en Python: así se pone el trabajo de publicidad en automático. Si no programas, lee la teoría por las ideas y los prompts, y en la práctica usa el camino sin código: los mismos prompts funcionan en un chat normal.
+
 🎨 **Imagínalo así:** antes, una agencia de publicidad era como un restaurante con un solo cocinero: lento y caro. Claude más tus datos se parece más a una cocina de pruebas: 50 recetas en un minuto, pruebas cuál es la mejor y haces más de la ganadora. Y la cocina sigue trabajando de noche mientras el cocinero duerme.
 
 ---
@@ -20,9 +22,9 @@ No es solo más rápido. Es otro juego: más experimentos → más datos → mej
 - **Meta Ads (Facebook/Instagram)**: textos e imágenes con IA
 - **Google Ads RSA**: anuncios de búsqueda adaptables, con Claude mejorando los titulares
 - **LinkedIn Ads y TikTok Ads**: el mismo método, con los límites y las políticas de cada plataforma
-- **Pruebas A/B**: Claude analiza los resultados y declara al ganador
+- **Pruebas A/B**: muestras dos o más versiones a personas distintas y comparas los resultados. Los números principales: CTR (tasa de clics, la parte de las impresiones que recibió un clic), CPC (costo por clic), CPL (costo por cliente potencial, el precio de un registro o una solicitud) y CVR (tasa de conversión, la parte de los clics que se volvió cliente potencial). Claude hace las cuentas y te ayuda a elegir al ganador
 - **Performance Max**: cómo ayuda Claude con los grupos de recursos
-- **Adspirer MCP**: manejar campañas de anuncios directamente desde Claude
+- **Adspirer MCP**: manejar campañas de anuncios directamente desde Claude (MCP es la forma de conectarle servicios externos a Claude)
 - **Informes automáticos**: datos → análisis → recomendaciones concretas
 
 ---
@@ -37,23 +39,29 @@ La buena publicidad empieza con pruebas. Para probar, necesitas muchas versiones
 import anthropic
 import json
 
+
+def text_of(response) -> str:
+    """Junta el texto de la respuesta: los modelos nuevos pueden poner bloques de "razonamiento" antes del texto."""
+    return "".join(block.text for block in response.content if block.type == "text")
+
+
 def generate_ad_variants(
     product: str,
     target_audience: str,
     key_benefit: str,
     platform: str,
     count: int = 10
-) -> dict:
+) -> list:
     """Genera variantes de texto para anuncios"""
 
     client = anthropic.Anthropic()
 
-    # Las plataformas cambian sus límites de caracteres: compruébalos en las páginas de ayuda de Meta y Google Ads
+    # Largo recomendado de los textos según las páginas de ayuda de Meta y Google Ads, a octubre de 2026.
+    # Cambia: compruébalo en la ayuda de cada plataforma antes de lanzar
     platform_specs = {
         "facebook": {
-            "headline_chars": 40,
-            "primary_text_chars": 125,
-            "description_chars": 30
+            "headline_chars": 27,       # titular en el feed de Facebook
+            "primary_text_chars": 150,  # texto principal: Meta sugiere 50-150 caracteres
         },
         "google_rsa": {
             "headline_chars": 30,
@@ -70,7 +78,7 @@ def generate_ad_variants(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=2000,
+        max_tokens=8000,  # con margen: el "razonamiento" del modelo también cuenta para este límite
         messages=[{
             "role": "user",
             "content": f"""Crea {count} variantes de anuncio para {platform}.
@@ -89,7 +97,7 @@ Usa un enfoque distinto en cada variante:
 
 Usa solo afirmaciones que sean ciertas para este producto. No inventes números, reseñas ni cantidades de clientes.
 
-Devuelve un arreglo JSON:
+Devuelve solo un arreglo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 [
   {{
     "variant_id": 1,
@@ -104,10 +112,10 @@ Devuelve un arreglo JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
-# Ejemplo: un curso de Excel en línea
+# Ejemplo: un producto inventado
 variants = generate_ad_variants(
     product="Curso de Excel en línea para profesionales de finanzas",
     target_audience="Contadores y personal de finanzas de 25 a 45 años que dedican 2-3 horas a los informes",
@@ -127,7 +135,7 @@ for v in variants[:3]:
 
 ### Meta Ads: textos e imágenes
 
-Meta (Facebook + Instagram) es la plataforma de anuncios con los datos más ricos. Claude ayuda con los textos y trabaja junto con generadores de imágenes para la parte visual.
+Meta maneja los anuncios de Facebook y de Instagram desde una sola cuenta publicitaria. Claude ayuda con los textos y trabaja junto con generadores de imágenes para la parte visual.
 
 **El embudo para crear anuncios:**
 
@@ -150,10 +158,10 @@ def create_meta_campaign_brief(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1500,
+        max_tokens=8000,
         messages=[{
             "role": "user",
-            "content": f"""Crea un brief detallado para una campaña de Meta Ads.
+            "content": f"""Crea un plan detallado para una campaña de Meta Ads.
 
 Producto: {product}
 Presupuesto diario: ${budget_daily}
@@ -172,7 +180,7 @@ Sé específico: números, porcentajes, recomendaciones."""
         }]
     )
 
-    return response.content[0].text
+    return text_of(response)
 ```
 
 🎨 **Imagínalo así:** antes, el planificador de medios era un especialista aparte que trabajaba de 9 a 5. Claude hace un borrador del plan en segundos, incluso a las 3 de la mañana antes de un lanzamiento. La decisión sobre el presupuesto la sigue tomando una persona.
@@ -191,7 +199,7 @@ def generate_google_rsa(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1200,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Crea un anuncio RSA para Google Ads.
@@ -207,7 +215,7 @@ Requisitos:
 - Pon las palabras clave en 3-4 titulares (¡no en todos!)
 - Variedad: beneficios, acciones, lo que te hace diferente, urgencia
 
-Devuelve JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 {{
     "headlines": ["titular 1", ... "titular 15"],
     "descriptions": ["descripción 1", ... "descripción 4"],
@@ -219,7 +227,7 @@ Devuelve JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
 # Ejemplo: un despacho de abogados
@@ -242,7 +250,7 @@ Las funciones de arriba no están atadas a Meta y Google. LinkedIn Ads es la opc
 
 ### Pruebas A/B: Claude elige al ganador
 
-Los datos de una prueba muchas veces se ven confusos. Una versión tiene un CTR más alto, pero también un CPC más alto. Menos conversiones, pero más baratas. Claude te ayuda a desenredarlo en segundos.
+Los datos de una prueba muchas veces se ven confusos. Una versión tiene un CTR más alto, pero también un CPC más alto. Menos conversiones, pero más baratas. Claude te ayuda a desenredarlo en segundos. Los porcentajes los calcula él, pero la conclusión de si alcanzan los datos revísala tú: con unas cuantas decenas de conversiones, el azar puede parecer una victoria.
 
 ```python
 def analyze_ab_test(test_results: list[dict]) -> dict:
@@ -261,7 +269,7 @@ def analyze_ab_test(test_results: list[dict]) -> dict:
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=800,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Analiza los resultados de esta prueba A/B de anuncios y dame recomendaciones.
@@ -282,11 +290,11 @@ Sé específico: da números y porcentajes."""
 
     return {
         "raw_results": test_results,
-        "analysis": response.content[0].text
+        "analysis": text_of(response)
     }
 
 
-# Prueba
+# Una prueba con datos inventados
 results = [
     {"variant": "A — Miedo (pérdida)", "impressions": 10000, "clicks": 180, "conversions": 9, "spend": 350},
     {"variant": "B — Beneficio (ahorro)", "impressions": 10000, "clicks": 220, "conversions": 18, "spend": 350},
@@ -295,6 +303,7 @@ results = [
 
 analysis = analyze_ab_test(results)
 print(analysis["analysis"])
+# Ejemplo de respuesta para estos datos:
 # Ganador: B — CTR 2.2%, CPL $19.4, CVR 8.2%
 # La variante A pierde a pesar de su titular intrigante
 # Recomendación: todavía hay pocos datos (9 y 18 conversiones); deja correr la prueba y sube poco a poco el presupuesto de B
@@ -302,7 +311,7 @@ print(analysis["analysis"])
 
 ### Performance Max: Claude ayuda con los grupos de recursos
 
-PMax es un tipo de campaña de Google que decide por su cuenta dónde mostrar tus anuncios (Búsqueda, YouTube, Gmail, Display). La calidad de tus materiales (recursos o assets) es fundamental. Para las campañas de Búsqueda, Google también tiene AI Max: a octubre de 2026, las funciones de IA vienen integradas en las propias campañas, así que revisa nombres y configuraciones en las páginas de ayuda de Google Ads.
+PMax es un tipo de campaña de Google que decide por su cuenta dónde mostrar tus anuncios (Búsqueda, YouTube, Gmail, Display, Discover y Maps). La calidad de tus materiales (recursos o assets) es fundamental. Para las campañas de Búsqueda, Google también tiene AI Max: a octubre de 2026, las funciones de IA vienen integradas en las propias campañas, así que revisa nombres y configuraciones en las páginas de ayuda de Google Ads.
 
 ```python
 def create_pmax_assets(
@@ -314,7 +323,7 @@ def create_pmax_assets(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=2000,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Crea todos los materiales (recursos) que necesita una campaña de Performance Max.
@@ -323,9 +332,9 @@ Producto: {product}
 Beneficios principales: {', '.join(key_benefits)}
 Perfil del público: {audience_persona}
 
-Crea:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 {{
-    "headlines": ["5 titulares de hasta 30 caracteres"],
+    "headlines": ["5 titulares de hasta 30 caracteres, al menos uno de hasta 15"],
     "long_headlines": ["5 titulares largos de hasta 90 caracteres"],
     "descriptions": ["5 descripciones de hasta 90 caracteres"],
     "business_name": "nombre de la empresa (hasta 25 caracteres)",
@@ -340,12 +349,12 @@ Crea:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 ```
 
 ### Adspirer MCP: manejar anuncios directamente desde Claude
 
-Adspirer es un servicio MCP de terceros para cuentas de anuncios. Se conecta a Claude Code y a Cowork como plugin y, a octubre de 2026, funciona con Google Ads, Meta Ads y varias plataformas más. Le permite a Claude ver datos reales de las campañas y hacer recomendaciones basadas en hechos, no en suposiciones. El servicio también puede lanzar campañas, así que revisa sus condiciones, dale los permisos mínimos (empieza con solo lectura) y quédate tú con el lanzamiento de anuncios y los cambios de presupuesto.
+Adspirer es un servicio MCP de terceros para cuentas de anuncios. Se conecta a Claude Code y a Cowork como plugin (los dos se ven en el módulo 12) y, a octubre de 2026, funciona con Google Ads, Meta Ads y varias plataformas más. Le permite a Claude ver datos reales de las campañas y hacer recomendaciones basadas en hechos, no en suposiciones. El servicio también puede crear campañas, así que lee sus condiciones, mira qué acceso a tus cuentas de anuncios te pide y quédate tú con el lanzamiento de anuncios y los cambios de presupuesto: Claude prepara, tú confirmas.
 
 ```
 # En Claude Code, con Adspirer MCP conectado:
@@ -368,7 +377,7 @@ def generate_weekly_ad_report(campaigns_data: dict) -> str:
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1500,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Genera un informe semanal de las campañas de anuncios.
@@ -392,11 +401,11 @@ Formato del informe:
 ## Presupuesto
 [recomendaciones para redistribuirlo]
 
-Escribe como analista: concreto, con números, sin relleno."""
+Escribe como analista: concreto, con números, sin relleno. Toma los números solo de los datos."""
         }]
     )
 
-    return response.content[0].text
+    return text_of(response)
 ```
 
 ---
@@ -404,6 +413,10 @@ Escribe como analista: concreto, con números, sin relleno."""
 ## Práctica
 
 ### Ejercicio: crea 10 variantes de texto para anuncios y analiza una prueba
+
+**Sin programar.** Copia el texto del prompt de la función `create_ad_batch()` de abajo, pon los datos de tu producto y mándalo en un chat de Claude. Para la Parte 2, pega en el chat una tabla con los resultados de tu prueba y pídele a Claude que la analice con los cinco puntos de `analyze_ab_test()`.
+
+**Con código.** Necesitas Python, la biblioteca `anthropic` (`pip install anthropic`) y una clave de API de Anthropic en la variable de entorno `ANTHROPIC_API_KEY`. La clave se crea en la Claude Console (platform.claude.com) y se cobra por tokens, aparte de la suscripción.
 
 **Parte 1: Generar las variantes (15 minutos)**
 
@@ -415,12 +428,18 @@ import json
 
 client = anthropic.Anthropic()
 
+
+def text_of(response) -> str:
+    """Junta el texto de la respuesta: los modelos nuevos pueden poner bloques de "razonamiento" antes del texto."""
+    return "".join(block.text for block in response.content if block.type == "text")
+
+
 def create_ad_batch(product_info: dict) -> list:
     """Crea un lote de anuncios para probar"""
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=3000,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Crea 10 variantes de anuncio para Facebook.
@@ -441,21 +460,21 @@ Crea 2 variantes para cada enfoque:
 
 Usa solo hechos de la información del producto de arriba. No inventes números, reseñas ni cantidades de clientes.
 
-Formato JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 [{{
     "id": 1,
     "approach": "nombre",
-    "headline": "hasta 40 caracteres",
-    "text": "hasta 125 caracteres",
+    "headline": "hasta 27 caracteres",
+    "text": "hasta 150 caracteres",
     "cta": "botón",
     "image_direction": "qué debe mostrar la imagen"
 }}]"""
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
-# Córrelo con tu producto
+# Pon tu propio producto (el ejemplo de abajo es inventado)
 my_product = {
     "name": "Escuela en línea de inglés de negocios para profesionales de tecnología",
     "description": "Inglés para trabajar en equipos de EE. UU., en 3 meses",
@@ -479,7 +498,7 @@ for ad in ads:
 
 **Parte 2: Analizar los resultados de la prueba (25 minutos)**
 
-Cuando la prueba ya haya corrido, captura los datos y obtén el análisis:
+Cuando la prueba ya haya corrido, captura los datos y obtén el análisis. Copia en el mismo archivo la función `analyze_ab_test()` de la sección de teoría.
 
 ```python
 # Captura tus datos reales después de 5 días de prueba (los números de abajo son inventados)
@@ -504,11 +523,11 @@ print(analysis["analysis"])
 
 ## Herramientas y recursos
 
-- **Meta Business Manager**: business.facebook.com (para manejar anuncios)
+- **Meta Business Suite y Ads Manager**: business.facebook.com (donde manejas los anuncios de Facebook e Instagram)
 - **Google Ads**: ads.google.com
 - **LinkedIn Campaign Manager**: la herramienta de LinkedIn para manejar anuncios (públicos B2B)
 - **TikTok Ads Manager**: la herramienta de TikTok para manejar anuncios (videos verticales cortos)
-- **Adspirer MCP**: una herramienta para analizar anuncios a través de Claude
+- **Adspirer MCP**: una herramienta de terceros para analizar anuncios a través de Claude
 - **Flux**: bfl.ai, el sitio de Black Forest Labs (genera imágenes para anuncios a partir de un prompt)
 - **Meta Ad Library**: facebook.com/ads/library (mira los anuncios que está publicando tu competencia)
 - **Google Keyword Planner**: la herramienta de Google para planear palabras clave
@@ -520,7 +539,7 @@ print(analysis["analysis"])
 
 > La publicidad siempre es una prueba. Quien prueba más variantes aprende más rápido. Claude hace que probar sea barato: 50 variantes en lugar de 5, en minutos en lugar de días.
 >
-> El análisis de datos es el cuello de botella en la mayoría de los equipos de publicidad. Claude quita ese cuello de botella: ve todas las métricas a la vez, no se pierde en hojas de cálculo y da una conclusión concreta con el razonamiento detrás.
+> El análisis de datos muchas veces es el cuello de botella en los equipos de publicidad pequeños. Claude te quita esa carga: ve todas las métricas a la vez, no se pierde en hojas de cálculo y da una conclusión concreta con el razonamiento detrás.
 >
 > La regla principal: Claude escribe los textos y analiza los datos, pero una persona lanza y escala los anuncios. La decisión final siempre es tuya; la IA solo te ayuda a llegar ahí más rápido.
 
@@ -528,4 +547,4 @@ print(analysis["analysis"])
 
 ## Siguiente lección
 
-→ [IA para ventas: calificación de clientes potenciales, seguimiento y cierre](93-sales-ai.md)
+→ [IA para ventas: calificar clientes potenciales, seguimiento y cierre](93-sales-ai.md)

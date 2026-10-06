@@ -8,11 +8,11 @@
 
 Ahead of you is the deep-dive library, full of applied lessons. You won't read them all. This lesson is a map of where *you* should go. Answer 4 questions and you have your route.
 
-Without this lesson, the applied lessons feel like a tool catalog: voice, video, analytics, CRM, support, ads. Everything is interesting, nothing gets built. A student reads the lessons one after another, remembers 10% two months later, and hasn't launched anything.
+Without this lesson, the applied lessons feel like a tool catalog: voice, video, analytics, CRM, support, ads. Everything is interesting, nothing gets built. A student reads the lessons one after another, remembers little two months later, and hasn't launched anything.
 
 With this lesson, you leave with one of 5 ready-made routes: 8 to 12 lessons for your goal, in the right order, and a clear sense of why you're NOT reading the rest right now.
 
-The [course page](https://aimayak.com/en/course/) also has three general paths by goal: the **Use AI in my work** path, the **Earn with AI** path and the **Build my own product** path. The map below is finer-grained: it picks a scenario inside the Earn with AI or Build my own product goal.
+The [course page](https://aimayak.com/en/course/) also has three general paths by goal: the **Use AI in my work** path, the **Earn with AI** path and the **Build my own product** path. The map below is finer-grained: it picks a scenario inside the Earn with AI or Build my own product goal. If you took the Use AI in my work path, you've already finished the core course: you can simply skim this lesson.
 
 🎨 **Picture this:** you've finished ski school. The green runs are behind you. In front of you is a mountain with dozens of trails. Which ones are yours? Without a trail map, you'll stand at the lift for an hour reading every name. This lesson is the trail map, color-coded: your level, your direction, your distance.
 
@@ -33,7 +33,7 @@ Answer the 4 questions in order. At the end you get one of 5 routes (A/B/C/D/E).
 | Businesses (B2B): I sell to companies | **A: B2B AI Agency** | You need case studies, cold outreach, retention, business integrations |
 | End users (B2C): I sell to people | **B: B2C Consumer App** | You need good UX, virality, cheap support, mass scale |
 | Myself (B2Me): I automate my own routine | **C: Personal Automation** | You need Obsidian or Notion, an executive assistant, /loop, no public presence |
-| Corporations / enterprise (1,000+ people) | **D: Corporate Consulting** | You need the Microsoft stack, compliance, security, Teams |
+| Corporations / enterprise (500+ people) | **D: Corporate Consulting** | You need the Microsoft stack, compliance, security, Teams |
 | An audience, through content | **E: Content Creator** | You need voice, video, social media, brand voice, SEO |
 
 If your answer is "both," pick the main scenario **for the next 3 months**. In 3 months, come back and take the second route.
@@ -46,17 +46,17 @@ If your answer is "both," pick the main scenario **for the next 3 months**. In 3
 
 | Answer | Add to your route |
 |---|---|
-| A service (your time, project work) | + [Your first clients](38-monetization-clients.md), [Lead generation](39-lead-generation.md), [Pricing](39-monetization-pricing.md), [Portfolio and case studies](41-portfolio-case-studies.md), [Cold outreach](45-cold-outreach.md), [Delivery and retention](46-delivery-retention.md) (the classic way to sell a service) |
+| A service (your time, project work) | + [Your first clients](38-monetization-clients.md), [Finding potential clients](39-lead-generation.md), [Pricing](39-monetization-pricing.md), [Portfolio and case studies](41-portfolio-case-studies.md), [Cold outreach](45-cold-outreach.md), [Delivery and retention](46-delivery-retention.md) (the classic way to sell a service) |
 | A product (sells without you, scales) | + [Packaging](42-packaging.md), [Monetization case studies](47-monetization-cases.md), [The factory model](48-factory-model.md) (packaging, the factory model) |
 | Content (subscriptions, ads, sponsors) | switch to route E |
 | Data or analytics | + [Product analytics](87-product-analytics.md), [Niche and trend analysis](88-niche-trend-analysis.md), [Competitive intelligence](89-competitive-intelligence.md) (analytics and market intelligence) |
 | A SaaS subscription | + [Payments and billing](97-payments-stripe.md), [MLOps for indie developers](98-mlops-indie.md), [The final architecture](99-final-architecture.md) |
 
-You've **already covered some of these** before this lesson (in the part of the course about money and clients). This is a reminder: don't skip connecting them to your new route.
+If you took the Earn with AI path, you've **already covered some of these** in the core course (the modules on niche, price and first clients). This is a reminder: don't skip connecting them to your new route.
 
 ---
 
-### Q3: Which stack are you betting on?
+### Q3: Which stack (set of tools) are you betting on?
 
 | Stack | Applied lessons for you |
 |---|---|
@@ -75,10 +75,10 @@ A stack isn't a route. The stack tells you **which specific lessons** to add to 
 
 | Where you are | What to add |
 |---|---|
-| A weekend MVP (minimum viable product) | the minimal stack: Claude Code + Cloudflare Workers + one MCP. Leave the production patterns lessons alone for now ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them) |
+| A weekend MVP (minimum viable product) | the minimal stack: Claude Code + Cloudflare Workers (a service that runs your code around the clock) + one MCP connection (a way to connect outside services to Claude). Leave the production patterns lessons alone for now ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the other lessons on the library shelves "Security: attacks and untrusted plugins" and "Architecture that lasts") |
 | A beta product (10 to 50 users) | + monitoring ([Product analytics](87-product-analytics.md)), basic security ([Security in Claude Code](61-security-secrets-env.md)), an audit trail ([Managing agents](62-agent-management-logging.md)) |
-| Production with real clients | **The production patterns lessons ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them) are REQUIRED**: without them, problems tend to pile up as soon as real clients rely on your system |
-| Enterprise clients | the production patterns lessons ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them) + [Microsoft integration](microsoft-integration.md) + the compliance lessons |
+| Production with real clients | **We strongly recommend the production patterns lessons** ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them): once real clients rely on your system, problems tend to pile up without them |
+| Enterprise clients | the production patterns lessons ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them) + [Microsoft integration](microsoft-integration.md) + the lessons on AI laws and rules, such as [AI regulation and compliance](61c-ai-regulation-compliance.md) |
 
 🎨 **Picture this:** you don't buy a Boeing 747 to run to the grocery store. And you don't buy a scooter to cross the Atlantic. Your readiness level means picking the right vehicle for the distance.
 
@@ -86,7 +86,7 @@ A stack isn't a route. The stack tells you **which specific lessons** to add to 
 
 ## 5 routes from Q1 to Q4
 
-After the 4 questions, you're on one of 5 routes. Each route is a table: which lessons, in what order, how many weeks.
+After the 4 questions, you're on one of 5 routes. Each route is a table: which lessons, in what order, how many weeks. You can skip any core-course lessons on your route that you've already taken.
 
 ---
 
@@ -100,7 +100,7 @@ After the 4 questions, you're on one of 5 routes. Each route is a table: which l
 |---|---|---|
 | 1 | [Your first clients](38-monetization-clients.md) | trust map, warm conversations |
 | 2 | [Cold outreach](45-cold-outreach.md) | AI scripts, conversion |
-| 3 | [Lead generation](39-lead-generation.md) | an AI funnel |
+| 3 | [Finding potential clients](39-lead-generation.md) | building lists of companies to contact |
 | 4 | [Pricing](39-monetization-pricing.md) | value-based pricing |
 | 5 | [Delivery and retention](46-delivery-retention.md) | keeping clients 12+ months |
 | 6 | [The factory model](48-factory-model.md) | from freelancer to agency |
@@ -117,7 +117,7 @@ After the 4 questions, you're on one of 5 routes. Each route is a table: which l
 
 ### Route B: B2C Consumer App (you sell an app to people)
 
-**Client profile:** end users, freemium or a subscription; you need virality.
+**Client profile:** end users, a free version with paid extras (freemium) or a subscription; you need virality.
 
 **Route logic:** MVP → UX → marketing → virality → retention → monetization. Mass scale means you need cheap infrastructure.
 
@@ -181,7 +181,7 @@ After the 4 questions, you're on one of 5 routes. Each route is a table: which l
 | 7 | [Niche and trend analysis](88-niche-trend-analysis.md) | internal research for the client |
 | 8 | [Competitive intelligence](89-competitive-intelligence.md) | market intelligence |
 | 9 | [The final architecture](99-final-architecture.md) | the full enterprise stack |
-| 10 | The production patterns lessons ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them), REQUIRED | production patterns + plugin security |
+| 10 | The production patterns lessons ([Plugin security](101-plugin-security.md), [Prompt injection defense](107b-prompt-injection-defense.md), [Hook deny-by-design](107-hook-deny-by-design.md), [Portfolio detachability](106-modular-architecture-detachability.md) and the ones around them), strongly recommended | production patterns + plugin security |
 
 **Time:** 10 to 12 weeks (slower, because each lesson goes deep).
 **Skip:** [Chatbots with the Claude API](50-telegram-bots.md) (a public chatbot isn't a corporate channel in most cases; large companies live in Teams), [Voice tools](53-voice-tools.md) and [Video editing](54-video-pipeline.md) (voice and video can wait), the content factory lessons ([AI copywriting](67-ai-copywriting.md)–[The content pipeline](72-content-pipeline-complete.md); not your core skill), and [No-code AI](77-no-code-ai.md)–[Zapier AI](79-zapier-ai.md) (no-code tools; corporations want custom work).
@@ -271,17 +271,17 @@ These lessons are useful but **not critical** for most routes. Come back to them
 | [Advanced orchestration](80-ai-sandboxes-e2b.md)–[Advanced computer use](83-computer-use-advanced.md) | teams of 5+ agents |
 | [Voice and real-time](84-voice-ai-agents-vapi.md)–[Chatbot managers](86-chatbot-managers.md) | if voice is your main channel |
 | [MLOps for indie developers](98-mlops-indie.md) | production with active monitoring |
-| [The lesson you didn't expect](100-intrigue.md) | everyone, after any route; don't skip it |
+| [The lesson you didn't expect](100-intrigue.md) | everyone: it's the second-to-last lesson of the core course; if you skipped it, go back to it |
 
 ---
 
 ## ❌ Common mistakes when choosing a route
 
-❌ **Reading all the applied lessons in a row over two months.** After 60 days you remember 10% and haven't launched anything. That's catalog thinking: learning for the sake of learning.
+❌ **Reading all the applied lessons in a row over two months.** After two months you remember little and haven't launched anything. That's catalog thinking: learning for the sake of learning.
 
 ❌ **Jumping between routes at random.** "Started route A, a week later jumped to E, two weeks after that to C." You lose the structure. A route is **a sequence with a logic to it**, not a pile of tags.
 
-❌ **Ignoring the production patterns lessons once you're in production.** "My clients pay me, but I skipped plugin security and portfolio detachability." Sooner or later something breaks in production, and it's much harder to fix while a client is waiting. These lessons aren't optional once real clients depend on your work.
+❌ **Ignoring the production patterns lessons once you're in production.** "My clients pay me, but I skipped plugin security and portfolio detachability." Sooner or later something breaks in production, and it's much harder to fix while a client is waiting. Once real clients depend on your work, we strongly recommend these lessons.
 
 ❌ **Not picking a route at all ("I'm just reading").** Without a clear goal, the course turns into an encyclopedia. Encyclopedias are useful as a reference, not as a learning path.
 
@@ -331,12 +331,12 @@ A route is your **first pass**. Once you launch the first version (an MVP, a fir
 - [ ] Wrote down the 8 to 12 lessons on my route in a to-do app, Obsidian or a notebook
 - [ ] Understand why I'm NOT reading the other lessons now (I'll come back to them when I need them)
 - [ ] Know after which lesson on my route I go back to the production patterns lessons (if I'm in production)
-- [ ] Set a start date for my route and an expected finish date (6 to 12 weeks)
+- [ ] Set a start date for my route and an expected finish date (4 to 12 weeks, depending on the route)
 
 ---
 
 ## Next lesson
 
-→ [Chatbots with the Claude API](50-telegram-bots.md): from your first bot to Cloudflare Workers in production
+The core course ends here. Next, follow your route from the tables above: open the first lesson on it that you haven't taken yet (you already know the core-course lessons on your route). Route A starts with [Your first clients](38-monetization-clients.md), B with [Websites and web apps](15-websites-webapps.md), C with [An AI executive assistant](34-executive-assistant.md), D with [AI in messaging apps](76-ai-messengers.md), and E with [AI copywriting](67-ai-copywriting.md).
 
-(or the first lesson on your route, if it starts somewhere else)
+If you took the Use AI in my work path, you've finished the course: come back to the library when you have a specific task.

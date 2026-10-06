@@ -388,8 +388,9 @@ cd ~/Desktop/personal-brand
 
 # Собираем источники
 # - старые посты LinkedIn: запроси копию своих данных в настройках
-#   (Settings & Privacy → Data privacy → Download your data)
-# - архив X (Twitter): Settings and privacy → Your account → Download an archive of your data
+#   (в английском интерфейсе: Settings & Privacy → Data privacy → Download your data)
+# - архив X (Twitter): запроси его в настройках аккаунта
+#   (в английском интерфейсе: Settings and privacy → Your account → Download an archive of your data)
 # - длинные письма из почты скопируй как обычный текст
 
 # Создаём один файл с 50+ образцами

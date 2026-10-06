@@ -50,7 +50,7 @@ The right approach is "top down": value to the customer → a percentage of that
 - **Grandfathering**: existing customers keep their old price when you raise prices (protects retention)
 - **Usage-based vs. flat**: pay per use vs. a fixed subscription, plus hybrids of the two
 - **Annual discount**: a discount for paying for a year up front (often 15-20%); it improves cash flow and retention
-- **Freemium vs. free trial**: two different ways in, not the same thing
+- **Freemium vs. free trial**: two different ways in. Freemium is a free plan with no time limit next to the paid plans; a free trial is the paid version for a limited time
 - **Willingness to pay (WTP)**: the most a customer is willing to pay; your price should sit below it
 
 ---
@@ -143,11 +143,11 @@ This type is harder to put into numbers, but don't ignore it: for enterprise cus
 
 #### Step 2: Position yourself in the value range
 
-Once you know the value, you pick a percentage of it as your price.
+Once you know the value, you pick a percentage of it as your price. (The previous lesson used 10-30% of the yearly value: that was the one-time price of a project. Here we're pricing a subscription: the percentage is taken from the monthly value and paid every month.)
 
 | Position | % of value | When to choose it |
 |---------|---------|----------------|
-| **Conservative** | 10% | An "easy yes" for the customer, a low-friction sale, a self-serve product |
+| **Conservative** | 10% | An "easy yes" for the customer, a low-friction sale, a self-serve product (customers buy on their own, without a salesperson) |
 | **Standard** | 15% | The right balance; the default for B2B SaaS (software sold to businesses) |
 | **Premium** | 20% | Your best customers, premium positioning, custom support |
 
@@ -167,7 +167,7 @@ For a new product with no proof yet, start conservative ($300). Once you've buil
 A single tier usually leaves money on the table. Common advice for SaaS pricing: **at least 3 tiers**.
 
 The logic (a made-up split; yours will differ):
-- a smaller share of customers will pick Starter (low-touch, price-sensitive)
+- a smaller share of customers will pick Starter (they need little hand-holding and are price-sensitive)
 - most will pick Pro (the main offering, a balance of value and price)
 - a small share will pick Business (an enterprise feel, high willingness to pay)
 
@@ -179,7 +179,7 @@ Without a top tier, you lose some revenue at the high end. Without a bottom tier
 |------|-----------|----------|
 | **Starter** | The minimum viable offer | An individual or a small team |
 | **Pro** | The main offering | A growing business |
-| **Business / Scale** | Premium, with customization | Enterprise / power user |
+| **Business / Scale** | Premium, with customization | Large company / heavy user |
 
 Some companies add a 4th tier, **Enterprise** (custom pricing, sold through a sales team). But that sits on top of the 3 base tiers.
 
@@ -201,7 +201,7 @@ Pricing isn't fixed forever. It's a system you keep iterating on.
 
 **Signs your price is too high:**
 - Very low conversion
-- A very low trial-to-paid rate
+- Very few trial users go on to pay
 - Sales calls drag on over price negotiation
 - Churn is concentrated in the first 30 days
 
@@ -282,7 +282,7 @@ Within value-based pricing and 3 tiers, there are **levers** that change exactly
 **A hybrid usually beats a pure model:**
 - Pure per-usage pricing scares customers ("how much will this end up costing me?")
 - Pure flat pricing doesn't scale with large users
-- **Hybrid:** a base subscription + overage charges for heavy usage
+- **Hybrid:** a base subscription + overage charges (fees for use beyond what's included) for heavy usage
 
 🎨 **Picture this:** a cell phone plan. Paying for every megabyte means you're nervous every time you open a video (the meter's running). Unlimited means light users overpay. A hybrid (a set amount of data included, a charge for anything extra) gives you the best of both. AI pricing works the same way.
 
@@ -309,7 +309,7 @@ Should you show "tokens" (the small chunks of text AI models are billed by) on y
 
 #### Cost variance (important for AI)
 
-Some users can use 100 times more than others. With single-tier flat pricing, power users eat your margin.
+Some users can use 100 times more than others. With single-tier flat pricing, your heaviest users eat your margin.
 
 **A plan for outliers:**
 - A hard cap (after X usage, the service slows down or stops)
@@ -395,7 +395,7 @@ An annual subscription is one of the strongest levers for cash flow and retentio
 - Annual visible, with the savings spelled out ("Save $70/year")
 - Let customers switch from monthly to annual at any time
 
-Don't go annual-only. It cuts out part of your addressable market: the customers who want to try the product without a commitment.
+Don't go annual-only. It cuts out part of your market: the customers who want to try the product without a commitment.
 
 ---
 
@@ -465,7 +465,7 @@ After 12-18 months, you'll want to raise prices. You'll have more features, more
 - Write down the "why" for transparency
 
 ❌ **Annual without a monthly option**
-- It cuts your addressable market
+- It shrinks the pool of people who could buy
 - New customers want to try it without a commitment
 - Always offer both
 
@@ -510,11 +510,11 @@ Your pricing strategy depends on your stage.
 - Sample starting points: $29 / $99 / $299 (adjust them to your niche)
 - Skip A/B testing (not enough data)
 - Skip custom enterprise deals (they eat your time)
-- Focus: get to product-market fit; don't optimize pricing yet
+- Focus: get to product-market fit (a product the market clearly wants); don't optimize pricing yet
 
 **Intermediate (100-1,000 customers, an established product):**
 - Value-based pricing with a quantified $ value per month
-- Usage tracking (cohort analysis)
+- Usage tracking (by groups of customers who joined at the same time)
 - A/B testing prices on new sign-ups
 - Consider freemium if it's a mass-market play
 - Annual + monthly options
@@ -608,7 +608,7 @@ Limits:
 Support: Email + Slack (24-hour response)
 
 ## Tier 3: Business — $[9X]/month
-**Target:** Enterprise / power users
+**Target:** Large companies / heavy users
 **Limit reasoning:** [why]
 
 Features:
@@ -647,8 +647,8 @@ A pricing page is a **conversion page**, not an information dump. These 7 elemen
 ```markdown
 # Pricing Page Checklist
 
-## 1. Hero section
-- [ ] Single H1: "Pricing that scales with you" (or similar)
+## 1. Hero section (the top of the page)
+- [ ] One main headline (H1): "Pricing that scales with you" (or similar)
 - [ ] Subheadline: a value statement (NOT a feature list)
 - [ ] Monthly / Annual toggle (annual = 20% off)
 
@@ -721,7 +721,7 @@ Rough targets for a first comparison; set your own from your own data.
 | Metric | Target (rough) | If you miss the target |
 |--------|--------|---------------|
 | Visitor → Trial | 5-10% | Improve the pricing page copy |
-| Trial → Paid | 15-25% | Improve onboarding |
+| Trial → Paid | 15-25% | Improve onboarding (the customer's first steps in the product) |
 | Share choosing Pro | 50-65% | Adjust the tier balance |
 | Monthly churn | <5% | Improve the product / support |
 

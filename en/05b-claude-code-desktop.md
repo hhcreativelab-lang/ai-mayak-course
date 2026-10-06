@@ -1,12 +1,12 @@
 # Claude Code desktop: start without the terminal
 
-**Time:** about 30 min reading + 30 min practice
+**Time:** about 30 min reading + 40 min practice
 
 ---
 
 ## The gist
 
-There are two ways to work with Claude Code: through the VS Code extension (VS Code is a popular code editor from Microsoft; see the previous lesson) and through the native desktop app, a program you install on your computer like any other app. The desktop app is a tool for everyday work: three tabs, parallel sessions, a built-in terminal (a terminal is a program where you type text commands), a task scheduler, and switching models with a single click.
+There are three ways to work with Claude Code: in the terminal (a window where you type text commands), in VS Code (a popular code editor from Microsoft) and in the Claude desktop app, a program you install on your computer like any other app. This lesson is about the desktop app. It's a tool for everyday work: three tabs, parallel sessions, a built-in terminal, a task scheduler, and switching models with a single click.
 
 For non-programmers, this is usually the easiest way into Claude Code: you install an app, click around, and type your requests in plain English. You don't have to open a terminal to get started.
 
@@ -16,13 +16,13 @@ For non-programmers, this is usually the easiest way into Claude Code: you insta
 
 ## Key concepts
 
-- **Claude Code Desktop**: a native app (macOS / Windows) with three tabs: Chat, Cowork, Code
+- **Claude Code Desktop**: what the docs call Claude Code inside the Claude desktop app (macOS and Windows, with a Linux beta). The app has three tabs: Chat, Cowork, Code
 - **The Code tab**: the main one; hands-on work with code and files on your computer
 - **The Chat tab**: a regular conversation with Claude (no access to your files), the same as claude.ai in your browser
 - **The Cowork tab**: Dispatch (an ongoing conversation with Claude that you can send tasks to, including from your phone) and longer agent work (an agent is a program that carries out tasks on its own): research, documents, spreadsheets
 - **Permission modes**: how much freedom you give the agent (from "ask me about everything" to "go ahead on your own")
 - **Models**: Haiku (fast), Sonnet (faster and cheaper than Opus), Opus (the default), Fable (the longest and hardest tasks); you can switch between them in the middle of a session. Current names and versions: [What's current](https://aimayak.com/en/now/)
-- **Parallel sessions**: several agents working at the same time, each in its own tab
+- **Parallel sessions**: several conversations with the agent running at the same time, each with its own task
 - **Scheduled tasks**: a scheduler; the agent starts on its own, on a schedule
 
 ---
@@ -38,7 +38,7 @@ For non-programmers, this is usually the easiest way into Claude Code: you insta
 - **macOS 13.0+** (Ventura or later), Intel or Apple Silicon
 - **Windows 10 1809+** or Windows Server 2019+
 - Linux: the app is in **beta** (Ubuntu and Debian, installed through apt or a .deb package); the terminal version (the CLI, or command-line interface) runs on Linux with no restrictions
-- 4 GB of RAM, an internet connection, and Git (a version control system that keeps track of changes to code): you need it for isolated sessions (worktrees)
+- 4 GB of RAM, an internet connection, and Git (a version control system that keeps track of changes to code): you only need it for isolated sessions (the worktree option, explained below). Most Macs already have it
 
 **Option 1: download it directly**
 
@@ -52,9 +52,9 @@ For non-programmers, this is usually the easiest way into Claude Code: you insta
 
 > The `brew install --cask claude-code` command installs the terminal version of Claude Code, not this app. The terminal version is covered in the lesson [CLI launch modes](08-work-modes.md).
 
-After downloading: open the DMG (macOS) or Setup.exe (Windows) → install it like any other app → launch it → sign in to your Anthropic account (the same one you use on claude.ai) → open the Code tab.
+After downloading: open the DMG (macOS) or Setup.exe (Windows) → install it like any other app → launch it → sign in to your Anthropic account (the same one you use on claude.ai) → open the Code tab at the top of the window.
 
-**You need a paid plan:** Pro, Max, Team or Enterprise. Claude's free plan doesn't include Claude Code. Current plan prices: [What's current](https://aimayak.com/en/now/).
+**You need a paid plan:** Pro, Max, Team or Enterprise. Claude's free plan doesn't include Claude Code: if you click the Code tab on a free plan, the app asks you to upgrade. Current plan prices: [What's current](https://aimayak.com/en/now/).
 
 ---
 
@@ -68,7 +68,9 @@ After downloading: open the DMG (macOS) or Setup.exe (Windows) → install it li
 | **Cowork** | Dispatch and longer agent work | Research, documents, spreadsheets; tasks sent from your phone (Dispatch requires a Pro or Max plan) |
 | **Code** | Works with the local files on your computer | Programming, automation, projects |
 
-**The main tab for this course is Code.** This is where the agent reads your files, writes code and runs commands in the terminal.
+**The main tab for this course is Code.** This is where the agent reads your files, writes code and runs commands.
+
+Since September 16, 2026, Anthropic has been merging Chat and Cowork into one. The update is rolling out gradually, to Pro and Max plans first. If you see one tab where this lesson shows those two, that's fine: the Code tab works the same way.
 
 ---
 
@@ -81,9 +83,9 @@ After downloading: open the DMG (macOS) or Setup.exe (Windows) → install it li
 - A list of all your sessions; each session is a separate conversation with the agent
 - The `+ New session` button (Cmd+N / Ctrl+N): a fresh, clean conversation
 - The **Scheduled** section: sessions from scheduled tasks
-- The **Dispatch** section: tasks sent from your phone
+- A **Dispatch** badge on a session: Dispatch started it, for example from a task you sent from your phone
 - The **Routines** button: create and manage schedules
-- The **Customize** button: connect MCP (Model Context Protocol, a standard way to plug outside tools and data into Claude), plugins and connectors
+- The **Customize** button: manage connectors (links to outside services such as Google Calendar or Slack), skills and plugins in one place
 
 **The input box (at the bottom):**
 
@@ -91,7 +93,7 @@ After downloading: open the DMG (macOS) or Setup.exe (Windows) → install it li
 - The `+` button: attach a file, an image or a PDF
 - The **Environment** dropdown: Local / Cloud / SSH (on Windows, also WSL)
 - The **Model** dropdown: choose the model (Haiku / Sonnet / Opus / Fable)
-- The **Mode** dropdown: the permission mode
+- The permission mode selector, next to the send button
 - The send / stop button (Esc)
 
 **Panels (you can open and hide them):**
@@ -162,19 +164,19 @@ To choose: the dropdown next to the send button. Keyboard shortcut: `Cmd+Shift+M
 | **Accept edits** (formerly Auto accept edits) | Edits files on its own, asks before running commands | You're confident about the task and want speed |
 | **Plan** (formerly Plan Mode) | Only analyzes, changes nothing | To see what Claude plans to do |
 | **Auto** | Works without the usual questions, while a separate checker model compares each action against what you asked for | Experienced users, trusted tasks |
-| **Bypass permissions** | No questions at all | **Only** in isolated containers (a sealed-off test environment with nothing important in it) |
+| **Bypass permissions** | Almost no questions | **Only** in isolated containers (a sealed-off test environment with nothing important in it) |
 
-Auto mode isn't available everywhere; it depends on the model and your plan. Check the dropdown in your version of the app for the exact names and the list of modes.
+Auto appears in the list when you've picked a model that supports it (Opus 4.6 or later, Sonnet 4.6 or later, or Fable); in an organization, an admin can turn it off. Bypass permissions appears only after it has been turned on in settings. Check the list in your version of the app for the exact set of modes.
 
-💡 **If you're just starting:** use Manual. It asks a lot of questions, and that's the point: you see what the agent is about to do with your files before it does it. Move to Accept edits once you're confident about the task.
+💡 **If you're just starting:** look at which mode is selected and switch to Manual. It asks a lot of questions, and that's the point: you see what the agent is about to do with your files before it does it. The app remembers the mode you pick for each folder. Move to Accept edits once you're confident about the task.
 
 ---
 
 ### Parallel sessions
 
-🎨 **Picture this:** parallel sessions are like several construction crews on different floors. The first crew does the roof, the second does the wiring, the third does the finishing work. You, as the general contractor, walk around and check on each one. Nobody gets in anyone else's way.
+🎨 **Picture this:** parallel sessions are like several construction crews on different floors. The first crew does the roof, the second does the wiring, the third does the finishing work. You, as the general contractor, walk around and check on each one.
 
-Each session gets an **isolated Git worktree** (a separate working copy of your project): the agent works in its own copy of the repository (the project folder Git keeps track of) and doesn't cross paths with the others.
+Each session has its own conversation history. But two sessions opened in the same folder edit the same files. To keep them apart, the app can give a session **its own copy of the project**: when you start the session, turn on the **worktree** option next to the branch name. It works only in a folder that Git keeps track of (a repository), and it needs Git installed.
 
 **Managing sessions:**
 
@@ -199,15 +201,17 @@ Each session gets an **isolated Git worktree** (a separate working copy of your 
 
 | Environment | Where the agent works | Advantages |
 |---|---|---|
-| **Local** | On your computer | Direct access to your files, top speed |
+| **Local** | On your computer | Direct access to your files |
 | **Cloud** | In Anthropic's cloud (a cloud session) | Keeps working with the app closed, several repositories |
 | **SSH** | On a remote machine | Working with a production server (the live server your real users rely on), a VPS, a Dev Container |
+
+A beginner only needs Local. The rest comes in handy later.
 
 **Setting up an SSH connection:**
 
 1. Environment dropdown → `+ Add SSH connection`
-2. Fill in: Name, SSH Host (`user@hostname`), Port (22 by default), Identity File
-3. Claude Code installs itself on the remote machine automatically
+2. Fill in: Name, SSH Host (`user@hostname`), SSH Port (22 by default), Identity File
+3. Claude Code installs itself on the remote machine the first time you connect
 
 ---
 
@@ -220,7 +224,7 @@ To create one: the Code tab → **Routines** in the sidebar → **New routine** 
 **Fields:**
 
 - **Name**: a name (for example, `morning-report`)
-- **Instructions**: what Claude should do (ordinary text, in plain English)
+- **Instructions**: what Claude should do (ordinary text, in plain English). This is also where you choose the working folder; you can't save the task without one
 - **Schedule**: when it runs
 
 **Schedule options:**
@@ -233,14 +237,14 @@ To create one: the Code tab → **Routines** in the sidebar → **New routine** 
 | Weekdays | Weekdays at 8:30 AM |
 | Weekly | Mondays at 10:00 AM |
 
-Minimum interval: **1 minute**.
+Minimum interval: **1 minute**. For an interval that isn't on the list, ask Claude in any session to set it.
 
 **Local vs. cloud:**
 
 - Local: run while the app is open, with access to your files
 - Cloud (routines): run even when your computer is off, can be triggered through the API (an API is a way for programs to talk to each other) or a GitHub event; minimum interval of 1 hour
 
-**Tip:** local tasks only run while the app is running and your computer isn't asleep. Turn on **Keep computer awake** (`Settings → This computer → System`) if you use overnight tasks.
+**Tip:** local tasks only run while the app is running and your computer isn't asleep. Turn on **Keep computer awake** (`Settings → This computer → System`) if you use overnight tasks. Closing a laptop's lid still puts it to sleep.
 
 ---
 
@@ -249,7 +253,7 @@ Minimum interval: **1 minute**.
 🎨 **Picture this:** computer use is like letting the agent see your screen and use your mouse and keyboard. It sees what's going on and can click, type and scroll. It's like remote desktop, except the agent decides what to do.
 
 - Requires a **Pro or Max** plan (not available on Team and Enterprise); the feature is a research preview (an early version that's still being tested)
-- To turn it on: `Settings → This computer → System → Computer use`
+- To turn it on: `Settings → This computer → System`, the **Computer use** section
 - macOS: it needs the Accessibility and Screen Recording permissions
 
 ⚠️ This lets the agent act inside your apps, so try it on something harmless first, and keep sensitive windows (banking, email) closed while you experiment.
@@ -258,7 +262,7 @@ Minimum interval: **1 minute**.
 
 | Level | Apps |
 |---|---|
-| View only | Browsers (Safari, Chrome) |
+| View only | Browsers, trading platforms |
 | Click only | Terminals, IDEs (integrated development environments, the programs developers write code in) |
 | Full control | Everything else |
 
@@ -266,7 +270,7 @@ Minimum interval: **1 minute**.
 
 ### Key desktop keyboard shortcuts (full list)
 
-> `Cmd+/` shows every keyboard shortcut right inside the app
+> `Cmd+/` shows every keyboard shortcut right inside the app. On Windows, press Ctrl where you see Cmd
 
 | Shortcut (Mac) | What it does |
 |---|---|
@@ -291,17 +295,19 @@ Minimum interval: **1 minute**.
 
 | Feature | CLI | Desktop | VS Code |
 |---|---|---|---|
-| Parallel sessions | Separate terminals | ✅ Built-in sidebar | ❌ |
-| Built-in terminal | ❌ | ✅ | ✅ (in VS Code) |
+| Parallel sessions | Separate terminals | ✅ Built-in sidebar | ✅ Tabs and windows |
+| Built-in terminal | It runs in a terminal itself | ✅ | ✅ (VS Code's terminal) |
 | Visual diff | ❌ | ✅ | ✅ |
-| Attaching files/photos | ❌ | ✅ | ❌ |
-| Scheduled tasks screen | ❌ (through cron, a system tool that runs tasks on a schedule) | ✅ | ❌ |
-| Computer use | ❌ | ✅ | ❌ |
-| SSH environment | ❌ | ✅ | ❌ |
-| Cloud (cloud sessions) | ❌ | ✅ | ❌ |
-| Agent Teams (experimental, off by default) | ✅ | ❌ | ❌ |
+| Attaching files/photos | ❌ | ✅ | ✅ |
+| Scheduled tasks screen | ❌ (schedules are set up another way, for example with cron, a system tool that runs tasks on a schedule) | ✅ | — |
+| Computer use | macOS only, Pro and Max plans | ✅ macOS and Windows, Pro and Max plans | — |
+| SSH connection from inside the app | Not needed: you install it right on the server | ✅ | — |
+| Cloud sessions | ✅ (`claude --cloud`) | ✅ | Only to pick up one you already started |
+| Agent teams (experimental, off by default) | ✅ | ❌ | — |
 | Automation/scripts | ✅ (`--print`) | ❌ | ❌ |
 | Linux | ✅ | beta | ✅ |
+
+"—" means the extension's documentation doesn't describe this feature.
 
 **Bottom line:** Desktop is the best choice for everyday hands-on work. The CLI is for automation and scripts. VS Code is for when you want everything in one editor.
 
@@ -319,15 +325,15 @@ Minimum interval: **1 minute**.
 
 ❌ **Mistake:** Working in Bypass permissions mode on real projects with important data.
 
-✅ **Instead:** Bypass permissions is only for isolated test environments. On real projects, use Auto or Accept edits.
+✅ **Instead:** Bypass permissions is only for isolated test environments. On real projects, use Manual, Accept edits or Auto.
 
-❌ **Mistake:** Not knowing that sessions are isolated, so you're afraid to run tasks in parallel.
+❌ **Mistake:** Starting two sessions in the same folder and wondering why they get in each other's way.
 
-✅ **Instead:** Each session gets its own Git worktree. They don't interfere with each other. Go ahead and run 3-4 sessions in parallel.
+✅ **Instead:** Sessions in the same folder edit the same files. Give them different folders, or turn on the worktree option so each one gets its own copy of the project.
 
-❌ **Mistake:** Starting isolated sessions without Git installed.
+❌ **Mistake:** Turning on the worktree option without Git installed.
 
-✅ **Instead:** Sessions in a separate worktree need Git. On Windows, install [Git for Windows](https://git-scm.com/download/win) and start the session again.
+✅ **Instead:** A separate copy of the project needs Git. On Windows, install [Git for Windows](https://git-scm.com/download/win) and start the session again.
 
 ---
 
@@ -345,34 +351,36 @@ The steps use Mac shortcuts; on Windows, press Ctrl where you see Cmd.
 
 **Step 2: Explore the interface (5 min)**
 
-1. Open the Code tab
+1. Open the Code tab at the top of the window
 2. Press `Cmd+/` and look over the list of keyboard shortcuts
 3. Open the model dropdown and see what's available
-4. Open the permission modes dropdown and read about each mode
+4. Open the permission modes list, read about each mode, and choose Manual
 
 **Step 3: Your first session (10 min)**
 
 1. Press `Cmd+N` for a new session
-2. Pick a project folder (or create a test folder)
+2. Leave Environment on Local, click **Select folder** and pick a folder (for your first try, create an empty test folder)
 3. Type: `What do you see in this folder? Describe its structure.`
 4. Watch how the agent explores the files
 
-💡 For your very first try, use a test folder rather than one with important documents, and keep the mode on Manual so Claude asks before it changes anything.
+💡 For your very first try, use a test folder rather than one with important documents, and check that the mode is set to Manual so Claude asks before it changes anything.
 
 **Step 4: Parallel sessions (5 min)**
 
 1. Press `Cmd+N` again to create a second session
 2. Ask one thing in the first session and something else in the second
 3. Switch between them with `Ctrl+Tab`
-4. Make sure they don't get in each other's way
+4. Make sure each one keeps its own conversation
 
 **Step 5: Create your first scheduled task (10 min)**
 
-1. Click **Routines** in the sidebar
-2. Create a new task: `morning-check`
-3. Instructions: `Check all the .md files in this folder and tell me what's new.`
+1. Click **Routines** in the sidebar → **New routine** → **Local**
+2. Name: `morning-check`
+3. Instructions: `Check all the .md files in this folder and tell me what's new.` Choose the same test folder
 4. Schedule: Manual (runs by hand only, for now)
-5. Run it by hand and watch how it works
+5. Save the task, click **Run now** and watch how it works
+
+You're done when the app is installed, the agent has answered your question about the test folder, and the `morning-check` task has run and shown a result.
 
 ---
 
@@ -385,6 +393,8 @@ The steps use Mac shortcuts; on Windows, press Ctrl where you see Cmd.
 - **[Model Configuration](https://code.claude.com/docs/en/model-config)**: managing models and effort levels
 - **[Desktop Scheduled Tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks)**: scheduled tasks
 - **[Git for Windows](https://git-scm.com/download/win)**: needed on Windows for isolated sessions
+
+Library lessons, optional:
 
 → See the lesson [Installing VS Code and the extension](05-setup.md): the alternative route through VS Code
 
@@ -400,12 +410,14 @@ The steps use Mac shortcuts; on Windows, press Ctrl where you see Cmd.
 
 > You can switch models right in the middle of your work. Opus is the default, Sonnet is faster and cheaper, Haiku is for quick tasks, and Fable is for the hardest ones.
 
-> Parallel sessions are isolated through Git worktrees, so they don't interfere with each other. Run them without worrying.
+> While you're learning, use Manual mode and a test folder: the agent asks before every change.
 
-> Scheduled tasks are an agent on a schedule. Set it up once, and it runs on its own every day.
+> Scheduled tasks are an agent on a schedule. Local tasks run only while the app is open and your computer is awake.
 
 ---
 
 ## Next lesson
 
-→ [How to write a good prompt for Claude Code](06-prompting-fundamentals.md): how to give the agent clear instructions
+→ [Build websites and web apps with Claude Code](15-websites-webapps.md): your first build, a website from a description in words
+
+You already covered how to give the agent clear instructions in [How to write a good prompt for Claude Code](06-prompting-fundamentals.md); it's worth rereading before the practice.

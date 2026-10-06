@@ -2,13 +2,13 @@
 
 **Tiempo:** unos 25 min de lectura + 40 min de práctica
 
-Los porcentajes y números de esta lección son guías aproximadas, no estadísticas ni una promesa de resultados. Mide tu propia línea base en tu hoja de CRM. Las reglas para el correo comercial dependen del país: mira la sección sobre lo legal en la lección [Prospección en frío en 2026](39c-cold-outreach-deep.md).
+Los porcentajes y números de esta lección son guías aproximadas, no estadísticas ni una promesa de resultados. Mide tu propia línea base en tu hoja de CRM. Las reglas para el correo comercial dependen del país: mira la sección sobre lo legal en la siguiente lección, [Prospección en frío en 2026](39c-cold-outreach-deep.md).
 
 ---
 
 ## Lo esencial
 
-Los contactos cercanos (mira la lección [Primeros clientes](38-monetization-clients.md)) son como pescar en un estanque que conoces. Sabes dónde están los peces y qué carnada muerden. La prospección en frío es echar el anzuelo en un lago nuevo. Tienes que averiguar dónde están los peces, qué carnada usar y cómo no contaminar el lago con spam. Mucha gente prospecta de forma equivocada y casi no recibe respuestas. Un enfoque personalizado normalmente recibe bastantes más.
+Los contactos cercanos (mira la lección [Primeros clientes](38-monetization-clients.md)) son como pescar en un estanque que conoces. Sabes dónde están los peces y qué carnada muerden. La prospección en frío (escribirle a gente que todavía no te conoce) es echar el anzuelo en un lago nuevo. Tienes que averiguar dónde están los peces, qué carnada usar y cómo no contaminar el lago con spam. Mucha gente prospecta de forma equivocada y casi no recibe respuestas. Un enfoque personalizado normalmente recibe bastantes más.
 
 ---
 
@@ -60,7 +60,7 @@ Casi todo el mundo ignora una plantilla así. Por qué:
 **La estructura del correo (5 partes):**
 
 ```
-1. Una primera línea personalizada (3-8 palabras sobre ellos)
+1. Una primera línea personalizada (una oración corta sobre ellos)
 2. Un dolor concreto que notaste (1-2 oraciones)
 3. Un resultado concreto que lograste para un cliente parecido (1 oración)
 4. Una pregunta suave: no "compra esto" sino "¿esto aplica para ti?"
@@ -115,7 +115,7 @@ Revisé el perfil de LinkedIn de [Nombre], de [Empresa].
 Hace poco: [copia 2-3 datos del perfil].
 Yo automatizo [tipo de tarea].
 
-Escribe una primera línea personalizada para un correo (5-8 palabras)
+Escribe una primera línea personalizada para un correo (una oración, de hasta 15 palabras)
 que muestre que leí sobre esta persona y que se conecte con lo que ofrezco.
 
 Dame tres versiones, cada una desde un ángulo distinto.
@@ -126,17 +126,17 @@ Claude te va a dar opciones como estas:
 - "Felicidades por el crecimiento del equipo. ¿Cómo le están haciendo con el volumen de solicitudes?"
 - "Tres vacantes de gerente de soporte a la vez: ¿tanto creció la carga?"
 
-Elige la mejor, ajústala un poco y úsala.
+Elige la mejor, ajústala un poco y úsala. Revisa que cada dato de la línea sea verdad: Claude puede completar detalles que no estaban en tus notas.
 
 ---
 
 ### Prospección en LinkedIn: cuando no necesitas el correo
 
-Un InMail de LinkedIn o un mensaje normal de LinkedIn muchas veces funciona mejor que el correo en B2B (venta a otras empresas).
+Cuando les vendes a otras empresas (B2B), un mensaje de LinkedIn a veces funciona mejor que el correo. Con una cuenta gratis solo puedes escribirles a tus contactos, así que se empieza con una solicitud de conexión. InMail, el mensaje a alguien que no es tu contacto, solo viene con los planes de pago.
 
 **Reglas para prospectar en LinkedIn:**
 
-1. Empieza con una solicitud de conexión que incluya una nota personalizada (la extensión de la nota es limitada, y más corta en las cuentas gratis; revisa lo que te muestra LinkedIn):
+1. Empieza con una solicitud de conexión que incluya una nota personalizada. Con una cuenta gratis la nota puede tener hasta 200 caracteres y solo está disponible para unas cuantas invitaciones al mes; con una cuenta de pago, hasta 300 caracteres (a octubre de 2026; revisa en LinkedIn las condiciones vigentes):
 ```
 Hola, [Nombre], veo que estás haciendo crecer [negocio/producto]. Trabajo en
 automatización con IA para [tu industria] y me gustaría intercambiar ideas.
@@ -211,7 +211,7 @@ Si más adelante te sirve, con gusto platicamos.
 Mucho éxito con [su proyecto/producto que viste]."
 ```
 
-El correo de despedida muchas veces recibe respuestas: a mucha gente le gusta que respetes su tiempo.
+El correo de despedida a veces recibe respuesta de quienes no habían contestado: a mucha gente le gusta que respetes su tiempo.
 
 ---
 
@@ -256,11 +256,11 @@ Cada mañana, abre la hoja y mira a quién le toca un seguimiento.
 La regla de trabajo para la prospección personalizada: **hasta 20 correos al día**.
 
 Por qué:
-- Google y Outlook bloquean a los remitentes con una tasa alta de rebote (correos que no se pueden entregar) y muchas quejas de spam
+- Google y Microsoft (Outlook) mandan a spam o rechazan los correos de los remitentes que reciben muchas quejas de spam y muchos rebotes (correos que no se pueden entregar)
 - La reputación de tu dominio sufre, y hasta los correos normales empiezan a caer en spam
 - Personalizado significa que lleva tiempo: 20 correos al día con personalización real son de 2 a 3 horas de trabajo
 
-Si necesitas escalar, usa plataformas profesionales (Lemlist, Instantly) con calentamiento del dominio (subir poco a poco tu volumen de envío para que los proveedores de correo aprendan a confiar en un dominio nuevo), no Gmail para envíos masivos. Las leyes sobre correos y mensajes comerciales cambian de un país a otro (CAN-SPAM en EE. UU., RGPD/GDPR en Europa, CASL en Canadá, y cada país de América Latina tiene sus propias reglas y leyes de datos personales): revisa las reglas de tu país y las del país de tu destinatario. Por ejemplo, en EE. UU. el correo comercial está sujeto a la ley federal CAN-SPAM. En términos generales, se reduce a honestidad y a una salida fácil: no engañes a la gente sobre quién eres o de qué trata el correo, dale una forma sencilla de darse de baja y respétala cuando lo haga. Esto no es asesoría legal; para los detalles, lee la guía oficial de tu país o consulta a un abogado.
+Si necesitas escalar, usa plataformas profesionales (Lemlist, Instantly) con calentamiento del dominio (subir poco a poco tu volumen de envío para que los proveedores de correo aprendan a confiar en un dominio nuevo), no Gmail para envíos masivos. Las leyes sobre correos y mensajes comerciales cambian de un país a otro (CAN-SPAM en EE. UU., RGPD/GDPR en Europa, CASL en Canadá, y cada país de América Latina tiene sus propias reglas y leyes de datos personales): revisa las reglas de tu país y las del país de tu destinatario. Por ejemplo, en EE. UU. el correo comercial está sujeto a la ley federal CAN-SPAM. En términos generales, se reduce a honestidad y a una salida fácil: no engañes a la gente sobre quién eres o de qué trata el correo, incluye tu dirección postal, dale una forma sencilla de darse de baja y respétala cuando lo haga. Esto no es asesoría legal; para los detalles, lee la guía oficial de tu país (hay enlaces en la siguiente lección) o consulta a un abogado.
 
 ---
 
@@ -268,7 +268,7 @@ Si necesitas escalar, usa plataformas profesionales (Lemlist, Instantly) con cal
 
 **Ejercicio: Escribe y envía 5 correos personalizados**
 
-1. Elige un nicho de tu Mapa de confianza (tu lista de contactos cercanos de la lección Primeros clientes) o de fuera de él: 5 empresas del mismo tipo, por ejemplo inmobiliarias o agencias de marketing digital
+1. Elige un nicho de tu mapa de confianza (tu lista de contactos cercanos de la lección Primeros clientes) o de fuera de él: 5 empresas del mismo tipo, por ejemplo inmobiliarias o agencias de marketing digital
 
 2. Para cada empresa, encuentra:
    - El nombre y el puesto de quien toma las decisiones (LinkedIn)
@@ -280,11 +280,11 @@ Si necesitas escalar, usa plataformas profesionales (Lemlist, Instantly) con cal
 
 5. Arma una hoja de CRM en Google Sheets (las seis columnas de esta lección)
 
-6. (Si estás listo para enviar) Manda 2-3 mensajes por LinkedIn y 2-3 por correo
+6. (Si estás listo para enviar) Manda 2-3 mensajes por LinkedIn y 2-3 por correo. Antes de enviar, revisa las reglas sobre correos comerciales de tu país y las del país de tu destinatario
 
 7. Cuatro días después, escribe un seguimiento a todos los que no contestaron
 
-**Meta:** 5 correos personalizados listos para enviar, una hoja de CRM armada y una tasa de respuesta base medida después de 2 semanas.
+**Meta:** 5 correos personalizados listos para enviar, una hoja de CRM armada y, después de 2 semanas, la cuenta de cuántas personas respondieron. Ese es tu primer punto de referencia; 5 correos son muy pocos para sacar conclusiones.
 
 ---
 
@@ -321,7 +321,7 @@ con este resultado: [una métrica real de tu propio caso de éxito; por ejemplo:
 ¿Te puedo mostrar cómo funciona en 15 minutos?
 
 Javier Morales
-https://calendly.com/javier/15min
+https://calendly.com/[tu-nombre]/15min
 [dirección postal]
 ¿No te interesa? Solo responde "no, gracias" y no te vuelvo a escribir.
 ```
@@ -338,7 +338,7 @@ https://calendly.com/javier/15min
 | Conversión a llamada | si funciona tu llamado a la acción | haz la pregunta más sencilla; propón una hora concreta |
 | Correos antes de una respuesta | cuántos contactos hacen falta | replantea tu secuencia de seguimiento |
 
-Toma tus referencias de tu propia hoja de CRM: tu línea base de las primeras 2 semanas importa más que los números de cualquier otra persona. Si la tasa de apertura es baja, el problema es el asunto. Si la apertura está bien pero hay pocas respuestas, el problema es el texto.
+Toma tus referencias de tu propia hoja de CRM: tu línea base de las primeras 2 semanas importa más que los números de cualquier otra persona. La tasa de apertura solo la muestran las plataformas de envío; si mandas a mano desde tu correo de siempre, fíjate en las respuestas. Si la tasa de apertura es baja, el problema es el asunto. Si la apertura está bien pero hay pocas respuestas, el problema es el texto.
 
 ---
 
@@ -354,10 +354,10 @@ Toma tus referencias de tu propia hoja de CRM: tu línea base de las primeras 2 
 
 ## Lecciones relacionadas
 
-- **→ [Sistema de generación de prospectos](39-lead-generation.md)**: un flujo automático para juntar prospectos para la prospección en frío
-- **→ [Primeros clientes](38-monetization-clients.md)**: empieza con los contactos cercanos y luego agrega los fríos
-- **→ [Portafolio y casos de éxito](41-portfolio-case-studies.md)**: un enlace a un caso de éxito en tu firma ayuda a que más gente diga que sí
-- **→ [Prospección en frío en 2026](39c-cold-outreach-deep.md)**: canales, secuencias, lo legal
+- **→ [Prospección en frío en 2026](39c-cold-outreach-deep.md)**: la siguiente lección: canales, secuencias, lo legal
+- **→ [Primeros clientes](38-monetization-clients.md)**: ya la viste: empieza con los contactos cercanos y luego agrega los fríos
+- **→ [Portafolio y casos de éxito](41-portfolio-case-studies.md)**: ya la viste: un enlace a un caso de éxito en tu firma ayuda a que más gente diga que sí
+- **→ [Sistema de generación de prospectos](39-lead-generation.md)**: una lección opcional de la biblioteca sobre cómo armar una lista de contactos de forma automática
 
 ---
 
@@ -387,4 +387,6 @@ Toma tus referencias de tu propia hoja de CRM: tu línea base de las primeras 2 
 
 ## Siguiente lección
 
-→ [El cierre: cómo convertir el interés en un trato firmado](45b-closing-objections.md)
+→ [Prospección en frío que sí recibe respuestas: canales, secuencias y lo legal](39c-cold-outreach-deep.md)
+
+Después: [Cómo manejar las objeciones y cerrar el trato](45b-closing-objections.md).

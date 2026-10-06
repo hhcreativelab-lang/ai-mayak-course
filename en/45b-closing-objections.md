@@ -141,7 +141,7 @@ You:    Okay. What if we sign now and set the start date for
 
 **The main rule:** **get the decision maker on the call.** If you're talking to someone who isn't the decision maker, your job isn't to "convince them to convince the others." It's to get access to the people who actually decide.
 
-Whoever retells a pitch secondhand loses half the nuance. You gave a great presentation, and your champion (the person inside the company who's on your side) passes it along in one line: "looks expensive."
+Whoever retells a pitch secondhand loses much of the nuance. You gave a great presentation, and your champion (the person inside the company who's on your side) passes it along in one line: "looks expensive."
 
 ---
 
@@ -431,6 +431,8 @@ A discount is a tool, not a way to defend yourself. Use it strategically.
 | **Competitive switch** | 20-30% for the first year | They switch over from a competitor (a new customer won) |
 | **Multi-year contract** | 10-15% a year | A commitment for 2-3 years |
 
+The sizes in the table are the course's rough guides, not a market norm. Work out your own with the pricing lessons.
+
 **Never:**
 - ❌ A discount "because the client asked" with no quid pro quo
 - ❌ A discount over 30%: it cheapens the product for good
@@ -452,7 +454,7 @@ The minimum set of terms your contract should have:
 - **Refund policy:** clear, and posted on your landing page
 - **Data ownership:** the client owns their data; you process it
 - **SLA (Service Level Agreement):** uptime (99.9%) and response time (24 hours is typical), for higher tiers
-- **DPA (Data Processing Agreement):** required for EU customers (under GDPR) and in regulated industries
+- **DPA (Data Processing Agreement):** needed when you handle personal data on behalf of a client in the EU (GDPR calls for a written contract), and often expected in regulated industries such as healthcare and finance
 
 **Sample terms for small AI projects:**
 - Monthly contracts by default (low commitment, easier to close)
@@ -488,7 +490,7 @@ The most frequent mistakes that kill your close rate:
 
 ### Step 1: Write your objection response script
 
-Create the file `sales/objections-script.md` in your project:
+Create a document with your responses. A Google Doc or the notes app on your phone works; if you keep a project folder on your computer, name the file `sales/objections-script.md`:
 
 ```markdown
 # Objection Response Script
@@ -531,7 +533,7 @@ Learn it by heart. Don't read from the page during a call; people can tell. It s
 
 ### Step 2: Structure of a 45-minute sales call (template)
 
-Create `sales/call-template.md`:
+Create a second document (or the file `sales/call-template.md`):
 
 ```markdown
 # Sales Call Template (45 min)
@@ -570,7 +572,7 @@ Create `sales/call-template.md`:
 
 ### Step 3: Follow-up cadence template
 
-`sales/followup-cadence.md`:
+A third document (or the file `sales/followup-cadence.md`):
 
 ```markdown
 # Follow-up Cadence (5 touchpoints in 30 days, then quarterly)
@@ -627,20 +629,16 @@ Quarterly value-add, not sales.
 
 ### Step 4: Role-play objections with Claude
 
-Use Claude as a sparring partner. In this example, you're pitching to a CTO (chief technology officer):
+Use Claude as a sparring partner. Open a regular chat at claude.ai (or Claude Code, if you already use it) and paste the prompt below. In this example, you're pitching to a CTO (chief technology officer):
 
-```bash
-# In Claude Code (a regular chat at claude.ai works too)
-claude
-
-> Role-play: you're the CTO of a 50-person startup evaluating our
-> platform for AI workflows. The price is $5k/month. Your budget is
-> tight this quarter. I'll start the sales call. After each of my
-> turns, give me a realistic CTO objection, not an easy one.
-
-# Practice 5-10 times a week, 15 minutes each
-# Write down the answers that didn't work → improve your script
 ```
+Role-play: you're the CTO of a 50-person startup evaluating our
+platform for AI workflows. The price is $5,000 a month. Your budget is
+tight this quarter. I'll start the sales call. After each of my
+turns, give me a realistic CTO objection, not an easy one.
+```
+
+Practice twice a week, 15 minutes each time. Write down the answers that didn't work and improve your script.
 
 **Variations to practice:**
 - "A CTO who has already invested in a competitor"
@@ -680,7 +678,7 @@ Track:
 - Average deal size: $N
 ```
 
-**What to do with the metrics:**
+**What to do with the metrics** (the thresholds below are the course's working guides, not market statistics; adjust them once you have 10-20 deals of your own):
 
 - **Demo → proposal under 60%** → improve your demo (you're showing the wrong thing)
 - **Proposal → close under 25%** → improve your closing (you're losing people who were ready)
@@ -730,11 +728,11 @@ Track:
 
 - **"Never Split the Difference"** by Chris Voss, a former FBI hostage negotiator. Tactical empathy, mirroring, calibrated questions. A negotiation classic.
 - **"SPIN Selling"** by Neil Rackham. Situation / Problem / Implication / Need-payoff. A classic B2B sales method.
-- **[The Sandler Method](https://www.sandler.com)**: a sales method that puts the buyer's pain ahead of features. Good for consultative selling.
+- **[The Sandler Selling System](https://www.sandler.com)**: a sales method that starts with the buyer's pain and only then gets to the product. Good for consultative selling.
 - **[Y Combinator: startup sales](https://www.ycombinator.com/library/)**: a collection of materials on first sales for startups.
 - **"The Mom Test"** by Rob Fitzpatrick. How to ask questions that get you honest answers instead of polite lies.
-- **[Apollo.io](https://apollo.io)**: a CRM for outbound outreach + pipeline tracking
-- **[Gong.io](https://gong.io)**: records your sales calls so you can review yourself (if your budget allows). Always tell people you're recording and get their OK; in some states, everyone on the call has to consent.
+- **[Apollo.io](https://apollo.io)**: a contact database with email sequences and calls: finding clients and first emails in one place
+- **[Gong.io](https://gong.io)**: records and analyzes your conversations with clients so you can review yourself (if your budget allows). Always tell people you're recording and get their OK; in some states, everyone on the call has to consent.
 
 ---
 
@@ -750,10 +748,10 @@ Track:
 
 ## Related lessons
 
-- [Your first clients](38-monetization-clients.md): how to find your first 10 customers
-- [Lead generation](39-lead-generation.md): building a pipeline before you close
-- [Pricing strategy for AI products](39e-pricing-strategy-deep.md): how to set a price so that closing is realistic
-- [Cold outreach with Claude](45-cold-outreach.md): how to reach the prospects you'll later close
+- [Your first clients](38-monetization-clients.md): already covered: how to find your first clients among people you know
+- [Pricing strategy for AI products](39e-pricing-strategy-deep.md): already covered: how to set a price so that closing is realistic
+- [Cold outreach with Claude](45-cold-outreach.md): already covered: how to reach the prospects you'll later close
+- [Lead generation](39-lead-generation.md): an optional library lesson on building a contact list automatically
 
 ---
 

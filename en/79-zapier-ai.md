@@ -17,12 +17,12 @@ In this lesson you'll learn Zapier AI, one of the best-known no-code tools. You'
 ## Key concepts
 
 - **Zap**: an automation with 2 or more steps: a trigger (an event) + an action (what to do)
-- **AI by Zapier**: a built-in step that calls Claude or ChatGPT right inside a Zap
-- **Zapier Agents**: autonomous agents in Zapier that work without a manual trigger
+- **AI by Zapier**: a built-in step that calls a language model (you can choose models from OpenAI, Anthropic, Google and others) right inside a Zap
+- **Zapier Agents**: Zapier's agents, which decide on their own which tools to use for a task. Zapier is now moving them into the AI by Zapier step
 - **Zapier Tables**: Zapier's built-in database, which can also run AI analysis
-- **Webhook**: a universal way to receive data from any source (even one with no official integration)
-- **Task**: the billing unit. A Zap's actions use up tasks every time it runs (see Zapier's help center for exactly how they're counted)
-- **Multi-step Zap**: a Zap with 3 or more steps (paid plans only), and where the real work happens
+- **Webhook**: a universal way to receive data from any source, even one with no official integration (paid plans)
+- **Task**: the billing unit. Every action a Zap completes successfully uses tasks; the trigger doesn't (see Zapier's help center for exactly how they're counted)
+- **Multi-step Zap**: a Zap with more than two steps. It's available on paid plans and during the free trial, and it's where the real work happens
 
 ---
 
@@ -34,7 +34,7 @@ There are three main players in no-code automation. Each one has its own niche.
 
 | Criterion | Zapier | Make | n8n |
 |---|---|---|---|
-| Integrations | Thousands of apps (see Zapier's site) | Thousands of apps (see Make's site) | hundreds of ready-made nodes + HTTP |
+| Integrations | 9,000+ apps (per Zapier, October 2026) | 3,000+ apps (per Make, October 2026) | hundreds of ready-made nodes + HTTP requests to any service |
 | Learning curve | Minimal | Medium | Steep |
 | Free plan | 100 tasks/month, two-step Zaps only | 1,000 credits/month | Community Edition on your own server |
 | Paid plans start at (as of October 2026) | $19.99/month billed yearly (750 tasks) | Core from $9/month billed monthly (10,000 credits) | Cloud Starter €20/month billed yearly (2,500 executions) |
@@ -55,7 +55,7 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 **When Make or n8n wins:**
 
-- You need complex branching with hundreds of thousands of operations a month: Make is cheaper
+- You need complex branching and high volume: Make bills in credits, and at high volume it often comes out cheaper. Check both pricing pages with your own numbers
 - The data can't pass through outside servers: self-hosted n8n
 - The budget is tiny and there aren't many tasks: Make's entry-level paid plan covers a lot of needs
 
@@ -63,7 +63,7 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 ### AI by Zapier: the brain inside a Zap
 
-"AI by Zapier" is the official step in the Zap editor that calls a language model (one of those available in Zapier, such as Claude or ChatGPT) with your prompt and the data from earlier steps.
+"AI by Zapier" is a built-in step in the Zap editor. It sends a language model your prompt and the data from earlier steps. You can choose the model: models from OpenAI, Anthropic (Claude), Google and other companies are available.
 
 **What AI by Zapier can do:**
 
@@ -75,10 +75,12 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 **What it looks like in the editor:**
 
-The "AI by Zapier" step has two fields:
+The "AI by Zapier" step has two panels:
 
-- **Prompt**: your request to the AI (you can insert data from earlier steps with `{{variable}}`)
-- **Response**: the AI's answer, which flows into the next steps
+- **Configure**: where you write your prompt (the Prompt field), pick a model and adjust settings. You insert data from earlier steps into the prompt by typing "/"
+- **Preview**: a test run that shows what the step returns with real sample data
+
+The AI's answer flows into the next steps. If you need to, you can split it into separate fields (the Output Fields section). In the examples below, double curly braces `{{...}}` mark the spot where you insert a field from an earlier step.
 
 An example prompt for classifying a lead:
 ```
@@ -96,33 +98,35 @@ Reply with JSON only:
 {"temperature": "...", "budget": "...", "next_step": "..."}
 ```
 
-The AI processes the inquiry and returns JSON, which the next step parses to send a notification to the right sales rep.
+The AI processes the inquiry and returns its answer as JSON (a format for writing data so that programs can read it). The next step reads it and sends a notification to the right sales rep.
 
 🎨 **Picture this:** a new inquiry from your website used to land in the CRM and sit there until a sales rep found time for it. Now AI reads it in seconds, tags it "hot" and sends the rep a push notification that says "call right now." The sooner someone calls a hot lead, the better the odds of closing the deal.
 
 ---
 
-### Zapier Agents: autonomous work without triggers
+### Zapier Agents: AI that picks its own tools
 
-Zapier Agents is a feature that goes beyond classic Zaps. An agent is an AI that:
+Zapier Agents go beyond classic Zaps. An agent is an AI that:
 
-- Runs continuously, without anyone starting it by hand
+- Starts on its own, on an event or on a schedule
 - Can decide on its own which tools to use (read Gmail, post in Slack, add a contact to a CRM)
-- Remembers its past actions
+- Can look for answers in the knowledge sources you connect and on the web
 - Takes instructions in plain language
+
+**What's changing (as of October 2026):** Zapier is moving the standalone Agents product (agents.zapier.com) into the AI by Zapier step. You can now give that step tools (apps and knowledge sources), and it acts as an agent right inside a Zap. Zapier hasn't set a date for turning off standalone Agents and says it will email users well ahead of time.
 
 **A real agent example:**
 "You're my sales assistant. Every time an email labeled 'from a lead' arrives in Gmail, read it, write a short summary, look up information about the company, add the contact to HubSpot and send me a Slack notification with a short plan for the call."
 
 That's one agent replacing 4-5 manual Zaps, and it works more intelligently: it understands context instead of just shuffling data from place to place.
 
-**Limitations of Agents:**
+**Limitations of Agents (as of October 2026):**
 
-- They're billed separately from regular Zap tasks (check Zapier's pricing page for how)
+- The standalone Agents product is billed separately, in "activities" rather than tasks. An agentic AI step inside a Zap uses regular tasks
 - They're less predictable (the AI makes its own decisions)
 - They're a worse fit for tightly defined processes
 
-For most business tasks, classic Zaps with AI steps are the best choice: they're predictable, transparent and cheap.
+For most business tasks, classic Zaps with AI steps are the better choice: they're more predictable, and you can see what happened at every step.
 
 ---
 
@@ -163,15 +167,15 @@ A new review on Google Maps → AI analyzes the tone → negative: a notificatio
 
 **5. Financial monitoring**
 
-A new transaction in Stripe → AI checks it for anomalies (an unusual amount, a new region, a first purchase) → if something's off → a Slack notification with a risk analysis.
+A new transaction in Stripe → AI checks it for anomalies (an unusual amount, a new region, a first purchase) → if something's off → a Slack notification with an explanation. The AI only flags it here; a person decides what to do about the payment.
 
 ---
 
 ### What it really costs
 
-**Zapier Free:** 100 tasks/month, two-step Zaps only. Good for learning.
+**Zapier Free:** 100 tasks/month, two-step Zaps only. On this plan you can only try the AI step in an unpublished Zap. Good for getting to know the tool.
 
-**Zapier Professional:** as of October 2026, from $19.99/month billed yearly ($29.99 billed monthly), 750 tasks, multi-step Zaps, AI by Zapier. This is the minimum for real-world scenarios.
+**Zapier Professional:** as of October 2026, from $19.99/month billed yearly ($29.99 billed monthly), 750 tasks, multi-step Zaps, webhooks, AI by Zapier. This is the minimum for real-world scenarios.
 
 **Zapier Team:** as of October 2026, from $69/month billed yearly ($103.50 billed monthly), more tasks, multiple users (up to 25).
 
@@ -179,16 +183,16 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 
 **Billing pitfalls:**
 
-- A Zap's actions use up tasks on every run. Simple math: a 5-step Zap that runs 100 times a day = 500 tasks a day = 15,000 tasks a month. The starting allowance on paid plans won't cover that.
-- AI steps are billed separately: per step and per tool call (terms on the pricing page)
-- Keep an eye on your usage in the Zapier dashboard, and set limits on your Zaps
+- Every completed action uses tasks; the trigger doesn't. An example: a Zap with a trigger and 4 actions that runs 100 times a day = 400 tasks a day = 12,000 tasks a month. The starting allowance on paid plans won't cover that.
+- An AI step uses tasks with a multiplier: it depends on the model tier (Standard, Advanced, Premium), and every tool call is counted on top. On a paid plan, a new AI step defaults to Premium, the most expensive tier, so check it and pick the tier yourself. The multipliers are in Zapier's help article "AI by Zapier model tier pricing"
+- Keep an eye on your usage in your Zapier account. An AI step has a task limit per run: if a run goes over it, the step pauses and waits for your approval
 
 **A realistic estimate for a small business:**
 
 - 5-10 Zaps
 - Each one runs 20-50 times a day
-- Average Zap length: 3-4 steps
-- Total: about 3,000-6,000 tasks/month. That's more than the starting allowance on paid plans, so you'll need to choose a larger task volume and check its price on the pricing page
+- Each Zap has 3-4 steps: a trigger and 2-3 actions
+- Total: from 6,000 tasks a month (5 Zaps × 20 runs × 2 actions × 30 days) to 45,000 (10 × 50 × 3 × 30). That's more than the starting allowance on paid plans, so you'll need to choose a larger task volume and check its price on the pricing page
 
 ---
 
@@ -230,17 +234,17 @@ Not every client needs code. Many of them just need automations that work.
 
 ### Webhooks: receiving data from any source
 
-A webhook in Zapier is a unique URL that any program can send any data to. If your app doesn't have an official Zapier integration, that's not a problem.
+A webhook in Zapier is a unique URL that any program can send data to. If your app doesn't have an official Zapier integration, that's not a problem. Webhooks are available on paid plans.
 
 **How it works:**
 
-1. You create a Zap with the "Webhooks by Zapier" trigger
+1. You create a Zap with the "Webhooks by Zapier" trigger and the Catch Hook event
 2. Zapier gives you a unique URL like `https://hooks.zapier.com/hooks/catch/1234567/abc123`
 3. Any app that can make an HTTP POST request can send data to that URL
 4. The data arrives in the Zap and moves on through the next steps
 
 **A practical example:**
-A client has a custom CRM built on WordPress, with no Zapier integration. A developer adds one line of PHP: when a new lead comes in, send an HTTP POST with the contact's details to the Zapier webhook. From there, Zapier runs the data through AI and sends notifications to Slack or by text message. Thirty minutes of work for the developer. A working automation for the client.
+A client has a custom CRM built on WordPress, with no Zapier integration. A developer adds a few lines of code: when a new lead comes in, the contact's details are sent to the Zapier webhook's URL. From there, Zapier runs the data through AI and sends notifications to Slack or by text message. A small job for the developer, and a working automation for the client.
 
 ---
 
@@ -270,32 +274,34 @@ This isn't a competition. They're two tools for different jobs.
 **Setup:**
 
 ```
-TRIGGER: Gmail → New Email (Matching Search: "label:potential-client")
+TRIGGER: Gmail → New Email Matching Search (search: "label:potential-client")
 ↓
-STEP 2: Formatter by Zapier → Extract from Text
-  → Extract: Name, Company, Phone
+STEP 2: Formatter by Zapier → Text → Extract Phone Number
+  → Pull the phone number out of the email's text
 ↓
-STEP 3: AI by Zapier → "Analyze this email and rate lead quality"
+STEP 3: AI by Zapier (output fields: name, company, score, reason, next_action)
   Prompt:
   """
   Email from: {{Sender}}
   Subject: {{Subject}}
   Body: {{Body}}
   
+  Find the sender's name and company in the email.
   Rate this lead on a scale of 1-10 and explain why.
-  Return JSON: {"score": N, "reason": "...", "next_action": "call/email/ignore"}
+  Next action: call / email / don't reply.
   """
 ↓
-STEP 4: HubSpot → Create/Update Contact
-  → Name: {{Step 2 - Name}}
-  → Company: {{Step 2 - Company}}
-  → Note: {{Step 3 - AI Response}}
-  → Tag: "AI score: {{score}}"
+STEP 4: HubSpot → Create or Update Contact
+  → Name: {{Step 3 - name}}
+  → Company: {{Step 3 - company}}
+  → Phone: {{Step 2 - Output}}
+  → Note: {{Step 3 - reason}}
+  → Your own contact field "AI score": {{score}}
 ↓
 STEP 5 (condition): Filter by Zapier → Only if score >= 7
 ↓
-STEP 6: Slack → Send Message to #sales
-  → "Hot lead: {{Name}} from {{Company}}
+STEP 6: Slack → Send Channel Message, channel #sales
+  → "Hot lead: {{name}} from {{company}}
      Score: {{score}}/10
      Reason: {{reason}}
      Action: {{next_action}}
@@ -310,25 +316,29 @@ Setup time: about an hour the first time. How much time it saves your sales rep 
 
 ### Step 1: Create an account and your first Zap
 
-1. Go to [zapier.com](https://zapier.com) → Sign up (a free account)
-2. On the dashboard, click **"+ Create"** → **"Zap"**
-3. You're now in the Zap editor. The steps are on the left, the settings on the right
+When you create a new account, Zapier automatically starts a free 14-day trial of the Professional plan, with no credit card required. During the trial, both a three-step Zap and AI by Zapier work. When the trial ends, a Zap like this one turns off until you move to a paid plan.
+
+1. Go to [zapier.com](https://zapier.com) → Sign up (signing up is free)
+2. In the left sidebar, click **+ Create** → **Zap workflows** (in some versions the button is called **Create a Zap**)
+3. You're now in the Zap editor. The steps are on the left, the settings for the selected step on the right
 
 ### Step 2: Set up the trigger
 
+For this practice run, connect a personal or test mailbox. The emails will pass through Zapier and an AI model, so don't connect a work mailbox with other people's data unless you have permission.
+
 1. Click the first step (Trigger)
-2. Choose **Gmail** (or any app you use)
-3. Event: **New Email**
-4. Connect your Gmail account (click "Sign in")
-5. Set up the filter: Label = "Inbox"; you can leave From empty
-6. Click **"Test trigger"**: Zapier shows your most recent email as sample data
+2. Choose **Gmail** (or another app you use)
+3. In the **Trigger event** field, choose **New Email**
+4. In the **Account** field, connect your Gmail (**+ Connect a new account**)
+5. On the **Configure** tab, choose which mailbox folder to watch (Inbox)
+6. On the **Test** tab, click **Test trigger**: Zapier shows a recent email as sample data. Select it and click **Continue with selected record**
 
 ### Step 3: Add an AI step
 
-1. Click **"+"** after the trigger
-2. Search for **"AI by Zapier"**
-3. Action: **Analyze or generate text**
-4. In the **Prompt** field, type:
+1. Click **+** after the trigger
+2. Search for and select **AI by Zapier**: the step opens in the editor
+3. Next to the Prompt field, open the model list and choose the Standard tier: it's enough for a task like this and uses fewer tasks
+4. In the **Prompt** field, type the text below. Wherever you see curly braces, insert a field from the email: type "/" and pick it from the list
    ```
    You're a sales assistant. Analyze this email:
    
@@ -339,15 +349,17 @@ Setup time: about an hour the first time. How much time it saves your sales rep 
    Write a short summary (2-3 sentences) and decide: is it worth replying to?
    Answer: [summary] | Priority: High/Medium/Low
    ```
-5. Click **"Test action"** and look at what the AI generated
+5. Click **Preview**, look at what the AI wrote, and then click **Finish**
 
 ### Step 4: Send the result to Slack (or get it by email or text)
 
-1. Add one more step with **"+"**
+You need a Slack workspace where you can post in a channel. If you don't use Slack, pick one of the other options below.
+
+1. Add one more step with **+**
 2. Choose **Slack** (to get an email or a text message instead, pick Gmail or an SMS app; the fields will be a little different)
-3. Action: **Send Channel Message**
+3. In the **Action event** field, choose **Send Channel Message**
 4. Channel: pick the one you want
-5. Message Text:
+5. Message Text: type the text below. The words in curly braces are fields from earlier steps: click the plus sign icon in the field and pick the one you need from the list
    ```
    📧 New email from {{From Name}}
    
@@ -355,14 +367,14 @@ Setup time: about an hour the first time. How much time it saves your sales rep 
    
    Original: {{Message URL}}
    ```
-6. Click **"Test action"**: the message will show up in Slack
+6. Click **Test step**: the message will show up in Slack
 
 ### Step 5: Turn the Zap on and test it
 
-1. At the top right, switch **"Zap is Off"** → **"Zap is On"**
-2. Send yourself a test email from a different email address
-3. Wait a few minutes (Zapier checks triggers on a schedule; how often depends on your plan)
-4. Get the Slack notification with the AI analysis
+1. At the top right, click **Publish**: that turns the Zap on
+2. Send yourself a test email from a different email address (the Zap only handles emails that arrive after you publish it)
+3. Wait a few minutes (Zapier checks for new emails on a schedule; how often depends on your plan)
+4. Check the result: a message with the AI's analysis of the email should show up in Slack
 
 Congratulations: your first smart Zap with AI is up and running.
 
@@ -379,15 +391,15 @@ Congratulations: your first smart Zap with AI is up and running.
 - **[Zapier](https://zapier.com)**: the main tool in this lesson. Free plan: 100 tasks/month; paid plans from $19.99/month billed yearly, as of October 2026.
 - **[Make.com](https://make.com)**: an alternative for complex scenarios. It has a free plan: 1,000 credits a month.
 - **[n8n.io](https://n8n.io)**: an alternative you can run on your own server. Cloud from €20 a month billed yearly; the Community Edition for self-hosting is free (under the Sustainable Use License).
-- **[Zapier pricing](https://zapier.com/pricing)**: current plans and a task calculator.
-- **[Zapier University](https://university.zapier.com)**: free courses on Zapier.
-- **[AI by Zapier docs](https://help.zapier.com/hc/en-us/articles/16587495501453-Use-AI-by-Zapier)**: the official documentation for the AI step.
+- **[Zapier pricing](https://zapier.com/pricing)**: current plans and task volumes.
+- **[Zapier Learn](https://learn.zapier.com)**: free courses on Zapier.
+- **[AI by Zapier docs](https://help.zapier.com/hc/en-us/articles/8496342944013-Use-AI-by-Zapier-to-analyze-and-return-data)**: the official help article for the AI step.
 
 ---
 
 ## Key takeaways
 
-> "Zapier isn't just automation. It's a way to give any business AI features without a single line of code. Your value as a specialist is knowing which workflow the client needs and building it in hours, not weeks."
+> "Zapier isn't just automation. It's a way to give a small business AI features without a single line of code. Your value as a specialist is working out which workflow the client needs and building it quickly."
 
 > "AI by Zapier turns a Zap from a mail carrier into a sharp assistant. Not just 'got an email → forwarded it,' but 'got an email → understood it → made a decision → acted.' That's the difference between automation and intelligence."
 
@@ -397,4 +409,6 @@ Congratulations: your first smart Zap with AI is up and running.
 
 ## Next lesson
 
-→ [AI sandboxes: E2B](80-ai-sandboxes-e2b.md): E2B and Modal for letting agents run code safely
+→ [Claude Code pricing: Free, Pro, Max, Team or API?](05c-access-levels-pricing.md): what to buy, and when, to unlock Claude Code
+
+In the library, optional: [AI sandboxes: E2B](80-ai-sandboxes-e2b.md): E2B and Modal for letting agents run code safely

@@ -2,7 +2,7 @@
 
 **Tiempo:** unos 30 min de lectura + 35 min de práctica
 
-Todas las cantidades en dólares de esta lección son ejemplos inventados para explicar el método: no son un pronóstico de ingresos ni datos de mercado. Pon tu propio precio para tu propio mercado; una versión paso a paso para principiantes está en la lección [Cómo poner un precio](d02-pricing-simple.md).
+Todas las cantidades en dólares de esta lección son ejemplos inventados para explicar el método: no son un pronóstico de ingresos ni datos de mercado. Pon tu propio precio para tu propio mercado; la versión básica paso a paso ya la viste en la lección [Cómo poner un precio](d02-pricing-simple.md).
 
 ## Lo esencial
 Un mecánico cobra \$200 por una reparación que le tomó 20 minutos. No le pagas por su tiempo. Le pagas por un auto que funciona. Los precios basados en valor (cobrar según el valor que entregas, no según tus costos) siguen la misma lógica: pones el precio según el resultado que obtiene el cliente, no según las horas que dedicaste.
@@ -23,21 +23,21 @@ Un mecánico cobra \$200 por una reparación que le tomó 20 minutos. No le paga
 
 **Por qué cobrar por hora te frena:**
 
-Si cobras \$50 la hora y un trabajo te toma 10 horas, recibes \$500. Si mañana te vuelves el doble de eficiente (con Claude Code es realista) y el trabajo te toma 5 horas, recibes \$250. Tus ingresos bajaron aunque mejoraste.
+Si cobras \$50 la hora y un trabajo te toma 10 horas, recibes \$500. Si mañana te vuelves el doble de eficiente (con herramientas de IA, eso pasa) y el trabajo te toma 5 horas, recibes \$250. Tus ingresos bajaron aunque mejoraste.
 
 **Cómo funcionan los precios basados en valor:**
 
 Un cálculo de ejemplo inventado:
-- El cliente dedica 15 horas a la semana a procesar pedidos a mano
+- El cliente dedica 10 horas a la semana a procesar pedidos a mano
 - Su tiempo vale \$50 la hora
-- Impacto anual: 15 × 50 × 52 = **\$39,000 al año**
-- Tú construyes la automatización por \$3,000
-- El cliente recupera su inversión en más o menos un mes; después, todo es ahorro
+- Impacto anual: 10 × 50 × 52 = **\$26,000 al año**
+- Tú construyes la automatización por \$3,000 (más o menos el 12% del impacto anual; abajo se explica el rango de 10-30%)
+- El cliente recupera su inversión en más o menos un mes y medio, y después sigue ahorrando
 - Dedicaste 15-20 horas al trabajo = una tarifa efectiva de **\$150-200 la hora**
 
-El cliente queda contento: obtiene un buen ROI (retorno de la inversión). Tú quedas contento: tu tarifa efectiva está muy por encima de una tarifa por hora típica. Todos ganan.
+El cliente queda contento: obtiene un buen ROI (retorno de la inversión). Tú quedas contento: tu tarifa efectiva está muy por encima de los \$50 la hora del ejemplo de cobro por hora. Todos ganan.
 
-> Las tarifas por "escribir prompts" y las tarifas por construir sistemas (automatizaciones, agentes, flujos) pueden ser varias veces distintas: un cliente valora más un sistema que funciona sin ti que un texto hecho una sola vez. Estas lecciones tratan del segundo camino: construir sistemas, no solo escribir prompts.
+> Las tarifas por "escribir prompts" y las tarifas por construir sistemas (automatizaciones y agentes de IA, es decir, programas que hacen una tarea paso a paso por su cuenta) pueden ser varias veces distintas: un cliente valora más un sistema que funciona sin ti que un texto hecho una sola vez. Estas lecciones tratan del segundo camino: construir sistemas, no solo escribir prompts.
 
 **Cómo calcular el valor para el cliente:**
 
@@ -51,12 +51,12 @@ X horas × costo por hora = Y dólares/mes
 
 Paso 3: Estima cuánto cubre la automatización
 Reemplazo total = 100% de ahorro
-Parcial (la IA ayuda y una persona termina el trabajo) = 60-70% de ahorro
+Parcial (la IA ayuda y una persona termina el trabajo) = por ejemplo, 60-70% de ahorro
 
 Paso 4: Calcula el impacto anual
-Y × 12 = valor anual
+Y × la parte de ahorro del paso 3 × 12 = valor anual
 
-Paso 5: Pon tu precio en el 10-30% del valor anual
+Paso 5: Pon tu precio en el 10-30% del valor anual (una regla práctica, no una ley)
 (10% = un precio agresivo para cerrar rápido, 30% = cuando el ROI es obvio y rápido)
 ```
 
@@ -111,11 +111,11 @@ Las cantidades dependen de tu región, tu nicho y tu mercado; para un ejemplo co
 
 🎨 **Imagínalo así:** el crecimiento del alcance (scope creep: el trabajo que va creciendo sin que nadie lo diga, más allá de lo acordado) es como remodelar una casa sin un presupuesto por escrito. "Ya que estamos pintando, hagamos también el techo." "Ya que hacemos el techo, cambiemos el piso." Un mes después la cuenta se triplicó, el plazo se duplicó y todos están molestos. Un documento de alcance es un presupuesto fijo antes de empezar.
 
-**El crecimiento del alcance** es el principal problema con el que se topan los freelancers. El cliente pide un "pequeño agregado", luego otro, luego otro más. Al final hiciste el triple de trabajo por el mismo precio.
+**El crecimiento del alcance** es uno de los problemas más comunes con los que se topan los freelancers. El cliente pide un "pequeño agregado", luego otro, luego otro más. Al final hiciste el triple de trabajo por el mismo precio.
 
 La solución: pon el alcance (lo que incluye el trabajo) por escrito ANTES de empezar.
 
-**Un documento de alcance mínimo:**
+**Un documento de alcance mínimo** (es una estructura, no un documento legal; pide a un abogado de tu país que revise tu contrato con el cliente):
 
 ```markdown
 ## Proyecto: Automatización del procesamiento de pedidos
@@ -130,7 +130,7 @@ La solución: pon el alcance (lo que incluye el trabajo) por escrito ANTES de em
 - Respuesta automática a los pedidos nuevos con una confirmación
 - Aviso en Slack cuando llega una queja
 
-### NO incluido en V1 (Backlog):
+### NO incluido en V1 (lista de pendientes):
 - Integración con el CRM (podría ser V2)
 - Reportes con estadísticas de pedidos
 - Soporte en varios idiomas
@@ -145,11 +145,11 @@ La solución: pon el alcance (lo que incluye el trabajo) por escrito ANTES de em
 - 50% después de la demostración final y la aprobación
 ```
 
-Este documento te protege: un "pequeño agregado" ahora es claramente Backlog, no V1.
+Este documento te protege: un "pequeño agregado" ahora va claramente a la lista de pendientes, no a V1.
 
-**Separar V1 del Backlog:**
+**Separar V1 de la lista de pendientes:**
 
-V1 es lo que construyes ahora por el precio acordado. El Backlog es una lista de ideas para versiones futuras. Una línea clara entre los dos te permite:
+V1 es lo que construyes ahora por el precio acordado. La lista de pendientes (en inglés, backlog) reúne las ideas para versiones futuras. Una línea clara entre los dos te permite:
 - Terminar el proyecto a tiempo y dentro del presupuesto
 - Tener lista una propuesta para seguir trabajando (una venta adicional, o upsell)
 
@@ -173,7 +173,7 @@ Enfoque: posicionamiento, experiencia en el nicho, ingresos recurrentes.
 
 **Los ingresos recurrentes son la clave de la estabilidad:**
 
-🎨 **Imagínalo así:** un proyecto único es como vender una cómoda. Un contrato de mantenimiento es como rentar un departamento. El esfuerzo es el mismo, pero el departamento deja dinero cada mes sin que tengas que buscar un comprador nuevo.
+🎨 **Imagínalo así:** un proyecto único es como vender una cómoda. Un contrato de mantenimiento es como rentar un departamento. Vendes una sola vez, y el dinero llega cada mes sin que tengas que buscar un comprador nuevo.
 
 Un proyecto único está bien. Un contrato de mantenimiento mensual está mejor.
 
@@ -202,9 +202,9 @@ Contratas a otras personas (o armas un equipo de agentes), tomas proyectos corpo
 "Construyo flujos de Claude Code con integración MCP a través de Trigger.dev"
 
 ✅ Habla en términos de resultados:
-"Automatizo las tareas repetitivas de tu negocio con IA"
-"Le quito a tu día el trabajo tedioso"
-"Libero las 10-20 horas a la semana que dedicas a trabajo manual"
+- "Automatizo las tareas repetitivas de tu negocio con IA"
+- "Le quito a tu día el trabajo tedioso"
+- "Libero las 10-20 horas a la semana que dedicas a trabajo manual"
 
 **Ejemplos concretos de cómo decirlo:**
 - "Automatizo la atención de las solicitudes que llegan, para que las preguntas de rutina se respondan sin tu equipo"
@@ -225,7 +225,7 @@ Ejemplo:
 
 🎨 **Imagínalo así:** una calculadora de ROI le muestra al cliente que pone \$1 y recibe \$10. Sin la calculadora, solo ve el \$1 que entrega. Con ella, ve los \$10 que recibe.
 
-Cuando presentes un proyecto, muestra los números. La gente toma decisiones de dinero con números:
+Cuando presentes un proyecto, muestra los números. Con números, una decisión de dinero es más fácil de tomar:
 
 ```
 Situación actual:
@@ -241,8 +241,10 @@ Nuestra solución:
 • Ahorro anual: $23,040
 • Recuperación de la inversión: menos de 2 meses
 
-Después de recuperar la inversión: $23,040/año de ahorro neto
+Después de recuperar la inversión: $23,040/año de ahorro
 ```
+
+En un cálculo real, réstale al ahorro los costos fijos que el sistema le deja al cliente: los servicios de pago y el mantenimiento, si lo cobras.
 
 ---
 
@@ -250,7 +252,7 @@ Después de recuperar la inversión: $23,040/año de ahorro neto
 
 **Ejercicio:** calcula el ROI de un proyecto posible
 
-1. Elige un contacto de tu Mapa de confianza (de la lección [Primeros clientes](38-monetization-clients.md)) cuyo problema conozcas
+1. Elige a un dueño de negocio que conozcas, o a un posible cliente, cuyo problema entiendas. (La lista completa de esas personas, tu Mapa de confianza, la vas a armar en la lección [Primeros clientes](38-monetization-clients.md), que viene más adelante.)
 
 2. Llena la tabla de ROI:
    ```
@@ -266,7 +268,7 @@ Después de recuperar la inversión: $23,040/año de ahorro neto
    Plazo de recuperación: ___ meses
    ```
 
-3. Escribe un documento de alcance para este proyecto (con la plantilla de esta lección): qué va en V1 y qué va al Backlog
+3. Escribe un documento de alcance para este proyecto (con la plantilla de esta lección): qué va en V1 y qué va a la lista de pendientes
 
 4. Pon el precio con la regla del "10-30% del valor anual"
 
@@ -276,10 +278,10 @@ Después de recuperar la inversión: $23,040/año de ahorro neto
 
 ## Errores comunes
 
-- **Cobrar por hora en lugar de por resultado.** Con Claude Code terminas un trabajo en 5 horas en lugar de 50. Si cobras \$50 la hora, recibes \$250 por un trabajo que vale \$10,000. Calcula siempre el ROI del cliente, no tus horas.
+- **Cobrar por hora en lugar de por resultado.** Supón que la IA te deja terminar un trabajo en 5 horas en lugar de 50. Si cobras \$50 la hora, recibes \$250 por un trabajo que le vale \$10,000 al cliente. Calcula siempre el ROI del cliente, no tus horas.
 - **No mostrarle al cliente el cálculo del ROI.** Si el cliente no ve los números, duda. Muestra un cálculo sencillo: "cuánto cuesta el problema al año" → "cuánto cuesta la solución" → "se recupera en X meses". Sin ROI vendes "una cosa". Con ROI vendes una inversión.
-- **Tener miedo de decir tu precio.** Si hiciste las cuentas del ROI y la solución se paga sola en 2-3 meses, el precio está justificado objetivamente. Andar con rodeos sobre el precio te cuesta confianza.
-- **No separar V1 del Backlog.** El crecimiento del alcance se come tu margen. El cliente pide un "pequeño agregado" 5 veces = haces el doble de trabajo por el mismo precio. El documento de alcance es tu protección.
+- **Tener miedo de decir tu precio.** Si hiciste las cuentas del ROI y la solución se paga sola en 2-3 meses, el precio es fácil de justificar con números. Andar con rodeos sobre el precio te cuesta confianza.
+- **No separar V1 de la lista de pendientes.** El crecimiento del alcance se come tu margen. El cliente pide un "pequeño agregado" 5 veces = haces el doble de trabajo por el mismo precio. El documento de alcance es tu protección.
 
 ---
 
@@ -292,23 +294,23 @@ Después de recuperar la inversión: $23,040/año de ahorro neto
 | Premium (especialización) | \$5,000-\$15,000 | \$500-\$1,000/mes | Experiencia en el nicho, 10+ casos de éxito |
 | Empresarial | \$15,000-\$50,000 | \$1,000-\$3,000/mes | Integraciones grandes, equipos de 50+ personas |
 
-**Regla:** precio = 10-30% del valor anual para el cliente. Entre más obvio el ROI, más cerca del 30%.
+**Regla práctica:** precio = 10-30% del valor anual para el cliente. Entre más obvio el ROI, más cerca del 30%.
 
 ---
 
 ## Lecciones relacionadas
 
-- **→ [Paquetes](42-packaging.md)**: cómo convertir los niveles de precio en tres paquetes claros: Básico, Pro y Empresarial
+- **→ [Paquetes](42-packaging.md)**: la lección anterior, sobre cómo convertir los niveles de precio en tres paquetes claros: Basic, Pro y Enterprise
 - **→ [Casos de monetización](47-monetization-cases.md)**: cálculos de ROI para distintos tipos de proyectos
-- **→ [Estrategia de precios a fondo](39e-pricing-strategy-deep.md)**: una mirada más detallada a los precios de productos de IA
+- **→ [Estrategia de precios a fondo](39e-pricing-strategy-deep.md)**: la siguiente lección, sobre planes y precios para productos de IA que se venden por suscripción
 
 ---
 
 ## Herramientas y recursos
 - **Notion / Google Docs**: para documentos de alcance y contratos. [notion.com/templates](https://www.notion.com/templates)
-- **Wave o Invoice Ninja**: facturación (revisa los planes vigentes de cada uno en su sitio web y si sirven para las reglas de facturación de tu país)
-- **Stripe**: [stripe.com](https://stripe.com/). Acepta pagos en línea; el estándar entre freelancers (revisa en su sitio si está disponible en tu país)
-- **Paddle**: [paddle.com](https://www.paddle.com/). Una alternativa a Stripe que se encarga de los impuestos por ti (útil para pagos internacionales)
+- **Wave o Invoice Ninja**: facturación. Los dos tienen un plan gratis (a octubre de 2026; mira los límites en sus sitios). Wave solo atiende a negocios de Estados Unidos y Canadá. Revisa también si sirven para las reglas de facturación de tu país
+- **Stripe**: [stripe.com](https://stripe.com/). Acepta pagos en línea. No está disponible en todos los países: a octubre de 2026, en América Latina solo abre cuentas en Brasil y México; la lista completa está en su sitio
+- **Paddle**: [paddle.com](https://www.paddle.com/). Para vender software y productos digitales (no servicios): Paddle actúa como el vendedor y se encarga por ti de los impuestos a las ventas en distintos países
 - **Gumroad**: [gumroad.com](https://gumroad.com/). Para vender productos digitales (plantillas, cursos, flujos de trabajo)
 - **Calendly**: [calendly.com](https://calendly.com/). Agenda llamadas de forma profesional, sin tanto ir y venir de mensajes
 - **Precios de la API de Claude**: [platform.claude.com/docs: pricing](https://platform.claude.com/docs/en/about-claude/pricing). Para saber exactamente cuánto cuesta la API cuando calcules tu margen. Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/)
@@ -317,11 +319,13 @@ Después de recuperar la inversión: $23,040/año de ahorro neto
 
 ## Ideas clave
 > Cobra por el resultado y podrás ganar más en menos horas. Cobra por hora y le pones un techo a tus propios ingresos.
+
 > Pon el alcance por escrito antes de empezar. No es desconfianza hacia el cliente; es respeto para los dos. Sin ese documento, el crecimiento del alcance es casi seguro.
+
 > Los contratos de mantenimiento son un camino hacia ingresos mensuales más estables. Cada proyecto único es un posible cliente de largo plazo.
 
 ---
 
 ## Siguiente lección
 
-→ [Prospección en frío en 2026: mensajes directos, correo y voz](39c-cold-outreach-deep.md)
+→ [Cómo ponerle precio a un producto de IA: valor, niveles, paquetes](39e-pricing-strategy-deep.md)

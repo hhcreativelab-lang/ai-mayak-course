@@ -29,7 +29,7 @@ If you work the plan, by the end of 30 days you should have:
 - ✅ **A first retainer proposal**: sent to a client or already signed (you and the client agree on the terms; whether and when they sign is up to them)
 - ✅ **A reusable engagement playbook**: a step-by-step process you can repeat with clients #2, #3 and #4
 - ✅ **Personal brand assets**: a LinkedIn profile, a landing page and one case study
-- ✅ **A pipeline of 3-5 prospects** for month 2 (warm ones, not cold)
+- ✅ **A pipeline of 3-5 prospects** for month 2: people who might become clients and already know you (warm, not cold)
 - ✅ **Your first case study**: your first client as social proof for the next ones
 - ✅ **Experience**: you've been through the whole process once and know which steps work for you and which to change
 

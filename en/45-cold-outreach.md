@@ -2,13 +2,13 @@
 
 **Time:** about 25 min reading + 40 min practice
 
-The percentages and numbers in this lesson are rough guides, not statistics and not a promise of results. Measure your own baseline in your CRM spreadsheet. Rules for commercial email depend on the country: see the section on the legal side in the [Cold outreach in 2026](39c-cold-outreach-deep.md) lesson.
+The percentages and numbers in this lesson are rough guides, not statistics and not a promise of results. Measure your own baseline in your CRM spreadsheet. Rules for commercial email depend on the country: see the section on the legal side in the next lesson, [Cold outreach in 2026](39c-cold-outreach-deep.md).
 
 ---
 
 ## The gist
 
-Warm contacts (see the [First clients](38-monetization-clients.md) lesson) are like fishing at a pond you know. You know where the fish are and what they bite on. Cold outreach is casting a line in a new lake. You need to figure out where the fish are, what bait to use, and how not to pollute the lake with spam. Many people do outreach the wrong way and get almost no replies. A personalized approach usually gets noticeably more.
+Warm contacts (see the [First clients](38-monetization-clients.md) lesson) are like fishing at a pond you know. You know where the fish are and what they bite on. Cold outreach (writing to people who don't know you yet) is casting a line in a new lake. You need to figure out where the fish are, what bait to use, and how not to pollute the lake with spam. Many people do outreach the wrong way and get almost no replies. A personalized approach usually gets noticeably more.
 
 ---
 
@@ -60,7 +60,7 @@ Almost everyone ignores a template like this. Here's why:
 **The structure of the email (5 parts):**
 
 ```
-1. A personalized first line (3-8 words about them)
+1. A personalized first line (one short sentence about them)
 2. A specific pain point you noticed (1-2 sentences)
 3. One concrete result you delivered for a similar client (1 sentence)
 4. A soft question: not "buy this" but "is this relevant for you?"
@@ -115,7 +115,7 @@ I looked at the LinkedIn profile of [Name] from [Company].
 Recently they: [copy 2-3 facts from the profile].
 I automate [type of task].
 
-Write a personalized first line for an email (5-8 words)
+Write a personalized first line for an email (one sentence, up to 15 words)
 that shows I've read about them and connects to what I offer.
 
 Give me three versions, each from a different angle.
@@ -126,17 +126,17 @@ Claude will give you options like these:
 - "Congrats on growing the team. How are you keeping up with the volume of requests?"
 - "Three support manager openings at once: has the workload grown that much?"
 
-Pick the best one, tweak it a little, and use it.
+Pick the best one, tweak it a little, and use it. Check that every fact in the line is true: Claude can fill in details that weren't in your notes.
 
 ---
 
 ### LinkedIn outreach: when you don't need email
 
-A LinkedIn InMail or a regular LinkedIn message is often more effective than email for B2B (selling to other businesses).
+When you sell to other businesses (B2B), a LinkedIn message sometimes works better than email. On a free account you can only message people you're already connected with, so you start with a connection request. InMail, a message to someone outside your connections, comes only with paid plans.
 
 **Rules for LinkedIn outreach:**
 
-1. Start with a connection request that includes a personalized note (the note's length is limited, and shorter on free accounts; check what LinkedIn shows you):
+1. Start with a connection request that includes a personalized note. On a free account the note can be up to 200 characters and is available for only a few invitations a month; on a paid account it's up to 300 characters (as of October 2026; check LinkedIn for the current terms):
 ```
 Hi [Name], I see you're growing [business/product]. I work on
 AI automation for [your industry] and would enjoy comparing notes.
@@ -211,7 +211,7 @@ If it becomes relevant down the road, I'd be glad to talk.
 Good luck with [their project/product you saw]."
 ```
 
-The breakup email often gets replies: many people appreciate that you respect their time.
+The breakup email sometimes gets a reply from people who had been silent: many people appreciate that you respect their time.
 
 ---
 
@@ -256,11 +256,11 @@ Every morning, open the sheet and see who's due for a follow-up.
 The working rule for personalized outreach: **up to 20 emails a day**.
 
 Why:
-- Google and Outlook block senders with a high bounce rate (emails that can't be delivered) and lots of spam complaints
+- Google and Microsoft (Outlook) send email to spam or reject it when a sender gets a lot of spam complaints and bounces (emails that can't be delivered)
 - Your domain's reputation suffers, and even normal emails start landing in spam
 - Personalized means time-consuming: 20 emails a day with real personalization is 2 to 3 hours of work
 
-If you need to scale, use professional platforms (Lemlist, Instantly) with domain warm-up (slowly raising your sending volume so email providers learn to trust a new domain), not Gmail for mass sending. Email laws depend on the country (CAN-SPAM, GDPR, CASL and others): check the rules in your country and in your recipient's. In the US, commercial email falls under the federal CAN-SPAM Act. In general terms, it comes down to honesty and an easy way out: don't mislead people about who you are or what the email is about, give them a simple way to opt out, and respect it when they do. This isn't legal advice; for the specifics, read the official guidance or ask a lawyer.
+If you need to scale, use professional platforms (Lemlist, Instantly) with domain warm-up (slowly raising your sending volume so email providers learn to trust a new domain), not Gmail for mass sending. Email laws depend on the country (CAN-SPAM, GDPR, CASL and others): check the rules in your country and in your recipient's. In the US, commercial email falls under the federal CAN-SPAM Act. In general terms, it comes down to honesty and an easy way out: don't mislead people about who you are or what the email is about, include your mailing address, give them a simple way to opt out, and respect it when they do. This isn't legal advice; for the specifics, read the official guidance (the links are in the next lesson) or ask a lawyer.
 
 ---
 
@@ -280,11 +280,11 @@ If you need to scale, use professional platforms (Lemlist, Instantly) with domai
 
 5. Set up a CRM spreadsheet in Google Sheets (the six columns from this lesson)
 
-6. (If you're ready to send) Send 2-3 messages through LinkedIn and 2-3 by email
+6. (If you're ready to send) Send 2-3 messages through LinkedIn and 2-3 by email. Before you send, check the email rules in your country and in your recipient's
 
 7. Four days later, write a follow-up to everyone who didn't reply
 
-**Goal:** 5 personalized emails ready to send, a CRM spreadsheet set up, and a baseline reply rate measured after 2 weeks.
+**Goal:** 5 personalized emails ready to send, a CRM spreadsheet set up, and, after 2 weeks, a count of how many people replied. That's your first reference point; 5 emails are too few to draw conclusions.
 
 ---
 
@@ -321,7 +321,7 @@ with this result: [a real metric from your own case study; for example: 22 hours
 Could I show you how it works in 15 minutes?
 
 James Miller
-https://calendly.com/james/15min
+https://calendly.com/[your-name]/15min
 [mailing address]
 Not relevant? Just reply "no thanks" and I won't follow up.
 ```
@@ -338,7 +338,7 @@ Not relevant? Just reply "no thanks" and I won't follow up.
 | Conversion to a call | whether your call to action works | make the question simpler; suggest a specific time |
 | Emails before a reply | how many touches it takes | rethink your follow-up sequence |
 
-Take your benchmarks from your own CRM spreadsheet: your baseline from the first 2 weeks matters more than anyone else's numbers. If the open rate is low, the problem is the subject line. If the open rate is fine but replies are few, the problem is the text.
+Take your benchmarks from your own CRM spreadsheet: your baseline from the first 2 weeks matters more than anyone else's numbers. Only outreach platforms show an open rate; if you send by hand from your regular email, watch your replies instead. If the open rate is low, the problem is the subject line. If the open rate is fine but replies are few, the problem is the text.
 
 ---
 
@@ -354,10 +354,10 @@ Take your benchmarks from your own CRM spreadsheet: your baseline from the first
 
 ## Related lessons
 
-- **→ [Lead generation system](39-lead-generation.md)**: an automated pipeline for collecting leads for cold outreach
-- **→ [First clients](38-monetization-clients.md)**: start with warm contacts, then add cold ones
-- **→ [Portfolio and case studies](41-portfolio-case-studies.md)**: a link to a case study in your signature helps more people say yes
-- **→ [Cold outreach in 2026](39c-cold-outreach-deep.md)**: channels, sequences, the legal side
+- **→ [Cold outreach in 2026](39c-cold-outreach-deep.md)**: the next lesson: channels, sequences, the legal side
+- **→ [First clients](38-monetization-clients.md)**: already covered: start with warm contacts, then add cold ones
+- **→ [Portfolio and case studies](41-portfolio-case-studies.md)**: already covered: a link to a case study in your signature helps more people say yes
+- **→ [Lead generation system](39-lead-generation.md)**: an optional library lesson on building a contact list automatically
 
 ---
 
@@ -387,4 +387,6 @@ Take your benchmarks from your own CRM spreadsheet: your baseline from the first
 
 ## Next lesson
 
-→ [Closing: how to turn interest into a signed deal](45b-closing-objections.md)
+→ [Cold outreach that gets replies: channels, sequences and the legal side](39c-cold-outreach-deep.md)
+
+After that: [How to handle objections and close the deal](45b-closing-objections.md).

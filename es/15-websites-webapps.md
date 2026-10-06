@@ -8,7 +8,7 @@
 
 Hacer un sitio web antes era como construir una casa: necesitabas un arquitecto (un diseñador), un maestro de obras (un desarrollador front-end que convierte el diseño en una página que funciona), una cuadrilla (programadores) y varias semanas de trabajo. Con Claude Code es como tener a un constructor experto disponible: describes con palabras lo que quieres, él lo construye y tú vas haciendo ajustes sobre la marcha.
 
-Para esta lección no necesitas saber programar. Vas a describir, mirar y pedir cambios. También es el primer paso si más adelante quieres crear una aplicación con Claude Code.
+Para esta lección no necesitas saber programar. Vas a describir, mirar y pedir cambios. Sí necesitas Claude Code; la lección [Claude Code de escritorio](05b-claude-code-desktop.md) muestra cómo instalarlo. También es el primer paso si más adelante quieres crear una aplicación con Claude Code.
 
 ---
 
@@ -73,6 +73,8 @@ Ya abriste el sitio en tu navegador y le diste un vistazo. Ahora haces ajustes:
 
 Cada cambio es una frase en lenguaje común. El agente encuentra el lugar correcto en el código y lo cambia. Tú no miras el código ni editas nada a mano.
 
+En un borrador así, el agente inventa testimonios, cifras y fotos para rellenar. Para un cliente real, cámbialos por los datos reales del cliente: los testimonios y cifras inventados engañan a los compradores.
+
 #### Etapa 3: Revísalo en distintos dispositivos
 
 El agente ya hizo el diseño adaptable, pero vale la pena revisarlo:
@@ -97,9 +99,9 @@ python3 -m http.server 3000 --bind 127.0.0.1
 npx serve .
 ```
 
-Abre tu navegador en `http://localhost:3000` y vas a ver el sitio como si ya estuviera en internet, solo que únicamente tú puedes verlo.
+Abre tu navegador en `http://localhost:3000` y vas a ver el sitio como si ya estuviera en internet, solo que únicamente tú puedes verlo. En la app de escritorio de Claude, Claude Code abre el sitio por ti en el panel Browser integrado.
 
-**Por qué importa:** algunas cosas no funcionan si solo abres el archivo HTML (solicitudes a una API, fuentes de Google Fonts). Un servidor local reproduce las condiciones reales.
+**Por qué importa:** algunas cosas no funcionan si solo abres el archivo HTML con doble clic (solicitudes de datos y a una API, módulos de JavaScript). Un servidor local reproduce las condiciones reales.
 
 ---
 
@@ -112,21 +114,21 @@ Abre tu navegador en `http://localhost:3000` y vas a ver el sitio como si ya est
 **Costo:** el plan Hobby es gratis, pero solo para proyectos personales, no comerciales. Para el sitio de un cliente o cualquier sitio comercial necesitas el plan de pago Pro (a octubre de 2026: $20 al mes por desarrollador, que incluye $20 de crédito de uso). Revisa las condiciones actuales en vercel.com/pricing. Si necesitas una opción gratis para el sitio de un cliente, mira Cloudflare Pages (la lección [Publicación 24/7: Cloudflare Workers](18-deployment-cloudflare.md)) y revisa las condiciones en su página de precios.
 
 **Cómo publicar:**
-1. Sube tu código a GitHub, un sitio web que guarda proyectos de código (puedes pedirle al agente que lo haga)
+1. Sube tu código a GitHub, un sitio web que guarda proyectos de código (necesitas una cuenta de GitHub y tienes que iniciar sesión tú; la subida se la puedes pedir al agente)
 2. Conecta el repositorio (la carpeta de tu proyecto en GitHub) a Vercel (vercel.com)
 3. Haz clic en Deploy (Publicar)
 4. Obtén una dirección como `fitness-carter.vercel.app`
 5. Puedes conectar tu propio dominio
 
-**Actualizaciones automáticas:** cada vez que el agente hace cambios y tú los guardas en GitHub con un commit (un commit es una foto guardada de tus cambios), Vercel actualiza el sitio automáticamente. Una publicación tarda 30-60 segundos.
+**Actualizaciones automáticas:** cada vez que el agente hace cambios y tú los guardas con un commit (un commit es una foto guardada de tus cambios) y los subes a GitHub (push), Vercel actualiza el sitio automáticamente.
 
 #### GitHub Pages
 
-**Costo:** gratis, siempre que el código sea público
+**Costo:** gratis para repositorios públicos (cualquiera puede ver el código); los privados necesitan un plan de pago de GitHub
 
-**Cuándo elegirlo:** sitios estáticos sin código del lado del servidor, cuando no te importa que cualquiera pueda ver tu código.
+**Cuándo elegirlo:** sitios estáticos sin código del lado del servidor, cuando no te importa que cualquiera pueda ver tu código. Según las condiciones de GitHub, GitHub Pages no está pensado para tiendas en línea ni para sitios cuyo fin principal es vender.
 
-**Cómo publicar:** repositorio → Settings → Pages → elige una rama (branch) → Save.
+**Cómo publicar:** repositorio → Settings → Pages → en "Build and deployment", elige como fuente Deploy from a branch → elige una rama (branch) → Save.
 
 ---
 
@@ -137,7 +139,7 @@ Abre tu navegador en `http://localhost:3000` y vas a ver el sitio como si ya est
 Un sitio estático no puede recibir por sí solo los envíos de un formulario (no tiene lado del servidor). Tus opciones:
 
 - **Formspree**: tiene un plan gratis con un límite mensual de envíos (revisa el límite actual en su página de precios); solo apuntas la acción del formulario a su dirección
-- **Netlify Forms**: si publicas en Netlify, los formularios funcionan sin configurar nada
+- **Netlify Forms**: si publicas en Netlify, activa la detección de formularios en la configuración y agrega al formulario el atributo netlify
 - **EmailJS**: envía el formulario directamente desde el navegador a través de su API
 
 El agente conoce todos estos servicios y va a configurar uno si se lo pides.
@@ -185,7 +187,7 @@ El precio y los tiempos dependen del mercado, del nicho y de cuántas rondas de 
 
 - Las aplicaciones web complejas (inicio de sesión de usuarios, bases de datos, funciones en tiempo real) necesitan más que HTML/CSS/JS: necesitan un backend (el lado del servidor que guarda los datos y ejecuta la lógica). Claude Code puede con eso, pero es bastante más difícil y lleva más tiempo
 - El diseño no siempre sale "wow" al primer intento; hace falta ir ajustando
-- El agente no dibuja ilustraciones ni íconos únicos (usa imágenes de banco o emoji)
+- El agente no dibuja ilustraciones complejas ni fotos: los íconos sencillos los puede hacer con código, y para lo demás usa imágenes de banco gratuitas o emoji
 - Las fotos originales las tienes que poner tú
 
 **Conclusión práctica:** para landing pages y sitios sencillos de negocios, es una herramienta excelente. Para aplicaciones web complejas con usuarios, pagos y datos reales, necesitas saber más de arquitectura (las lecciones [API e integraciones](16-apis-integration.md) y [Publicación 24/7: Cloudflare Workers](18-deployment-cloudflare.md)).
@@ -208,7 +210,7 @@ El proceso:
 4. Publica en Vercel o en GitHub Pages
 5. Comparte el enlace: ya tienes un sitio web en línea
 
-⚠️ Si es el sitio de un cliente real (Opción C), recuerda que el plan gratis Hobby de Vercel es solo para proyectos no comerciales (mira la sección de publicación más arriba). Y GitHub Pages necesita que el código sea público, así que no pongas ahí datos privados.
+⚠️ Si es el sitio de un cliente real (Opción C), recuerda que el plan gratis Hobby de Vercel es solo para proyectos no comerciales (mira la sección de publicación más arriba). GitHub Pages necesita que el código sea público y no está pensado para sitios cuyo fin principal es vender, así que no pongas ahí datos privados.
 
 ---
 
@@ -234,7 +236,7 @@ Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 ## Errores comunes
 
 **Error 1: No probar en pantallas de celular**
-El sitio se ve perfecto en la computadora, pero en el celular el texto se sale de la pantalla y los botones quedan demasiado pequeños. Revisa siempre: "Revisa cómo se ve en una pantalla de 375px de ancho" (es el ancho del iPhone SE, la pantalla popular más angosta).
+El sitio se ve perfecto en la computadora, pero en el celular el texto se sale de la pantalla y los botones quedan demasiado pequeños. Revisa siempre: "Revisa cómo se ve en una pantalla de 375px de ancho" (es el ancho del iPhone SE, una de las pantallas populares más angostas).
 
 **Error 2: Olvidar la etiqueta meta viewport**
 Sin `<meta name="viewport" content="width=device-width, initial-scale=1.0">` el sitio se ve en el celular como una versión de computadora encogida. Claude normalmente la agrega, pero revísalo.
@@ -264,4 +266,6 @@ Imágenes enormes, fuentes sin optimizar, animaciones pesadas, y el sitio tarda 
 
 ## Próxima lección
 
-→ [API e integraciones](16-apis-integration.md): cómo se comunican los programas entre sí y cómo aprovecharlo
+→ [La lección que no esperabas](100-intrigue.md): el cierre del curso, las cualidades tuyas que la IA no va a reemplazar
+
+En la biblioteca, opcional: [API e integraciones](16-apis-integration.md): cómo se comunican los programas entre sí y cómo aprovecharlo

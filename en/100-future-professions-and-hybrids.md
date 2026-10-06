@@ -63,7 +63,7 @@ This is a reference map of careers and a scenario-based forecast, not research d
 
 ## <a id="section-a"></a>🌱 Section A: 50 NEW careers
 
-Jobs that **didn't exist before 2022**. They appeared as a direct result of generative AI.
+Careers **built around AI itself**. Some appeared only after generative AI took off in 2022; others existed before but have grown fast since.
 
 ---
 
@@ -452,7 +452,7 @@ These are **the builders of the AI era**. The most talked-about category of 2026
   - Photography fundamentals (composition, lighting)
   - Brand consistency through style references
   - Post-processing (Lightroom)
-- **Demand:** ⭐⭐⭐⭐ (massive e-commerce demand)
+- **Demand:** ⭐⭐⭐⭐ (online stores need a lot of product images)
 - **Picture this:** a photographer without a camera. The same eye, a different tool.
 
 ---
@@ -1440,9 +1440,9 @@ The salary tables and regional multipliers have been removed: they weren't verif
 ## <a id="top-10"></a>⭐ Top 10 emerging careers 2026-2030 (the author's estimate)
 
 1. **AI Application Engineer**: the main new career of the era
-2. **AI Agent Architect**: the multi-agent systems boom
+2. **AI Agent Architect**: multi-agent systems are spreading
 3. **AI Safety / Red Team**: frontier labs keep dedicated teams
-4. **Prompt Engineer** (still strong at the junior level): easy to get into
+4. **Prompt Engineer**: easy to get into, though the junior level is getting crowded
 5. **AI Voice Agent Developer**: phone agents built on platforms like Vapi and Bland are in demand
 6. **AI-Augmented Lawyer**: tools like Harvey are changing the day-to-day work
 7. **AI Adoption Specialist** (enterprise): large companies need help rolling AI out
@@ -1495,9 +1495,9 @@ These sources are starting points for checking things yourself. No numbers from 
 
 | Topic | Course lessons |
 |-------|-------------|
-| AI fundamentals | [What AI is](00-what-is-ai.md), [How an LLM works](00b-how-llm-works.md), [Comparing AI models](00c-ai-models-comparison.md), [AI without fear](00d-ai-without-fear.md) |
+| AI fundamentals | [The history of AI](00-what-is-ai.md), [How an LLM works](00b-how-llm-works.md), [Comparing AI models](00c-ai-models-comparison.md), [AI without fear](00d-ai-without-fear.md) |
 | Setup + Claude Code | [Installation and setup](05-setup.md), [Claude Code Desktop](05b-claude-code-desktop.md), [Plans and access](05c-access-levels-pricing.md) |
-| Prompting | [Prompting fundamentals](06-prompting-fundamentals.md) |
+| Prompting | [How to write a good prompt](06-prompting-fundamentals.md) |
 | CLAUDE.md / Memory | [CLAUDE.md](07-claude-md.md) |
 | Building apps | [Websites and web apps](15-websites-webapps.md), [APIs and integrations](16-apis-integration.md), [Deploying to Cloudflare](18-deployment-cloudflare.md) |
 | Multi-agent systems | [Agent teams](26-agent-teams.md), [Multi-agent orchestration](82-multiagent-orchestration.md) |
@@ -1506,7 +1506,7 @@ These sources are starting points for checking things yourself. No numbers from 
 | Security | [Permissions and security](28-permissions-security.md), [Prompt injection defense](107b-prompt-injection-defense.md) |
 | Cost optimization | [Prompt caching and the Batch API](34-prompt-caching-batch-api.md), [Cost engineering](48b-cost-engineering.md) |
 
-To see which lessons matter for a specific career, check the site's Professions page: that's where career-to-lesson links are kept.
+To see which lessons matter for a specific career, check the site's Professions page: that's where career-to-lesson links are kept. Lessons that aren't part of the core course are in the library and are optional.
 
 ---
 
@@ -1596,7 +1596,7 @@ These are **the hands of the AI era**. Software meets hardware.
   - Voice-first UX (there's no keyboard)
   - Latency budgets (<100ms is critical)
   - Privacy design (the camera is always ready)
-- **Demand:** ⭐⭐⭐⭐ (an early market: several makers already ship AI glasses, and the app platforms are young)
+- **Demand:** ⭐⭐⭐ (an early market: several makers already ship AI glasses, and the app platforms are young)
 - **How to get there:**
   1. A mobile dev foundation (iOS/Android)
   2. An AR portfolio (3 production apps)
@@ -1970,7 +1970,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
   - Clinical validation
   - The FDA 510(k) pathway
   - Multimodal models
-- **Demand:** ⭐⭐⭐⭐ (huge investment in medical AI)
+- **Demand:** ⭐⭐⭐⭐ (hospitals and medical device makers are adopting AI)
 - **How to get there:**
   1. An ML engineer foundation + a medical specialty
   2. An industry job (Tempus, PathAI, Paige)
@@ -2151,7 +2151,7 @@ These are **the doctors of the AI era**. Where the stakes are highest.
 - **Key skills:**
   - Psychometrics
   - Item response theory
-  - AI detection (to prevent cheating)
+  - Knowing what AI-text detectors can and can't do (to prevent cheating)
   - Authentic assessment design
   - Fairness evaluation
 - **Demand:** ⭐⭐⭐ (College Board, ETS, edtech, universities)
@@ -2565,14 +2565,14 @@ These are **narrow specialists where industries meet**.
 
 #### 105. Dentist + AI = AI Diagnostic Dentist
 
-- **What they do:** A dentist + AI vision on X-rays (Pearl, VideaHealth) for cavity detection and treatment planning.
+- **What they do:** A dentist + AI vision on X-rays (Pearl, Videa) for cavity detection and treatment planning.
 - **Key skills:**
   - A DDS/DMD foundation
   - Literacy in AI X-ray tools
   - Treatment planning
   - Patient communication (explaining what the AI found)
   - Navigating insurance
-- **Demand:** ⭐⭐⭐⭐ (Pearl + VideaHealth + newcomers)
+- **Demand:** ⭐⭐⭐⭐ (Pearl + Videa + newcomers)
 - **How to get there:**
   1. A DDS/DMD degree
   2. An AI tool certification
@@ -2626,7 +2626,7 @@ These are **narrow specialists where industries meet**.
   - Integrating digital therapeutics
   - Privacy + ethics
   - Navigating the patient-AI relationship
-- **Demand:** ⭐⭐⭐⭐ (the mental health crisis + the telepsychiatry explosion)
+- **Demand:** ⭐⭐⭐⭐ (the mental health crisis + the growth of telepsychiatry)
 - **How to get there:**
   1. An MD + a psychiatry residency
   2. A digital health certification
@@ -3722,11 +3722,11 @@ Running on-premises AI infrastructure (Ollama, LM Studio, vLLM).
 
 ### 2029: pre-AGI tension
 
-**The main shift:** Models approach near-unbounded reasoning. Some professions are disrupted dramatically. Regulatory frameworks are fully active.
+**The main shift:** Models may get much stronger at long, multi-step reasoning. Some professions may change dramatically. Regulatory frameworks are fully active.
 
 **Key technical shifts:**
 
-- Models approach unbounded reasoning (mathematical problem solving, original research)
+- Models get much stronger at long reasoning (math problems, research tasks)
 - Some professions are disrupted dramatically (research, complex code, even creative work)
 - Regulatory frameworks are fully in place (the EU AI Act, US federal and state rules, China's AI rules)
 - Discussions about an AI treaty begin (geopolitics)
@@ -3740,13 +3740,13 @@ Running on-premises AI infrastructure (Ollama, LM Studio, vLLM).
 - AI Governance Specialists (policy + technical)
 - AI Insurance/Liability specialists
 
-**Declining (sharply):**
+**Declining:**
 
-- Many entry-level knowledge jobs (a "gap year" crisis for new graduates)
+- Many entry-level knowledge jobs (new graduates may struggle to find a first job)
 - Mid-level managers (AI flattens hierarchies)
 - Generic content creators (AI has raised the bar dramatically)
 
-**Crisis points:**
+**Possible pressure points:**
 
 - Universities struggle to define what to teach graduates
 - A generation gap (people born in 2010+ never experienced work before AI)
@@ -3774,7 +3774,7 @@ Running on-premises AI infrastructure (Ollama, LM Studio, vLLM).
 - **Creative directors**: taste matters (AI executes, a human decides)
 - **Sales / relationships**: people buy from people (high-trust transactions)
 
-**Long-term losers:**
+**Under the most pressure in the long run:**
 
 - Mid-skill routine work (a commodity)
 - Generic content production (its price has deflated)
@@ -3886,7 +3886,7 @@ AI does most of the hands-on creative execution. The question of "what to make a
 
 ## <a id="section-j"></a>👥 Section J: The hybrid economy: 3 archetypes for 2030
 
-By 2030, most knowledge workers will fit one of 3 archetypes:
+In the author's scenario, by 2030 most knowledge workers would fit one of 3 archetypes:
 
 ---
 
@@ -4066,9 +4066,9 @@ These are starting points for checking things yourself. No numbers from them wer
 
 | Topic | Course lessons |
 |-------|-------------|
-| AI Research / Science (A7), the future of work | [AI roadmap 2027–2030](108-ai-roadmap-2027-2030.md) |
+| AI Research / Science (A7), the future of work | [The future of AI 2027–2030](108-ai-roadmap-2027-2030.md) |
 | Healthcare AI (A8, B6), AI Finance (A10) | [AI ethics and safety](61b-ai-ethics-safety.md), [AI regulation and compliance](61c-ai-regulation-compliance.md) |
-| Future archetypes (Section J) | [What AI is](00-what-is-ai.md), [What to become: choose your path](49b-choose-your-path.md) |
+| Future archetypes (Section J) | [The history of AI](00-what-is-ai.md), [Choose your path](49b-choose-your-path.md) |
 
 ---
 

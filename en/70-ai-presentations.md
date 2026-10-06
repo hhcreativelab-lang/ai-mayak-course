@@ -6,7 +6,9 @@
 
 ## The gist
 
-Making a good presentation used to take a full day in PowerPoint. AI tools turn that into a 20-minute process where you focus on your ideas instead of pushing boxes around a slide.
+Making a good presentation used to take a full day in PowerPoint. With AI, a solid draft comes together in about half an hour, and you focus on your ideas instead of pushing boxes around a slide.
+
+The main part of this lesson is done in a browser, with no code. The sections on python-pptx and the Google Slides API are for people who build their own tools; everyone else can skip them.
 
 🎨 **Picture this:** regular PowerPoint is like putting together IKEA furniture yourself: the parts are right, but it takes all day and half the bolts are left over. Gamma is furniture that arrives already assembled. You say what you want, and five minutes later it's standing in the room. Then you move whatever isn't quite right.
 
@@ -16,10 +18,10 @@ Making a good presentation used to take a full day in PowerPoint. AI tools turn 
 
 - Gamma: a complete presentation from one prompt (your request to the AI), with a layout that adapts to the content
 - Beautiful.ai: AI slide design with smart templates (a template is a ready-made layout)
-- Claude + python-pptx: generating PowerPoint files with code (full control)
+- Claude + python-pptx: generating PowerPoint files with code (full control; for builders)
 - Claude + the Google Slides API (an API is a way for one program to talk to another service): presentations in the cloud, built with code
 - The workflow: idea → structure with Claude → design in Gamma → final edits
-- A pitch deck (a presentation for investors) with AI: from concept to investor meeting in a few hours
+- A pitch deck (a presentation for investors) with AI: from concept to a solid draft in a few hours
 
 ---
 
@@ -42,7 +44,7 @@ Gamma ([gamma.app](https://gamma.app)) is one of the fastest ways to get from an
 - Documents (nicely formatted docs)
 - Web pages (public landing pages)
 
-**Pricing (as of October 2026):** Gamma lets you start for free, generation runs on credits, and limits and export options depend on the plan. Current details: [gamma.app/pricing](https://gamma.app/pricing), [What's current](https://aimayak.com/en/now/).
+**Pricing (as of October 2026):** Gamma lets you start for free, generation uses credits, and limits and export options depend on the plan. According to Gamma's help center, the starting credits on the free plan don't refill on their own, so spend them on a real task. Gamma's prices: [gamma.app/pricing](https://gamma.app/pricing). Prices of the AI assistants: [What's current](https://aimayak.com/en/now/).
 
 **What Gamma does well:**
 
@@ -52,9 +54,9 @@ Gamma ([gamma.app](https://gamma.app)) is one of the fastest ways to get from an
 - Interactive elements (charts, embeds)
 - Gamma Agent: in a chat, it changes the style, text and tone across the whole deck at once
 - Smart Diagrams: draws diagrams from a description
-- Languages other than English (Spanish, for example): test it on your own text before you build a process around it
+- Languages: according to Gamma's help center, you can write your prompt in your own language, and the interface language list includes Spanish. Still check the quality of the text on your own topic
 
-🎨 **Picture this:** Gamma is like a good freelance layout designer. You say what you need, they make it look good; you say what to change, they change it. Not perfect, but 80% of the work is already done.
+🎨 **Picture this:** Gamma is like a good freelance layout designer. You say what you need, they make it look good; you say what to change, they change it. Not perfect, but most of the work is already done.
 
 ---
 
@@ -74,6 +76,8 @@ When you add an element (text, an image, an icon), the slide automatically rearr
 | PPTX export | depends on the plan | depends on the plan |
 | Price | see the pricing page | see the pricing page (trial terms are listed there) |
 
+The "Design control" and "Smart templates" rows are the author's assessment, not the result of an independent comparison: test them on your own task.
+
 **When to use Beautiful.ai instead of Gamma:**
 
 - You need more control over the design
@@ -84,9 +88,9 @@ When you add an element (text, an image, an icon), the slide automatically rearr
 
 ---
 
-### Claude + python-pptx: PowerPoint with code
+### For builders: Claude + python-pptx, PowerPoint with code
 
-When you need full control, or need to generate lots of presentations automatically, Claude writes code that creates PPTX files (the PowerPoint file format).
+This section and the next one are optional: they're for people who write code. If you don't code, go on to the section called "The workflow." When you need full control, or need to generate lots of presentations automatically, Claude writes code that creates PPTX files (the PowerPoint file format).
 
 **Install:**
 
@@ -94,7 +98,7 @@ When you need full control, or need to generate lots of presentations automatica
 pip install python-pptx
 ```
 
-**A basic example: Claude generates a presentation from an outline:**
+**A basic example: the code builds a presentation from a ready-made outline:**
 
 ```python
 from pptx import Presentation
@@ -166,31 +170,32 @@ print("Done!")
 
 ### Claude + the Google Slides API: presentations in the cloud
 
-For teamwork and automatic generation in the cloud, there's the Google Slides API.
+For teamwork and automatic generation in the cloud, there's the Google Slides API. This section is for builders too.
 
 **Why it's useful:**
 
-- The presentation lands right in Google Drive, where your whole team can open it
+- The presentation lands right in your Google Drive, and you share it with your team yourself
 - It can be updated automatically (quarterly reports, for example)
 - No dependence on PPTX files or anything stored on your computer
 
 **Setup:**
 
 ```bash
-pip install google-auth google-auth-httplib2 google-api-python-client
+pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 ```
+
+In Google Cloud Console, enable the Google Slides API, create an OAuth client of the "Desktop app" type and download its file as `credentials.json` (the Google Slides API documentation, linked at the end of this lesson, walks you through it).
 
 **Basic code:**
 
 ```python
-from google.oauth2 import service_account
+from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
-# Set up authorization
+# Set up authorization: a browser window opens, and you sign in to your Google account
 SCOPES = ['https://www.googleapis.com/auth/presentations']
-credentials = service_account.Credentials.from_service_account_file(
-    'service-account-key.json', scopes=SCOPES
-)
+flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+credentials = flow.run_local_server(port=0)
 
 service = build('slides', 'v1', credentials=credentials)
 
@@ -205,13 +210,13 @@ print(f"Created: https://docs.google.com/presentation/d/{presentation_id}")
 
 From there, Claude helps you write batch requests that add slides, text and images.
 
-⚠️ Treat the `service-account-key.json` file like a password: keep it out of shared folders, emails and anything public.
+⚠️ Treat the `credentials.json` file like a password: keep it out of shared folders, emails and public code repositories.
 
 ---
 
 ### The workflow: idea → Claude → Gamma → final
 
-The best process for most presentations:
+A convenient order for most presentations:
 
 **Step 1: Structure with Claude (5 min)**
 
@@ -250,7 +255,7 @@ Check:
 4. Do any slides contradict each other?
 ```
 
-Total: 25-30 minutes for a professional presentation.
+Total: 25-30 minutes for a solid draft of a presentation. Checking the facts and numbers on the slides is your job.
 
 ---
 
@@ -301,7 +306,7 @@ For each slide:
 
 1. Create a Gamma account (it's free, and you can sign in with Google):
 
-Go to [gamma.app](https://gamma.app) → New → "Generate" → choose "Presentation" (button names in the interface change from time to time)
+Go to [gamma.app](https://gamma.app) → Create new AI. You'll use two modes there: Generate (a presentation from a short prompt) and Paste in text (a presentation from ready-made text or an outline). Button names in the interface change from time to time
 
 2. Ask Claude to create a structure for your presentation:
 
@@ -316,7 +321,7 @@ Create the structure: a title for each slide +
 3-4 key points for each one.
 ```
 
-3. Paste the structure into Gamma, pick a theme and generate the presentation
+3. In Gamma, choose Paste in text, paste the structure, choose Presentation and a theme, and generate the presentation
 
 4. Ask Claude to improve the first 3 slides:
 
@@ -329,7 +334,9 @@ For each slide:
 - Make the first point the most important fact
 ```
 
-5. Install python-pptx and create a simple presentation with code:
+You're done when you have a 10-slide presentation you could show someone, with the facts and numbers on the slides checked by you. That's the end of the no-code practice.
+
+5. Optional, for builders: install python-pptx and create a simple presentation with code:
 
 ```bash
 pip install python-pptx
@@ -340,7 +347,7 @@ pip install python-pptx
 # about your project, using the code from this lesson as a starting point
 ```
 
-6. For advanced learners: build an automatic weekly report generator:
+6. Optional, for builders: an automatic weekly report generator:
 
 ```
 Ask Claude to write a script that:
@@ -357,7 +364,7 @@ Ask Claude to write a script that:
 
 ## Tools and resources
 
-- **[Gamma](https://gamma.app)**: the fastest route from an idea to slides
+- **[Gamma](https://gamma.app)**: a fast route from an idea to slides
 - **[Beautiful.ai](https://beautiful.ai)**: smart templates for design control
 - **[python-pptx](https://python-pptx.readthedocs.io)**: a library for generating PPTX files with code
 - **[Google Slides API](https://developers.google.com/slides)**: presentations in the cloud through an API
@@ -368,14 +375,16 @@ Ask Claude to write a script that:
 
 ## Key takeaways
 
-> Gamma plus a structure from Claude is the minimum combination that gets you a professional result in 30 minutes: Claude handles the logic and the content, Gamma makes it look good, and you adjust the details.
+> Gamma plus a structure from Claude is the minimum combination that gets you a solid draft in half an hour: Claude handles the logic and the content, Gamma makes it look good, and you adjust the details and check the facts.
 
 > You need python-pptx when presentations are generated automatically or from a template: weekly reports, custom proposals for clients, training materials, anything you need to reproduce many times.
 
-> An AI-built pitch deck is a draft, not the final version. Investors have seen thousands of Gamma designs; they decide based on content and numbers, not on the template.
+> An AI-built pitch deck is a draft, not the final version. Investors have seen plenty of decks built on templates like these; they decide based on content and numbers, not on the design.
 
 ---
 
 ## Next lesson
 
-→ [AI video generation: Runway, Kling and more](71-ai-video-generation.md): bringing your ideas to life with video
+→ [AI translation and localization: DeepL and Claude](75-ai-translation.md): translating emails and texts so they sound natural
+
+Video comes in the next module: [AI video generation: Runway, Kling and more](71-ai-video-generation.md): bringing your ideas to life with video

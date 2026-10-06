@@ -8,7 +8,7 @@
 
 For a business owner, AI music isn't about becoming a musician. It's about covering three specific needs: background music for videos, jingles for your brand, and the sound package for a podcast. And all of that without hiring a separate composer or sound designer.
 
-🎨 **Picture this:** a brand jingle used to mean hiring a musician and a studio, several meetings, a couple of weeks and a separate budget. Now it's 10 minutes in Suno: a prompt, a few versions to choose from, download. It's not better or worse than live music. It's a different tool for a different scale.
+🎨 **Picture this:** a brand jingle used to mean hiring a musician and a studio, several meetings, a couple of weeks and a separate budget. Now it's 10 minutes in Suno: a prompt, a couple of versions to choose from, and the track is ready. It's not better or worse than live music. It's a different tool for a different scale.
 
 ---
 
@@ -47,7 +47,7 @@ An intro and outro, transition music between sections, background atmosphere for
 Suno creates complete tracks, including:
 
 - The instrumental part
-- Vocals (in any language)
+- Vocals (in many languages)
 - Song structure: verse, chorus, bridge
 
 **How it works:**
@@ -55,15 +55,15 @@ Go to [suno.com](https://suno.com) → "Create" → write a prompt → get two v
 
 **Plans (as of October 2026):**
 
-- Free: no cost, 50 credits a day, the v6-mini model, songs can't be downloaded, no commercial rights
-- Pro: $8/month (less if you pay yearly), 2,500 credits a month, commercial rights, a monthly limit on song downloads
-- Premier: $24/month (less if you pay yearly), 10,000 credits a month, a higher download limit, Suno Studio
-- Current prices and terms: [suno.com/pricing](https://suno.com/pricing), [What's current](https://aimayak.com/en/now/)
+- Free: no cost, 50 credits a day, the v6-mini model, no commercial rights. You can listen to your tracks and share a link, but you only get a few trial downloads in total
+- Pro: from $8/month when you pay for a year, 2,500 credits a month, commercial rights, a monthly limit on song downloads
+- Premier: from $24/month when you pay for a year, 10,000 credits a month, a higher download limit, Suno Studio
+- The price depends on how you pay (yearly or monthly) and may be different in your country. Exact prices and terms: [suno.com/pricing](https://suno.com/pricing), [What's current](https://aimayak.com/en/now/)
 
 **Modes** (the names in the interface change):
 
 - **Custom**: you write the lyrics yourself and pick a style
-- **Simple mode**: you describe the mood, and Suno writes the words itself
+- **Simple**: you describe the mood, and Suno writes the words itself
 
 ---
 
@@ -104,7 +104,7 @@ neutral mood, suitable for online course transitions
 **What works:**
 
 - A specific tempo (BPM, beats per minute)
-- A specific length
+- The length you want (Suno doesn't always stick to it; trim the extra in an editor)
 - Saying "no vocals" if you don't need singing
 - The purpose (for YouTube / for podcast / for e-learning)
 
@@ -118,7 +118,7 @@ neutral mood, suitable for online course transitions
 
 ### Udio: what changed
 
-Udio ([udio.com](https://udio.com)) used to be Suno's competitor. In late 2025 the service signed agreements with music labels, and since October 30, 2025, downloading songs and stems (the separate vocal and instrument tracks) has been turned off: the music stays inside the platform. A licensed platform was announced for 2026. Check the website to see where it stands today and whether downloads have come back.
+Udio ([udio.com](https://udio.com)) used to be Suno's competitor. On October 29, 2025, the service announced a partnership with Universal Music Group, and since then downloading audio, video and stems (the separate vocal and instrument tracks) has been turned off: the music stays inside the platform. A licensed platform was announced for 2026. Check the website to see where it stands today and whether downloads have come back.
 
 🎨 **Picture this:** as of October 2026, Udio is like a recording studio where you can listen all you want, but they won't let you take the tape home. For tasks where you need a file (background music for a video, a jingle, sound for a course), Udio doesn't work today.
 
@@ -171,8 +171,8 @@ Help me set up a naming and tagging system:
 
 **Suno:**
 
-- Free: no commercial use, no downloads
-- Pro and Premier: commercial rights and a limited number of downloads per month
+- Free: no commercial use; only a few trial downloads, for personal use
+- Pro and Premier: commercial rights to the songs you download as a paying subscriber, and a limited number of downloads per month
 - Important: Suno can change its terms, so always read the current Terms of Service on the website
 
 **Udio:**
@@ -218,9 +218,9 @@ modern tech company feel, memorable
 
 ## Practice
 
-1. Create a Suno account (free, sign in with Google):
+1. Create a Suno account (free):
 
-Go to [suno.com](https://suno.com) → Sign in with Google → free credits to start (50 a day on Free; songs can't be downloaded, and you need a paid plan to download and for commercial use)
+Go to [suno.com](https://suno.com) → select Log in → pick a sign-in method, for example your Google account → you get free credits (50 a day on Free; downloads on the free plan are limited to a few trial files, and commercial use needs a paid plan)
 
 2. Generate background music for YouTube with Claude's help:
 
@@ -247,18 +247,20 @@ Write 4 lines + a 2-line chorus
 
 6. Go to ElevenLabs Sound Effects and create a transition sound for your videos:
 
-```bash
+```
 # Try a few variations:
 "cinematic whoosh, 1 second, clean"
 "soft page turn sound, 0.5 seconds"
 "subtle tech transition, 0.8 seconds"
 ```
 
+**Check yourself:** your Suno library holds six background tracks and a jingle with words, you've picked the best background track and can say why, and in ElevenLabs you have a transition sound. All of this was made on free plans, so it's fine for learning and personal use, but not for commercial projects.
+
 ---
 
 ## Tools and resources
 
-- **[Suno](https://suno.com)**: the main track generator (free plan: 50 credits a day, no downloads)
+- **[Suno](https://suno.com)**: the main track generator (free plan: 50 credits a day, only a few trial downloads)
 - **[Udio](https://udio.com)**: song downloads turned off, see the section above
 - **[ElevenLabs Sound Effects](https://elevenlabs.io/sound-effects)**: short sounds from prompts
 - **[Soundraw](https://soundraw.io)**: background music, licensed under the service's terms
@@ -280,4 +282,4 @@ Write 4 lines + a 2-line chorus
 
 ## Next lesson
 
-→ [AI presentations: Gamma, Beautiful.ai and PowerPoint with Claude](70-ai-presentations.md): building a presentation from an idea
+→ [How much to spend on AI](00e-investment-roadmap.md): working out which subscriptions you need and what they cost

@@ -8,7 +8,7 @@
 
 Building a website used to be like building a house: you needed an architect (a designer), a foreman (a front-end developer who turns the design into a working page), a crew (developers), and several weeks of work. With Claude Code, it's like having a skilled builder on call: you describe in words what you want, it builds it, and you make adjustments as you go.
 
-You don't need to know how to code for this lesson. You'll be describing, looking and asking for changes. It's also the first step if you later want to build an app with Claude Code.
+You don't need to know how to code for this lesson. You'll be describing, looking and asking for changes. You do need Claude Code; the lesson [Claude Code desktop](05b-claude-code-desktop.md) shows how to install it. It's also the first step if you later want to build an app with Claude Code.
 
 ---
 
@@ -73,6 +73,8 @@ You've opened the site in your browser and taken a look. Now you make adjustment
 
 Each change is one sentence in plain English. The agent finds the right spot in the code and changes it. You don't look at the code or edit anything by hand.
 
+In a draft like this, the agent makes up testimonials, numbers and photos as placeholders. For a real client, replace them with the client's real information: made-up testimonials and numbers mislead customers.
+
 #### Stage 3: Check it on different devices
 
 The agent has already made the design responsive, but it's worth checking:
@@ -97,9 +99,9 @@ python3 -m http.server 3000 --bind 127.0.0.1
 npx serve .
 ```
 
-Open your browser at `http://localhost:3000` and you'll see the site as if it were already on the internet, except only you can see it.
+Open your browser at `http://localhost:3000` and you'll see the site as if it were already on the internet, except only you can see it. In the Claude desktop app, Claude Code opens the site for you in the built-in Browser pane.
 
-**Why this matters:** some things don't work when you simply open the HTML file (API requests, fonts from Google Fonts). A local server reproduces real-world conditions.
+**Why this matters:** some things don't work when you simply double-click the HTML file (requests for data and APIs, JavaScript modules). A local server reproduces real-world conditions.
 
 ---
 
@@ -112,21 +114,21 @@ Open your browser at `http://localhost:3000` and you'll see the site as if it we
 **Cost:** the Hobby plan is free, but only for personal, non-commercial projects. For a client's site or any commercial site, you need the paid Pro plan (as of October 2026: $20 a month per developer, which includes $20 of credit for usage). Check the current terms at vercel.com/pricing. If you need a free option for a client's site, look at Cloudflare Pages (the lesson [24/7 deployment: Cloudflare Workers](18-deployment-cloudflare.md)) and check the terms on its pricing page.
 
 **How to deploy:**
-1. Upload your code to GitHub, a website that stores code projects (you can ask the agent to do this)
+1. Upload your code to GitHub, a website that stores code projects (you need a GitHub account and have to sign in yourself; you can ask the agent to do the upload)
 2. Connect the repository (your project's folder on GitHub) to Vercel (vercel.com)
 3. Click Deploy
 4. Get a URL like `fitness-carter.vercel.app`
 5. You can connect your own domain
 
-**Automatic updates:** every time the agent makes changes and you commit them to GitHub (a commit is a saved snapshot of your changes), Vercel updates the site automatically. A deploy takes 30-60 seconds.
+**Automatic updates:** every time the agent makes changes and you commit them (a commit is a saved snapshot of your changes) and push them to GitHub, Vercel updates the site automatically.
 
 #### GitHub Pages
 
-**Cost:** free, as long as the code is public
+**Cost:** free for public repositories (everyone can see the code); private ones need a paid GitHub plan
 
-**When to choose it:** static sites with no server-side code, when you don't mind everyone being able to see your code.
+**When to choose it:** static sites with no server-side code, when you don't mind everyone being able to see your code. GitHub's terms say GitHub Pages isn't meant for online stores or sites whose main purpose is selling.
 
-**How to deploy:** repository → Settings → Pages → choose a branch → Save.
+**How to deploy:** repository → Settings → Pages → under "Build and deployment," set the source to Deploy from a branch → choose a branch → Save.
 
 ---
 
@@ -137,7 +139,7 @@ Open your browser at `http://localhost:3000` and you'll see the site as if it we
 A static site can't receive form submissions on its own (it has no server side). Your options:
 
 - **Formspree**: has a free plan with a monthly limit on submissions (check the current limit on their pricing page); you just point the form's action at their URL
-- **Netlify Forms**: if you deploy on Netlify, forms work out of the box
+- **Netlify Forms**: if you deploy on Netlify, turn on form detection in the settings and add a netlify attribute to the form
 - **EmailJS**: sends the form straight from the browser through their API
 
 The agent knows all of these services and will set one up if you ask.
@@ -185,7 +187,7 @@ Price and timing depend on the market, the niche and how many rounds of revision
 
 - Complex web apps (user logins, databases, real-time features) need more than HTML/CSS/JS: they need a backend (the server side that stores data and runs the logic). Claude Code can handle it, but it's considerably harder and takes longer
 - The design won't always come out "wow" on the first try; it takes iteration
-- The agent doesn't draw unique illustrations and icons (it uses stock images or emoji)
+- The agent doesn't draw complex illustrations or photos: it can make simple icons in code, and for the rest it uses free stock images or emoji
 - You need to supply original photos yourself
 
 **Practical takeaway:** for landing pages and simple business sites, it's an excellent tool. For complex web apps with users, payments and real data, you need more knowledge of architecture (the lessons [APIs and integrations](16-apis-integration.md) and [24/7 deployment: Cloudflare Workers](18-deployment-cloudflare.md)).
@@ -208,7 +210,7 @@ The process:
 4. Deploy to Vercel or GitHub Pages
 5. Share the link: you have a live website
 
-⚠️ If it's a real client's site (Option C), remember that Vercel's free Hobby plan is for non-commercial projects only (see the deploy section above). And GitHub Pages needs the code to be public, so keep any private details out of it.
+⚠️ If it's a real client's site (Option C), remember that Vercel's free Hobby plan is for non-commercial projects only (see the deploy section above). GitHub Pages needs the code to be public and isn't meant for sites whose main purpose is selling, so keep any private details out of it.
 
 ---
 
@@ -234,7 +236,7 @@ Current prices and versions: [What's current](https://aimayak.com/en/now/).
 ## Common mistakes
 
 **Mistake 1: Not testing on phone screens**
-The site looks perfect on a desktop, but on a phone the text runs off the screen and the buttons are too small. Always check: "Check how it looks on a screen 375px wide" (that's the width of the iPhone SE, the narrowest popular screen).
+The site looks perfect on a desktop, but on a phone the text runs off the screen and the buttons are too small. Always check: "Check how it looks on a screen 375px wide" (that's the width of the iPhone SE, one of the narrower popular screens).
 
 **Mistake 2: Forgetting the meta viewport tag**
 Without `<meta name="viewport" content="width=device-width, initial-scale=1.0">` the site looks like a shrunken desktop version on a phone. Claude usually adds it, but check.
@@ -264,4 +266,6 @@ Huge images, unoptimized fonts, heavy animations, and the site takes 8 seconds t
 
 ## Next lesson
 
-→ [APIs and integrations](16-apis-integration.md): how programs talk to each other and how to use that
+→ [The lesson you didn't expect](100-intrigue.md): the course finale, the qualities of yours that AI won't replace
+
+In the library, optional: [APIs and integrations](16-apis-integration.md): how programs talk to each other and how to use that

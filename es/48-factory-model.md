@@ -10,6 +10,8 @@ Tu primera casa tarda 3 meses en construirse. La décima tarda 3 semanas, porque
 
 Si vendes servicios de IA como freelancer o como actividad extra, así es como tomas proyectos parecidos sin que las horas se acumulen cada vez.
 
+Los ejemplos de esta lección vienen de proyectos hechos con código: esos se construyen en Claude Code, que se ve en el siguiente módulo del curso y en la biblioteca avanzada. No necesitas entender cada nombre de archivo. Si por ahora trabajas sin código, quédate con el principio: una plantilla puede ser un juego de prompts, la estructura de una propuesta o una lista de verificación para la entrega.
+
 ---
 
 ## Conceptos clave
@@ -17,7 +19,7 @@ Si vendes servicios de IA como freelancer o como actividad extra, así es como t
 - **Fábrica**: un sistema de plantillas para crecer: 80% estándar + 20% personalización
 - **Repositorio plantilla**: el punto de partida de cada tipo de proyecto, para nunca empezar de cero (un repo, abreviatura de repositorio, es una carpeta de proyecto que se controla con Git)
 - **SOP (procedimiento estándar de operación)**: un proceso documentado para cada tipo de proyecto
-- **Tiempo de entrega**: baja de 2 semanas a 3 días gracias a las plantillas
+- **Tiempo de entrega**: baja de 2 semanas a 5 días hábiles gracias a las plantillas
 - **Un equipo de agentes**: subagentes especializados de Claude (agentes auxiliares, cada uno con una sola tarea concreta) para cada plantilla
 - **Sobreprecio**: más rápido = más caro (según el valor, no según el tiempo)
 
@@ -78,9 +80,9 @@ template-base/
 └── README-template.md         ← plantilla de documentación
 ```
 
-(Una tarea cron es una tarea que corre con un calendario. Un webhook es un mensaje que una app le manda a otra cuando pasa algo.)
+(Una tarea cron es una tarea que corre con un calendario. Un webhook es un mensaje que una app le manda a otra cuando pasa algo. Un archivo .env guarda la configuración y las claves secretas de un proyecto.)
 
-Proyecto nuevo = `git clone template-base new-project-name`. La infraestructura queda lista en 30 minutos, no en 9 horas.
+Proyecto nuevo = `git clone template-base new-project-name` (un comando de Git que copia la plantilla a una carpeta nueva). La infraestructura queda lista en 30 minutos, no en 9 horas.
 
 **Tipo 2: Plantilla de flujo de trabajo**
 
@@ -190,11 +192,11 @@ El cliente paga un poco más y recibe el resultado el doble de rápido. En este 
 
 ### Un equipo de agentes para cada plantilla
 
-Cada plantilla de flujo trae subagentes especializados:
+Cada plantilla de flujo trae subagentes especializados. Claude Code los busca en la carpeta `.claude/agents/` dentro del proyecto:
 
 **template-newsletter:**
 ```
-agents/
+.claude/agents/
 ├── researcher.md     ← encuentra y evalúa noticias
 ├── writer.md         ← escribe el contenido con la voz de la marca
 ├── assembler.md      ← arma el correo en HTML
@@ -203,7 +205,7 @@ agents/
 
 **template-lead-gen:**
 ```
-agents/
+.claude/agents/
 ├── prospector.md     ← encuentra clientes potenciales
 ├── personalizer.md   ← escribe correos personalizados
 ├── qualifier.md      ← califica la calidad de los prospectos
@@ -274,10 +276,10 @@ Empieza a construir la plantilla después de tu segundo proyecto del mismo tipo.
 
 **Ejercicio: crea tu primera plantilla**
 
-1. Toma un flujo que ya hayas construido (Newsletter Automation, del curso)
+1. Toma un trabajo que ya hayas hecho al menos una vez: un servicio de tus paquetes, o una automatización si ya construiste alguna (el ejemplo de abajo usa la automatización de boletines de la biblioteca avanzada)
 
-2. Crea una carpeta `templates/newsletter-automation-template/`:
-   - Copia todos los archivos del proyecto
+2. Crea una carpeta `templates/newsletter-automation-template/` (cambia newsletter-automation por el nombre de tu propio trabajo):
+   - Copia ahí todos los archivos del proyecto: documentos, prompts, hojas de cálculo y el código, si lo hay
    - Reemplaza todos los datos propios del cliente con marcadores (`[CLIENT_NAME]`, `[BRAND_COLOR]`, `[API_KEY]`)
    - Haz una lista de lo que hay que reemplazar al personalizar
 
@@ -289,7 +291,7 @@ Empieza a construir la plantilla después de tu segundo proyecto del mismo tipo.
 
 4. Estima: si hubieras tenido esta plantilla desde el inicio, ¿cuántos días antes habrías terminado el proyecto?
 
-5. Calcula el sobreprecio: si sin plantilla un proyecto te toma 10 días y cobras $2,000, ¿cuántos días te toma con plantilla y cuál es el nuevo precio?
+5. Calcula el sobreprecio: si sin plantilla un proyecto te toma 10 días y cobras $2,000, ¿cuántos días te toma con plantilla y cuál es el nuevo precio? Compara con el ejemplo de esta lección: el doble de rápido y un poco más caro, es decir, unos 5 días y unos $2,200. Tu ingreso por día pasa entonces de $200 a $440.
 
 **Meta:** una plantilla funcionando en la carpeta `templates/`. Ese es el primer ladrillo de tu fábrica.
 
@@ -305,7 +307,7 @@ Empieza a construir la plantilla después de tu segundo proyecto del mismo tipo.
 | Flujo de contenido | 45 horas / 2 sem | 22 horas / 5 días | 51% del tiempo | $2,400 por 22 h = $109/hora |
 | Integración con CRM | 70 horas / 3 sem | 35 horas / 8 días | 50% del tiempo | $4,200 por 35 h = $120/hora |
 
-**En resumen:** en este ejemplo, una fábrica duplica tu tarifa efectiva: $50-60/hora sin plantillas → $100-125/hora con plantillas, con el mismo precio para el cliente. Es un cálculo de práctica, no un pronóstico de ganancias.
+**En resumen:** en este ejemplo, una fábrica duplica tu tarifa efectiva: $50-60/hora sin plantillas → $107-125/hora con plantillas, con casi el mismo precio para el cliente. Es un cálculo de práctica, no un pronóstico de ganancias.
 
 ---
 
@@ -321,7 +323,7 @@ Empieza a construir la plantilla después de tu segundo proyecto del mismo tipo.
 ## Lecciones relacionadas
 
 - **→ [Empaquetado](42-packaging.md)**: los paquetes Básico/Pro/Empresarial = configuraciones ya hechas para tu fábrica
-- **→ [Entrega y conservación de clientes](46-delivery-retention.md)**: el paquete de entrega = parte del SOP de tu siguiente proyecto
+- **→ [Entrega y conservación de clientes](46-delivery-retention.md)**: el paquete de entrega de esa lección = parte del SOP de tu siguiente proyecto
 - **→ [Casos de monetización](47-monetization-cases.md)**: los patrones de los 5 casos = la base para 5 tipos de plantillas
 
 ---

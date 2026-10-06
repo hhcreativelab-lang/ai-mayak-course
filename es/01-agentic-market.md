@@ -29,7 +29,7 @@ Piensa en la construcción en los tiempos en que un solo albañil ponía cada la
 
 Las estimaciones del tamaño del mercado de la IA agéntica varían mucho de una firma de investigación a otra, así que esta lección no da cifras concretas en dólares. Si te encuentras una cifra en un artículo, revisa de quién es el informe y para qué año hace la proyección. Busca panoramas recientes de Gartner y McKinsey (al final de la lección hay sugerencias de búsqueda).
 
-Para darte una idea de la dirección: en 2025, Gartner pronosticó que para finales de 2026 hasta el 40% de las aplicaciones empresariales incluirían agentes de IA para tareas específicas, frente a menos del 5% en 2025. Es un pronóstico, no un hecho. Pero muestra la escala: la tecnología ya está dentro de productos que la gente usa todos los días.
+Para darte una idea de la dirección: en agosto de 2025, la firma de análisis Gartner pronosticó que para finales de 2026 hasta el 40% de las aplicaciones empresariales incluirían agentes de IA para tareas específicas, frente a menos del 5% en 2025 (comunicado de prensa de Gartner del 26 de agosto de 2025). Es un pronóstico, no un hecho. Pero muestra la escala: la tecnología ya está dentro de productos que la gente usa todos los días.
 
 **Lo que está pasando ahora mismo:**
 - Las funciones agénticas ya vienen integradas en productos cotidianos: Claude tiene Claude Code y Cowork, ChatGPT tiene un modo Work para tareas, y la mayoría de los asistentes grandes ya tienen modos de "agente". Qué está disponible en cada plan lo encuentras en la página [Lo vigente](https://aimayak.com/now/).
@@ -80,9 +80,9 @@ Pasas del papel de "albañil" al papel de "arquitecto".
 
 ### Quién ya lo hace: ejemplos reales
 
-**Morgan Stanley**: desde 2023, el banco les da a sus asesores financieros un asistente de IA construido sobre modelos de OpenAI. Encuentra lo que hace falta en una gran biblioteca interna de estudios y documentos y ayuda a los asesores a responder más rápido a los clientes. Otra herramienta toma notas durante las reuniones y redacta los correos de seguimiento, que el asesor edita antes de enviarlos.
+**Morgan Stanley**: desde 2023, el banco les da a sus asesores financieros un asistente de IA construido sobre modelos de OpenAI. Encuentra lo que hace falta en una gran biblioteca interna de estudios y documentos y ayuda a los asesores a responder más rápido a los clientes. Otra herramienta toma notas durante las reuniones (con el consentimiento del cliente) y redacta los correos de seguimiento, que el asesor edita antes de enviarlos.
 
-**Klarna** (fintech): en 2024, la empresa dijo que su asistente de IA de atención al cliente hacía un trabajo comparable al de 700 empleados. En 2025, la dirección reconoció que se había pasado al recortar personal y volvió a garantizar que los clientes pudieran hablar con una persona real. La lección: el agente se encarga de las solicitudes rutinarias, y los casos complejos tienen que llegar a una persona.
+**Klarna** (una empresa de pagos en línea): en febrero de 2024, la empresa dijo que su asistente de IA de atención al cliente hacía un trabajo comparable al de 700 agentes de tiempo completo (comunicado de prensa de Klarna). En mayo de 2025, su director general le dijo a Bloomberg que fijarse demasiado en el costo había bajado la calidad del servicio, y prometió que los clientes siempre podrían hablar con una persona real. La lección: el agente se encarga de las solicitudes rutinarias, y los casos complejos tienen que llegar a una persona.
 
 **Notion**: integró un agente de IA en su producto. Cuando un usuario se lo pide, crea páginas, llena bases de datos y arma reportes (la lista completa de lo que puede hacer está en la documentación de Notion).
 
@@ -111,7 +111,7 @@ Ese es uno de los caminos que muestra este curso: aprender a construir, converti
 1. Encuentra tres casos de estudio de industrias distintas (puedes buscar "AI agents case study 2026" o "casos de uso de agentes de IA 2026")
 2. Para cada uno, anota:
    - Qué tarea resuelve el sistema agéntico
-   - Qué resultado obtuvo la empresa (con números, si los hay)
+   - Qué resultado obtuvo la empresa (con números, si los hay) y quién lo dice: la propia empresa, el vendedor de la solución o una fuente independiente
    - Cómo era antes (cómo lo hacían sin un agente)
 3. Escribe una frase: "En mi negocio, o para mis clientes, la automatización agéntica podría ayudar con ___"
 
@@ -139,9 +139,9 @@ Ese es uno de los caminos que muestra este curso: aprender a construir, converti
 - **[Anthropic Blog](https://www.anthropic.com/news)**: ejemplos de Claude usado en producción
 - **Gartner: Agentic AI**: pronósticos oficiales del mercado (busca: "Gartner Agentic AI forecast 2030")
 - **McKinsey: The state of AI**: un informe anual sobre el mercado de la IA (busca: "McKinsey Global Survey AI")
-- **a16z AI Canon**: una colección de lecturas sobre IA agéntica de Andreessen Horowitz (en inglés)
+- **a16z AI Canon**: una colección de lecturas sobre la IA moderna, de 2023, del fondo de inversión Andreessen Horowitz (en inglés)
 
-→ Mira la lección [Flujos de trabajo agénticos frente a la automatización tradicional](02-why-agentic-beats-traditional.md) para una comparación detallada con Zapier y n8n
+→ En la biblioteca, opcional: la lección [Flujos de trabajo agénticos frente a la automatización tradicional](02-why-agentic-beats-traditional.md) para una comparación detallada con Zapier y n8n
 → Mira la lección [Primeros clientes](38-monetization-clients.md) para ver cómo ofrecer tus habilidades agénticas a clientes
 
 ---
@@ -150,7 +150,7 @@ Ese es uno de los caminos que muestra este curso: aprender a construir, converti
 
 > La IA agéntica ya está integrada en productos de uso masivo. Las estimaciones del mercado varían, así que fíjate en la dirección, no en una sola cifra impresionante.
 
-> Las grandes empresas están adoptando flujos de trabajo agénticos, los pequeños negocios van a seguir, y alguien tendrá que construírselos. Pero los resultados dependen de la tarea que elijas y del control de calidad.
+> Las grandes empresas están adoptando agentes; a los pequeños negocios también les pueden servir, y alguien tendrá que construírselos. Pero los resultados dependen de la tarea que elijas y del control de calidad.
 
 > Se juntaron tres factores justo ahora: LLM confiables + infraestructura lista + Claude Code como una puerta de entrada que no exige saber programar.
 
@@ -158,4 +158,4 @@ Ese es uno de los caminos que muestra este curso: aprender a construir, converti
 
 ## Próxima lección
 
-→ [Flujos de trabajo agénticos frente a la automatización tradicional](02-why-agentic-beats-traditional.md): dónde está la verdadera ventaja
+→ [IA sin código para quienes no programan: v0, Webflow, Framer](77-no-code-ai.md): tu primera construcción con herramientas de IA que no requieren código

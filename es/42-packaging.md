@@ -2,7 +2,7 @@
 
 **Tiempo:** unos 30 min de lectura + 30 min de práctica
 
-Las cantidades en dólares de los ejemplos de abajo son inventadas. Muestran cómo se arman los paquetes, no precios de mercado ni un pronóstico de ingresos. Calcula tu propio precio con la lección [Precios basados en valor](39-monetization-pricing.md).
+Las cantidades en dólares de los ejemplos de abajo son inventadas. Muestran cómo se arman los paquetes, no precios de mercado ni un pronóstico de ingresos. Calcula tu propio precio en la siguiente lección, [Precios basados en valor](39-monetization-pricing.md).
 
 ---
 
@@ -15,10 +15,10 @@ Sin un menú, el cliente no sabe qué pedir ni cuánto cuesta. Te pregunta "¿Y 
 ## Conceptos clave
 
 - **Servicio frente a producto**: un servicio es distinto cada vez, un producto se repite. Los paquetes hacen que un servicio funcione más como un producto
-- **3 paquetes**: la psicología de la elección. La gente elige mejor entre tres opciones que entre una o cinco
+- **3 paquetes**: la psicología de la elección. Normalmente es más fácil elegir entre tres opciones que entre una, o entre cinco o más (una hipótesis de trabajo, no una ley)
 - **Alcance**: una lista clara de lo que está incluido y lo que NO. Sin ella, el crecimiento del alcance (scope creep: el proyecto que va creciendo sin que nadie lo diga, más allá de lo acordado) es inevitable
 - **SLA**: un acuerdo de nivel de servicio (Service Level Agreement). Tiempo de respuesta, disponibilidad (qué tan confiable sigue funcionando el sistema), cómo funciona el soporte
-- **Documentación de entrega**: lo que el cliente recibe además del código: instrucciones, capacitación, usuarios y accesos
+- **Documentación de entrega**: lo que el cliente recibe además del sistema mismo: instrucciones, capacitación, usuarios y accesos
 - **Niveles de precio**: niveles que reflejan la cantidad de trabajo, la rapidez y el nivel de soporte
 
 ---
@@ -67,13 +67,13 @@ La gente muchas veces elige la opción de en medio (a esto se le llama efecto de
 | | Basic | Pro | Enterprise |
 |---|---|---|---|
 | **Precio** | \$800 | \$2,200 | \$5,000 |
-| **Qué construimos** | Boletín básico | Boletín + CRM | Boletín + CRM + analítica + pruebas A/B |
+| **Qué construimos** | Boletín básico | Boletín + CRM (un sistema para llevar el registro de clientes) | Boletín + CRM + analítica + pruebas A/B (comparar dos versiones de un correo) |
 | **Fuentes de noticias** | 1 (Perplexity) | 3 (Perplexity + RSS + a la medida) | Ilimitadas |
 | **Destinatarios** | Hasta 500 | Hasta 5,000 | Ilimitados |
 | **Infografías** | ❌ | ✅ (básicas) | ✅ (a la medida) |
 | **Marca** | Plantilla | Adaptada a tu marca | Totalmente a la medida |
 | **Documentación** | README | Video explicativo | SOP + capacitación del equipo |
-| **Soporte** | 2 semanas por correo | 1 mes en Slack | 3 meses + SLA de 24 horas |
+| **Soporte** | 2 semanas por correo | 1 mes en Slack | 3 meses + SLA de 4 horas |
 | **Plazo** | 5 días | 10 días | 3-4 semanas |
 
 ---
@@ -82,18 +82,18 @@ La gente muchas veces elige la opción de en medio (a esto se le llama efecto de
 
 🎨 **Imagínalo así:** un documento de alcance es como un menú con el precio junto a cada platillo. "Todo incluido" sin una lista significa que el cliente pide postre, luego otro postre, y luego dice "Pero dijiste que todo estaba incluido". Con un menú claro, sabe qué trae el combo y qué cuesta aparte.
 
-El crecimiento del alcance es la principal razón por la que los proyectos terminan perdiendo dinero. En el camino, el cliente pide "cambios pequeños" que juntos duplican la cantidad de trabajo.
+El crecimiento del alcance es una razón frecuente por la que los proyectos terminan perdiendo dinero. En el camino, el cliente pide "cambios pequeños" que juntos duplican la cantidad de trabajo.
 
 **Regla:** si el acuerdo no dice de forma explícita que algo está incluido, no está incluido.
 
 **Plantilla de documento de alcance** (es una estructura, no un documento legal; pide a un abogado de tu país que revise tu contrato con el cliente):
 
 ```markdown
-## Proyecto: Newsletter Automation, paquete Pro
+## Proyecto: Automatización del boletín, paquete Pro
 
 ### Incluido:
 - Configuración y puesta en marcha del flujo principal
-- Integración con Perplexity, RSS (hasta 3 fuentes) y tu dominio
+- Integración con Perplexity, canales RSS de noticias (hasta 3 fuentes) y tu dominio
 - Plantilla de correo HTML adaptada a tu guía de marca
 - Bot de Slack para aprobar cada número antes de que salga
 - Registro en Google Sheets de cada envío
@@ -147,13 +147,13 @@ Una buena entrega es lo que separa a un profesional del freelancer promedio. Hay
 **Basic: README.md (instrucciones por escrito)**
 
 ```markdown
-# Newsletter Automation: Instrucciones
+# Automatización del boletín: instrucciones
 
 ## Cómo enviar el boletín
-1. Abre Slack y escríbele al bot: "Start newsletter"
+1. Abre Slack y escríbele al bot: "Enviar boletín"
 2. Escribe el tema de esta semana
 3. Espera la vista previa (normalmente 2-3 minutos)
-4. Revisa el correo y haz clic en "Send" (Enviar) o "Edit" (Editar)
+4. Revisa el correo y haz clic en "Enviar" o "Editar"
 
 ## Dónde ver las estadísticas
 Abre Google Sheets: [enlace]
@@ -181,7 +181,7 @@ Un documento completo de operación para el equipo del cliente. Incluye instrucc
 
 ### Vender más a través de los paquetes: el camino natural
 
-🎨 **Imagínalo así:** vender más a través de los paquetes funciona como un taller mecánico. Llegaste por un cambio de aceite, y el mecánico te muestra que pronto vas a tener que cambiar también las pastillas de freno. Ya estás ahí y ya le tienes confianza, así que tiene sentido. El backlog de un cliente es tu lista de "pastillas de freno casi gastadas" que notaste mientras hacías el trabajo.
+🎨 **Imagínalo así:** vender más a través de los paquetes funciona como un taller mecánico. Llegaste por un cambio de aceite, y el mecánico te muestra que pronto vas a tener que cambiar también las pastillas de freno. Ya estás ahí y ya le tienes confianza, así que tiene sentido. La lista de pendientes de un cliente es tu lista de "pastillas de freno casi gastadas" que notaste mientras hacías el trabajo.
 
 Los paquetes crean puntos naturales de crecimiento:
 
@@ -195,15 +195,15 @@ Cliente Pro, 3 meses después:
 → Sube a Enterprise, o un proyecto de analítica aparte
 ```
 
-Para cada cliente, lleva un backlog de todo lo que mencionó como "estaría bien tener". Esa es tu lista de oportunidades de venta adicional.
+Para cada cliente, lleva una lista de pendientes (en inglés, backlog) con todo lo que mencionó como "estaría bien tener". Esa es tu lista de posibles ventas adicionales.
 
 ---
 
 ## Práctica
 
-**Ejercicio: crea paquetes para tu propia automatización**
+**Ejercicio: crea paquetes para tu propio servicio**
 
-Toma un proyecto que ya hayas construido (automatización de un boletín, de facturas o uno tuyo).
+Toma un servicio que quieras ofrecer a clientes (por ejemplo, la idea que elegiste en las lecciones sobre el nicho) o un proyecto que ya hayas hecho.
 
 1. Llena la tabla de tres paquetes:
 
@@ -241,7 +241,7 @@ Toma un proyecto que ya hayas construido (automatización de un boletín, de fac
 | **Plazo** | 3-5 días | 7-10 días | 2-4 semanas |
 | **Pago** | 100% por adelantado | 50/50 | 30/40/30 |
 
-Copia esta tabla y adáptala a tu tipo de automatización. El paquete de en medio (Pro) es el que quieres vender más seguido.
+Copia esta tabla y adáptala a tu propio servicio. El paquete de en medio (Pro) es el que quieres vender más seguido.
 
 ---
 
@@ -255,9 +255,9 @@ Copia esta tabla y adáptala a tu tipo de automatización. El paquete de en medi
 
 ## Lecciones relacionadas
 
-- **→ [Precios basados en valor](39-monetization-pricing.md)**: cómo calcular la base de los precios de tus paquetes con precios basados en valor
-- **→ [El modelo de fábrica](48-factory-model.md)**: las plantillas aceleran la entrega de los paquetes y suben tu margen
-- **→ [Entrega y retención](46-delivery-retention.md)**: cómo entregarle un paquete al cliente de forma profesional
+- **→ [Precios basados en valor](39-monetization-pricing.md)**: la siguiente lección, sobre cómo calcular la base de los precios de tus paquetes a partir del valor para el cliente
+- **→ [El modelo de fábrica](48-factory-model.md)**: las plantillas aceleran la entrega de los paquetes y suben tu margen (lo que te queda después de los costos); lección que viene más adelante
+- **→ [Entrega y retención](46-delivery-retention.md)**: cómo entregarle un paquete al cliente de forma profesional; lección que viene más adelante
 
 ---
 
@@ -266,9 +266,9 @@ Copia esta tabla y adáptala a tu tipo de automatización. El paquete de en medi
 - **Notion**: [notion.com/templates](https://www.notion.com/templates). Para una página pública con tus paquetes (la puedes insertar en tu portafolio)
 - **Google Docs**: para documentos de alcance (fácil de compartir con el cliente para que lo revise)
 - **Loom**: [loom.com](https://www.loom.com/). Para grabar el video explicativo del paquete Pro (el plan gratis tiene límites; mira el sitio web)
-- **PandaDoc / DocuSign**: para firmar electrónicamente el documento de alcance (cuando crezca tu volumen)
-- **Stripe**: [stripe.com](https://stripe.com/). Recibe pagos; puedes crear un Payment Link (enlace de pago) para cada paquete (revisa en su sitio si está disponible en tu país)
-- **Tally**: [tally.so](https://tally.so/). Formularios iniciales gratis (el cliente llena un cuestionario antes de empezar el proyecto)
+- **PandaDoc / Docusign**: para firmar electrónicamente el documento de alcance (cuando crezca tu volumen)
+- **Stripe**: [stripe.com](https://stripe.com/). Recibe pagos; puedes crear un Payment Link (enlace de pago) para cada paquete. No está disponible en todos los países: a octubre de 2026, en América Latina solo abre cuentas en Brasil y México; la lista completa está en su sitio
+- **Tally**: [tally.so](https://tally.so/). Formularios iniciales, con un plan gratis (el cliente llena un cuestionario antes de empezar el proyecto)
 - **Calendly**: [calendly.com](https://calendly.com/). Un enlace para agendar una llamada, directo en tu página de paquetes
 
 ---
@@ -281,10 +281,10 @@ Copia esta tabla y adáptala a tu tipo de automatización. El paquete de en medi
 
 > Un SLA no tiene que ser un documento legal. Tres parámetros sencillos (tiempo de respuesta, disponibilidad, qué no está cubierto) son suficientes para un pequeño negocio.
 
-> Lleva un backlog de ventas adicionales. Cada "estaría bien tener" de un cliente es tu siguiente contrato. Anótalo.
+> Lleva una lista de pendientes de cada cliente. Cada "estaría bien tener" puede ser tu siguiente contrato. Anótalo.
 
 ---
 
 ## Siguiente lección
 
-→ [Diseño de embudos para productos de IA: de visitante a cliente](42b-funnel-design-ai-products.md)
+→ [Cómo ponerle precio a tus servicios de IA: precios basados en valor](39-monetization-pricing.md)

@@ -1,10 +1,10 @@
 # AI for your family: kids, teens and seniors
 
-**Time:** about 25 min reading + 35 min practice
+**Time:** about 25 min reading + 60 min for the family conversation (the weekend project is extra)
 
 ---
 
-> ⚠️ **About age limits.** Service rules change, and each service sets its own minimum age. As of October 2026: under Anthropic's rules, Claude (claude.ai and the app) is for adults 18 and older only; ChatGPT allows users from age 13 and offers parental controls through linked accounts. Before you give a child any AI service, open its rules and check the minimum age. This lesson offers general guidance, not medical, legal or psychological advice.
+> ⚠️ **About age limits.** Service rules change, and each service sets its own minimum age. As of October 2026: under Anthropic's rules, Claude (claude.ai and the app) is for adults 18 and older only; ChatGPT allows users from age 13 (with a parent's permission until 18) and offers parental controls through linked accounts. Before you give a child any AI service, open its rules and check the minimum age. This lesson offers general guidance, not medical, legal or psychological advice.
 
 ---
 
@@ -26,12 +26,12 @@ In this lesson we'll look at how to build good AI habits for the whole family, f
 
 **Ages 5-10: supervised only**
 - ✓ AI is used together with a parent (never alone)
-- ✓ Educational tools only (Khanmigo)
+- ✓ Educational tools made for kids only (for example, Khanmigo, which families can get in the US)
 - ✓ No social AI (Snapchat's My AI restricted)
 - ✓ Limited time (like TV)
 
 **Ages 11-15: partial independence**
-- ✓ Can use it alone, with a weekly review by a parent
+- ✓ From 13, can use it alone, with a weekly check-in with a parent
 - ✓ Learns the difference between "AI helps me learn" and "AI does it for me"
 - ✓ Parental controls turned on
 - ✓ Family rules written down and signed
@@ -54,7 +54,7 @@ In this lesson we'll look at how to build good AI habits for the whole family, f
 ## Key concepts
 
 - **Supervision tier**: how much independence a child has with AI. Full supervision (a parent sits right there), checkpoint supervision (a weekly review), trust but verify (full access, with occasional check-ins)
-- **Parental controls**: limits built into AI tools, such as age gates, content filters and conversation logs for the parent
+- **Parental controls**: limits built into AI tools, such as age checks, content filters, schedules and switches for individual features; kids' learning tools may also show the parent the chat history
 - **AI as a tutor vs. AI as a ghostwriter**: the critical difference. Either AI explains how to solve it (you learn), or it solves it for you (you don't)
 - **Hallucinations**: AI confidently making things up. It can give a wrong answer with total confidence, and kids can't spot this unless someone teaches them
 - **Privacy boundaries**: what never goes into AI: names, documents, medical records, finances, photos of children
@@ -76,14 +76,14 @@ At this age, AI shouldn't be alone with a child. Not because "AI is bad," but be
 - AI helps make up bedtime stories (the parent generates the text in their own account and reads it aloud)
 - AI answers kids' questions ("Why is the sky blue?"), with a parent nearby
 - AI draws pictures from the child's description (Midjourney, with a parent)
-- Khanmigo from Khan Academy: an educational AI built with child safety in mind
+- Khanmigo from Khan Academy: an educational AI built with child safety in mind. A parent can see the chat history and gets alerts. Note that the family version is sold only in the US (as of October 2026); elsewhere, at this age, use an assistant from your own account with your child sitting next to you
 
 **What doesn't work:**
 - Snapchat's My AI without parental controls: a child asks about relationships, and AI answers as if it were talking to an adult
 - Regular general-purpose chatbots (ChatGPT and others): officially not meant for anyone under 13; the services' own rules don't allow it
 - ChatGPT's voice mode: a child can talk to it for hours with no one supervising
 
-**The time rule:** no more than 30 minutes a day of talking with AI at this age. It's not an electronic babysitter; it's a tool for exploring the world.
+**A time guideline:** no more than 30 minutes a day of talking with AI at this age (that's our suggestion, not an official standard). It's not an electronic babysitter; it's a tool for exploring the world.
 
 🎨 **Picture this:** AI at this age is like an encyclopedia at the public library. The child can page through it alone, but a grown-up sits nearby to explain whatever's confusing and to set things straight if the encyclopedia is out of date.
 
@@ -103,8 +103,8 @@ This is when kids start using AI on their own, and lots of them do. You won't be
 | Coding | "Explain why my code doesn't work" → you learn | "Write the program for my homework" → you copy it |
 
 **Rules for this age:**
-- Their own account (not a parent's): they learn to take responsibility for what they do
-- Weekly review: once a week, a parent looks at the chat history (with the teen's agreement, never in secret)
+- From 13, their own account (not a parent's) on a service that allows it: they learn to take responsibility for what they do. At 11 or 12, only together with an adult: the parent works in their own account and the child sits alongside
+- Weekly review: once a week, the teen shows a parent what they asked AI and talks it through (with the teen's agreement, never in secret)
 - No turning in AI-written work as your own: that's the line on academic honesty
 - Teach fact-checking: "AI said X? Check it on Wikipedia or with a Google search before you use it"
 
@@ -115,7 +115,7 @@ This is when kids start using AI on their own, and lots of them do. You won't be
 - Coding (ChatGPT as a mentor, from age 13; Claude only from 18)
 
 **What to block:**
-- AI companions (Replika, Character.AI): psychologically dangerous for teens. Emotional attachment to an AI takes the place of real relationships. Since November 2025, Character.AI has banned open-ended chats for users under 18 altogether
+- AI companions, meaning chatbots built for friendship and relationships (Replika, Character.AI). Common Sense Media's 2025 risk assessment found they pose unacceptable risks for anyone under 18: emotional attachment to an AI can take the place of real relationships. Since November 2025, Character.AI itself has shut off open-ended chats for users under 18
 - Unmoderated chats with AI bots on Discord servers
 - Generative AI used to make deepfakes of classmates (that's bullying)
 
@@ -125,7 +125,7 @@ This is when kids start using AI on their own, and lots of them do. You won't be
 
 #### Ages 16-18: AI for productivity and as a critical-thinking partner
 
-At this age, your kid is getting ready for an adult life where AI is like electricity: it's everywhere, and you can't get work done without it. The main job is to teach them to **check AI**, because in college and at work they'll use it every day.
+At this age, your kid is getting ready for an adult life where AI is like electricity: it's everywhere. The main job is to teach them to **check AI**, because in college and at work they'll use it every day.
 
 **The main lessons at this age:**
 
@@ -158,12 +158,12 @@ Specific situations where AI actually helps in family life. Not "transforming yo
 
 2. **Learning languages (conversations with AI)**
    - An assistant in voice mode for speaking practice (Claude or ChatGPT work for adults; for kids, follow each service's age rules)
-   - Duolingo Max (a paid plan; check the website for the current price): structured lessons with an AI tutor
+   - Duolingo Max (a paid subscription bought in the Duolingo mobile app; its AI features aren't available in every course): structured lessons plus conversation practice with AI
    - Prompt: "Have a conversation with me in Spanish at a beginner (A2) level about buying bread at a bakery. Correct my mistakes."
 
 3. **Creative projects (drawing, music, stories)**
    - Bedtime story generator: "Make up a 10-minute bedtime story about a girl named Emma and a talking cat, set in Ecuador"
-   - Midjourney draws the picture, and the child colors in the final version on paper
+   - Midjourney (a paid service) draws the picture, and the child colors in the final version on paper
 
 4. **Explaining hard things (how the internet works, why grass is green)**
    - "Explain electricity to a 7-year-old using a simple everyday comparison"
@@ -175,20 +175,22 @@ Specific situations where AI actually helps in family life. Not "transforming yo
 
 6. **Family finances (budget, savings goals)**
    - "We're a family of 4. Our income is $X and our fixed expenses are $Y. How much do we need to set aside to save $20,000 for a car in 3 years?"
-   - AI does the math; the family makes the decision
+   - AI does the math (double-check it with a calculator); the family makes the decision
 
 7. **Health (nutrition, exercise; NOT medical diagnoses)**
    - "Make a home workout plan, 3 times a week, 30 minutes each, for a 40-year-old man, no equipment"
+   - If you have a chronic condition or haven't exercised in a long time, show the plan to your doctor first
    - ❌ NOT "My stomach has hurt for two days, what is it?" That's a question for a doctor
 
 8. **Travel (planning a trip)**
    - "Family of 2 adults + 2 kids (ages 8 and 12), one week in the Great Smoky Mountains, budget $2,000. Plan a route with kid-friendly activities"
-   - AI makes a draft → the parents adjust it
+   - AI makes a draft → the parents adjust it (check prices, schedules and opening hours on official sites)
 
 9. **Paperwork (letters and requests)**
    - A letter to the school about transferring your child
    - A request to your bank for a statement
    - A letter to your landlord or HOA
+   - Leave ID numbers and your address out of the request: add them to the finished letter yourself
 
 10. **Memories (help writing letters to older relatives)**
     - "Help me organize a story about Grandpa for a family book. Here's what I remember: [facts]"
@@ -230,18 +232,18 @@ Write these rules down as a family and revisit them every 6 months.
 
 | Tool | Price (October 2026) | Age | What's good about it | Where to get it |
 |---|---|---|---|---|
-| **Khanmigo (Khan Academy)** | paid for families (check the website for the current price) | school-age kids | An educational AI built with child safety in mind; free for teachers | https://www.khanacademy.org/khanmigo |
+| **Khanmigo (Khan Academy)** | paid for families (check the website for the current price); free for teachers | school-age kids; an adult signs up; the family version is US only | An educational AI built for kids: a parent sees the chat history and gets alerts; one parent account covers several children | https://www.khanacademy.org/khanmigo |
 | **ChatGPT (Free / Go / Plus)** | from $0 | 13-17 with parental controls (linked accounts) | A parent can set quiet hours and turn off voice, memory and images; the parent doesn't see what the chats say | https://openai.com/index/introducing-parental-controls/ |
 | **Claude Free** | $0 | 18+ (adults only) | A general learning assistant for parents; good with long texts | https://claude.ai |
 | **Snapchat My AI** | free | 13+; a parent can turn it off through Family Center | Already inside Snapchat (where the teens are) | https://parents.snapchat.com |
-| **Duolingo Max** | paid (check the website) | school-age kids and adults | An AI tutor for languages, with structure | https://www.duolingo.com/super |
-| **MagicSchool AI** | has a free plan | for parents and teachers | Lesson plans, materials for learning at home | https://www.magicschool.ai |
-| **Pi (Inflection)** | $0 | per the service's terms | An empathetic AI with a simple voice mode | https://pi.ai |
+| **Duolingo Max** | paid (bought in the mobile app; check the price there) | school-age kids and adults | Conversation practice with AI inside structured lessons; not available in every course | https://www.duolingo.com/help/what-is-duolingo-max |
+| **MagicSchool AI** | has a free plan for teachers | for teachers | Lesson plans and teaching materials | https://www.magicschool.ai |
+| **Pi (Inflection)** | $0 | 18+ (per the service's terms) | A friendly conversation partner with a simple voice mode | https://pi.ai |
 | **Common Sense Media AI guide** | $0 | for parents | Reviews of AI tools for kids, with safety ratings | https://about.commonsensemedia.org/ai |
 
 **By budget:**
 - **Minimum ($0/month):** a free assistant for the parents + supervision for the kids
-- **Middle:** Khanmigo for the kids + a paid assistant plan for a parent, if needed
+- **Middle:** Khanmigo for the kids (in the US) + a paid assistant plan for a parent, if needed
 - **Full:** Khanmigo + ChatGPT Plus + Duolingo Max (add up the current prices on each website before you commit)
 
 ---
@@ -258,7 +260,7 @@ Write these rules down as a family and revisit them every 6 months.
 
 **Situation 3: "The digital divide"**
 - The problem: kids from well-off families have AI tutors; other kids don't
-- The fix: use free tools. Khanmigo is free for teachers, and some schools have extra programs (check the website). MagicSchool AI has a free plan. AI assistants have free plans too, but each one has its own minimum age.
+- The fix: use free tools. Khanmigo is free for teachers, and some schools have extra programs (check the website). MagicSchool AI has a free plan for teachers. AI assistants have free plans too, but each one has its own minimum age.
 
 **Your family's position:**
 - School teaches the foundation (reading, writing, thinking)
@@ -274,14 +276,14 @@ Older family members are a category of their own. They're not used to typing lon
 **The main problem:** complicated interfaces. The fix: voice modes.
 
 **Uses that work:**
-- Reminders: "Remind me to take my blood pressure pill at 8 a.m."
 - Explaining medical terms (but NOT diagnoses!): "What does 'hypertension' mean, in plain words?"
 - Getting ready for a doctor's appointment: "Help me write down 5 questions to ask my doctor about my trouble sleeping." AI helps prepare the questions; the answers come from the doctor
 - Making sense of Medicare jargon: "What's the difference between Medicare Part A and Part B, in plain English?" For anything about your own coverage, call Medicare or your plan directly
 - Company when they're lonely (Pi from Inflection)
 - Help with instructions: "Explain how to use this TV remote"
-- Reading small print (the phone camera + ChatGPT Voice)
-- Translating documents (medical paperwork in another language)
+- Reading small print (the phone camera + ChatGPT's voice mode)
+- Translating documents from another language (cover the name, address and ID numbers first)
+- Reminders: "Remind me to take my blood pressure pill at 8 a.m." Only if the assistant you chose actually has reminders and you've checked that one really arrives. For medication, a phone alarm or the phone's own Reminders app is more dependable
 
 **Dangers:**
 - **AI scams aimed at older adults.** One of the biggest threats right now is the cloned voice. Scammers clone the voice of a grandchild, daughter or son (a short clip from social media is enough) and call an older relative: "I've been in an accident, I need $5,000 wired right away." It's the old grandparent scam, now with a voice that sounds real.
@@ -289,7 +291,7 @@ Older family members are a category of their own. They're not used to typing lon
 - **The family rule (non-negotiable):** before sending any money, ALWAYS hang up and call back on a number you already know. Set up a family code word ("pineapple") that a scammer wouldn't know.
 
 **Tools for older adults:**
-- **Pi (Inflection AI)**: https://pi.ai. An empathetic AI with a gentle voice and a simple interface. Free to use as of this writing; check the site for current terms.
+- **Pi (Inflection AI)**: https://pi.ai. A friendly conversation partner with a gentle voice and a simple interface. Free as of October 2026; under the service's terms, it's for adults only.
 - **ChatGPT voice mode**: natural conversation; availability and limits depend on the plan
 - **Voice modes in other assistants**: check what your app offers
 
@@ -304,16 +306,16 @@ The best way to teach your family to use AI well is to do a project together. No
 **4 projects to choose from:**
 
 **1. Family Book**
-AI helps you write a book about your family's history. You interview older relatives, transcribe the recordings with Whisper, and AI organizes them into chapters. You print one copy and give it to the family.
+AI helps you write a book about your family's history. You interview older relatives and record the conversations, turn the recordings into text with a transcription app (many of them run on OpenAI's Whisper model), and AI organizes the text into chapters. Take ID numbers, addresses and phone numbers out of the text first. You print one copy and give it to the family.
 - Time: 1-2 months
-- Cost: $30 to print the book
-- Tools: Claude or ChatGPT + Whisper for transcription
+- Cost: printing one book (check the price at the printing service you pick)
+- Tools: Claude or ChatGPT + a transcription app
 
 **2. Children's Storybook**
-AI writes a story with your child as the hero, and Midjourney draws the illustrations. You print it as a hardcover children's book.
+AI writes a story with your child as the hero, and Midjourney (a paid service; any other image generator works too) draws the illustrations. Don't upload photos of your child to the generator: describe the hero in words. You print it as a hardcover children's book.
 - Time: a weekend
-- Cost: $20-40 to print
-- Tools: Claude + Midjourney + Shutterfly for printing
+- Cost: printing (check the price at the printing service)
+- Tools: Claude + Midjourney + a photo-book printing service such as Shutterfly
 
 **3. Bedtime stories on demand**
 Every evening, Claude (in your own account) generates a new story with your child's favorite characters. You save the best ones in an "Our stories" file.
@@ -324,8 +326,8 @@ Every evening, Claude (in your own account) generates a new story with your chil
 **4. Family Recipe Book**
 AI organizes the family recipes Mom cooks from memory. You interview Mom out loud, and AI turns her answers into recipes in book format.
 - Time: 1 month
-- Cost: $30 to print
-- Tools: Claude + Whisper + Canva for the design
+- Cost: printing (check the price at the printing service)
+- Tools: Claude + a transcription app + Canva for the design
 
 **What matters in a family project:** AI handles the routine (organizing, formatting, the first draft), and the family brings the meaning (choosing the stories, checking the facts, the feelings).
 
@@ -335,11 +337,11 @@ AI organizes the family recipes Mom cooks from memory. You interview Mom out lou
 
 ❌ **Banning AI completely**: like banning the internet in 1995. Your child will use it at friends' houses, in secret, without ever learning the safety rules. Worse than measured access.
 
-❌ **Unlimited access with no rules**: without supervision, a child spends hours with AI companions, grows emotionally dependent and loses social skills.
+❌ **Unlimited access with no rules**: without supervision, a child can spend hours with AI companions, grow attached to them and spend less time with people.
 
 ❌ **Not teaching kids to fact-check AI**: the child learns that "AI is always right," then in college and at work makes factual mistakes that could have been caught.
 
-❌ **Using AI as a babysitter**: Snapchat's My AI keeps a child busy for hours so the parents get some quiet. It's the TV babysitter of the '90s, only worse for a child's development.
+❌ **Using AI as a babysitter**: Snapchat's My AI keeps a child busy for hours so the parents get some quiet. It's the TV babysitter of the '90s all over again.
 
 ❌ **Trusting AI with diagnoses or advice on serious matters**: medicine, law, mental health. AI makes confident mistakes. A doctor has years of medical school and residency, plus experience. AI is the doctor's assistant, not a replacement.
 
@@ -373,11 +375,11 @@ Signs that AI use has become a problem:
 
 | Age | Recommendation | Cost | Supervision |
 |---|---|---|---|
-| **Young kids (5-10)** | Khanmigo + supervision, under the parent's account | see the website | Full (a parent sits with them) |
+| **Young kids (5-10)** | Khanmigo (in the US) or an assistant in the parent's own account, always together with an adult | see the Khanmigo website | Full (a parent sits with them) |
 | **Teens (11-15)** | ChatGPT Free with parental controls (from 13) + family rules + a weekly review with a parent | $0 | Checkpoint (weekly review) |
 | **Older teens (16-18)** | ChatGPT (Plus at $20 if needed) + critical thinking + talks about privacy; Claude after 18 | $0-20/month | Trust but verify |
-| **Parents (30-50)** | Claude Pro for work + ChatGPT Plus for family | $20-40/month | Self |
-| **Older parents** | Pi (free) / ChatGPT Voice + simple uses + scam education | $0-20/month | Family keeps an eye on money matters |
+| **Parents (30-50)** | A free assistant; a paid plan (for example, Claude Pro or ChatGPT Plus, $20 each) only if you keep hitting the limits | $0-20/month | Self |
+| **Older parents** | Pi (free) or ChatGPT's voice mode + simple uses + scam education | $0-20/month | Family keeps an eye on money matters |
 
 ---
 
@@ -389,44 +391,39 @@ Sit down with your spouse or partner and your kids (if they're 11 or older) for 
 
 **How to structure the conversation:**
 
-```
-1. What do we know about AI? (15 min)
+1. **What do we know about AI? (15 min)**
    - Everyone says what they've used
    - What they like, what worries them
    - No judging ("that's bad," "that's dumb")
-
-2. What risks do we see? (15 min)
+2. **What risks do we see? (15 min)**
    - School and AI
    - Privacy
    - Depending on AI too much
    - Money
-
-3. What rules do we need? (20 min)
+3. **What rules do we need? (20 min)**
    - Age and access
    - What never goes into AI
    - When parents step in
    - Our family's red flags
-
-4. What do we write down? (10 min)
-   - The final document: family-ai-rules.md (or one printed page)
+4. **What do we write down? (10 min)**
+   - One page titled "Our family AI rules" (on paper or in a notes app)
    - Everyone who took part signs it
    - We review it again in 6 months
-```
 
 ---
 
 ### Step 2: Setting up parental controls
 
-```bash
-# Snapchat (for teens who use Snapchat)
-# Open the app → Settings → Family Center
-# Add the parent's account
-# Turn on My AI restrictions
-```
+**Snapchat (if your teen uses it):**
 
-**Where to turn on parental controls:**
-- **Snapchat My AI:** https://parents.snapchat.com → add a parent
-- **ChatGPT (ages 13-17):** link the parent's and the teen's accounts (both sides have to agree). The parent can set quiet hours, turn off voice, memory and image generation, and turn off model training on the teen's conversations. The parent doesn't see what the chats say, so the weekly review below is built on conversation
+1. In your own Snapchat app, open your profile and tap the gear icon (Settings)
+2. Choose Family Center and send your teen an invitation
+3. Your teen has to tap Accept
+4. In Family Center, scroll down to Settings, expand it and turn on the "Disable My AI" toggle
+
+**Where else to turn on parental controls:**
+- **Snapchat:** more for parents at https://parents.snapchat.com
+- **ChatGPT (ages 13-17):** link the parent's and the teen's accounts under Settings → Parental controls. Either side can send the invitation, and the other has to accept. The parent can set quiet hours, turn off voice, memory and image generation, and turn off model training on the teen's conversations. The parent doesn't see what the chats say, so the weekly review below is built on conversation. A teen can also unlink the accounts; if that happens, the parent gets a notification
 - **Claude:** under Anthropic's rules, users must be 18 or older; you can't create an account for a child
 - **YouTube AI features:** YouTube Kids for younger children, Restricted Mode for older ones
 
@@ -438,32 +435,32 @@ Pick one of the 4 projects (Family Book / Storybook / Bedtime Stories / Recipe B
 
 **Example: a children's storybook in one weekend**
 
-```
-Saturday morning (1 hour):
+**Saturday morning (1 hour):**
 - Sit down with your child and pick the main character (your child)
 - Pick a theme (an adventure, friendship, a rescue)
-- Prompt for Claude (in your account):
-  "Write a children's story for an 8-year-old about a boy named Jake
-  who finds a talking dog, and together they save the park.
-  10 pages, 50 words each. Style: kind, with some humor."
+- Ask Claude (in your account):
 
-Saturday evening (1 hour):
+```
+Write a children's story for an 8-year-old about a boy named Jake who finds a talking dog, and together they save the park. 10 pages, 50 words each. Style: kind, with some humor.
+```
+
+**Saturday evening (1 hour):**
 - Read the story with your child
 - Revise it together with AI ("make chapter 3 funnier")
 - Finalize the text
 
-Sunday morning (2 hours):
-- Midjourney for the illustrations
-  A prompt for each page:
-  "Children book illustration, watercolor style, boy named Jake
-  finds talking dog in park, warm colors, [scene description]"
+**Sunday morning (2 hours):**
+- Illustrations: Midjourney (paid) or another image generator. A prompt for each page:
+
+```
+Children's book illustration, watercolor style, a boy named Jake finds a talking dog in a park, warm colors, [describe the scene]
+```
+
 - Pick the 10 best illustrations
 
-Sunday evening (1 hour):
-- Put it together as a PDF in Canva (free)
-- Order a printed copy from Shutterfly (~$25)
-- The book shows up at your door in about a week
-```
+**Sunday evening (1 hour):**
+- Put it together as a PDF in Canva (it has a free plan)
+- Order a printed copy from a photo-book service such as Shutterfly; check the price and delivery time on its site
 
 Your child sees that AI helped make something real. Not "AI is bad," not "AI is magic": a tool.
 
@@ -471,20 +468,17 @@ Your child sees that AI helped make something real. Not "AI is bad," not "AI is 
 
 ### Step 4: Setting up voice AI for an older relative
 
-If you have older parents, set them up with Pi (free).
+If you have older parents, help them get started with Pi (it's free).
 
-```bash
-# Pi by Inflection
-# 1. On your parent's phone, go to https://pi.ai
-# 2. Create an account (you'll need an email; a shared family Gmail address works)
-# 3. Turn on voice mode
-# 4. Show them how to start a conversation (just talk)
-```
+1. On your parent's phone, go to https://pi.ai
+2. Pi will ask right away what to call you. To keep the conversations, create an account in your parent's name: tap "Sign up for free" (you'll need a phone number)
+3. Turn on voice mode
+4. Show them how to start a conversation (just talk)
 
 **The first 5 things to show them:**
 1. "Tell me how to make a good chicken soup"
 2. "Explain what the word 'streaming' means"
-3. "Remind me to take my pill at 8 a.m." (if reminders are available)
+3. "Help me get my questions ready for the doctor about my blood pressure"
 4. "Tell me an interesting fact about the Grand Canyon"
 5. "Help me write a letter to my grandson"
 
@@ -494,6 +488,7 @@ If you have older parents, set them up with Pi (free).
 - If someone calls with a relative's voice asking for money, ALWAYS hang up and call back on a number you know
 - The family code word: ask for it whenever you're not sure
 - A call "from the IRS" or "from Medicare" asking for money or your numbers: hang up and call the official number yourself
+- Medication and health: AI explains the words and helps prepare questions; the doctor decides
 
 ---
 
@@ -501,25 +496,20 @@ If you have older parents, set them up with Pi (free).
 
 Every Sunday evening, a 20-minute conversation with your teen about what they did with AI that week.
 
-```
-Weekly review structure:
+**How the weekly review goes:**
 
-1. "What did you do with AI this week?" (5 min)
+1. **"What did you do with AI this week?" (5 min)**
    - Curiosity, not control
    - Your teen tells you in their own words
-
-2. "Show me 2 or 3 interesting chats" (5 min)
+2. **"Show me 2 or 3 interesting chats" (5 min)**
    - Your teen picks what to show
    - You don't go through their history in secret
-
-3. "Did AI tell you anything you're not sure is true?" (5 min)
+3. **"Did AI tell you anything you're not sure is true?" (5 min)**
    - Building a verification mindset
    - "Let's check it together"
-
-4. "Anything you want to tell me?" (5 min)
+4. **"Anything you want to tell me?" (5 min)**
    - An open question
    - Sometimes important topics come up
-```
 
 If your teen doesn't want to talk, don't push. But do it at least once a month.
 
@@ -527,28 +517,28 @@ If your teen doesn't want to talk, don't push. But do it at least once a month.
 
 ## Tools and resources
 
-- **[Khanmigo (Khan Academy)](https://www.khanacademy.org/khanmigo)**: an educational AI for school-age kids (check the website for the current price)
+- **[Khanmigo (Khan Academy)](https://www.khanacademy.org/khanmigo)**: an educational AI for school-age kids; the family version is paid and sold only in the US (check the website for the current price)
 - **[Common Sense Media AI guide](https://about.commonsensemedia.org/ai)**: reviews of AI tools for kids, with safety ratings
-- **[MagicSchool AI](https://www.magicschool.ai)**: free tools for teachers and parents
-- **[Pi by Inflection](https://pi.ai)**: an empathetic AI with a voice mode, a good fit for older adults
+- **[MagicSchool AI](https://www.magicschool.ai)**: tools for teachers, with a free plan
+- **[Pi by Inflection](https://pi.ai)**: a friendly conversation partner with a voice mode, a good fit for older adults (adults only)
 - **[AAP guidance on children & tech](https://www.aap.org/)**: recommendations from the American Academy of Pediatrics
 - **[Snapchat Family Center](https://parents.snapchat.com)**: parental controls for Snapchat, including My AI
 - **[ChatGPT parental controls](https://openai.com/index/introducing-parental-controls/)**: how to link a parent's and a teen's accounts
-- **[Duolingo Max](https://www.duolingo.com/super)**: an AI language tutor (paid plan)
+- **[Duolingo Max](https://www.duolingo.com/help/what-is-duolingo-max)**: conversation practice with AI for language learners (a paid subscription in the mobile app)
 - **[Minimum age for Claude](https://support.claude.com/en/articles/13117299-minimum-age-requirement-access-restriction)**: Anthropic's rules (18+)
-- **[Anthropic Acceptable Use Policy](https://www.anthropic.com/legal/aup)**: the rules for using Claude
+- **[Anthropic Usage Policy](https://www.anthropic.com/legal/aup)**: the rules for using Claude
 
 ---
 
 ## Key takeaways
 
-> You can't ban AI for kids; that's like banning the internet in 1995. You can't give total freedom either; a child can't tell a confident AI answer from a correct one. The third way: rules by age, tools matched to each level, and teaching kids to check. Khanmigo for school-age kids under supervision, ChatGPT with parental controls for ages 13-17, and Claude for adults only (18 and up).
+> You can't ban AI for kids; that's like banning the internet in 1995. You can't give total freedom either; a child can't tell a confident AI answer from a correct one. The third way: rules by age, tools matched to each level, and teaching kids to check. Under 13, only together with an adult (in the US, Khanmigo is built for this), ChatGPT with parental controls for ages 13-17, and Claude for adults only (18 and up).
 
 > The main lesson for a teen is telling "AI helps me learn" apart from "AI does it for me." AI explains the derivative → you solve the problem yourself → you learn. AI solves the equation → you copy it → you don't learn. Your family rules on this should be written down and signed.
 
 > A family AI project (a book, a story, a recipe collection) teaches good habits better than any lecture. Your child sees that AI helped make something real. Not magic and not evil: a tool in Dad's garage. Pick one project for this weekend and get started.
 
-> Older parents are a category of their own, with two priorities: simple voice interfaces (Pi, free) and learning to recognize AI scams (cloned voices). A family code word is a must. Before sending money, ALWAYS call back on a number you know.
+> Older parents are a category of their own, with two priorities: simple voice interfaces (for example, Pi, which is free) and learning to recognize AI scams (cloned voices). A family code word is a must. Before sending money, ALWAYS call back on a number you know.
 
 ---
 
@@ -560,7 +550,7 @@ If your teen doesn't want to talk, don't push. But do it at least once a month.
 - [ ] Your kids understand that AI can be confidently wrong (hallucinations)
 - [ ] Posted the "what never goes into AI" list on the fridge
 - [ ] Started a family AI project (a book / a story / recipes)
-- [ ] If you have older parents: set up Pi and talked through scams with them
+- [ ] If you have older parents: set up a voice assistant and talked through scams with them
 - [ ] Picked a family code word
 - [ ] Scheduled the weekly review with your teen (if you have teens)
 - [ ] Put a rules review 6 months from now on the calendar
@@ -569,4 +559,6 @@ If your teen doesn't want to talk, don't push. But do it at least once a month.
 
 ## Next lesson
 
-→ [Your first 30 minutes with AI](00pre-your-first-30-minutes.md): first steps for adult beginners, and from there, the core course
+→ [How to write a good prompt](06-prompting-fundamentals.md): the first lesson of the second module, on how to give AI a task so you get the answer you need.
+
+If you landed here without the beginning, go back to [Your first 30 minutes with AI](00pre-your-first-30-minutes.md).

@@ -6,7 +6,9 @@
 
 ## La idea
 
-Hacer una buena presentación antes se llevaba un día entero en PowerPoint. Las herramientas de IA lo convierten en un proceso de 20 minutos en el que te concentras en tus ideas en lugar de andar acomodando cuadros en una diapositiva.
+Hacer una buena presentación antes se llevaba un día entero en PowerPoint. Con IA, un buen borrador queda listo en más o menos media hora, y tú te concentras en tus ideas en lugar de andar acomodando cuadros en una diapositiva.
+
+La parte principal de esta lección se hace en el navegador, sin código. Las secciones sobre python-pptx y la API de Google Slides son para quienes construyen sus propias herramientas; los demás pueden saltárselas.
 
 🎨 **Imagínalo así:** el PowerPoint de siempre es como armar tú mismo un mueble de esos que vienen en caja: las piezas son las correctas, pero te lleva todo el día y te sobran la mitad de los tornillos. Gamma es un mueble que llega ya armado. Dices lo que quieres y cinco minutos después ya está en la sala. Luego mueves lo que no quedó del todo bien.
 
@@ -16,10 +18,10 @@ Hacer una buena presentación antes se llevaba un día entero en PowerPoint. Las
 
 - Gamma: una presentación completa a partir de un solo prompt (tu petición a la IA), con un diseño que se adapta al contenido
 - Beautiful.ai: diseño de diapositivas con IA y plantillas inteligentes (una plantilla es un diseño ya hecho)
-- Claude + python-pptx: generar archivos de PowerPoint con código (control total)
+- Claude + python-pptx: generar archivos de PowerPoint con código (control total; para quienes construyen)
 - Claude + la API de Google Slides (una API es la forma en que un programa habla con otro servicio): presentaciones en la nube, hechas con código
 - El flujo de trabajo: idea → estructura con Claude → diseño en Gamma → ajustes finales
-- Un pitch deck (una presentación para inversionistas) con IA: del concepto a la reunión con inversionistas en unas horas
+- Un pitch deck (una presentación para inversionistas) con IA: del concepto a un buen borrador en unas horas
 
 ---
 
@@ -42,7 +44,7 @@ Gamma ([gamma.app](https://gamma.app)) es una de las formas más rápidas de pas
 - Documentos (con buen formato)
 - Páginas web (landing pages públicas)
 
-**Precios (a octubre de 2026):** Gamma te deja empezar gratis, la generación funciona con créditos, y los límites y las opciones de exportación dependen del plan. Detalles actuales: [gamma.app/pricing](https://gamma.app/pricing), [Lo vigente](https://aimayak.com/now/).
+**Precios (a octubre de 2026):** Gamma te deja empezar gratis, la generación gasta créditos, y los límites y las opciones de exportación dependen del plan. Según el centro de ayuda de Gamma, los créditos iniciales del plan gratis no se recargan solos, así que gástalos en una tarea real. Precios de Gamma: [gamma.app/pricing](https://gamma.app/pricing). Precios de los asistentes de IA: [Lo vigente](https://aimayak.com/now/).
 
 **Lo que Gamma hace bien:**
 
@@ -52,9 +54,9 @@ Gamma ([gamma.app](https://gamma.app)) es una de las formas más rápidas de pas
 - Elementos interactivos (gráficas, contenido incrustado)
 - Gamma Agent: en un chat, cambia el estilo, el texto y el tono de toda la presentación de una vez
 - Smart Diagrams (diagramas inteligentes): dibuja diagramas a partir de una descripción
-- Idiomas distintos del inglés (el español, por ejemplo): pruébalo con tu propio texto antes de montar un proceso alrededor
+- Idiomas: según el centro de ayuda de Gamma, puedes escribir tu prompt en tu propio idioma, y el español está en la lista de idiomas de la interfaz. De todos modos, revisa la calidad del texto con tu propio tema
 
-🎨 **Imagínalo así:** Gamma es como un buen diseñador freelance. Le dices qué necesitas y lo deja bonito; le dices qué cambiar y lo cambia. No es perfecto, pero el 80% del trabajo ya está hecho.
+🎨 **Imagínalo así:** Gamma es como un buen diseñador freelance. Le dices qué necesitas y lo deja bonito; le dices qué cambiar y lo cambia. No es perfecto, pero la mayor parte del trabajo ya está hecha.
 
 ---
 
@@ -74,6 +76,8 @@ Cuando agregas un elemento (texto, una imagen, un ícono), la diapositiva se rea
 | Exportar a PPTX | depende del plan | depende del plan |
 | Precio | ver la página de precios | ver la página de precios (ahí están las condiciones de la prueba) |
 
+Las filas "Control del diseño" y "Plantillas inteligentes" son una valoración del autor, no el resultado de una comparación independiente: pruébalas con tu propia tarea.
+
 **Cuándo usar Beautiful.ai en lugar de Gamma:**
 
 - Necesitas más control sobre el diseño
@@ -84,9 +88,9 @@ Cuando agregas un elemento (texto, una imagen, un ícono), la diapositiva se rea
 
 ---
 
-### Claude + python-pptx: PowerPoint con código
+### Para quienes construyen: Claude + python-pptx, PowerPoint con código
 
-Cuando necesitas control total, o generar muchas presentaciones de forma automática, Claude escribe código que crea archivos PPTX (el formato de archivo de PowerPoint).
+Esta sección y la siguiente son opcionales: son para quienes escriben código. Si no programas, pasa a la sección "El flujo de trabajo". Cuando necesitas control total, o generar muchas presentaciones de forma automática, Claude escribe código que crea archivos PPTX (el formato de archivo de PowerPoint).
 
 **Instalación:**
 
@@ -94,7 +98,7 @@ Cuando necesitas control total, o generar muchas presentaciones de forma automá
 pip install python-pptx
 ```
 
-**Un ejemplo básico: Claude genera una presentación a partir de un esquema:**
+**Un ejemplo básico: el código arma una presentación a partir de un esquema ya hecho:**
 
 ```python
 from pptx import Presentation
@@ -166,31 +170,32 @@ print("¡Listo!")
 
 ### Claude + la API de Google Slides: presentaciones en la nube
 
-Para el trabajo en equipo y la generación automática en la nube, existe la API de Google Slides.
+Para el trabajo en equipo y la generación automática en la nube, existe la API de Google Slides. Esta sección también es para quienes construyen.
 
 **Por qué es útil:**
 
-- La presentación queda directo en Google Drive, donde todo tu equipo puede abrirla
+- La presentación queda directo en tu Google Drive, y tú mismo la compartes con tu equipo
 - Se puede actualizar de forma automática (reportes trimestrales, por ejemplo)
 - No depende de archivos PPTX ni de nada guardado en tu computadora
 
 **Configuración:**
 
 ```bash
-pip install google-auth google-auth-httplib2 google-api-python-client
+pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 ```
+
+En Google Cloud Console, activa la API de Google Slides, crea un cliente OAuth de tipo "Desktop app" (app de escritorio) y descarga su archivo como `credentials.json` (la documentación de la API de Google Slides, enlazada al final de esta lección, lo explica paso a paso).
 
 **Código básico:**
 
 ```python
-from google.oauth2 import service_account
+from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
-# Configurar la autorización
+# Configurar la autorización: se abre una ventana del navegador e inicias sesión en tu cuenta de Google
 SCOPES = ['https://www.googleapis.com/auth/presentations']
-credentials = service_account.Credentials.from_service_account_file(
-    'service-account-key.json', scopes=SCOPES
-)
+flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+credentials = flow.run_local_server(port=0)
 
 service = build('slides', 'v1', credentials=credentials)
 
@@ -205,13 +210,13 @@ print(f"Creada: https://docs.google.com/presentation/d/{presentation_id}")
 
 A partir de ahí, Claude te ayuda a escribir solicitudes en lote (batch) que agregan diapositivas, texto e imágenes.
 
-⚠️ Trata el archivo `service-account-key.json` como una contraseña: no lo pongas en carpetas compartidas, correos ni en nada público.
+⚠️ Trata el archivo `credentials.json` como una contraseña: no lo pongas en carpetas compartidas, correos ni repositorios de código públicos.
 
 ---
 
 ### El flujo de trabajo: idea → Claude → Gamma → versión final
 
-El mejor proceso para la mayoría de las presentaciones:
+Un orden cómodo para la mayoría de las presentaciones:
 
 **Paso 1: Estructura con Claude (5 min)**
 
@@ -250,7 +255,7 @@ Revisa:
 4. ¿Alguna diapositiva contradice a otra?
 ```
 
-Total: 25-30 minutos para una presentación profesional.
+Total: 25-30 minutos para un buen borrador de presentación. Revisar los datos y los números de las diapositivas te toca a ti.
 
 ---
 
@@ -301,7 +306,7 @@ Para cada diapositiva:
 
 1. Crea una cuenta en Gamma (es gratis y puedes entrar con Google):
 
-Entra a [gamma.app](https://gamma.app) → New (Nuevo) → "Generate" (Generar) → elige "Presentation" (Presentación) (los nombres de los botones en la interfaz cambian de vez en cuando)
+Entra a [gamma.app](https://gamma.app) → Create new AI (Crear con IA). Ahí vas a usar dos modos: Generate (Generar: una presentación a partir de un prompt corto) y Paste in text (Pegar texto: una presentación a partir de un texto o esquema ya hecho). Los nombres de los botones en la interfaz cambian de vez en cuando
 
 2. Pídele a Claude que cree la estructura de tu presentación:
 
@@ -316,7 +321,7 @@ Crea la estructura: un título para cada diapositiva +
 3-4 puntos clave para cada una.
 ```
 
-3. Pega la estructura en Gamma, elige un tema visual y genera la presentación
+3. En Gamma, elige Paste in text, pega la estructura, elige Presentation (Presentación) y un tema visual, y genera la presentación
 
 4. Pídele a Claude que mejore las primeras 3 diapositivas:
 
@@ -329,7 +334,9 @@ Para cada diapositiva:
 - Haz que el primer punto sea el dato más importante
 ```
 
-5. Instala python-pptx y crea una presentación sencilla con código:
+Terminaste cuando tengas una presentación de 10 diapositivas que podrías mostrarle a alguien, con los datos y los números de las diapositivas revisados por ti. Hasta aquí llega la práctica sin código.
+
+5. Opcional, para quienes construyen: instala python-pptx y crea una presentación sencilla con código:
 
 ```bash
 pip install python-pptx
@@ -340,7 +347,7 @@ pip install python-pptx
 # sobre tu proyecto, usando el código de esta lección como punto de partida
 ```
 
-6. Para quienes van más avanzados: arma un generador automático de reportes semanales:
+6. Opcional, para quienes construyen: un generador automático de reportes semanales:
 
 ```
 Pídele a Claude que escriba un script que:
@@ -357,7 +364,7 @@ Pídele a Claude que escriba un script que:
 
 ## Herramientas y recursos
 
-- **[Gamma](https://gamma.app)**: el camino más rápido de una idea a las diapositivas
+- **[Gamma](https://gamma.app)**: un camino rápido de una idea a las diapositivas
 - **[Beautiful.ai](https://beautiful.ai)**: plantillas inteligentes para controlar el diseño
 - **[python-pptx](https://python-pptx.readthedocs.io)**: una biblioteca para generar archivos PPTX con código
 - **[Google Slides API](https://developers.google.com/slides)**: presentaciones en la nube mediante una API
@@ -368,14 +375,16 @@ Pídele a Claude que escriba un script que:
 
 ## Ideas clave
 
-> Gamma más una estructura hecha con Claude es la combinación mínima que te da un resultado profesional en 30 minutos: Claude se encarga de la lógica y el contenido, Gamma lo deja bonito y tú ajustas los detalles.
+> Gamma más una estructura hecha con Claude es la combinación mínima que te da un buen borrador en media hora: Claude se encarga de la lógica y el contenido, Gamma lo deja bonito y tú ajustas los detalles y revisas los datos.
 
 > Necesitas python-pptx cuando las presentaciones se generan de forma automática o desde una plantilla: reportes semanales, propuestas a la medida para clientes, materiales de capacitación, cualquier cosa que necesites reproducir muchas veces.
 
-> Un pitch deck hecho con IA es un borrador, no la versión final. Los inversionistas han visto miles de diseños de Gamma; deciden por el contenido y los números, no por la plantilla.
+> Un pitch deck hecho con IA es un borrador, no la versión final. Los inversionistas han visto muchas presentaciones hechas con plantillas como estas; deciden por el contenido y los números, no por el diseño.
 
 ---
 
 ## Siguiente lección
 
-→ [Generación de video con IA: Runway, Kling y más](71-ai-video-generation.md): dale vida a tus ideas con video
+→ [Traducción y localización con IA: DeepL y Claude](75-ai-translation.md): traducir correos y textos para que suenen naturales
+
+El video viene en el siguiente módulo: [Generación de video con IA: Runway, Kling y más](71-ai-video-generation.md): dale vida a tus ideas con video

@@ -2,13 +2,13 @@
 
 **Time:** about 30 min reading + 45 min practice
 
-The percentages and dollar amounts in this lesson are rough reference points for working through the method. They're not market statistics and not a promise of results. Measure your own numbers. Tool prices were checked as of October 2026 where that's noted; for everything else, check the tools' websites.
+The percentages and dollar amounts in this lesson are rough reference points for working through the method. They're not market statistics and not a promise of results. Measure your own numbers. What the services' free plans include was checked as of October 2026; for prices, see the services' websites.
 
 ---
 
 ## The gist
 
-You have a product. You sold it to your first 5 to 10 clients through cold outreach (see the lesson [Cold outreach in 2026](39c-cold-outreach-deep.md)). That approach doesn't scale: cold messages take your time every single day. You need a system that keeps bringing in interested people even when you're not actively selling.
+You have a product. You sold it to your first 5 to 10 clients through cold outreach (see the lesson [Cold outreach that gets replies](39c-cold-outreach-deep.md)). That approach doesn't scale: cold messages take your time every single day. You need a system that keeps bringing in interested people even when you're not actively selling.
 
 A lead magnet is the free sample in a store. You walk into a tea shop, and they pour you a little cup to taste. Like it? You buy a tin. Don't like it? You walk out. Nobody pressures you, calls you later or "walks you through a presentation." The shop makes its money on the share of people who liked what they tasted.
 
@@ -29,7 +29,7 @@ A lead magnet works if:
 - ✓ You're ready to put in 30 days of setup and then 1 to 2 hours a week of tweaking
 
 You DON'T need a lead magnet if:
-- ✗ You don't have a product yet. First, validate it with cold outreach (the lesson [Cold outreach in 2026](39c-cold-outreach-deep.md))
+- ✗ You don't have a product yet. First, validate it with cold outreach (the lesson [Cold outreach that gets replies](39c-cold-outreach-deep.md))
 - ✗ You have fewer than 5 clients. You don't know your audience well enough yet to build a funnel
 - ✗ You sell very expensive enterprise contracts. There, relationships and referrals do the work, not funnels
 - ✗ You want "fast clients this week." A funnel takes at least 2 to 3 months to warm up
@@ -126,10 +126,10 @@ Cold Traffic
    Welcome Email
 (instant: delivers the magnet + a short intro of who you are)
             ↓
-   Email 2-7
+   Emails 2-6
 (one a day: tip → case → myth → DIY → soft pitch)
             ↓
-   Email 8
+   Email 7
 (strong offer: paid product / consultation)
             ↓
        Customer
@@ -304,7 +304,7 @@ I hope you put at least one tip to use.
 
 Only mention limited spots if the limit is real. Made-up scarcity and urgency kill trust.
 
-⚠️ Email only people who signed up themselves (never a bought or scraped list), and keep the unsubscribe link your email platform adds to every message. Marketing email has rules about consent and unsubscribing; your email platform's help center explains the basics.
+⚠️ Email only people who signed up themselves (never a bought or scraped list), and keep the unsubscribe link your email platform adds to every message. Marketing email has rules about consent and unsubscribing, and they differ by country: check the rules where you and your subscribers live. In the US, the FTC's CAN-SPAM guide covers them (for example, a clear way to unsubscribe and your postal address in every marketing email); your email platform's help center explains the basics.
 
 **Principle:** 5 emails give value, 2 sell. Not the other way around.
 
@@ -314,30 +314,30 @@ Only mention limited spots if the limit is real. Made-up scarcity and urgency ki
 
 The minimum set of tools to launch a funnel in 30 days.
 
-Prices below were checked as of October 2026; for current prices, see the services' websites.
+Prices are left out on purpose: they change. What the free plans include was checked as of October 2026; for prices, see the services' websites.
 
 **Landing page:**
-- **Carrd** (from $19/year): the best fit for one-page sites. Simple editor, templates, custom domain. https://carrd.com
-- **Framer** (free plan available; paid Basic from $10/month billed yearly): more design freedom, drag and drop. https://www.framer.com
+- **Carrd**: a simple builder for one-page sites: editor, templates, custom domain. Signup forms and a custom domain come only with the paid Pro Standard plan and up. https://carrd.com
+- **Framer**: more design freedom, drag and drop; there's a free plan. https://www.framer.com
 - **Squarespace**: if you already have a Squarespace website, you can build the signup page there instead of starting a new site.
 - **Vercel + Next.js**: for developers. Vercel's free Hobby plan is meant for personal, non-commercial projects; for a commercial site, check the terms.
 
 **Email service** (ConvertKit and Kit are the same service; it was renamed):
-- **Kit (formerly ConvertKit)** (free plan up to 10,000 subscribers; paid Creator from $33/month): the standard for creators. Automations, sequences, tags. Check what the free plan includes on the pricing page: sequences and automations may be limited. https://kit.com
-- **Beehiiv** (free plan up to 2,500 subscribers; paid Lite from $49/month billed yearly): newer, nicer email design, growth tools. https://www.beehiiv.com
+- **Kit (formerly ConvertKit)**: an email service popular with creators: forms, landing pages, a delivery email for your lead magnet, one-off broadcasts. There's a free plan, but email sequences and automations are on paid plans only (as of October 2026; check the pricing page). https://kit.com
+- **Beehiiv**: newer, nicer email design, growth tools; there's a free plan. https://www.beehiiv.com
 - **Mailchimp**: a familiar choice for many small businesses. If you already use it, you can send your welcome email and sequence from there; check which automations your plan includes.
-- **Resend** (free up to 3,000 emails a month and 100 a day; Pro from $20/month; code-first): for developers. API-based, typed templates. https://resend.com
+- **Resend**: email through code, for developers: an API and templates; there's a free plan. https://resend.com
 
 **Lead magnet hosting:**
-- PDF / template: upload it to S3 or Cloudflare R2 (R2: $0.015/GB per month, plus a free allowance)
+- PDF / template: upload it to Cloudflare R2 or Amazon S3 (R2 has a free allowance; prices are on Cloudflare's site)
 - Tool: Cloudflare Pages (free plan)
 - Video: an unlisted YouTube video (free)
 
 **Analytics:**
-- **Plausible** (from $9/month, 30-day free trial): privacy-first, no cookie banners, a simple dashboard. https://plausible.io
+- **Plausible**: simple site analytics; it doesn't use cookies and, according to Plausible, doesn't need a cookie banner; paid, with a free trial. https://plausible.io
 - **PostHog** (free event allowance; see the site): more powerful, for product analytics and feature flags.
 
-**Minimum stack:** Carrd + Kit (free plan) + a PDF on Cloudflare R2 + Plausible. At the prices above, that comes to roughly $10-15 a month.
+**Minimum stack:** Kit (free plan: a landing page and the delivery email) + a PDF on Cloudflare R2 (free allowance). Carrd and Plausible are optional. You can start on free plans; work out exact amounts from the services' websites.
 
 ---
 
@@ -372,14 +372,14 @@ These are starting points for a first comparison, not a guarantee: every niche a
 What it costs to launch and keep running.
 
 **Setup (one-time):**
-- Carrd from $19/year: the landing page
+- The landing page: Kit's free plan or a site builder (Carrd has forms only on a paid plan; see its site for the price)
 - Canva (free plan available): designing the lead magnet
 - Creating the lead magnet: your time, 2 to 5 days
-- **Total:** about $20-30 in cash to start + 30 hours of your time
+- **Total:** from $0 up to a small yearly subscription in cash + about 30 hours of your time
 
 **Monthly:**
-- Kit free plan; a paid plan once you grow or need its features
-- Plausible from $9/month (optional at the start)
+- Kit: the free plan; a paid plan once you need sequences and automations or your list grows
+- Plausible: paid (optional at the start)
 - Hosting the magnet: from zero to a few dollars
 - **Total:** from zero to a few dozen dollars a month in the first months, more as you grow
 
@@ -389,15 +389,15 @@ What it costs to launch and keep running.
 
 **Best ratio:**
 - Organic content → email collection → nurture → sale
-- A client's LTV (lifetime value: how much a client pays you over the whole time they stay with you) should be **at least 3x CAC**. If LTV is $300 and CAC is $100, you're fine. If LTV is $300 and CAC is $250, you have a problem.
+- A client's LTV (lifetime value: how much a client pays you over the whole time they stay with you) should be **at least 3x CAC**. That's a common rule of thumb, not a law. If LTV is $300 and CAC is $100, you're fine. If LTV is $300 and CAC is $250, you have a problem.
 
-🎨 **Picture this:** back to the tea shop. Say its space costs $500 a month, tastings are free, and the average sale is $30. To cover the rent, it needs at least 17 buyers a month. A funnel works the same way. Run the unit economics before you start sending traffic.
+🎨 **Picture this:** back to the tea shop. Say its space costs $500 a month, tastings are free, and the average sale is $30. To cover the rent, it needs at least 17 buyers a month, and that's before the cost of the tea itself: with it, the shop needs more. A funnel works the same way. Run the unit economics before you start sending traffic.
 
 ---
 
 ### Inbound traffic sources 2026
 
-Where to get people to your landing page. Ordered from most to least effective for AI niches.
+Where to get people to your landing page. The order is rough: pick the channel where your audience already is.
 
 **X (formerly Twitter, organic):**
 - One of the channels where the AI audience is active
@@ -416,9 +416,9 @@ Where to get people to your landing page. Ordered from most to least effective f
 - The highest barrier to entry, but the most stable long-term channel
 
 **SEO (Google):**
-- In 2026 it works more slowly because of AI search (ChatGPT, Perplexity)
-- But for long-tail searches and B2B it still works
 - Results don't come right away; it usually takes months
+- Some people now ask AI assistants (ChatGPT, Perplexity) instead of a search engine, so don't count on Google alone
+- For long-tail searches and B2B it still works
 
 **Reddit:**
 - Niche subreddits (r/ChatGPT, r/MachineLearning, r/SaaS)
@@ -462,7 +462,7 @@ An A/B test means showing two versions to different visitors and comparing the r
 
 **A/B rules:**
 - Test **one thing at a time**
-- At least 100 visitors per version before the result means anything
+- At least 100 visitors per version, and even then only a big difference shows: on numbers that small, a small difference can't be told apart from chance
 - At least 3 rounds of changes before you decide the funnel "works"
 - Don't test on small numbers: the noise is louder than the signal
 
@@ -473,14 +473,14 @@ An A/B test means showing two versions to different visitors and comparing the r
 Matching the stack to your level and budget.
 
 **Beginner (first funnel, minimal budget):**
-- Carrd + Kit (free plan) + 1 PDF lead magnet
-- Setup: Carrd from $19/year + 30 hours of your time
+- Kit (free plan) + 1 PDF lead magnet; Carrd is optional
+- Setup: from $0 in cash + 30 hours of your time
 - Launch: 2 weeks
 - Goal: 100 email signups, understand your numbers
 
 **Intermediate (the product works, you need to scale):**
 - Framer + a paid Kit plan + Plausible + a tool as your lead magnet
-- Setup: paid plans at the prices above + 60 hours of your time
+- Setup: paid plans at the prices on the services' websites + 60 hours of your time
 - Launch: 4 weeks
 - Goal: 500-1,000 signups a month, automated nurture
 
@@ -509,6 +509,8 @@ Your funnel is ready to launch when:
 
 ## Practice
 
+45 minutes is enough for Step 1 and a plan for the rest. Building the funnel itself takes about 30 days: each step shows how long it takes.
+
 ### Step 1: Pick a lead magnet in 1 day
 
 Don't spend a week thinking about it. Take one of the ready-made ideas above or adapt one.
@@ -536,7 +538,7 @@ from an expert in my niche? Make that.
 
 For a PDF:
 ```
-1. Open Canva and pick a "Lead Magnet" / "Workbook" template
+1. Open Canva and search the templates for "lead magnet" or "workbook"
 2. Structure (5 pages is enough):
    - Cover (title + your name)
    - What's inside (table of contents)
@@ -553,7 +555,7 @@ For a tool:
 1. A simple calculator in HTML + JS
 2. Deploy to Cloudflare Pages (there's a free plan)
 3. Capture the email before showing the result
-4. Webhook → Kit (subscriber added)
+4. Pass the email to Kit: embed a Kit form on the results page, or add the subscriber through Kit's API
 ```
 
 ---
@@ -561,7 +563,10 @@ For a tool:
 ### Step 3: Set up the landing page in 1 day
 
 ```
-1. Carrd → new site → a "Lead capture" template
+1. Option A (free): in Kit, open Audience growth → Landing Pages & Forms → + New →
+   Landing Page
+   Option B: Carrd → new site → a template with a form (needs a Carrd plan with forms) →
+   a Form element of the Signup type → connect Kit
 2. Headline: [benefit-driven, specific to your audience]
    Example: "Download 5 AI workflows for accountants and
    save 10 hours a week"
@@ -569,9 +574,10 @@ For a tool:
 4. Form:
    - Email (only!)
    - Button: "Send it to me" / "Get the PDF"
-5. Connect Kit (formerly ConvertKit) through the integration
-6. Set up the confirmation email (with a Kit automation)
-7. Custom domain (optional; the price depends on the registrar)
+5. Delivery email: in Kit, open the form or landing page → Settings → Confirmation Email tab →
+   check Send confirmation email → under After confirming redirect to, upload the PDF
+   (Choose a file) or paste a link. People confirm their address and get the resource right away
+6. Custom domain (optional; the price depends on the registrar)
 ```
 
 ---
@@ -581,14 +587,16 @@ For a tool:
 ```
 1. Use the template above (Emails 1-7)
 2. Adapt it to your voice and niche
-3. In Kit:
-   - Create a Sequence "[Magnet name] Nurture"
+3. In Kit (as of October 2026, sequences and automations are on paid plans only):
+   - Automation → Email Sequences → + New sequence: "[Magnet name] Nurture"
    - Add 7 emails
-   - Set the delays: Email 1 instant, Emails 2-7 one per day
-4. Create an Automation:
-   - Trigger: subscribed to form "[Magnet name]"
-   - Action: add to sequence
-5. Test: sign up with your own test email and check all 7 emails
+   - Set the delays (Send this email): Email 1 as soon as possible, Emails 2-7 one per day
+4. Create a Visual Automation:
+   - Entry point: subscribes to the form "[Magnet name]"
+   - Next step: add to the sequence
+5. On the free plan: the resource arrives on its own in the confirmation email (Step 3),
+   and you send Emails 2-7 by hand, one a day, as one-off broadcasts (Broadcasts)
+6. Test: sign up with your own test email and check all 7 emails
 ```
 
 ---
@@ -624,7 +632,7 @@ Track UTMs:
 
 ```
 Week 1: let the data build up (at least 100 visitors)
-Week 2: first numbers
+Week 2: first numbers (the targets below are rough, from the table above, not a norm)
   - Opt-in conversion (target 20%+)
   - Email open rate (target 35%+)
   - Click rate (target 7%+)
@@ -646,14 +654,14 @@ Week 4: second round + first sales
 
 ## Tools and resources
 
-Prices as of October 2026.
+For prices, see the services' websites.
 
-- **[Carrd](https://carrd.com)**: the simplest landing page builder, from $19/year
-- **[Kit (formerly ConvertKit)](https://kit.com)**: email marketing for creators, free plan up to 10,000 subscribers
+- **[Carrd](https://carrd.com)**: the simplest landing page builder (forms only on a paid plan)
+- **[Kit (formerly ConvertKit)](https://kit.com)**: email marketing for creators, with a free plan (sequences and automations on paid plans, as of October 2026)
 - **[Beehiiv](https://www.beehiiv.com)**: a newer email tool focused on growth
 - **[Resend](https://resend.com)**: a developer-first email API
 - **[Framer](https://www.framer.com)**: design-heavy landing pages
-- **[Plausible](https://plausible.io)**: privacy-first analytics, from $9/month
+- **[Plausible](https://plausible.io)**: privacy-first analytics without cookies
 - **[PostHog](https://posthog.com)**: product analytics, with a free event allowance
 - **[Canva](https://canva.com)**: design lead magnets without a designer
 
@@ -675,11 +683,11 @@ Prices as of October 2026.
 
 - [First clients](38-monetization-clients.md): how to get your first clients
 - [How to choose a niche](38b-niche-selection-methodology.md): the right niche raises funnel conversion
-- [Lead generation](39-lead-generation.md): the bigger picture of inbound vs. outbound
-- [Cold outreach in 2026](39c-cold-outreach-deep.md): when you don't need a funnel and sell directly
+- [Lead generation](39-lead-generation.md): the bigger picture of inbound vs. outbound (a library lesson, optional)
+- [Cold outreach that gets replies](39c-cold-outreach-deep.md): when you don't need a funnel and sell directly
 
 ---
 
 ## Next lesson
 
-→ [Pricing strategy for AI products](39e-pricing-strategy-deep.md)
+→ [AI for advertising: ad copy, A/B tests and reports](92-ai-advertising.md)

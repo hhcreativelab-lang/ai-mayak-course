@@ -91,12 +91,12 @@ ROI del primer año: ($7,020 - $3,400) / $3,400 = 106%
 **Cliente:** una empresa SaaS B2B (vende software por suscripción a otras empresas; en este caso, software de gestión de proyectos), 8 personas, que vende a pequeños negocios en América Latina
 
 **Problema:**
-Un SDR (sales development rep, la persona que consigue prospectos para ventas) buscaba clientes potenciales en LinkedIn a mano, escribía correos personalizados, los mandaba y mantenía al día el CRM (el programa donde se registran clientes y tratos). Cada prospecto le tomaba 25-30 minutos. Eso es 8-10 prospectos al día como máximo. Conversión a una llamada: 8%.
+Un encargado de prospección (la persona que le busca prospectos al equipo de ventas; en inglés el puesto se llama SDR) buscaba clientes potenciales en LinkedIn a mano, escribía correos personalizados, los mandaba y mantenía al día el CRM (el programa donde se registran clientes y tratos). Cada prospecto le tomaba 25-30 minutos. Eso es 8-10 prospectos al día como máximo. Conversión a una llamada: 8%.
 
 **Costo del problema:**
 ```
-Sueldo del SDR: $3,000/mes = $18.75/hora
-8 prospectos × 30 min = 4 horas al día ≈ $75/día ≈ $1,500/mes (la mitad del tiempo pagado del SDR)
+Sueldo del encargado: $3,000/mes = $18.75/hora
+8 prospectos × 30 min = 4 horas al día ≈ $75/día ≈ $1,500/mes (la mitad del tiempo pagado del encargado)
 Resultado: 160-200 prospectos al mes, 13-16 llamadas
 ```
 
@@ -107,7 +107,7 @@ Un flujo de generación de prospectos con Claude:
 - Un segundo subagente reúne detalles para personalizar a partir de fuentes públicas: el sitio de la empresa, noticias, vacantes. El programa no recolecta perfiles de LinkedIn: las reglas de LinkedIn lo prohíben
 - Claude Sonnet escribe un primer correo personalizado para cada prospecto
 - El sistema carga todo en HubSpot CRM
-- El SDR ve 20 prospectos listos con correos personalizados, revisa cada uno (2-3 minutos) y hace clic en "Enviar" él mismo
+- El encargado ve 20 prospectos listos con correos personalizados, revisa cada uno (2-3 minutos) y hace clic en "Enviar" él mismo
 
 **Herramientas:** Claude Code (dirige a los subagentes), API de Claude Sonnet, Apollo.io API, HubSpot CRM API, bot de Slack (avisos)
 
@@ -115,7 +115,7 @@ Un flujo de generación de prospectos con Claude:
 
 | Métrica | Antes | Después |
 |---|---|---|
-| Prospectos al día | 8-10 | 40-50 (con 2 horas de trabajo del SDR) |
+| Prospectos al día | 8-10 | 40-50 (con 2 horas de trabajo del encargado) |
 | Tiempo por prospecto | 25-30 min | 2-3 min (revisar y enviar) |
 | Conversión a una llamada | 8% | 14% (mejor personalización) |
 | Llamadas al mes | 13-16 | 112-140 (40-50 prospectos × 20 días hábiles × 14%) |
@@ -130,9 +130,9 @@ Ingresos extra por las nuevas llamadas: el cliente hizo esas cuentas por su lado
 
 **Tiempo de construcción:** 14 días hábiles
 
-**Error en el camino:** la primera versión recolectaba por su cuenta datos de perfiles de LinkedIn, y la cuenta quedó restringida muy pronto. Las Condiciones de uso de LinkedIn prohíben de forma expresa recolectar datos con programas y bots. La solución: se quitó por completo la recolección automática en LinkedIn. Los contactos salen de Apollo.io por medio de su API oficial, y el SDR abre a mano un perfil de LinkedIn cuando hace falta. Ahora es una regla de la plantilla: antes de lanzar, lee las condiciones de cada plataforma de la que tomas datos.
+**Error en el camino:** la primera versión recolectaba por su cuenta datos de perfiles de LinkedIn, y la cuenta quedó restringida muy pronto. Las Condiciones de uso de LinkedIn prohíben de forma expresa recolectar datos con programas y bots. La solución: se quitó por completo la recolección automática en LinkedIn. Los contactos salen de Apollo.io por medio de su API oficial, y el encargado abre a mano un perfil de LinkedIn cuando hace falta. Ahora es una regla de la plantilla: antes de lanzar, lee las condiciones de cada plataforma de la que tomas datos.
 
-**Tiempo hasta el valor:** el SDR recibió los primeros 20 prospectos listos el día 3 del desarrollo (un primer vistazo al trabajo en curso). Esto importa: el cliente ve avances pronto.
+**Tiempo hasta el valor:** el encargado recibió los primeros 20 prospectos listos el día 3 del desarrollo (un primer vistazo al trabajo en curso). Esto importa: el cliente ve avances pronto.
 
 ---
 
@@ -245,7 +245,7 @@ Los agentes pasaban a mano los datos de los clientes entre WhatsApp, el correo, 
 **Solución:**
 Un centro de integración en Cloudflare Workers:
 
-**Receptor de webhooks:** la WhatsApp Business API manda cada mensaje a un endpoint de Workers (un webhook es un aviso automático que una app le manda a otra cuando pasa algo). Claude lo clasifica: ¿es un prospecto nuevo o un cliente existente? ¿Una pregunta de precio? ¿Una solicitud de visita? ¿La confirmación de una cita?
+**Receptor de webhooks:** la WhatsApp Business API manda cada mensaje a un programa pequeño en Workers (un webhook es un aviso automático que una app le manda a otra cuando pasa algo). Claude lo clasifica: ¿es un prospecto nuevo o un cliente existente? ¿Una pregunta de precio? ¿Una solicitud de visita? ¿La confirmación de una cita?
 
 **Actualización automática del CRM:** según esa clasificación, el registro en HubSpot se actualiza solo: etapa de la operación, fecha del último contacto, un resumen de la conversación (Claude escribe 2-3 oraciones).
 

@@ -1,4 +1,4 @@
-# AI for advertising: ad copy, A/B tests, smart bidding
+# AI for advertising: ad copy, A/B tests and reports
 
 **Time:** about 25 min reading + 40 min practice
 
@@ -10,6 +10,8 @@ An ad copywriter works 8 hours, writes 5 versions of an ad, gets tired and goes 
 
 It isn't just faster. It's a different game: more experiments → more data → better ads → often a lower cost per click.
 
+This lesson has a lot of Python code: it's how you put ad work on a schedule. If you don't program, read the theory for the ideas and the prompts, and use the no-code path in the practice: the same prompts work in a regular chat.
+
 🎨 **Picture this:** an ad agency used to be like a restaurant with a single cook: slow and expensive. Claude plus your data is more like a test kitchen: 50 recipes in a minute, you taste which one is best and scale up the winner. And the kitchen keeps working at night while the cook is asleep.
 
 ---
@@ -20,9 +22,9 @@ It isn't just faster. It's a different game: more experiments → more data → 
 - **Meta Ads (Facebook/Instagram)**: copy and images with AI
 - **Google Ads RSA**: responsive search ads, with Claude improving the headlines
 - **LinkedIn Ads and TikTok Ads**: the same method, with each platform's own limits and policies
-- **A/B testing**: Claude analyzes the results and calls the winner
+- **A/B testing**: you show two or more versions to different people and compare the results. The main numbers: CTR (click-through rate, the share of impressions that got a click), CPC (cost per click), CPL (cost per lead, the price of one signup or inquiry) and CVR (conversion rate, the share of clicks that became leads). Claude does the math and helps you pick the winner
 - **Performance Max**: how Claude helps with asset groups
-- **Adspirer MCP**: managing ad campaigns right from Claude
+- **Adspirer MCP**: managing ad campaigns right from Claude (MCP is the way outside services plug into Claude)
 - **Automated reports**: data → analysis → specific recommendations
 
 ---
@@ -37,23 +39,29 @@ Good advertising starts with testing. To test, you need lots of versions. That u
 import anthropic
 import json
 
+
+def text_of(response) -> str:
+    """Collects the text of a reply: newer models may put "thinking" blocks before the text."""
+    return "".join(block.text for block in response.content if block.type == "text")
+
+
 def generate_ad_variants(
     product: str,
     target_audience: str,
     key_benefit: str,
     platform: str,
     count: int = 10
-) -> dict:
+) -> list:
     """Generates ad copy variations"""
 
     client = anthropic.Anthropic()
 
-    # Platforms change their character limits: check them against the Meta and Google Ads help pages
+    # Recommended text lengths from the Meta and Google Ads help pages, as of October 2026.
+    # They change: check the platforms' help pages before you launch
     platform_specs = {
         "facebook": {
-            "headline_chars": 40,
-            "primary_text_chars": 125,
-            "description_chars": 30
+            "headline_chars": 27,       # headline in the Facebook feed
+            "primary_text_chars": 150,  # main text: Meta suggests 50-150 characters
         },
         "google_rsa": {
             "headline_chars": 30,
@@ -70,7 +78,7 @@ def generate_ad_variants(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=2000,
+        max_tokens=8000,  # with headroom: the model's "thinking" also counts toward this limit
         messages=[{
             "role": "user",
             "content": f"""Create {count} ad variations for {platform}.
@@ -89,7 +97,7 @@ Use a different approach for each variation:
 
 Use only claims that are true for this product. Don't invent numbers, reviews or customer counts.
 
-Return a JSON array:
+Return only a JSON array, with no explanations and no triple backticks around it:
 [
   {{
     "variant_id": 1,
@@ -104,10 +112,10 @@ Return a JSON array:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
-# Example: an online Excel course
+# Example: a made-up product
 variants = generate_ad_variants(
     product="Online Excel course for finance professionals",
     target_audience="Accountants and finance staff aged 25-45 who spend 2-3 hours on reports",
@@ -123,11 +131,11 @@ for v in variants[:3]:
     print(f"CTA: {v['cta']}")
 ```
 
-⚠️ **Every claim in an ad has to be true.** In the US, the FTC's truth-in-advertising rules apply to every ad, including the ones AI writes: no made-up reviews or customer counts, no results you can't back up. Each platform (Google, Meta, LinkedIn, TikTok) also has its own ad policies, with extra rules for sensitive categories such as housing, jobs, credit and health. AI drafts the copy; you're responsible for what goes live. If you're unsure about a claim, read the platform's policy pages or ask a lawyer.
+⚠️ **Every claim in an ad has to be true.** In the US, the FTC's truth-in-advertising rules apply to every ad, including the ones AI writes: no made-up reviews or customer counts, no results you can't back up. Each platform (Google, Meta, LinkedIn, TikTok) also has its own ad policies, with extra rules for sensitive categories such as housing, jobs, credit and health. AI drafts the copy; you're responsible for what goes live. If your ads run outside the US, check the rules of each country where they run. If you're unsure about a claim, read the platform's policy pages or ask a lawyer.
 
 ### Meta Ads: copy and images
 
-Meta (Facebook + Instagram) is the ad platform with the richest data. Claude helps with the copy and works alongside image generators for the visuals.
+Meta runs ads for both Facebook and Instagram from one ad account. Claude helps with the copy and works alongside image generators for the visuals.
 
 **The ad creation funnel:**
 
@@ -150,7 +158,7 @@ def create_meta_campaign_brief(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1500,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Create a detailed brief for a Meta Ads campaign.
@@ -172,7 +180,7 @@ Be specific: numbers, percentages, recommendations."""
         }]
     )
 
-    return response.content[0].text
+    return text_of(response)
 ```
 
 🎨 **Picture this:** a media planner used to be a separate specialist who worked 9 to 5. Claude drafts the plan in seconds, even at 3 a.m. the night before a launch. A person still makes the call on the budget.
@@ -191,7 +199,7 @@ def generate_google_rsa(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1200,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Create an RSA ad for Google Ads.
@@ -207,7 +215,7 @@ Requirements:
 - Put the keywords in 3-4 headlines (not all of them!)
 - Variety: benefits, actions, what makes you different, urgency
 
-Return JSON:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
     "headlines": ["headline 1", ... "headline 15"],
     "descriptions": ["description 1", ... "description 4"],
@@ -219,7 +227,7 @@ Return JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
 # Example: a law firm
@@ -242,7 +250,7 @@ The functions above aren't tied to Meta and Google. LinkedIn Ads is the usual ch
 
 ### A/B testing: Claude picks the winner
 
-Test data often looks confusing. One version has a higher CTR, but a higher CPC too. Fewer conversions, but cheaper ones. Claude helps you untangle it in seconds.
+Test data often looks confusing. One version has a higher CTR, but a higher CPC too. Fewer conversions, but cheaper ones. Claude helps you untangle it in seconds. It will calculate the percentages, but check the conclusion about whether there's enough data yourself: with a few dozen conversions, chance can easily look like a win.
 
 ```python
 def analyze_ab_test(test_results: list[dict]) -> dict:
@@ -261,7 +269,7 @@ def analyze_ab_test(test_results: list[dict]) -> dict:
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=800,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Analyze the results of this ad A/B test and give recommendations.
@@ -282,11 +290,11 @@ Be specific: give numbers and percentages."""
 
     return {
         "raw_results": test_results,
-        "analysis": response.content[0].text
+        "analysis": text_of(response)
     }
 
 
-# Test
+# A test with made-up data
 results = [
     {"variant": "A — Fear (loss)", "impressions": 10000, "clicks": 180, "conversions": 9, "spend": 350},
     {"variant": "B — Benefit (savings)", "impressions": 10000, "clicks": 220, "conversions": 18, "spend": 350},
@@ -295,6 +303,7 @@ results = [
 
 analysis = analyze_ab_test(results)
 print(analysis["analysis"])
+# Example of a reply for this data:
 # Winner: B — CTR 2.2%, CPL $19.4, CVR 8.2%
 # Variation A loses despite its intriguing headline
 # Recommendation: not much data yet (9 and 18 conversions); keep the test running and raise B's budget gradually
@@ -302,7 +311,7 @@ print(analysis["analysis"])
 
 ### Performance Max: Claude helps with asset groups
 
-PMax is a type of Google campaign that decides on its own where to show your ads (Search, YouTube, Gmail, Display). The quality of your materials (assets) is critical. For Search campaigns, Google also has AI Max: as of October 2026, the AI features are built into the campaigns themselves, so check names and settings against the Google Ads help pages.
+PMax is a type of Google campaign that decides on its own where to show your ads (Search, YouTube, Gmail, Display, Discover and Maps). The quality of your materials (assets) is critical. For Search campaigns, Google also has AI Max: as of October 2026, the AI features are built into the campaigns themselves, so check names and settings against the Google Ads help pages.
 
 ```python
 def create_pmax_assets(
@@ -314,7 +323,7 @@ def create_pmax_assets(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=2000,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Create all the materials (assets) needed for a Performance Max campaign.
@@ -323,9 +332,9 @@ Product: {product}
 Key benefits: {', '.join(key_benefits)}
 Audience persona: {audience_persona}
 
-Create:
+Return only JSON, with no explanations and no triple backticks around it:
 {{
-    "headlines": ["5 headlines up to 30 characters"],
+    "headlines": ["5 headlines up to 30 characters, at least one of them up to 15"],
     "long_headlines": ["5 long headlines up to 90 characters"],
     "descriptions": ["5 descriptions up to 90 characters"],
     "business_name": "company name (up to 25 characters)",
@@ -340,12 +349,12 @@ Create:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 ```
 
 ### Adspirer MCP: managing ads right from Claude
 
-Adspirer is a third-party MCP service for ad accounts. It connects to Claude Code and Cowork as a plugin and, as of October 2026, works with Google Ads, Meta Ads and a number of other platforms. It lets Claude see real campaign data and make recommendations based on facts, not guesses. The service can also launch campaigns, so check its terms, give it the minimum permissions (start with read-only) and keep launching ads and changing budgets for yourself.
+Adspirer is a third-party MCP service for ad accounts. It connects to Claude Code and Cowork as a plugin (both are covered in module 12) and, as of October 2026, works with Google Ads, Meta Ads and a number of other platforms. It lets Claude see real campaign data and make recommendations based on facts, not guesses. The service can also create campaigns, so read its terms, look at what access to your ad accounts it asks for, and keep launching ads and changing budgets for yourself: Claude prepares, you confirm.
 
 ```
 # In Claude Code, with Adspirer MCP connected:
@@ -368,7 +377,7 @@ def generate_weekly_ad_report(campaigns_data: dict) -> str:
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1500,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Generate a weekly report on the ad campaigns.
@@ -392,11 +401,11 @@ Report format:
 ## Budget
 [recommendations for reallocating]
 
-Write like an analyst: specific, with numbers, no fluff."""
+Write like an analyst: specific, with numbers, no fluff. Take numbers only from the data."""
         }]
     )
 
-    return response.content[0].text
+    return text_of(response)
 ```
 
 ---
@@ -404,6 +413,10 @@ Write like an analyst: specific, with numbers, no fluff."""
 ## Practice
 
 ### Exercise: create 10 ad copy variations and analyze a test
+
+**Without programming.** Copy the prompt text from the `create_ad_batch()` function below, put in your own product details and send it in a Claude chat. For Part 2, paste a table with your test results into the chat and ask Claude to analyze it using the five points from `analyze_ab_test()`.
+
+**With code.** You need Python, the `anthropic` library (`pip install anthropic`) and an Anthropic API key in the `ANTHROPIC_API_KEY` environment variable. You create the key in the Claude Console (platform.claude.com); it's billed by tokens, separately from a subscription.
 
 **Part 1: Generating the variations (15 minutes)**
 
@@ -415,12 +428,18 @@ import json
 
 client = anthropic.Anthropic()
 
+
+def text_of(response) -> str:
+    """Collects the text of a reply: newer models may put "thinking" blocks before the text."""
+    return "".join(block.text for block in response.content if block.type == "text")
+
+
 def create_ad_batch(product_info: dict) -> list:
     """Creates a batch of ads for testing"""
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=3000,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Create 10 ad variations for Facebook.
@@ -441,21 +460,21 @@ Create 2 variations for each approach:
 
 Use only facts from the product info above. Don't invent numbers, reviews or customer counts.
 
-JSON format:
+Return only JSON, with no explanations and no triple backticks around it:
 [{{
     "id": 1,
     "approach": "name",
-    "headline": "up to 40 characters",
-    "text": "up to 125 characters",
+    "headline": "up to 27 characters",
+    "text": "up to 150 characters",
     "cta": "button",
     "image_direction": "what the image should show"
 }}]"""
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
-# Run it for your product
+# Put in your own product (the example below is made up)
 my_product = {
     "name": "Online business English school for tech professionals",
     "description": "English for working on US teams, in 3 months",
@@ -479,7 +498,7 @@ for ad in ads:
 
 **Part 2: Analyzing the test results (25 minutes)**
 
-Once the test has run, enter the data and get the analysis:
+Once the test has run, enter the data and get the analysis. Copy the `analyze_ab_test()` function from the theory section into the same file.
 
 ```python
 # Enter your real data after 5 days of testing (the numbers below are made up)
@@ -504,11 +523,11 @@ print(analysis["analysis"])
 
 ## Tools and resources
 
-- **Meta Business Manager**: business.facebook.com (for running ads)
+- **Meta Business Suite and Ads Manager**: business.facebook.com (where you run ads on Facebook and Instagram)
 - **Google Ads**: ads.google.com
 - **LinkedIn Campaign Manager**: LinkedIn's own tool for running ads (B2B audiences)
 - **TikTok Ads Manager**: TikTok's own tool for running ads (short vertical video)
-- **Adspirer MCP**: a tool for analyzing ads through Claude
+- **Adspirer MCP**: a third-party tool for analyzing ads through Claude
 - **Flux**: bfl.ai, the Black Forest Labs site (generating ad images from a prompt)
 - **Meta Ad Library**: facebook.com/ads/library (see the ads your competitors are running)
 - **Google Keyword Planner**: Google's keyword planning tool
@@ -520,7 +539,7 @@ print(analysis["analysis"])
 
 > Advertising is always a test. Whoever tests more variations learns faster. Claude makes testing cheap: 50 variations instead of 5, in minutes instead of days.
 >
-> Data analysis is the bottleneck on most ad teams. Claude removes that bottleneck: it sees every metric at once, doesn't get lost in spreadsheets and gives a specific conclusion with the reasoning behind it.
+> Data analysis is often the bottleneck on small ad teams. Claude takes that load off: it sees every metric at once, doesn't get lost in spreadsheets and gives a specific conclusion with the reasoning behind it.
 >
 > The main rule: Claude writes the copy and analyzes the data, but a person launches and scales the ads. The final decision is always yours; AI just gets you there faster.
 
@@ -528,4 +547,4 @@ print(analysis["analysis"])
 
 ## Next lesson
 
-→ [Sales AI: lead qualification, follow-up and closing deals](93-sales-ai.md)
+→ [AI for sales: qualifying leads, follow-ups, closing](93-sales-ai.md)

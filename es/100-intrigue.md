@@ -6,7 +6,7 @@
 
 ## La idea
 
-Esperabas código. Una herramienta más, una integración más, una biblioteca más. Esta lección no es eso. Es una conversación, de esas que suelen darse al final de una noche larga, cuando la laptop ya está cerrada.
+Esperabas una herramienta más, una configuración más, un truco más. Esta lección no es eso. Es una conversación, de esas que suelen darse al final de una noche larga, cuando la laptop ya está cerrada.
 
 🎨 **Imagínalo así:** tomaste clases de manejo. Pasaste el examen. Te dieron la licencia. Te subiste al carro. Y solo ahora, manejando solo por primera vez sin instructor al lado, te das cuenta de que saber manejar y poder manejar son dos cosas distintas. Esta lección trata de lo que pasa cuando el instructor se baja del carro.
 
@@ -20,7 +20,7 @@ Terminaste tu ruta por el curso. Según la ruta que elegiste, ahora puedes:
 - Revisar las respuestas de la IA y saber en qué partes no confiar
 - Crear agentes que siguen trabajando mientras duermes (la ruta Crear mi propio producto)
 - Convertir la IA en un servicio o un producto (las rutas Ganar dinero con IA y Crear mi propio producto)
-- Supervisar, depurar y hacer crecer lo que construiste
+- Supervisar, depurar y hacer crecer lo que construiste (la ruta Crear mi propio producto)
 
 Ahora tienes en las manos una de las herramientas más capaces de nuestro tiempo.
 
@@ -36,9 +36,9 @@ Eso no es pesimismo. Es lo más honesto que alguien te puede decir al final de u
 
 ---
 
-## Qué hace a un buen emprendedor con IA
+## Qué distingue a quien trabaja bien con la IA
 
-No las habilidades con los prompts. No conocer la API. Tres cosas:
+No las habilidades con los prompts. No conocer la API (la forma en que los programas se conectan directamente con la IA). Tres cosas:
 
 **Curiosidad.** Hacer preguntas que nadie hizo antes. Notar la fricción que todos dejaron de ver porque se acostumbraron. Claude es bueno respondiendo preguntas. Quien las hace eres tú.
 
@@ -46,7 +46,7 @@ No las habilidades con los prompts. No conocer la API. Tres cosas:
 
 **Criterio.** Saber la diferencia entre lo bueno y lo suficientemente bueno. Claude genera opciones. Quien elige eres tú.
 
-🎨 **Imagínalo así:** una cámara con lente profesional en manos de un principiante toma fotos bonitas. La misma cámara en manos de Henri Cartier-Bresson hizo obras maestras. No porque conociera más botones, sino porque sabía mirar.
+🎨 **Imagínalo así:** una cámara con lente profesional en manos de un principiante toma fotos bonitas. La misma cámara en manos de Henri Cartier-Bresson, uno de los grandes fotógrafos del siglo XX, hizo obras maestras. No porque conociera más botones, sino porque sabía mirar.
 
 ---
 
@@ -66,14 +66,18 @@ Trabajar con IA es una disciplina del pensamiento.
 
 ## Qué sigue
 
-Terminaste el curso. Pero es solo el comienzo.
+Ya casi terminas el curso principal. Pero es solo el comienzo.
 
-Hay cosas que no se pueden transmitir con videos y textos: cómo desarmar un caso concreto, cómo juzgar con ojo crítico tus propias decisiones, cómo tomar lo que ya les funciona a otros y adaptarlo a ti. Eso solo llega con la práctica, en tus propios proyectos.
+Hay cosas que no se pueden transmitir con una lección escrita: cómo desarmar un caso concreto, cómo juzgar con ojo crítico tus propias decisiones, cómo tomar lo que ya les funciona a otros y adaptarlo a ti. Eso solo llega con la práctica, en tus propios proyectos.
 
-El curso continúa con dos pasos hacia esa práctica:
+En el curso principal queda una lección: [Elige tu camino: un mapa de la biblioteca avanzada](49b-choose-your-path.md). Si seguiste la ruta Usar la IA en mi trabajo, esta conversación es su final, y el mapa lo puedes simplemente hojear.
 
-- [Por qué un dueño de negocio necesita seguridad y arquitectura](100b-why-production-matters.md) y las lecciones que le siguen sobre seguridad y sobre mantener en orden tu conocimiento: cómo construir un sistema que aguante un año de trabajo y crecimiento.
-- [Build-Along: un chatbot para tu negocio](109-build-along-telegram-bot.md) y las demás lecciones Build-Along (construir paso a paso): cinco proyectos que puedes construir con tus propias manos, desde un chatbot para tu negocio hasta una práctica de consultoría en IA.
+En la biblioteca (es opcional, para quienes construyen con Claude Code), dos pasos llevan hacia esa práctica:
+
+- [Por qué a un emprendedor le importan la seguridad y la arquitectura](100b-why-production-matters.md) y las lecciones que le siguen sobre seguridad y sobre mantener en orden tu conocimiento: cómo construir un sistema que aguante un año de trabajo y crecimiento.
+- [Paso a paso: un bot de Telegram con IA para un negocio](109-build-along-telegram-bot.md) y las demás lecciones de construir paso a paso: cuatro proyectos que puedes armar con tus propias manos, un bot de Telegram, una app por suscripción, una fábrica de contenido y un agente de voz (el quinto, la práctica de consultoría en IA, está en el curso principal, en el módulo del plan de 90 días).
+
+No hay certificado al final del curso. Como recuerdo, puedes hacer un diploma conmemorativo en la página Mi progreso: lo haces tú mismo a partir de las lecciones que marcaste como hechas en tu navegador. No es un documento de estudios y nadie lo verifica.
 
 🎨 **Imagínalo así:** esto fue el entrenamiento en el puerto. Estudiaste las cartas de navegación, el rumbo, el motor. De aquí en adelante, es mar abierto.
 
@@ -91,7 +95,8 @@ Dedicaste tu tiempo a lo correcto. Ahora, a construir.
 
 ## Herramientas y recursos
 
-- **Siguiente paso**: [Por qué un dueño de negocio necesita seguridad y arquitectura](100b-why-production-matters.md) → [Build-Along: un chatbot para tu negocio](109-build-along-telegram-bot.md)
+- **Siguiente lección del curso principal**: [Elige tu camino: un mapa de la biblioteca avanzada](49b-choose-your-path.md)
+- **Después, opcional, en la biblioteca avanzada**: [Por qué a un emprendedor le importan la seguridad y la arquitectura](100b-why-production-matters.md) → [Paso a paso: un bot de Telegram con IA para un negocio](109-build-along-telegram-bot.md)
 
 ---
 

@@ -182,13 +182,13 @@ Before any deep analysis, run the niche through 3 questions. If the answer to ev
 
 If you can, the niche exists, at least in your head. If you can't, you don't have anything yet.
 
-**Q2: Do you know exactly 5 people, right now, who need this product?**
+**Q2: Do you know at least 5 people, right now, who need this product?**
 
 - 5+ people you can name → the niche is real, and you have a warm pipeline (potential buyers who already know you)
 - 1-4 → do more research; you need customer interviews
 - 0 → red flag. You don't understand the market
 
-It's a common rule of thumb among indie developers: "if you can't name 5 customers, you don't have a niche."
+A simple rule of thumb: if you can't name 5 customers, you don't have a niche yet.
 
 **Q3: Are there paying alternatives right now?**
 
@@ -224,7 +224,7 @@ Don't decide in one evening. This is a 4-week process that can save you 12 month
 **Goal:** a deep look at the top 10.
 
 For each one:
-- 3 customer interviews (30 minutes each, over Zoom or by phone)
+- Customer interviews: 3 if you can, 30 minutes each (over Zoom or by phone). Thirty interviews in one week is more than most people can manage: if you're short on time, start with the 3-5 niches that look strongest
 - Search Reddit, Quora and X (Twitter) for people describing the pain ("looking for a tool that does X," "I hate it when...")
 - An analysis of existing solutions (what's out there, what doesn't work, prices, reviews). Count people too: if businesses hire freelancers on Upwork or post jobs on Indeed to get this task done, they already pay to solve it
 - A detailed score with the 7-criteria scorecard
@@ -244,7 +244,7 @@ For each one:
 **Goal:** real signals from the market.
 
 For each of the top 3:
-- A mockup landing page (Carrd or a similar builder with low-cost paid plans; current prices are on the builder's pricing page; it honestly takes about 2 hours)
+- A mockup landing page, a one-page website that presents your offer (Carrd or a similar builder with low-cost paid plans; current prices are on the builder's pricing page; it honestly takes about 2 hours)
 - Visitors from targeted ads: the budget depends on the cost per click in your niche, so estimate it ahead of time (for search ads, Google Keyword Planner shows typical bid ranges for your keywords). The goal is about 100 visitors per niche
 - Track: clicks, signups and clicks on a "Buy Now" button (the button leads to an honest page: "the product is still being built, leave your email")
 - Direct outreach to 10 potential customers (email or LinkedIn)
@@ -308,8 +308,8 @@ These are hypotheses, not guaranteed demand: run each one through the 7-criteria
 
 That doesn't mean "impossible." It means "very expensive to break into without a unique angle or $1M+ in capital."
 
-- ❌ **"AI writing assistant"**: Jasper, Writesonic and many others took this market long ago.
-- ❌ **"AI image generator"**: Midjourney, ChatGPT Images, Flux, Nano Banana. Without big infrastructure and capital, stay out.
+- ❌ **"AI writing assistant"**: Jasper and many others took this market long ago.
+- ❌ **"AI image generator"**: Midjourney, ChatGPT's built-in image generation, Flux, Nano Banana. Without big infrastructure and capital, stay out.
 - ❌ **"AI chatbot platform"**: dozens of mature platforms and startups. A red ocean.
 - ❌ **"AI resume builder"**: lots of ready-made services. Thin margins.
 - ❌ **Generic "productivity AI" tools**: Notion AI and the like. The established companies have built it into their own tools.
@@ -384,7 +384,7 @@ If 8 or more of the 10 are checked, lock in the niche. Fewer than that, keep res
 
 ### Step 1: Brainstorm 50 niches
 
-The commands below create a folder and a file in the terminal. If the terminal isn't your thing yet, create the same folders and files in any text editor or in Google Docs.
+The commands below create a folder and a file in the terminal. If the terminal isn't your thing yet, create the same folders and files in any text editor or in Google Docs. Run every block of commands from the same starting folder, so that all the weeks end up side by side inside `niche-selection`.
 
 ```bash
 mkdir -p niche-selection/week1
@@ -435,8 +435,8 @@ The `50-niches-brainstorm.md` template:
 ### Step 2: A customer interview template
 
 ```bash
-mkdir week2-research
-cd week2-research
+mkdir -p niche-selection/week2-research
+cd niche-selection/week2-research
 
 # Interview template
 touch interview-template.md
@@ -486,8 +486,8 @@ The `interview-template.md` template:
 ### Step 3: Landing page validation
 
 ```bash
-mkdir week3-validation
-cd week3-validation
+mkdir -p niche-selection/week3-validation
+cd niche-selection/week3-validation
 ```
 
 **Stack:**
@@ -613,7 +613,7 @@ The numbers in this template are placeholders for targets you set yourself, not 
 - **[Reddit r/Entrepreneur](https://www.reddit.com/r/Entrepreneur/)**: pain mentions, niche brainstorming
 - **[Reddit r/SaaS](https://www.reddit.com/r/SaaS/)**: what founders are building, in which niches
 - **[Indie Hackers](https://www.indiehackers.com)**: milestone updates, niche case studies
-- **[Y Combinator Startup School](https://www.startupschool.org)**: lectures on finding and evaluating niches and ideas
+- **[Y Combinator Startup School](https://www.startupschool.org)**: a free online course on starting a startup, including how to find and evaluate ideas
 - **[MAKE: The Indie Startup Manual (Pieter Levels)](https://readmake.com)**: a paid book about launching your own product
 - **[Google Trends](https://trends.google.com)**: check how search interest in a niche changes over time
 - **[Ahrefs Free Tools](https://ahrefs.com/keyword-difficulty)**: keyword difficulty for SEO in your niche
@@ -623,10 +623,10 @@ The numbers in this template are placeholders for targets you set yourself, not 
 
 ## Related lessons
 
-- [The agentic AI market](01-agentic-market.md): the big picture of where to play
-- [Your first clients](38-monetization-clients.md): how to find your first clients
-- [Real monetization case studies](47-monetization-cases.md): how the pricing model ties to the niche
-- [Unit economics of an AI stack](99b-unit-economics-deep.md): LTV/CAC by niche
+- [What is an AI agent, and why it matters now](01-agentic-market.md): the big picture of the market (later in the course)
+- [Your first clients](38-monetization-clients.md): how to find your first clients (later in the course)
+- [Making money with AI: 5 client cases](47-monetization-cases.md): five teaching examples with payback math
+- [Unit economics of an AI stack](99b-unit-economics-deep.md): LTV/CAC by niche (an optional library lesson)
 
 ---
 
@@ -646,4 +646,6 @@ The numbers in this template are placeholders for targets you set yourself, not 
 
 ## Next lesson
 
-→ [Lead generation: from scraping to a CSV file](39-lead-generation.md)
+→ [How to find a niche with Google Trends and Reddit](88-niche-trend-analysis.md): how to check with search data whether demand in your niche is growing
+
+If you know how to code, there's also an optional library lesson: [Finding potential clients: from scraping websites to a CSV file](39-lead-generation.md).

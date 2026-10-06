@@ -60,7 +60,7 @@ La pregunta no es cómo estar en todas partes. Es dónde está **tu audiencia** 
 - **Clonación de voz**: sintetizar tu voz (audio) con ElevenLabs o Resemble para pódcasts, locuciones de YouTube, contenido en varios idiomas
 - **Antipatrón**: marcas en el texto que delatan de inmediato que lo generó una IA ("adentrémonos en", "en conclusión", "en el vertiginoso mundo actual")
 - **Mantener tu personaje**: la disciplina de no alejarte de tu propia voz por la presión del algoritmo (ganchos virales vs. tu estilo real)
-- **Juego de la interacción**: respuestas bien pensadas bajo las publicaciones de otros en tu nicho como forma de crecer (muchas veces más importante que las publicaciones mismas)
+- **Juego de la interacción**: respuestas bien pensadas bajo las publicaciones de otros en tu nicho como forma de crecer (mientras tu propia audiencia es pequeña, importan tanto como tus propias publicaciones)
 
 ---
 
@@ -74,7 +74,7 @@ La pregunta no es cómo estar en todas partes. Es dónde está **tu audiencia** 
 | **X (Twitter)** | Fundadores, indie hackers, desarrolladores | 1-3 publicaciones/día + juego de respuestas | Publicaciones cortas + hilos | Fundadores de SaaS, desarrolladores, mercadólogos |
 | **YouTube** | Audiencia que busca profundidad | 1 video largo/semana (10-20 min) | Video | Educadores, coaches, nichos profundos |
 
-**El patrón entre plataformas:** un video de YouTube → clips de 60 segundos para X (o TikTok e Instagram Reels) → un análisis escrito como publicación de LinkedIn. Una sola idea, tres formatos. Justo ahí es donde ayuda la IA.
+**El patrón entre plataformas** (para cuando tu primera plataforma ya funcione): un video de YouTube → clips de 60 segundos para X (o TikTok e Instagram Reels) → un análisis escrito como publicación de LinkedIn. Una sola idea, tres formatos. Justo ahí es donde ayuda la IA.
 
 ---
 
@@ -93,7 +93,7 @@ La meta es poner tu voz en palabras para que Claude pueda reproducirla.
    - Mensajes largos de chats y correos a clientes
    - Transcripciones de tus notas de voz (hechas con Whisper o con una app de dictado)
    - Notas y borradores
-2. Dáselas a Claude y pídele que saque un perfil:
+2. Dáselas a Claude (pega el texto en el chat o adjunta un archivo) y pídele que saque un perfil:
 
 ```
 Lee estos 50 textos y escribe un brand-voice.md:
@@ -107,7 +107,7 @@ Lee estos 50 textos y escribe un brand-voice.md:
 - Qué tipo de ejemplos de la vida real uso
 ```
 
-3. **Guarda el archivo `brand-voice.md`**: ahora es tu perfil de voz, guardado en la misma carpeta (o repositorio) que tu contenido. La IA lo lee antes de cada borrador.
+3. **Guarda el archivo `brand-voice.md`**: ahora es tu perfil de voz, guardado en la misma carpeta que tu contenido. La IA lo lee antes de cada borrador: en un chat, adjunta el archivo a tu mensaje.
 
 🎨 **Imagínalo así:** la partitura de tu voz. Sin ella, la IA puede tocar cualquier melodía, menos la tuya.
 
@@ -166,9 +166,9 @@ Este es el **paso crítico**: sáltatelo y obtienes relleno de IA. Qué haces:
 
 - **Typefully**: para X y otras redes: una fila de publicaciones, borradores, estadísticas (hay un plan gratis con límite de publicaciones)
 - **Hypefury**: un programador que vuelve a publicar tu contenido atemporal (la lista de redes compatibles ha cambiado con el tiempo, así que revisa el sitio)
-- **Buffer**: un programador sencillo para varias plataformas (el plan gratis está limitado por número de canales; los planes de pago se cobran por canal)
+- **Buffer**: un programador sencillo para varias plataformas (el plan gratis está limitado por número de canales y de publicaciones en la fila; los planes de pago se cobran por canal)
 
-**Mejores horarios** (en la zona horaria de tu audiencia, no en la tuya; son puntos de partida, así que compáralos con tus propias estadísticas):
+**Mejores horarios** (en la zona horaria de tu audiencia, no en la tuya). Son suposiciones para arrancar, no estadísticas: empieza con ellas y compáralas con tus propias estadísticas:
 
 - LinkedIn: martes a jueves, 9-11 a.m.
 - X: lunes a viernes, 9 a.m. y 4 p.m.
@@ -203,7 +203,7 @@ Calcula tu presupuesto con la fórmula de la lección [Cuánto cuestan de verdad
 
 ### Clonación de voz: cuándo y cómo (la ética en 2026)
 
-Clonar tu voz con ElevenLabs o Resemble significa **sintetizar audio con tu voz** a partir de una grabación de muestra. Un clon rápido se hace con una muestra corta (en ElevenLabs está disponible a partir del plan Starter, a octubre de 2026); un clon profesional necesita una grabación más larga y está disponible a partir del plan Creator. La tecnología funciona desde 2023, y hoy muchas veces es difícil distinguir de oído un clon del original.
+Clonar tu voz con ElevenLabs o Resemble significa **sintetizar audio con tu voz** a partir de una grabación de muestra. Un clon rápido se hace con una muestra corta de 1 a 2 minutos (en ElevenLabs está disponible a partir del plan Starter, a octubre de 2026); un clon profesional necesita una grabación larga, de 30 minutos o más, y está disponible a partir del plan Creator. Muchas veces es difícil distinguir de oído un buen clon del original, y por eso aquí hay más reglas que con el texto.
 
 **Usos legítimos:**
 
@@ -214,30 +214,30 @@ Clonar tu voz con ElevenLabs o Resemble significa **sintetizar audio con tu voz*
 
 **La base ética en 2026:**
 
-- 📌 **Decláralo:** "Locución generada con IA a partir de grabaciones de mi propia voz" en la descripción del episodio o del video. Cada vez es más la norma entre creadores.
+- 📌 **Decláralo:** "Locución generada con IA a partir de grabaciones de mi propia voz" en la descripción del episodio o del video. Te sugerimos hacerlo siempre, aunque la plataforma no lo exija
 - 📌 **No suplantes** a otra persona (ni a una figura pública, ni "de broma")
 - 📌 **No lo uses** para política, estafas ni contenido dañino
-- 📌 **Respeta las condiciones de las plataformas:** las reglas sobre declarar una voz sintética siguen cambiando (YouTube, TikTok, Spotify). Lee las condiciones vigentes de cada plataforma antes de publicar
-- 📌 **Anthropic Responsible Scaling Policy** (política de escalamiento responsable de Anthropic): trata sobre modelos de IA, pero el espíritu aplica: prevenir el mal uso, poner marcas de agua, llevar un registro de auditoría
+- 📌 **Respeta las reglas de las plataformas.** A octubre de 2026: YouTube no exige una etiqueta cuando el creador clona su propia voz para locuciones, pero sí la exige en contenido realista que muestre a una persona diciendo o haciendo algo que no dijo ni hizo. TikTok exige etiquetar las imágenes, el audio y el video realistas generados con IA. Las reglas siguen cambiando, así que lee las condiciones vigentes de cada plataforma antes de publicar
+- 📌 **Clona solo tu propia voz.** Clonar la voz de otra persona sin su consentimiento va contra las reglas de los servicios. ElevenLabs te pide confirmar que tienes el derecho y el consentimiento cuando haces un clon rápido, y solo permite hacer un clon profesional de tu propia voz, que además verifica (a octubre de 2026)
 
 **Herramientas:**
 
-- **[ElevenLabs](https://elevenlabs.io)**: un clon rápido a partir de una muestra corta y un clon profesional a partir de una grabación larga (condiciones según el plan: revisa su página de precios). Una de las plataformas de mayor calidad.
+- **[ElevenLabs](https://elevenlabs.io)**: un clon rápido a partir de una muestra corta y un clon profesional a partir de una grabación larga (condiciones según el plan: revisa su página de precios)
 - **Resemble AI**: una alternativa; compara la calidad con tu propia voz
 - **Modelos de clonación de código abierto** (por ejemplo, XTTS-v2): la empresa Coqui cerró, la comunidad mantiene el proyecto y la licencia de los pesos de XTTS-v2 no es comercial. Revisa la licencia si necesitas la voz para trabajo pagado. Corre en tu propia computadora, si la privacidad te importa
 
 **Consejos de calidad para el entrenamiento:**
 
-- Un clon profesional necesita mucho audio **limpio** (unos 30 minutos como referencia; un clon rápido solo necesita una muestra corta), sin música de fondo, grabado en un mismo cuarto
-- Varía la emoción: alegre, neutral, serio, un toque de ironía
-- Incluye palabras difíciles de pronunciar y términos extranjeros de tu nicho
-- Vuelve a entrenarlo cada 3 meses: tu voz cambia con el tiempo (edad, salud, un resfriado)
+- Un clon profesional necesita una grabación larga y **limpia**: ElevenLabs pide 30 minutos como mínimo y recomienda de 2 a 3 horas; a un clon rápido le bastan 1 o 2 minutos. Sin música ni ruido de fondo, grabado en un mismo cuarto
+- Habla con un solo estilo: el clon repite el estilo de la grabación. Si quieres una voz viva y expresiva, graba tu muestra así
+- Incluye palabras difíciles de pronunciar y términos de tu nicho
+- Graba una muestra nueva si tu voz cambió de forma notable o cambiaste de micrófono
 
 ---
 
 ### Mantener tu personaje: 6 antipatrones vs. 6 patrones que humanizan
 
-Esta es la parte crítica. Los algoritmos de LinkedIn y X entrenan a la gente a escribir igual (ganchos virales, la fórmula AIDA de Atención, Interés, Deseo, Acción, y el formato de una oración por renglón). Después de 6 meses de ese "entrenamiento", pierdes tu voz y te vuelves indistinguible de otras 100 mil cuentas de "gurús de la IA".
+Esta es la parte crítica. Los algoritmos de LinkedIn y X entrenan a la gente a escribir igual (ganchos virales, la fórmula AIDA de Atención, Interés, Deseo, Acción, y el formato de una oración por renglón). Después de 6 meses de ese "entrenamiento", pierdes tu voz y te vuelves indistinguible de miles de cuentas iguales de "gurús de la IA".
 
 #### 6 antipatrones (delatan de inmediato que lo generó una IA)
 
@@ -268,7 +268,7 @@ Esta es la parte crítica. Los algoritmos de LinkedIn y X entrenan a la gente a 
 - **Publica:** cómo construye detrás de cámaras, observaciones técnicas, métricas del producto en tiempo real
 - **Con qué frecuencia:** diario en X + 2 a la semana en LinkedIn
 - **Cómo ayuda la IA:** genera variantes de publicaciones, programa, encuentra publicaciones relevantes para responder
-- **Ejemplos públicos (generales, como dirección):** Pieter Levels, Marc Lou, Tony Dinh: el patrón de construir a la vista de todos
+- **Ejemplos del formato de construir a la vista de todos (son ejemplos del formato, no de un flujo con IA):** Pieter Levels, Marc Lou
 - **Herramientas:** Claude + un programador
 
 #### Arquetipo B: El Consultor
@@ -284,10 +284,10 @@ Esta es la parte crítica. Los algoritmos de LinkedIn y X entrenan a la gente a 
 - **Publica:** tutoriales, guías a fondo, minicursos, análisis
 - **Con qué frecuencia:** 1-2 videos de YouTube a la semana + clips en X + una publicación larga mensual en LinkedIn
 - **Cómo ayuda la IA:** esquemas de guion, recorte de clips, transcripciones, voz en varios idiomas
-- **Ejemplos:** Tiago Forte (Building a Second Brain), Ali Abdaal (productividad)
+- **Ejemplo del formato:** Tiago Forte (Building a Second Brain)
 - **Herramientas:** Claude + ElevenLabs + una herramienta de edición de video
 
-**Elige tu arquetipo antes de empezar.** Si no, vas a escribir de todo y no vas a hacer crecer ninguna de esas audiencias.
+**Elige tu arquetipo antes de empezar.** Si no, vas a escribir de todo y no vas a hacer crecer ninguna de esas audiencias. Las frecuencias de arriba son el nivel al que se llega con el tiempo: tus primeros seis meses, lleva una sola plataforma.
 
 ---
 
@@ -300,45 +300,45 @@ Esta es la parte crítica. Los algoritmos de LinkedIn y X entrenan a la gente a 
 | 3 | Contrapunto / artículo de opinión | 5 publicaciones cortas + juego de respuestas | 1 publicación en colaboración |
 | 4 | Guía táctica / marco de trabajo | 5 publicaciones cortas + un repaso | Retrospectiva del mes |
 
-Luego repite, ajustando por **temporada** (eventos de la industria, días festivos, lanzamientos de productos) y por **saltos de actualidad** (de pronto surge un tema candente en tu nicho: deja el plan a un lado y responde).
+Luego repite, ajustando por **temporada** (eventos de la industria, días festivos, lanzamientos de productos) y por **saltos de actualidad** (de pronto surge un tema candente en tu nicho: deja el plan a un lado y responde). Si llevas una sola plataforma, usa solo su columna.
 
 🎨 **Imagínalo así:** cuatro estaciones en un mes. Marcos de trabajo (enseñar) → Historias (confianza) → Opiniones (destacar) → Tácticas (valor). Y otra vuelta.
 
 ---
 
-### El juego de la interacción: por qué las respuestas importan más que las publicaciones
+### El juego de la interacción: por qué las respuestas importan tanto como tus publicaciones
 
-Todos piensan: escribo publicaciones → mi audiencia crece. La realidad en 2026: **una parte notable del crecimiento viene de responder publicaciones de otros en tu nicho**.
+Mucha gente piensa: escribo publicaciones → mi audiencia crece. Pero mientras tu propia audiencia es pequeña, casi nadie ve tus publicaciones. **Una respuesta bien pensada bajo la publicación de otra persona en tu nicho la ven los lectores de ese autor.**
 
 Por qué:
 
-- Una respuesta bajo la publicación de una cuenta con 50K seguidores = esos seguidores ven tus palabras
-- El algoritmo de LinkedIn impulsa la actividad en los comentarios (una señal de interacción)
-- Las cuentas grandes notan las respuestas constantes y de calidad, y algunas empiezan a seguirte
+- Una respuesta bajo la publicación de una cuenta con 50K seguidores la pueden ver esos seguidores
+- El autor y sus lectores notan a quien responde seguido con algo útil
+- Algunos empiezan a seguirte
 
 **Tácticas:**
 
 - Encuentra 30-50 cuentas destacadas en tu nicho (con Taplio o a mano)
 - 50 respuestas a la semana en sus publicaciones (1-2 en cada una)
 - Las respuestas deben aportar **valor real**, no "excelente publicación 👍"; ese es justo el estilo de los "gurús de la IA"
-- La IA te ayuda a encontrar los **mejores lugares para responder** con búsqueda semántica ("encuéntrame 10 publicaciones recientes del nicho de agentes de IA donde pueda aportar una respuesta táctica"), pero **la respuesta la escribes tú**
+- Herramientas como Taplio, o el buscador de la propia plataforma, te ayudan a encontrar **dónde** responder, pero **la respuesta la escribes tú**
 
-**No uses:** bots de respuestas automáticas. Los banean. Sus respuestas de plantilla los delatan. El daño a tu reputación no vale la pena.
+**No uses:** bots de respuestas automáticas. LinkedIn prohíbe de forma expresa los bots y los comentarios automatizados, y X prohíbe las respuestas automáticas a personas que no las pidieron; por eso restringen y suspenden cuentas. Además, las respuestas de plantilla se delatan solas. El daño a tu reputación no vale la pena.
 
 ---
 
 ### Generar ingresos: las etapas
 
-Aquí no hay cifras de ingresos: dependen de tu nicho, tu audiencia y tu país, y nadie las puede prometer. Las etapas muestran el orden de los pasos.
+Aquí no hay cifras de ingresos: dependen de tu nicho, tu audiencia y tu país, y nadie las puede prometer. Las etapas muestran el orden de los pasos; los rangos de seguidores son aproximados.
 
 | Etapa | Audiencia | Qué haces |
 |---|---|---|
-| **Crecimiento** | 0-1K seguidores | Construyes confianza, **todavía no monetizas**. Es el periodo de inversión. |
+| **Crecimiento** | 0-1K seguidores | Construyes confianza, **todavía no les vendes a tus seguidores**. Es el periodo de inversión. |
 | **Validación** | 1K-5K | Un boletín gratis, consultas, ofertas discretas |
 | **Consolidación** | 5K-25K | Un boletín de pago, minicursos, consultoría continua |
 | **Autoridad** | 25K+ | Libros, conferencias, productos con tu propia marca |
 
-**El mayor error de principiante:** intentar monetizar con 500 seguidores. La conversión va a ser mínima, te vas a quemar y tu audiencia va a sentir la desesperación. La paciencia en el primer año es obligatoria. Cómo ponerle precio a un servicio sin perder dinero: [Cómo ponerle precio a tus servicios](d02-pricing-simple.md).
+**El mayor error de principiante:** intentar monetizar con 500 seguidores. La conversión va a ser mínima, te vas a quemar y tu audiencia va a sentir la desesperación. La paciencia en el primer año es obligatoria. Esto no aplica al trabajo directo con clientes: tus servicios los vendes aparte, como en las lecciones sobre los primeros clientes. Cómo ponerle precio a un servicio sin perder dinero: [Cómo ponerle precio a tus servicios](d02-pricing-simple.md).
 
 ---
 
@@ -346,11 +346,11 @@ Aquí no hay cifras de ingresos: dependen de tu nicho, tu audiencia y tu país, 
 
 La IA para la marca personal es un área nueva, y las normas todavía se están formando. Esto es lo que ya es habitual:
 
-- **Una declaración de "hecho con ayuda de IA"**: si la IA ayudó de forma importante en la escritura (más que una revisión de ortografía). Las reglas de LinkedIn siguen cambiando, y este tipo de declaración podría volverse obligatoria.
+- **Una declaración de "hecho con ayuda de IA"**: si la IA ayudó de forma importante en la escritura (más que una revisión de ortografía). Las páginas de ayuda de LinkedIn recomiendan avisar a los lectores cuando te apoyaste mucho en la IA; no es un requisito para las publicaciones de texto (a octubre de 2026).
 - **Autenticidad:** la IA multiplica **tu** voz; no crea un personaje nuevo. Si no eres consultor, la IA no te va a volver uno. Solo va a hacer más visible quien ya eres.
 - **No digas tener una experiencia que no tienes** (especialmente peligroso en salud, finanzas y derecho, donde es posible causar un daño real). La IA puede ayudar a un profesional con cédula o licencia a explicar las cosas; nunca reemplaza el trabajo con licencia ni la asesoría personal.
 - **Privacidad:** no cites mensajes privados ni conversaciones con clientes sin permiso; anonimízalos cuando haga falta
-- **Declarar un clon de voz**: lo estándar en 2026
+- **Declarar un clon de voz**: avisa a quien escucha que la voz es de IA
 - **Contenido patrocinado:** si una marca te paga, te manda productos gratis o te da una comisión, declara esa relación con claridad en la publicación misma, con palabras que tu audiencia entienda, no escondida en tu biografía. Usa también la etiqueta de colaboración pagada de cada plataforma. Las reglas cambian según el país (en Estados Unidos, por ejemplo, la FTC, la Comisión Federal de Comercio, espera exactamente esto); para los detalles, revisa las reglas de protección al consumidor de tu país o pregúntale a un abogado.
 
 🎨 **Imagínalo así:** la IA es tu escritor fantasma, no un actor que te interpreta. Un escritor fantasma escribe por ti a partir de tus ideas. Un actor finge ser tú. Lo primero es legítimo; lo segundo es engaño.
@@ -364,7 +364,7 @@ La IA para la marca personal es un área nueva, y las normas todavía se están 
 - ❌ **Imitar la voz de otra persona** con IA (Pieter Levels, Naval, Garry Tan): derivado y sin rostro
 - ❌ **Producir en masa sin profundidad**: más volumen significa menos resonancia en cada publicación
 - ❌ **Un clon de voz sin declararlo** en contenido público
-- ❌ **Publicar siempre a la misma hora del día**: la interacción se estanca, y el algoritmo quiere variedad
+- ❌ **Publicar siempre a la misma hora del día sin comprobarlo**: prueba distintos horarios y mira tus propias estadísticas
 - ❌ **Publicar en 3 plataformas a la vez desde el día 1**: sin enfoque, y ninguna crece
 - ❌ **Ganchos que prometen de más** ("Esto te va a cambiar la vida"): anzuelo de clics → dejan de seguirte cuando lo que entregas está por debajo de lo prometido
 - ❌ **Un sonido evidente de redacción con IA** ("Imagina...", "¿Y si te dijera que...?", "Imagínate esto...")
@@ -373,6 +373,8 @@ La IA para la marca personal es un área nueva, y las normas todavía se están 
 ---
 
 ## Práctica
+
+Para una primera pasada por los Pasos 2 a 5 bastan 35 minutos. El Paso 1 se hace una sola vez y toma unas 4 horas. Los Pasos 6 y 7 son opcionales.
 
 ### Paso 1: Extraer tu voz en 4 horas
 
@@ -385,8 +387,10 @@ mkdir -p ~/Desktop/personal-brand/{seeds,drafts,published,voice}
 cd ~/Desktop/personal-brand
 
 # Reúne tus fuentes
-# - exporta tus publicaciones viejas de LinkedIn: pide una copia de tus datos en la configuración de LinkedIn
-# - descarga tu archivo de X (Twitter): en la configuración de tu cuenta
+# - exporta tus publicaciones viejas de LinkedIn: pide una copia de tus datos en la configuración
+#   (en la interfaz en inglés: Settings & Privacy → Data privacy → Download your data)
+# - descarga tu archivo de X (Twitter): pídelo en la configuración de tu cuenta
+#   (en la interfaz en inglés: Settings and privacy → Your account → Download an archive of your data)
 # - copia mensajes largos de tu correo como texto simple
 
 # Crea un solo archivo con 50+ muestras
@@ -394,7 +398,7 @@ touch voice/sources.md
 # (pega tus textos a mano, separados por ---)
 ```
 
-Luego, el prompt para Claude:
+Luego, el prompt para Claude (adjunta `voice/sources.md` a tu mensaje):
 
 ```
 Lee voice/sources.md (50+ textos míos).
@@ -438,9 +442,9 @@ Guarda el resultado en `voice/brand-voice.md`. Revísalo tú: a veces Claude exa
 ```bash
 # Agrega un recordatorio diario en tu calendario a las 7:30 a.m.: "5 semillas"
 
-# Plantilla del archivo
+# Plantilla del archivo (la fecha va en el nombre del archivo)
 cat > seeds/_template.md <<EOF
-# Semillas $(date +%Y-%m-%d)
+# Semillas
 
 1.
 
@@ -470,7 +474,7 @@ cp seeds/_template.md seeds/$(date +%Y-%m-%d).md
 
 ### Paso 3: Desarrollo con Claude
 
-Crea una plantilla de prompt reutilizable.
+Primero crea el archivo `voice/anti-patterns.md`: anota ahí los 6 antipatrones de la sección de arriba y las palabras prohibidas de tu `brand-voice.md`. Luego guarda una plantilla de prompt reutilizable.
 
 ```bash
 cat > voice/expand-prompt.md <<'EOF'
@@ -490,8 +494,9 @@ Requisitos:
 - Un gancho en la primera línea (curiosidad / algo concreto / llevar la contraria)
 - {LinkedIn: 250-350 palabras | hilo de X: 5-9 publicaciones | publicación suelta: 280 caracteres}
 - Al menos un detalle concreto (una cifra / fecha / nombre / lugar)
-- Sin marcas de IA: ${LISTA DE anti-patterns.md}
+- Sin frases de anti-patterns.md
 - Sin preámbulos como "Quiero compartir..."
+- Toma los datos, las cifras y las historias solo de la semilla; no inventes nada
 
 Da 3 versiones, separadas por ---
 EOF
@@ -502,7 +507,7 @@ Cómo usarla:
 ```bash
 # Toma una semilla
 # Pégala en expand-prompt.md
-# Pásala por Claude o Claude Code
+# En un chat de Claude, adjunta brand-voice.md y anti-patterns.md a tu mensaje y manda el prompt
 # Obtén 3 versiones
 # Elige una y cópiala a drafts/
 ```
@@ -511,7 +516,7 @@ Cómo usarla:
 
 ### Paso 4: Edición, 5-10 minutos
 
-Abre `drafts/2026-10-05-foundation-mistakes.md`. Recorre la lista:
+Abre tu borrador, por ejemplo `drafts/2026-10-05-foundation-mistakes.md`. Recorre la lista:
 
 ```markdown
 [ ] Primera línea: ¿el gancho es fuerte? (una pregunta / un dato sorprendente / una cifra)
@@ -539,7 +544,7 @@ Abre `drafts/2026-10-05-foundation-mistakes.md`. Recorre la lista:
 
 Como alternativa, si LinkedIn es tu plataforma principal, prueba **Hypefury** (revisa la lista de redes y las condiciones en su sitio; han cambiado):
 
-- Vuelve a publicar automáticamente el contenido atemporal después de 60 días
+- Vuelve a publicar automáticamente el contenido atemporal
 - Variantes generadas con IA
 - Estadísticas: impresiones e interacción
 
@@ -552,19 +557,20 @@ Si haces videos de YouTube o un pódcast:
 ```
 1. Entra a https://elevenlabs.io
 2. Elige un plan: el clon rápido está disponible desde Starter, el clon profesional desde Creator (a octubre de 2026; revisa la página de precios)
-3. Sección Voices (voces) → agregar una voz → clonación
-4. Sube una grabación limpia (un clon profesional necesita una grabación larga, unos 30 minutos como referencia; revisa las páginas de ayuda de ElevenLabs para los requisitos exactos):
+3. Sección Voices (voces) → Create Voice (crear voz; para un clon rápido, el ícono "+") → Instant Voice Clone (clon rápido) o Professional Voice Clone (clon profesional)
+4. Sube una grabación limpia de tu propia voz (a un clon rápido le bastan 1-2 minutos; un clon profesional necesita al menos 30 minutos, idealmente 2-3 horas):
    - Un cuarto silencioso, un micrófono USB básico
-   - Varía la emoción (5 min neutral, 5 min animado, 5 min serio...)
+   - Habla con un solo estilo: el clon repite el estilo de la grabación
    - Incluye palabras difíciles de tu nicho
-5. Espera a que la voz termine de procesarse
-6. Prueba: escribe cualquier texto → escúchalo
+5. Confirma que la voz es tuya: el clon rápido te pide confirmar que tienes el derecho y el consentimiento; el clon profesional verifica tu voz
+6. Espera a que la voz termine de procesarse
+7. Prueba: escribe cualquier texto → escúchalo
 ```
 
 Cómo usarlo:
 
 - Una locución para un tutorial de YouTube: 1,500 palabras son aproximadamente 10 minutos de audio; revisa en la página de precios cuántos créditos usa eso
-- Varios idiomas: el mismo clon de voz en inglés (los modelos multilingües de ElevenLabs cubren muchos idiomas; el modelo vigente y la lista de idiomas están en su sitio y en la página [Lo vigente](https://aimayak.com/now/))
+- Varios idiomas: el mismo clon de voz en inglés (los modelos de ElevenLabs cubren decenas de idiomas; el modelo vigente y la lista de idiomas están en su sitio, y los precios vigentes en la página [Lo vigente](https://aimayak.com/now/))
 
 Agrega una **nota de declaración** al final de cada descripción:
 > Locución generada con IA (ElevenLabs) a partir de grabaciones de mi propia voz. Guion escrito por mí.
@@ -605,7 +611,7 @@ Agrega una **nota de declaración** al final de cada descripción:
 - **[ElevenLabs](https://elevenlabs.io)**: clonación de voz para pódcasts y YouTube
 - **[Resemble AI](https://www.resemble.ai)**: una alternativa a ElevenLabs
 - **[XTTS-v2 (fork comunitario de Coqui TTS)](https://github.com/idiap/coqui-ai-TTS)**: clonación de voz de código abierto (la instalas tú mismo; la licencia de los pesos no es comercial)
-- **[LinkedIn Creator Hub](https://www.linkedin.com/creator)**: las buenas prácticas oficiales de LinkedIn
+- **[Ayuda de LinkedIn: contenido creado con ayuda de IA](https://www.linkedin.com/help/linkedin/answer/a1481496)**: la guía oficial de LinkedIn para quien publica con ayuda de IA (en inglés)
 - **[MacWhisper](https://www.macwhisper.com)** / **[Whisper](https://github.com/openai/whisper)**: transcribir notas de voz
 - **[Anthropic Responsible Scaling Policy](https://www.anthropic.com/news/anthropics-responsible-scaling-policy)**: sobre la seguridad de los modelos de IA, no sobre contenido; para la ética del contenido, guíate por las reglas de las plataformas y la sección de ética de arriba
 - **Precios y versiones:** [Lo vigente](https://aimayak.com/now/); el catálogo de servicios: [Herramientas](https://aimayak.com/tools/)
@@ -624,7 +630,7 @@ Agrega una **nota de declaración** al final de cada descripción:
 
 **Intermedio:** crece con escritura fantasma con IA, agrega un clon de voz para tu pódcast o canal de YouTube, y empieza a jugar el juego de la interacción de forma sistemática.
 
-**Pro:** un equipo completo (un asistente virtual o un escritor fantasma) + orquestación de IA con Claude Code como director + sincronización entre plataformas.
+**Pro:** alguien que te ayude (un asistente virtual o un escritor fantasma) + automatización con Claude Code (el agente de Anthropic, un programa que hace tareas en tu computadora; aparece en los últimos módulos del curso) + varias plataformas a la vez.
 
 ---
 
@@ -639,7 +645,7 @@ Agrega una **nota de declaración** al final de cada descripción:
 - [ ] Lista de edición memorizada o impresa
 - [ ] Herramientas elegidas (los planes gratis de Claude y de un programador alcanzan para empezar)
 - [ ] Meta de interacción definida (5-10 respuestas al día en tu nicho)
-- [ ] Primeras 30 publicaciones programadas en la fila
+- [ ] Las publicaciones de tu primera semana programadas en la fila
 - [ ] Clon de voz configurado (solo si haces videos de YouTube o un pódcast; si no, sáltatelo)
 - [ ] Estándar de declaración adoptado (una nota de "hecho con ayuda de IA" donde aplique, y una etiqueta clara en cualquier publicación patrocinada)
 
@@ -653,22 +659,22 @@ Agrega una **nota de declaración** al final de cada descripción:
 
 > Los 6 antipatrones ("adentrémonos en", gramática perfecta, estructura simétrica, sin detalles personales, aperturas genéricas, un tono de IA) hacen que una publicación se reconozca como IA en 3 segundos. Los 6 patrones que humanizan (una hora + un lugar + una cifra + desacuerdo + vulnerabilidad + un detalle táctico) devuelven una voz real. Ese es tu último filtro antes de publicar.
 
-> El juego de la interacción (50 respuestas de calidad a la semana a cuentas destacadas de tu nicho) muchas veces trae más crecimiento que las publicaciones mismas. La IA te ayuda a encontrar **dónde** responder, pero la respuesta la escribes tú. Los bots de respuestas automáticas son un camino a los baneos y al daño a tu reputación.
+> El juego de la interacción (50 respuestas de calidad a la semana a cuentas destacadas de tu nicho) te ayuda a crecer mientras tu propia audiencia es pequeña. Las herramientas y el buscador te ayudan a encontrar **dónde** responder, pero la respuesta la escribes tú. Los bots de respuestas automáticas rompen las reglas de las plataformas y llevan a los baneos y al daño a tu reputación.
 
-> Clonar tu voz es legítimo para pódcasts, locuciones de YouTube y contenido en varios idiomas, siempre declarándolo. No lo uses para suplantar a otros, para política ni para estafas. ElevenLabs es una de las plataformas de clonación de mayor calidad a octubre de 2026.
+> Clona solo tu propia voz: para pódcasts, locuciones de YouTube y contenido en varios idiomas, con un aviso para quien escucha. No lo uses para suplantar a otros, para política ni para estafas. Para saber qué incluye cada plan, revisa el sitio del servicio.
 
 ---
 
 ## Lecciones relacionadas
 
 - [Copywriting con IA: una cadena de prompts que suena como tú](67-ai-copywriting.md): copywriting y ganchos (la base antes de la escritura fantasma con IA)
-- [Locución con IA: ElevenLabs, texto a voz y contenido de voz](68-voice-tts-elevenlabs.md): voz, texto a voz y contenido de audio
+- [Locución con IA: ElevenLabs, texto a voz y contenido de voz](68-voice-tts-elevenlabs.md): voz, texto a voz y contenido de audio (lección de la biblioteca, opcional)
 - [Generación de video con IA](71-ai-video-generation.md): Runway, Kling y otras herramientas para contenido visual
 - [El flujo de contenido completo](72-content-pipeline-complete.md): automatización en varias plataformas
-- [Inteligencia competitiva con IA](89-competitive-intelligence.md): investigación del nicho para tu marca personal
+- [Inteligencia competitiva con IA](89-competitive-intelligence.md): investigación del nicho para tu marca personal (lección de la biblioteca, opcional)
 
 ---
 
 ## Siguiente lección
 
-→ [Locución con IA: ElevenLabs, texto a voz y contenido de voz](68-voice-tts-elevenlabs.md): la voz como el nuevo formato principal
+→ [El flujo completo de contenido con IA: de la idea a la publicación](72-content-pipeline-complete.md): la siguiente lección del curso, sobre cómo convertir una idea en contenido para varias plataformas

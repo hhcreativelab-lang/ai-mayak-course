@@ -63,7 +63,7 @@ Este es un mapa de consulta de profesiones y un pronóstico basado en escenarios
 
 ## <a id="section-a"></a>🌱 Sección A: 50 profesiones NUEVAS
 
-Trabajos que **no existían antes de 2022**. Aparecieron como resultado directo de la IA generativa.
+Profesiones **construidas alrededor de la propia IA**. Algunas aparecieron recién cuando despegó la IA generativa en 2022; otras ya existían, pero crecieron rápido desde entonces.
 
 ---
 
@@ -452,7 +452,7 @@ Son **los constructores de la era de la IA**. La categoría de la que más se ha
   - Fundamentos de fotografía (composición, iluminación)
   - Coherencia de marca mediante referencias de estilo
   - Posprocesamiento (Lightroom)
-- **Demanda:** ⭐⭐⭐⭐ (demanda masiva del comercio electrónico)
+- **Demanda:** ⭐⭐⭐⭐ (las tiendas en línea necesitan muchas fotos de producto)
 - **Imagínalo así:** un fotógrafo sin cámara. El mismo ojo, otra herramienta.
 
 ---
@@ -1440,9 +1440,9 @@ Se quitaron las tablas de salarios y los multiplicadores regionales: no se verif
 ## <a id="top-10"></a>⭐ Las 10 profesiones emergentes principales 2026-2030 (estimación del autor)
 
 1. **Ingeniero de aplicaciones de IA (AI Application Engineer)**: la principal profesión nueva de esta era
-2. **Arquitecto de agentes de IA (AI Agent Architect)**: el auge de los sistemas multiagente
+2. **Arquitecto de agentes de IA (AI Agent Architect)**: los sistemas multiagente se están extendiendo
 3. **Seguridad de IA / Red Team (AI Safety / Red Team)**: los laboratorios de vanguardia tienen equipos dedicados
-4. **Ingeniero de prompts (Prompt Engineer)** (todavía fuerte en el nivel junior): es fácil entrar
+4. **Ingeniero de prompts (Prompt Engineer)**: es fácil entrar, aunque el nivel junior se está llenando
 5. **Desarrollador de agentes de voz con IA (AI Voice Agent Developer)**: hay demanda de agentes telefónicos hechos con plataformas como Vapi y Bland
 6. **Abogado potenciado con IA (AI-Augmented Lawyer)**: herramientas como Harvey están cambiando el trabajo del día a día
 7. **Especialista en adopción de IA (AI Adoption Specialist)** (grandes empresas): las grandes empresas necesitan ayuda para poner la IA en marcha
@@ -1495,9 +1495,9 @@ Estas fuentes son puntos de partida para que verifiques las cosas por tu cuenta.
 
 | Tema | Lecciones del curso |
 |-------|-------------|
-| Fundamentos de IA | [Qué es la IA](00-what-is-ai.md), [Cómo funciona un LLM](00b-how-llm-works.md), [Comparación de modelos de IA](00c-ai-models-comparison.md), [IA sin miedo](00d-ai-without-fear.md) |
+| Fundamentos de IA | [La historia de la IA](00-what-is-ai.md), [Cómo funciona un LLM](00b-how-llm-works.md), [Comparación de modelos de IA](00c-ai-models-comparison.md), [IA sin miedo](00d-ai-without-fear.md) |
 | Configuración + Claude Code | [Instalación y configuración](05-setup.md), [Claude Code de escritorio](05b-claude-code-desktop.md), [Planes y acceso](05c-access-levels-pricing.md) |
-| Prompts | [Fundamentos de los prompts](06-prompting-fundamentals.md) |
+| Prompts | [Cómo escribir un buen prompt](06-prompting-fundamentals.md) |
 | CLAUDE.md / Memoria | [CLAUDE.md](07-claude-md.md) |
 | Crear apps | [Sitios web y aplicaciones web](15-websites-webapps.md), [API e integraciones](16-apis-integration.md), [Publicar en Cloudflare](18-deployment-cloudflare.md) |
 | Sistemas multiagente | [Equipos de agentes](26-agent-teams.md), [Orquestación multiagente](82-multiagent-orchestration.md) |
@@ -1506,7 +1506,7 @@ Estas fuentes son puntos de partida para que verifiques las cosas por tu cuenta.
 | Seguridad | [Permisos y seguridad](28-permissions-security.md), [Defensa contra la inyección de prompts](107b-prompt-injection-defense.md) |
 | Optimización de costos | [Caché de prompts y la Batch API](34-prompt-caching-batch-api.md), [Ingeniería de costos](48b-cost-engineering.md) |
 
-Para ver qué lecciones importan para una profesión específica, revisa la página de Profesiones del sitio: ahí están los enlaces entre profesiones y lecciones.
+Para ver qué lecciones importan para una profesión específica, revisa la página de Profesiones del sitio: ahí están los enlaces entre profesiones y lecciones. Las lecciones que no forman parte del curso principal están en la biblioteca y son opcionales.
 
 ---
 
@@ -1596,7 +1596,7 @@ Son **las manos de la era de la IA**. El software se encuentra con el hardware.
   - UX centrada en la voz (no hay teclado)
   - Presupuestos de latencia (<100ms es crítico)
   - Diseño para la privacidad (la cámara siempre está lista)
-- **Demanda:** ⭐⭐⭐⭐ (un mercado temprano: varios fabricantes ya venden lentes con IA, y las plataformas de apps son jóvenes)
+- **Demanda:** ⭐⭐⭐ (un mercado temprano: varios fabricantes ya venden lentes con IA, y las plataformas de apps son jóvenes)
 - **Cómo llegar:**
   1. Una base en desarrollo móvil (iOS/Android)
   2. Un portafolio de AR (3 apps en producción)
@@ -1970,7 +1970,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
   - Validación clínica
   - La ruta 510(k) de la FDA
   - Modelos multimodales
-- **Demanda:** ⭐⭐⭐⭐ (enorme inversión en IA médica)
+- **Demanda:** ⭐⭐⭐⭐ (hospitales y fabricantes de equipo médico están adoptando la IA)
 - **Cómo llegar:**
   1. Una base como ingeniero de ML + una especialidad médica
   2. Un trabajo en la industria (Tempus, PathAI, Paige)
@@ -2151,7 +2151,7 @@ Son **los médicos de la era de la IA**. Donde lo que está en juego es más alt
 - **Habilidades clave:**
   - Psicometría
   - Teoría de respuesta al ítem
-  - Detección de IA (para prevenir trampas)
+  - Saber qué pueden y qué no pueden hacer los detectores de texto generado con IA (para prevenir trampas)
   - Diseño de evaluación auténtica
   - Evaluación de la equidad
 - **Demanda:** ⭐⭐⭐ (College Board, ETS, edtech, universidades)
@@ -2565,14 +2565,14 @@ Son **especialistas de nicho donde se cruzan las industrias**.
 
 #### 105. Dentista + IA = Dentista con diagnóstico por IA (AI Diagnostic Dentist)
 
-- **Qué hace:** Un dentista + visión por IA en radiografías (Pearl, VideaHealth) para detectar caries y planear tratamientos.
+- **Qué hace:** Un dentista + visión por IA en radiografías (Pearl, Videa) para detectar caries y planear tratamientos.
 - **Habilidades clave:**
   - Una base en odontología (DDS/DMD)
   - Dominio de herramientas de IA para radiografías
   - Planeación de tratamientos
   - Comunicación con pacientes (explicar lo que encontró la IA)
   - Manejo de seguros
-- **Demanda:** ⭐⭐⭐⭐ (Pearl + VideaHealth + nuevos participantes)
+- **Demanda:** ⭐⭐⭐⭐ (Pearl + Videa + nuevos participantes)
 - **Cómo llegar:**
   1. Un título en odontología (DDS/DMD)
   2. Una certificación en herramientas de IA
@@ -2626,7 +2626,7 @@ Son **especialistas de nicho donde se cruzan las industrias**.
   - Integración de terapias digitales
   - Privacidad + ética
   - Manejo de la relación entre paciente e IA
-- **Demanda:** ⭐⭐⭐⭐ (la crisis de salud mental + la explosión de la telepsiquiatría)
+- **Demanda:** ⭐⭐⭐⭐ (la crisis de salud mental + el crecimiento de la telepsiquiatría)
 - **Cómo llegar:**
   1. Título de médico + residencia en psiquiatría
   2. Una certificación en salud digital
@@ -3722,11 +3722,11 @@ Operar infraestructura de IA en las propias instalaciones (Ollama, LM Studio, vL
 
 ### 2029: tensión previa a la AGI
 
-**El cambio principal:** Los modelos se acercan a un razonamiento casi sin límites. Algunas profesiones sufren cambios drásticos. Los marcos regulatorios están plenamente activos.
+**El cambio principal:** Los modelos podrían volverse mucho más fuertes en razonamientos largos de varios pasos. Algunas profesiones podrían cambiar de forma drástica. Los marcos regulatorios están plenamente activos.
 
 **Cambios técnicos clave:**
 
-- Los modelos se acercan a un razonamiento sin límites (resolución de problemas matemáticos, investigación original)
+- Los modelos se vuelven mucho más fuertes en razonamientos largos (problemas matemáticos, tareas de investigación)
 - Algunas profesiones sufren cambios drásticos (investigación, código complejo, incluso el trabajo creativo)
 - Los marcos regulatorios están plenamente vigentes (la Ley de IA de la UE, las normas federales y estatales de EE. UU., las normas de IA de China)
 - Comienzan las conversaciones sobre un tratado de IA (geopolítica)
@@ -3740,13 +3740,13 @@ Operar infraestructura de IA en las propias instalaciones (Ollama, LM Studio, vL
 - Especialistas en gobernanza de IA (AI Governance Specialists; política + técnica)
 - Especialistas en seguros y responsabilidad de IA
 
-**En declive (marcado):**
+**En declive:**
 
-- Muchos empleos de conocimiento de nivel inicial (una crisis de "año sabático" forzado para los recién egresados)
+- Muchos empleos de conocimiento de nivel inicial (a los recién egresados podría costarles encontrar su primer empleo)
 - Mandos medios (la IA aplana las jerarquías)
 - Creadores de contenido genérico (la IA subió muchísimo la vara)
 
-**Puntos de crisis:**
+**Posibles puntos de tensión:**
 
 - A las universidades les cuesta definir qué enseñar a sus egresados
 - Una brecha generacional (las personas nacidas desde 2010 nunca conocieron el trabajo antes de la IA)
@@ -3774,7 +3774,7 @@ Operar infraestructura de IA en las propias instalaciones (Ollama, LM Studio, vL
 - **Directores creativos**: el gusto importa (la IA ejecuta, una persona decide)
 - **Ventas / relaciones**: la gente le compra a la gente (transacciones de alta confianza)
 
-**Perdedores a largo plazo:**
+**Bajo más presión a largo plazo:**
 
 - Trabajo rutinario de habilidad media (se vuelve commodity)
 - Producción de contenido genérico (su precio se desplomó)
@@ -3886,7 +3886,7 @@ La IA hace la mayor parte de la ejecución creativa práctica. La pregunta de "q
 
 ## <a id="section-j"></a>👥 Sección J: La economía híbrida: 3 arquetipos para 2030
 
-Para 2030, la mayoría de los trabajadores del conocimiento encajará en uno de 3 arquetipos:
+En el escenario del autor, para 2030 la mayoría de los trabajadores del conocimiento encajaría en uno de 3 arquetipos:
 
 ---
 
@@ -4068,7 +4068,7 @@ Son puntos de partida para que verifiques por tu cuenta. Ningún número de esta
 |-------|-------------|
 | Investigación / ciencia con IA (A7), el futuro del trabajo | [El futuro de la IA 2027–2030](108-ai-roadmap-2027-2030.md) |
 | IA en salud (A8, B6), IA en finanzas (A10) | [Ética y seguridad en IA](61b-ai-ethics-safety.md), [Regulación y cumplimiento en IA](61c-ai-regulation-compliance.md) |
-| Arquetipos del futuro (Sección J) | [Qué es la IA](00-what-is-ai.md), [Qué ser: elige tu camino](49b-choose-your-path.md) |
+| Arquetipos del futuro (Sección J) | [La historia de la IA](00-what-is-ai.md), [Elige tu camino](49b-choose-your-path.md) |
 
 ---
 

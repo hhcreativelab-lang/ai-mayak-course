@@ -50,7 +50,7 @@ El enfoque correcto es "de arriba hacia abajo": valor para el cliente → un por
 - **Conservar el precio anterior (grandfathering)**: los clientes actuales mantienen su precio viejo cuando subes los precios (protege la retención)
 - **Por uso frente a tarifa fija**: pagar por lo que se usa frente a una suscripción fija, más las combinaciones de los dos
 - **Descuento anual**: un descuento por pagar un año por adelantado (muchas veces 15-20%); mejora el flujo de efectivo y la retención
-- **Freemium frente a prueba gratis**: dos formas distintas de entrar, no son lo mismo
+- **Freemium frente a prueba gratis**: dos formas distintas de entrar. Freemium es un plan gratis sin límite de tiempo junto a los planes de pago; una prueba gratis es la versión de pago por tiempo limitado
 - **Disposición a pagar (WTP, willingness to pay)**: lo máximo que un cliente está dispuesto a pagar; tu precio debe quedar por debajo
 
 ---
@@ -143,11 +143,11 @@ Este tipo es más difícil de poner en números, pero no lo ignores: para client
 
 #### Paso 2: Ubícate dentro del rango de valor
 
-Una vez que conoces el valor, eliges un porcentaje de ese valor como tu precio.
+Una vez que conoces el valor, eliges un porcentaje de ese valor como tu precio. (En la lección anterior la referencia era 10-30% del valor anual: ahí se trataba del precio único de un proyecto. Aquí hablamos de una suscripción: el porcentaje se toma del valor mensual y se paga cada mes.)
 
 | Posición | % del valor | Cuándo elegirla |
 |---------|---------|----------------|
-| **Conservadora** | 10% | Un "sí fácil" para el cliente, una venta con poca fricción, un producto de autoservicio |
+| **Conservadora** | 10% | Un "sí fácil" para el cliente, una venta con poca fricción, un producto de autoservicio (el cliente compra solo, sin vendedor) |
 | **Estándar** | 15% | El equilibrio correcto; lo normal en SaaS B2B (software que se vende a empresas) |
 | **Premium** | 20% | Tus mejores clientes, posicionamiento premium, soporte a la medida |
 
@@ -510,11 +510,11 @@ Tu estrategia de precios depende de tu etapa.
 - Puntos de partida de ejemplo: $29 / $99 / $299 (ajústalos a tu nicho)
 - Sáltate las pruebas A/B (no hay suficientes datos)
 - Sáltate los acuerdos empresariales a la medida (te comen el tiempo)
-- Enfoque: llegar al encaje producto-mercado; todavía no optimices el precio
+- Enfoque: llegar al encaje producto-mercado (un producto que el mercado de verdad quiere); todavía no optimices el precio
 
 **Intermedio (100-1,000 clientes, un producto establecido):**
 - Precios basados en valor con un valor en $ al mes cuantificado
-- Medición del uso (análisis por cohortes)
+- Medición del uso (por grupos de clientes que llegaron en la misma época)
 - Pruebas A/B de precios con los registros nuevos
 - Considera freemium si es una estrategia de mercado masivo
 - Opciones anual + mensual
@@ -648,7 +648,7 @@ Una página de precios es una **página de conversión**, no un montón de infor
 # Lista de verificación de la página de precios
 
 ## 1. Sección principal (hero)
-- [ ] Un solo H1: "Precios que crecen contigo" (o algo parecido)
+- [ ] Un solo título principal (H1): "Precios que crecen contigo" (o algo parecido)
 - [ ] Subtítulo: una frase de valor (NO una lista de funciones)
 - [ ] Selector Mensual / Anual (anual = 20% de descuento)
 

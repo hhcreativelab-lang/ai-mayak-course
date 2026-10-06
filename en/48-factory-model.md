@@ -10,6 +10,8 @@ Your first house takes 3 months to build. Your tenth takes 3 weeks, because by t
 
 If you sell AI services as a freelancer or on the side, this is how you take on similar projects without the hours piling up every time.
 
+The examples in this lesson come from projects built with code: you build those in Claude Code, which the next module of the course and the deep-dive library cover. You don't need to understand every file name. If you work without code for now, take the principle: a template can be a set of prompts, the structure of a proposal or a handoff checklist.
+
 ---
 
 ## Key concepts
@@ -17,7 +19,7 @@ If you sell AI services as a freelancer or on the side, this is how you take on 
 - **Factory**: a system of templates for scaling: 80% standard + 20% customization
 - **Template repo**: the starting point for each type of project, so you never start from scratch (a repo, short for repository, is a project folder tracked with Git)
 - **SOP (standard operating procedure)**: a documented process for each project type
-- **Delivery time**: cut from 2 weeks to 3 days thanks to templates
+- **Delivery time**: cut from 2 weeks to 5 business days thanks to templates
 - **A team of agents**: specialized Claude subagents (helper agents, each with one narrow job) for each template
 - **Price premium**: faster = pricier (value-based, not time-based)
 
@@ -78,9 +80,9 @@ template-base/
 └── README-template.md         ← documentation template
 ```
 
-(A cron job is a task that runs on a schedule. A webhook is a message one app sends to another when something happens.)
+(A cron job is a task that runs on a schedule. A webhook is a message one app sends to another when something happens. A .env file holds a project's settings and secret keys.)
 
-New project = `git clone template-base new-project-name`. The infrastructure is ready in 30 minutes, not 9 hours.
+New project = `git clone template-base new-project-name` (a Git command that copies the template into a new folder). The infrastructure is ready in 30 minutes, not 9 hours.
 
 **Type 2: Workflow template**
 
@@ -129,7 +131,7 @@ This is the key ratio of the factory:
 - Connections to API services
 - Error handling and logging
 - Basic Slack bot features
-- Handover documentation (take README-template.md and fill it in)
+- Handoff documentation (take README-template.md and fill it in)
 
 **20% customization (for the client):**
 - The client's specific data sources
@@ -156,7 +158,7 @@ Total: 2 weeks
 Day 1: clone the template + set up .env + first run
 Days 2-3: customization for the client (20% of the logic)
 Day 4: testing + fixes
-Day 5: handover + demo
+Day 5: handoff + demo
 Total: 5 business days (1 week)
 ```
 
@@ -190,11 +192,11 @@ The client pays a little more and gets the result twice as fast. In this hypothe
 
 ### A team of agents for each template
 
-Each workflow template comes with specialized subagents:
+Each workflow template comes with specialized subagents. Claude Code looks for them in the `.claude/agents/` folder inside the project:
 
 **template-newsletter:**
 ```
-agents/
+.claude/agents/
 ├── researcher.md     ← finds and evaluates news
 ├── writer.md         ← writes content in the brand voice
 ├── assembler.md      ← builds the HTML email
@@ -203,7 +205,7 @@ agents/
 
 **template-lead-gen:**
 ```
-agents/
+.claude/agents/
 ├── prospector.md     ← finds potential clients
 ├── personalizer.md   ← writes personalized emails
 ├── qualifier.md      ← rates lead quality
@@ -243,7 +245,7 @@ A standard operating procedure is a document for you (not for the client): how t
 □ Check the logging in Google Sheets
 □ Fix all issues
 
-## Day 5: Handover (2-3 hours)
+## Day 5: Handoff (2-3 hours)
 □ Record a Loom walkthrough (20 min)
 □ Update README-template.md for this project
 □ Final demo with the client
@@ -274,10 +276,10 @@ Start building the template after your second project of the same type. That's t
 
 **Exercise: create your first template**
 
-1. Take a workflow you've already built (Newsletter Automation from the course)
+1. Take a piece of work you've already done at least once: a service from your packages, or an automation if you've already built one (the example below uses the newsletter automation from the deep-dive library)
 
-2. Create a folder `templates/newsletter-automation-template/`:
-   - Copy all the project files
+2. Create a folder `templates/newsletter-automation-template/` (swap newsletter-automation for the name of your own work):
+   - Copy in all the project files: documents, prompts, spreadsheets, and code if there is any
    - Replace all client-specific data with placeholders (`[CLIENT_NAME]`, `[BRAND_COLOR]`, `[API_KEY]`)
    - Make a checklist of what needs replacing during customization
 
@@ -285,11 +287,11 @@ Start building the template after your second project of the same type. That's t
    - Day 1: what do you do?
    - Days 2-3: customization: which specific files do you change?
    - Day 4: testing: which checks do you run?
-   - Day 5: handover: which documents do you create?
+   - Day 5: handoff: which documents do you create?
 
 4. Estimate: if you'd had this template from the start, how many days faster would the project have been?
 
-5. Work out the price premium: if without a template a project takes you 10 days and you charge $2,000, how many days does it take with a template, and what's the new price?
+5. Work out the price premium: if without a template a project takes you 10 days and you charge $2,000, how many days does it take with a template, and what's the new price? Check yourself against the example in this lesson: twice as fast and a little pricier, so about 5 days and about $2,200. Your revenue per day then goes from $200 to $440.
 
 **Goal:** one working template in the `templates/` folder. That's the first brick of your factory.
 
@@ -305,7 +307,7 @@ Start building the template after your second project of the same type. That's t
 | Content Pipeline | 45 hours / 2 wks | 22 hours / 5 days | 51% of time | $2,400 for 22h = $109/hour |
 | CRM Integration | 70 hours / 3 wks | 35 hours / 8 days | 50% of time | $4,200 for 35h = $120/hour |
 
-**Bottom line:** in this example, a factory doubles your effective rate: $50-60/hour without templates → $100-125/hour with templates, at the same price for the client. This is a practice calculation, not an earnings forecast.
+**Bottom line:** in this example, a factory doubles your effective rate: $50-60/hour without templates → $107-125/hour with templates, at almost the same price for the client. This is a practice calculation, not an earnings forecast.
 
 ---
 
@@ -321,7 +323,7 @@ Start building the template after your second project of the same type. That's t
 ## Related lessons
 
 - **→ [Packaging](42-packaging.md)**: Basic/Pro/Enterprise packages = ready-made configurations for your factory
-- **→ [Delivery and retention](46-delivery-retention.md)**: the handover kit from delivery = part of the SOP for your next project
+- **→ [Delivery and retention](46-delivery-retention.md)**: the handoff kit from that lesson = part of the SOP for your next project
 - **→ [Monetization case studies](47-monetization-cases.md)**: the patterns from the 5 cases = the basis for 5 types of templates
 
 ---

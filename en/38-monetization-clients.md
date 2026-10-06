@@ -13,7 +13,7 @@ The most expensive client is a cold one. The cheapest is someone who already kno
 - Your first 3–5 projects are paid practice, not a full-scale business
 - Trust Map: 20 contacts as your starting base
 - Warm conversations: research, don't sell
-- Referrals: happy clients are usually willing to recommend you if you ask, but most sellers never ask
+- Referrals: happy clients are often willing to recommend you if you ask, but few people ask
 - Your portfolio (your collection of finished work) gets built from your first projects
 
 ---
@@ -150,8 +150,8 @@ The next step:
 
 ```
 "Hey, you mentioned you spend 3 hours a day answering emails.
-I happen to have a tool that automates exactly that.
-Want me to show you how it would work in your case?"
+I know how to set up AI to help with replies like those.
+Want me to show you how it could work in your case?"
 ```
 
 The transition feels natural: you already know the problem, and you're offering a specific solution.
@@ -162,9 +162,9 @@ The transition feels natural: you already know the problem, and you're offering 
 
 🎨 **Picture this:** you built your neighbor a deck, and they love it. Not asking for a referral is like walking away without leaving your card. And your neighbor knows three other neighbors who want a deck too. One question = three potential clients.
 
-In practice, it goes like this:
-- most happy clients are willing to give a referral if you ask
-- most sellers never ask
+In practice, it often goes like this:
+- many happy clients are willing to give a referral if you ask
+- but they don't think of it on their own, and sellers rarely ask
 
 That means you lose potential new clients simply because you don't ask.
 
@@ -188,13 +188,13 @@ Important: don't ask right at the start of the work. Only after the person has g
 
 🎨 **Picture this:** warm contacts are like fishing in a pond you know, where you've already seen fish. Cold outreach is casting a net into a lake you've never seen. Both can work, but the second takes far more tries.
 
-Cold outreach (writing to people who don't know you) is much harder and converts poorly: a few percent reply, and a fraction of a percent become clients (the exact numbers depend on the niche; we don't have precise statistics).
+Cold outreach (writing to people who don't know you) is much harder: few people reply, and even fewer become clients. The exact numbers depend on the niche; measure your own.
 
 If you've worked through your warm contacts and want to try cold outreach:
 
 **Rules:**
 1. Personalization is a must. "I see you sell X through Shopify and have 500+ SKUs. Does managing the catalog by hand take a lot of time?"
-2. Keep it short. Three sentences max in the first message.
+2. Keep it short. Your first message should be a few sentences that take about 20 seconds to read (the email formula comes in the cold outreach lesson).
 3. End with one specific question, not an offer.
 4. Don't sell in the first contact. Ask and learn.
 
@@ -234,7 +234,7 @@ But start with your warm contacts. The 20 people on your Trust Map are likely to
 "First I'll finish the course, then I'll polish my portfolio, then..." That's procrastination in disguise. Message 5 people this week. You don't need to be 100% ready.
 
 **2. Pricing too low**
-A price far below the market isn't "an affordable price to win clients." It signals "I'm not sure my work is any good." Work out your price with the lesson [How to set a price](d02-pricing-simple.md) and raise it with every new project.
+A slightly lower price on your first projects is a deliberate choice, as covered above. But a price far below the market isn't "an affordable price to win clients." It signals "I'm not sure my work is any good." Work out your price with the lesson [How to set a price](d02-pricing-simple.md) and raise it with every new project.
 
 **3. Selling in the first message**
 ```
@@ -246,7 +246,7 @@ A price far below the market isn't "an affordable price to win clients." It sign
 After 10 conversations, you won't remember what the first person said. Write down the key pain points RIGHT AFTER each conversation.
 
 **5. Not asking for referrals**
-Most happy clients will refer you if you ask. Just ask after a successful project.
+Happy clients are often willing to refer you if you ask. Just ask after a successful project.
 
 ---
 
@@ -295,25 +295,27 @@ that could help, would it be OK to show it to you?"
 - **Calendly**: lets people book a call with you without the back-and-forth: [calendly.com](https://calendly.com/)
 - **Notion**: for your portfolio and for organizing your notes: [notion.com](https://www.notion.com/)
 - **Loom**: for recording demo videos for clients: [loom.com](https://www.loom.com/)
-- **Stripe**: for taking payments once you grow into regular sales: [stripe.com](https://stripe.com/)
+- **Stripe**: for taking payments once you grow into regular sales. It isn't available in every country; the list is at stripe.com/global: [stripe.com](https://stripe.com/)
 - **Otter.ai**: transcribes your conversations so you can spot patterns (ask the other person before you record a call)
 
 ---
 
 ## Key takeaways
-> Your first client is close by: in your phone's contacts, on LinkedIn or in a local Facebook group you're part of. You don't need ads to find your first 3–5 clients.
+> Your first client is close by: in your phone's contacts, on LinkedIn or in a local Facebook group you're part of. To find your first 3–5 clients, you usually don't need ads.
 > Research, don't sell. Someone who feels understood (instead of sold to) will ask on their own: "Could you help with that?"
-> Most happy clients will give you a referral if you ask. Always ask after a successful project.
+> Happy clients are often willing to give you a referral if you ask. Ask after every successful project.
 > Results depend on your niche, your market and your work: this lesson gives you a method, not a guarantee.
 
 ---
 
 ## Related lessons
 
-- More on this topic: [Choosing a niche](38b-niche-selection-methodology.md), [Pricing](39-monetization-pricing.md), [Portfolio and case studies](41-portfolio-case-studies.md), [Packaging](42-packaging.md), [Cold outreach](45-cold-outreach.md)
-- [AI Executive Assistant](34-executive-assistant.md): a great demo project for your first clients ("here's what I built for myself")
+- Already covered: [Choosing a niche](38b-niche-selection-methodology.md), [Pricing](39-monetization-pricing.md), [Packaging](42-packaging.md). Coming up in this module: [Portfolio and case studies](41-portfolio-case-studies.md), [Cold outreach](45-cold-outreach.md)
+- [AI Executive Assistant](34-executive-assistant.md): an optional library lesson; a good example project for your first clients ("here's what I built for myself")
 
 ---
 
 ## Next lesson
-→ [Choosing a niche: how to find your market](38b-niche-selection-methodology.md)
+→ [Portfolio and case studies: how to show your value](41-portfolio-case-studies.md)
+
+You've already covered choosing a niche in the "Where you're needed" module: [Choosing a niche: how to find your market](38b-niche-selection-methodology.md).

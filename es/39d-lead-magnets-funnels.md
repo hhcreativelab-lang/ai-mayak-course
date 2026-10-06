@@ -2,13 +2,13 @@
 
 **Tiempo:** unos 30 min de lectura + 45 min de práctica
 
-Los porcentajes y las cantidades en dólares de esta lección son puntos de referencia aproximados para recorrer el método. No son estadísticas de mercado ni una promesa de resultados. Mide tus propios números. Los precios de las herramientas se revisaron a octubre de 2026 donde así se indica; para todo lo demás, revisa los sitios web de las herramientas.
+Los porcentajes y las cantidades en dólares de esta lección son puntos de referencia aproximados para recorrer el método. No son estadísticas de mercado ni una promesa de resultados. Mide tus propios números. Lo que incluyen los planes gratis de los servicios se revisó a octubre de 2026; para los precios, revisa los sitios web de los servicios.
 
 ---
 
 ## Lo esencial
 
-Tienes un producto. Se lo vendiste a tus primeros 5 a 10 clientes con prospección en frío (mira la lección [Prospección en frío en 2026](39c-cold-outreach-deep.md)). Ese camino no escala: los mensajes en frío te quitan tiempo todos los días. Necesitas un sistema que siga trayendo gente interesada aunque no estés vendiendo activamente.
+Tienes un producto. Se lo vendiste a tus primeros 5 a 10 clientes con prospección en frío (mira la lección [Prospección en frío que sí recibe respuestas](39c-cold-outreach-deep.md)). Ese camino no escala: los mensajes en frío te quitan tiempo todos los días. Necesitas un sistema que siga trayendo gente interesada aunque no estés vendiendo activamente.
 
 Un imán de prospectos (lead magnet) es la muestra gratis de una tienda. Entras a una tienda de té y te sirven una tacita para probar. ¿Te gusta? Compras una lata. ¿No te gusta? Te vas. Nadie te presiona, te llama después ni "te lleva por una presentación". La tienda gana dinero con la parte de la gente a la que le gustó lo que probó.
 
@@ -25,11 +25,11 @@ Esta lección explica cómo armar un embudo así desde cero en 30 días: qué im
 Un imán de prospectos funciona si:
 - ✓ Tienes un producto (no una idea, sino un producto real por el que la gente paga)
 - ✓ Tienes 5+ clientes que pagan (entiendes quién compra y por qué)
-- ✓ Quieres crecer con inbound (gente que llega a ti), no con prospección en frío
+- ✓ Quieres crecer con clientes que llegan solos a ti, no con prospección en frío
 - ✓ Estás listo para dedicar 30 días a armarlo y después 1 a 2 horas a la semana a ajustarlo
 
 NO necesitas un imán de prospectos si:
-- ✗ Todavía no tienes un producto. Primero, valídalo con prospección en frío (la lección [Prospección en frío en 2026](39c-cold-outreach-deep.md))
+- ✗ Todavía no tienes un producto. Primero, valídalo con prospección en frío (la lección [Prospección en frío que sí recibe respuestas](39c-cold-outreach-deep.md))
 - ✗ Tienes menos de 5 clientes. Todavía no conoces a tu público lo suficiente para armar un embudo
 - ✗ Vendes contratos empresariales muy caros. Ahí el trabajo lo hacen las relaciones y las recomendaciones, no los embudos
 - ✗ Quieres "clientes rápidos esta semana". Un embudo tarda por lo menos 2 a 3 meses en calentarse
@@ -126,10 +126,10 @@ Tráfico frío
    Correo de bienvenida
 (al instante: entrega el imán + una presentación corta de quién eres)
             ↓
-   Correos 2-7
+   Correos 2-6
 (uno al día: consejo → caso → mito → hazlo tú mismo → oferta suave)
             ↓
-   Correo 8
+   Correo 7
 (oferta fuerte: producto de pago / consulta)
             ↓
        Cliente
@@ -280,7 +280,7 @@ Sin presión. No todos lo necesitan.
 [Nombre]
 ```
 
-**Correo 7 (día 6): CTA fuerte**
+**Correo 7 (día 6): llamado a la acción directo**
 
 ```
 Asunto: El viernes cierro las inscripciones de [mes]
@@ -304,7 +304,7 @@ ojalá hayas puesto en práctica al menos un consejo.
 
 Menciona lugares limitados solo si el límite es real. La escasez y la urgencia inventadas matan la confianza.
 
-⚠️ Escríbele solo a gente que se registró por sí misma (nunca a una lista comprada ni extraída de internet) y conserva el enlace para darse de baja que tu plataforma de correo agrega a cada mensaje. El correo de marketing tiene reglas sobre el consentimiento y la baja, y esas reglas cambian de un país a otro; el centro de ayuda de tu plataforma de correo explica lo básico.
+⚠️ Escríbele solo a gente que se registró por sí misma (nunca a una lista comprada ni extraída de internet) y conserva el enlace para darse de baja que tu plataforma de correo agrega a cada mensaje. El correo de marketing tiene reglas sobre el consentimiento y la baja, y esas reglas cambian de un país a otro: revisa las reglas de tu país y del país de tus suscriptores. El centro de ayuda de tu plataforma de correo explica lo básico.
 
 **Principio:** 5 correos dan valor, 2 venden. No al revés.
 
@@ -314,30 +314,30 @@ Menciona lugares limitados solo si el límite es real. La escasez y la urgencia 
 
 El conjunto mínimo de herramientas para lanzar un embudo en 30 días.
 
-Los precios de abajo se revisaron a octubre de 2026; para los precios actuales, mira los sitios web de los servicios.
+Los precios se omiten a propósito: cambian. Lo que incluyen los planes gratis se revisó a octubre de 2026; para los precios, mira los sitios web de los servicios.
 
 **Página de aterrizaje:**
-- **Carrd** (desde $19 al año): lo mejor para sitios de una sola página. Editor sencillo, plantillas, dominio propio. https://carrd.com
-- **Framer** (tiene plan gratis; el plan de pago Basic desde $10 al mes con pago anual): más libertad de diseño, arrastrar y soltar. https://www.framer.com
+- **Carrd**: un constructor sencillo de sitios de una sola página: editor, plantillas, dominio propio. Los formularios de registro y el dominio propio solo vienen con el plan de pago Pro Standard o superior. https://carrd.com
+- **Framer**: más libertad de diseño, arrastrar y soltar; tiene plan gratis. https://www.framer.com
 - **Squarespace**: si ya tienes un sitio en Squarespace, puedes armar ahí la página de registro en lugar de empezar un sitio nuevo.
 - **Vercel + Next.js**: para desarrolladores. El plan gratis Hobby de Vercel es para proyectos personales, no comerciales; para un sitio comercial, revisa las condiciones.
 
 **Servicio de correo** (ConvertKit y Kit son el mismo servicio; le cambiaron el nombre):
-- **Kit (antes ConvertKit)** (plan gratis hasta 10,000 suscriptores; el plan de pago Creator desde $33 al mes): el estándar para creadores. Automatizaciones, secuencias, etiquetas. Revisa en la página de precios qué incluye el plan gratis: las secuencias y automatizaciones pueden estar limitadas. https://kit.com
-- **Beehiiv** (plan gratis hasta 2,500 suscriptores; el plan de pago Lite desde $49 al mes con pago anual): más nuevo, con correos de mejor diseño y herramientas para crecer. https://www.beehiiv.com
+- **Kit (antes ConvertKit)**: un servicio de correo popular entre creadores: formularios, páginas de registro, un correo que entrega tu imán, envíos sueltos. Tiene plan gratis, pero las secuencias de correos y las automatizaciones solo vienen en los planes de pago (a octubre de 2026; revisa la página de precios). https://kit.com
+- **Beehiiv**: más nuevo, con correos de mejor diseño y herramientas para crecer; tiene plan gratis. https://www.beehiiv.com
 - **Mailchimp**: una opción conocida para muchos pequeños negocios. Si ya lo usas, puedes enviar desde ahí tu correo de bienvenida y tu secuencia; revisa qué automatizaciones incluye tu plan.
-- **Resend** (gratis hasta 3,000 correos al mes y 100 al día; Pro desde $20 al mes; se maneja con código): para desarrolladores. Basado en API, plantillas tipadas. https://resend.com
+- **Resend**: correo a través de código, para desarrolladores: una API y plantillas; tiene plan gratis. https://resend.com
 
 **Dónde alojar el imán:**
-- PDF / plantilla: súbelo a S3 o a Cloudflare R2 (R2: $0.015 por GB al mes, más una cantidad gratis)
+- PDF / plantilla: súbelo a Cloudflare R2 o a Amazon S3 (R2 tiene una cantidad gratis; los precios están en el sitio de Cloudflare)
 - Herramienta: Cloudflare Pages (plan gratis)
 - Video: un video de YouTube no listado (gratis)
 
 **Analítica:**
-- **Plausible** (desde $9 al mes, prueba gratis de 30 días): respeta la privacidad, sin avisos de cookies, un panel sencillo. https://plausible.io
+- **Plausible**: analítica sencilla del sitio; no usa cookies y, según Plausible, no necesita aviso de cookies; es de pago, con prueba gratis. https://plausible.io
 - **PostHog** (una cantidad gratis de eventos; mira el sitio): más potente, para analítica de producto y banderas de funciones (feature flags).
 
-**Conjunto mínimo:** Carrd + Kit (plan gratis) + un PDF en Cloudflare R2 + Plausible. Con los precios de arriba, sale más o menos en $10-15 al mes.
+**Conjunto mínimo:** Kit (plan gratis: una página de registro y el correo de entrega) + un PDF en Cloudflare R2 (cantidad gratis). Carrd y Plausible son opcionales. Puedes empezar con planes gratis; calcula las cantidades exactas con los sitios de los servicios.
 
 ---
 
@@ -372,14 +372,14 @@ Son puntos de partida para una primera comparación, no una garantía: cada nich
 Cuánto cuesta lanzarlo y mantenerlo funcionando.
 
 **Arranque (un solo pago):**
-- Carrd desde $19 al año: la página de aterrizaje
+- La página de aterrizaje: el plan gratis de Kit o un constructor de sitios (Carrd tiene formularios solo en un plan de pago; el precio está en su sitio)
 - Canva (tiene plan gratis): diseñar el imán
 - Crear el imán: tu tiempo, de 2 a 5 días
-- **Total:** unos $20-30 en efectivo para empezar + 30 horas de tu tiempo
+- **Total:** de $0 a una pequeña suscripción anual en efectivo + unas 30 horas de tu tiempo
 
 **Cada mes:**
-- Kit en plan gratis; un plan de pago cuando crezcas o necesites sus funciones
-- Plausible desde $9 al mes (opcional al principio)
+- Kit: el plan gratis; un plan de pago cuando necesites secuencias y automatizaciones o crezca tu lista
+- Plausible: de pago (opcional al principio)
 - Alojar el imán: de cero a unos cuantos dólares
 - **Total:** de cero a unas cuantas decenas de dólares al mes en los primeros meses, más cuando crezcas
 
@@ -389,15 +389,15 @@ Cuánto cuesta lanzarlo y mantenerlo funcionando.
 
 **La mejor proporción:**
 - Contenido orgánico → recolección de correos → nutrición → venta
-- El LTV de un cliente (valor del cliente en el tiempo: cuánto te paga un cliente durante todo el tiempo que se queda contigo) debe ser **al menos 3 veces el CAC**. Si el LTV es $300 y el CAC es $100, vas bien. Si el LTV es $300 y el CAC es $250, tienes un problema.
+- El LTV de un cliente (valor del cliente en el tiempo: cuánto te paga un cliente durante todo el tiempo que se queda contigo) debe ser **al menos 3 veces el CAC**. Es una regla práctica muy usada, no una ley. Si el LTV es $300 y el CAC es $100, vas bien. Si el LTV es $300 y el CAC es $250, tienes un problema.
 
-🎨 **Imagínalo así:** volvamos a la tienda de té. Digamos que el local cuesta $500 al mes, las degustaciones son gratis y la venta promedio es de $30. Para cubrir la renta, necesita por lo menos 17 compradores al mes. Un embudo funciona igual. Haz las cuentas de la economía unitaria antes de empezar a mandar tráfico.
+🎨 **Imagínalo así:** volvamos a la tienda de té. Digamos que el local cuesta $500 al mes, las degustaciones son gratis y la venta promedio es de $30. Para cubrir la renta, necesita por lo menos 17 compradores al mes, y eso sin contar el costo del propio té: con él, necesita más. Un embudo funciona igual. Haz las cuentas de la economía unitaria antes de empezar a mandar tráfico.
 
 ---
 
-### Fuentes de tráfico inbound en 2026
+### De dónde llega la gente en 2026
 
-De dónde sacar gente para tu página de aterrizaje. En orden del más al menos efectivo para nichos de IA.
+De dónde sacar gente para tu página de aterrizaje. El orden es aproximado: elige el canal donde ya está tu público.
 
 **X (antes Twitter, orgánico):**
 - Uno de los canales donde el público de IA está activo
@@ -416,9 +416,9 @@ De dónde sacar gente para tu página de aterrizaje. En orden del más al menos 
 - La barrera de entrada más alta, pero el canal más estable a largo plazo
 
 **SEO (Google):**
-- En 2026 funciona más despacio por la búsqueda con IA (ChatGPT, Perplexity)
-- Pero para búsquedas muy específicas (de cola larga) y para B2B sigue funcionando
 - Los resultados no llegan de inmediato; normalmente toma meses
+- Hoy parte de la gente le pregunta a asistentes de IA (ChatGPT, Perplexity) en lugar de a un buscador, así que no dependas solo de Google
+- Para búsquedas muy específicas (de cola larga) y para B2B sigue funcionando
 
 **Reddit:**
 - Subreddits de nicho (r/ChatGPT, r/MachineLearning, r/SaaS)
@@ -458,11 +458,11 @@ Una prueba A/B es mostrar dos versiones a visitantes distintos y comparar los re
 2. **El titular de la página de aterrizaje**: prueba beneficio frente a curiosidad frente a especificidad.
 3. **La hora de envío**: martes a las 9 a. m. frente a jueves a las 2 p. m. frente a domingo a las 6 p. m. Depende de tu público.
 4. **Los asuntos**: curiosidad ("Casi borro este correo...") frente a beneficio ("3 prompts que ahorran una hora al día").
-5. **El texto del CTA** (el texto del botón o del enlace): "Obtén la guía" frente a "Mándamela" frente a "Sí, la quiero".
+5. **El llamado a la acción** (el texto del botón o del enlace): "Obtén la guía" frente a "Mándamela" frente a "Sí, la quiero".
 
 **Reglas de las pruebas A/B:**
 - Prueba **una sola cosa a la vez**
-- Al menos 100 visitantes por versión antes de que el resultado signifique algo
+- Al menos 100 visitantes por versión, y aun así solo se nota una diferencia grande: con números tan pequeños, una diferencia pequeña no se distingue del azar
 - Al menos 3 rondas de cambios antes de decidir que el embudo "funciona"
 - No pruebes con números pequeños: el ruido es más fuerte que la señal
 
@@ -473,14 +473,14 @@ Una prueba A/B es mostrar dos versiones a visitantes distintos y comparar los re
 Cómo ajustar las herramientas a tu nivel y a tu presupuesto.
 
 **Principiante (primer embudo, presupuesto mínimo):**
-- Carrd + Kit (plan gratis) + 1 imán en PDF
-- Arranque: Carrd desde $19 al año + 30 horas de tu tiempo
+- Kit (plan gratis) + 1 imán en PDF; Carrd es opcional
+- Arranque: desde $0 en efectivo + 30 horas de tu tiempo
 - Lanzamiento: 2 semanas
 - Meta: 100 registros de correo, entender tus números
 
 **Intermedio (el producto funciona, necesitas escalar):**
 - Framer + un plan de pago de Kit + Plausible + una herramienta como imán
-- Arranque: planes de pago a los precios de arriba + 60 horas de tu tiempo
+- Arranque: planes de pago a los precios de los sitios de los servicios + 60 horas de tu tiempo
 - Lanzamiento: 4 semanas
 - Meta: 500-1,000 registros al mes, nutrición automatizada
 
@@ -488,7 +488,7 @@ Cómo ajustar las herramientas a tu nivel y a tu presupuesto.
 - Next.js a la medida + Resend + PostHog + varios embudos probados con A/B + una capa de anuncios pagados
 - Arranque: un presupuesto según los precios de los servicios + trabajo técnico continuo
 - Lanzamiento: 8-12 semanas
-- Meta: un flujo predecible de clientes por inbound (los resultados dependen de tu nicho y de tu mercado)
+- Meta: un flujo predecible de clientes que llegan solos (los resultados dependen de tu nicho y de tu mercado)
 
 ---
 
@@ -508,6 +508,8 @@ Tu embudo está listo para lanzarse cuando:
 ---
 
 ## Práctica
+
+45 minutos alcanzan para el Paso 1 y un plan para lo demás. Armar el embudo toma unos 30 días: cada paso dice cuánto tarda.
 
 ### Paso 1: Elige un imán en 1 día
 
@@ -536,13 +538,13 @@ de un experto en mi nicho? Haz eso.
 
 Para un PDF:
 ```
-1. Abre Canva y elige una plantilla de "Lead Magnet" / "Workbook" (cuaderno de trabajo)
+1. Abre Canva y busca plantillas con las palabras "lead magnet" o "workbook" (cuaderno de trabajo)
 2. Estructura (5 páginas son suficientes):
    - Portada (título + tu nombre)
    - Qué hay adentro (índice)
    - Contenido, parte 1
    - Contenido, parte 2
-   - CTA (qué hacer después + cómo contactarte)
+   - Llamado a la acción (qué hacer después + cómo contactarte)
 3. Marca: una tipografía, 2 colores, un estilo uniforme
 4. Exporta → PDF
 5. Súbelo a Cloudflare R2 / S3 / Google Drive (enlace público)
@@ -553,7 +555,7 @@ Para una herramienta:
 1. Una calculadora sencilla en HTML + JS
 2. Publícala en Cloudflare Pages (hay plan gratis)
 3. Pide el correo antes de mostrar el resultado
-4. Webhook → Kit (se agrega el suscriptor)
+4. Pasa el correo a Kit: inserta un formulario de Kit en la página del resultado o agrega al suscriptor con la API de Kit
 ```
 
 ---
@@ -561,7 +563,10 @@ Para una herramienta:
 ### Paso 3: Arma la página de aterrizaje en 1 día
 
 ```
-1. Carrd → sitio nuevo → una plantilla de "Lead capture" (captura de prospectos)
+1. Opción A (gratis): en Kit, abre Audience growth → Landing Pages & Forms → + New →
+   Landing Page (página de registro)
+   Opción B: Carrd → sitio nuevo → una plantilla con formulario (necesitas un plan de Carrd con formularios) →
+   un elemento Form de tipo Signup → conecta Kit
 2. Titular: [enfocado en el beneficio, específico para tu público]
    Ejemplo: "Descarga 5 flujos de trabajo con IA para contadores y
    ahorra 10 horas a la semana"
@@ -569,9 +574,10 @@ Para una herramienta:
 4. Formulario:
    - Correo (¡nada más!)
    - Botón: "Mándamelo" / "Quiero el PDF"
-5. Conecta Kit (antes ConvertKit) con la integración
-6. Configura el correo de confirmación (con una automatización de Kit)
-7. Dominio propio (opcional; el precio depende del registrador)
+5. Correo de entrega: en Kit, abre el formulario o la página → Settings → pestaña Confirmation Email →
+   marca Send confirmation email → en After confirming redirect to, sube el PDF
+   (Choose a file) o pega un enlace. La persona confirma su correo y recibe el recurso de inmediato
+6. Dominio propio (opcional; el precio depende del registrador)
 ```
 
 ---
@@ -581,14 +587,16 @@ Para una herramienta:
 ```
 1. Usa la plantilla de arriba (Correos 1-7)
 2. Adáptala a tu voz y a tu nicho
-3. En Kit:
-   - Crea una Sequence (secuencia) "[Nombre del imán] Nutrición"
+3. En Kit (a octubre de 2026, las secuencias y las automatizaciones solo vienen en los planes de pago):
+   - Automation → Email Sequences → + New sequence: "[Nombre del imán] Nutrición"
    - Agrega 7 correos
-   - Configura los tiempos: Correo 1 al instante, Correos 2-7 uno al día
-4. Crea una Automation (automatización):
-   - Disparador: se registró en el formulario "[Nombre del imán]"
-   - Acción: agregar a la secuencia
-5. Prueba: regístrate con tu propio correo de prueba y revisa los 7 correos
+   - Configura los tiempos (Send this email): Correo 1 de inmediato, Correos 2-7 uno al día
+4. Crea una Visual Automation (automatización visual):
+   - Entrada: se registra en el formulario "[Nombre del imán]"
+   - Siguiente paso: agregar a la secuencia
+5. En el plan gratis: el recurso llega solo en el correo de confirmación (Paso 3),
+   y los Correos 2-7 los mandas a mano, uno al día, como envíos sueltos (Broadcasts)
+6. Prueba: regístrate con tu propio correo de prueba y revisa los 7 correos
 ```
 
 ---
@@ -624,7 +632,7 @@ Mide con UTM:
 
 ```
 Semana 1: deja que se acumulen los datos (al menos 100 visitantes)
-Semana 2: primeros números
+Semana 2: primeros números (las metas de abajo son aproximadas, de la tabla de arriba, no una norma)
   - Conversión de registro (meta 20%+)
   - Tasa de apertura (meta 35%+)
   - Tasa de clics (meta 7%+)
@@ -634,7 +642,7 @@ Semana 3: primera ronda de cambios
   - ¿Qué está más débil? Cambia UNA cosa
   - Si el registro es <15%: cambia el titular / el título del imán
   - Si las aperturas son <25%: cambia los asuntos
-  - Si los clics son <5%: cambia el texto del CTA
+  - Si los clics son <5%: cambia el texto del llamado a la acción
 
 Semana 4: segunda ronda + primeras ventas
   - Si tienes 1-2 compras, las herramientas funcionan: sube el tráfico
@@ -646,14 +654,14 @@ Semana 4: segunda ronda + primeras ventas
 
 ## Herramientas y recursos
 
-Precios a octubre de 2026.
+Para los precios, revisa los sitios de los servicios.
 
-- **[Carrd](https://carrd.com)**: el constructor de páginas de aterrizaje más sencillo, desde $19 al año
-- **[Kit (antes ConvertKit)](https://kit.com)**: email marketing para creadores, plan gratis hasta 10,000 suscriptores
+- **[Carrd](https://carrd.com)**: el constructor de páginas de aterrizaje más sencillo (formularios solo en un plan de pago)
+- **[Kit (antes ConvertKit)](https://kit.com)**: correo de marketing para creadores, con plan gratis (secuencias y automatizaciones en los planes de pago, a octubre de 2026)
 - **[Beehiiv](https://www.beehiiv.com)**: una herramienta de correo más nueva, enfocada en crecer
 - **[Resend](https://resend.com)**: una API de correo pensada para desarrolladores
 - **[Framer](https://www.framer.com)**: páginas de aterrizaje con mucho diseño
-- **[Plausible](https://plausible.io)**: analítica que respeta la privacidad, desde $9 al mes
+- **[Plausible](https://plausible.io)**: analítica que respeta la privacidad, sin cookies
 - **[PostHog](https://posthog.com)**: analítica de producto, con una cantidad gratis de eventos
 - **[Canva](https://canva.com)**: diseña imanes sin un diseñador
 
@@ -675,11 +683,11 @@ Precios a octubre de 2026.
 
 - [Primeros clientes](38-monetization-clients.md): cómo conseguir tus primeros clientes
 - [Cómo elegir un nicho](38b-niche-selection-methodology.md): el nicho correcto sube la conversión del embudo
-- [Generación de prospectos](39-lead-generation.md): el panorama completo de inbound frente a outbound
-- [Prospección en frío en 2026](39c-cold-outreach-deep.md): cuando no necesitas un embudo y vendes directo
+- [Generación de prospectos](39-lead-generation.md): el panorama completo de los clientes que llegan solos frente a los que tú buscas (lección de la biblioteca, opcional)
+- [Prospección en frío que sí recibe respuestas](39c-cold-outreach-deep.md): cuando no necesitas un embudo y vendes directo
 
 ---
 
 ## Siguiente lección
 
-→ [Estrategia de precios para productos de IA](39e-pricing-strategy-deep.md)
+→ [IA para publicidad: textos de anuncios, pruebas A/B e informes](92-ai-advertising.md)

@@ -6,7 +6,9 @@
 
 ## Lo esencial
 
-Una persona, en un solo día de trabajo, produce el contenido de una semana para cinco plataformas: texto, voz, video y un calendario de publicación. No porque sea un genio. Porque tiene armado el flujo correcto. Hoy construimos juntos ese flujo: tendencias → idea → texto → imagen → voz → video → publicación. Claude es el director de orquesta y las demás herramientas son la orquesta.
+Una persona, en un solo día de trabajo, produce el contenido de una semana para cinco plataformas: texto, voz, video y un calendario de publicación. No porque sea un genio. Porque tiene armado el flujo correcto. Hoy recorremos ese flujo estación por estación: tendencias → idea → texto → imagen → video → voz → publicación. Claude es el director de orquesta y las demás herramientas son la orquesta.
+
+Esta lección trae mucho código. La teoría se puede leer sin él: explica de qué estaciones está hecho el flujo. En la práctica hay un camino sin programar y otro para quien ya corre scripts.
 
 🎨 **Imagínalo así:** una planta armadora de Toyota. Nadie arma el carro a mano: aprietas un botón y los robots montan las llantas, pintan la carrocería y hacen las pruebas. Un carro terminado sale de la línea. La idea es la carrocería. Claude, ElevenLabs, Runway y Buffer son los robots de la línea. Tú eres el gerente de planta que decide qué se fabrica.
 
@@ -16,7 +18,7 @@ Una persona, en un solo día de trabajo, produce el contenido de una semana para
 
 - **Fábrica de contenido**: un solo orquestador maneja toda la cadena, de una tendencia a una publicación hecha
 - **Una idea → muchos formatos**: adaptar para cada plataforma sin escribir todo desde cero
-- **Un calendario de contenido en JSON**: un calendario legible por máquina que Claude entiende y ejecuta
+- **Un calendario de contenido en JSON**: un calendario legible por máquina que Claude entiende y ejecuta (JSON es un formato de texto simple que guarda los datos en pares "nombre: valor")
 - **Generación en paralelo**: Claude, ElevenLabs y Runway trabajan al mismo tiempo, no uno tras otro
 - **Ciclo de análisis**: las métricas del contenido publicado regresan a Claude para mejorar la siguiente tanda
 - **Puntos de control**: momentos de aprobación, para que nada a medio hacer se publique solo
@@ -31,10 +33,10 @@ Una persona, en un solo día de trabajo, produce el contenido de una semana para
 Antes de escribir código, dibujamos el diagrama. Toda la fábrica está hecha de 9 estaciones:
 
 ```
-TENDENCIA → INVESTIGACIÓN → ESQUEMA → TEXTO → ADAPTACIONES → IMAGEN → VOZ → CALENDARIO → ANÁLISIS
+TENDENCIA → INVESTIGACIÓN → ESQUEMA → TEXTO → ADAPTACIONES → IMAGEN → VIDEO → VOZ → PUBLICACIÓN
 ```
 
-Cada estación es una llamada a una API distinta (API significa interfaz de programación de aplicaciones: la forma en que un programa habla con otro). Cualquier estación se puede cambiar o apagar sin reconstruir todo el sistema.
+Cada estación es una llamada a una API distinta (API significa interfaz de programación de aplicaciones: la forma en que un programa habla con otro). Cualquier estación se puede cambiar o apagar sin reconstruir todo el sistema. Después de publicar, las métricas regresan al inicio del flujo: ese es el ciclo de análisis, que se explica más abajo.
 
 🎨 **Imagínalo así:** LEGO Technic. Cada bloque es una pieza aparte con una forma clara de conectarse. Si se descompone un motor, cambias solo ese motor; no desarmas todo el carro. Claude son los bloques de texto. Runway es el video. ElevenLabs es la voz. Buffer es la entrega.
 
@@ -43,12 +45,12 @@ Cada estación es una llamada a una API distinta (API significa interfaz de prog
 | Estación | Herramienta | Qué hace |
 |---|---|---|
 | Tendencia | Búsqueda web + Claude | Qué está de moda hoy |
-| Investigación | Claude + herramientas MCP (búsqueda, documentación) | Hechos, datos, fuentes |
+| Investigación | Claude con búsqueda conectada (por MCP, la forma de conectarle servicios externos a Claude) | Hechos, datos, fuentes |
 | Esquema | Claude Sonnet | La estructura de la pieza |
 | Texto (principal) | Claude Sonnet | El artículo o guion completo |
 | Adaptaciones | Claude Haiku | Boletín, X (Twitter), LinkedIn |
 | Imagen | gpt-image-2 / Ideogram / Nano Banana | Portada, ilustraciones (DALL-E 3 se apagó en la API el 12 de mayo de 2026) |
-| Video (opcional) | Kling / Runway | Un video corto de 5–15 segundos |
+| Video (opcional) | Kling / Runway | Un clip corto, de unos segundos |
 | Voz (opcional) | ElevenLabs (TTS, text-to-speech: convertir texto en audio hablado) | Locución para Reels y Shorts |
 | Publicación | Buffer API / tu plataforma de boletines / la API directa de un bot | Programar y enviar |
 
@@ -58,7 +60,7 @@ Cada estación es una llamada a una API distinta (API significa interfaz de prog
 
 ### Un calendario de contenido en JSON: un calendario legible por máquina
 
-Un calendario de contenido no es una hoja de Excel. Es un archivo JSON que Claude lee y ejecuta. Legible por máquina significa que Claude puede llenar la semana siguiente por su cuenta, con base en las estadísticas de la semana anterior.
+Un calendario de contenido no es una hoja de Excel. Es un archivo JSON que Claude lee y ejecuta. Legible por máquina significa que Claude puede llenar la semana siguiente por su cuenta, con base en las estadísticas de la semana anterior. El ejemplo de abajo usa una empresa inventada.
 
 ```json
 {
@@ -95,7 +97,7 @@ Un calendario de contenido no es una hoja de Excel. Es un archivo JSON que Claud
 }
 ```
 
-Cuando `approved` cambia a `true`, el orquestador arranca la producción y llena `assets`.
+Cuando `approved` (aprobado) cambia a `true`, el orquestador arranca la producción y llena `assets` (los archivos terminados: portada, clip, locución).
 
 ---
 
@@ -113,12 +115,17 @@ import os
 claude = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 
+def text_of(response) -> str:
+    """Junta el texto de la respuesta: los modelos nuevos pueden poner bloques de "razonamiento" antes del texto."""
+    return "".join(block.text for block in response.content if block.type == "text")
+
+
 def generate_main_article(topic: str, keywords: list[str],
                            brand_voice: str, word_count: int = 1200) -> str:
     """Genera un artículo completo optimizado para SEO con Claude Sonnet."""
     response = claude.messages.create(
         model="claude-sonnet-5-5",  # IDs de modelo vigentes: revisa la documentación de Anthropic
-        max_tokens=4000,
+        max_tokens=8000,  # con margen: el "razonamiento" del modelo también cuenta para este límite
         messages=[{
             "role": "user",
             "content": f"""Escribe un artículo de blog.
@@ -137,12 +144,12 @@ Estructura:
 
 Requisitos:
 - Solo datos, sin relleno como "esto es muy importante"
-- Cifras y ejemplos concretos
+- Cifras y ejemplos concretos; no inventes cifras: si no tienes datos sólidos, marca el lugar como "por verificar"
 - Tono conversacional pero experto
 - Idioma: español neutro de América Latina, formato Markdown"""
         }]
     )
-    return response.content[0].text
+    return text_of(response)
 
 
 def adapt_to_all_platforms(main_article: str, brand_context: str,
@@ -153,7 +160,7 @@ def adapt_to_all_platforms(main_article: str, brand_context: str,
     """
     response = claude.messages.create(
         model="claude-haiku-4-5",  # Haiku 4.5: su retiro de la API es posible no antes del 15 de octubre de 2026; revisa los IDs en la documentación de Anthropic
-        max_tokens=3000,
+        max_tokens=6000,
         messages=[{
             "role": "user",
             "content": f"""Eres el estratega de contenido de la marca. Marca: {brand_context}
@@ -163,7 +170,7 @@ Artículo principal sobre el tema "{topic}":
 {main_article}
 ---
 
-Adáptalo a los siguientes formatos. Devuelve SOLO JSON válido:
+Adáptalo a los siguientes formatos. Devuelve SOLO JSON válido, sin explicaciones y sin triples comillas invertidas alrededor:
 
 {{
   "newsletter": {{
@@ -187,7 +194,7 @@ Adáptalo a los siguientes formatos. Devuelve SOLO JSON válido:
 }}"""
         }]
     )
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
 def generate_youtube_script(topic: str, duration_minutes: int,
@@ -198,7 +205,7 @@ def generate_youtube_script(topic: str, duration_minutes: int,
 
     response = claude.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=5000,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Escribe el guion de un video de YouTube.
@@ -222,7 +229,7 @@ Estructura:
 Escribe de forma viva y conversacional, como si le hablaras a un amigo."""
         }]
     )
-    return response.content[0].text
+    return text_of(response)
 ```
 
 ---
@@ -262,9 +269,13 @@ async def publish_to_telegram(text: str, image_path: str = None) -> dict:
         )
 
     return {"message_id": message.message_id, "date": str(message.date)}
+
+
+# Para correrlo: asyncio.run(publish_to_telegram("Publicación de prueba"))
+# El bot tiene que ser administrador del canal; TELEGRAM_CHANNEL_ID es la dirección del canal, como @tu_canal
 ```
 
-**Vía 2: la API de Buffer**: un programador para Instagram, LinkedIn y Twitter/X. La API de Buffer está hecha sobre GraphQL (la dirección es `https://api.buffer.com`), y la clave la creas en la configuración de Buffer; el plan gratis te da una clave. El esquema se rehízo en 2026, así que revisa los campos en [developers.buffer.com](https://developers.buffer.com):
+**Vía 2: la API de Buffer**: un programador para Instagram, LinkedIn y Twitter/X. La API de Buffer está hecha sobre GraphQL (un lenguaje de consultas; la dirección es `https://api.buffer.com`), y la clave la creas en la configuración de Buffer (Settings → API). Revisa los nombres de los campos en [developers.buffer.com](https://developers.buffer.com):
 
 ```python
 import json
@@ -311,12 +322,12 @@ def schedule_to_buffer(text: str, platform: str, due_at: str) -> dict:
 
 ### Un flujo en n8n: automatizar todo el proceso
 
-n8n es una plataforma de automatización que te deja conectar de forma visual cada parte del flujo. Su código fuente es abierto (licencia Sustainable Use, "fair-code"), y puedes correr la Community Edition en tu propio servidor y usarla gratis para trabajo interno. Es una alternativa a Make y Zapier. Más en [n8n + IA: flujos inteligentes](78-n8n-ai-workflows.md).
+n8n es una plataforma de automatización que te deja conectar de forma visual cada parte del flujo. Su código fuente es abierto (licencia Sustainable Use, "fair-code"), y puedes correr la Community Edition en tu propio servidor y usarla gratis para trabajo interno. Es una alternativa a Make y Zapier. Más en una lección opcional de la biblioteca: [n8n + IA: flujos inteligentes](78-n8n-ai-workflows.md).
 
 **Un flujo básico de n8n para la fábrica de contenido:**
 
 ```
-Cron (lunes 09:00)
+Ejecución programada (lunes 09:00)
   → HTTP: leer content-calendar.json desde GitHub
   → Code: quedarse solo con approved: true
   → Loop: para cada publicación:
@@ -329,7 +340,7 @@ Cron (lunes 09:00)
   → Aviso por Slack o correo: "X publicaciones listas, esperando revisión"
 ```
 
-Alternativas a n8n: **Make** (antes Integromat) y **Zapier**, ambos servicios en la nube que cobran por créditos y tareas (precios: [Lo vigente](https://aimayak.com/now/)). Más en [Zapier AI](79-zapier-ai.md).
+Alternativas a n8n: **Make** (antes Integromat) y **Zapier**, ambos servicios en la nube que cobran por créditos y tareas (precios: [Lo vigente](https://aimayak.com/now/)). Zapier tiene su propia lección casi al final del curso: [Zapier AI](79-zapier-ai.md).
 
 ---
 
@@ -340,6 +351,7 @@ Alternativas a n8n: **Make** (antes Integromat) y **Zapier**, ambos servicios en
 ```bash
 #!/usr/bin/env bash
 # content-factory-orchestrator.sh
+# Córrelo desde la carpeta del proyecto: bash content-factory-orchestrator.sh (necesita la herramienta jq)
 set -euo pipefail
 
 WEEK_DATE="${1:-$(date +%Y-%m-%d)}"
@@ -370,24 +382,24 @@ for POST_ID in $POSTS; do
     log "  Tema: $TOPIC"
 
     # Artículo y guion de YouTube en paralelo
-    python3 generate_article.py --topic "$TOPIC" --keywords "$KEYWORDS" \
+    python3 scripts/generate_article.py --topic "$TOPIC" --keywords "$KEYWORDS" \
         --output "${POST_DIR}/article.md" &
-    python3 generate_script.py --topic "$TOPIC" --duration 8 \
+    python3 scripts/generate_script.py --topic "$TOPIC" --duration 8 \
         --output "${POST_DIR}/youtube-script.md" &
 
     wait
 
     # Adaptaciones e imagen de portada en paralelo
-    python3 adapt_platforms.py --article "${POST_DIR}/article.md" \
+    python3 scripts/adapt_platforms.py --article "${POST_DIR}/article.md" \
         --output "${POST_DIR}/adaptations.json" &
-    python3 generate_image.py --topic "$TOPIC" \
+    python3 scripts/generate_image.py --topic "$TOPIC" \
         --output "${POST_DIR}/cover.jpg" &
 
     wait
     log "  ✅ El contenido de $POST_ID está listo"
 
     # Programar las publicaciones
-    python3 schedule_content.py --post-id "$POST_ID" \
+    python3 scripts/schedule_content.py --post-id "$POST_ID" \
         --adaptations "${POST_DIR}/adaptations.json" \
         --cover "${POST_DIR}/cover.jpg" \
         --publish-at "$PUBLISH_AT"
@@ -405,6 +417,8 @@ def run_analytics_loop(days_back: int = 7) -> dict:
     """
     Reúne las métricas de la semana pasada y genera temas para la próxima semana.
     """
+    # get_*_stats() y update_calendar_with_recommendations() aquí solo están nombradas:
+    # escríbelas para tus propias plataformas (o pídeselo a Claude)
     newsletter_stats = get_newsletter_stats(days_back)
     youtube_stats = get_youtube_stats(days_back)
     instagram_stats = get_instagram_stats(days_back)
@@ -418,7 +432,7 @@ def run_analytics_loop(days_back: int = 7) -> dict:
 
     response = claude.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=2000,
+        max_tokens=6000,
         messages=[{
             "role": "user",
             "content": f"""Eres analista de estrategia de contenido.
@@ -426,7 +440,7 @@ Analiza los resultados de los últimos {days_back} días:
 
 {json.dumps(combined_stats, ensure_ascii=False, indent=2)}
 
-Da un análisis estructurado en JSON:
+Da un análisis estructurado. Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 {{
   "winners": ["publicación + por qué funcionó"],
   "flops": ["publicación + por qué no pegó"],
@@ -440,7 +454,7 @@ Usa solo los datos de estas estadísticas; no inventes nada."""
         }]
     )
 
-    recommendations = json.loads(response.content[0].text)
+    recommendations = json.loads(text_of(response))
     update_calendar_with_recommendations(recommendations)
     return recommendations
 ```
@@ -458,7 +472,7 @@ Un plan típico: 5 temas a la semana × 4 semanas = 20 paquetes de contenido al 
 | Imagen (portada) | los precios del servicio que elijas |
 | ElevenLabs (locución, opcional) | créditos de tu plan |
 | Video de Kling o Runway (opcional) | créditos por segundo de video, normalmente el renglón más caro |
-| Programador | Buffer y Typefully tienen planes gratis para empezar; los planes de pago se cobran por canal |
+| Programador | Buffer y Typefully tienen planes gratis para empezar; los planes de pago de Buffer se cobran por canal, y las condiciones de Typefully están en su sitio |
 
 El total es la suma de esos precios. Calcula tu propia versión con la fórmula de la lección [Cuánto cuestan de verdad las herramientas de IA](d04-ai-stack-costs.md) antes de prometerle a nadie un flujo regular de contenido.
 
@@ -466,22 +480,28 @@ El total es la suma de esos precios. Calcula tu propia versión con la fórmula 
 
 ## Práctica
 
+**Sin programar.** Recorre el flujo a mano; toma más o menos una hora. Llena una entrada del calendario: tema, audiencia, palabras clave. Copia el texto del prompt de la función `generate_main_article()`, pon tu propio tema y mándalo en un chat de Claude. Luego manda el prompt de `adapt_to_all_platforms()` junto con el artículo terminado. Revisa los datos y las cifras, corrige los textos y agrega las publicaciones a mano a la fila de tu programador. Así entiendes todo el camino, y la automatización la agregas después.
+
+**Con código.** Los pasos de abajo son para quien ya corre scripts de Python: necesitas una terminal, Python y una clave de API de Anthropic. Una hora alcanza para los Pasos 1 a 5; armar el flujo completo de cinco scripts toma más.
+
 ### Paso 1: Crea la estructura del proyecto
 
 ```bash
-mkdir -p content-factory/{scripts,templates,output,logs}
+mkdir -p content-factory/{scripts,templates,logs}
 cd content-factory
-touch content-calendar.json scripts/generate_article.py \
-      scripts/adapt_platforms.py scripts/schedule_content.py .env
+touch content-calendar.json content-factory-orchestrator.sh .env \
+      scripts/generate_article.py scripts/generate_script.py \
+      scripts/adapt_platforms.py scripts/generate_image.py \
+      scripts/schedule_content.py
 ```
 
-### Paso 2: Llena la primera publicación en calendar.json
+### Paso 2: Llena la primera publicación en content-calendar.json
 
 Copia la plantilla JSON de la sección de teoría. Cambia el tema por uno que encaje con tu negocio o con el nicho de tu cliente. Pon `"approved": true` para una corrida de prueba.
 
 ### Paso 3: Arma generate_article.py
 
-Usa la función `generate_main_article()` de la sección de teoría. Agrega argparse para `--topic`, `--keywords` y `--output`. Córrelo y revisa que el artículo se genere y se guarde en un archivo.
+Instala la biblioteca: `pip install anthropic`. La clave de API se crea en la Claude Console (platform.claude.com) y se cobra por tokens, aparte de la suscripción. Ponla en la variable de entorno `ANTHROPIC_API_KEY`, no en el código. Luego toma la función `generate_main_article()` de la sección de teoría, agrega la lectura de los parámetros `--topic`, `--keywords` y `--output` (el módulo argparse) y córrelo. Revisa que el artículo se genere y se guarde en un archivo.
 
 ### Paso 4: Arma adapt_platforms.py
 
@@ -495,15 +515,15 @@ Para Instagram, LinkedIn y X, conecta las cuentas en Buffer y prueba `schedule_t
 pip install python-telegram-bot
 ```
 
-Crea un bot con @BotFather. Copia `publish_to_telegram()`. Manda un mensaje de prueba a tu canal y confirma que el formato Markdown funciona.
+Crea un bot con @BotFather y agrégalo a tu canal como administrador. Pon el token del bot en la variable de entorno `TELEGRAM_BOT_TOKEN` y la dirección del canal (como `@tu_canal`) en `TELEGRAM_CHANNEL_ID`. Copia `publish_to_telegram()` y manda un mensaje de prueba: `asyncio.run(publish_to_telegram("Prueba"))`. Confirma que el formato Markdown funciona.
 
 ### Paso 6: Corre el orquestador
 
-Corre `content-factory-orchestrator.sh`. Mira en tiempo real cómo el flujo avanza por las estaciones. Los archivos finales van a quedar en `content-output/{date}/{post-id}/`. Revisa cada archivo.
+Guarda el script del orquestador de la sección de teoría como `content-factory-orchestrator.sh` y córrelo desde la carpeta del proyecto: `bash content-factory-orchestrator.sh`. Necesitas la herramienta jq (el enlace está en los recursos). El orquestador llama a cinco scripts. Dos ya los armaste en los Pasos 3 y 4. Arma los otros tres de la misma forma, o pídele a Claude que los escriba a partir de las funciones de la teoría: `generate_script.py` a partir de `generate_youtube_script()`, `schedule_content.py` a partir de las funciones de publicación, y `generate_image.py` para el servicio de imágenes que elegiste. Mientras un script no exista, comenta su llamada completa en el orquestador (todas las líneas de la llamada). Mira cómo el flujo avanza por las estaciones. Los archivos finales van a quedar en `content-output/{date}/{post-id}/`. Revisa cada archivo.
 
 ### Paso 7: Producción por tandas: 30 publicaciones en un día
 
-Agrega 30 entradas a calendar.json (todas con approved: true). Corre el orquestador y mide el tiempo. Esta es tu primera experiencia produciendo contenido a escala: el momento en que sientes la diferencia entre un artesano y una fábrica.
+Agrega 30 entradas a content-calendar.json (todas con approved: true). Para esta prueba, comenta en el orquestador la llamada a `schedule_content.py`: que el flujo solo prepare el contenido, y revísalo tú antes de que se publique nada. Ese es tu punto de control. Corre el orquestador y mide el tiempo. Esta es tu primera experiencia produciendo contenido a escala: el momento en que sientes la diferencia entre un artesano y una fábrica.
 
 ---
 
@@ -512,7 +532,7 @@ Agrega 30 entradas a calendar.json (todas con approved: true). Corre el orquesta
 - **[Anthropic API](https://platform.claude.com/docs)**: Claude Sonnet y Haiku (la columna vertebral del flujo)
 - **[python-telegram-bot](https://python-telegram-bot.org)**: un envoltorio de la API de bots de Telegram (para el ejemplo de la Vía 1)
 - **[Buffer API](https://developers.buffer.com)**: programar publicaciones (GraphQL)
-- **[Postiz](https://github.com/gitroomhq/postiz-app)**: una alternativa de código abierto a Buffer que instalas tú mismo (revisa que el proyecto siga activo)
+- **[Postiz](https://github.com/gitroomhq/postiz-app)**: una alternativa de código abierto a Buffer que instalas tú mismo (en desarrollo activo a octubre de 2026)
 - **[n8n](https://n8n.io)**: un orquestador de flujos que puedes correr en tu propio servidor
 - **[ElevenLabs API](https://elevenlabs.io/docs/api-reference)**: TTS con clonación de voz
 - **[OpenAI Images](https://platform.openai.com/docs/guides/images)**: generar portadas (el modelo gpt-image-2; DALL-E 2 y 3 se apagaron en la API el 12 de mayo de 2026)
@@ -534,4 +554,4 @@ Agrega 30 entradas a calendar.json (todas con approved: true). Corre el orquesta
 
 ## Siguiente lección
 
-→ [IA para el correo: una bandeja más inteligente, borradores y respuestas](73-ai-email-communications.md)
+→ [Imanes de prospectos: un embudo sencillo de lo gratis a lo pagado](39d-lead-magnets-funnels.md)

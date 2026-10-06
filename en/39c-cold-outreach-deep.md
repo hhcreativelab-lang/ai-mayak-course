@@ -24,7 +24,7 @@ A good cold message reads as if a sharp acquaintance happened to understand exac
 
 Most cold messages are bad because they sell **what you do** instead of **what the other person gets**.
 
-❌ "I have a SaaS product that automates reports with AI analytics and a Slack integration."
+❌ "I have a SaaS product (online software sold by subscription) that automates reports with AI analytics and a Slack integration."
 ✅ "Many finance teams spend Friday pulling the weekly report together by hand. My clients got that Friday back."
 
 The first one is about you. The second is about them. The person reading your message should think, "Oh, that's exactly my situation," not "Oh, another SaaS pitch."

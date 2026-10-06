@@ -2,7 +2,7 @@
 
 **Time:** about 30 min reading + 30 min practice
 
-The dollar amounts in the examples below are made up. They show how packages are structured, not market prices or an income forecast. Work out your own price with the [Value-based pricing](39-monetization-pricing.md) lesson.
+The dollar amounts in the examples below are made up. They show how packages are structured, not market prices or an income forecast. Work out your own price in the next lesson, [Value-based pricing](39-monetization-pricing.md).
 
 ---
 
@@ -15,10 +15,10 @@ Without a menu, a client doesn't know what to order or what it costs. They ask, 
 ## Key concepts
 
 - **Service vs. product**: a service is different every time, a product is repeatable. Packages make a service work more like a product
-- **3 packages**: the psychology of choice. People choose better from three options than from one or five
+- **3 packages**: the psychology of choice. Three options are usually easier to choose from than one, or five or more (a working hypothesis, not a law)
 - **Scope**: a clear list of what's included and what's NOT. Without it, scope creep (the project quietly growing past what you agreed to) is inevitable
 - **SLA**: a Service Level Agreement. Response time, uptime (how reliably the system keeps running), how support works
-- **Handoff documentation**: what the client gets besides the code: instructions, training, logins and access
+- **Handoff documentation**: what the client gets besides the system itself: instructions, training, logins and access
 - **Pricing tiers**: price levels that reflect the amount of work, the speed and the level of support
 
 ---
@@ -67,13 +67,13 @@ People often pick the middle option (this is called the compromise effect). The 
 | | Basic | Pro | Enterprise |
 |---|---|---|---|
 | **Price** | \$800 | \$2,200 | \$5,000 |
-| **What we build** | Basic newsletter | Newsletter + CRM | Newsletter + CRM + analytics + A/B testing |
+| **What we build** | Basic newsletter | Newsletter + CRM (a customer database) | Newsletter + CRM + analytics + A/B testing (comparing two versions of an email) |
 | **News sources** | 1 (Perplexity) | 3 (Perplexity + RSS + custom) | Unlimited |
 | **Recipients** | Up to 500 | Up to 5,000 | Unlimited |
 | **Infographics** | ❌ | ✅ (basic) | ✅ (custom) |
 | **Branding** | Template | Matched to your brand | Fully custom |
 | **Documentation** | README | Video walkthrough | SOP + team training |
-| **Support** | 2 weeks by email | 1 month in Slack | 3 months + 24-hour SLA |
+| **Support** | 2 weeks by email | 1 month in Slack | 3 months + 4-hour SLA |
 | **Timeline** | 5 days | 10 days | 3-4 weeks |
 
 ---
@@ -82,7 +82,7 @@ People often pick the middle option (this is called the compromise effect). The 
 
 🎨 **Picture this:** a scope document is like a menu with a price next to every dish. "Everything included" with no list means the client orders dessert, then another dessert, then says, "But you said everything was included." With a clear menu, they know what comes with the combo and what costs extra.
 
-Scope creep is the main reason projects end up losing money. Along the way, the client asks for "small changes" that together double the amount of work.
+Scope creep is a common reason projects end up losing money. Along the way, the client asks for "small changes" that together double the amount of work.
 
 **Rule:** if the agreement doesn't explicitly list something as included, it isn't included.
 
@@ -92,8 +92,8 @@ Scope creep is the main reason projects end up losing money. Along the way, the 
 ## Project: Newsletter Automation, Pro Package
 
 ### Included:
-- Setup and deployment of the main workflow
-- Integration with Perplexity, RSS (up to 3 sources) and your domain
+- Setup and launch of the main workflow
+- Integration with Perplexity, RSS news feeds (up to 3 sources) and your domain
 - HTML email template matched to your brand guidelines
 - Slack bot to approve each issue before it goes out
 - Google Sheets log of every send
@@ -181,7 +181,7 @@ A complete operations document for the client's team. It includes instructions f
 
 ### Upselling through packages: the natural path
 
-🎨 **Picture this:** upselling through packages works like an auto shop. You came in for an oil change, and the mechanic shows you that your brake pads will need replacing soon too. You're already there and you already trust them, so it makes sense. A client's backlog is your list of "almost worn-out brake pads" you noticed while doing the work.
+🎨 **Picture this:** upselling (selling more to a client you already have) through packages works like an auto shop. You came in for an oil change, and the mechanic shows you that your brake pads will need replacing soon too. You're already there and you already trust them, so it makes sense. A client's backlog (their wish list for later) is your list of "almost worn-out brake pads" you noticed while doing the work.
 
 Packages create natural points for growth:
 
@@ -201,9 +201,9 @@ For each client, keep a backlog of everything they mentioned as "it would be nic
 
 ## Practice
 
-**Exercise: create packages for your own automation**
+**Exercise: create packages for your own service**
 
-Take a project you've already built (newsletter automation, invoice automation or one of your own).
+Take a service you want to offer clients (for example, the idea you picked in the niche lessons) or a project you've already built.
 
 1. Fill in the three-package table:
 
@@ -241,7 +241,7 @@ Take a project you've already built (newsletter automation, invoice automation o
 | **Timeline** | 3-5 days | 7-10 days | 2-4 weeks |
 | **Payment** | 100% upfront | 50/50 | 30/40/30 |
 
-Copy this table and adapt it to your type of automation. The middle package (Pro) is the one you want to sell most often.
+Copy this table and adapt it to your own service. The middle package (Pro) is the one you want to sell most often.
 
 ---
 
@@ -255,9 +255,9 @@ Copy this table and adapt it to your type of automation. The middle package (Pro
 
 ## Related lessons
 
-- **→ [Value-based pricing](39-monetization-pricing.md)**: how to work out the base for your package prices with value-based pricing
-- **→ [The factory model](48-factory-model.md)**: templates speed up delivering packages and raise your margin
-- **→ [Delivery and retention](46-delivery-retention.md)**: how to hand a package over to the client professionally
+- **→ [Value-based pricing](39-monetization-pricing.md)**: the next lesson, on working out the base for your package prices from the value to the client
+- **→ [The factory model](48-factory-model.md)**: templates speed up delivering packages and raise your margin (what's left for you after costs); a later lesson
+- **→ [Delivery and retention](46-delivery-retention.md)**: how to hand a package over to the client professionally; a later lesson
 
 ---
 
@@ -266,9 +266,9 @@ Copy this table and adapt it to your type of automation. The middle package (Pro
 - **Notion**: [notion.com/templates](https://www.notion.com/templates). For a public page with your packages (you can embed it in your portfolio)
 - **Google Docs**: for scope documents (easy to share with the client for review)
 - **Loom**: [loom.com](https://www.loom.com/). For recording the video walkthrough for the Pro package (the free plan has limits; see the website)
-- **PandaDoc / DocuSign**: for e-signing the scope document (once your volume grows)
-- **Stripe**: [stripe.com](https://stripe.com/). Takes payments; you can create a Payment Link for each package
-- **Tally**: [tally.so](https://tally.so/). Free intake forms (the client fills out a questionnaire before the project starts)
+- **PandaDoc / Docusign**: for e-signing the scope document (once your volume grows)
+- **Stripe**: [stripe.com](https://stripe.com/). Takes payments; you can create a Payment Link for each package. Stripe isn't available in every country; check the list on its site
+- **Tally**: [tally.so](https://tally.so/). Intake forms, with a free plan (the client fills out a questionnaire before the project starts)
 - **Calendly**: [calendly.com](https://calendly.com/). A link to book a call, right on your packages page
 
 ---
@@ -281,10 +281,10 @@ Copy this table and adapt it to your type of automation. The middle package (Pro
 
 > An SLA doesn't have to be a legal document. Three simple parameters (response time, uptime, what's not covered) are enough for a small business.
 
-> Keep an upsell backlog. Every "it would be nice to have" from a client is your next contract. Write it down.
+> Keep an upsell backlog. Every "it would be nice to have" from a client could be your next contract. Write it down.
 
 ---
 
 ## Next lesson
 
-→ [Funnel design for AI products: from visitor to customer](42b-funnel-design-ai-products.md)
+→ [How to price AI services: value-based pricing](39-monetization-pricing.md)

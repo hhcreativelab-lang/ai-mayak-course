@@ -29,7 +29,7 @@ Picture the construction business back when one builder laid every brick persona
 
 Estimates of the size of the agentic AI market differ widely from one research firm to the next, so this lesson doesn't quote specific dollar amounts. If you come across a number in an article, check whose report it is and what year it's projecting for. Look for fresh overviews from Gartner and McKinsey (search tips at the end of this lesson).
 
-A sense of direction: in 2025, Gartner forecast that by the end of 2026, up to 40% of enterprise applications would include task-specific AI agents, compared with fewer than 5% in 2025. That's a forecast, not a fact. But it shows the scale: the technology is already inside products people use every day.
+A sense of direction: in August 2025, the research firm Gartner forecast that by the end of 2026, up to 40% of enterprise applications would include task-specific AI agents, compared with fewer than 5% in 2025 (Gartner press release, August 26, 2025). That's a forecast, not a fact. But it shows the scale: the technology is already inside products people use every day.
 
 **What's happening right now:**
 - Agentic features are built into everyday products: Claude has Claude Code and Cowork, ChatGPT has a Work mode for tasks, and most major assistants now have "agent" modes. What's available on which plan is on the [What's current](https://aimayak.com/en/now/) page.
@@ -80,9 +80,9 @@ You move from the role of "builder" to the role of "architect."
 
 ### Who's already doing this: real examples
 
-**Morgan Stanley**: since 2023, the bank has given its financial advisors an AI assistant built on OpenAI models. It finds what's needed in a large internal library of research and documents and helps advisors answer clients faster. A separate tool takes notes during meetings and drafts follow-up emails, which the advisor edits before sending.
+**Morgan Stanley**: since 2023, the bank has given its financial advisors an AI assistant built on OpenAI models. It finds what's needed in a large internal library of research and documents and helps advisors answer clients faster. A separate tool takes notes during meetings (with the client's consent) and drafts follow-up emails, which the advisor edits before sending.
 
-**Klarna** (fintech): in 2024, the company said its AI assistant in customer service was doing work comparable to that of 700 employees. In 2025, leadership admitted it had gone too far in cutting people and brought back a guaranteed way for customers to reach a real person. The lesson: the agent handles routine requests, and complex cases have to reach a human.
+**Klarna** (an online payments company): in February 2024, the company said its AI assistant in customer service was doing work comparable to that of 700 full-time agents (Klarna press release). In May 2025, its CEO told Bloomberg that focusing too much on cost had lowered the quality of service, and promised customers they would always be able to talk to a real person. The lesson: the agent handles routine requests, and complex cases have to reach a human.
 
 **Notion**: built an AI agent into its product. When a user asks, it creates pages, fills in databases and puts together reports (for the full list of what it can do, see Notion's documentation).
 
@@ -111,7 +111,7 @@ That's one of the roads this course shows: learn to build, package it as a servi
 1. Find three case studies from different industries (you can search for "AI agents case study 2026")
 2. For each one, write down:
    - What task the agentic system handles
-   - What result the company got (in numbers, if available)
+   - What result the company got (in numbers, if available) and who reports it: the company itself, the vendor of the solution or an independent source
    - What it looked like before (how they did it without an agent)
 3. Write one sentence: "In my business, or for my clients, agentic automation could help with ___"
 
@@ -139,9 +139,9 @@ That's one of the roads this course shows: learn to build, package it as a servi
 - **[Anthropic Blog](https://www.anthropic.com/news)**: examples of Claude used in production
 - **Gartner: Agentic AI**: official market forecasts (search: "Gartner Agentic AI forecast 2030")
 - **McKinsey: The state of AI**: an annual report on the AI market (search: "McKinsey Global Survey AI")
-- **a16z AI Canon**: a collection of reading on agentic AI from Andreessen Horowitz
+- **a16z AI Canon**: a 2023 collection of reading on modern AI from the venture firm Andreessen Horowitz
 
-→ See the lesson [Agentic workflows vs. traditional automation](02-why-agentic-beats-traditional.md) for a detailed comparison with Zapier and n8n
+→ In the library, optional: the lesson [Agentic workflows vs. traditional automation](02-why-agentic-beats-traditional.md) for a detailed comparison with Zapier and n8n
 → See the lesson [First clients](38-monetization-clients.md) for how to offer your agentic skills to clients
 
 ---
@@ -150,7 +150,7 @@ That's one of the roads this course shows: learn to build, package it as a servi
 
 > Agentic AI is already built into mainstream products. Market estimates vary, so watch the direction, not one impressive number.
 
-> Large companies are rolling out agentic workflows, small businesses will follow, and someone will have to build it for them. But the results depend on the task you pick and on quality control.
+> Large companies are rolling out agents; small businesses can use them too, and someone will have to build them. But the results depend on the task you pick and on quality control.
 
 > Three factors came together right now: reliable LLMs + ready-made infrastructure + Claude Code as a way in that doesn't require developer skills.
 
@@ -158,4 +158,4 @@ That's one of the roads this course shows: learn to build, package it as a servi
 
 ## Next lesson
 
-→ [Agentic workflows vs. traditional automation](02-why-agentic-beats-traditional.md): where the real advantage lies
+→ [No-code AI for non-programmers: v0, Webflow, Framer](77-no-code-ai.md): your first build with AI tools that need no code

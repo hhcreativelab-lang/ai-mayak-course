@@ -10,6 +10,8 @@ Vender es filtrar. De cien clientes potenciales (personas o empresas que mostrar
 
 Claude vuelve ese filtro sistemático: califica a los clientes potenciales con BANT, le da a cada uno una puntuación de qué tan listo está, escribe correos personalizados y prepara respuestas a las objeciones. El vendedor entra a la conversación sabiendo ya quién está del otro lado y qué le importa.
 
+Esta lección trae mucho código en Python. Si no programas, toma de ahí los textos de los prompts: también funcionan en un chat normal de Claude, con tus propias notas sobre el cliente.
+
 🎨 **Imagínalo así:** un vendedor con experiencia que, antes de cada llamada, recibe un resumen rápido de un colega: "Es Carlos, de Distribuidora del Norte. Están viendo a la competencia, el presupuesto existe, pero el director general todavía no decide, y la objeción principal es la integración con su sistema contable". Eso es lo que hace Claude con cada cliente potencial, de forma automática.
 
 ---
@@ -29,20 +31,25 @@ Claude vuelve ese filtro sistemático: califica a los clientes potenciales con B
 
 ### Calificación BANT: cuatro preguntas que lo deciden todo
 
-BANT es uno de los métodos de ventas más antiguos, y sigue funcionando:
+BANT es un método de ventas veterano, y sigue funcionando:
 
 - **B**udget (presupuesto): ¿hay dinero? ¿Cuánto están dispuestos a gastar?
 - **A**uthority (autoridad): ¿esta persona toma la decisión, o solo está juntando información?
 - **N**eed (necesidad): ¿hay una necesidad real, o "solo están viendo"?
 - **T**imeline (plazo): ¿cuándo piensan comprar? ¿Este trimestre o "algún día"?
 
-Claude saca el BANT de cualquier conversación: correos, chats, notas de llamadas y reuniones:
+Claude saca el BANT de tus conversaciones: correos, chats, notas de llamadas y reuniones.
 
 ```python
 import anthropic
 import json
 
 client = anthropic.Anthropic()
+
+
+def text_of(response) -> str:
+    """Junta el texto de la respuesta: los modelos nuevos pueden poner bloques de "razonamiento" antes del texto."""
+    return "".join(block.text for block in response.content if block.type == "text")
 
 def qualify_lead_bant(
     company_name: str,
@@ -54,7 +61,7 @@ def qualify_lead_bant(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=800,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Haz una calificación BANT de este cliente potencial con la información disponible.
@@ -71,7 +78,8 @@ Califica cada criterio BANT en una escala de 0 a 3:
 2 = hay algunas señales
 3 = confirmación clara
 
-Devuelve JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor.
+Veredicto: hot (caliente), warm (tibio), cold (frío) o disqualify (no es tu cliente).
 {{
     "bant": {{
         "budget": {{
@@ -107,7 +115,7 @@ Devuelve JSON:
         }]
     )
 
-    result = json.loads(response.content[0].text)
+    result = json.loads(text_of(response))
 
     # Agrega una puntuación en porcentaje
     result["qualification_percent"] = round(result["total_score"] / 12 * 100)
@@ -115,7 +123,7 @@ Devuelve JSON:
     return result
 
 
-# Prueba
+# Una prueba con datos inventados
 history = """
 15 de abril, primera llamada:
 Carlos preguntó por nuestro producto y dijo que están "viendo opciones para
@@ -165,7 +173,7 @@ def score_lead_readiness(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=700,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Califica qué tan listo está este cliente potencial para comprar.
@@ -187,7 +195,7 @@ pide una propuesta o un contrato
 NEGATIVAS: respuestas vagas, "ya veremos", silencios largos sin respuesta,
 dice que "no es mi decisión", cambia los requisitos a cada rato, quiere todo más barato
 
-Devuelve JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 {{
     "score": un número de 0 a 100,
     "stage": "awareness/consideration/decision/ready_to_buy",
@@ -204,7 +212,7 @@ Devuelve JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 ```
 
 🎨 **Imagínalo así:** un médico mira los síntomas y da un diagnóstico. Un vendedor mira las señales y da una puntuación. Claude es un asistente de diagnóstico que revisa cada síntoma de la lista y no se cansa después del cliente potencial número 50.
@@ -234,7 +242,7 @@ def generate_followup_email(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=600,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Escribe un correo de seguimiento personalizado.
@@ -262,7 +270,7 @@ REQUISITOS:
 - Sin presión, sin insistir de más
 - Lenguaje natural, no corporativo
 
-Devuelve JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 {{
     "subject": "asunto del correo",
     "body": "texto del correo",
@@ -272,10 +280,10 @@ Devuelve JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
-# Ejemplo
+# Ejemplo (datos inventados)
 email = generate_followup_email(
     contact={
         "name": "Carlos",
@@ -300,7 +308,7 @@ if email.get('ps'):
 
 Todo producto se topa con 10-15 objeciones típicas. Un vendedor con experiencia sabe la respuesta a cada una. Uno nuevo se pone nervioso.
 
-Claude nunca se pone nervioso:
+Claude te ayuda a no perder el hilo:
 
 ```python
 def handle_objection(
@@ -308,12 +316,12 @@ def handle_objection(
     product_name: str,
     product_key_benefits: list[str],
     contact_context: str = ""
-) -> dict:
+) -> str:
     """Prepara borradores de respuesta a una objeción con varios enfoques"""
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=800,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Un cliente puso una objeción. Ayúdame a responder.
@@ -339,7 +347,7 @@ Además, dame:
         }]
     )
 
-    return response.content[0].text
+    return text_of(response)
 
 
 # Objeciones y respuestas comunes
@@ -376,7 +384,7 @@ def create_sales_advisor(playbook_content: str):
     def ask_advisor(question: str, deal_context: str) -> str:
         response = client.messages.create(
             model="claude-sonnet-5-5",
-            max_tokens=600,
+            max_tokens=8000,
             system=f"""Eres un coach de ventas con experiencia. Tienes el manual de ventas de la empresa:
 
 {playbook_content}
@@ -388,11 +396,11 @@ dilo. Da frases concretas que un vendedor pueda usar ahora mismo.""",
                 "content": f"Situación del cliente: {deal_context}\n\nPregunta: {question}"
             }]
         )
-        return response.content[0].text
+        return text_of(response)
 
     return ask_advisor
 
-# Ejemplo de uso
+# Ejemplo de uso (la empresa y su manual son inventados)
 playbook = """
 # Manual de ventas: Techservice S.A.
 
@@ -423,13 +431,13 @@ print(advice)
 
 ### Apollo.io + Claude: prospección personalizada
 
-Apollo.io es una herramienta para encontrar contactos y hacer prospección (correos en frío, LinkedIn). Claude agrega el tipo de personalización que una plantilla no puede dar.
+Apollo.io es un servicio con una base de contactos de empresas y herramientas para correos en frío. Claude agrega el tipo de personalización que una plantilla no puede dar.
 
-⚠️ Los correos en frío y la recopilación de datos de contacto están regulados por leyes contra el spam y de protección de datos personales, y cada país tiene las suyas. Revisa las reglas de tu país. Antes de lanzar, revisa las lecciones [Regulación y cumplimiento en IA](61c-ai-regulation-compliance.md) y [Prospección en frío en 2026: mensajes directos, correo y voz](39c-cold-outreach-deep.md).
+⚠️ Los correos en frío y la recopilación de datos de contacto están regulados por leyes contra el spam y de protección de datos personales, y cada país tiene las suyas: revisa las reglas de tu país y del país de quien recibe el correo. Los datos de LinkedIn júntalos a mano: LinkedIn prohíbe la recopilación automática (bots, extensiones del navegador). Antes de lanzar, vuelve a leer la lección [Prospección en frío que sí recibe respuestas](39c-cold-outreach-deep.md); para más sobre las leyes, mira la lección de la biblioteca [Regulación y cumplimiento en IA](61c-ai-regulation-compliance.md).
 
 ```python
 def personalize_cold_outreach(
-    prospect_data: dict,  # Datos de Apollo: empresa, puesto, actividad en LinkedIn
+    prospect_data: dict,  # Sobre la persona: empresa, puesto, qué ha publicado (de Apollo y LinkedIn)
     your_product: str,
     your_value_prop: str
 ) -> dict:
@@ -437,7 +445,7 @@ def personalize_cold_outreach(
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=500,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Escribe un correo en frío personalizado.
@@ -454,7 +462,7 @@ REGLAS:
 - Una sola pregunta clara al final (no un "compra ahora")
 - Menos de 100 palabras
 
-Devuelve JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor:
 {{
     "subject": "asunto (hasta 50 caracteres)",
     "opening": "la primera oración personalizada",
@@ -465,7 +473,7 @@ Devuelve JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 ```
 
 ---
@@ -476,6 +484,12 @@ Devuelve JSON:
 
 **Qué vamos a construir:** un script que recibe los datos de un cliente potencial y devuelve una calificación completa más un plan para trabajarlo.
 
+**Sin programar.** Pega en un chat de Claude tus notas sobre un cliente potencial y el texto del prompt de la función `full_lead_analysis()` de abajo. Obtienes la misma calificación y el mismo plan, solo que sin archivo.
+
+**Con código.** Necesitas Python, la biblioteca `anthropic` (`pip install anthropic`) y una clave de API de Anthropic en la variable de entorno `ANTHROPIC_API_KEY`. La clave se crea en la Claude Console (platform.claude.com) y se cobra por tokens, aparte de la suscripción.
+
+Al prompt de Claude van el nombre, la empresa, el puesto y las notas, pero no el correo ni el teléfono: no mandes más datos personales de los necesarios. Si trabajas con datos de clientes reales, revisa que tu aviso de privacidad y las leyes de tu país lo permitan.
+
 ```python
 # lead_qualification_system.py
 
@@ -485,6 +499,11 @@ from dataclasses import dataclass
 from typing import Optional
 
 client = anthropic.Anthropic()
+
+
+def text_of(response) -> str:
+    """Junta el texto de la respuesta: los modelos nuevos pueden poner bloques de "razonamiento" antes del texto."""
+    return "".join(block.text for block in response.content if block.type == "text")
 
 @dataclass
 class Lead:
@@ -504,7 +523,7 @@ def full_lead_analysis(lead: Lead) -> dict:
 
     response = client.messages.create(
         model="claude-sonnet-5-5",
-        max_tokens=1200,
+        max_tokens=8000,
         messages=[{
             "role": "user",
             "content": f"""Haz un análisis completo de este cliente potencial para el equipo de ventas.
@@ -519,7 +538,8 @@ Notas del vendedor: {lead.notes}
 HISTORIAL DE INTERACCIONES:
 {lead.interaction_log or "Primer contacto, todavía no hay historial"}
 
-Devuelve un análisis COMPLETO en JSON:
+Devuelve solo JSON, sin explicaciones y sin triples comillas invertidas alrededor.
+Veredicto: hot (caliente), warm (tibio), cold (frío) o disqualify (no es tu cliente).
 {{
     "qualification": {{
         "bant_score": un número de 0 a 12,
@@ -554,7 +574,7 @@ Devuelve un análisis COMPLETO en JSON:
         }]
     )
 
-    return json.loads(response.content[0].text)
+    return json.loads(text_of(response))
 
 
 def format_lead_report(lead: Lead, analysis: dict) -> str:
@@ -601,7 +621,7 @@ RIESGOS:
     return report
 
 
-# ===== PRUEBA =====
+# ===== PRUEBA (la persona y la empresa son inventadas) =====
 test_lead = Lead(
     name="Miguel Torres",
     company="Grupo Diamante",
@@ -649,9 +669,9 @@ python lead_qualification_system.py
 
 ## Herramientas y recursos
 
-- **Apollo.io**: encontrar contactos y hacer prospección (revisa en el sitio los planes y los límites)
-- **HubSpot CRM**: un CRM para guardar los datos de tus clientes, con plan gratis (revisa en el sitio los planes de pago; consulta también la lección [El CRM en piloto automático](90-crm-autopilot.md))
-- **Lemlist / Instantly**: automatización de prospección por correo
+- **Apollo.io**: una base de contactos y correos en frío (revisa en el sitio los planes y los límites)
+- **HubSpot CRM**: un CRM para guardar los datos de tus clientes, con plan gratis (revisa en el sitio los planes de pago; consulta también la lección de la biblioteca [El CRM en piloto automático](90-crm-autopilot.md))
+- **Lemlist / Instantly**: servicios para enviar campañas de correos en frío
 - **Notion**: un lugar para guardar tu manual de ventas
 - **Claude API**: los nombres de los modelos en el código son de octubre de 2026; los precios y las versiones actuales están en la página [Lo vigente](https://aimayak.com/now/)
 
@@ -661,7 +681,7 @@ python lead_qualification_system.py
 
 > BANT no es burocracia, es velocidad. Saber rápido si alguien es tu cliente respeta tu tiempo y el suyo.
 >
-> La personalización ya no es un lujo; es obligatoria. La gente recibe decenas de correos de plantilla al día. Un correo personalizado destaca de inmediato.
+> La personalización ya no es un lujo; es obligatoria. La gente recibe muchos correos de plantilla, y un correo personalizado destaca de inmediato.
 >
 > Lo más valioso de la IA para ventas no es qué tan rápido escribe. Es la constancia. Claude le da al cliente potencial número cien el mismo nivel de análisis que al primero. Las personas se cansan. La IA no.
 
@@ -669,4 +689,4 @@ python lead_qualification_system.py
 
 ## Siguiente lección
 
-→ [Atención al cliente con IA: un sistema de tickets, respuestas desde tu base de conocimiento (RAG), un soporte más inteligente](94-ai-customer-support.md)
+→ [Paso a paso: arma un negocio de consultoría en IA](113-build-along-ai-consulting.md)

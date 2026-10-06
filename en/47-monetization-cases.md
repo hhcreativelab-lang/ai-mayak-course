@@ -12,7 +12,7 @@ If you've been searching for AI side hustles, this is what that kind of work can
 
 ⚠️ **Important:** the numbers in these cases are illustrative. They're template calculations meant to teach you how to work out payback. They are not a report on real clients, not a typical result and not a promise of income. Your rates, project prices and timelines will be different. Plug your own numbers into the formula in the "ROI calculator" section.
 
-You don't need to memorize the tool names in the "Stack" lines. What matters for now is three things: what the problem was, what was built, and how the payoff was calculated.
+You don't need to memorize the tool names in the "Tools" lines. What matters for now is three things: what the problem was, what was built, and how the payoff was calculated.
 
 ---
 
@@ -22,7 +22,7 @@ You don't need to memorize the tool names in the "Stack" lines. What matters for
 - **Time-to-value**: how many days it takes before the client starts getting results
 - **Client testimonial**: what a testimonial that helps you sell looks like (there's a sample in Case 1)
 - **Recurring vs one-time**: a one-off project vs monthly support
-- **A stack for each type of task**: what to use and why
+- **Tools for each type of task**: what to use and why
 
 ---
 
@@ -55,7 +55,7 @@ A newsletter automation pipeline on Cloudflare Workers + Trigger.dev:
 - A Slack bot sends the agency director a preview with two buttons: "Send to all" / "Edit"
 - Google Sheets keeps a log of every send
 
-**Stack:** Cloudflare Workers, Trigger.dev, Claude Haiku API, Google Analytics API, Meta Marketing API, Google Ads API, Puppeteer (PDF), Slack API, Google Sheets API
+**Tools:** Cloudflare Workers, Trigger.dev, Claude Haiku API, Google Analytics API, Meta Marketing API, Google Ads API, Puppeteer (PDF), Slack API, Google Sheets API
 
 **Result:**
 
@@ -91,7 +91,7 @@ First-year ROI: ($7,020 - $3,400) / $3,400 = 106%
 **Client:** a B2B SaaS company (it sells subscription software to other businesses, in this case project management software), 8 people, selling to small businesses in Latin America
 
 **Problem:**
-An SDR (sales development rep) searched LinkedIn for potential customers by hand, wrote personalized emails, sent them and kept the CRM (the software that tracks customers and deals) up to date. Each lead took 25-30 minutes. That's 8-10 leads a day at most. Conversion to a call: 8%.
+An SDR (sales development rep) searched LinkedIn for potential customers by hand, wrote personalized emails, sent them and kept the CRM (the software that tracks customers and deals) up to date. Each lead (a potential customer) took 25-30 minutes. That's 8-10 leads a day at most. Conversion to a call: 8%.
 
 **Cost of the problem:**
 ```
@@ -109,7 +109,7 @@ A lead gen pipeline with Claude:
 - The system loads everything into HubSpot CRM
 - The SDR sees 20 ready-to-go leads with personalized emails, reviews each one (2-3 minutes) and clicks "Send" personally
 
-**Stack:** Claude Code (runs the subagents), Claude Sonnet API, Apollo.io API, HubSpot CRM API, Slack bot (notifications)
+**Tools:** Claude Code (runs the subagents), Claude Sonnet API, Apollo.io API, HubSpot CRM API, Slack bot (notifications)
 
 **Result:**
 
@@ -164,7 +164,7 @@ Every Friday at 5 p.m., it pulls data from the bookkeeping spreadsheets and gene
 **Module 3: Meeting prep**
 One hour before a meeting (based on Google Calendar), it gathers the latest emails with that person, any deal history in the CRM, and relevant news if it's an outside partner. It packs all of that into a short briefing in Slack.
 
-**Stack:** Cloudflare Workers (cron, meaning scheduled jobs), Claude Sonnet API, Gmail API, Google Calendar API, Slack bot, Airtable (property database), Google Sheets (financial data)
+**Tools:** Cloudflare Workers (cron, meaning scheduled jobs), Claude Sonnet API, Gmail API, Google Calendar API, Slack bot, Airtable (property database), Google Sheets (financial data)
 
 **Result:**
 
@@ -197,7 +197,7 @@ Payback: less than 1 month
 **Client:** an independent YouTube creator in personal finance, 180K subscribers
 
 **Problem:**
-Most of the creator's time went into pre-production: finding topics (5-6 hours), writing the script (4-6 hours), preparing the YouTube description and tags (1 hour), writing a thumbnail brief for the designer (30 min). Total: 11-14 hours before filming even started.
+Most of the creator's time went into pre-production: finding topics (5-6 hours), writing the script (4-6 hours), preparing the YouTube description and tags (1 hour), writing instructions for the designer on the thumbnail, the video's cover image (30 min). Total: 11-14 hours before filming even started.
 
 **Solution:**
 A content pipeline in three stages:
@@ -209,9 +209,9 @@ Once a week, a subagent analyzes YouTube trends in the niche through the YouTube
 For the chosen topic, Claude Opus (a stronger, more expensive model, picked for quality) writes a full script in the channel's style, using 5 of the best past scripts as examples. Structure: hook → problem → main content (3-5 sections) → CTA (call to action). The creator spends 30-60 minutes editing instead of 4-6 hours writing.
 
 **Stage 3: Distribution pack**
-From the finished script, automatically: a YouTube description (SEO-optimized), 15 tags, a thumbnail brief for the designer, a thread for Twitter/X, and a short-form version for Shorts. All in 5 minutes.
+From the finished script, automatically: a YouTube description (SEO-optimized), 15 tags, instructions for the designer on the thumbnail, a thread for Twitter/X, and a short-form version for Shorts. All in 5 minutes.
 
-**Stack:** Trigger.dev (weekly schedule), Claude Opus API (scripts), Claude Haiku API (distribution), YouTube Data API, Reddit Data API (access only after Reddit approves it), Google Trends (the official API is still in alpha, by application; without it the data is exported by hand), Slack (delivery)
+**Tools:** Trigger.dev (weekly schedule), Claude Opus API (scripts), Claude Haiku API (distribution), YouTube Data API, Reddit Data API (access only after Reddit approves it), Google Trends (the official API is still in alpha, by application; without it the data is exported by hand), Slack (delivery)
 
 **Result:**
 
@@ -245,7 +245,7 @@ Agents moved client data by hand between WhatsApp, email, the CRM (HubSpot) and 
 **Solution:**
 An integration hub on Cloudflare Workers:
 
-**Webhook listener:** the WhatsApp Business API sends every message to a Workers endpoint (a webhook is an automatic notice one app sends another when something happens). Claude classifies it: is this a new lead or an existing client? A price question? A request for a showing? A meeting confirmation?
+**Webhook listener:** the WhatsApp Business API sends every message to a small program on Workers (a webhook is an automatic notice one app sends another when something happens). Claude classifies it: is this a new lead or an existing client? A price question? A request for a showing? A meeting confirmation?
 
 **CRM auto-update:** based on that classification, the record in HubSpot updates automatically: deal stage, date of last contact, a summary of the conversation (Claude writes 2-3 sentences).
 
@@ -253,7 +253,7 @@ An integration hub on Cloudflare Workers:
 
 **Alert system:** a Slack bot alerts the managing broker: a new hot lead, a deal with no movement, an agent with no activity for more than 24 hours.
 
-**Stack:** Cloudflare Workers, Claude Haiku API (classification; it's cheaper), WhatsApp Business API, HubSpot API, Google Sheets API, Slack API
+**Tools:** Cloudflare Workers, Claude Haiku API (classification; it's cheaper), WhatsApp Business API, HubSpot API, Google Sheets API, Slack API
 
 **Result:**
 
@@ -301,7 +301,7 @@ Payback: about 3 months on the time saved alone ($4,200 / $1,467);
 
 1. Pick one business owner or professional you know whose work problem you understand. (Later, in the lesson on first clients, you'll gather people like this into a list.)
 
-2. Fill in the case template. For now, rough guesses are fine in the "Stack" and "Project price" lines: you'll come back to them in the modules on your offer and your price.
+2. Fill in the case template. For now, rough guesses are fine in the "Tools" and "Project price" lines: you'll come back to them in the modules on your offer and your price.
    ```
    Client (type): ____________
    Problem: ____________
@@ -310,7 +310,7 @@ Payback: about 3 months on the time saved alone ($4,200 / $1,467);
    Annual loss: $___
    
    Proposed solution: ____________
-   Stack: ____________
+   Tools: ____________
    Expected reduction: ___%
    
    Project price: $___

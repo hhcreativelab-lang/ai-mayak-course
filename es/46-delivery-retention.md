@@ -53,7 +53,7 @@ Lista de accesos:
 
 Cuando entregues claves y contraseñas, usa el acceso de equipo del propio servicio o un gestor de contraseñas, no un correo o un mensaje de chat común.
 
-**Paso 2: Un video de recorrido en Loom (5-10 minutos)**
+**Paso 2: Un video de recorrido en Loom (de hasta 5 minutos)**
 
 Graba tu pantalla mientras muestras:
 1. Cómo correr el flujo principal (cada paso)
@@ -62,7 +62,7 @@ Graba tu pantalla mientras muestras:
 4. Qué hacer si el sistema deja de responder (3 pasos para resolver problemas)
 5. Cómo contactarte si necesitan ayuda
 
-Súbelo a Loom y mándale el enlace al cliente. La mayoría de la gente ve un video corto antes que leer instrucciones en PDF.
+Súbelo a Loom y mándale el enlace al cliente. En el plan gratis de Loom un video puede durar hasta 5 minutos; si no te alcanza, graba dos cortos. La mayoría de la gente ve un video corto antes que leer instrucciones en PDF.
 
 **Paso 3: Un documento SOP (1-2 páginas)**
 
@@ -195,7 +195,7 @@ La solución: un reporte mensual que muestre las cifras.
 - [Cambios planeados, si los hay]
 ```
 
-Armar este reporte toma 15 minutos (¡o automatízalo!). Le recuerda al cliente por qué paga el soporte.
+Armar este reporte toma 15 minutos (¡o automatízalo!). Le recuerda al cliente por qué paga el soporte. Pon en él solo cifras reales.
 
 ---
 
@@ -245,7 +245,7 @@ El mejor cliente es el que paga cada mes, así no tienes que salir a buscar uno 
    ```
    "Ya pasó un año desde el lanzamiento. Te propongo una auditoría:
    veríamos qué se puede optimizar y qué procesos nuevos
-   vale la pena automatizar. Normalmente cuesta $300-500 y te deja
+   vale la pena automatizar. La auditoría cuesta $[X] y te deja
    una lista de tareas para el año que viene."
    ```
 
@@ -255,7 +255,7 @@ El mejor cliente es el que paga cada mes, así no tienes que salir a buscar uno 
 
 **Ejercicio: Arma un paquete de entrega para tu proyecto**
 
-Toma un proyecto que hayas construido durante el curso (Newsletter Automation u otro).
+Toma cualquier trabajo que hayas hecho con IA: para un cliente, para ti o para alguien que conoces. Si todavía no tienes uno, inventa un ejemplo de práctica, como "responder los correos de rutina de un consultorio dental", y arma el paquete para ese caso.
 
 1. Escribe una lista de accesos: todo lo que el cliente debe recibir:
    ```
@@ -263,7 +263,7 @@ Toma un proyecto que hayas construido durante el curso (Newsletter Automation u 
    □ [Servicio 2]: [cómo entregarlo]
    ```
 
-2. Graba un recorrido en Loom (5-10 minutos):
+2. Graba un recorrido en Loom (de hasta 5 minutos):
    - Muestra el sistema funcionando
    - Explica cada paso con palabras sencillas
 
@@ -291,9 +291,9 @@ Toma un proyecto que hayas construido durante el curso (Newsletter Automation u 
 
 ## Lecciones relacionadas
 
-- **→ [Portafolio y casos de estudio](41-portfolio-case-studies.md)**: cada proyecto entregado es un nuevo caso para tu portafolio, y cada testimonio es prueba social
-- **→ [Empaquetado](42-packaging.md)**: los niveles de documentación (README / Loom / SOP) corresponden a los paquetes Básico, Pro y Empresarial
-- **→ [El modelo de fábrica](48-factory-model.md)**: tu paquete de entrega se vuelve la plantilla para tus siguientes proyectos
+- **→ [Portafolio y casos de estudio](41-portfolio-case-studies.md)**: ya la viste: cada proyecto entregado es un nuevo caso para tu portafolio, y cada testimonio es prueba social
+- **→ [Empaquetado](42-packaging.md)**: ya la viste: los niveles de documentación (README / Loom / SOP) corresponden a los paquetes Básico, Pro y Empresarial
+- **→ [El modelo de fábrica](48-factory-model.md)**: viene más adelante, en el módulo "Tu plan de 90 días": tu paquete de entrega se vuelve la plantilla para tus siguientes proyectos
 
 ---
 
@@ -305,7 +305,7 @@ Toma un proyecto que hayas construido durante el curso (Newsletter Automation u 
 - **Slack**: canales compartidos para dar soporte a clientes (muchas empresas ya lo usan a diario)
 - **Tally**: [tally.so](https://tally.so/). Un formulario para reunir puntajes NPS y comentarios de clientes (tiene plan gratis)
 - **Calendly**: [calendly.com](https://calendly.com/). Para agendar la revisión anual con el cliente
-- **Stripe**: [stripe.com](https://stripe.com/). Para el cobro recurrente automático de un contrato de mantenimiento
+- **Stripe**: [stripe.com](https://stripe.com/). Para el cobro recurrente automático de un contrato de mantenimiento. No está disponible en todos los países (en América Latina, a octubre de 2026, solo en México y Brasil): la lista está en stripe.com/global
 
 ---
 
@@ -323,4 +323,6 @@ Toma un proyecto que hayas construido durante el curso (Newsletter Automation u 
 
 ## Siguiente lección
 
-→ [Casos de monetización](47-monetization-cases.md): 5 análisis con cifras
+→ [Cómo construir una marca personal con IA](67c-personal-brand-ai.md): la primera lección del módulo "Que te encuentren: contenido, anuncios y ventas"
+
+Ya viste proyectos analizados con cifras en la lección [Casos de monetización](47-monetization-cases.md).

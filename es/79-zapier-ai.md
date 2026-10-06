@@ -17,12 +17,12 @@ En esta lección vas a conocer Zapier AI, una de las herramientas sin código (n
 ## Conceptos clave
 
 - **Zap**: una automatización con 2 o más pasos: un disparador (un evento) + una acción (qué hacer)
-- **AI by Zapier**: un paso integrado que llama a Claude o a ChatGPT directamente dentro de un Zap
-- **Zapier Agents**: agentes autónomos en Zapier que trabajan sin que nadie los dispare a mano
+- **AI by Zapier**: un paso integrado que llama a un modelo de lenguaje (puedes elegir modelos de OpenAI, Anthropic, Google y otros) directamente dentro de un Zap
+- **Zapier Agents**: los agentes de Zapier, que deciden por su cuenta qué herramientas usar para una tarea. Zapier los está pasando ahora al paso AI by Zapier
 - **Zapier Tables**: la base de datos integrada de Zapier, que también puede hacer análisis con IA
-- **Webhook**: una forma universal de recibir datos de cualquier fuente (incluso una que no tiene integración oficial)
-- **Tarea (task)**: la unidad de cobro. Las acciones de un Zap gastan tareas cada vez que se ejecuta (consulta el centro de ayuda de Zapier para ver exactamente cómo se cuentan)
-- **Zap de varios pasos**: un Zap con 3 o más pasos (solo en planes de pago), y donde ocurre el trabajo de verdad
+- **Webhook**: una forma universal de recibir datos de cualquier fuente, incluso de una que no tiene integración oficial (planes de pago)
+- **Tarea (task)**: la unidad de cobro. Cada acción que un Zap completa con éxito gasta tareas; el disparador no (consulta el centro de ayuda de Zapier para ver exactamente cómo se cuentan)
+- **Zap de varios pasos**: un Zap con más de dos pasos. Está disponible en los planes de pago y durante la prueba gratis, y es donde ocurre el trabajo de verdad
 
 ---
 
@@ -34,7 +34,7 @@ En la automatización sin código hay tres jugadores principales. Cada uno tiene
 
 | Criterio | Zapier | Make | n8n |
 |---|---|---|---|
-| Integraciones | Miles de apps (consulta el sitio de Zapier) | Miles de apps (consulta el sitio de Make) | cientos de nodos listos + HTTP |
+| Integraciones | Más de 9,000 apps (según Zapier, octubre de 2026) | Más de 3,000 apps (según Make, octubre de 2026) | cientos de nodos listos + solicitudes HTTP a cualquier servicio |
 | Curva de aprendizaje | Mínima | Media | Empinada |
 | Plan gratis | 100 tareas/mes, solo Zaps de dos pasos | 1,000 créditos/mes | Community Edition en tu propio servidor |
 | Planes de pago desde (a octubre de 2026) | $19.99/mes con pago anual (750 tareas) | Core desde $9/mes con pago mensual (10,000 créditos) | Cloud Starter €20/mes con pago anual (2,500 ejecuciones) |
@@ -55,7 +55,7 @@ Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 
 **Cuándo gana Make o n8n:**
 
-- Necesitas ramificaciones complejas con cientos de miles de operaciones al mes: Make es más barato
+- Necesitas ramificaciones complejas y mucho volumen: Make cobra en créditos y, con volúmenes altos, muchas veces sale más barato. Compara las dos páginas de precios con tus propios números
 - Los datos no pueden pasar por servidores ajenos: n8n en tu propio servidor
 - El presupuesto es muy chico y no hay muchas tareas: el plan de pago de entrada de Make cubre muchas necesidades
 
@@ -63,7 +63,7 @@ Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 
 ### AI by Zapier: el cerebro dentro de un Zap
 
-"AI by Zapier" es el paso oficial del editor de Zaps que llama a un modelo de lenguaje (uno de los disponibles en Zapier, como Claude o ChatGPT) con tu prompt y los datos de los pasos anteriores.
+"AI by Zapier" es un paso integrado en el editor de Zaps. Le manda a un modelo de lenguaje tu prompt y los datos de los pasos anteriores. Puedes elegir el modelo: hay modelos de OpenAI, Anthropic (Claude), Google y otras empresas.
 
 **Qué puede hacer AI by Zapier:**
 
@@ -75,10 +75,12 @@ Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 
 **Cómo se ve en el editor:**
 
-El paso "AI by Zapier" tiene dos campos:
+El paso "AI by Zapier" tiene dos paneles:
 
-- **Prompt**: tu solicitud a la IA (puedes insertar datos de pasos anteriores con `{{variable}}`)
-- **Response**: la respuesta de la IA, que pasa a los siguientes pasos
+- **Configure**: aquí escribes tu prompt (el campo Prompt), eliges el modelo y ajustas la configuración. Los datos de pasos anteriores se insertan en el prompt escribiendo "/"
+- **Preview**: una prueba que muestra qué devuelve el paso con datos reales de ejemplo
+
+La respuesta de la IA pasa a los siguientes pasos. Si hace falta, puedes dividirla en campos separados (la sección Output Fields). En los ejemplos de abajo, las llaves dobles `{{...}}` marcan el lugar donde insertas un campo de un paso anterior.
 
 Un ejemplo de prompt para clasificar a un cliente potencial:
 ```
@@ -96,33 +98,35 @@ Responde solo con JSON:
 {"temperature": "...", "budget": "...", "next_step": "..."}
 ```
 
-La IA procesa la solicitud y devuelve un JSON, que el siguiente paso lee para mandar una notificación al vendedor indicado.
+La IA procesa la solicitud y devuelve su respuesta en JSON (un formato para escribir datos que los programas pueden leer). El siguiente paso lo lee y manda una notificación al vendedor indicado.
 
 🎨 **Imagínalo así:** antes, una solicitud nueva de tu sitio web caía en el CRM y se quedaba ahí hasta que un vendedor tuviera tiempo. Ahora la IA la lee en segundos, la marca como "caliente" y le manda al vendedor una notificación que dice "llama ahora mismo". Mientras antes alguien llame a un cliente potencial caliente, mejores son las probabilidades de cerrar la venta.
 
 ---
 
-### Zapier Agents: trabajo autónomo sin disparadores
+### Zapier Agents: una IA que elige sus propias herramientas
 
-Zapier Agents es una función que va más allá de los Zaps clásicos. Un agente es una IA que:
+Zapier Agents va más allá de los Zaps clásicos. Un agente es una IA que:
 
-- Funciona todo el tiempo, sin que nadie la ponga en marcha a mano
+- Arranca sola, por un evento o según un horario
 - Puede decidir por su cuenta qué herramientas usar (leer Gmail, publicar en Slack, agregar un contacto a un CRM)
-- Recuerda lo que hizo antes
+- Puede buscar respuestas en las fuentes de conocimiento que conectes y en la web
 - Recibe instrucciones en lenguaje común
+
+**Lo que está cambiando (a octubre de 2026):** Zapier está pasando el producto independiente Agents (agents.zapier.com) al paso AI by Zapier. Ahora puedes darle herramientas a ese paso (apps y fuentes de conocimiento), y actúa como agente directamente dentro de un Zap. Zapier no ha fijado una fecha para apagar el Agents independiente y dice que avisará a los usuarios por correo con tiempo.
 
 **Un ejemplo real de agente:**
 "Eres mi asistente de ventas. Cada vez que llegue a Gmail un correo con la etiqueta 'de un cliente potencial', léelo, escribe un resumen corto, busca información sobre la empresa, agrega el contacto a HubSpot y mándame una notificación por Slack con un plan corto para la llamada."
 
 Es un solo agente que reemplaza 4-5 Zaps manuales, y trabaja de forma más inteligente: entiende el contexto en lugar de solo mover datos de un lugar a otro.
 
-**Limitaciones de los Agents:**
+**Limitaciones de los Agents (a octubre de 2026):**
 
-- Se cobran aparte de las tareas de los Zaps normales (revisa en la página de precios de Zapier cómo)
+- El producto independiente Agents se cobra aparte, en "actividades" y no en tareas. Un paso de IA con herramientas dentro de un Zap gasta tareas normales
 - Son menos predecibles (la IA toma sus propias decisiones)
 - Encajan peor en procesos muy bien definidos
 
-Para la mayoría de las tareas de negocio, los Zaps clásicos con pasos de IA son la mejor opción: son predecibles, transparentes y baratos.
+Para la mayoría de las tareas de negocio, los Zaps clásicos con pasos de IA son la mejor opción: son más predecibles y puedes ver qué pasó en cada paso.
 
 ---
 
@@ -163,15 +167,15 @@ Una reseña nueva en Google Maps → la IA analiza el tono → negativa: una not
 
 **5. Monitoreo financiero**
 
-Una transacción nueva en Stripe → la IA revisa si tiene algo raro (un monto poco común, una región nueva, una primera compra) → si algo no cuadra → una notificación por Slack con un análisis del riesgo.
+Una transacción nueva en Stripe → la IA revisa si tiene algo raro (un monto poco común, una región nueva, una primera compra) → si algo no cuadra → una notificación por Slack con una explicación. Aquí la IA solo avisa; qué hacer con el pago lo decide una persona.
 
 ---
 
 ### Cuánto cuesta de verdad
 
-**Zapier Free:** 100 tareas/mes, solo Zaps de dos pasos. Bueno para aprender.
+**Zapier Free:** 100 tareas/mes, solo Zaps de dos pasos. En este plan, el paso de IA solo se puede probar en un Zap sin publicar. Bueno para conocer la herramienta.
 
-**Zapier Professional:** a octubre de 2026, desde $19.99/mes con pago anual ($29.99 con pago mensual), 750 tareas, Zaps de varios pasos, AI by Zapier. Es el mínimo para escenarios reales.
+**Zapier Professional:** a octubre de 2026, desde $19.99/mes con pago anual ($29.99 con pago mensual), 750 tareas, Zaps de varios pasos, webhooks, AI by Zapier. Es el mínimo para escenarios reales.
 
 **Zapier Team:** a octubre de 2026, desde $69/mes con pago anual ($103.50 con pago mensual), más tareas, varios usuarios (hasta 25).
 
@@ -179,16 +183,16 @@ Precios y versiones actuales: [Lo vigente](https://aimayak.com/now/).
 
 **Trampas del cobro:**
 
-- Las acciones de un Zap gastan tareas en cada ejecución. Cuentas sencillas: un Zap de 5 pasos que se ejecuta 100 veces al día = 500 tareas al día = 15,000 tareas al mes. La cantidad inicial de los planes de pago no alcanza para eso.
-- Los pasos de IA se cobran aparte: por paso y por cada llamada a una herramienta (condiciones en la página de precios)
-- Vigila tu consumo en el panel de Zapier y pon límites a tus Zaps
+- Cada acción completada gasta tareas; el disparador no. Un ejemplo: un Zap con un disparador y 4 acciones que se ejecuta 100 veces al día = 400 tareas al día = 12,000 tareas al mes. La cantidad inicial de los planes de pago no alcanza para eso.
+- Un paso de IA gasta tareas con un multiplicador: depende del nivel del modelo (Standard, Advanced, Premium), y cada llamada a una herramienta se cuenta aparte. En un plan de pago, un paso de IA nuevo viene por defecto en Premium, el nivel más caro, así que revísalo y elige el nivel tú mismo. Los multiplicadores están en el artículo de ayuda de Zapier "AI by Zapier model tier pricing"
+- Vigila tu consumo en tu cuenta de Zapier. Un paso de IA tiene un límite de tareas por ejecución: si una ejecución lo supera, el paso se pausa y espera tu aprobación
 
 **Una estimación realista para un pequeño negocio:**
 
 - 5-10 Zaps
 - Cada uno se ejecuta 20-50 veces al día
-- Largo promedio de un Zap: 3-4 pasos
-- Total: unas 3,000-6,000 tareas/mes. Es más que la cantidad inicial de los planes de pago, así que tendrás que elegir un volumen de tareas mayor y revisar su precio en la página de precios
+- Cada Zap tiene 3-4 pasos: un disparador y 2-3 acciones
+- Total: desde 6,000 tareas al mes (5 Zaps × 20 ejecuciones × 2 acciones × 30 días) hasta 45,000 (10 × 50 × 3 × 30). Es más que la cantidad inicial de los planes de pago, así que tendrás que elegir un volumen de tareas mayor y revisar su precio en la página de precios
 
 ---
 
@@ -230,17 +234,17 @@ No todos los clientes necesitan código. Muchos solo necesitan automatizaciones 
 
 ### Webhooks: recibir datos de cualquier fuente
 
-Un webhook en Zapier es una URL única a la que cualquier programa puede mandar cualquier dato. Si tu app no tiene una integración oficial con Zapier, no hay problema.
+Un webhook en Zapier es una URL única a la que cualquier programa puede mandar datos. Si tu app no tiene una integración oficial con Zapier, no hay problema. Los webhooks están disponibles en los planes de pago.
 
 **Cómo funciona:**
 
-1. Creas un Zap con el disparador "Webhooks by Zapier"
+1. Creas un Zap con el disparador "Webhooks by Zapier" y el evento Catch Hook
 2. Zapier te da una URL única como `https://hooks.zapier.com/hooks/catch/1234567/abc123`
 3. Cualquier app que pueda hacer una solicitud HTTP POST puede mandar datos a esa URL
 4. Los datos llegan al Zap y siguen por los siguientes pasos
 
 **Un ejemplo práctico:**
-Un cliente tiene un CRM hecho a la medida sobre WordPress, sin integración con Zapier. Un desarrollador agrega una línea de PHP: cuando llega un cliente potencial nuevo, se manda un HTTP POST con los datos del contacto al webhook de Zapier. A partir de ahí, Zapier pasa los datos por la IA y manda notificaciones a Slack o por mensaje de texto. Treinta minutos de trabajo para el desarrollador. Una automatización funcionando para el cliente.
+Un cliente tiene un CRM hecho a la medida sobre WordPress, sin integración con Zapier. Un desarrollador agrega unas cuantas líneas de código: cuando llega un cliente potencial nuevo, los datos del contacto se mandan a la URL del webhook de Zapier. A partir de ahí, Zapier pasa los datos por la IA y manda notificaciones a Slack o por mensaje de texto. Poco trabajo para el desarrollador, y una automatización funcionando para el cliente.
 
 ---
 
@@ -270,32 +274,34 @@ No es una competencia. Son dos herramientas para trabajos distintos.
 **Configuración:**
 
 ```
-DISPARADOR: Gmail → New Email (Matching Search: "label:potential-client")
+DISPARADOR: Gmail → New Email Matching Search (búsqueda: "label:potential-client")
 ↓
-PASO 2: Formatter by Zapier → Extract from Text
-  → Extraer: Nombre, Empresa, Teléfono
+PASO 2: Formatter by Zapier → Text → Extract Phone Number
+  → Saca el número de teléfono del texto del correo
 ↓
-PASO 3: AI by Zapier → "Analiza este correo y califica la calidad del cliente potencial"
+PASO 3: AI by Zapier (campos de salida: name, company, score, reason, next_action)
   Prompt:
   """
   Correo de: {{Sender}}
   Asunto: {{Subject}}
   Cuerpo: {{Body}}
   
+  Encuentra en el correo el nombre del remitente y su empresa.
   Califica a este cliente potencial en una escala del 1 al 10 y explica por qué.
-  Devuelve JSON: {"score": N, "reason": "...", "next_action": "call/email/ignore"}
+  Siguiente acción: llamar / escribir / no responder.
   """
 ↓
-PASO 4: HubSpot → Create/Update Contact
-  → Name: {{Step 2 - Name}}
-  → Company: {{Step 2 - Company}}
-  → Note: {{Step 3 - AI Response}}
-  → Tag: "Puntuación de IA: {{score}}"
+PASO 4: HubSpot → Create or Update Contact
+  → Name: {{Step 3 - name}}
+  → Company: {{Step 3 - company}}
+  → Phone: {{Step 2 - Output}}
+  → Note: {{Step 3 - reason}}
+  → Tu propio campo de contacto "Puntuación de IA": {{score}}
 ↓
 PASO 5 (condición): Filter by Zapier → Solo si score >= 7
 ↓
-PASO 6: Slack → Send Message to #sales
-  → "Cliente potencial caliente: {{Name}} de {{Company}}
+PASO 6: Slack → Send Channel Message, canal #sales
+  → "Cliente potencial caliente: {{name}} de {{company}}
      Puntuación: {{score}}/10
      Motivo: {{reason}}
      Acción: {{next_action}}
@@ -310,25 +316,29 @@ Tiempo de configuración: alrededor de una hora la primera vez. Cuánto tiempo l
 
 ### Paso 1: Crea una cuenta y tu primer Zap
 
-1. Entra a [zapier.com](https://zapier.com) → Sign up (una cuenta gratis)
-2. En el panel, haz clic en **"+ Create"** → **"Zap"**
-3. Ya estás en el editor de Zaps. Los pasos están a la izquierda y la configuración a la derecha
+Cuando creas una cuenta nueva, Zapier activa automáticamente una prueba gratis de 14 días del plan Professional, sin tarjeta. Durante la prueba funcionan tanto un Zap de tres pasos como AI by Zapier. Cuando termina la prueba, un Zap como este se apaga hasta que pases a un plan de pago.
+
+1. Entra a [zapier.com](https://zapier.com) → Sign up (registrarse es gratis)
+2. En el menú de la izquierda, haz clic en **+ Create** → **Zap workflows** (en algunas versiones el botón se llama **Create a Zap**)
+3. Ya estás en el editor de Zaps. Los pasos están a la izquierda y la configuración del paso elegido a la derecha
 
 ### Paso 2: Configura el disparador
 
+Para esta práctica, conecta un buzón personal o de prueba. Los correos van a pasar por Zapier y por un modelo de IA, así que no conectes un buzón de trabajo con datos de otras personas sin permiso.
+
 1. Haz clic en el primer paso (Trigger)
-2. Elige **Gmail** (o cualquier app que uses)
-3. Evento: **New Email**
-4. Conecta tu cuenta de Gmail (haz clic en "Sign in")
-5. Configura el filtro: Label = "Inbox"; puedes dejar From vacío
-6. Haz clic en **"Test trigger"**: Zapier muestra tu correo más reciente como dato de ejemplo
+2. Elige **Gmail** (u otra app que uses)
+3. En el campo **Trigger event**, elige **New Email**
+4. En el campo **Account**, conecta tu Gmail (**+ Connect a new account**)
+5. En la pestaña **Configure**, elige de qué carpeta tomar los correos (Inbox)
+6. En la pestaña **Test**, haz clic en **Test trigger**: Zapier muestra un correo reciente como dato de ejemplo. Selecciónalo y haz clic en **Continue with selected record**
 
 ### Paso 3: Agrega un paso de IA
 
-1. Haz clic en **"+"** después del disparador
-2. Busca **"AI by Zapier"**
-3. Acción: **Analyze or generate text**
-4. En el campo **Prompt**, escribe:
+1. Haz clic en **+** después del disparador
+2. Busca y elige **AI by Zapier**: el paso se abre en el editor
+3. Junto al campo Prompt, abre la lista de modelos y elige el nivel Standard: alcanza para una tarea así y gasta menos tareas
+4. En el campo **Prompt**, escribe el texto de abajo. Donde veas llaves, inserta un campo del correo: escribe "/" y elígelo de la lista
    ```
    Eres un asistente de ventas. Analiza este correo:
    
@@ -339,15 +349,17 @@ Tiempo de configuración: alrededor de una hora la primera vez. Cuánto tiempo l
    Escribe un resumen corto (2-3 oraciones) y decide: ¿vale la pena responderlo?
    Respuesta: [resumen] | Prioridad: Alta/Media/Baja
    ```
-5. Haz clic en **"Test action"** y mira lo que generó la IA
+5. Haz clic en **Preview**, mira lo que escribió la IA y luego haz clic en **Finish**
 
 ### Paso 4: Manda el resultado a Slack (o recíbelo por correo o mensaje de texto)
 
-1. Agrega un paso más con **"+"**
+Necesitas un espacio de Slack donde puedas publicar en un canal. Si no usas Slack, elige una de las otras opciones de abajo.
+
+1. Agrega un paso más con **+**
 2. Elige **Slack** (para recibir un correo o un mensaje de texto, elige Gmail o una app de SMS; los campos serán un poco distintos)
-3. Acción: **Send Channel Message**
+3. En el campo **Action event**, elige **Send Channel Message**
 4. Channel: elige el que quieras
-5. Message Text:
+5. Message Text: escribe el texto de abajo. Las palabras entre llaves son campos de pasos anteriores: haz clic en el ícono de más (+) del campo y elige el que necesitas de la lista
    ```
    📧 Correo nuevo de {{From Name}}
    
@@ -355,14 +367,14 @@ Tiempo de configuración: alrededor de una hora la primera vez. Cuánto tiempo l
    
    Original: {{Message URL}}
    ```
-6. Haz clic en **"Test action"**: el mensaje aparecerá en Slack
+6. Haz clic en **Test step**: el mensaje aparecerá en Slack
 
 ### Paso 5: Enciende el Zap y pruébalo
 
-1. Arriba a la derecha, cambia **"Zap is Off"** → **"Zap is On"**
-2. Mándate un correo de prueba desde otra dirección de correo
-3. Espera unos minutos (Zapier revisa los disparadores según un horario; la frecuencia depende de tu plan)
-4. Recibe la notificación en Slack con el análisis de la IA
+1. Arriba a la derecha, haz clic en **Publish**: eso enciende el Zap
+2. Mándate un correo de prueba desde otra dirección de correo (el Zap solo procesa los correos que llegan después de publicarlo)
+3. Espera unos minutos (Zapier revisa si hay correos nuevos según un horario; la frecuencia depende de tu plan)
+4. Revisa el resultado: en Slack debe aparecer un mensaje con el análisis del correo hecho por la IA
 
 Felicidades: tu primer Zap inteligente con IA ya está funcionando.
 
@@ -379,15 +391,15 @@ Felicidades: tu primer Zap inteligente con IA ya está funcionando.
 - **[Zapier](https://zapier.com)**: la herramienta principal de esta lección. Plan gratis: 100 tareas/mes; planes de pago desde $19.99/mes con pago anual, a octubre de 2026.
 - **[Make.com](https://make.com)**: una alternativa para escenarios complejos. Tiene plan gratis: 1,000 créditos al mes.
 - **[n8n.io](https://n8n.io)**: una alternativa que puedes correr en tu propio servidor. Nube desde €20 al mes con pago anual; la Community Edition para tu propio servidor es gratis (con la Sustainable Use License).
-- **[Precios de Zapier](https://zapier.com/pricing)**: planes actuales y una calculadora de tareas.
-- **[Zapier University](https://university.zapier.com)**: cursos gratis sobre Zapier.
-- **[Documentación de AI by Zapier](https://help.zapier.com/hc/en-us/articles/16587495501453-Use-AI-by-Zapier)**: la documentación oficial del paso de IA.
+- **[Precios de Zapier](https://zapier.com/pricing)**: planes actuales y volúmenes de tareas.
+- **[Zapier Learn](https://learn.zapier.com)**: cursos gratis sobre Zapier (en inglés).
+- **[Documentación de AI by Zapier](https://help.zapier.com/hc/en-us/articles/8496342944013-Use-AI-by-Zapier-to-analyze-and-return-data)**: el artículo de ayuda oficial del paso de IA (en inglés).
 
 ---
 
 ## Ideas clave
 
-> "Zapier no es solo automatización. Es una forma de darle funciones de IA a cualquier negocio sin una sola línea de código. Tu valor como especialista está en saber qué flujo de trabajo necesita el cliente y armarlo en horas, no en semanas."
+> "Zapier no es solo automatización. Es una forma de darle funciones de IA a un negocio pequeño sin una sola línea de código. Tu valor como especialista está en entender qué flujo de trabajo necesita el cliente y armarlo rápido."
 
 > "AI by Zapier convierte un Zap de cartero en un asistente listo. No solo 'llegó un correo → lo reenvié', sino 'llegó un correo → lo entendí → tomé una decisión → actué'. Esa es la diferencia entre automatización e inteligencia."
 
@@ -397,4 +409,6 @@ Felicidades: tu primer Zap inteligente con IA ya está funcionando.
 
 ## Siguiente lección
 
-→ [Entornos aislados para IA: E2B](80-ai-sandboxes-e2b.md): E2B y Modal para que los agentes ejecuten código de forma segura
+→ [Precios de Claude Code: ¿Free, Pro, Max, Team o API?](05c-access-levels-pricing.md): qué comprar, y cuándo, para abrir Claude Code
+
+En la biblioteca, opcional: [Entornos aislados para IA: E2B](80-ai-sandboxes-e2b.md): E2B y Modal para que los agentes ejecuten código de forma segura

@@ -1,12 +1,12 @@
 # The Default Shift: an AI mindset for your work
 
-**Time:** about 25 min reading + 20 min practice
+**Time:** about 10 min reading + 20 min practice
 
 ---
 
 ## The gist
 
-Imagine you're driving and suddenly notice that everyone is following new rules: the traffic lights are now run by AI and change three times faster. You can keep driving the way you always have. But whoever adjusts to the new logic gets there three times faster. The Default Shift is the moment you change your default (the setting you fall back on automatically) from "I'll do it myself" to "how can AI take on part of this?"
+Imagine you're driving and suddenly notice that everyone is following new rules: the traffic lights are now run by AI and change three times faster. You can keep driving the way you always have. But whoever adjusts to the new logic gets there faster. The Default Shift is the moment you change your default (the setting you fall back on automatically) from "I'll do it myself" to "how can AI take on part of this?"
 
 ---
 
@@ -50,7 +50,7 @@ Adapting your work to AI happens on three levels:
 
 **M1: Mindset**
 
-🎨 **Picture this:** a cab driver thinks the job is "driving people around." Uber thinks the job is "getting people where they need to go." That difference in understanding led to different answers to the question "how can AI help?" How deeply you understand the job decides how good your solution is.
+🎨 **Picture this:** one cab driver thinks the job is turning the steering wheel. Another thinks the job is getting a passenger where they need to go, on time and without stress. To the first one, GPS looks like a threat; to the second, it's a helper. How deeply you understand the job decides how good your solution is.
 
 The key question: what is your job, really?
 
@@ -79,10 +79,10 @@ How your work processes change with the Default Shift:
 The final level: you don't just "use AI," you have a **working machine**:
 - Workflows (sequences of work steps) that run automatically
 - Skills (reusable instructions) that hold your expertise
-- Agents (programs that carry out tasks on their own) that keep working while you sleep
+- Agents (programs that carry out tasks on their own) that take part of the work off your plate
 - A knowledge base that grows with every project
 
-The whole course is about building this machine.
+Not everyone goes this far, and that's fine: the first two levels are enough for everyday work. The first-build module and the course library show how to put a machine like this together.
 
 ---
 
@@ -96,17 +96,17 @@ Before any task, ask yourself: **"How can AI take on at least 30% of this?"**
 |---|---|
 | Write an email to a client | A draft of the email → you adjust the tone |
 | Analyze a market | Gathering and organizing the data → you interpret it |
-| Build an automation workflow | Generating the code and the basic logic → you review and test |
+| Build an automation (if you're a builder) | A draft of the code and the basic logic → you review and test |
 | Prepare a presentation | The slide structure and first-draft text → you add your own conclusions |
-| Debug an error (debugging means finding and fixing mistakes in code) | Diagnosis and possible fixes → you choose the approach |
+| Find an error in a spreadsheet or in code | A breakdown of where the error is and possible fixes → you choose and verify |
 
-**Important:** 30% often turns into 70%, but start with 30% so you don't lose control.
+**Important:** over time AI's share may grow, but start with 30% so you don't lose control.
 
 ---
 
 ### Dark Code: the hidden danger
 
-**Dark Code** is AI-written code that you deploy (put live, publish) without understanding how it works.
+**Dark Code** is AI-written code that you deploy (put live, publish) without understanding how it works. If you don't write code, the same rule applies: don't put a spreadsheet formula, a calculation or a contract clause from AI into use if you can't explain it yourself.
 
 The problem with this kind of code:
 - It works only until the first unusual situation
@@ -123,7 +123,7 @@ The problem with this kind of code:
 3. **Understand the architecture**: even if you don't follow the details of the code, understand what the system does
 4. **Check edge cases**: "What happens if the API (Application Programming Interface: the way one program requests data from another) doesn't respond? What if the data is empty?"
 
-In this course we build workflows step by step, precisely so you understand every part.
+In the lessons where we build something, we go step by step, precisely so you understand every part.
 
 ---
 
@@ -163,10 +163,10 @@ The three rules of the Contractor Mindset:
 1. List 5-10 tasks you did over the last 2-3 days
 2. For each task, ask: "Could AI have taken on 30% or more of this?"
 3. Pick one task from the list
-4. Write a specific prompt (a prompt is the text request you give an AI) using the Contractor Mindset, and give it to Claude right now
+4. Write a specific prompt (a prompt is the text request you give an AI) using the Contractor Mindset, and give it to your assistant right now
 5. Compare the result with what you would have ended up with without AI
 
-**Goal:** find the first task in your life that you'll automate during this course.
+**Goal:** find the first work task you'll start handing part of to AI this week.
 
 ---
 
@@ -186,13 +186,13 @@ The three rules of the Contractor Mindset:
 ## Tools and resources
 
 - **[Claude.ai](https://claude.ai)**: start with simple prompts to get a feel for the Contractor Mindset
-- **[Claude Code](https://code.claude.com/docs/en/overview)**: for building workflows and skills (covered in later lessons)
+- **[Claude Code](https://code.claude.com/docs/en/overview)**: the agent for people who build; you'll need it later, in the first-build module and the library
 - **[Anthropic Prompt Engineering](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)**: Anthropic's official guide to prompting
-- **Obsidian / Notion**: for documenting your own "30% patterns"
+- **Obsidian / Notion**: note-taking apps for writing down the techniques that work for you
 
-→ See the lesson [Agentic workflows vs. traditional automation](02-why-agentic-beats-traditional.md): more on the Doctor vs. Pharmacist mindset
-→ See the lesson [The Four C's framework](04-four-cs-framework.md): a systematic approach to building your AI OS
-→ See the lesson [How to write a good prompt](06-prompting-fundamentals.md): how to phrase tasks for Claude Code
+→ Optional, from the library: [Agentic workflows vs. traditional automation](02-why-agentic-beats-traditional.md): how an agent differs from ordinary automation
+→ Optional, from the library: [The Four C's framework](04-four-cs-framework.md): a systematic approach to building your own AI system
+→ The previous lesson: [How to write a good prompt](06-prompting-fundamentals.md): the five parts of a good prompt
 
 ---
 
@@ -208,4 +208,4 @@ The three rules of the Contractor Mindset:
 
 ## Next lesson
 
-→ [The Four C's framework](04-four-cs-framework.md): a systematic approach to building your AI OS
+→ [AI ethics and safety: hallucinations, attacks, bias](61b-ai-ethics-safety.md): how not to trust AI blindly

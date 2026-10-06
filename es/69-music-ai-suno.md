@@ -8,7 +8,7 @@
 
 Para alguien que tiene un negocio, la música con IA no se trata de volverse músico. Se trata de cubrir tres necesidades concretas: música de fondo para videos, jingles para tu marca y el paquete de sonido de un podcast. Y todo eso sin contratar aparte a un compositor o a un diseñador de sonido.
 
-🎨 **Imagínalo así:** un jingle para tu marca antes significaba contratar a un músico y un estudio, varias reuniones, un par de semanas y un presupuesto aparte. Ahora son 10 minutos en Suno: un prompt, unas cuantas versiones para elegir, descargar. No es mejor ni peor que la música en vivo. Es otra herramienta para otra escala.
+🎨 **Imagínalo así:** un jingle para tu marca antes significaba contratar a un músico y un estudio, varias reuniones, un par de semanas y un presupuesto aparte. Ahora son 10 minutos en Suno: un prompt, un par de versiones para elegir, y la pista está lista. No es mejor ni peor que la música en vivo. Es otra herramienta para otra escala.
 
 ---
 
@@ -47,7 +47,7 @@ Una entrada y un cierre, música de transición entre secciones, ambiente de fon
 Suno crea canciones completas, que incluyen:
 
 - La parte instrumental
-- La voz (en cualquier idioma)
+- La voz (en muchos idiomas)
 - La estructura de la canción: estrofa, coro, puente
 
 **Cómo funciona:**
@@ -55,15 +55,15 @@ Entra a [suno.com](https://suno.com) → "Create" (Crear) → escribe un prompt 
 
 **Planes (a octubre de 2026):**
 
-- Free: sin costo, 50 créditos al día, el modelo v6-mini, no se pueden descargar canciones, sin derechos comerciales
-- Pro: $8/mes (menos si pagas el año), 2,500 créditos al mes, derechos comerciales, un límite mensual de descargas de canciones
-- Premier: $24/mes (menos si pagas el año), 10,000 créditos al mes, un límite de descargas más alto, Suno Studio
-- Precios y condiciones actuales: [suno.com/pricing](https://suno.com/pricing), [Lo vigente](https://aimayak.com/now/)
+- Free: sin costo, 50 créditos al día, el modelo v6-mini, sin derechos comerciales. Puedes escuchar tus pistas y compartir un enlace, pero solo tienes unas pocas descargas de prueba en total
+- Pro: desde $8/mes si pagas el año, 2,500 créditos al mes, derechos comerciales, un límite mensual de descargas de canciones
+- Premier: desde $24/mes si pagas el año, 10,000 créditos al mes, un límite de descargas más alto, Suno Studio
+- El precio depende de cómo pagues (por año o por mes) y puede ser distinto en tu país. Precios y condiciones exactos: [suno.com/pricing](https://suno.com/pricing), [Lo vigente](https://aimayak.com/now/)
 
 **Modos** (los nombres en la interfaz cambian):
 
 - **Custom** (personalizado): tú escribes la letra y eliges un estilo
-- **Simple mode** (modo simple): describes el ambiente y Suno escribe la letra por su cuenta
+- **Simple** (modo simple): describes el ambiente y Suno escribe la letra por su cuenta
 
 ---
 
@@ -101,10 +101,12 @@ tranquila y concentrada, piano suave,
 ambiente neutral, adecuada para transiciones de un curso en línea
 ```
 
+Puedes escribir en español. Si el resultado no se parece a lo que querías, pídele a Claude que traduzca la descripción al inglés e inténtalo otra vez.
+
 **Lo que funciona:**
 
 - Un tempo concreto (BPM, pulsos por minuto)
-- Una duración concreta
+- La duración que quieres (Suno no siempre la respeta; recorta lo que sobre en un editor)
 - Decir "sin voz" si no necesitas canto
 - El propósito (para YouTube / para podcast / para un curso en línea)
 
@@ -118,7 +120,7 @@ ambiente neutral, adecuada para transiciones de un curso en línea
 
 ### Udio: qué cambió
 
-Udio ([udio.com](https://udio.com)) era competidor de Suno. A finales de 2025 el servicio firmó acuerdos con disqueras, y desde el 30 de octubre de 2025 la descarga de canciones y de stems (las pistas separadas de voz e instrumentos) está desactivada: la música se queda dentro de la plataforma. Se anunció una plataforma con licencias para 2026. Revisa el sitio para ver cómo está hoy y si las descargas regresaron.
+Udio ([udio.com](https://udio.com)) era competidor de Suno. El 29 de octubre de 2025 el servicio anunció una alianza con Universal Music Group, y desde entonces la descarga de audio, video y stems (las pistas separadas de voz e instrumentos) está desactivada: la música se queda dentro de la plataforma. Se anunció una plataforma con licencias para 2026. Revisa el sitio para ver cómo está hoy y si las descargas regresaron.
 
 🎨 **Imagínalo así:** a octubre de 2026, Udio es como un estudio de grabación donde puedes escuchar todo lo que quieras, pero no te dejan llevarte la cinta a casa. Para tareas en las que necesitas un archivo (música de fondo para un video, un jingle, sonido para un curso), Udio hoy no sirve.
 
@@ -171,8 +173,8 @@ Ayúdame a armar un sistema de nombres y etiquetas:
 
 **Suno:**
 
-- Free: sin uso comercial, sin descargas
-- Pro y Premier: derechos comerciales y un número limitado de descargas al mes
+- Free: sin uso comercial; solo unas pocas descargas de prueba, para uso personal
+- Pro y Premier: derechos comerciales sobre las canciones que descargas como suscriptor de pago, y un número limitado de descargas al mes
 - Importante: Suno puede cambiar sus condiciones, así que siempre lee los Terms of Service (términos del servicio) vigentes en el sitio
 
 **Udio:**
@@ -218,9 +220,9 @@ sensación de empresa tecnológica moderna, fácil de recordar
 
 ## Práctica
 
-1. Crea una cuenta en Suno (gratis, entra con Google):
+1. Crea una cuenta en Suno (gratis):
 
-Entra a [suno.com](https://suno.com) → Sign in with Google (Iniciar sesión con Google) → créditos gratis para empezar (50 al día en Free; no se pueden descargar canciones, y necesitas un plan de pago para descargar y para uso comercial)
+Entra a [suno.com](https://suno.com) → elige Log in (Iniciar sesión) → escoge una forma de entrar, por ejemplo tu cuenta de Google → recibes créditos gratis (50 al día en Free; las descargas en el plan gratis se limitan a unos pocos archivos de prueba, y el uso comercial requiere un plan de pago)
 
 2. Genera música de fondo para YouTube con ayuda de Claude:
 
@@ -247,18 +249,20 @@ Escribe 4 líneas + un coro de 2 líneas
 
 6. Entra a ElevenLabs Sound Effects y crea un sonido de transición para tus videos:
 
-```bash
+```
 # Prueba algunas variantes:
 "whoosh cinematográfico, 1 segundo, limpio"
 "sonido suave de pasar página, 0.5 segundos"
 "transición tecnológica sutil, 0.8 segundos"
 ```
 
+**Compruébalo:** en tu biblioteca de Suno hay seis pistas de fondo y un jingle con letra, elegiste la mejor pista de fondo y puedes decir por qué, y en ElevenLabs tienes un sonido de transición. Todo esto se hizo con planes gratis, así que sirve para aprender y para uso personal, pero no para proyectos comerciales.
+
 ---
 
 ## Herramientas y recursos
 
-- **[Suno](https://suno.com)**: el generador principal de canciones (plan gratis: 50 créditos al día, sin descargas)
+- **[Suno](https://suno.com)**: el generador principal de canciones (plan gratis: 50 créditos al día, solo unas pocas descargas de prueba)
 - **[Udio](https://udio.com)**: descarga de canciones desactivada, ver la sección de arriba
 - **[ElevenLabs Sound Effects](https://elevenlabs.io/sound-effects)**: sonidos cortos a partir de prompts
 - **[Soundraw](https://soundraw.io)**: música de fondo, con licencia según las condiciones del servicio
@@ -280,4 +284,4 @@ Escribe 4 líneas + un coro de 2 líneas
 
 ## Siguiente lección
 
-→ [Presentaciones con IA: Gamma, Beautiful.ai y PowerPoint con Claude](70-ai-presentations.md): armar una presentación a partir de una idea
+→ [Cuánto gastar en IA](00e-investment-roadmap.md): calcular qué suscripciones necesitas y cuánto cuestan

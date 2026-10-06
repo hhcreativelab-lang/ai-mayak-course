@@ -17,10 +17,10 @@
 This is a learning guide to business models and ideas. It is **not a promise of income, not a forecast, and not financial or investment advice.**
 
 - The dollar amounts (prices, plans, tool costs) are rough reference points for doing the math, not research data. Real prices change: check current prices and versions of AI services on the [What's current](https://aimayak.com/en/now/) page and on the services' own websites
-- The statistics and estimates in the "Why it works in 2026" lines and in the market sections are working assumptions; they haven't been checked against primary sources
+- The "Why it works in 2026" lines give the reasoning behind an idea, not measured statistics. The difficulty and competition ratings are the author's rough judgment, not market research. The companies and products named as examples were checked in October 2026; products get renamed and shut down, so check again before you rely on one
 - The timelines (the "Setup time" field) assume someone with hands-on Claude Code experience
 - We deliberately don't forecast revenue. Results depend on the niche, the market, your work and some luck
-- Ideas for medicine, law and finance: AI assists a licensed professional; it doesn't replace licensed work and doesn't give personal advice
+- Ideas for medicine, law, taxes, finance and immigration: AI assists a licensed professional, who checks the result and answers for it. AI doesn't replace licensed work and doesn't give personal advice. The rules differ by country and by state: check them before you sell anything
 
 **This is a map of the terrain.** You choose the route.
 
@@ -60,7 +60,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **When it works:**
 
-- A clear scope of work (a landing page, an audit, a course outline)
+- A clear scope of work (a landing page, meaning a one-page site for one offer; an audit; a course outline)
 - An easy-to-understand deliverable
 - A fast turnaround (1-4 weeks)
 - B2B (services for companies) and freelance markets
@@ -73,9 +73,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Who does this already:**
 
-- Top freelancers on Upwork and Fiverr
-- DesignJoy
-- 99designs (logo contests)
+- Top freelancers on Upwork and Fiverr (marketplaces where clients hire freelancers)
+- 99designs by Vista (design contests: the client pays once and picks the winning design)
 
 **Typical price to the client (2026):**
 
@@ -93,7 +92,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Model 2: Monthly subscription (SaaS)
 
-**What it is:** the client subscribes and pays every month for as long as the product is useful to them.
+**What it is:** the client subscribes and pays every month for as long as the product is useful to them. When the product is software, this is called SaaS (software as a service).
 
 🎨 **Picture this:** Netflix. You pay for the subscription and you watch. Stop watching, cancel. But many people keep paying for months out of habit (that's part of what the model rests on).
 
@@ -102,7 +101,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - The client's problem is ongoing (not one-time)
 - The client uses the product every day or every week
 - Leaving is costly for the client (their data, their routine; this is called lock-in)
-- LTV (how much a client pays you over their whole lifetime) > 3 × CAC (what it costs to win one client)
+- A common rule of thumb holds: LTV (how much one client pays you over the whole time they stay) is at least 3 times CAC (what it costs you to win one client)
 
 **When it DOESN'T work:**
 
@@ -112,8 +111,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Who does this already:**
 
-- Notion
-- Linear
+- Notion (notes and documents in one workspace)
+- Linear (task tracking for product teams)
 - Granola (AI meeting notes)
 - Cursor (AI for programming)
 - Tally (forms)
@@ -125,7 +124,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Professional tool: $99-499/month
 - For large companies: $500-5K/month
 
-**Cash flow:** 🟢 predictable: it becomes stable at roughly 100 paying clients.
+**Cash flow:** 🟢 predictable: the more paying clients you have, the steadier it gets.
 
 **Difficulty:** 🔴 hard (a long ramp-up) | 🟢 easier to scale (once the product finds its market, growth comes faster)
 
@@ -133,29 +132,29 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Model 3: Pay as you go (API resale, voice call minutes)
 
-**What it is:** the client pays **for usage**: per minute, per request, per message, per token (the unit of text AI uses to measure volume).
+**What it is:** the client pays **for usage**: per minute, per request, per message, per token (the unit of text AI uses to measure volume). "API resale" means you pay an AI company for access to its model through an API (a way for one program to connect to another) and charge your client more than you pay.
 
 🎨 **Picture this:** a cab ride. You pay for the trip. No rides, no bill. But heavy users pay a lot.
 
 **When it works:**
 
-- Clients use it in very different amounts (heavy users 10 times more than occasional ones)
+- Clients use it in very different amounts (heavy users many times more than occasional ones)
 - A clear billing unit (a call, a minute, a message, a document)
-- A markup above 60% (what you pay for the API, meaning access to someone else's AI service, is well below your price)
+- A healthy margin (what you pay for the API is well below the price you charge)
 - Large companies with budgets
 
 **When it DOESN'T work:**
 
 - Unpredictable usage spikes lead to a furious client looking at the bill
-- API resale with a thin markup (if your costs are more than 40% of the price)
+- API resale with a thin margin (the API bill eats most of your price)
 - Small clients (they prefer a flat fee)
 
 **Who does this already:**
 
-- Vapi
-- ElevenLabs (text-to-speech, billed per character)
-- OpenAI / Anthropic (billed per token)
-- Twilio (billed per text message or per minute)
+- Vapi (AI phone agents, billed per minute)
+- ElevenLabs (text-to-speech; usage is counted in credits)
+- The OpenAI and Anthropic APIs (billed per token)
+- Twilio (text messages and calls, billed per message or per minute)
 
 **Typical price to the client (2026):**
 
@@ -179,7 +178,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **When it works:**
 
 - You're an expert in a narrow niche (AI rollout, writing prompts, AI automation)
-- Long sales cycles (3-9 months to earn trust)
+- Long sales cycles (it can take months to earn a client's trust)
 - Well-funded business clients
 - A small number of large clients can be enough for a stable model
 
@@ -192,7 +191,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Who does this already:**
 
 - AI studios and agencies
-- McKinsey's AI practice
+- QuantumBlack, the AI consulting arm of McKinsey
 - Solo consultants
 
 **Typical price to the client (2026):**
@@ -223,19 +222,19 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **When it DOESN'T work:**
 
 - AI requests cost money, so the free plan gets expensive
-- Only 1-2% of users pay, so you need a huge stream of new people coming in
+- Only a small share of users ever pays, so you need a huge stream of new people coming in
 - There are no truly valuable paid features
 
 **Who does this already:**
 
 - Notion (a free plan with limits)
-- Loom (a free plan with limits on video length)
+- Loom, a video message recorder (a free plan with limits on the number and length of videos)
 - ChatGPT
 - Cursor
 
 **Typical price to the client (2026):**
 
-- Free plan: capped at 5-20% of the full volume
+- Free plan: a small part of what the paid plan gives
 - Pro plan: $9-39/month
 - Team plan: $29-99/month per user
 - Enterprise: $99-499/month per user
@@ -261,7 +260,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **When it DOESN'T work:**
 
-- A small market (fewer than 10K buyers and sellers)
+- A small market (too few buyers and sellers to keep deals coming)
 - The middleman is easy to bypass (after the first deal, the two sides go direct)
 - No trust and quality-control system of your own
 
@@ -269,7 +268,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Upwork (a service fee on each job)
 - Fiverr (a service fee on each order)
-- Etsy (listing fees plus a share of each sale)
+- Etsy, a marketplace for handmade goods (a listing fee plus a share of each sale)
 - PromptBase, an AI prompt marketplace (a commission on each sale)
 
 **Typical price to the client (2026):**
@@ -305,11 +304,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Who does this already:**
 
-- Indie Hackers (free)
-- Trends.co
-- Newcomer
-- IndiePen.com
-- Levels.fyi (paid plan)
+- Indie Hackers, a community of independent founders (free to join, with a paid tier)
+- Hampton (a paid private network for startup founders)
+- Exit Five (a paid community for B2B marketers)
 
 **Typical price to the client (2026):**
 
@@ -341,14 +338,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Everything has to be redone from scratch for each client (no way to scale)
 - Clients want to learn to do it themselves, not get it done for them
-- A margin under 40% (serving clients costs too much)
+- A thin margin (serving each client costs you too much time or money)
 
 **Who does this already:**
 
-- DesignJoy
-- Newsletter Operator
-- ContentBot.ai (subscription)
-- AI-powered agencies that turn out several times more work than a traditional shop
+- Designjoy (design work for a flat monthly fee)
+- GrowLetter (an agency that grows email newsletters for its clients)
+- Agencies where AI drafts the work and people check the quality
 
 **Typical price to the client (2026):**
 
@@ -372,7 +368,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - It's clear who might buy a business like this
 - A product that scales (not a service)
-- A cycle of 6-18 months from building to selling
+- You can get from building to selling in months rather than years
 - Several successful sales turn into a portfolio of projects
 
 **When it DOESN'T work:**
@@ -384,8 +380,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Who does this already:**
 
 - Acquire.com (formerly MicroAcquire, a marketplace for buying small businesses)
-- Flippa
-- Empire Flippers
+- Flippa (a marketplace for buying and selling websites, apps and online stores)
+- Empire Flippers (a marketplace for established online businesses)
 
 **Typical price (2026):**
 
@@ -408,7 +404,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Clients have different needs
 - A mature business with several offers
-- You have something to upsell
+- You have something extra to sell to the clients you already have
 - You need to raise the LTV of each client
 
 **When it DOESN'T work:**
@@ -419,16 +415,16 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Who does this already:**
 
-- HubSpot (free plan + paid tiers + per-seat pricing + custom enterprise terms)
-- Stripe (subscriptions + per-transaction fees + enterprise terms)
-- Notion (Free + Pro + Plus + a team plan priced per seat)
+- HubSpot, a CRM (software for tracking clients and deals): free tools + paid tiers priced per seat + custom terms for large companies
+- Stripe, a payment service: a fee on each transaction + separately priced add-ons + custom pricing for large volumes
+- Notion: a free plan + paid plans priced per member + custom terms for large companies
 
 **Typical price to the client (2026):**
 
 - Base plan: $29-99/month
 - Usage charge: $0.05-2.00
 - Project: $1-10K
-- What one client pays over their whole lifetime (LTV): a rough guide of $5-50K
+- What one client pays over their whole lifetime (LTV): depends on the base plan, on how much they use and on how long they stay
 
 **Cash flow:** 🟢 several sources.
 
@@ -443,7 +439,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 | 1 | One-off project | depends on scope | ❌ uneven | 🟢 easy to start | Freelancer / consultant |
 | 2 | Monthly subscription (SaaS) | $9-499/month | 🟢 predictable | 🔴 long ramp-up | Founder with technical skills |
 | 3 | Pay as you go | $0.001-5 per action | 🟡 variable | 🟡 medium | API resale / voice agents |
-| 4 | Consulting on retainer | $2-10K/month | 🟢 predictable | 🟡 medium | Expert / agency |
+| 4 | Consulting on retainer | $2-25K/month | 🟢 predictable | 🟡 medium | Expert / agency |
 | 5 | Free plan + paid plan | $9-99/month | 🟡 slow | 🔴 hard for AI | Products with a network effect |
 | 6 | Marketplace and commission | 5-30% commission | 🟡 slow | 🔴 very hard | Fragmented markets |
 | 7 | Membership and community | $10-200/month | 🟢 recurring | 🟡 needs a personal brand | Narrow audience |
@@ -466,32 +462,32 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Category 1: AI services for specific professions (15 ideas)
 
-🎨 **Picture this:** in the gold rush, the people who sold shovels did well. In the AI era, you sell **AI assistants** to people in specific professions. The narrower the specialty, the higher the margin.
+🎨 **Picture this:** in the gold rush, the people who sold shovels did well. In the AI era, you sell **AI assistants** to people in specific professions. The narrower the specialty, the easier it is to stand out.
 
 ---
 
 #### 1. AI email assistant for lawyers
 
-- **What it does:** drafts emails to clients, summarizes long threads, sets follow-up reminders (all of it only after the lawyer approves)
+- **What it does:** drafts emails to clients, summarizes long threads, sets follow-up reminders (nothing goes out until the lawyer has read and approved it; the lawyer stays responsible for every email)
 - **Who the client is:** solo attorneys and small law firms (1-10 lawyers)
-- **How you get paid:** a monthly SaaS subscription (software you pay for monthly), $79-249 a month per seat
-- **Tools:** Claude API (a way to plug Claude into your own program) + a Gmail or Outlook add-on + Calendly + Stripe
-- **Difficulty:** 🟡 medium (you need to understand how a lawyer's work is organized)
-- **Competition:** 🟢 low (big firms have their own tools, while small firms are offered almost nothing)
-- **Why it works in 2026:** lawyers spend 40% of their time on email; AI saves 6 hours a week, and an hour of a lawyer's time costs the client $300
+- **How you get paid:** SaaS (subscription software): the firm pays $79-249 a month per seat
+- **Tools:** Claude API (an API is a way for one program to connect to another; this one gives your program paid access to Claude) + a Gmail or Outlook add-on + Calendly (online meeting scheduling) + Stripe (online payments)
+- **Difficulty:** 🟡 medium (you need to understand how a lawyer's work is organized; client emails are confidential, so the firm will ask where the data is stored and who can see it)
+- **Competition:** 🟡 medium (established products exist: Clio, practice management software for law firms, already drafts client emails with AI; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** email takes up a large part of a lawyer's day; drafts and thread summaries give that time back for client work
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Pricing](39e-pricing-strategy-deep.md), [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 2. AI listing description generator for real estate agents
 
-- **What it does:** you upload photos and get a listing description, SEO copy (to help it show up in search) and social media posts, ready to publish
+- **What it does:** you upload photos and get a draft listing description, copy for SEO (getting found in search) and social media posts; the agent checks them and publishes
 - **Who the client is:** real estate agents (independent agents or brokerages with 5-50 agents)
 - **How you get paid:** a $49-199/month subscription + $5-15 per listing
-- **Tools:** Claude + an image recognition API + Zillow and MLS APIs (the MLS is the shared database of listings) + Buffer
-- **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Listing.ai and RealtyTopper already exist, but the market is fragmented by region)
-- **Why it works in 2026:** an agent needs 20 listings a month at 30 minutes each, which is 10 hours. With AI, it's one hour to review and publish.
+- **Tools:** Claude + an image recognition API + listing data from the agent's MLS (multiple listing service: the shared local database of homes for sale; access needs a license from that MLS) or from the developer APIs of Zillow, a US real estate site (access is by approval) + Buffer (schedules social media posts)
+- **Difficulty:** 🟢 easy (but the agent must check every description: the US Fair Housing Act bans discriminatory wording in housing ads)
+- **Competition:** 🟡 medium (established products exist, such as ListingAI; a service that knows one region's market can still stand out)
+- **Why it works in 2026:** every listing needs its own description and social posts, and writing them by hand takes time; with AI the agent only checks and publishes
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
@@ -501,114 +497,114 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** inventory on hand + food trends + guest preferences go in, menu recommendations and recipe options come out
 - **Who the client is:** independent restaurants, small chains (5-20 locations)
 - **How you get paid:** $99-499 a month per location
-- **Tools:** Claude + a point-of-sale integration (Square or Toast) + a nutrition data API + Stripe
+- **Tools:** Claude + an integration with the restaurant's point-of-sale (POS) system (Square or Toast; Toast gives partner access on request) + a nutrition data API + Stripe
 - **Difficulty:** 🟡 medium (you need to understand food cost per dish)
-- **Competition:** 🟢 low (big chains have tools, independent restaurants don't)
-- **Why it works in 2026:** managing food cost saves 5-10% on ingredients, which is $5-20K a year per location
+- **Competition:** 🟡 medium (recipe and food-cost software for restaurants already exists, such as meez and MarginEdge; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** food that spoils in the storeroom is money lost; a menu built around what is already in stock means less waste and better control of ingredient costs
 - **Related lessons:** [Unit economics](99b-unit-economics-deep.md), [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 4. AI visit notes for doctors (with the doctor in charge)
 
-- **What it does:** records the conversation during a visit, turns it into structured SOAP notes, and sends them to the electronic health record (after the doctor approves)
+- **What it does:** records the conversation during a visit (with the patient's consent), turns it into a draft note in the SOAP format (the standard structure of a visit note: the patient's complaints, the exam, the assessment, the plan), and sends it to the electronic health record after the doctor checks and approves it
 - **Who the client is:** small clinics and doctors in private practice (the US and UK markets, both strictly regulated)
 - **How you get paid:** $299-999 a month per doctor
-- **Tools:** Whisper API + Claude + integration with electronic health record systems (Epic or Oracle Health, formerly Cerner, through an integration service such as Redox) + HIPAA-compliant storage (HIPAA is the US law that protects patient health information)
-- **Difficulty:** 🔴 hard (HIPAA, a business associate agreement (BAA) to protect health data, and a mandatory legal review)
-- **Competition:** 🟡 medium (Abridge and Nuance work with large hospitals, but there's little on offer for small clinics)
-- **Why it works in 2026:** doctors spend 2 hours a day on paperwork; AI saves 1.5 hours, which is about $400 a day per doctor
+- **Tools:** a speech-to-text API (it turns a recording into text; for example, OpenAI's) + Claude + integration with electronic health record systems (Epic or Oracle Health, formerly Cerner, through an integration service such as Redox) + HIPAA-compliant storage (HIPAA is the US Health Insurance Portability and Accountability Act, the law that protects patients' health information)
+- **Difficulty:** 🔴 hard (HIPAA; a business associate agreement, or BAA: the contract HIPAA requires between a clinic and any vendor that handles its patient data, so you sign one with the clinic and with each service that handles the data for you; and a mandatory legal review)
+- **Competition:** 🔴 high (a crowded field: Abridge, Microsoft Dragon Copilot (formerly Nuance), and Freed, which sells directly to small clinics)
+- **Why it works in 2026:** visit notes take a doctor's time after every patient; with a draft made from the recording, only checking and signing are left
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Pricing](39e-pricing-strategy-deep.md), [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
 
 #### 5. AI tax-document prep assistant for accountants
 
-- **What it does:** scans receipts and bank statements, sorts transactions into categories, flags the suspicious ones, and leaves everything ready for the accountant to review
+- **What it does:** scans receipts and bank statements, sorts transactions into categories, flags the suspicious ones, and leaves everything ready for the accountant to review (the tool only organizes the numbers; a licensed tax professional checks them and signs the return)
 - **Who the client is:** small accounting firms, solo bookkeepers and accountants
 - **How you get paid:** $99-499 a month + $10-30 per firm client
-- **Tools:** Claude + Plaid + text recognition (Mindee) + a QuickBooks integration + Stripe
+- **Tools:** Claude + Plaid (connects apps to users' bank accounts) + text recognition (Mindee) + an integration with QuickBooks (accounting software) + Stripe
 - **Difficulty:** 🟡 medium (you need bookkeeping basics, and for the US market, knowledge of US taxes)
-- **Competition:** 🟡 medium (Botkeeper, Pilot.com, but only for larger firms)
-- **Why it works in 2026:** AI categorization makes an accountant 3-5 times more productive
+- **Competition:** 🟡 medium (established products exist, such as Botkeeper and Pilot; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** sorting transactions by hand is slow, repetitive work; AI does the first pass, and the accountant spends the time on checking and on advising clients
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Unit economics](99b-unit-economics-deep.md)
 
 ---
 
 #### 6. AI lesson plan generator for teachers
 
-- **What it does:** subject + grade + learning standard go in; a full lesson plan, worksheets and quizzes come out
-- **Who the client is:** K-12 teachers, tutors, homeschooling parents
+- **What it does:** subject + grade + learning standard go in; a draft lesson plan, worksheets and quizzes come out (the teacher checks and adapts them)
+- **Who the client is:** K-12 teachers (kindergarten through 12th grade), tutors, homeschooling parents
 - **How you get paid:** $9-29 a month per person; $99-299 a month for a school subscription
-- **Tools:** Claude + state curriculum APIs + PDF generation + Stripe
-- **Difficulty:** 🟢 easy (B2C, selling to individuals); 🟡 medium (B2B, selling to schools)
-- **Competition:** 🟡 medium (Eduaide.ai, MagicSchool; there are competitors, but the market is growing)
-- **Why it works in 2026:** there aren't enough teachers and there's a lot of paperwork, so AI multiplies what one teacher can do
+- **Tools:** Claude + the state's published learning standards + PDF generation + Stripe
+- **Difficulty:** 🟢 easy (B2C: selling to individuals); 🟡 medium (B2B: selling to businesses and organizations, here to schools)
+- **Competition:** 🟡 medium (established tools for teachers exist, such as Eduaide.Ai and MagicSchool; a narrow service for one subject or one state's standards can still stand out)
+- **Why it works in 2026:** planning lessons and preparing worksheets takes up a teacher's evenings; AI prepares a first draft, and the teacher adapts it to the class
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Lead magnets](39d-lead-magnets-funnels.md)
 
 ---
 
 #### 7. AI research brief generator for journalists
 
-- **What it does:** topic + sources go in; a research brief, key points, possible angles and source links come out
+- **What it does:** topic + sources go in; a research brief, key points, possible angles and source links come out (the journalist checks every fact against its source before publishing)
 - **Who the client is:** freelance journalists, small newsrooms, content writers
 - **How you get paid:** $29-99 a month per person; $199-499 a month per team
-- **Tools:** Claude + Perplexity API + web search + a Notion integration
+- **Tools:** Claude + Perplexity's Sonar API (Perplexity is an AI answer engine with web search and source links) + web search + an integration with Notion (a workspace for notes and documents)
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Perplexity Pro, Otter, but journalists need a specialized tool)
-- **Why it works in 2026:** a journalist spends 60% of their time gathering material; with AI, it's 20%
+- **Competition:** 🟡 medium (general tools already help: Perplexity with research, Otter.ai with transcripts; a service built around a journalist's workflow can still stand out)
+- **Why it works in 2026:** gathering background material takes up much of a journalist's time; AI collects and sorts it faster, which leaves more time for interviews and writing
 - **Related lessons:** [Lead magnets](39d-lead-magnets-funnels.md), [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
 
 #### 8. AI estimate generator for contractors
 
-- **What it does:** job site photos + ZIP code go in; labor and material costs plus a finished estimate come out (as a PDF, ready to email)
+- **What it does:** job site photos + ZIP code go in; labor and material costs plus a draft estimate come out (as a PDF; the contractor checks the numbers and emails it to the client)
 - **Who the client is:** plumbers, electricians, painters, contractors
 - **How you get paid:** $49-199 a month per contractor + $2-5 per estimate
-- **Tools:** Claude + an image recognition API + an API with lumber and building material prices + Stripe
+- **Tools:** Claude + an image recognition API + current labor and material prices (the contractor's own price list or a paid construction cost database) + Stripe
 - **Difficulty:** 🟢 easy (template-based work)
-- **Competition:** 🟡 medium (Joist, Buildertrend for general contractors; small contractors have few options)
-- **Why it works in 2026:** a contractor saves 1-2 hours per estimate, and at 10 estimates a week that's 15 hours a week
+- **Competition:** 🟡 medium (established apps exist, such as Joist for estimates and invoices and Buildertrend for home builders and remodelers; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** estimates eat up a contractor's evenings; with a draft built from photos and a price list, only checking and sending are left
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 9. AI patient communication for medical practices
 
-- **What it does:** appointment reminders + after-visit instructions + follow-up messages (using HIPAA-compliant templates)
+- **What it does:** appointment reminders + after-visit instructions + follow-up messages (from templates the clinic has approved with HIPAA in mind; texts go only to patients who agreed to receive them)
 - **Who the client is:** small clinics, dental offices, specialists
 - **How you get paid:** $149-499 a month per practice
 - **Tools:** Claude + an electronic health record integration + text messaging (Twilio) + HIPAA-compliant storage
-- **Difficulty:** 🟡 medium (HIPAA compliance is critical)
-- **Competition:** 🟡 medium (Solutionreach, Weave, but few solutions are built around AI from the ground up)
-- **Why it works in 2026:** with AI reminders, patients miss 30% fewer appointments, and the practice keeps $20-50K a year
+- **Difficulty:** 🟡 medium (following HIPAA is critical: you need a BAA with the clinic and with each service that handles patient data)
+- **Competition:** 🟡 medium (established products exist, such as Solutionreach and Weave, and both already include AI features; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** a missed appointment is an empty slot the practice can't fill; timely reminders and an easy way to reschedule mean fewer of them
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
 
 #### 10. AI document review for small law firms
 
-- **What it does:** you upload a contract and get a summary, flagged risky clauses, a comparison against a template and a risk score
+- **What it does:** you upload a contract and get a summary, flagged risky clauses, a comparison against a template and a risk score (a first pass for the lawyer, who reads the contract, decides and stays responsible)
 - **Who the client is:** small law firms, in-house counsel at small companies
 - **How you get paid:** $199-999 a month per lawyer or $50-200 per contract
 - **Tools:** Claude + PDF parsing + a library of legal templates + Stripe
-- **Difficulty:** 🔴 hard (the legal conclusions have to be accurate, and someone is liable for mistakes)
-- **Competition:** 🟡 medium (Harvey, Spellbook for large firms; small firms have few options)
-- **Why it works in 2026:** a lawyer reviews 5-10 contracts a week at 1-2 hours each, and AI cuts that time by 70%
+- **Difficulty:** 🔴 hard (the conclusions have to be accurate, client documents are confidential, and the lawyer is liable for mistakes, so the tool must not present its output as legal advice)
+- **Competition:** 🟡 medium (established products exist, such as Harvey and Spellbook; a narrow, hands-on service for small firms can still stand out)
+- **Why it works in 2026:** a first read of a contract takes a lawyer a lot of time; AI does the first pass and marks the places to look at, so the lawyer goes straight to the risky clauses
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Pricing](39e-pricing-strategy-deep.md), [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
 
 #### 11. AI press release writer for PR agencies
 
-- **What it does:** company details + the news go in; a press release in AP style plus suggestions on who to send it to come out
-- **Who the client is:** small PR agencies, in-house communications teams (1-5 people)
+- **What it does:** company details + the news go in; a draft press release in AP style (the writing rules of the Associated Press news agency) plus suggestions on who to send it to come out
+- **Who the client is:** small PR (public relations) agencies, in-house communications teams (1-5 people)
 - **How you get paid:** $49-199 a month + $25-100 per release
-- **Tools:** Claude + the AP Stylebook + a PR Newswire integration
+- **Tools:** Claude + the AP Stylebook (the Associated Press style guide) + a press release distribution service such as PR Newswire (the agency sends the approved release from its own account)
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟢 low (a narrow niche)
-- **Why it works in 2026:** press releases follow a template, so AI does 80% of the work
+- **Competition:** 🟡 medium (a narrow niche, but distribution services such as PR Newswire offer their own AI writing tools)
+- **Why it works in 2026:** press releases follow a fixed structure, so AI writes a solid first draft; a person adds the facts, the quotes and the final edit
 - **Related lessons:** [Lead magnets](39d-lead-magnets-funnels.md)
 
 ---
@@ -616,51 +612,51 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 #### 12. AI inventory forecasting for retail
 
 - **What it does:** sales history + seasonality + trends go in; reorder recommendations and "about to run out" alerts come out
-- **Who the client is:** small stores (5-50 products), Shopify sellers
+- **Who the client is:** small stores (5-50 products), sellers on Shopify (a platform for running an online store)
 - **How you get paid:** $99-499 a month per store
-- **Tools:** Claude + Shopify API + sales history + an alert system
+- **Tools:** Claude + the Shopify API + sales history + an alert system
 - **Difficulty:** 🟡 medium (you need statistical modeling)
-- **Competition:** 🟡 medium (Cogsy, Inventory Planner, but AI-built tools are cheaper)
-- **Why it works in 2026:** small stores lose 8-12% of revenue to empty shelves and stock that won't move
+- **Competition:** 🟡 medium (established products exist, such as Inventory Planner; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** an empty shelf is a lost sale, and stock that doesn't move ties up money; a forecast helps order the right amount at the right time
 - **Related lessons:** [Unit economics](99b-unit-economics-deep.md)
 
 ---
 
-#### 13. AI client onboarding for consulting firms
+#### 13. AI client onboarding (getting a new client started) for consulting firms
 
 - **What it does:** new client details go in; personalized welcome emails, a project kickoff document and scheduled meetings come out
 - **Who the client is:** management consultants, marketing agencies, small B2B firms
 - **How you get paid:** $99-399 a month per firm
-- **Tools:** Claude + Calendly + HubSpot or Pipedrive + Loom + Stripe
+- **Tools:** Claude + Calendly + a CRM (software for tracking clients and deals) such as HubSpot or Pipedrive + Loom (recorded video messages) + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟢 low (most firms still do this by hand)
-- **Why it works in 2026:** the first days decide whether a client stays; with AI, this stage goes equally well every time
+- **Competition:** 🟢 low (many small firms still do this by hand)
+- **Why it works in 2026:** the first days set the tone for the whole project; with AI, this stage goes equally well every time
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 14. AI proposal writing for agencies
 
-- **What it does:** a client request or brief goes in; a tailored proposal with prices, timelines and work samples comes out as a PDF
+- **What it does:** a client request or project brief goes in; a tailored draft proposal with prices, timelines and work samples comes out as a PDF
 - **Who the client is:** marketing agencies, development shops, design studios
 - **How you get paid:** $99-399 a month + $20-100 per proposal
-- **Tools:** Claude + a PandaDoc integration + a library of work samples + Stripe
+- **Tools:** Claude + an integration with PandaDoc (a service for proposals, contracts and e-signatures) + a library of work samples + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Proposify, PandaDoc with AI add-ons)
-- **Why it works in 2026:** an agency wins one proposal out of five; if you can send 5 times more of them, you win more deals too
+- **Competition:** 🟡 medium (established proposal tools exist, such as Proposify and PandaDoc, and both already have AI features; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** an agency wins only some of the proposals it sends; when each one takes less time, it can answer more requests and answer them sooner
 - **Related lessons:** [Pricing](39e-pricing-strategy-deep.md), [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 15. AI compliance assistant for community banks and credit unions
 
-- **What it does:** alerts about new regulations + reviews of internal policies + client letter templates (written to regulatory standards)
-- **Who the client is:** small community banks, credit unions (under $1B in assets)
+- **What it does:** alerts about new regulations + reviews of internal policies + client letter templates written to regulatory standards (all of it is a draft for the bank's compliance officer, the employee responsible for following the rules, who checks and decides)
+- **Who the client is:** small community banks, credit unions (under a billion dollars in assets)
 - **How you get paid:** $999-4,999 a month per institution
-- **Tools:** Claude + a regulatory data API + a template library + an audit log of actions
-- **Difficulty:** 🔴 very hard (you need regulatory compliance expertise and legal review)
-- **Competition:** 🟢 low (big banks have tools like this; small ones can't afford them)
-- **Why it works in 2026:** a compliance officer's salary is $80-150K a year, and AI takes on half of that work
+- **Tools:** Claude + official sources of new rules (regulators publish them on their websites) + a template library + an audit log of actions
+- **Difficulty:** 🔴 very hard (you need expertise in the rules banks must follow, and a legal review)
+- **Competition:** 🟡 medium (specialized vendors such as Ncontracts already serve banks and credit unions; a newcomer needs deep expertise to earn their trust)
+- **Why it works in 2026:** the rules change often and a small bank has few people to follow them; the assistant tracks the changes and prepares drafts, and the bank's specialist makes the decisions
 - **Related lessons:** [AI regulation and compliance](61c-ai-regulation-compliance.md), [Unit economics](99b-unit-economics-deep.md)
 
 ---
@@ -675,24 +671,24 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - **What it does:** a search visibility strategy + 4-8 articles a month + internal links + rank tracking
 - **Who the client is:** SaaS companies that sell to businesses, with $1-50M in annual revenue, in a narrow niche (legal tech, dental tech and so on)
-- **How you get paid:** a $3-15K monthly retainer
-- **Tools:** Claude + Ahrefs + SearchFit + Frase + WordPress + Webflow
+- **How you get paid:** a monthly retainer (a fixed monthly fee) of $3-15K
+- **Tools:** Claude + Ahrefs (SEO research) + SearchFit (visibility in search and in AI answers) + Frase (writing content for search) + the client's site on WordPress or Webflow (website platforms)
 - **Difficulty:** 🟡 medium (you need SEO knowledge and solid writing)
 - **Competition:** 🔴 high (the market is crowded, but narrow industry specialization wins)
-- **Why it works in 2026:** in B2B, more than half of traffic still comes from search; AI cuts the cost of content 5-10 times
+- **Why it works in 2026:** business buyers still look for solutions through search; AI speeds up research and drafts, and a person who knows the industry makes the articles accurate
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
 
 #### 17. AI newsletter for a narrow professional audience
 
-- **What it does:** a weekly or daily newsletter that rounds up news on a narrow topic (for example, AI in law, real estate news, the science of fitness)
+- **What it does:** a weekly or daily email newsletter that rounds up news on a narrow topic (for example, AI in law, real estate news, the science of fitness)
 - **Who the client is:** specialists in a narrow field (a newsletter with 3,000-30,000 subscribers)
 - **How you get paid:** sponsorships (a rough guide of $500-5K per issue for the advertiser) + a paid reader subscription of $5-20 a month
-- **Tools:** Claude + Beehiiv + Perplexity + an RSS feed reader + Stripe
+- **Tools:** Claude + beehiiv (a newsletter platform with paid subscriptions and sponsorships) + Perplexity + an RSS feed reader (it collects new posts from the sites you choose) + Stripe
 - **Difficulty:** 🟢 easy to start, 🟡 medium as it grows
 - **Competition:** 🔴 high (Substack is crowded, but a narrow topic wins)
-- **Why it works in 2026:** in narrow topics, 30-50% of subscribers open the emails, and sponsors will pay more for that kind of audience
+- **Why it works in 2026:** the readers of a narrow newsletter share one profession and one interest, and sponsors who want to reach exactly those people value such an audience
 - **Related lessons:** [Lead magnets](39d-lead-magnets-funnels.md), [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
@@ -702,7 +698,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** 20-30 posts a month + scheduled publishing + replies to followers, for local small businesses
 - **Who the client is:** restaurants, gyms, salons (local business owners)
 - **How you get paid:** $299-1,499 a month per business
-- **Tools:** Claude + Buffer or Later + Canva + a Google Business Profile integration (formerly Google My Business, or GMB)
+- **Tools:** Claude + Buffer or Later (social media scheduling) + Canva (online graphic design) + an integration with Google Business Profile (a business's free listing on Google Search and Maps)
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium (there are lots of social media managers, but AI makes the work faster)
 - **Why it works in 2026:** local small business owners have no time for social media, so a done-for-you service wins
@@ -712,51 +708,51 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 19. AI podcast production service
 
-- **What it does:** a raw recording becomes a clean, edited episode with show notes, a transcript, short social clips and a YouTube version
+- **What it does:** a raw recording becomes a clean, edited episode with show notes (a short description of the episode with links), a transcript, short social clips and a YouTube version
 - **Who the client is:** podcasters with fewer than 10,000 listens per episode (too few to keep their own producer)
 - **How you get paid:** $299-1,500 a month per podcast (weekly or biweekly episodes)
-- **Tools:** Claude + Descript + ElevenLabs + Auphonic + YouTube API + Stripe
+- **Tools:** Claude + Descript (edits audio and video through the transcript) + ElevenLabs (AI voices) + Auphonic (automatic sound cleanup) + the YouTube Data API (it uploads videos; until YouTube audits your app, the videos it uploads stay private) + Stripe
 - **Difficulty:** 🟡 medium (audio editing skills help)
 - **Competition:** 🟡 medium (Riverside and Descript have the features, but a done-for-you service is a different thing)
-- **Why it works in 2026:** editing is the heaviest part of a podcast; AI saves 80% of the time
+- **Why it works in 2026:** editing is the heaviest part of making a podcast; AI does the rough cleanup and cuts, and a person polishes the result
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 20. AI management of faceless YouTube channels
 
-- **What it does:** scripts + voiceover + B-roll + thumbnails + uploads, for YouTube channels with no host on camera (compilations, history, tech reviews)
+- **What it does:** scripts + voiceover + B-roll (background footage) + thumbnails (preview images) + uploads, for YouTube channels with no host on camera (compilations, history, tech reviews)
 - **Who the client is:** YouTube creators who want channels that don't need them on camera all the time; agencies that run several channels
 - **How you get paid:** done-for-you at $1-5K a month per channel; or your own channels (ad revenue)
-- **Tools:** Claude + ElevenLabs + Pictory or InVideo + gpt-image-2 + YouTube API
-- **Difficulty:** 🟡 medium (you need a feel for what content spreads)
+- **Tools:** Claude + ElevenLabs + Pictory or invideo (AI video makers) + gpt-image-2 (OpenAI's image model) + the YouTube Data API
+- **Difficulty:** 🟡 medium (you need a feel for what content spreads; YouTube doesn't pay for mass-produced or repetitive videos, and realistic scenes made with AI must be labeled as such)
 - **Competition:** 🔴 high (there are already a lot of faceless channels)
-- **Why it works in 2026:** evergreen topics still work, and a library of videos can keep earning ad revenue for years (results vary widely)
+- **Why it works in 2026:** evergreen topics (ones that don't go out of date) keep getting views for a long time; AI speeds up production, but each video still has to be useful or interesting to the viewer
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md), [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 21. AI translation (one specific language pair)
 
-- **What it does:** professional translation EN↔ES, EN↔PT, EN↔FR and so on + cultural adaptation for the target country + SEO keyword research in the new language
+- **What it does:** professional translation English↔Spanish, English↔Portuguese, English↔French and so on + cultural adaptation for the target country + SEO keyword research in the new language
 - **Who the client is:** companies entering a specific market (for example, from the US into Latin America, or from Europe into the US)
 - **How you get paid:** $0.05-0.15 per word or a $1-5K monthly retainer
-- **Tools:** Claude + DeepL as a backup + review by a native speaker + SearchFit
+- **Tools:** Claude + DeepL (an AI translator) as a backup + review by a native speaker + SearchFit
 - **Difficulty:** 🟢 easy if you know both languages
 - **Competition:** 🟡 medium (Gengo and Unbabel already exist, but specialization wins)
-- **Why it works in 2026:** AI translation gets you 90% of the way; the last 10% is human review, and you can charge more for it
+- **Why it works in 2026:** AI gives a solid first draft of a translation; careful review by a person who knows the language and the market is the part a client can't get from a free translator
 - **Related:** for example, the English-Spanish pair for Latin American markets
 
 ---
 
 #### 22. AI brand voice service
 
-- **What it does:** company materials go in; brand voice guidelines, sample copy and content templates come out
+- **What it does:** company materials go in; brand voice guidelines (the rules for how the brand speaks to people), sample copy and content templates come out
 - **Who the client is:** growing startups with $1-10M in annual revenue and no marketing department of their own
 - **How you get paid:** $3-15K one-time + $500-2K a month for ongoing support
-- **Tools:** Claude + the brand-voice plugin + Notion + Figma
+- **Tools:** Claude + the Brand Voice plugin for Claude (made by Tribe AI; it turns a company's materials into style rules) + Notion + Figma (a design tool)
 - **Difficulty:** 🟡 medium (you need taste and a feel for brands)
-- **Competition:** 🟢 low (big agencies do this for corporations, while small startups have few options)
+- **Competition:** 🟡 medium (AI writing tools such as Jasper already offer brand voice features; a hands-on service for small startups can still stand out)
 - **Why it works in 2026:** a consistent voice builds trust, and trust means more sales; AI lets you keep the voice consistent at any volume
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md), [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
@@ -764,52 +760,52 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 23. AI landing page agency
 
-- **What it does:** a brief becomes a landing page that sells well (copy + design + analytics + A/B testing, meaning comparing two versions)
+- **What it does:** the client's brief (a short description of the task) becomes a landing page (a one-page site for one offer) that sells well (copy + design + analytics + A/B testing, meaning comparing two versions)
 - **Who the client is:** small online stores with their own brand, course creators, coaches
 - **How you get paid:** a $1-5K project or a $1.5-5K monthly retainer
-- **Tools:** Claude + Framer or Webflow + Figma + Plausible + Stripe
+- **Tools:** Claude + Framer or Webflow (website builders) + Figma + Plausible (simple website analytics) + Stripe
 - **Difficulty:** 🟡 medium (you need to understand how a page turns visitors into buyers)
-- **Competition:** 🟡 medium (there are builders like Unbounce and Leadpages, but clients value a service more)
-- **Why it works in 2026:** every product needs a landing page, and with AI you can make 10 times more of them
+- **Competition:** 🟡 medium (there are landing page builders such as Unbounce and Leadpages, and both already use AI; some clients still prefer to pay for a done-for-you service)
+- **Why it works in 2026:** every product and every ad campaign needs its own page; AI speeds up the copy and the first design, so you can take on more projects
 - **Related lessons:** [Pricing](39e-pricing-strategy-deep.md), [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 24. AI course production studio
 
-- **What it does:** an expert in their field becomes a finished course (outline + scripts + slides + workbook + email sequence + landing page)
+- **What it does:** an expert in their field becomes a finished course (outline + scripts + slides + workbook + a series of emails + landing page)
 - **Who the client is:** experts who want to launch a course (consultants, professionals)
 - **How you get paid:** a $5-25K project or a 30-50% share of course sales
-- **Tools:** Claude + Teachable or Kajabi + Canva + Loom + Notion + Stripe
+- **Tools:** Claude + Teachable or Kajabi (platforms for selling online courses) + Canva + Loom + Notion + Stripe
 - **Difficulty:** 🟡 medium (you need course design skills)
-- **Competition:** 🟢 low (few services like this exist)
-- **Why it works in 2026:** the creator content market is growing, and AI cuts production costs by 70%
+- **Competition:** 🟢 low (a narrow, hands-on service)
+- **Why it works in 2026:** many experts have the knowledge but no time to turn it into a course; AI speeds up the scripts, slides and workbook, and the expert checks the substance
 - **Related lessons:** [Lead magnets](39d-lead-magnets-funnels.md), [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 25. AI-assisted ghostwriting for books
 
-- **What it does:** interviews + research become a 25,000-40,000-word business book + editing + cover + publishing
+- **What it does:** interviews + research become a 25,000-40,000-word business book published under the client's name + editing + cover + publishing
 - **Who the client is:** consultants and executives who need a book to build authority
 - **How you get paid:** a $15-75K project per book
-- **Tools:** Claude + Otter.ai + Scrivener + Vellum + Amazon KDP
+- **Tools:** Claude + Otter.ai (records and transcribes the interviews) + Scrivener (an app for writing long manuscripts) + Vellum (book formatting on a Mac) + Amazon KDP (Kindle Direct Publishing, Amazon's self-publishing service; it asks you to declare text, images and translations created by AI)
 - **Difficulty:** 🟡 medium (the quality of the writing matters)
 - **Competition:** 🟡 medium (ghostwriters already exist; with AI it's faster and cheaper)
-- **Why it works in 2026:** a book still builds authority, and with AI you can write it in 3 months instead of 12
+- **Why it works in 2026:** a book still builds authority; AI speeds up the research and the drafts, while the interviews, the client's ideas and the final editing stay human work
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 26. AI local search marketing for restaurants
 
-- **What it does:** Google Business Profile optimization + review replies + local directory listings + content + photo enhancement
+- **What it does:** Google Business Profile optimization + review replies (AI drafts them, the owner approves) + local directory listings + content + photo enhancement
 - **Who the client is:** restaurants, cafes, local food businesses
 - **How you get paid:** $299-999 a month per location
-- **Tools:** Claude + Google Business Profile API + Yelp + Tripadvisor + photo enhancement (Cloudinary)
+- **Tools:** Claude + the Google Business Profile API (it can post review replies; access needs Google's approval) + Yelp and Tripadvisor (the owner posts the approved replies there) + photo enhancement (Cloudinary)
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium (there are Yelp and Google profile agencies, but with AI you can serve more clients)
-- **Why it works in 2026:** people find 70% of local places through Google Business Profile; AI keeps the quality steady
+- **Why it works in 2026:** for many people a restaurant's Google listing and its reviews are the first impression; regular replies and fresh photos keep that impression good, and AI keeps the quality steady
 - **Related lessons:** [The SEO machine](91-seo-machine.md)
 
 ---
@@ -819,20 +815,20 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a news item becomes a press release + a targeted list of journalists + distribution + coverage tracking
 - **Who the client is:** small PR agencies, startups, in-house communications teams
 - **How you get paid:** $99-499 per release or a $299-999 monthly subscription
-- **Tools:** Claude + PR Newswire or Cision + a journalist database + coverage tracking
+- **Tools:** Claude + PR Newswire or Cision (media monitoring and outreach software for PR teams) + a journalist database + coverage tracking
 - **Difficulty:** 🟡 medium (PR connections help)
-- **Competition:** 🟡 medium (PR Newswire, Business Wire, but they're expensive)
-- **Why it works in 2026:** AI lets you cut the price by 80%, which puts the service within reach of startups
+- **Competition:** 🟡 medium (established distribution services exist, such as PR Newswire and Business Wire; a service for small budgets can still stand out)
+- **Why it works in 2026:** AI speeds up writing and building journalist lists, so the service can cost less and become affordable for startups
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 28. AI white papers and case studies service
 
-- **What it does:** client interviews become a finished white paper or case study + design + tips on where to distribute it
+- **What it does:** client interviews become a finished white paper (an in-depth expert report) or case study (the story of how a client's problem was solved) + design + tips on where to distribute it
 - **Who the client is:** SaaS companies that sell to businesses, enterprise software makers
 - **How you get paid:** $1,500-7,500 per piece or a $3-15K monthly retainer
-- **Tools:** Claude + Otter.ai + Figma + Notion + InDesign
+- **Tools:** Claude + Otter.ai + Figma + Notion + InDesign (Adobe's page layout software)
 - **Difficulty:** 🟡 medium (you need to understand B2B content)
 - **Competition:** 🟢 low (a specialized service)
 - **Why it works in 2026:** B2B sales run on trust, and trust runs on case studies; AI lets you produce more of them
@@ -842,13 +838,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 29. AI customer story production
 
-- **What it does:** a client interview becomes a blog post + a video + social clips + a slide for the sales deck
+- **What it does:** a client interview becomes a blog post + a video + social clips + a slide for the sales presentation
 - **Who the client is:** SaaS companies that sell to businesses, and agencies that need examples of happy clients
 - **How you get paid:** $1-3K per story or a $2-5K monthly subscription for 2-4 stories
 - **Tools:** Claude + Loom + Descript + Canva + Stripe
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟢 low
-- **Why it works in 2026:** stories from happy clients are the most persuasive sales tool there is; with AI you can make 5 times more of them
+- **Why it works in 2026:** stories from happy clients are among the most convincing things a buyer can see; AI turns one interview into several formats at once
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -858,55 +854,55 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** raw footage becomes an edited video (versions for different platforms) + captions + music + thumbnails
 - **Who the client is:** YouTubers, agencies, course creators (anyone who makes content)
 - **How you get paid:** $499-2,499 a month for 4-10 videos
-- **Tools:** Claude + Descript + Submagic + ElevenLabs + Frame.io
+- **Tools:** Claude + Descript + Submagic (AI captions and short clips) + ElevenLabs + Frame.io (Adobe's service for reviewing videos with the client)
 - **Difficulty:** 🟡 medium (you need a feel for video)
 - **Competition:** 🟡 medium (there are plenty of editors, but with AI you can take on more work)
-- **Why it works in 2026:** video is everywhere and editing is the bottleneck; AI makes it 5 times faster
+- **Why it works in 2026:** video is everywhere and editing is the bottleneck; AI takes over the routine part (captions, cuts, versions for each platform), and the editor keeps the creative part
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 ### Category 3: AI for customer support and sales (10 ideas)
 
-🎨 **Picture this:** factories automated the assembly line. AI automates **the conversation with the customer**, the most expensive part of a business.
+🎨 **Picture this:** factories automated the assembly line. AI automates **the conversation with the customer**, a part of the business that takes up a lot of staff time.
 
 ---
 
 #### 31. AI chat for niche online stores
 
-- **What it does:** trained on the store's catalog and FAQ, it gives shoppers support around the clock and collects contact details from potential customers
+- **What it does:** connected to the store's catalog and FAQ (frequently asked questions), it gives shoppers support around the clock and collects contact details from potential customers
 - **Who the client is:** Shopify stores doing $50K-2M a year (too small for an in-house support team and too big to go without one)
 - **How you get paid:** $49-299 a month per store + a fee for messages above the limit
-- **Tools:** Claude + Crisp or Intercom + Shopify API + Stripe
+- **Tools:** Claude + Crisp or Intercom (customer support chat for websites) + the Shopify API + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🔴 high (Tidio and Drift already exist, but AI-based options are cheaper)
-- **Why it works in 2026:** Shopify store owners don't like staffing live chat; AI resolves 80% of requests with no human involved
+- **Competition:** 🔴 high (established products exist, such as Tidio with its AI agent and Intercom with its AI agent Fin; a service tuned to one niche can still stand out)
+- **Why it works in 2026:** many questions in a store repeat (delivery, sizes, returns); AI answers them at any hour, and a person handles the rest
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 32. AI voice agent for restaurants and clinics
 
-- **What it does:** answers calls + books a table or an appointment + answers common questions + hands off to a person when needed
-- **Who the client is:** restaurants, clinics and salons that miss 30% of their calls
+- **What it does:** answers calls (and tells callers up front that they're talking to AI) + books a table or an appointment + answers common questions + hands off to a person when needed
+- **Who the client is:** restaurants, clinics and salons that miss calls at busy times
 - **How you get paid:** $199-799 a month + $0.10-0.25 per minute of conversation
-- **Tools:** Vapi or Retell + Claude + Twilio + Calendly + Toast or Square
-- **Difficulty:** 🟡 medium (you'll have to learn voice technology)
+- **Tools:** Vapi or Retell AI (platforms for AI phone agents) + Claude + Twilio (phone numbers and calls) + Calendly + Toast or Square
+- **Difficulty:** 🟡 medium (you'll have to learn voice technology; for clinics, HIPAA applies and you need a BAA; calling people with an AI voice requires their prior consent under the TCPA, the US law on automated calls and texts)
 - **Competition:** 🟡 medium (there are agencies building on Vapi and Retell, but focusing on one industry wins)
-- **Why it works in 2026:** every missed call costs a restaurant or clinic $50-200, and AI picks up 80% of those calls
+- **Why it works in 2026:** a missed call is often a lost booking; an AI agent answers at any hour, even when the staff is busy
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md); growing-demand area #1 in Section H
 
 ---
 
 #### 33. AI lead qualification
 
-- **What it does:** incoming leads have a conversation with AI, which decides whether each potential client is a fit and books meetings
+- **What it does:** incoming leads (potential clients) have a conversation with AI, which checks whether each one is a fit and books meetings with a salesperson
 - **Who the client is:** SaaS companies that sell to businesses, and agencies with a large flow of inbound leads
 - **How you get paid:** $499-2,499 a month + $20-100 per qualified lead
-- **Tools:** Claude + HubSpot or Pipedrive + Calendly + Twilio + Slack
+- **Tools:** Claude + HubSpot or Pipedrive + Calendly + Twilio (text messages only to people who agreed to receive them) + Slack (work chat for teams)
 - **Difficulty:** 🟡 medium (you need to understand sales)
-- **Competition:** 🟡 medium (Drift, Qualified, but they cost more)
-- **Why it works in 2026:** a sales development rep costs a company $60-100K a year; AI costs a tenth of that and works around the clock
+- **Competition:** 🟡 medium (established products exist, such as Qualified; a narrow service for one industry can still stand out)
+- **Why it works in 2026:** a person who sorts incoming requests can't answer at night or instantly; AI replies right away at any hour and passes the right people on to a salesperson
 - **Related lessons:** [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
@@ -916,7 +912,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** sets up a CRM + automates workflows + connects it to email and calendar + trains the team
 - **Who the client is:** small B2B companies (5-50 people) that track clients in spreadsheets
 - **How you get paid:** $2-10K for setup + $500-2K a month
-- **Tools:** Claude + HubSpot or Pipedrive + Zapier or Make + Calendly + your own AI tools
+- **Tools:** Claude + HubSpot or Pipedrive + Zapier or Make (services that connect apps and automate steps between them, no code) + Calendly + your own AI tools
 - **Difficulty:** 🟡 medium (you need hands-on CRM experience)
 - **Competition:** 🟡 medium (there are lots of HubSpot partners, but an AI focus sets you apart)
 - **Why it works in 2026:** many small B2B companies still don't use a CRM, and AI helps them get one up and running
@@ -927,10 +923,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 #### 35. AI cold email service (sequences and follow-ups)
 
 - **What it does:** a list of target companies + an ICP (ideal customer profile) go in; personalized cold email sequences + follow-ups + reply handling come out
-- **Who the client is:** B2B sales teams, agencies, founders who need outbound sales
+- **Who the client is:** B2B sales teams, agencies, founders who need outbound sales (reaching out to people who haven't contacted them yet)
 - **How you get paid:** $299-1,499 a month + a bonus for every meeting booked
-- **Tools:** Claude + Apollo or Lemlist + inbox "warm-up" tools + a CRM integration
-- **Difficulty:** 🟡 medium (cold email is a subtle craft)
+- **Tools:** Claude + Apollo or lemlist (contact databases and outreach tools) + inbox "warm-up" tools (they slowly build a new mailbox's reputation so emails don't land in spam) + a CRM integration
+- **Difficulty:** 🟡 medium (cold email is a subtle craft, and anti-spam rules apply: in the US, the CAN-SPAM law requires an honest sender and subject line, a postal address and a working way to unsubscribe, even for business email)
 - **Competition:** 🔴 high (Instantly, Apollo, Outreach, but AI personalization wins)
 - **Why it works in 2026:** cold emails without personalization don't work, and AI personalizes them at scale
 - **Related lessons:** [Sales funnel](42b-funnel-design-ai-products.md)
@@ -939,13 +935,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 36. AI demo booking bot
 
-- **What it does:** a website visitor has a conversation with AI, and a qualified prospect lands on the calendar
+- **What it does:** a website visitor has a conversation with AI, and a potential client who fits gets a demo (a live showing of the product) booked on the calendar
 - **Who the client is:** SaaS companies that sell to businesses and get a lot of website traffic
 - **How you get paid:** $299-999 a month or $50-200 per booked demo
-- **Tools:** Claude + Calendly + HubSpot + a Drift-style widget
+- **Tools:** Claude + Calendly + HubSpot + a chat window on the website
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Chili Piper, Drift)
-- **Why it works in 2026:** people don't show up for 60% of demos; when AI checks their interest in advance, no-shows drop to 30%
+- **Competition:** 🟡 medium (established products exist, such as Chili Piper and Qualified)
+- **Why it works in 2026:** when interest is checked in advance and the meeting is booked right away, fewer people skip the demo, and salespeople spend their time on those who fit
 - **Related lessons:** [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
@@ -957,48 +953,48 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **How you get paid:** $499-2,499 a month per company
 - **Tools:** Claude + a product knowledge base + Slack or Intercom + Loom
 - **Difficulty:** 🟡 medium (you need to know the product)
-- **Competition:** 🟡 medium (Pendo, Userflow, but AI-based options are cheaper)
-- **Why it works in 2026:** the first days decide whether a customer stays, and with AI that path is equally good for everyone
+- **Competition:** 🟡 medium (established products exist, such as Pendo and Userflow; a service for one industry can still stand out)
+- **Why it works in 2026:** the first days set the tone for working with a product; with AI, this path goes equally well for every new customer
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 38. AI customer feedback analysis
 
-- **What it does:** customer feedback (reviews, support tickets, surveys) becomes main themes + sentiment + a priority list
-- **Who the client is:** product teams, customer success teams
+- **What it does:** customer feedback (reviews, support requests, surveys) becomes main themes + sentiment (whether people are happy or unhappy) + a priority list
+- **Who the client is:** product teams, customer success teams (the people who help clients get results from the product)
 - **How you get paid:** $299-1,499 a month
-- **Tools:** Claude + a Zendesk or Intercom integration + an analytics dashboard
+- **Tools:** Claude + an integration with Zendesk or Intercom (customer support software) + an analytics dashboard (one screen with the key charts)
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Productboard, Canny, but AI summarizes faster)
-- **Why it works in 2026:** product managers spend time sorting feedback by hand; AI does it 10 times faster
+- **Competition:** 🟡 medium (established products exist, such as Productboard and Canny, and both already use AI; a hands-on service can still stand out)
+- **Why it works in 2026:** sorting feedback by hand takes a lot of time; AI groups it by theme quickly, and people decide what to fix first
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 39. AI review replies (Google/Yelp)
 
-- **What it does:** a new review comes in, AI drafts a personal reply, the owner approves it, and the reply is posted
+- **What it does:** a new review comes in, AI drafts a personal reply, and the reply is posted only after the owner approves it
 - **Who the client is:** local businesses (restaurants, hotels, home service companies)
 - **How you get paid:** $99-399 a month per location
-- **Tools:** Claude + Google Business Profile API + Yelp API + an alert system
+- **Tools:** Claude + the Google Business Profile API (it can post the approved replies; access needs Google's approval) + Yelp (the owner posts the reply in Yelp for Business: Yelp's reply API is open only to approved partners) + an alert system
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Birdeye, Podium, but they cost more)
-- **Why it works in 2026:** replying to reviews affects search ranking and how people see the business, and small business owners have no time for it
+- **Competition:** 🟡 medium (established products exist, such as Birdeye and Podium; a narrow service for one industry can still stand out)
+- **Why it works in 2026:** Google lists replying to reviews among the ways to improve a business's local ranking, replies shape how people see the business, and small business owners have no time for it
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 40. AI instant-quote bot for home service businesses
 
-- **What it does:** a request from the website turns into a conversation with AI, an instant price estimate and a booked service call
-- **Who the client is:** home service businesses (plumbing, HVAC, cleaning, landscaping)
+- **What it does:** a request from the website turns into a conversation with AI, an instant rough price estimate (the final price is set after the visit) and a booked service call
+- **Who the client is:** home service businesses (plumbing, HVAC, meaning heating and air conditioning, cleaning, landscaping)
 - **How you get paid:** $199-799 a month per business
-- **Tools:** Claude + Twilio + Calendly + Stripe + photo upload
+- **Tools:** Claude + Twilio (text messages only to customers who asked to be contacted) + Calendly + Stripe + photo upload
 - **Difficulty:** 🟡 medium (every service has its own pricing logic)
 - **Competition:** 🟢 low (focusing on one industry wins)
 - **Why it works in 2026:** customers want to know the price right away (Amazon trained them to expect that)
-- **Related:** a growing-demand area for Latin America (see Section E)
+- **Related:** niche 20 in Section E (AI for home services)
 
 ---
 
@@ -1010,78 +1006,78 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 41. AI bookkeeping service for freelancers
 
-- **What it does:** bank statements become categorized transactions, reconciliations, tax-ready reports and prepared 1099 forms (a US tax form)
+- **What it does:** bank statements become categorized transactions, reconciliations and tax-ready reports, checked against the 1099 forms (US tax forms in which clients report what they paid a freelancer); the service only organizes the numbers, and the tax return is filed by the client or their tax professional
 - **Who the client is:** freelancers and self-employed people earning $50K-300K a year
 - **How you get paid:** $49-149 a month per person
 - **Tools:** Claude + Plaid + QuickBooks + an AI transaction classifier + Stripe
 - **Difficulty:** 🟡 medium (you need bookkeeping basics)
-- **Competition:** 🟡 medium (Pilot and other online bookkeeping services, but they're usually more expensive)
-- **Why it works in 2026:** the number of freelancers grows 5% a year, and taxes are a big headache for them
+- **Competition:** 🟡 medium (established online bookkeeping services exist, such as Pilot; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** freelancers keep their own books and pay their own taxes, and sorting it all out at the end of the year is hard; tidy monthly books make that easier
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 42. AI receipt and invoice processing
 
-- **What it does:** a photo or an email with a receipt or invoice gets categorized, entered into the books, and any suspicious amounts flagged
+- **What it does:** a photo or an email with a receipt or invoice gets categorized, entered into the books, and any suspicious amounts flagged (the accountant checks the flagged items)
 - **Who the client is:** small businesses, freelancers, finance teams
 - **How you get paid:** $29-199 a month per company + a fee per receipt
-- **Tools:** Claude + text recognition (Mindee/Veryfi) + QuickBooks/Xero + Plaid
+- **Tools:** Claude + text recognition (Mindee or Veryfi) + QuickBooks or Xero (accounting software) + Plaid
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Dext, formerly Receipt Bank, and Hubdoc, but services built around AI from the start can be cheaper)
-- **Why it works in 2026:** there's still a lot of manual receipt work, and AI cuts it down to 5%
+- **Competition:** 🟡 medium (established products exist, such as Dext, formerly Receipt Bank, and Hubdoc from Xero; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** there's still a lot of manual work with receipts; AI takes over sorting and data entry, and a person checks only the flagged items
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 43. AI meeting notes and action items service
 
-- **What it does:** a meeting recording becomes structured notes, a task list with owners and a follow-up email to the attendees
+- **What it does:** a meeting recording (everyone in the meeting knows it's being recorded) becomes structured notes, a task list with owners and a follow-up email to the attendees
 - **Who the client is:** teams of 5-50 people, agencies, consultants
 - **How you get paid:** $19-49 a month per user
-- **Tools:** Claude + Otter/Fireflies + Notion/Linear + Slack
+- **Tools:** Claude + Otter.ai or Fireflies (meeting recording and transcription) + Notion or Linear (task tracking) + Slack
 - **Difficulty:** 🟢 easy
-- **Competition:** 🔴 high (Otter, Fireflies, Granola, but whoever specializes in one industry wins)
-- **Why it works in 2026:** every meeting needs notes, and the competitors charge a lot
+- **Competition:** 🔴 high (Otter.ai, Fireflies, Granola, but whoever specializes in one industry wins)
+- **Why it works in 2026:** every meeting needs notes and a list of who does what; a service tuned to one industry knows its terms and the formats it needs
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 44. AI hiring assistant
 
-- **What it does:** screens resumes, scores the match with the job, suggests interview questions and provides reference-check templates
-- **Who the client is:** small companies (10-100 people) with no HR department
+- **What it does:** screens resumes, scores the match with the job, suggests interview questions and provides reference-check templates (AI sorts and suggests; people make every hiring decision)
+- **Who the client is:** small companies (10-100 people) with no HR (human resources) department
 - **How you get paid:** $199-999 a month + a fee for each successful hire
-- **Tools:** Claude + an applicant tracking system (ATS) integration + LinkedIn API (an API is a way to connect to a service from your own programs) + something along the lines of Greenhouse
-- **Difficulty:** 🟡 medium (you have to follow employment law)
-- **Competition:** 🟡 medium (Greenhouse, Lever, but a full applicant tracking system is expensive)
-- **Why it works in 2026:** hiring is a bottleneck, and with AI, resumes get screened 5 times faster
+- **Tools:** Claude + an integration with an applicant tracking system (ATS), such as Greenhouse or Lever + LinkedIn (access to its recruiting API is available only through approved partner integrations)
+- **Difficulty:** 🟡 medium (you have to follow employment law: US anti-discrimination law (Title VII) applies even when a tool helps choose candidates, and some places regulate automated hiring tools; New York City, for example, requires a bias audit and notice to candidates)
+- **Competition:** 🟡 medium (established applicant tracking systems exist, such as Greenhouse, which already uses AI, and Lever; a simple service for small companies can still stand out)
+- **Why it works in 2026:** a small company hires rarely and has no recruiter; AI helps sort resumes and prepare interviews, while people make the decisions
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 45. AI performance review assistant
 
-- **What it does:** project data and peer feedback become draft performance reviews and one-on-one meeting agendas
+- **What it does:** project data and peer feedback become draft performance reviews and one-on-one meeting agendas (the manager edits and approves every review; AI doesn't decide pay or promotions)
 - **Who the client is:** managers at growing companies where HR is stretched thin
 - **How you get paid:** $49-149 a month per manager or $499-2K a month per company
-- **Tools:** Claude + a 15Five/Lattice integration + Slack + Notion
+- **Tools:** Claude + an integration with 15Five or Lattice (performance management software) + Slack + Notion
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟢 low (a narrow niche)
-- **Why it works in 2026:** few managers get trained, and AI gives them a ready-made starting point
+- **Competition:** 🟡 medium (performance management software such as 15Five already helps managers write reviews with AI; a simple service for small companies can still stand out)
+- **Why it works in 2026:** a fair, specific review takes time; AI gathers the facts and a first draft, and the manager adds their own judgment
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 46. AI compliance documentation service
 
-- **What it does:** the type of business goes in; drafts of the required documents for standards and laws (SOC 2, HIPAA, GDPR) come out and get kept up to date
+- **What it does:** the type of business goes in; drafts of the policies and documents needed for a security audit or a data protection law come out and get kept up to date (SOC 2: a security audit that business clients often ask for; HIPAA; GDPR: the EU General Data Protection Regulation); a lawyer or an auditor reviews them
 - **Who the client is:** SaaS startups (SaaS means software sold by subscription), healthcare, small financial companies
 - **How you get paid:** $499-2,999 a month or a one-time $5-25K project
 - **Tools:** Claude + a Vanta/Drata integration + legal templates + version control
-- **Difficulty:** 🔴 hard (the documents must be accurate)
-- **Competition:** 🟡 medium (Vanta and Drata exist, but they're expensive)
-- **Why it works in 2026:** without SOC 2 it's hard to sell B2B (business to business); AI cuts the cost of preparing it by 80%
+- **Difficulty:** 🔴 hard (the documents must be accurate; SOC 2 is not a law: an independent accountant does the audit under the rules of the AICPA, the US accountants' association)
+- **Competition:** 🟡 medium (compliance platforms such as Vanta and Drata already exist; a hands-on service for small companies can still stand out)
+- **Why it works in 2026:** many business clients ask for a SOC 2 report before they buy; AI speeds up drafting the policies, while the audit itself is done by an independent auditor
 - **Related lessons:** [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
@@ -1104,10 +1100,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** point-of-sale (POS) data, supplier catalogs and sales trends become reorder requests and warnings about slow-moving stock
 - **Who the client is:** Shopify stores, small retail chains
 - **How you get paid:** $99-499 a month per store
-- **Tools:** Claude + Shopify POS/Square POS + supplier APIs + alerts
+- **Tools:** Claude + Shopify POS or Square POS + supplier price lists (or a supplier's API, where there is one) + alerts
 - **Difficulty:** 🟡 medium
-- **Competition:** 🟡 medium (Inventory Planner, Cogsy)
-- **Why it works in 2026:** there's little on offer for small stores, and AI gives them big-company analytics
+- **Competition:** 🟡 medium (established products exist, such as Inventory Planner)
+- **Why it works in 2026:** a small store rarely has its own analyst; AI gives it the kind of analysis big companies have
 - **Related lessons:** [Unit economics](99b-unit-economics-deep.md)
 
 ---
@@ -1130,29 +1126,29 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** orders, suppliers and shipping data become optimization recommendations and risk warnings
 - **Who the client is:** small product companies (online stores, manufacturers)
 - **How you get paid:** $499-2,999 a month per company
-- **Tools:** Claude + an ERP integration (software that tracks a company's resources) + shipping carrier APIs + market data
+- **Tools:** Claude + an ERP integration (software that tracks a company's resources) + an API connection to shipping carriers + market data
 - **Difficulty:** 🔴 hard (you need industry knowledge)
-- **Competition:** 🟡 medium (the big SaaS players only work with large companies)
-- **Why it works in 2026:** supply problems since the pandemic haven't gone away, and AI scales easily
+- **Competition:** 🟡 medium (supply chain software already exists; a simple, hands-on service for small companies can still stand out)
+- **Why it works in 2026:** a delay from one supplier can stop sales; AI watches orders and deliveries and warns about risks early
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 ### Category 5: AI in education and training (10 ideas)
 
-🎨 **Picture this:** in the TV era, education was one-size-fits-all. In the AI era, it becomes **personal** for everyone: AI is a private tutor for $20 a month.
+🎨 **Picture this:** in the TV era, education was one-size-fits-all. In the AI era, it becomes **personal** for everyone: AI is a private tutor for about $20 a month (the price of a paid Claude or ChatGPT plan as of October 2026).
 
 ---
 
 #### 51. AI tutor for one specific exam (SAT, GMAT, IELTS)
 
-- **What it does:** practice questions that adapt to the student, explanations, a focus on weak spots, a predicted score
+- **What it does:** practice questions that adapt to the student, explanations, a focus on weak spots, an estimated score (an estimate, not a guarantee)
 - **Who the client is:** people preparing for high-stakes exams
 - **How you get paid:** $29-99 a month or a one-time prep package for $299-999
-- **Tools:** Claude + a bank of practice questions + spaced repetition + Stripe
-- **Difficulty:** 🟡 medium (you need to know the exam content well)
+- **Tools:** Claude + a bank of your own practice questions + spaced repetition (review at growing intervals) + Stripe (online payments)
+- **Difficulty:** 🟡 medium (you need to know the exam content well; the exam names are registered trademarks, so follow each owner's rules for using the name, state that you are not affiliated with it, and write your own questions instead of copying official ones)
 - **Competition:** 🔴 high (Khan Academy for free, Magoosh for a fee)
-- **Why it works in 2026:** personalized AI prep beats generic prep, and people are willing to pay for exam prep
+- **Why it works in 2026:** practice that adapts to each student's weak spots is more useful than the same set of questions for everyone, and people already pay for exam prep
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
@@ -1160,25 +1156,25 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 #### 52. AI language learning app
 
 - **What it does:** conversation practice, grammar exercises, spoken pronunciation feedback
-- **Who the client is:** intermediate learners (Duolingo is too easy for them now, and tutors are too expensive)
+- **Who the client is:** intermediate learners (they have outgrown beginner lessons, and a private tutor costs too much for daily practice)
 - **How you get paid:** $19-49 a month or lifetime access for $299
-- **Tools:** Claude + ElevenLabs + Whisper + spaced repetition + Stripe
+- **Tools:** Claude + ElevenLabs (AI voice) + a speech-to-text service (for example, OpenAI's; it turns speech into text) + spaced repetition + Stripe
 - **Difficulty:** 🟡 medium
-- **Competition:** 🔴 high (Duolingo, Babbel, Lingoda)
-- **Why it works in 2026:** Duolingo gets boring, while a live ChatGPT-style conversation keeps people engaged
+- **Competition:** 🔴 high (Duolingo, Babbel, Lingoda; they now offer AI conversation practice too)
+- **Why it works in 2026:** to speak a language you have to speak it a lot, and an AI conversation partner is available at any hour, on any topic the learner picks
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 53. Coding bootcamp with an AI mentor
 
-- **What it does:** a well-designed curriculum, a 24/7 AI mentor, project reviews, job search prep
+- **What it does:** a well-designed curriculum, a 24/7 AI mentor, project reviews, job search prep (with no job guarantee)
 - **Who the client is:** career changers who want to learn to code
 - **How you get paid:** $99-499 a month or $1,500-5,000 per cohort seat
-- **Tools:** Claude + Cursor + GitHub + Loom + a community platform
+- **Tools:** Claude + Cursor (AI coding tool) + GitHub (where developers store and share code) + Loom (screen and video recording) + a community platform
 - **Difficulty:** 🟡 medium (you need to design the curriculum)
 - **Competition:** 🔴 high (Codecademy and many online bootcamps)
-- **Why it works in 2026:** AI becomes a personal mentor, which is exactly what regular bootcamps were missing
+- **Why it works in 2026:** in a group course one mentor is shared among many students, while an AI mentor answers each student's question right away, at any hour
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
@@ -1188,10 +1184,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a photo of what's in your kitchen becomes recipe ideas, step-by-step instructions, technique videos and answers to questions
 - **Who the client is:** home cooks who want to get better
 - **How you get paid:** $9-29 a month or $5 per lesson
-- **Tools:** Claude + Vision API (image recognition) + embedded YouTube videos + Stripe
+- **Tools:** Claude with image recognition (it can read photos) + embedded YouTube videos + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (BBC Good Food, NYT Cooking)
-- **Why it works in 2026:** AI is a personal chef for any cuisine in the world
+- **Competition:** 🟡 medium (Good Food, formerly BBC Good Food; NYT Cooking)
+- **Why it works in 2026:** AI can suggest a dish from what is already in the fridge and answer questions while you cook, which a printed recipe can't do
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1201,10 +1197,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a recording of you playing gets AI feedback (rhythm, pitch accuracy, technique) and a practice plan
 - **Who the client is:** people learning an instrument (kids and adults)
 - **How you get paid:** $19-49 a month
-- **Tools:** Claude + audio analysis + Whisper + spaced repetition
+- **Tools:** Claude + audio analysis software (it measures pitch and rhythm in a recording) + spaced repetition
 - **Difficulty:** 🔴 hard (audio analysis technology)
 - **Competition:** 🟡 medium (Yousician, Simply Piano)
-- **Why it works in 2026:** a music teacher is expensive ($50-100 an hour), while AI is $20 a month
+- **Why it works in 2026:** a teacher hears you only during the lesson, while most practice happens alone; AI feedback after every practice session fills that gap
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1214,10 +1210,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** you upload a video (running, swimming, a golf swing) and get AI feedback, drills and an improvement plan
 - **Who the client is:** amateur athletes and people who train for fun
 - **How you get paid:** $19-49 a month
-- **Tools:** Claude + Vision (pose detection) + YouTube + Stripe
+- **Tools:** Claude + pose detection software (it finds the position of the body in each frame of a video) + YouTube + Stripe
 - **Difficulty:** 🔴 hard (pose detection accuracy)
-- **Competition:** 🟡 medium (HomeCourt for basketball, Onform for golf)
-- **Why it works in 2026:** coaches are expensive, and AI makes video analysis affordable for everyone
+- **Competition:** 🟡 medium (HomeCourt for basketball, Onform for video analysis in many sports)
+- **Why it works in 2026:** a personal coach costs more than many amateurs can pay, and AI makes video review of technique affordable
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
@@ -1230,20 +1226,20 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **Tools:** Claude + voice analysis + simulations + an LMS integration (a learning management system for online training)
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (LinkedIn Learning, Coursera Plus)
-- **Why it works in 2026:** employee training budgets are growing, and AI makes training personal
+- **Why it works in 2026:** skills like negotiation are learned by practicing, not by watching a video; AI lets each employee rehearse a hard conversation as many times as needed
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 58. AI compliance training for small businesses
 
-- **What it does:** required training (HIPAA, workplace harassment prevention, OSHA safety) in an interactive format, with completion tracking and certificates
+- **What it does:** legally required staff training in an interactive format, with completion tracking and certificates. Examples from the US: HIPAA (the Health Insurance Portability and Accountability Act, which protects health data) for healthcare staff, workplace harassment prevention (required in some states, for example California), and workplace safety under OSHA (the Occupational Safety and Health Administration, a federal agency)
 - **Who the client is:** small businesses (10-200 employees) that need to meet these requirements
 - **How you get paid:** $49-149 a month per employee
 - **Tools:** Claude + a learning management system + a certificate generator + a tracking dashboard
-- **Difficulty:** 🟡 medium (the requirements have to be conveyed accurately)
+- **Difficulty:** 🟡 medium (the requirements have to be conveyed accurately: AI drafts the course, and a qualified specialist, such as an employment lawyer or a safety professional, reviews it before employees see it)
 - **Competition:** 🟡 medium (Trainual, EasyLlama)
-- **Why it works in 2026:** this training is mandatory, and AI makes it engaging
+- **Why it works in 2026:** employers must give some of this training by law (which one depends on the industry and the state), and a short interactive course is easier to finish than a long slide deck
 - **Related lessons:** [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
@@ -1251,83 +1247,83 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 #### 59. AI onboarding for new employees
 
 - **What it does:** a new hire gets a personal 30/60/90-day plan, answers to their questions and progress tracking
-- **Who the client is:** companies that hire 5-50 people a year and have no established onboarding system
+- **Who the client is:** companies that hire 5-50 people a year and have no established onboarding (the process of getting a new employee started)
 - **How you get paid:** $99-499 a month per company + a fee per new hire
-- **Tools:** Claude + Notion/Confluence + Slack + Loom + progress tracking
+- **Tools:** Claude + Notion (notes and documents) or Confluence (a team knowledge base) + Slack (work chat) + Loom + progress tracking
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium (Trainual and similar onboarding tools)
-- **Why it works in 2026:** good onboarding keeps people around, and AI makes it equally good for everyone
+- **Why it works in 2026:** good onboarding helps people settle in and stay, and AI gives every newcomer the same clear plan and quick answers
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 60. Personal AI career coach
 
-- **What it does:** a resume, goals and experience become career path options, interview prep and networking advice
+- **What it does:** a resume, goals and experience become career path options, interview prep and networking advice (it helps you prepare; it does not promise a job)
 - **Who the client is:** mid-career professionals who want a change
 - **How you get paid:** $49-149 a month or a package for $299-1,499
-- **Tools:** Claude + LinkedIn API + job boards + mock interview practice
+- **Tools:** Claude + the client's resume and LinkedIn profile (the client uploads them; LinkedIn gives outside apps almost no profile data without its approval) + job boards + mock interview practice
 - **Difficulty:** 🟡 medium
-- **Competition:** 🟡 medium (Career Karma, Tealcareer)
-- **Why it works in 2026:** people change jobs more and more often; instead of a personal coach at $200 an hour, there's AI at $50 a month
+- **Competition:** 🟡 medium (Career Karma matches career changers with training programs; Teal offers resume and job search tools)
+- **Why it works in 2026:** a personal career coach costs more than many people can pay, and AI makes step-by-step preparation for a job change affordable
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 ### Category 6: AI for local businesses (10 ideas)
 
-🎨 **Picture this:** the corner store used to run on knowing the neighbors. Now it runs on Google Maps, Yelp and Instagram. Here, AI is the marketer, the manager and the assistant all in one.
+🎨 **Picture this:** the corner store used to run on knowing the neighbors. Now it runs on Google Maps, Yelp (a US review site for local businesses) and Instagram. Here, AI is the marketer, the manager and the assistant all in one.
 
 ---
 
 #### 61. AI restaurant menu and food photo makeover
 
-- **What it does:** the current menu gets better descriptions, AI-enhanced photos, pricing recommendations and seasonal updates
+- **What it does:** the current menu gets better descriptions, AI-enhanced photos (of the real dishes, so the menu doesn't mislead guests), pricing recommendations and seasonal updates
 - **Who the client is:** independent restaurants and cafes
 - **How you get paid:** $499-2K for setup + $99-299 a month
-- **Tools:** Claude + gpt-image-2 + photo enhancement + a point-of-sale (POS) integration
+- **Tools:** Claude + gpt-image-2 (OpenAI's image model, built into ChatGPT) + photo enhancement + a point-of-sale (POS) integration
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟢 low (a narrow service)
-- **Why it works in 2026:** reworking a menu can raise a restaurant's revenue by 15-30%, but restaurants don't know that
+- **Why it works in 2026:** clear descriptions and good photos help guests choose and order, and a small restaurant rarely has time to redo its menu itself
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 62. AI real estate listing service (Ecuador and Latin America)
 
-- **What it does:** property photos and details become a listing in two languages (Spanish and English), social media posts and a virtual tour script
+- **What it does:** property photos and details become a listing in two languages (Spanish and English), social media posts and a virtual tour script; the agent checks every fact before publishing
 - **Who the client is:** real estate agents in Latin America who work with Americans and other foreigners relocating there
 - **How you get paid:** $99-399 a month per agent + $10-30 per listing
-- **Tools:** Claude + Vision + Spanish-English translation + Buffer
-- **Difficulty:** 🟢 easy
-- **Competition:** 🟢 low (there's little on offer in Latin America)
-- **Why it works in 2026:** the real estate market in Latin America is growing and needs copy in both Spanish and English, and that's a niche
+- **Tools:** Claude with image recognition + Spanish-English translation + Buffer (schedules social media posts)
+- **Difficulty:** 🟢 easy (the rules on advertising property and on who may work as an agent differ by country: you write the texts, and the agent checks, publishes and answers for them)
+- **Competition:** 🟢 low (a narrow niche: two-language listings for foreign buyers)
+- **Why it works in 2026:** an agent who sells to foreigners needs every listing in Spanish and in English, and writing both by hand takes time
 - **Related:** an example for markets like Ecuador and Colombia
 
 ---
 
 #### 63. AI salon booking and hairstyle suggestions
 
-- **What it does:** a client's photo and wishes become haircut and styling options, a booking and a reminder
+- **What it does:** a client's photo (used only with their consent) and wishes become haircut and styling options, a booking and a reminder
 - **Who the client is:** independent hair salons and barbershops (1-10 chairs)
 - **How you get paid:** $99-299 a month per salon + $1-3 per booking
-- **Tools:** Claude + Vision + Calendly/Square Appointments + Stripe
+- **Tools:** Claude with image recognition + Calendly (online scheduling) or Square Appointments (booking software from Square) + Stripe
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium (Booksy, Vagaro)
-- **Why it works in 2026:** salons lose bookings, while AI takes them around the clock and helps the client choose a look
+- **Why it works in 2026:** a salon can't answer the phone while the stylist's hands are busy; AI takes bookings around the clock and helps the client choose a look
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 64. AI auto repair estimates
 
-- **What it does:** photos and a description of the problem become a diagnosis, an approximate repair cost and a parts list
+- **What it does:** photos and a description of the problem become a first guess at the cause (the mechanic confirms it after an inspection), an approximate repair cost and a parts list
 - **Who the client is:** independent auto repair shops, mobile mechanics
 - **How you get paid:** $99-399 a month per shop
-- **Tools:** Claude + Vision + an auto parts catalog API + chat with the customer
+- **Tools:** Claude with image recognition + an auto parts catalog API (API: a way for one program to connect to another) + chat with the customer
 - **Difficulty:** 🟡 medium (you need to know how cars work)
-- **Competition:** 🟡 medium (RepairPal, AutoMD)
-- **Why it works in 2026:** customers want to know the price right away, and AI gives them that
+- **Competition:** 🟡 medium (RepairPal)
+- **Why it works in 2026:** customers want a price before they drive in, and AI gives a first estimate while the mechanic is busy; the final price comes after the inspection
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1337,23 +1333,23 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** breed and service needed become a booking, reminders, groomer notes and photos for the pet owner
 - **Who the client is:** pet grooming salons, mobile groomers
 - **How you get paid:** $79-249 a month per business
-- **Tools:** Claude + Calendly + text messages + photo upload + Stripe
+- **Tools:** Claude + Calendly + text messages (SMS, with the customer's consent) + photo upload + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟢 low
-- **Why it works in 2026:** the pet services market is growing, and small groomers have few options
+- **Competition:** 🟡 medium (MoeGo and similar software for groomers)
+- **Why it works in 2026:** a groomer's hands are busy all day, so calls and messages go unanswered; AI takes bookings and sends reminders without interrupting the work
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 66. AI local event planner
 
-- **What it does:** an event idea becomes a venue search, vendor recommendations, budget tracking and guest RSVPs
+- **What it does:** an event idea becomes a venue search, vendor recommendations, budget tracking and guest RSVPs (replies to the invitation)
 - **Who the client is:** small event planning agencies, corporate event organizers
 - **How you get paid:** $199-999 a month or $500-5K per event
 - **Tools:** Claude + venue databases + Calendly + Stripe + email
 - **Difficulty:** 🟡 medium (you need event planning experience)
 - **Competition:** 🟢 low (a narrow specialty)
-- **Why it works in 2026:** event planning takes a lot of manual work, and AI cuts it in half
+- **Why it works in 2026:** event planning means many lists, calls and comparisons; AI takes over the lists and the first drafts so the planner can focus on the people
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1363,36 +1359,36 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a location and interests become a personal day plan with restaurants, things to do and transportation
 - **Who the client is:** tourism offices, hotels, Airbnb hosts
 - **How you get paid:** $99-499 a month per business or a white-label product under the client's brand for $999-5K
-- **Tools:** Claude + Google Maps + Booking.com API + multilingual support
+- **Tools:** Claude + Google Maps Platform (Google's map and place data for apps) + Booking.com's API (open only to its approved affiliate partners) + multilingual support
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (Tripadvisor, GuideAdvisor)
-- **Why it works in 2026:** tourism has recovered, and personal recommendations are 5 times more engaging
+- **Why it works in 2026:** travelers ask the same questions at every hour of the day, and AI answers each one with a plan that fits their interests and their language
 - **Related:** Latin American markets
 
 ---
 
 #### 68. AI admin assistant for daycare centers
 
-- **What it does:** schedules, meals, activities and parent updates become daily reports and photo roundups
+- **What it does:** schedules, meals, activities and parent updates become daily reports and photo roundups (children's photos and data are shared only with their parents' written consent)
 - **Who the client is:** daycare centers, in-home daycares and nannies
 - **How you get paid:** $99-399 a month per center
 - **Tools:** Claude + photo upload + scheduling + a parent app
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (Brightwheel)
-- **Why it works in 2026:** parents want to know how their child's day went, and AI takes over that routine
+- **Why it works in 2026:** parents want to know how their child's day went, and AI drafts the daily report so the staff can spend that time with the children
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 69. AI senior care coordinator
 
-- **What it does:** schedules, medications, family updates and emergency contacts in one place
+- **What it does:** schedules, medications, family updates and emergency contacts in one place (it keeps the schedule a doctor prescribed; it gives no medical advice)
 - **Who the client is:** home care agencies, family caregivers
 - **How you get paid:** $99-499 a month per agency or $29-99 a month per family
 - **Tools:** Claude + medication reminders + a family group chat + emergency alerts
-- **Difficulty:** 🟡 medium
-- **Competition:** 🟢 low (big agencies have tools, small ones don't)
-- **Why it works in 2026:** the number of older adults is growing, and coordinating their care is hard
+- **Difficulty:** 🟡 medium (this is health information: store it securely; if the agency is covered by HIPAA, you sign a BAA with it, a business associate agreement on how you protect patient data)
+- **Competition:** 🟢 low (check which tools agencies in your area already use)
+- **Why it works in 2026:** several relatives and caregivers have to share one schedule, and one place with reminders and updates makes that easier
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
@@ -1402,10 +1398,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** wedding details become vendor recommendations, a timeline, budget tracking and day-of coordination
 - **Who the client is:** small wedding planning agencies, couples planning their own wedding
 - **How you get paid:** $99-299 a month or $500-3K per wedding
-- **Tools:** Claude + vendor databases + Pinterest API + budget tracking
+- **Tools:** Claude + vendor databases + Pinterest's API (needs a business account and Pinterest's approval) + budget tracking
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (The Knot, Zola)
-- **Why it works in 2026:** more and more couples plan their own weddings; instead of a planner at $200 an hour, there's AI at $50 a month
+- **Why it works in 2026:** a wedding means many tasks, vendors and deadlines; AI keeps the list, the budget and the timeline in one place for couples who plan on their own
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1418,52 +1414,52 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 71. AI product description service for Shopify stores
 
-- **What it does:** a product photo and name become SEO-friendly descriptions (written to show up in search), bulleted key benefits, meta tags and product variants
-- **Who the client is:** Shopify sellers doing $10K-1M a year
+- **What it does:** a product photo and name become SEO-friendly descriptions (written to show up in search), bulleted key benefits, meta tags (short page descriptions for search engines) and product variants
+- **Who the client is:** sellers on Shopify (a platform for running an online store) doing $10K-1M a year
 - **How you get paid:** $49-299 a month per store + $1-5 per product
-- **Tools:** Claude + Vision + Shopify API + SearchFit SEO + Stripe
+- **Tools:** Claude with image recognition + the Shopify API (the store owner installs your app) + SearchFit (an SEO and AI-search visibility tool) + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Copy.ai, Jasper)
-- **Why it works in 2026:** online store catalogs keep growing, and AI cuts the time per product page by 90%
+- **Competition:** 🟡 medium (Shopify's own AI assistant, Sidekick, also writes descriptions; Copy.ai and Jasper are general AI marketing platforms)
+- **Why it works in 2026:** in a store with hundreds of products, few of them have a good description, and AI writes a first draft that the owner only has to check
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 72. AI customer support for Etsy sellers
 
-- **What it does:** an Etsy message comes in, AI drafts a personal reply, the seller approves it, and it goes out
-- **Who the client is:** Etsy sellers doing $20K-500K a year
+- **What it does:** a buyer's Etsy message comes in, AI drafts a personal reply using the order details, and the seller checks it and sends it from Etsy (the Etsy API gives no access to messages)
+- **Who the client is:** Etsy sellers (Etsy is a marketplace for handmade and vintage goods) doing $20K-500K a year
 - **How you get paid:** $29-99 a month per seller
-- **Tools:** Claude + Etsy API + an email integration
+- **Tools:** Claude + order details from the Etsy API (Etsy reviews each commercial app before granting access) + a simple form where the seller pastes the buyer's message
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟢 low (there are few tools made specifically for Etsy)
-- **Why it works in 2026:** Etsy sellers burn out on messages, and AI takes over 80% of them
+- **Competition:** 🟢 low (a narrow niche)
+- **Why it works in 2026:** many buyer questions repeat (shipping, sizes, custom orders), and a ready draft saves the seller time while keeping a personal tone
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 73. AI price optimization (dynamic pricing)
 
-- **What it does:** competitor prices, stock levels and demand become optimal price recommendations and automatic price updates
+- **What it does:** competitor prices, stock levels and demand become price recommendations and automatic price updates within the limits the store owner sets
 - **Who the client is:** Shopify stores, Amazon sellers
-- **How you get paid:** $99-499 a month + $0.10-1 per product (SKU)
-- **Tools:** Claude + a web scraper (a program that collects data from websites) + Shopify API + analytics
-- **Difficulty:** 🟡 medium (you need to understand pricing)
-- **Competition:** 🟡 medium (Prisync, Repricer Express)
-- **Why it works in 2026:** dynamic pricing can raise a store's margin by 5-10%
+- **How you get paid:** $99-499 a month + $0.10-1 per product variant (SKU, a stock-keeping unit)
+- **Tools:** Claude + a web scraper (a program that collects data from websites; use it only where the sites' terms allow) + the Shopify API + analytics
+- **Difficulty:** 🟡 medium (you need to understand pricing; each marketplace has its own pricing rules: Amazon's Fair Pricing Policy, for example, penalizes prices far above recent ones)
+- **Competition:** 🟡 medium (Prisync, RepricerExpress)
+- **Why it works in 2026:** competitors change prices often, and a small store can't check them by hand every day; automatic tracking keeps its prices current
 - **Related lessons:** [Unit economics](99b-unit-economics-deep.md)
 
 ---
 
 #### 74. AI product photo editing for online stores
 
-- **What it does:** amateur product photos get a professional white background, lighting and different variations
+- **What it does:** amateur product photos get a clean white background, better lighting and several variations (the photo must still show the real product)
 - **Who the client is:** small online stores, sellers on Etsy and other marketplaces
 - **How you get paid:** $1-5 per photo or a $49-199 monthly subscription
-- **Tools:** Claude (Vision) + gpt-image-2 + Cloudinary + Stripe
+- **Tools:** Claude (checks each photo) + gpt-image-2 (edits the images) + Cloudinary (image and video processing) + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🔴 high (Photoroom, Remove.bg)
-- **Why it works in 2026:** AI images have reached professional quality, and they cost less than a photo shoot
+- **Competition:** 🔴 high (Photoroom, remove.bg)
+- **Why it works in 2026:** a photo shoot for every product costs a small store too much, and AI quickly turns an ordinary phone photo into a clean product image
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
@@ -1473,10 +1469,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a return request gets the policy check, a shipping label and the refund, all automatically
 - **Who the client is:** Shopify stores with more than 100 returns a month
 - **How you get paid:** $99-499 a month or $1-3 per return
-- **Tools:** Claude + Shopify API + shipping services (ShipStation) + refunds through Stripe
+- **Tools:** Claude + the Shopify API + ShipStation (shipping and return labels) + refunds through Stripe
 - **Difficulty:** 🟡 medium
-- **Competition:** 🟡 medium (Loop, AfterShip Returns)
-- **Why it works in 2026:** returns make up 20-30% of online sales, and AI cuts the manual work on them in half
+- **Competition:** 🟡 medium (Loop Returns, AfterShip Returns)
+- **Why it works in 2026:** every return repeats the same steps (check the policy, make a label, issue the refund), and repeated steps are what automation handles best
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1486,50 +1482,50 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** social media trends, sales data and seasonality become product recommendations and design directions
 - **Who the client is:** small fashion brands, boutique buyers
 - **How you get paid:** $499-2,999 a month per brand
-- **Tools:** Claude + Instagram/TikTok APIs + sales data + market research
+- **Tools:** Claude + TikTok Creative Center (TikTok's site about trending content) + the brand's sales data + market research (neither Instagram's API nor TikTok's gives outside apps much trend data)
 - **Difficulty:** 🟡 medium (you need a feel for fashion)
-- **Competition:** 🟡 medium (WGSN is expensive; AI services are cheaper)
-- **Why it works in 2026:** fashion changes fast, and AI spots trends in real time
+- **Competition:** 🟡 medium (WGSN serves large brands; a narrow AI service for small brands can still stand out)
+- **Why it works in 2026:** fashion changes fast, and AI helps a small brand sort through many posts and its own sales to see what is gaining interest
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 77. AI personalization for small Shopify stores
 
-- **What it does:** visitor behavior becomes personal product recommendations, email content and landing pages
+- **What it does:** visitor behavior becomes personal product recommendations, email content and landing pages (one-page sites for one offer)
 - **Who the client is:** Shopify stores doing $100K-5M a year
 - **How you get paid:** $99-499 a month per store
-- **Tools:** Claude + Shopify API + Klaviyo + machine learning for personalization
+- **Tools:** Claude + the Shopify API + Klaviyo (email and SMS marketing for online stores) + machine learning for personalization
 - **Difficulty:** 🟡 medium
 - **Competition:** 🔴 high (Klaviyo, Nosto)
-- **Why it works in 2026:** personalization can raise a store's revenue by 15-25%, and there are few such solutions for small businesses
+- **Why it works in 2026:** shoppers respond better to products that match their interests, and a small store rarely has the time or staff to set this up on its own
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
-#### 78. AI review replies for Amazon sellers
+#### 78. AI review analysis for Amazon sellers
 
-- **What it does:** Amazon reviews become draft replies, product improvement ideas and flags on the problems to tackle first
+- **What it does:** Amazon reviews become a summary of what buyers praise and criticize, product improvement ideas and flags on the problems to tackle first (Amazon no longer lets sellers reply to reviews publicly, and a seller may not ask a buyer to change a review: the value is in fixing what buyers complain about)
 - **Who the client is:** Amazon sellers who get more than 50 reviews a month
 - **How you get paid:** $99-299 a month per seller
-- **Tools:** Claude + Amazon Seller API + alerts
+- **Tools:** Claude + review insights from Amazon's Selling Partner API (SP-API, available to brand owners) + alerts
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium (FeedbackWhiz)
-- **Why it works in 2026:** replies to reviews affect a product's search ranking and the share of visitors who buy
+- **Why it works in 2026:** reviews show what to fix in a product or its listing, and reading hundreds of them by hand takes too long
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 79. AI email marketing service for D2C brands
 
-- **What it does:** customer segments and the product catalog become personalized campaigns, automated email flows and A/B tests (comparing two versions)
+- **What it does:** customer segments and the product catalog become personalized campaigns, automated email flows and A/B tests (comparing two versions), sent only to people who agreed to receive them
 - **Who the client is:** D2C brands doing $100K-5M a year (too small for a full marketing department)
 - **How you get paid:** $499-2,999 a month per brand
-- **Tools:** Claude + Klaviyo/ConvertKit + Shopify + analytics
+- **Tools:** Claude + Klaviyo or Kit (formerly ConvertKit; an email newsletter platform) + Shopify + analytics
 - **Difficulty:** 🟡 medium (you need email marketing experience)
-- **Competition:** 🟡 medium (there are agencies, but AI services are cheaper)
-- **Why it works in 2026:** email is the main sales channel for D2C brands (30-40% of their revenue)
-- **Related lessons:** [Sales funnels for AI products](42b-funnel-design-ai-products.md)
+- **Competition:** 🟡 medium (email marketing agencies already serve these brands; a narrow AI-assisted service can still stand out)
+- **Why it works in 2026:** a brand's own email list is a channel it controls, unlike ads and social feeds, and regular, useful emails bring customers back
+- **Related lessons:** [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
 
@@ -1538,7 +1534,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a spreadsheet of products becomes a full catalog (Shopify, Amazon, Etsy) with photos, descriptions and SEO
 - **Who the client is:** new online sellers, brands launching a catalog
 - **How you get paid:** $5-25 per product or $500-5K per catalog
-- **Tools:** Claude + Vision + APIs for several marketplaces + Cloudinary
+- **Tools:** Claude with image recognition + the API of each marketplace (each one requires its own developer access) + Cloudinary
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟢 low
 - **Why it works in 2026:** new stores need a catalog in days, not weeks
@@ -1548,71 +1544,71 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Category 8: AI for creators and bloggers (10 ideas)
 
-🎨 **Picture this:** in the TV era, studios hired producers. In the AI era, **every creator** can have their own AI producer for $50 a month.
+🎨 **Picture this:** in the TV era, studios hired producers. In the AI era, **every creator** can have their own AI producer for the cost of a subscription.
 
 ---
 
 #### 81. AI personal brand manager
 
-- **What it does:** a content plan + draft posts + publishing to several platforms at once + analytics + replies to DMs
+- **What it does:** a content plan + draft posts + publishing to several platforms at once + analytics + draft replies to direct messages that the client sends personally (LinkedIn, for example, forbids bots that send messages or comments for you)
 - **Who the client is:** creators and professionals building a personal brand (1,000 to 50,000 followers)
 - **How you get paid:** $299-1,499 a month per creator
-- **Tools:** Claude + Buffer/Hypefury + LinkedIn API + analytics + Stripe
+- **Tools:** Claude + Buffer or Hypefury (post scheduling on several social networks) + analytics + Stripe
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium
-- **Why it works in 2026:** a personal brand has become career insurance, and creators want it all done for them
+- **Why it works in 2026:** a personal brand needs regular posts, and many professionals would rather pay for a done-for-you service than write every day
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
-#### 82. AI thread service for Twitter
+#### 82. AI thread service for X (formerly Twitter)
 
-- **What it does:** a topic becomes a Twitter/X thread written in a style that spreads well + scheduled posting + suggested replies to comments
+- **What it does:** a topic becomes an X thread (a chain of connected posts) written in a style that spreads well + scheduled posting + suggested replies to comments, which the client posts personally
 - **Who the client is:** writers, company founders, experts with a recognizable point of view
 - **How you get paid:** $99-299 a month per user
-- **Tools:** Claude + Twitter API + Hypefury + analytics
+- **Tools:** Claude + Buffer (schedules posts and threads on X) or the X API (paid per use; see X's developer site) + analytics
 - **Difficulty:** 🟢 easy
-- **Competition:** 🔴 high (Hypefury, Tweet Hunter)
-- **Why it works in 2026:** the thread is the main format for growing an audience on X
+- **Competition:** 🔴 high (Tweet Hunter and other X growth tools)
+- **Why it works in 2026:** a thread lets an expert explain one idea step by step, and writing threads regularly is hard for a busy person
 - **Related lessons:** [Lead magnets](39d-lead-magnets-funnels.md)
 
 ---
 
 #### 83. AI LinkedIn posts for executives
 
-- **What it does:** the executive's writing style + topics become LinkedIn posts + replies to comments + connection requests
+- **What it does:** the executive's writing style + topics become LinkedIn posts + draft replies to comments + a list of people worth connecting with (the executive sends replies and connection requests personally: LinkedIn forbids bots that do it)
 - **Who the client is:** B2B executives (at companies that sell to other companies), founders, firm partners
 - **How you get paid:** $999-3,999 a month per executive
 - **Tools:** Claude + LinkedIn + writing style analysis + scheduled posting
-- **Difficulty:** 🟡 medium (you need experience ghostwriting for executives)
-- **Competition:** 🟡 medium (services like this exist; with AI they're cheaper)
-- **Why it works in 2026:** LinkedIn has high free reach, and AI helps people post consistently
+- **Difficulty:** 🟡 medium (you need experience ghostwriting, that is, writing under an executive's name)
+- **Competition:** 🟡 medium (ghostwriting agencies already offer this; a narrow, hands-on service can still stand out)
+- **Why it works in 2026:** busy executives rarely find time to post regularly, and drafts in their own voice make it easy to keep going
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 84. AI YouTube scripts
 
-- **What it does:** a video idea becomes a fact-checked script + hook options for the opening + thumbnail ideas + a description
+- **What it does:** a video idea becomes a script with a source for every fact (the creator checks them) + hook options (a strong first line) for the opening + thumbnail ideas (the video's cover image) + a description
 - **Who the client is:** YouTube creators with 10,000 to 500,000 subscribers
 - **How you get paid:** $299-999 a month per channel
-- **Tools:** Claude + Perplexity + VidIQ + Stripe
+- **Tools:** Claude + Perplexity (AI search that shows its sources) + vidIQ (a YouTube growth tool) + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (1of10, VidIQ)
-- **Why it works in 2026:** the script decides whether people watch to the end, and with AI scripts get written 5 times faster
+- **Competition:** 🟡 medium (1of10, vidIQ)
+- **Why it works in 2026:** a clear script keeps viewers watching, and AI drafts it quickly so the creator has more time for filming
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 85. AI podcast guest booking agency
 
-- **What it does:** a guest's profile becomes a list of matching podcasts + pitch emails to hosts + scheduling + a prep sheet for the interview
+- **What it does:** a guest's profile becomes a list of matching podcasts + pitch emails (short personal offers) to hosts + scheduling + a prep sheet for the interview
 - **Who the client is:** authors, founders and experts who want to do a run of podcast appearances
 - **How you get paid:** $999-4,999 a month per client + a fee for each booked appearance
-- **Tools:** Claude + Listen Notes + Apollo + a CRM (a database of clients and deals) + Calendly
-- **Difficulty:** 🟡 medium
-- **Competition:** 🟡 medium (Interview Valet, PodcastGuests)
-- **Why it works in 2026:** podcasts build trust, and trust leads to sales; AI lets you pitch far more hosts
+- **Tools:** Claude + Listen Notes (a podcast search engine) + Apollo (a database of business contacts) + a CRM (a database of clients and deals) + Calendly
+- **Difficulty:** 🟡 medium (pitch emails must follow anti-spam rules: in the US, the CAN-SPAM Act requires an honest subject line, your postal address and an easy way to opt out)
+- **Competition:** 🟡 medium (Interview Valet, Podcast Guests)
+- **Why it works in 2026:** a podcast interview lets listeners get to know an expert, and AI helps prepare a personal pitch for each host instead of a generic one
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
@@ -1622,36 +1618,36 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** analytics from every platform become audience insights + content recommendations + a growth plan
 - **Who the client is:** mid-size creators with 10,000 to 500,000 followers
 - **How you get paid:** $99-499 a month per creator
-- **Tools:** Claude + the APIs of all the major social networks + an analytics dashboard
+- **Tools:** Claude + the statistics each platform gives the account owner (through its API or a data export, within that platform's rules) + an analytics dashboard
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (Sprout Social, Hootsuite)
-- **Why it works in 2026:** creators run several platforms blind, and AI pulls the data into one picture
+- **Why it works in 2026:** a creator runs several platforms, each with its own statistics, and AI pulls the numbers into one picture with plain conclusions
 - **Related lessons:** [Unit economics](99b-unit-economics-deep.md)
 
 ---
 
 #### 87. AI content repurposing (1 video, 20 posts)
 
-- **What it does:** a long video or podcast becomes 20+ pieces (clips, threads, posts, a newsletter issue)
-- **Who the client is:** long-form creators (podcast hosts, YouTubers, webinar hosts)
+- **What it does:** a long video or podcast is repurposed into 20+ pieces for different platforms (clips, threads, posts, an email newsletter issue)
+- **Who the client is:** long-form creators (podcast hosts, YouTube creators, webinar hosts)
 - **How you get paid:** $499-1,999 a month per creator
-- **Tools:** Claude + Descript + Submagic + Buffer + Stripe
+- **Tools:** Claude + Descript (edits video by transcript) + Submagic (captions and short videos) + Buffer + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Opus Clip, Munch)
-- **Why it works in 2026:** repurposing gets 10 times more reach, and creators don't have the hands for it
+- **Competition:** 🟡 medium (OpusClip and similar clip-making tools)
+- **Why it works in 2026:** each platform needs its own format, and cutting one long recording into many pieces by hand takes time creators don't have
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 88. AI sponsorship pitches
 
-- **What it does:** a creator's media kit + a list of target brands become personalized sponsorship pitches + response tracking
+- **What it does:** a creator's media kit (a short presentation of the creator for advertisers) + a list of target brands become personalized sponsorship pitches + response tracking
 - **Who the client is:** mid-size creators (10,000 to 500,000 followers)
 - **How you get paid:** $299-999 a month + a share of each deal (5-15%)
-- **Tools:** Claude + a brand database + LinkedIn + email
+- **Tools:** Claude + a brand database + LinkedIn + email (anti-spam rules apply to pitches)
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟢 low (a narrow specialty)
-- **Why it works in 2026:** sponsorships are creators' main source of money, and AI lets you pitch more brands
+- **Why it works in 2026:** brands look for creators whose audience matches their buyers, and a pitch that shows this fit works better than a generic one; AI helps prepare one for each brand
 - **Related lessons:** [Unit economics](99b-unit-economics-deep.md)
 
 ---
@@ -1660,24 +1656,24 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - **What it does:** an expert's topic becomes a full course curriculum + modules + lesson plans + quizzes + a sales page
 - **Who the client is:** experts who want to launch a course
-- **How you get paid:** $999-4,999 per project or a $499-1,999 monthly retainer
-- **Tools:** Claude + Teachable/Kajabi + Notion + Loom + Stripe
+- **How you get paid:** $999-4,999 per project or a $499-1,999 monthly retainer (a fixed monthly fee)
+- **Tools:** Claude + Teachable or Kajabi (platforms for selling online courses) + Notion + Loom + Stripe
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟢 low
-- **Why it works in 2026:** the online course market is growing, and with AI a course gets designed 5 times faster
+- **Why it works in 2026:** experts know their subject but rarely know how to turn it into a structured course, and AI helps lay out modules, lessons and quizzes quickly
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 90. AI newsletter growth service
 
-- **What it does:** an existing newsletter gets a growth plan + cross-promotions with other newsletters + lead magnets + subscriber retention
+- **What it does:** an existing email newsletter gets a growth plan + cross-promotions with other newsletters + lead magnets (free materials offered in exchange for an email address) + subscriber retention
 - **Who the client is:** newsletter writers with 1,000 to 50,000 subscribers who want to grow
 - **How you get paid:** $499-1,999 a month per newsletter
-- **Tools:** Claude + Beehiiv + a sponsor network + analytics + email
+- **Tools:** Claude + beehiiv (a newsletter platform with referrals, recommendations between newsletters and an ad network) + analytics + email
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟢 low
-- **Why it works in 2026:** a newsletter is the best channel you own, one that doesn't depend on social media algorithms; growth is the hardest part
+- **Why it works in 2026:** a newsletter is a channel the writer owns and that doesn't depend on social media algorithms, but growing it is the hardest part and takes steady work
 - **Related lessons:** [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
@@ -1690,25 +1686,25 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 91. AI resume builder for one industry
 
-- **What it does:** a job description + the candidate's experience become a resume tailored to that job + a cover letter + interview prep
+- **What it does:** a job description + the candidate's experience become a resume tailored to that job + a cover letter + interview prep (it helps the candidate prepare; it doesn't promise a job)
 - **Who the client is:** job seekers in specific industries (IT, finance, healthcare)
 - **How you get paid:** $19-49 one-time or a $9-29 monthly subscription
-- **Tools:** Claude + Stripe + PDF generation + LinkedIn import
+- **Tools:** Claude + Stripe + PDF generation + the resume and LinkedIn profile that the client uploads
 - **Difficulty:** 🟢 easy
 - **Competition:** 🔴 high (Resume.io, Kickresume)
-- **Why it works in 2026:** a narrow product beats a general one, and a product like this can eventually be sold as a whole
+- **Why it works in 2026:** a resume for one industry has to use its words and show the experience its employers look for, and a narrow product can do that better than a general one
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 92. AI interview practice for one job title
 
-- **What it does:** a job title + company become mock interviews + feedback on your answers + a plan for what to improve
+- **What it does:** a job title + company become mock interviews + feedback on your answers + a plan for what to improve (practice, not a job guarantee)
 - **Who the client is:** job seekers applying for roles in IT, finance and sales
 - **How you get paid:** $29-99 a month or a package for $99-299
-- **Tools:** Claude + voice analysis + Whisper + Stripe
+- **Tools:** Claude + a speech-to-text service + voice analysis + Stripe
 - **Difficulty:** 🟡 medium
-- **Competition:** 🟡 medium (Pramp, Interviewing.io)
+- **Competition:** 🟡 medium (Aced Practice, formerly Pramp; Interviewing.io)
 - **Why it works in 2026:** with an AI interviewer, you can practice at any hour of the day
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
@@ -1722,7 +1718,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **Tools:** Claude + Stripe + email delivery
 - **Difficulty:** 🟢 easy
 - **Competition:** 🟡 medium (similar tools already exist)
-- **Why it works in 2026:** a classic one-time purchase when someone needs it urgently; a product like this is a good fit to build and sell
+- **Why it works in 2026:** people need a speech once, by a fixed date, and want help right away; a small product that does one job well is simple to run
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
@@ -1734,18 +1730,18 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **How you get paid:** $5-15 per card or $9 a month for unlimited cards
 - **Tools:** Claude + gpt-image-2 + Stripe + email
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Greetabl, Punkpost)
-- **Why it works in 2026:** an impulse purchase, and the cards spread on their own among friends
+- **Competition:** 🟡 medium (Greetabl and other personalized card and gift services)
+- **Why it works in 2026:** a personal card is a small, quick purchase, and every card sent shows the service to someone new
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
 #### 95. AI cover letter generator
 
-- **What it does:** a resume + a job posting become a cover letter tailored to that job + a short note to the employer
+- **What it does:** a resume + a job posting become a cover letter tailored to that job + a short note to the employer (it helps you apply; it doesn't promise a job)
 - **Who the client is:** job seekers
 - **How you get paid:** $9-29 one-time or $9 a month
-- **Tools:** Claude + Stripe + LinkedIn import
+- **Tools:** Claude + Stripe + the client's resume
 - **Difficulty:** 🟢 easy
 - **Competition:** 🔴 high (Jobscan, Teal)
 - **Why it works in 2026:** every application has to be tailored to the job, and AI is good at that
@@ -1753,41 +1749,41 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ---
 
-#### 96. AI cold DM generator
+#### 96. AI cold direct message generator
 
-- **What it does:** a recipient's profile + your goal become personalized first messages to people you don't know (LinkedIn, Twitter, Instagram)
+- **What it does:** a recipient's profile + your goal become personalized first messages to people you don't know (LinkedIn, X, Instagram); the person sends each message by hand (LinkedIn, for example, forbids bots that send messages for you)
 - **Who the client is:** salespeople, founders, freelancers
 - **How you get paid:** $29-99 a month
-- **Tools:** Claude + LinkedIn API + web scraping + Stripe
+- **Tools:** Claude + the profile details that the user copies in + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Phantombuster)
-- **Why it works in 2026:** reaching out to strangers directly still works, but only when it's personal
+- **Competition:** 🟡 medium (PhantomBuster)
+- **Why it works in 2026:** a stranger is more likely to answer a message that shows you read their profile, and AI helps write such a message quickly
 - **Related lessons:** [Sales funnel](42b-funnel-design-ai-products.md)
 
 ---
 
 #### 97. AI negotiation coach (in real time)
 
-- **What it does:** the situation + the other side's offer become talking points + counter-move options + a debrief after the call
+- **What it does:** the situation + the other side's offer become talking points + counter-move options + a debrief after the call (record or transcribe a call only with the other side's consent: in some places, such as California, everyone on the call must agree)
 - **Who the client is:** salespeople, freelancers, anyone who has to negotiate
 - **How you get paid:** $49-149 a month
-- **Tools:** Claude + voice analysis + Whisper + Stripe
+- **Tools:** Claude + a speech-to-text service + voice analysis + Stripe
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟢 low (a narrow specialty)
-- **Why it works in 2026:** few people know how to negotiate, and with AI you can practice
+- **Why it works in 2026:** negotiation is learned by practice, and AI lets you rehearse a hard conversation beforehand and review it afterward
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
 
 #### 98. AI dating profile helper
 
-- **What it does:** your current profile + photos become better profile text + photo tips + first-message templates
+- **What it does:** your current profile + photos become better profile text + photo tips + first-message ideas; the user writes and sends everything in the app (dating apps such as Hinge forbid bots and automated access)
 - **Who the client is:** dating app users who want more matches
 - **How you get paid:** $19-79 one-time or $19-49 a month
-- **Tools:** Claude + photo recognition (Vision) + Stripe
+- **Tools:** Claude with image recognition + Stripe
 - **Difficulty:** 🟢 easy
-- **Competition:** 🟡 medium (Hinge's paid plan, MatchMate)
-- **Why it works in 2026:** dating apps are hard on people, and polishing a profile with AI gets results
+- **Competition:** 🟡 medium (many AI dating-profile apps already exist in app stores)
+- **Why it works in 2026:** the profile is the first thing people see in a dating app, and many people find it hard to write about themselves; AI helps find the words
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
@@ -1797,23 +1793,23 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** your requirements + budget become matching listings + neighborhood information + rental application templates for landlords
 - **Who the client is:** renters in cities where apartments are hard to get
 - **How you get paid:** $9-29 a month or $5-15 per search
-- **Tools:** Claude + listing site data (Zillow, Apartments.com, where their terms allow) + Stripe
+- **Tools:** Claude + listing data from sites such as Zillow and Apartments.com, only where their terms allow (access to Zillow's API for developers is by approval) + Stripe
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (Zumper, RealtyHop)
-- **Why it works in 2026:** the rental market is tough, and AI helps you get ahead of other renters
+- **Why it works in 2026:** good apartments go fast, and a renter who sees new listings early and has the application ready has a better chance
 - **Related lessons:** [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
 
 ---
 
-#### 100. AI wills and trusts generator (basic)
+#### 100. AI drafts of wills and trusts for a lawyer's review (basic version)
 
-- **What it does:** family details + assets become a simple will + a power of attorney + a healthcare directive (templates built for each state's laws, with a warning that this isn't legal advice)
-- **Who the client is:** middle-class adults who haven't done any estate planning yet
+- **What it does:** family details + assets become a draft will + power of attorney + healthcare directive and a list of questions for the lawyer; a licensed attorney in the client's state reviews and finalizes everything (in the US, preparing legal documents for other people is licensed work, and the rules differ by state)
+- **Who the client is:** middle-class adults who haven't done any estate planning yet, and estate planning attorneys who want clients to arrive prepared
 - **How you get paid:** $49-199 one-time
-- **Tools:** Claude + state-by-state legal templates + PDF + DocuSign + Stripe
-- **Difficulty:** 🔴 hard (it needs review by a lawyer)
+- **Tools:** Claude + questionnaires and templates for each state, prepared with a lawyer + PDF + Stripe
+- **Difficulty:** 🔴 hard (every document needs a licensed attorney's review, and the rules differ by state)
 - **Competition:** 🟡 medium (LegalZoom, Trust & Will)
-- **Why it works in 2026:** many adults have no will at all; an AI-assisted template service can cost closer to an online legal service than to a lawyer's fee (and it still needs a lawyer's review for anything complex)
+- **Why it works in 2026:** a will feels complicated, so people put it off; a prepared draft and a clear list of questions make the visit to a lawyer shorter and easier
 - **Related lessons:** [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
@@ -1826,52 +1822,52 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 #### 101. AI system for therapists in private practice
 
-- **What it does:** appointment booking + session notes + insurance billing + treatment progress tracking + secure messaging
+- **What it does:** appointment booking + draft session notes that the therapist reviews and signs + insurance billing + treatment progress tracking + secure messaging (clinical decisions stay with the therapist)
 - **Who the client is:** therapists in private practice and small group practices (1-10 clinicians)
 - **How you get paid:** $99-299 a month per clinician
-- **Tools:** Claude + HIPAA-compliant storage (the US law that protects health information) + insurance company APIs + telehealth
-- **Difficulty:** 🔴 hard (HIPAA, complicated insurance billing)
+- **Tools:** Claude + HIPAA-compliant storage (the US law that protects health information) + each insurer's API + telehealth
+- **Difficulty:** 🔴 hard (HIPAA: you sign a BAA with each practice and need BAAs from the AI and storage services you use; insurance billing is complicated)
 - **Competition:** 🟡 medium (SimplePractice, TherapyNotes)
-- **Why it works in 2026:** demand for therapy is rising sharply; AI saves 5 hours a week of paperwork
+- **Why it works in 2026:** paperwork takes time away from clients, and draft notes and automatic billing give some of that time back
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 102. AI new-patient intake for clinics
 
-- **What it does:** a new patient has a conversation with AI, which fills out the intake forms, verifies insurance and books the appointment
+- **What it does:** a new patient has a conversation with AI, which fills out the intake forms, verifies insurance and books the appointment (it collects information; it gives no medical advice)
 - **Who the client is:** clinics with a heavy flow of new patients
 - **How you get paid:** $299-1,499 a month per clinic
-- **Tools:** Claude + an EHR integration (electronic health record) + insurance company APIs + HIPAA compliance
-- **Difficulty:** 🔴 hard (HIPAA)
-- **Competition:** 🟡 medium (Phreesia, Yosi)
-- **Why it works in 2026:** new-patient intake is a bottleneck, and AI clears it
+- **Tools:** Claude + an EHR integration (electronic health record) + each insurer's API + HIPAA compliance
+- **Difficulty:** 🔴 hard (HIPAA: a BAA with every clinic and with the services you use)
+- **Competition:** 🟡 medium (Phreesia, Yosi Health)
+- **Why it works in 2026:** front desk staff spend a lot of time on forms and insurance checks, and AI can do them before the patient arrives
 - **Related lessons:** [AI regulation and compliance](61c-ai-regulation-compliance.md)
 
 ---
 
 #### 103. AI platform for tutoring centers
 
-- **What it does:** a tutoring center gets student tracking + AI homework help + parent reports + scheduling
+- **What it does:** a tutoring center gets student tracking + AI homework help + parent reports + scheduling (if students are under 13, the US COPPA rule, the Children's Online Privacy Protection Rule, requires parents' consent before collecting their data)
 - **Who the client is:** small tutoring centers (5-50 tutors)
 - **How you get paid:** $99-499 a month per center + a per-student fee
 - **Tools:** Claude + scheduling + Zoom + a parent portal + Stripe
 - **Difficulty:** 🟡 medium
 - **Competition:** 🟡 medium (TutorCruncher, Teachworks)
-- **Why it works in 2026:** demand for tutoring has grown since the pandemic, and AI lets a center serve more students
+- **Why it works in 2026:** a center spends a lot of time on schedules and parent reports, and AI takes over that routine so tutors can teach
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 104. AI property management for landlords
 
-- **What it does:** rent collection + maintenance requests + tenant communication + lease management
+- **What it does:** rent collection + maintenance requests + tenant communication + lease management (if you add tenant screening, US law applies: the Fair Housing Act forbids discrimination against tenants, and the Fair Credit Reporting Act sets rules for credit and background reports)
 - **Who the client is:** small landlords (5-50 apartments or units)
 - **How you get paid:** $29-99 a month per property
-- **Tools:** Claude + Stripe + a network of repair contractors + text messages
+- **Tools:** Claude + Stripe + a network of repair contractors + text messages (SMS, with tenants' consent)
 - **Difficulty:** 🟡 medium
-- **Competition:** 🔴 high (Buildium, Appfolio)
-- **Why it works in 2026:** there's little on offer for small landlords; with AI they get big-system features for less
+- **Competition:** 🔴 high (Buildium, AppFolio)
+- **Why it works in 2026:** a small landlord handles rent, repairs and messages alone, and AI keeps them in one place and answers routine questions
 - **Related:** the Latin American real estate market
 
 ---
@@ -1881,10 +1877,10 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** point of sale (POS) + inventory + shift scheduling + guest reviews + marketing in one system
 - **Who the client is:** restaurants (single locations or small chains)
 - **How you get paid:** $199-999 a month per location
-- **Tools:** Claude + Toast/Square + shift scheduling + marketing
+- **Tools:** Claude + Toast or Square (point-of-sale systems) + shift scheduling + marketing
 - **Difficulty:** 🔴 hard (a complicated domain)
 - **Competition:** 🔴 high (Toast, Square)
-- **Why it works in 2026:** restaurant software is scattered across many tools, and AI lets you bring it all into one place
+- **Why it works in 2026:** a restaurant often keeps orders, stock, shifts and reviews in separate programs, and AI can bring the picture together in one place
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
@@ -1892,12 +1888,12 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 #### 106. AI CRM for home service companies
 
 - **What it does:** a customer database + booking + invoicing + marketing for companies that provide services
-- **Who the client is:** home services (plumbing, HVAC, landscaping, cleaning)
+- **Who the client is:** home services (plumbing, heating and air conditioning, landscaping, cleaning)
 - **How you get paid:** $99-499 a month per company
-- **Tools:** Claude + booking + Stripe + text messages + Google Business Profile
+- **Tools:** Claude + booking + Stripe + text messages (SMS, with customers' consent) + Google Business Profile (a business's free listing on Google Search and Maps)
 - **Difficulty:** 🟡 medium
 - **Competition:** 🔴 high (Jobber, ServiceTitan, Housecall Pro)
-- **Why it works in 2026:** home service companies are a huge market, and AI becomes what sets you apart from competitors
+- **Why it works in 2026:** home service owners spend the day on job sites, and AI takes over booking, reminders and invoices that would otherwise wait until evening
 - **Related:** growing-demand area #1 (Section H)
 
 ---
@@ -1910,7 +1906,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **Tools:** Claude + Stripe + video hosting + a community + Slack-style chat
 - **Difficulty:** 🟡 medium
 - **Competition:** 🔴 high (Teachable, Kajabi, Mighty Networks)
-- **Why it works in 2026:** course creators want to stand out with AI
+- **Why it works in 2026:** students ask many of the same questions, and an AI assistant that knows the course materials answers them at any hour, so the author has more time for new content
 - **Related lessons:** [Choosing your path](49b-choose-your-path.md)
 
 ---
@@ -1920,23 +1916,23 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - **What it does:** a wholesale catalog + orders + payment + an AI assistant for the buyer
 - **Who the client is:** small wholesalers and manufacturers
 - **How you get paid:** $499-2,999 a month or 1-3% of each deal
-- **Tools:** Claude + Shopify B2B + Stripe + a buyer portal
+- **Tools:** Claude + Shopify's B2B features (on plans that include them) + Stripe + a buyer portal
 - **Difficulty:** 🟡 medium
-- **Competition:** 🟡 medium (Faire, Tundra)
-- **Why it works in 2026:** online wholesale is growing fast, and small wholesalers need tools
+- **Competition:** 🟡 medium (Faire and other wholesale marketplaces)
+- **Why it works in 2026:** a wholesale buyer wants prices, stock and past orders in one place at any hour, and a small wholesaler rarely has staff to answer every question
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
 
 #### 109. AI construction project management
 
-- **What it does:** work schedules + change orders + crew tracking + AI-assisted documentation
+- **What it does:** work schedules + change orders (approved changes to the scope and price of the work) + crew tracking + AI-assisted documentation
 - **Who the client is:** small construction companies (5-50 projects a year)
 - **How you get paid:** $299-1,499 a month per company
 - **Tools:** Claude + scheduling + photo upload + a crew app
 - **Difficulty:** 🔴 hard (construction has its own specifics)
 - **Competition:** 🟡 medium (Procore, Buildertrend)
-- **Why it works in 2026:** there are still few AI solutions in construction
+- **Why it works in 2026:** a construction site produces many photos, notes and changes every day, and AI helps turn them into tidy records and reports
 - **Related lessons:** [Choosing a niche](38b-niche-selection-methodology.md)
 
 ---
@@ -1944,12 +1940,12 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 #### 110. AI field service management
 
 - **What it does:** job dispatching + routes + customer notifications + parts inventory + invoicing
-- **Who the client is:** field technicians (HVAC, plumbing, appliance repair)
+- **Who the client is:** field technicians (heating and air conditioning, plumbing, appliance repair)
 - **How you get paid:** $99-499 a month per technician
-- **Tools:** Claude + a routing API + text messages to customers + Stripe
+- **Tools:** Claude + a routing API + text messages to customers (SMS, with their consent) + Stripe
 - **Difficulty:** 🟡 medium
 - **Competition:** 🔴 high (ServiceTitan, Housecall Pro)
-- **Why it works in 2026:** field service is a huge market, and AI helps run the work more efficiently
+- **Why it works in 2026:** a technician's day changes with every new call, and AI helps rebuild the route and keep customers informed
 - **Related:** a growing-demand area (Section H)
 
 ---
@@ -1962,11 +1958,11 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 | 16-30 | Content and marketing | SEO agency (search visibility), newsletter, course studio | 🟢🟡 |
 | 31-40 | Customer support and sales | Website chat, voice agent, cold email | 🟢🟡 |
 | 41-50 | Operations and automation | Bookkeeping, hiring, compliance | 🟢🟡🔴 |
-| 51-60 | Education and training | Tutor, languages, workplace skills | 🟡🔴 |
+| 51-60 | Education and training | Tutor, languages, workplace skills | 🟢🟡🔴 |
 | 61-70 | Local businesses | Restaurants, real estate, salons, weddings | 🟢🟡 |
 | 71-80 | E-commerce and D2C (selling directly to shoppers) | Product descriptions, pricing, photos | 🟢🟡 |
-| 81-90 | Creators and bloggers | Personal brand, Twitter, podcasts, video | 🟢🟡 |
-| 91-100 | Products built to sell | Resumes, dating, wedding speeches, wills | 🟢🟡🔴 |
+| 81-90 | Creators and bloggers | Personal brand, X, podcasts, video | 🟢🟡 |
+| 91-100 | Products built to sell | Resumes, dating, wedding speeches, will drafts | 🟢🟡🔴 |
 | 101-110 | Vertical SaaS | Therapists, clinics, restaurants, construction | 🟡🔴 |
 
 **Total ideas: 110.**
@@ -1977,17 +1973,17 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ## Section C. 10 tool stacks
 
-🎨 **Picture this:** a restaurant isn't one cook. It's the kitchen, the bartender, the host, the bookkeeper, the supplier. Each one is a specialist, and what makes the business work is how they **fit together**.
+🎨 **Picture this:** a restaurant isn't one cook. It's the kitchen, the bartender, the host, the bookkeeper, the supplier. Each one is a specialist, and what makes the business work is how they **fit together**. A tool stack is the same idea: a set of tools that work together, each doing its own job.
 
 ---
 
 ### Stack 1: Content pipeline
 
-**Tool set:** Claude + ElevenLabs + Midjourney/gpt-image-2 + Buffer/Hypefury + PostHog
+**Tool set:** Claude + ElevenLabs (AI voice) + Midjourney or gpt-image-2 (AI image generators; gpt-image-2 is built into ChatGPT) + Buffer (schedules social media posts) + PostHog (analytics for a website or app)
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
-**What it's for:** a content business, meaning a steady flow of posts for YouTube, Twitter and an email newsletter.
+**What it's for:** a content business, meaning a steady flow of posts for YouTube, X (formerly Twitter) and an email newsletter.
 
 **Setup time:** 1-2 days
 
@@ -1996,18 +1992,18 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 1. Once a week, Claude suggests content ideas
 2. A long draft gets a voiceover in ElevenLabs and becomes a video
 3. Images and thumbnails come from Midjourney/gpt-image-2
-4. Buffer publishes on a schedule across all platforms
-5. PostHog shows how the audience responds, and you factor that into next week's plan
+4. Buffer publishes on a schedule on the social platforms (the newsletter goes out through a separate email service, see Stack 3)
+5. PostHog shows what visitors do on your site, and each platform's own statistics show how its audience responds; you factor both into next week's plan
 
 ---
 
 ### Stack 2: Voice agent for small businesses
 
-**Tool set:** Vapi + Twilio + Claude + Calendly + Stripe
+**Tool set:** Vapi (AI phone agents) + Twilio (phone numbers, calls and text messages) + Claude + Calendly (online booking) + Stripe (online payments)
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
-**What it's for:** an AI voice agent that answers calls for restaurants, clinics and salons (idea #32)
+**What it's for:** an AI voice agent that answers calls for restaurants, clinics and salons (idea #32). For a clinic in the US, HIPAA (the health data privacy law) applies: before you handle any patient data, you and the services you use need business associate agreements (BAAs, contracts to protect that data)
 
 **Setup time:** 1-2 weeks
 
@@ -2023,7 +2019,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Stack 3: AI newsletter
 
-**Tool set:** ConvertKit/Beehiiv + Claude + Carrd + Plausible
+**Tool set:** Kit (formerly ConvertKit) or beehiiv (email newsletter platforms) + Claude + Carrd (a simple one-page website builder) + Plausible (website analytics)
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
@@ -2034,56 +2030,56 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **How it works:**
 
 1. Claude drafts each issue, daily or weekly
-2. You review and edit, then publish through Beehiiv
+2. You review and edit, then publish through beehiiv (or Kit)
 3. The signup page lives on Carrd
-4. Plausible shows how people read the newsletter
-5. Once you pass 5,000 subscribers, you can start looking for sponsors
+4. Plausible shows how many people visit the signup page and where they come from; opens and clicks are shown by the newsletter platform itself
+5. When the list reaches a few thousand active readers, you can start looking for sponsors
 
 ---
 
 ### Stack 4: AI consulting
 
-**Tool set:** Notion + HubSpot + Calendly + Claude + PandaDoc
+**Tool set:** Notion (notes and documents) + HubSpot (a CRM: software for tracking clients and deals) + Calendly + Claude + PandaDoc (proposals and e-signatures)
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
-**What it's for:** solo consulting (using model #4)
+**What it's for:** solo consulting for a fixed monthly fee (model #4)
 
 **Setup time:** 1 week
 
 **How it works:**
 
-1. Potential clients go into HubSpot CRM (your database of clients and deals)
+1. Potential clients go into the HubSpot CRM
 2. The first intro call gets booked through Calendly
 3. The proposal: drafted in Claude, sent through PandaDoc
 4. Project work lives in Notion documents
-5. Monthly invoices go out automatically
+5. Monthly invoices go out automatically (for example, through Stripe, which can send recurring invoices)
 
 ---
 
 ### Stack 5: An AI SaaS MVP
 
-**Tool set:** Next.js + Supabase + Vercel + Stripe + Claude API
+**Tool set:** Next.js (a framework for building web apps) + Supabase (database and user sign-in) + Vercel (hosting for websites and web apps) + Stripe + Claude API
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
-**What it's for:** building a SaaS product (software sold by subscription), any of ideas 91-100
+**What it's for:** building a SaaS product (subscription software), any of ideas 91-110
 
-**Setup time:** 2-8 weeks to an MVP (minimum viable product, the smallest version that works)
+**Setup time:** 2-8 weeks to an MVP (the smallest version of a product that works)
 
 **How it works:**
 
-1. The interface is built in Next.js with ready-made shadcn/ui components
+1. The interface is built in Next.js with ready-made shadcn/ui components (buttons, forms, menus)
 2. Supabase handles user login and the database
-3. Claude API (a way to plug Claude into your own program) powers the AI features
+3. The Claude API (a way to connect Claude to your own program) powers the AI features
 4. Stripe handles subscriptions and payments
-5. Hosting on Vercel: the free Hobby plan while you have no traffic, then Pro
+5. Hosting on Vercel: the free Hobby plan is only for personal, non-commercial projects (as of October 2026), so a product that takes payments needs the paid Pro plan
 
 ---
 
 ### Stack 6: AI agency for local businesses
 
-**Tool set:** Claude + Google Business Profile + Buffer + Stripe + Calendly
+**Tool set:** Claude + Google Business Profile (a business's free listing on Google Search and Maps) + Buffer + Stripe + Calendly
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
@@ -2094,7 +2090,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **How it works:**
 
 1. The intro meeting and kickoff with the client are booked through Calendly
-2. You audit the business's Google profile
+2. You audit the restaurant's Google Business Profile
 3. Claude prepares a month of content
 4. Buffer publishes the posts on a schedule
 5. Monthly automatic billing through Stripe
@@ -2103,7 +2099,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Stack 7: AI online course studio
 
-**Tool set:** Teachable/Kajabi + Claude + Loom + Canva + Stripe
+**Tool set:** Teachable or Kajabi (platforms for selling online courses) + Claude + Loom (screen and camera recording) + Canva (online graphic design) + Stripe
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
@@ -2117,13 +2113,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 2. Claude drafts the course outline and lesson scripts
 3. Videos are recorded in Loom
 4. Slides and workbooks are made in Canva
-5. The course goes up on Teachable, and Stripe takes the payments
+5. The course goes up on Teachable, which also takes the students' payments; you bill the expert for your work through Stripe
 
 ---
 
 ### Stack 8: AI voice content
 
-**Tool set:** Claude + ElevenLabs + Descript + YouTube
+**Tool set:** Claude + ElevenLabs + Descript (video and audio editor) + YouTube
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
@@ -2135,15 +2131,15 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 1. Claude writes the scripts
 2. Voiceover in ElevenLabs
-3. Editing in Descript, plus B-roll footage for cutaways
-4. Upload to YouTube with SEO optimization
+3. Editing in Descript, plus extra footage for cutaways (B-roll)
+4. Upload to YouTube with a title and description that help the video get found (SEO); YouTube asks you to label realistic AI-made content and does not let mass-produced, repetitive videos earn ad money
 5. Repeat 2-4 times a week
 
 ---
 
 ### Stack 9: AI support for online stores
 
-**Tool set:** Crisp + Claude + Shopify + Stripe
+**Tool set:** Crisp (customer support chat for websites) + Claude + Shopify (a platform for online stores) + Stripe
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
@@ -2153,9 +2149,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **How it works:**
 
-1. A Crisp chat widget goes on the store's website
+1. A Crisp chat window goes on the store's website
 2. Claude gets the product catalog and the answers to common questions
-3. It handles 70-80% of requests on its own
+3. It answers the common questions on its own
 4. It hands the hard questions to the store owner
 5. Monthly billing through Stripe
 
@@ -2163,19 +2159,19 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### Stack 10: A personal brand with AI
 
-**Tool set:** Claude + Hypefury + ElevenLabs + Loom + Calendly
+**Tool set:** Claude + Buffer + ElevenLabs + Loom + Calendly
 
 **What the stack costs:** subscriptions and pay-as-you-go fees. Current prices: [What's current](https://aimayak.com/en/now/) and the services' own pricing pages.
 
-**What it's for:** building a personal brand on Twitter and LinkedIn (ideas #81, #82, #83)
+**What it's for:** building a personal brand on X and LinkedIn (ideas #81, #82, #83)
 
 **Setup time:** 1-2 weeks for the initial setup
 
 **How it works:**
 
 1. Claude prepares content for the day or the week
-2. Hypefury publishes posts and threads on a schedule
-3. ElevenLabs for audio (voice formats on Twitter)
+2. Buffer publishes posts and threads (series of connected posts) on a schedule
+3. ElevenLabs turns a text into a voiceover for short videos
 4. Loom for video
 5. Calendly for booking consultations
 
@@ -2217,14 +2213,14 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **How the work feels:**
 
 - Complete freedom (no team to manage)
-- High margins (80-90%)
+- High margins, meaning what's left after costs (there are few costs besides your own time)
 - Limited growth: you're still selling your time
 - 20-40 hours of work a week
 
 **Ideas that fit:**
 
-- #4 Consulting on retainer
-- #8 Done-for-you service
+- Model #4 (consulting on retainer)
+- Model #8 (done-for-you service)
 - One-person agencies (ideas #16, #18, #24, #82)
 
 
@@ -2243,7 +2239,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Examples:**
 
-- DesignJoy (a design subscription)
+- Designjoy (a design subscription)
 - Marc Lou (several small SaaS products)
 
 ---
@@ -2258,7 +2254,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **How the work feels:**
 
 - Less hands-on work (you manage the team)
-- Lower margins (40-60%, because of team costs)
+- Lower margins (team costs eat into them)
 - Processes can be scaled
 - 30-50 hours a week at the start, 20-30 once you learn to delegate
 
@@ -2298,14 +2294,14 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **How the work feels:**
 
-- A heavy workload in the first 1-2 years (you're building the product)
-- A lighter load from year three (you're scaling)
+- A heavy workload for the first years (you're building the product)
+- The load may ease once the product sells steadily
 - Growing the value of the business matters more than a comfortable lifestyle
 - 40-60 hours a week at the start
 
 **Ideas that fit:**
 
-- All the vertical SaaS products (Category 10)
+- All the SaaS products for one industry (vertical SaaS, Category 10)
 - AI practice management (idea #101)
 - AI new-patient intake (idea #102)
 - "Build to sell" products (Category 9, for first attempts at SaaS)
@@ -2328,7 +2324,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Examples:**
 
 - Linear (a work tool for teams)
-- Notion (raised investment, valued in the billions of dollars)
+- Notion (notes and documents in one workspace)
 - Cursor (an AI code editor)
 
 ---
@@ -2339,7 +2335,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - A team of 1-2 people
 - Investment: $100-500 a month
-- Timeline: 6-18 months to build, then sell
+- Timeline: from building to selling in months, not years
 
 **How the work feels:**
 
@@ -2359,7 +2355,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - You enjoy building more than running something that's finished
 - You have a line of ideas waiting
-- You're fine with occasional large payouts instead of a steady stream
+- You're fine with money arriving in rare lump sums (when a project sells) instead of a steady stream
 - You're ready for the path of a serial entrepreneur
 
 **When NOT to choose it:**
@@ -2371,8 +2367,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Examples:**
 
-- Pieter Levels (Nomad List, Remote OK and other projects)
-- Tony Dinh (sold several small projects)
+- Pieter Levels (builds many small projects in short cycles, such as Nomads and Remote OK; he has kept his main projects rather than selling them, so selling stays a choice)
+- Tony Dinh (an independent developer who sold some of his small projects, such as Black Magic)
 - Stories of project sales on Indie Hackers
 
 ---
@@ -2383,18 +2379,18 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 |---|---|---|---|---|
 | **Team size** | 1 | 1-5 | 1-3 | 1-2 |
 | **Monthly investment** | $50-200 | $200-1,500 | $50-500 + product | $100-500 |
-| **Margin** | 80-90% | 40-60% | 40-70% | 60-80% |
+| **Margin** | High | Lower (team costs) | Depends on scale | Depends on the project |
 | **Growth ceiling** | Low | Medium | High | Different for each project |
 | **Chance of selling the business** | Low | Medium | High | Built in from the start |
 | **Stress** | Medium | High | Very high | Medium or high |
 | **Work rhythm** | Flexible | Intense | All-in | In cycles |
 | **Best for** | People who value freedom | People building a team | People who think big | People who build to sell |
 
-**The most common path:**
+**One possible path (an example, not a rule):**
 
 1. Start as a solo operator
-2. In year 2-3, grow into a small agency or move to the "build to sell" model
-3. From year 5, build SaaS or put together a portfolio of projects to buy and resell
+2. Later, if it suits you, grow into a small agency or move to the "build to sell" model
+3. Later still, build SaaS or a portfolio of your own projects
 
 ---
 
@@ -2412,16 +2408,16 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Notaries, loan signing agents and small law offices handle IDs, contracts and other confidential documents every day
+- Notaries, loan signing agents (notaries who oversee the signing of mortgage papers) and small law offices handle IDs, contracts and other confidential documents every day
 - Many of them are wary of pasting client documents into consumer AI tools
-- The big legal AI tools are built and priced for large firms
+- Some of the best-known legal AI tools are built for large firms; a small office needs something simple
 - A price of $100-500 a month to the client is a reasonable illustration
 
 **Tools:**
 
 - An AI plan whose data-handling terms fit client confidentiality (read them before you sell anything)
-- Connections to e-signature and practice tools (DocuSign, Clio)
-- Privacy built in from day one: no Social Security or ID numbers in prompts, an access log, a clear written data policy
+- Connections to e-signature and practice tools (Docusign for e-signatures, Clio for running a law practice)
+- Privacy built in from day one: no Social Security or ID numbers in prompts (the requests you type to the AI), an access log, a clear written data policy
 
 **Ideas that fit:** #1, #10
 
@@ -2431,14 +2427,14 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- More and more people work for themselves as freelancers, independent contractors and gig workers
-- Taxes are the headache: receipts, deductions, mileage and estimated payments all need to be organized before tax time
-- Existing apps mostly cover the basics (tracking expenses)
+- Many people work for themselves as freelancers, independent contractors or gig workers (people who earn through apps such as ride-hailing or delivery); in the US they often get an IRS Form 1099 that shows what they were paid, hence the name "1099 workers"
+- Taxes are the headache: receipts, deductions, mileage and estimated tax payments (tax paid in installments during the year) all need to be organized before tax time
+- Apps for this already exist (expense trackers, tax apps); a simple tool for one kind of worker, such as delivery drivers or cleaners, can still stand out
 - A price of $5-30 a month to the client is realistic
 
 **Tools:**
 
-- Bank and card connections (Plaid)
+- Bank and card connections (Plaid, a service that connects apps to bank accounts)
 - Receipt capture and categorization
 - Clean exports for the person's accountant or tax software (the tool organizes the numbers; tax advice comes from a tax professional)
 
@@ -2452,12 +2448,12 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Lots of people resell secondhand and thrifted goods on several marketplaces at once
 - Photos, descriptions and pricing are the sellers' main pain points
-- Existing tools mostly copy a listing from one site to another or show analytics
+- Cross-listing tools already exist (they copy a listing from one site to another); a service that also writes descriptions and suggests prices for one category of goods can still stand out
 - A price of $30-200 a month to the client is acceptable
 
 **Tools:**
 
-- Marketplace APIs such as eBay's and Etsy's (where a marketplace offers no API, prepare the listing for the seller to paste in)
+- Marketplace APIs such as eBay's and Etsy's (they let an app post listings for a seller who gives permission; Etsy approves apps first; where a marketplace offers no API, prepare the listing for the seller to paste in)
 - Photo enhancement (Cloudinary)
 - AI-written descriptions tailored to each item
 
@@ -2470,9 +2466,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Why there's an opportunity:**
 
 - Many people in the US read and listen most comfortably in the language they speak at home (Spanish, Chinese, Vietnamese, Tagalog, Korean, Haitian Creole and many more)
-- There aren't enough creators making fresh, current content for these communities
+- In many of these languages there's little fresh local content (check this for the community you know)
 - Local businesses that serve these communities want to reach them
-- Generic tools handle cultural nuance poorly
+- Machine translation often misses cultural nuance, so a human check matters
 
 **Tools:**
 
@@ -2490,13 +2486,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Some firms (medical practices, law and accounting firms, companies with confidential designs) don't want their data to leave the building
 - Cloud AI can be a compliance concern for regulated data (the client's lawyer or compliance lead should weigh in)
-- Your own hardware (Mac Studio, AMD) has become affordable
+- Hardware that can run open AI models in the office (for example, an Apple Mac Studio or a server with AMD chips) is within reach of many firms
 - Price to the client: $5-20K for setup plus maintenance
 
 **Tools:**
 
-- LLaMA or Mistral on your own server
-- Ollama, vLLM
+- Open models that you download and run yourself (for example, Mistral's open models) on your own server
+- Ollama or vLLM (programs that run these models on your own computer or server)
 - Choosing and buying the hardware
 
 **Ideas that fit:** custom consulting for larger companies
@@ -2517,8 +2513,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Tools:**
 
 - Claude (writes well in Spanish)
-- Automatic form filling
-- USCIS API (limited capabilities)
+- Drafts of immigration forms for the lawyer to check and sign (only an attorney or an accredited representative may give immigration legal advice or represent the client)
+- USCIS's Case Status API (it only shows the status of a case; it doesn't fill out or file forms)
 
 **Ideas that fit:** #1, #10 with some adaptation
 
@@ -2528,9 +2524,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- The expat market there has been growing
+- Foreigners buy and rent property there, and many of them don't read Spanish
 - Spanish-language listings need English versions
-- Properties are poorly photographed
+- Listing photos are often poor
 - Price to the client: $50-300 a month per agent plus a fee per listing
 
 **Tools:**
@@ -2547,14 +2543,14 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- 600 million Spanish speakers worldwide
-- Most AI content is made in English first
+- Hundreds of millions of people across Latin America read in Spanish
+- Much of the material about AI appears in English first
 - Mexican, Argentine and Colombian Spanish differ, and that matters
-- Localization costs the client more than plain translation
+- Localization (adapting a text to a country, not just translating it) is usually priced higher than plain translation
 
 **Tools:**
 
-- Claude (knows the varieties of Spanish)
+- Claude (can write for a specific country's Spanish if you ask; have a local reader check it)
 - A reviewer who knows the local culture
 - Publishing on several platforms
 
@@ -2566,16 +2562,16 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- In Latin America, WhatsApp is the main channel for business
+- In much of Latin America, customers message businesses on WhatsApp
 - Small businesses sell directly through WhatsApp
-- The WhatsApp Business Platform (the API) is available through official providers
+- The WhatsApp Business Platform (Meta's official API for businesses) lets a business answer customers from its own software; the business may write first only to people who agreed to receive its messages
 - A price of $20-100 a month to the client is acceptable
 
 **Tools:**
 
-- WhatsApp Business API
+- WhatsApp Business Platform
 - Claude for the replies
-- Payment collection (MercadoPago)
+- Payment collection (Mercado Pago, a Latin American payment service)
 
 **Ideas that fit:** #31, #32, #39
 
@@ -2585,15 +2581,15 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- A large and growing number of people in Latin America work remotely for US clients
+- Many people in Latin America work remotely for US clients
 - They struggle with taxes, banking and communication
-- Tools built for the US don't fit them
+- Tools built for US residents often don't fit their situation
 - Price to the client: $30-150 a month
 
 **Tools:**
 
 - Connections to international banking services
-- A tax helper (the US 1099 form and local taxes)
+- A tax helper (the US Form W-8BEN that a foreign contractor gives a US client, plus local taxes; a local accountant has the final word)
 - Communication tools (handling time zones)
 
 **Ideas that fit:** #41 with some adaptation
@@ -2606,9 +2602,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- The EU AI Act's requirements are phasing in over 2025-2027 (details in the lesson [AI regulation and compliance](61c-ai-regulation-compliance.md))
-- Many smaller companies aren't ready
-- Demand for specialized consulting is growing
+- The requirements of the EU AI Act (the European Union's law on artificial intelligence) are phasing in over several years: the first ones have applied since 2025, and the rules for high-risk AI systems are scheduled for 2027-2028 (details in the lesson [AI regulation and compliance](61c-ai-regulation-compliance.md))
+- Smaller companies rarely have a specialist who tracks these rules
+- Companies that use AI in hiring, education and other sensitive areas will need help checking their systems
 - Price to the client: €5-50K per project plus a retainer
 
 **Tools:**
@@ -2625,15 +2621,15 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- GDPR fines remain a real risk, and AI tools raise new questions about personal data
+- Fines under the GDPR (the EU's General Data Protection Regulation) remain a real risk, and AI tools raise new questions about personal data
 - Small businesses in the EU have to comply
-- Few AI tools put privacy first
+- Small businesses need simple, clear answers about what data the AI sees and where it's stored
 - Price to the client: €100-500 a month
 
 **Tools:**
 
 - Models running on servers in the EU
-- Data stored in the country where the law requires it
+- Data kept in the EU, or sent abroad only with the safeguards the GDPR requires
 - Privacy audit tools
 
 **Ideas that fit:** #46
@@ -2665,14 +2661,14 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Small and mid-size businesses in the EU trade across borders
 - They struggle with taxes, shipping and languages
-- Existing services (Stripe Atlas) are built mainly for the US
+- Many online tools for taxes and company paperwork are built for one country (Stripe Atlas, for example, sets up companies in the US)
 - Price to the client: €100-500 a month
 
 **Tools:**
 
 - Taxes in several countries
 - Support for several languages
-- VAT calculation
+- VAT (value-added tax) calculation
 
 **Ideas that fit:** #41, #46
 
@@ -2682,8 +2678,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Public companies are required to file ESG reports (environmental, social and governance)
-- For small businesses it's voluntary, but it's catching on
+- Some large companies ask their suppliers for emissions data for their ESG reports (environmental, social and governance)
+- For a small business this is usually voluntary, but a big customer may ask for it
 - Specialized SaaS (subscription software) can charge the client more than generic tools
 - Price to the client: €200-2,000 a month
 
@@ -2693,7 +2689,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Supply chain tracking
 - Report templates
 
-**Ideas that fit:** custom vertical SaaS
+**Ideas that fit:** custom SaaS for one industry
 
 ---
 
@@ -2703,9 +2699,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- A huge number of small medical practices in the US
-- HIPAA fines can be painful for a small practice
-- Existing compliance services are often priced for bigger organizations
+- Many small medical practices in the US have no compliance specialist on staff
+- Fines under HIPAA (the US health data privacy law) can be painful for a small practice
+- Compliance services for medical practices already exist; a simple, hands-on service for one type of practice (for example, dental offices) can still stand out
 - A price of $200-1,500 a month to the client is realistic
 
 **Tools:**
@@ -2730,8 +2726,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Tools:**
 
 - Claude (works in many languages)
-- Form automation
-- Translation
+- Drafts of forms for the lawyer to check and sign
+- Translation (documents filed with USCIS need a full English translation that the translator certifies as complete and accurate, so a person signs off)
 
 **Ideas that fit:** #1, #10
 
@@ -2741,7 +2737,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- The requirements differ from state to state
+- Cannabis is legal only under some states' laws, and its federal status is changing (in 2026, state-licensed medical marijuana moved to a less strict federal category); the rules differ from state to state, so check them with a lawyer before you take such a client
 - Banks impose restrictions
 - Ad platforms impose restrictions
 - Prices to the client are above average: $200-2,000 a month
@@ -2752,7 +2748,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Invoices that allow cash payment
 - Marketing tools that stay within the law
 
-**Ideas that fit:** custom vertical SaaS
+**Ideas that fit:** custom SaaS for one industry
 
 ---
 
@@ -2760,9 +2756,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- A huge number of independent restaurants in the US
-- Toast and Square sell general-purpose systems, not hands-on help
-- A price of $99-499 a month to the client is the sweet spot
+- Many independent restaurants in the US have no one to handle marketing
+- Restaurant systems such as Toast and Square give the owner tools, but someone still has to do the work; a done-for-you service fills that gap
+- A price of $99-499 a month to the client is a reasonable range
 
 **Tools:**
 
@@ -2778,7 +2774,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Millions of small home service companies in the US
+- Many small home service companies in the US
 - ServiceTitan and similar platforms can be too expensive or too complex for very small companies
 - AI helps a business stand out from competitors
 - Price to the client: $99-499 a month
@@ -2799,14 +2795,14 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Sellers in Asia are expanding into Western markets
+- Many sellers in Asia sell to buyers in the US and Europe
 - They need product listings, translation and shipping
 - Price to the client: $50-300 a month
 
 **Tools:**
 
 - Content in several languages
-- Marketplace APIs (Amazon, eBay)
+- Marketplace APIs (Amazon's Selling Partner API, eBay's APIs; the seller grants the app access)
 - Logistics integrations
 
 **Ideas that fit:** #71, #80
@@ -2836,7 +2832,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Tourism in Asia is recovering
+- Hotels serve guests from many countries
 - Communicating with guests in different languages
 - Managing reservations
 - Price to the client: $100-500 a month per hotel
@@ -2855,7 +2851,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- The Korean Wave, J-pop and anime are popular around the world
+- The Korean Wave (K-pop, Korean dramas), J-pop (Japanese pop music) and anime are popular around the world
 - People need translation plus cultural context
 - Content from bloggers
 - Prices to the client vary widely
@@ -2895,7 +2891,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- A huge number of freelancers worldwide
+- There are freelancers in every country
 - Their tools are scattered
 - Price to the client: $20-100 a month
 
@@ -2913,7 +2909,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- A huge number of content creators worldwide
+- Content creators work in every country and niche
 - Running several platforms at once is a pain
 - Their tools are scattered
 - Price to the client: $30-300 a month
@@ -2932,7 +2928,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- The online education market is large and still growing
+- Many experts sell online courses
 - Course quality varies widely
 - Their tools are scattered
 - Price to the client: $50-500 a month
@@ -2951,8 +2947,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Millions of consultants around the world
-- Most are stuck trading time for money
+- Consultants work in every field
+- Many of them sell only their hours
 - A product lets a consultant grow without adding hours
 - Price to the client: $100-1,000 a month
 
@@ -2970,7 +2966,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why there's an opportunity:**
 
-- Millions of nonprofits worldwide
+- There are nonprofits in every country
 - They have little money for technology
 - It's easier to sell when the product helps their mission
 - Price to the client: $50-300 a month, discounted
@@ -3016,7 +3012,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - Week 1: read this lesson, pick 3 ideas and narrow them down to one (AI social media management for local restaurants)
 - Week 2: find 50 potential clients in your city (lists from Google Maps and Yelp)
-- Week 3: cold messages and calls; set up 10 conversations
+- Week 3: cold messages and calls, meaning to businesses that don't know you yet (write to each one personally and follow your country's rules on unsolicited messages and calls); set up 10 conversations
 - Week 4: hold 5 conversations and write down the problems the clients name
 
 **Result for the month:**
@@ -3037,7 +3033,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **What to do:**
 
-- Week 1: build a service template: 20 social media posts a month, Google Business Profile management and a monthly report
+- Week 1: build a service template: 20 social media posts a month, managing the Google Business Profile (the business's listing on Google Search and Maps) and a monthly report
 - Week 2: make a simple website (Carrd) and a meeting booking page (Calendly)
 - Week 3: work your potential clients and turn one of the conversations into a payment
 - Week 4: deliver the first month of work for the client
@@ -3079,7 +3075,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **What to do:**
 
-- Week 1: write down every step of the work in Notion
+- Week 1: write down every step of the work in Notion (a notes and documents app)
 - Week 2: find what you can automate (post scheduling in Buffer, templates in Canva)
 - Weeks 3-4: take on new clients (referrals are already helping)
 
@@ -3103,7 +3099,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Result for the month:**
 
 - Price list, version 2
-- Better unit economics (see the [Unit economics](99b-unit-economics-deep.md) lesson)
+- Better unit economics, meaning what you earn and what you spend per client (see the [Unit economics](99b-unit-economics-deep.md) lesson)
 
 ---
 
@@ -3119,7 +3115,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Result for the month:**
 
 - 6 months of steady work
-- Honest numbers: how many hours each client takes, what your margin is, how much of a safety cushion you have
+- Honest numbers: how many hours each client takes, what your margin is (what's left after your costs), how much of a safety cushion you have
 
 **Checkpoint:** decide how much more time to invest based on your own numbers (workload, margin and safety cushion), not on other people's stories.
 
@@ -3195,13 +3191,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Example (an illustration):**
 
-- "AI process automation for small businesses" gets 0 signups
-- By comparison: "AI receipt processing for criminal defense attorneys" gets 50 signups in 30 days
+- "AI process automation for small businesses": nobody recognizes themselves in it, so nobody signs up
+- By comparison: "AI receipt processing for criminal defense attorneys": the right people see at once that it's for them
 
 **How to fix it:**
 
 - Narrow your niche on three levels: industry, then role, then a specific problem
-- Talk to 20 potential clients BEFORE you build
+- Talk to potential clients BEFORE you build (at least 5 real conversations, as in the Section F plan)
 - Check urgency (on a scale of 1 to 10, 8 and above means urgent)
 - Check budget (if they already pay for some solution, the budget is there)
 
@@ -3220,13 +3216,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Example (an illustration):**
 
 - 6 months polishing an AI tool to perfection leads to zero interest
-- By comparison: the same tool built in 1 week leads to 5 paying clients and improvements based on their feedback
+- By comparison: a rough version shown to clients after 1 week brings real feedback, and you improve it for the people who are ready to pay
 
 **How to fix it:**
 
 - A "concierge MVP" (MVP means minimum viable product, the smallest version that works): do the work for the client by hand first
 - Build it, test it with one client, improve it
-- Sell BEFORE you build (if 5 clients agree to pay, then build)
+- Sell BEFORE you build (if several clients agree to pay, then build)
 - Talk to clients every week
 
 ---
@@ -3242,13 +3238,13 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Example (an illustration):**
 
-- An AI tool at $9 a month: even 200 clients don't cover the cost of serving and acquiring them
-- The same tool at $99 a month: you need several times fewer clients to cover your costs, and you have enough time for each one
+- An AI tool at $9 a month: 200 clients bring in $1,800 a month, and that has to cover AI costs, support, advertising and your own time
+- The same tool at $99 a month: the same money comes from about 18 clients, and you have enough time for each one
 
 **How to fix it:**
 
-- In B2B (selling to companies), charge from $99 a month
-- Done-for-you services: from $500 a month
+- In B2B (selling to businesses), charge from about $99 a month
+- Done-for-you services: from about $500 a month
 - Aim for the premium segment and quality, not volume
 - Add value in layers (consulting together with the tool)
 
@@ -3261,8 +3257,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Symptoms:**
 
 - A constant chase for new clients
-- Churn of 5-10% a month
-- Clients stay less than 6 months, so LTV (how much a client pays you over their whole lifetime) is low
+- Churn (clients who leave) of 10% a month or more
+- Clients stay only a few months, so LTV (how much a client pays you over their whole lifetime) is low
 - Money burns on advertising
 
 **Example (an illustration):**
@@ -3275,7 +3271,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Retention is what pays for acquisition
 - Short weekly check-in calls with clients
 - A well-designed start with each client (the first 30 days matter a lot)
-- Surveys and upselling to current clients
+- Surveys and extra offers for current clients
 - A discount for paying a year in advance (the client stays longer)
 
 ---
@@ -3299,7 +3295,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Growing means turning what already works into a system
 - Don't grow until your unit economics work; fix them first
 - Hire a virtual assistant only when admin work takes more than 20 hours a week
-- Scale up advertising only when a paid client pays back their acquisition cost in less than 6 months
+- Scale up advertising only when a client's payments cover what it cost to win them within a few months
 
 **More on this:** the lesson on unit economics
 
@@ -3307,15 +3303,15 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 ### 📊 The 5 reasons compared
 
-| # | Reason | Symptom | Time until shutdown | How hard to fix |
+| # | Reason | Symptom | How fast it shows | How hard to fix |
 |---|---|---|---|---|
-| 1 | Wrong niche | No interest | 3-6 months | Easy (change the niche) |
-| 2 | No client feedback | Slow fade | 6-12 months | Medium (talk to clients more) |
-| 3 | Price too low | Growth without profit | 6-18 months | Medium (raise the price) |
-| 4 | No retention | An endless chase for clients | 12-24 months | Hard (build a process) |
-| 5 | Growing too early | Cash drains away | 6-12 months | Hard (slow down) |
+| 1 | Wrong niche | No interest | Fast | Easy (change the niche) |
+| 2 | No client feedback | Slow fade | Slowly | Medium (talk to clients more) |
+| 3 | Price too low | Growth without profit | Slowly | Medium (raise the price) |
+| 4 | No retention | An endless chase for clients | Very slowly | Hard (build a process) |
+| 5 | Growing too early | Cash drains away | Fast, once the cash runs low | Hard (slow down) |
 
-**Bottom line:** most failures can be prevented if you look honestly at your numbers and results.
+**Bottom line:** many of these failures can be prevented if you look honestly at your numbers and results.
 
 ---
 
@@ -3331,9 +3327,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why now:**
 
-- Voice technology has matured (Vapi, Retell)
+- Voice technology has matured (Vapi, Retell AI)
 - Language models hold the context of a conversation
-- Small business owners already understand why they'd want this (two years ago, fewer did)
+- A missed call is a missed booking, and an AI agent can answer when no one on staff is free
 
 **How to build it:**
 
@@ -3341,19 +3337,19 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - A local market (your own city first)
 - Direct sales (find your first 20 clients in person, by walking in yourself)
 
-**Who does this already:** Vapi, Retell AI, Synthflow
+**Who does this already:** Vapi, Retell AI, Synthflow (platforms for AI voice agents)
 
 **Ideas that fit:** #32, #40
 
 ---
 
-### #2. Vertical AI for regulated fields (law, medicine, finance)
+### #2. Industry-specific AI for regulated fields (law, medicine, finance)
 
 **Why now:**
 
-- Regulators are starting to allow AI as an assistant to professionals
-- Some AI providers offer setups that can meet HIPAA and GDPR requirements (with the right contracts, such as a BAA)
-- Clients in these fields are willing to pay a high price
+- Professional bodies have started to publish rules for using AI (for example, the American Bar Association's 2024 ethics opinion for lawyers)
+- Some AI providers offer setups that can meet the requirements of HIPAA (the US health data privacy law) and the GDPR (the EU's data protection law), with the right contracts, such as a BAA (a contract to protect health data)
+- Work in these fields is expensive, so time saved is worth a lot to the client
 
 **How to build it:**
 
@@ -3361,7 +3357,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Regulatory compliance from day one
 - High-touch sales, with personal support for each client
 
-**Who does this already:** Harvey AI, Abridge (medicine)
+**Who does this already:** Harvey (law), Abridge (medicine)
 
 **Ideas that fit:** #4, #9, #10, #15, #46, #101, #102
 
@@ -3377,11 +3373,11 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **How to build it:**
 
-- First become a professional who works with AI yourself
+- If you're a licensed professional, first use AI in your own practice
 - Then build a service for your peers
-- Or hire professionals who already work with AI
+- If you're not, partner with licensed professionals: they check and sign the work
 
-**Who does this already:** professionals in private practice who already use AI and charge above-market rates for their services
+**Who does this already:** professionals in private practice who use AI for drafts and paperwork and check every result themselves
 
 **Ideas that fit:** tailored to a specific practice (#1, #5, #9, #10)
 
@@ -3391,17 +3387,17 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why now:**
 
-- Demand isn't going away (geopolitics, climate)
-- Law firms can't grow fast enough to keep up with demand
+- People keep moving between countries for work, family and safety
+- Every case means a lot of paperwork for an immigration law office
 - AI can cut document work significantly
 
 **How to build it:**
 
 - One specific immigration route (US and Latin America, India and the US)
 - You can't do without two languages
-- Partner with immigration law firms
+- Partner with immigration law firms (only attorneys or accredited representatives may give immigration legal advice)
 
-**Who does this already:** Boundless (immigration technology), early-stage AI tools
+**Who does this already:** Boundless (an immigration services company with its own attorneys), early-stage AI tools
 
 **Ideas that fit:** #1, #10 in an immigration version
 
@@ -3412,7 +3408,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Why now:**
 
 - The quality of AI writing has reached an acceptable level
-- Editors and strategists are valued more than writers
+- Clients value an editor who checks the facts and keeps the brand's voice
 - Small businesses still pay for quality
 
 **How to build it:**
@@ -3431,8 +3427,8 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why now:**
 
-- The EU AI Act is starting to apply in practice
-- Business clients increasingly ask vendors for SOC 2 reports, and HIPAA applies to anyone handling patient data
+- The EU AI Act (the European Union's law on artificial intelligence) is starting to apply in practice
+- Business clients often ask vendors for a SOC 2 report (an independent audit of data security), and HIPAA applies to clinics and to the companies that handle patient data for them
 - Compliance costs weigh heavily on small businesses
 
 **How to build it:**
@@ -3451,9 +3447,9 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why now:**
 
-- The gap between companies that have adopted AI and those falling behind is growing
-- The tools are mature, but there's a serious shortage of know-how on how to use them
-- An "AI consultant" is a rare and valuable specialist
+- Many companies want to use AI but don't know where to start
+- The tools exist, but knowing how to fit them into a company's daily work is rarer
+- Someone who knows both an industry and AI tools is hard to find
 
 **How to build it:**
 
@@ -3471,7 +3467,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 **Why now:**
 
-- The number of solo entrepreneurs is growing
+- Many people run a business on their own
 - Their tools are scattered (a separate subscription for every task)
 - AI can already tie them into one system
 
@@ -3481,7 +3477,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - One specific niche of solo entrepreneurs
 - Works right after you connect it
 
-**Who does this already:** Reflect, Mem, various Notion alternatives
+**Who does this already:** Zapier and Make (they connect apps), all-in-one workspaces such as Notion, AI note apps such as Mem
 
 **Ideas that fit:** #41, #42, #43
 
@@ -3492,17 +3488,17 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 **Why now:**
 
 - With AI tools, a product gets built faster (months, not years)
-- Buyers are actively looking for projects (fewer regular subscription businesses are up for sale)
-- There are already plenty of examples of successful sales of projects like these
+- There are marketplaces where small online businesses are bought and sold (Acquire.com, Flippa)
+- Founders share stories of such sales, for example on Indie Hackers; a sale is never guaranteed
 
 **How to build it:**
 
 - Pick an idea built for selling (Category 9)
-- A 6-12 month build cycle
+- A build cycle of months, not years
 - Sell the project (the sale price depends on revenue, audience and buyer demand)
 - Repeat
 
-**Who does this already:** Pieter Levels (several projects), Tony Dinh
+**Who does this already:** independent developers such as Tony Dinh, who sold some of his small projects
 
 **Ideas that fit:** the Category 9 ideas, #91-100
 
@@ -3514,7 +3510,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 
 - There's too much generic test prep on the market
 - What sets you apart is an AI tutor available around the clock
-- Students prefer to study on their phones
+- Many students study on their phones
 
 **How to build it:**
 
@@ -3522,7 +3518,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 - Mobile-first
 - A focus on results (a clear score-improvement goal; offer a guarantee only if you can honor it)
 
-**Who does this already:** Magoosh, Khan Academy's free plan
+**Who does this already:** Magoosh (online test prep), Khan Academy (free lessons; its AI tutor Khanmigo is paid for learners)
 
 **Ideas that fit:** #51, #56
 
@@ -3533,7 +3529,7 @@ Before you pick an idea, pick a **model**. The model decides your cash flow, how
 | # | Area | Difficulty |
 |---|---|---|
 | 1 | Voice agents for small businesses | 🟡 medium |
-| 2 | Vertical AI for regulated fields | 🔴 hard |
+| 2 | Industry-specific AI for regulated fields | 🔴 hard |
 | 3 | Professionals who work with AI | 🟡 medium |
 | 4 | AI for immigration | 🟡 medium |
 | 5 | AI content agencies | 🟢 easy |
@@ -3559,7 +3555,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 ### Path 1: Your own money (the best fit for most small AI businesses)
 
-**How much you need:** $0-5K of your own
+**How much you need:** only what you can afford to put in yourself; a service business can start with very little
 
 **Pros:**
 
@@ -3586,7 +3582,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 ### Path 2: Friends and family
 
-**How much you can raise:** $5K-50K
+**How much you can raise:** modest sums: as much as people close to you can afford to lose
 
 **Pros:**
 
@@ -3604,22 +3600,22 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 **When to choose it:**
 
-- You need $20-50K
+- You need a modest sum, not hundreds of thousands
 - You need to hold out until your first paying clients
 - You have a specific goal (hire a virtual assistant, test advertising)
 
 **How to do it right:**
 
-- Written deal terms (even simple ones)
+- Written deal terms drawn up with a lawyer (selling a share of a company is regulated by law, even among friends)
 - An ownership stake OR a convertible note (a loan that later turns into ownership)
-- A 12-month term
+- A clear date when the loan is repaid or turns into a share
 - Keep them regularly updated on how things are going
 
 ---
 
 ### Path 3: Angel investors
 
-**How much you can raise:** $50K-500K
+**How much you can raise:** more than friends and family can give; the amount depends on the investor and the deal
 
 **Pros:**
 
@@ -3639,11 +3635,11 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 - SaaS (subscription software) that can scale
 - A clear path to large recurring revenue
-- You need $100K+ to build the product
+- Building the product costs more than you and the people close to you can put in
 
 **How:**
 
-- A pitch deck for investors (10 slides max)
+- A short slide presentation for investors (a "pitch deck," about 10 slides)
 - Warm introductions through mutual contacts (cold emails rarely work here)
 - Angel groups (look up the current networks and groups in your area)
 
@@ -3651,7 +3647,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 ### Path 4: Seed money from a venture capital fund
 
-**How much you can raise:** $500K-3M
+**How much you can raise:** the largest sums of all the paths here
 
 **Pros:**
 
@@ -3662,18 +3658,18 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 **Cons:**
 
-- You give up a large stake (20-30%)
+- You give up a large stake in the company
 - They demand very fast growth
-- The board of directors controls decisions
+- Investors get a say in major decisions (often through a seat on the board of directors)
 - A long process
 - Only truly scalable SaaS fits
 
 **When to choose it:**
 
 - Real SaaS (not services)
-- You can show the total addressable market (TAM) is $1B or more
+- You can show that the total addressable market (TAM: everyone who could ever buy the product) is very large
 - You already have proven demand and recurring revenue
-- You're ready to build the company for 10 years
+- You're ready to build the company for many years
 
 **How:**
 
@@ -3686,7 +3682,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 ### Path 5: Revenue-based financing
 
-**How much you can raise:** $50K-1M
+**How much you can raise:** tied to your revenue: the steadier your revenue, the more you can get
 
 **Pros:**
 
@@ -3697,7 +3693,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 **Cons:**
 
-- More expensive than venture money (you pay back 1.3-2 times what you got)
+- It isn't free: you pay back more than you received (the contract says how much more)
 - You need recurring revenue
 - Only for a specific purpose (money for growth)
 - A relatively new option
@@ -3716,11 +3712,11 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 | Path | How much you can raise | Ownership you give up | Difficulty | Best for |
 |---|---|---|---|---|
-| Your own money | $0-5K | 0% | 🟢 easy | Small AI businesses |
-| Friends and family | $5-50K | 5-15% | 🟡 medium | Holding out until the first clients |
-| Angel investors | $50-500K | 10-25% | 🔴 hard | Startups that can scale |
-| Seed money from a VC fund | $500K-3M | 20-30% | 🔴 very hard | Real SaaS only |
-| Revenue-based financing | $50K-1M | 0% | 🟡 medium | Growth after the product has found its market |
+| Your own money | Your own savings | None | 🟢 easy | Small AI businesses |
+| Friends and family | Modest sums | A share or a loan, as agreed | 🟡 medium | Holding out until the first clients |
+| Angel investors | Larger sums | A share | 🔴 hard | Startups that can scale |
+| Seed money from a VC fund | The largest sums | A large share | 🔴 very hard | Real SaaS only |
+| Revenue-based financing | Tied to your revenue | None | 🟡 medium | Growth after the product has found its market |
 
 **The big picture:** a small AI business can usually get by on its own money. Outside money makes sense once demand has been proven.
 
@@ -3764,15 +3760,15 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 ---
 
-- [ ] **#5: The MVP (minimum viable product) scope is set: one week to build, max**
-  - Can you build the core value in a week?
+- [ ] **#5: The MVP (minimum viable product) scope is set: one to two weeks to build, max**
+  - Can you build the core value in a week or two?
   - If it "needs three months," the scope is too big
   - Cut features and ship sooner
 
 ---
 
 - [ ] **#6: Your tools are chosen**
-  - Claude or OpenAI? Which specific services? Where will it all run (hosting)?
+  - Which AI model (Claude, OpenAI's models or another one)? Which specific services? Where will it all run (hosting)?
   - The decision is made, not "we'll figure it out later"
   - The tools match the MVP scope
 
@@ -3786,8 +3782,8 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 ---
 
 - [ ] **#8: A product page or an outreach plan is ready**
-  - A website on Carrd or Webflow is already live, OR
-  - A cold email template is ready
+  - A website built with Carrd or Webflow (website builders) is already live, OR
+  - A template for a first email to potential clients is ready (follow the anti-spam rules)
   - You don't need both on day one; one is enough
 
 ---
@@ -3806,9 +3802,9 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 ---
 
-- [ ] **#11: You've chosen a business structure (LLC, sole proprietorship and so on)**
-  - In the US: most often an LLC or a sole proprietorship (ask an accountant or attorney which fits you)
-  - Outside the US: it depends on the country
+- [ ] **#11: You've chosen a business structure that fits your country's rules (LLC, sole proprietorship and so on)**
+  - In the US: most often an LLC (limited liability company) or a sole proprietorship (doing business under your own name); ask an accountant or attorney which fits you
+  - Outside the US: it depends on the country (ask a local accountant)
   - You don't need a complicated structure; a basic registration is enough
 
 ---
@@ -3824,14 +3820,14 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
   - A statement of work template (what you'll do, by when, with what result)
   - A services agreement template
   - A nondisclosure agreement (NDA), if needed
-  - Use existing templates; don't reinvent them
+  - Use existing templates rather than writing your own, and have a lawyer look them over once
 
 ---
 
 - [ ] **#14: You've thought through how to support clients**
   - How will you answer questions?
   - Have you promised clients a response time?
-  - Through what channel (email, Slack, a ticketing system)?
+  - Through what channel (email, a chat app such as Slack, a help desk system)?
 
 ---
 
@@ -3847,11 +3843,11 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 **Count your ✓ marks:**
 
 - **13-15:** 🟢 Ready to launch: you can start
-- **10-12:** 🟡 Almost ready: close 2-5 gaps and launch
+- **10-12:** 🟡 Almost ready: close the gaps and launch
 - **7-9:** 🟠 A bit early: slow down and check demand again
 - **<7:** 🔴 Too early: keep studying the market and talking to potential clients
 
-**Under 12? Close the gaps first.**
+**Under 13? Close the gaps first.**
 
 ---
 
@@ -3862,7 +3858,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 **What to do:**
 
 1. **Pick ONE idea** out of the 110 (not "this one and that one too")
-2. **Talk to 20 potential clients** before you build anything
+2. **Talk to potential clients** before you build anything (at least 5 real conversations)
 3. **Check that the problem is real and that there's a budget to solve it**
 4. **Build an MVP in 1-2 weeks**
 5. **Find your first paying client** as soon as you can after testing demand
@@ -3875,7 +3871,7 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 - Don't build a product in isolation from clients
 - Don't ignore how much clients are willing to pay
 - Don't scale before the economics are proven
-- Don't stay on your own money forever if your SaaS is already growing steadily
+- Don't rule out outside money forever: if your SaaS is already growing steadily, it's worth weighing
 - Don't go to a venture fund if you have a service business or a lifestyle business
 
 **The main principle:**
@@ -3892,8 +3888,8 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 - **[Sales funnel](42b-funnel-design-ai-products.md):** how to set up a sales funnel
 - **[Choosing your path](49b-choose-your-path.md):** work solo, start an agency or build SaaS
 - **[Unit economics](99b-unit-economics-deep.md):** analyzing clients by group (cohorts), LTV (how much a client pays you over their whole lifetime) and CAC (what it costs to win one client)
-- **[Build-Along: a business chatbot](109-build-along-telegram-bot.md):** hands-on projects (five lessons in the Build-Along format)
-- **Also worth reading:** [What to become in the AI era](100-future-professions-and-hybrids.md): professions and hybrid roles
+- **[Build-Along: a business chatbot](109-build-along-telegram-bot.md):** hands-on projects (five lessons where you build a real project step by step)
+- **Also worth reading:** [Jobs of the future](100-future-professions-and-hybrids.md): professions and hybrid roles
 
 ---
 
@@ -3904,16 +3900,16 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 **Market data and ideas:**
 
 - **Indie Hackers**: a community of founders who build businesses on their own money → https://www.indiehackers.com
-- **ProductHunt**: new AI products every day → https://www.producthunt.com
-- **HackerNews: jobs and the Who is Hiring thread**: hiring signals from young startups → https://news.ycombinator.com/jobs
-- **Y Combinator Library**: essays and step-by-step guides for startups → https://www.ycombinator.com/library
-- **Pieter Levels (founder of Nomad List)**: how to build a business solo → https://levels.io
+- **Product Hunt**: new AI products every day → https://www.producthunt.com
+- **Hacker News jobs page**: openings at startups backed by Y Combinator (a startup investor), a signal of what young companies need → https://news.ycombinator.com/jobs
+- **YC Startup Library**: Y Combinator's essays and videos for startup founders → https://www.ycombinator.com/library
+- **Pieter Levels (founder of Nomads, formerly Nomad List)**: how to build a business solo → https://levels.io
 - **Marc Lou (builds small SaaS products solo)**: a portfolio of small SaaS products → https://marclou.com
 
 **Tool research:**
 
 - Acquire.com (data on business sales)
-- Vapi, Retell (voice AI services)
+- Vapi, Retell AI (voice AI services)
 - Cursor, Claude (AI for development)
 
 **Practical observations:**
@@ -3926,9 +3922,9 @@ Market sizes and time-to-revenue are deliberately left out here: estimates in pu
 
 **Version:** updated October 2026
 
-**What this lesson covers:** 110 ideas + 10 models + 10 stacks + 4 business types + 30 niches + a 12-month plan + funding options + a checklist
+**What this lesson covers:** 110 ideas + 10 models + 10 stacks + 4 business types + 30 niches + a 12-month plan + 5 reasons businesses shut down + 10 areas with growing demand + funding options + a checklist
 
-**Basis:** market observations and hands-on project experience; the numbers haven't been checked against primary sources
+**Basis:** market observations and hands-on project experience. The companies, products and laws named in the lesson were checked against their official sites in October 2026; the prices are rough reference points, not research data
 
 **Disclaimer:** the amounts are illustrative; this is not an income forecast and not financial advice
 

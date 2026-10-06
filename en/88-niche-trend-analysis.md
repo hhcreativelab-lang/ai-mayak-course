@@ -10,6 +10,8 @@
 
 Claude, paired with trend analysis tools, is your fish finder. You see what's just starting to grow while others haven't noticed it yet.
 
+The code in this lesson is optional. You can do the same thing by hand on the Google Trends and Reddit websites and paste what you collect into a Claude chat. The start of the practice section shows how.
+
 ---
 
 ## Key concepts
@@ -17,7 +19,7 @@ Claude, paired with trend analysis tools, is your fish finder. You see what's ju
 - **Exploding Topics**: a service that finds topics in their early growth stage (according to the service itself, long before they peak)
 - **Google Trends API** (an API is a way for one program to request data from another): real search demand data over time, by region and with related searches
 - **pytrends**: an unofficial Python wrapper for Google Trends that doesn't need an API key (the repository has been archived since April 2025, and it works unreliably)
-- **Reddit as a signal**: the total volume of discussion in a niche's subreddits is an indicator of how fast that niche's audience is growing
+- **Reddit as a signal**: how many people visit a niche's subreddits (its communities on Reddit) and how much they post there is an indicator of how that niche's audience is growing
 - **Twitter/X**: viral topics in real time (data access is paid, and the terms keep changing)
 - **A "wave" vs "noise"**: the difference between a real trend and short-lived hype
 - **Whitespace analysis**: looking for unclaimed niches where growing trends intersect
@@ -40,27 +42,27 @@ And "reading trends" doesn't mean reading TechCrunch headlines. By the time a tr
 
 ### Exploding Topics: finding growing topics
 
-**What it is.** Exploding Topics is a platform for spotting growing topics. Its algorithm pulls together data from search engines, social media, news and professional communities, finds topics with steady growth and shows them before they go mainstream.
+**What it is.** Exploding Topics is a platform for spotting growing topics. By its own description, it pulls together data from search engines, social media, forums, news and e-commerce sites, finds topics with steady growth and shows them before they go mainstream.
 
 **How it works.** Each topic has a status:
 
-- **Exploding**: sharp growth over the last few weeks or months; risk of a bubble
-- **Regular**: steady, linear growth; less risk, more reliable
-- **Peaked**: the peak has passed, and the audience has started to shrink
+- **Exploding**: growth well above average; a sharp spike can turn out to be a bubble
+- **Regular**: strong but not exceptional growth; usually steadier and more reliable
+- **Peaked**: the topic is already widely known, and its peak growth is in the past
 
-For a business, people usually look for **Regular** topics with noticeable but not huge search volume. That's a niche that has already proven itself (it isn't a bubble) but isn't overcrowded yet.
+For a business, people usually look for **Regular** topics with noticeable but not huge search volume. A niche like that grows more steadily, with less risk of a bubble, and isn't overcrowded yet. The status filter is part of the paid version.
 
 **Practical filters on Exploding Topics:**
 
-- Category: AI, Productivity, Health & Wellness, Finance
+- Category: pick your own (for example AI, Technology, Marketing, Fitness)
 - Period: growth over the last 2 years
 - Volume: enough for the demand to be noticeable (pick the threshold that fits your project)
 
 **An example of how to use it (hypothetical).** Say the service shows steady growth for "AI meeting notes" while the niche still has few players. The first ones into a niche like that usually arrive with SEO content and an audience. A year or two later it may get crowded, so check your own niche against fresh data, not against an example from a lesson.
 
-(By the way, you'll run into a few terms in this lesson. **Ahrefs** is a brand of SEO analysis tools. **Conversion** is the percentage of people who take the action you want. A **funnel** is a marketing funnel, the path from first contact to purchase. An **agent** is an AI that carries out tasks on its own. A **prompt** is your request to an AI. A **workflow** is a sequence of work steps. A **dashboard** is a panel with your key metrics. A **token** is a unit of text for AI. To **deploy** means to put your code live.)
+(You'll run into a few terms in this lesson. **Ahrefs** is a brand of SEO analysis tools. A **prompt** is your request to an AI. A **workflow** is a sequence of work steps. A **dashboard** is a panel with your key numbers. A **token** is the unit of text that AI usage is billed by. A **script** is a short program. An **API key** is a personal password that tells a service which program is calling it.)
 
-**Free plan.** It gives you a list of trends without the details. For serious analysis you need a paid plan with full access to the history and to niche search (prices and terms are on the service's website). For a one-time strategy session, the free plan plus some manual analysis may be enough.
+**Free access.** Part of the trends database is open on the website: a list of topics with a chart and a growth figure. The status filter, search for your own topics and the full database are in the paid plans, which come with a trial (prices and terms are on the service's website). For a one-time look at your idea, the open part plus some manual analysis may be enough.
 
 ---
 
@@ -68,7 +70,7 @@ For a business, people usually look for **Regular** topics with noticeable but n
 
 **What it shows.** Google Trends shows the relative popularity of a search term over time and by region. Important: it doesn't show the absolute number of searches but an index from 0 to 100 (100 = peak).
 
-**pytrends: Python without an official key.** For a long time there was no official API, and developers used the pytrends library, which imitates a browser's requests to Google Trends. It's an unofficial method: the pytrends repository has been archived since April 2025, Google often answers with error 429 (too many requests), and scripts break whenever the site changes. In July 2025, Google opened an alpha test of the official Google Trends API (access by application, limited quotas): [developers.google.com/search/apis/trends](https://developers.google.com/search/apis/trends). The examples below work as learning exercises; for serious work, look at the official API.
+**pytrends: Python without an official key.** For a long time there was no official API, and developers used the pytrends library, which imitates a browser's requests to Google Trends. It's an unofficial method: the pytrends repository has been archived since April 2025, Google often answers with error 429 (too many requests), and scripts break whenever the site changes. In July 2025, Google opened an alpha test of the official Google Trends API (access by application, for a limited number of developers so far): [developers.google.com/search/apis/trends](https://developers.google.com/search/apis/trends). The examples below work as learning exercises; for serious work, look at the official API.
 
 ```python
 # Installation
@@ -145,18 +147,18 @@ This script gives you a ready list of niches with their growth percentages. Send
 
 ### Reddit as an early-warning system
 
-Reddit is where professionals and enthusiasts discuss topics before they reach mainstream media. A growing subreddit = a growing audience for the niche.
+Reddit is where professionals and enthusiasts discuss topics before they reach mainstream media. A community about one topic on Reddit is called a subreddit. A growing subreddit = a growing audience for the niche.
 
 **What to track:**
 
-1. The **number of members** in a subreddit over 6-12 months
-2. **Post activity** (views, comments)
+1. **Weekly visitors**: Reddit shows this number on a community's page in place of the member count. Write it down once a month so you can see the growth
+2. **Activity** (weekly contributions): how many posts and comments appeared in a week
 3. **Frequent questions** (what is / how to / best X for Y): these are requests for content
 
 **Tools:**
 
-- **Reddit Stats** (subredditstats.com): growth history for subreddits (check that the service still works)
-- **PRAW (Python Reddit API Wrapper)**: programmatic access to posts and comments
+- **SubredditStats** (subredditstats.com): an archive of community statistics. The site itself warns that its data is probably out of date, so it's no good for fresh numbers
+- **PRAW (Python Reddit API Wrapper)**: a library for reading posts and comments from a program. It only works with approved access to Reddit's API (see below)
 
 ```python
 # pip install praw
@@ -168,7 +170,7 @@ import re
 reddit = praw.Reddit(
     client_id="YOUR_CLIENT_ID",
     client_secret="YOUR_CLIENT_SECRET",
-    user_agent="trend-analyzer/1.0"
+    user_agent="python:trend-analyzer:v1.0 (by /u/YOUR_USERNAME)"
 )
 
 def analyze_subreddit_trends(subreddit_name, limit=200):
@@ -197,17 +199,17 @@ def analyze_subreddit_trends(subreddit_name, limit=200):
     return counter
 
 # Analyze a few niche subreddits
-for sub in ['ClaudeAI', 'LocalLLaMA', 'AIToolsDirectory']:
+for sub in ['ClaudeAI', 'LocalLLaMA', 'ChatGPT']:
     analyze_subreddit_trends(sub)
 ```
 
 **Setting up PRAW:**
 
-1. Go to reddit.com/prefs/apps
-2. Create a new app and choose the "script" type
-3. Get your client_id and client_secret
+1. Request access to the Reddit Data API: the link to the request form is in Reddit Help, on the Reddit Data API Wiki page. Explain what you need the data for and wait for approval
+2. Once you're approved, Reddit will tell you how to register an app (the "script" type)
+3. Get your client_id and client_secret, put them in the code, and put your Reddit username in user_agent
 
-Important: under its Responsible Builder Policy (updated in November 2025), Reddit requires you to request and receive approval for API access in advance, so getting working keys may be harder than it used to be. Check the terms in Reddit's Data API rules. If you don't get access, check subreddits by hand, as in step 5 of the practice.
+Important: under Reddit's rules (the Responsible Builder Policy), you must request access and get explicit approval before you touch any Reddit data through the API. Using Reddit data for commercial purposes takes Reddit's written approval. Without approval, the code above won't work. If you don't have access, check communities by hand, as in step 5 of the practice: reading Reddit in a browser needs no application.
 
 ---
 
@@ -234,8 +236,8 @@ trend_data = {
         "ai video editor": 120
     },
     "reddit_growing_subreddits": [
-        {"name": "LocalLLaMA", "members_12m_ago": 45000, "members_now": 180000},
-        {"name": "ClaudeAI", "members_12m_ago": 8000, "members_now": 95000}
+        {"name": "LocalLLaMA", "weekly_visitors_3m_ago": 45000, "weekly_visitors_now": 180000},
+        {"name": "ClaudeAI", "weekly_visitors_3m_ago": 8000, "weekly_visitors_now": 95000}
     ],
     "exploding_topics": [
         "agentic ai", "ai coding assistant", "rag pipeline", "model context protocol"
@@ -244,7 +246,7 @@ trend_data = {
 
 message = client.messages.create(
     model="claude-opus-5-5",   # current models: see the What's current page
-    max_tokens=2000,
+    max_tokens=8000,   # roomy on purpose: the model's "thinking" counts toward this limit too
     messages=[
         {
             "role": "user",
@@ -265,10 +267,12 @@ Be specific, but rely only on the data above. If the data isn't enough to draw a
     ]
 )
 
-print(message.content[0].text)
+# The reply comes in blocks; keep only the text ones
+answer = "".join(block.text for block in message.content if block.type == "text")
+print(answer)
 ```
 
-🎨 **Picture this:** trend data is a map covered in pins. You see the dots, but you can't see the route. Claude is an experienced guide who looks at the same map and says: "Here's a mountain trail with hardly any traffic that goes straight to the top. And over there is a beautiful road, but it's already jammed with tourists."
+🎨 **Picture this:** trend data is a map covered in pins. You see the dots, but you can't see the route. Claude is an experienced guide who looks at the same map and says: "Here's a mountain trail with hardly any traffic that goes straight to the top. And over there is a beautiful road, but it's already jammed with tourists." A guide can be wrong too, so check the conclusion yourself.
 
 ---
 
@@ -278,9 +282,9 @@ Twitter/X gives you a different kind of data: not steady growth but viral spikes
 
 **How to get the data:**
 
-- The official X API is paid; check the terms and pricing on X's developer page (they've changed several times)
-- Third-party APIs on marketplaces like RapidAPI are cheaper, but check their reliability and whether they comply with X's rules yourself
-- The free way: monitor accounts by hand with Feedly or RSS
+- The official X API is paid, billed by usage; check the pricing on X's developer page (the terms have changed several times)
+- Don't use third-party services that collect X data around the official API: X's terms expressly prohibit scraping without the company's written consent
+- The free way: look by hand inside X itself. Use keyword search and the Trends section (in the app it's on the Explore tab)
 
 **When X trends are useful:**
 
@@ -328,6 +332,8 @@ Niches to analyze:
 
 **Scenario:** you want to find a promising niche for a micro-SaaS (a small software product run by one person or a tiny team) or a content project in the AI space.
 
+**If you don't code,** skip steps 1-4 and do the same thing by hand. Open [Google Trends](https://trends.google.com), enter a search term, add a few more to compare, and set the time range to the past 5 years. Download the data with the Download button at the top right of the chart: the file opens in Google Sheets. Paste the table into a Claude chat and ask: "Here is Google Trends data for my search terms. Which topics are growing steadily, which one should I avoid, and why? Rely only on this data; if it isn't enough, say so." Then go to step 5. Steps 1-4 are for people who want to collect the data with a Python program. Thirty-five minutes is enough if Python is already installed and you have a Claude API key; the first time, allow more.
+
 ---
 
 **Step 1: Install the dependencies (3 minutes)**
@@ -337,6 +343,8 @@ mkdir trend-analyzer && cd trend-analyzer
 python3 -m venv venv && source venv/bin/activate
 pip install pytrends pandas matplotlib anthropic python-dotenv
 ```
+
+On Windows, type `venv\Scripts\activate` instead of `source venv/bin/activate`.
 
 ---
 
@@ -353,7 +361,7 @@ import time
 def collect_trend_data(keyword_groups, timeframe='today 5-y', geo=''):
     """
     Collects trend data for groups of keywords.
-    keyword_groups: a list of lists (max 5 keywords per group because of Google's limit)
+    keyword_groups: a list of lists (no more than 5 keywords per group: that's the pytrends limit)
     """
     pytrends = TrendReq(hl='en-US', tz=360)
     all_results = {}
@@ -394,7 +402,8 @@ keyword_groups = [
 ]
 
 print("Collecting trend data...")
-results = collect_trend_data(keyword_groups, timeframe='today 3-y')
+# 'today 5-y' = the past 5 years. Google Trends accepts no other period given in years
+results = collect_trend_data(keyword_groups, timeframe='today 5-y')
 
 # Save the results
 with open('trend_data.json', 'w', encoding='utf-8') as f:
@@ -413,6 +422,8 @@ Run it: `python trend_collector.py`
 
 **Step 3: Claude analyzes the results (10 minutes)**
 
+First, in the same folder, create a file named `.env` with one line: `ANTHROPIC_API_KEY=your_key`. You get the key in the Claude Console (the link is under "Tools and resources"), and requests are billed per token. Don't show the key to anyone and don't paste it straight into the code.
+
 Create `analyze_with_claude.py`:
 
 ```python
@@ -424,7 +435,7 @@ load_dotenv()
 client = anthropic.Anthropic()
 
 # Load the trend data
-with open('trend_data.json') as f:
+with open('trend_data.json', encoding='utf-8') as f:
     trend_data = json.load(f)
 
 # Top 10 growing
@@ -438,7 +449,7 @@ analysis_prompt = f"""I'm a solo developer, and I know how to work with Python a
 I want to launch a micro-SaaS or an educational content project in AI/automation.
 Budget: up to $500. Time available: 10-15 hours a week.
 
-Google Trends data (growth over the last 1.5 years):
+Google Trends data (growth: the last 2.5 years vs the 2.5 years before):
 {json.dumps(dict(growing), ensure_ascii=False, indent=2)}
 
 Give me:
@@ -452,30 +463,37 @@ Keep the answer structured and specific. If the data isn't enough to draw a conc
 
 message = client.messages.create(
     model="claude-opus-5-5",   # current models: see the What's current page
-    max_tokens=2500,
+    max_tokens=8000,   # roomy on purpose: the model's "thinking" counts toward this limit too
     messages=[{"role": "user", "content": analysis_prompt}]
 )
 
+# The reply comes in blocks; keep only the text ones
+answer = "".join(block.text for block in message.content if block.type == "text")
+
 print("=== NICHE ANALYSIS ===\n")
-print(message.content[0].text)
+print(answer)
 
 # Save the analysis
 with open('niche_analysis.md', 'w', encoding='utf-8') as f:
     f.write("# Niche analysis - " + __import__('datetime').date.today().isoformat() + "\n\n")
-    f.write(message.content[0].text)
+    f.write(answer)
 
 print("\nAnalysis saved to niche_analysis.md")
 ```
+
+Run it: `python analyze_with_claude.py`
 
 ---
 
 **Step 4: A quick chart (5 minutes)**
 
+Create a file called `trend_chart.py` and run it: `python trend_chart.py`
+
 ```python
 import matplotlib.pyplot as plt
 import json
 
-with open('trend_data.json') as f:
+with open('trend_data.json', encoding='utf-8') as f:
     data = json.load(f)
 
 # Growing niches only
@@ -502,25 +520,25 @@ print("Chart saved: trends_chart.png")
 For each of your top 3 niches:
 
 1. Open reddit.com/search and type in the keyword
-2. Check: is there an active subreddit?
-3. Open the subreddit, go to About and look at the member count and how it's growing
-4. Jot down the name, size and activity
+2. Check whether there's an active community (subreddit) on the topic
+3. Open the community and look at two numbers on its page: weekly visitors and weekly contributions (posts and comments in a week). Reddit no longer shows the member count
+4. Jot down the name and both numbers. Check again in a month: you only see growth by comparing
 
-This gives you context that Claude will use for the final conclusion.
+Add these notes to the data you give Claude: the final conclusion will be more accurate.
 
 ---
 
 ## Tools and resources
 
-- **[Exploding Topics](https://explodingtopics.com)**: finds growing topics. There's a free plan; paid plans are listed on the website
+- **[Exploding Topics](https://explodingtopics.com)**: finds growing topics. Part of the database is open for free; paid plans are listed on the website
 - **[Google Trends](https://trends.google.com)**: the basic tool, free
 - **[pytrends](https://github.com/GeneralMills/pytrends)**: an unofficial Python library for Google Trends, free; the repository is archived
-- **[Google Trends API (alpha)](https://developers.google.com/search/apis/trends)**: the official API, by application, with limited quotas
-- **[SubredditStats](https://subredditstats.com)**: growth history for subreddits (check that the service still works)
-- **[PRAW](https://praw.readthedocs.io)**: the Python Reddit API wrapper (you need a Reddit app and approved access)
-- **[Ahrefs Free Tools](https://ahrefs.com/free-seo-tools)**: search volume for keywords, partly free
-- **[Semrush Keyword Gap](https://www.semrush.com)**: compares niches by search volume; trial terms are on the website (Semrush was bought by Adobe in April 2026, and the product still works)
-- **[Anthropic API](https://console.claude.com)**: Claude for data analysis, billed per token (prices: [What's current](https://aimayak.com/en/now/))
+- **[Google Trends API (alpha)](https://developers.google.com/search/apis/trends)**: the official API, in alpha: access by application, for a limited number of developers so far
+- **[SubredditStats](https://subredditstats.com)**: an archive of Reddit community statistics; the site itself warns that its data is probably out of date
+- **[PRAW](https://praw.readthedocs.io)**: the Python library for Reddit's API (you need Reddit's approval for access)
+- **[Ahrefs Free Tools](https://ahrefs.com/free-seo-tools)**: free tools for finding keyword ideas and checking how hard a keyword is to rank for
+- **[Semrush Keyword Gap](https://www.semrush.com)**: compares which search terms bring up your site and your competitors' sites; trial terms are on the website (Semrush has belonged to Adobe since April 2026, and the product still works)
+- **[Anthropic API](https://console.claude.com)**: Claude for data analysis; you get the key and pay per token in the Claude Console (prices: [What's current](https://aimayak.com/en/now/))
 
 ---
 
@@ -536,6 +554,6 @@ This gives you context that Claude will use for the final conclusion.
 
 ## Next lesson
 
-→ [AI competitive intelligence](89-competitive-intelligence.md): automated market monitoring
+→ [Unit economics made simple](d01-unit-economics-simple.md): what a customer is worth
 
-We move from trend analysis to tracking competitors systematically: Ahrefs MCP, Playwright for scraping, ChangeDetection.io and weekly reports from Claude, all on autopilot.
+You've picked a niche and checked the demand. Next comes the money: what one customer brings in and what it costs to win them. If you want to track competitors automatically, there's an optional library lesson: [AI competitive intelligence](89-competitive-intelligence.md).

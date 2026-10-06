@@ -1,14 +1,14 @@
 # Generación de video con IA: Runway, Kling, Luma y más
 
-**Tiempo:** unos 25 min de lectura + 35 min de práctica
+**Tiempo:** unos 25 min de lectura + 60 min de práctica
 
 ---
 
 ## La idea
 
-Un video corto antes requería un camarógrafo, un editor y un estudio. Hoy abres una pestaña del navegador, escribes unas cuantas oraciones y a los pocos minutos tienes un clip. No es Hollywood, pero para redes sociales, una landing page o un anuncio muchas veces es suficiente. En esta lección repasamos las plataformas a octubre de 2026 y armamos un flujo que funciona: Claude escribe el guion y los prompts (un prompt es tu petición a la IA) → Runway genera el video → FFmpeg arma el corte final. Kling se conecta de la misma manera.
+Un video corto antes requería un camarógrafo, un editor y un estudio. Hoy abres una pestaña del navegador, escribes unas cuantas oraciones y a los pocos minutos tienes un clip. No es Hollywood, pero para redes sociales, la página de un sitio web o un anuncio muchas veces es suficiente. En esta lección repasamos las plataformas a octubre de 2026 y armamos un video de dos maneras. Sin código: Claude escribe el guion y los prompts (un prompt es tu petición a la IA), tú los pegas en el sitio de Kling o de Runway y unes los clips en un editor de video. Con código (opcional, para quienes programan): el mismo flujo corre solo mediante una API, una forma de conectar el servicio con tu propio programa.
 
-🎨 **Imagínalo así:** antes cada video era como una pieza de cerámica hecha a mano: lento, caro, empezando de cero cada vez. Ahora se parece más a una impresora 3D: pones los parámetros y sale la pieza terminada. La calidad está un escalón por debajo de lo hecho a mano, pero es cientos de veces más rápido.
+🎨 **Imagínalo así:** antes cada video era como una pieza de cerámica hecha a mano: lento, caro, empezando de cero cada vez. Ahora se parece más a una impresora 3D: pones los parámetros y sale la pieza terminada. La calidad está un escalón por debajo de lo hecho a mano, pero es mucho más rápido.
 
 ---
 
@@ -19,7 +19,7 @@ Un video corto antes requería un camarógrafo, un editor y un estudio. Hoy abre
 - **Video-to-Video** (video a video): cambiar el estilo o el escenario de un video que ya existe
 - **Motion Brush** (pincel de movimiento): una herramienta de versiones anteriores de Runway para controlar con precisión cómo se mueve cada zona del cuadro
 - **Animación por fotogramas clave**: tú fijas el primer y el último cuadro, y la IA construye la transición entre ellos
-- **El problema de la consistencia**: los personajes pueden "cambiar" de una escena a otra, y cómo manejarlo
+- **El problema de la consistencia**: los personajes pueden "cambiar" de una escena a otra. Ayuda usar la misma imagen inicial en todas las escenas (modo Image-to-Video) y la misma descripción del personaje en cada prompt
 - **Licencias comerciales**: qué puedes y qué no puedes hacer con los videos generados
 
 ---
@@ -36,13 +36,13 @@ Hasta 2024, el video con IA era un juguete de demostración: caras borrosas, mov
 
 ### Runway: el caballo de batalla con API
 
-Runway es una startup de Estados Unidos y uno de los líderes del mercado, con una API sólida. Justo eso la hace práctica para automatizar. A octubre de 2026, su modelo principal es Gen-4.5; los planes de pago también te dan modelos de socios (por ejemplo, Kling 3.0, Seedance 2.0, Nano Banana Pro), y Aleph 2.0 edita video que ya tienes.
+Runway es una empresa de Estados Unidos y uno de los servicios de video con IA más conocidos. Tiene una API práctica, y por eso se usa mucho para automatizar. A octubre de 2026, su modelo principal es Gen-4.5; los planes de pago también te dan modelos de socios (por ejemplo, Kling 3.0, Seedance 2.0, Nano Banana Pro), y Aleph 2.0 edita video que ya tienes.
 
 **Qué puede hacer:**
 
-**Text-to-Video.** Escribes un prompt y obtienes un clip de 5-10 segundos. Runway entiende muy bien el lenguaje de cámara: "slow dolly in" (acercamiento lento), "aerial establishing shot" (toma aérea de ubicación), "rack focus from foreground to background" (cambio de foco del primer plano al fondo). Escribe como director y obtendrás una toma de director.
+**Text-to-Video.** Escribes un prompt y obtienes un clip de hasta 10 segundos. Runway entiende el lenguaje de cámara: "slow dolly in" (acercamiento lento), "aerial establishing shot" (toma aérea de ubicación), "rack focus from foreground to background" (cambio de foco del primer plano al fondo). Cuanto más precisa sea la descripción de la toma, más se parece el resultado a lo que tenías en mente.
 
-**Image-to-Video.** Subes la foto de un producto o de un interior, y Runway la anima conservando el estilo. Es la función estrella para bienes raíces y tiendas en línea: las fotos fijas cobran vida para los anuncios.
+**Image-to-Video.** Subes la foto de un producto o de un interior, y Runway la anima conservando el estilo. Es útil para bienes raíces y tiendas en línea: las fotos fijas se convierten en clips para los anuncios.
 
 **Motion Brush** (una herramienta de versiones anteriores de Runway; revisa si los modelos actuales todavía la tienen). Pintas sobre el cuadro y le das una dirección de movimiento a cada zona. El agua corre, las hojas se mecen y todo lo demás se queda quieto: control total.
 
@@ -52,9 +52,11 @@ Runway es una startup de Estados Unidos y uno de los líderes del mercado, con u
 - Qué tan rápido se gastan los créditos depende del modelo: cada modelo usa una cantidad fija de créditos por segundo de video
 - Precios actuales y tarifas de créditos: [runway.com/pricing](https://runway.com/pricing), [Lo vigente](https://aimayak.com/now/)
 
-**Lo que más nos importa:** la API oficial (interfaz de programación de aplicaciones, una forma de que tus propios programas hablen con el servicio). Puedes automatizar todo: Claude genera los prompts → un script (un programa pequeño que ejecuta los pasos por ti) los manda a Runway → los videos se descargan solos.
+**Para quienes programan:** Runway tiene una API oficial (interfaz de programación de aplicaciones, una forma de que tus propios programas hablen con el servicio). Con ella el flujo corre solo: Claude genera los prompts → un script (un programa pequeño que ejecuta los pasos por ti) los manda a Runway → los videos se descargan solos.
 
-**Licencia comercial:** según la página de precios de Runway, el uso comercial está permitido en los planes de pago. Vuelve a leer las condiciones antes de entregarle trabajo a un cliente.
+**Licencia comercial:** según el centro de ayuda de Runway, conservas los derechos de lo que creas y el uso comercial está permitido; en el plan gratis, los videos llevan marca de agua. Vuelve a leer las condiciones antes de entregarle trabajo a un cliente.
+
+Un ejemplo de llamada a la API (opcional, para quienes programan):
 
 ```python
 from runwayml import RunwayML, TaskFailedError  # pip install runwayml
@@ -88,7 +90,7 @@ def generate_video(prompt: str, duration: int = 5) -> str:
 
 ### Kling: fuerte en el movimiento humano
 
-Kling es una plataforma de Kuaishou (China). Su línea de trabajo a octubre de 2026 es Kling VIDEO 3.0: clips de 3 a 15 segundos, 4K nativo, sonido con sincronización de labios y varias tomas en una sola solicitud. A finales de septiembre de 2026 se anunció Kling 4.0 (hasta 30 segundos de una sola vez, hasta 10 fotogramas clave, sonido estéreo); se espera un lanzamiento amplio en octubre.
+Kling es una plataforma de Kuaishou (China). Su línea de trabajo a octubre de 2026 es Kling VIDEO 3.0: clips de 3 a 15 segundos, 4K nativo, sonido con sincronización de labios y varias tomas en una sola solicitud. A finales de septiembre de 2026 se presentó Kling 4.0 (hasta 30 segundos en una sola generación, hasta 10 fotogramas clave, sonido estéreo): el acceso se abre poco a poco, y el lanzamiento amplio está prometido para octubre.
 
 **Puntos fuertes:**
 
@@ -100,45 +102,44 @@ Kling es una plataforma de Kuaishou (China). Su línea de trabajo a octubre de 2
 **Limitaciones:**
 
 - La velocidad de generación depende de la carga y de tu plan: mídela con tus propias tareas
-- Preguntas sobre el almacenamiento de datos para clientes de la UE y de Estados Unidos (revisa las condiciones de tu contrato)
+- Dónde se guardan los datos de clientes de la UE y de Estados Unidos: revísalo en las condiciones del servicio
 
-**Precios:** hay un plan gratis Basic y varios planes de pago. Precios actuales: [Lo vigente](https://aimayak.com/now/).
+**Precios:** hay un plan gratis Basic y varios planes de pago. Los precios actuales están en el sitio de Kling; lo que ha cambiado en el mercado está reunido en la página [Lo vigente](https://aimayak.com/now/).
 
 🎨 **Imagínalo así:** Kling es un camarógrafo de documentales. Filma un movimiento que se ve vivido, no actuado.
 
-**Cómo conectar la API:** entras a la API de Kling con un JWT, un token que se arma con tu Access Key y tu Secret Key y que es válido por 30 minutos. La dirección de la API y los nombres de los modelos cambian entre versiones, así que esta lección no los deja fijos en el código: toma los actuales de la documentación de Kling.
+**Cómo conectar la API** (para quienes programan): en la consola para desarrolladores de Kling creas una clave de API y la mandas en el encabezado `Authorization: Bearer <clave>`. Antes se entraba con un token JWT armado con una Access Key y una Secret Key; ese esquema quedó en la versión anterior de la API. Las direcciones de las solicitudes y los nombres de los modelos cambian entre versiones, así que esta lección no los deja fijos en el código: toma los actuales de la documentación de Kling.
 
 ```python
-import time
-import jwt  # pip install pyjwt
+import os
 
 
-def kling_token(access_key: str, secret_key: str) -> str:
-    """Token para la API de Kling: un JWT (HS256) firmado con la Secret Key, válido por 30 minutos."""
-    now = int(time.time())
-    payload = {"iss": access_key, "exp": now + 1800, "nbf": now - 5}
-    return jwt.encode(payload, secret_key, algorithm="HS256")
+def kling_headers() -> dict:
+    """Encabezados para las solicitudes a la API de Kling: la clave se lee de la variable de entorno KLING_API_KEY."""
+    return {
+        "Authorization": f"Bearer {os.environ['KLING_API_KEY']}",
+        "Content-Type": "application/json",
+    }
 ```
 
-El token va en el encabezado `Authorization: Bearer <token>`. Después de eso, envías una solicitud para crear una tarea y consultas su estado siguiendo los pasos de la documentación de Kling: el mismo ciclo de "enviar la tarea → esperar → descargar el clip" que en el ejemplo de Runway.
+Después de eso, envías una solicitud para crear una tarea y consultas su estado siguiendo los pasos de la documentación de Kling: el mismo ciclo de "enviar la tarea → esperar → descargar el clip" que en el ejemplo de Runway.
 
 ---
 
 ### Luma: aspecto cinematográfico y control del cuadro
 
-Luma AI hace los modelos de video Ray (a octubre de 2026, Ray 3.2: calidad cinematográfica y control de la dirección cuadro por cuadro) y Creative Agent, que crea y afina video, imágenes, audio y texto con el estilo de tu marca. Tiene API. Puedes probarlo gratis en la app en app.lumalabs.ai.
+Luma AI hace los modelos de video Ray (a octubre de 2026, Ray 3.2: calidad cinematográfica y control del clip mediante fotogramas clave) y los agentes de Luma (Luma Agents), que crean y afinan video, imágenes, audio y texto. Tiene API. Se trabaja en la app en app.lumalabs.ai.
 
 **Qué lo distingue:**
 
-- Control cuadro por cuadro: fijas el primer y el último cuadro → la IA construye la historia entre ellos
-- Videos en bucle: ciclos infinitos para fondos de sitios web (revisa si el modelo actual los soporta)
-- Creative Agent, que respeta el estilo de tu marca
+- Control mediante fotogramas clave: fijas el primer y el último cuadro → la IA construye la historia entre ellos
+- Los agentes de Luma, que llevan una tarea desde la idea hasta el material terminado
 
 **Puntos débiles:** caras y personas, así que revísalos con tus propios prompts. Para productos, interiores, naturaleza y arquitectura, pruébalo primero.
 
-**Precios:** se puede empezar gratis; los planes de pago están en el sitio.
+**Precios:** en la página de precios no hay plan gratis: los planes son de pago, empezando por Plus. Según Luma, todos los planes incluyen créditos de prueba. Detalles: [lumalabs.ai/pricing](https://lumalabs.ai/pricing)
 
-**Licencia comercial:** lee las condiciones de tu plan en el sitio antes de entregarle trabajo a un cliente.
+**Licencia comercial:** en la página de precios, el uso comercial aparece a partir del plan Plus. Vuelve a leer las condiciones antes de entregarle trabajo a un cliente.
 
 ---
 
@@ -146,7 +147,7 @@ Luma AI hace los modelos de video Ray (a octubre de 2026, Ray 3.2: calidad cinem
 
 OpenAI cerró la app y el sitio de Sora el 26 de abril de 2026, y la API de Sora se desactivó el 24 de septiembre de 2026; no hay reemplazo para video en la API de OpenAI ([página de OpenAI](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation)). Si un material más viejo te dice que armes un flujo sobre Sora, ese consejo ya no aplica.
 
-**Opciones cercanas:** Google Flow (desde mayo de 2026, el video en Gemini y Flow lo hace el modelo Gemini Omni: clips cortos con sonido; sin suscripción, Flow te da una pequeña cantidad de créditos gratis al día, y los límites actuales están en el sitio de Google) y Pika ([pika.art](https://pika.art), tiene un nivel gratis). Arma tu flujo sobre una plataforma con API: Runway, Kling, Luma.
+**Opciones cercanas:** Google Flow (el estudio de video de Google: en él trabajan los modelos Gemini Omni, lanzado en mayo de 2026, y Veo 3.1; clips de hasta 10 segundos; sin suscripción recibes créditos gratis cada día, y la cantidad actual está en el sitio de Google) y Pika ([pika.art](https://pika.art); tiene un plan gratis, pero sin créditos mensuales: se compran en paquetes). Si armas el flujo con un script, necesitas una plataforma con API: Runway, Kling, Luma.
 
 ---
 
@@ -154,13 +155,13 @@ OpenAI cerró la app y el sitio de Sora el 26 de abril de 2026, y la API de Sora
 
 | | Runway | Kling | Luma |
 |---|---|---|---|
-| Modelo (octubre de 2026) | Gen-4.5 | VIDEO 3.0 (4.0 anunciado) | Ray 3.2 |
+| Modelo (octubre de 2026) | Gen-4.5 | VIDEO 3.0 (4.0 se está abriendo poco a poco) | Ray 3.2 |
 | Duración máxima | ver la documentación | hasta 15 s (4.0 anunciado con hasta 30) | ver el sitio |
-| Ideal para | Cualquier contenido + API | Movimiento humano, sonido con sincronización de labios | Aspecto cinematográfico, control cuadro por cuadro |
-| Para empezar gratis | créditos únicos | plan Basic | gratis en la app |
-| Planes de pago | ver [Lo vigente](https://aimayak.com/now/) | ver [Lo vigente](https://aimayak.com/now/) | ver el sitio |
+| Ideal para | Trabajo de uso general, API práctica | Movimiento humano, sonido con sincronización de labios | Aspecto cinematográfico, control mediante fotogramas clave |
+| Para empezar gratis | créditos únicos | plan Basic | sin plan gratis; créditos de prueba |
+| Planes de pago | [runway.com/pricing](https://runway.com/pricing) | ver el sitio de Kling | [lumalabs.ai/pricing](https://lumalabs.ai/pricing) |
 | API | ✅ | ✅ | ✅ |
-| Uso comercial | planes de pago | revisa las condiciones | revisa las condiciones |
+| Uso comercial | permitido; marca de agua en el plan gratis | revisa las condiciones | desde el plan Plus |
 
 Esta tabla refleja los datos a octubre de 2026; para todo lo que cambia rápido, revisa las páginas de cada servicio.
 
@@ -177,16 +178,18 @@ Claude (guionista): la divide en 5-8 escenas
       ↓
 Claude: escribe un prompt para cada escena (en inglés, en lenguaje de cámara)
       ↓
-API de Kling / Runway: genera los clips en paralelo
+Kling o Runway: genera los clips (a mano en el sitio o mediante la API)
       ↓
-FFmpeg: une los clips en un solo video
+Un editor de video (por ejemplo, CapCut) o FFmpeg: une los clips en un solo video
       ↓
 ElevenLabs: agrega una voz en off (opcional)
       ↓
 Un video promocional terminado de 30 segundos
 ```
 
-**El flujo completo en Python:**
+Sin código, este camino se recorre a mano: le pides a Claude en un chat normal que escriba el guion y los prompts, pegas cada prompt en el sitio de Kling o de Runway, descargas los clips y los pones uno tras otro en un editor de video. Así funciona el Paso 5 de la práctica.
+
+**El mismo flujo como script de Python (opcional, para quienes programan):**
 
 ```python
 import anthropic
@@ -205,7 +208,7 @@ def create_video_scenes(business_info: str) -> list[dict]:
     """Claude escribe el guion: el tema + un prompt para cada escena."""
     response = claude.messages.create(
         model="claude-sonnet-5-5",  # IDs de modelos actuales: ver la documentación de Anthropic
-        max_tokens=2000,
+        max_tokens=8000,  # el límite también cubre el razonamiento del modelo, así que deja margen
         messages=[{
             "role": "user",
             "content": f"""
@@ -230,7 +233,9 @@ Devuelve solo el arreglo JSON, sin ninguna otra palabra.
 """
         }]
     )
-    return json.loads(response.content[0].text)
+    # La respuesta puede traer bloques de razonamiento: toma solo el texto
+    text = "".join(block.text for block in response.content if block.type == "text")
+    return json.loads(text)
 
 
 def generate_clip(prompt: str, duration: int = 5) -> str:
@@ -329,8 +334,8 @@ if __name__ == "__main__":
 
 Las condiciones de licencia cambian de un servicio a otro, y también con el tiempo. El panorama general a octubre de 2026:
 
-- **Los planes de pago** suelen permitir el uso comercial (según la página de precios de Runway, ahí es así)
-- **Los planes gratis** suelen restringir el uso comercial o agregar una marca de agua
+- **Los planes de pago** suelen permitir el uso comercial. Ejemplos: en Luma aparece a partir del plan Plus, y en Pika la licencia comercial viene incluida a partir del plan Creator
+- **Los planes gratis** suelen restringir el uso comercial o agregar una marca de agua. Según el centro de ayuda de Runway, conservas los derechos de lo que creas en cualquier plan, pero los videos hechos en el plan gratis llevan marca de agua
 - Quién es dueño del resultado, y las restricciones sobre caras de personas reales y marcas de otras empresas, están en las condiciones de cada servicio
 
 **La regla principal:** antes de entregarle trabajo a un cliente, revisa las condiciones de tu plan en el sitio del servicio y guarda una captura de pantalla. No le prometas a un cliente más de lo que permite la licencia.
@@ -345,7 +350,7 @@ Aquí no hay precios para clientes: dependen del mercado, del nicho y del lugar,
 - **Voz y edición:** ElevenLabs, CapCut y otros, con los precios de sus propios planes
 - **Tu tiempo:** el guion, revisar cada clip, las correcciones
 
-Esas líneas se suman al precio de tu servicio: [Cómo poner un precio](d02-pricing-simple.md), [Cuánto te cuesta un cliente y cuánto te deja](d01-unit-economics-simple.md). Formatos típicos: videos cortos para redes sociales, un paquete mensual de videos, un recorrido en video de una propiedad.
+Cómo convertir esas líneas en el precio de tu servicio lo vemos más adelante, en el módulo sobre dinero: [Cómo poner un precio](d02-pricing-simple.md), [Cuánto te cuesta un cliente y cuánto te deja](d01-unit-economics-simple.md). Formatos típicos: videos cortos para redes sociales, un paquete mensual de videos, un recorrido en video de una propiedad.
 
 🎨 **Imagínalo así:** vendes un video, no horas. Al cliente no le importa si te tomó 2 horas o 2 días. Necesita un resultado que cumpla su función.
 
@@ -353,15 +358,17 @@ Esas líneas se suman al precio de tu servicio: [Cómo poner un precio](d02-pric
 
 ## Práctica
 
-### Paso 1: Configura cuentas y claves (5 min)
+Los pasos 1, 2, 4 y 5 no necesitan código: juntos son el camino completo desde una idea hasta un video terminado. El Paso 3 es opcional; es para quienes programan.
+
+### Paso 1: Crea una cuenta (5 min)
 
 1. Entra a [kling.ai](https://kling.ai), la versión internacional de la plataforma; tiene un plan gratis Basic
-2. Para un flujo que funcione, crea una cuenta en Runway y obtén una clave de API en el portal para desarrolladores (el enlace está en la documentación, en [docs.dev.runwayml.com](https://docs.dev.runwayml.com))
-3. Guárdala: `export RUNWAYML_API_SECRET="tu_clave"`
+2. Regístrate (basta con un correo electrónico) e inicia sesión
+3. Busca la sección para crear video y el modo Text to Video (texto a video)
 
-### Paso 2: Tu primer video a mano (10 min)
+### Paso 2: Tu primer video a mano (15 min)
 
-Abre Kling → Text to Video. Prueba este prompt (va en inglés, como los que escribe Claude en el flujo; en español dice: interior de un departamento moderno en Cuenca, Ecuador, con luz dorada del atardecer entrando por ventanales, una toma lenta de cámara que descubre una sala abierta con vista a las montañas, diseño contemporáneo, plantas, pisos de madera, paredes blancas, calidad de anuncio inmobiliario, estilo de fotografía profesional):
+En Kling, abre Text to Video y pega este prompt (va en inglés, como los que escribe Claude en el flujo; en español dice: interior de un departamento moderno en Cuenca, Ecuador, con luz dorada del atardecer entrando por ventanales, una toma lenta de cámara que descubre una sala abierta con vista a las montañas, diseño contemporáneo, plantas, pisos de madera, paredes blancas, calidad de anuncio inmobiliario, estilo de fotografía profesional):
 
 ```
 A modern apartment interior in South America. Cuenca, Ecuador.
@@ -371,48 +378,61 @@ Contemporary design, plants, wooden floors, white walls.
 Real estate advertisement quality. Professional photography style.
 ```
 
-Mira el resultado. Prueba cambiar 2-3 palabras y compara, para que sientas cómo el prompt cambia la imagen.
+Espera el resultado: en el plan gratis, la generación puede tardar varios minutos o más. Mira el clip. Luego cambia 2-3 palabras del prompt y compara, para que sientas cómo el prompt cambia la imagen.
 
-### Paso 3: Automatízalo con la API (10 min)
+### Paso 3 (opcional, para quienes programan): Automatízalo con la API
 
-Instala las dependencias:
+1. Crea una cuenta en Runway y obtén una clave de API en el portal para desarrolladores (el enlace está en la documentación, en [docs.dev.runwayml.com](https://docs.dev.runwayml.com)). Generar mediante la API gasta créditos; las condiciones están ahí mismo
+2. Guarda las claves como variables de entorno: `export RUNWAYML_API_SECRET="tu_clave"` y `export ANTHROPIC_API_KEY="tu_clave"`
+3. Instala FFmpeg (un programa para unir video, [ffmpeg.org](https://ffmpeg.org)) y las bibliotecas de Python:
 
 ```bash
 pip install anthropic requests runwayml
 ```
 
-Corre el script `create_promo_video()` con la descripción de un negocio real de tu ciudad. Observa cómo Claude escribe el guion → Runway genera las escenas → FFmpeg une el video final.
+4. Guarda el código del flujo de la sección "Flujo de trabajo" en un archivo llamado `promo.py`, cambia la descripción del negocio por la tuya y córrelo con `python promo.py`. Observa cómo Claude escribe el guion → Runway genera las escenas → FFmpeg une el video final
 
-### Paso 4: Compara las herramientas (5 min)
+### Paso 4: Compara las herramientas (10 min)
 
-Manda el mismo prompt a Runway, Kling y Luma. Compara:
+Manda el mismo prompt a un servicio más al que tengas acceso: por ejemplo, Runway (el plan gratis trae un paquete único de créditos; qué modelos cubre lo ves al iniciar sesión) o Google Flow, si funciona en tu país. Luma no tiene plan gratis. Compara:
 
 - Calidad de imagen
 - Qué tan realista se ve el movimiento
 - Tiempo total de espera
 
-Anota para ti qué herramienta funciona mejor para qué tareas. Eso se vuelve la base de lo que les ofreces a tus clientes.
+Anota para ti qué herramienta funciona mejor para qué tareas. Te va a servir cuando elijas un servicio para una tarea o para un cliente.
 
-### Paso 5: Arma una muestra para un pequeño negocio (5 min)
+### Paso 5: Arma un video de muestra para un pequeño negocio (30 min)
 
-Busca un pequeño negocio en tu ciudad que no tenga contenido en video (un restaurante, una agencia, una estética). Prepara:
+Sin código, un video se arma así: Claude escribe el guion, tú haces los clips en el sitio de Kling y los unes en un editor de video.
 
-- Un video de demostración de 15 segundos para su nicho
-- Una descripción corta: qué haces exactamente y qué no prometes (por ejemplo, no garantizas que suban las ventas)
+1. Elige un pequeño negocio de tu ciudad que no tenga video (un restaurante, una agencia, una estética), o inventa uno
+2. Pídele a Claude, en un chat normal, que escriba el guion:
 
-Define tu precio y tus condiciones con las lecciones de precios y de economía por cliente (enlaces arriba). Esto es una pieza de portafolio, no una promesa de ingresos.
+```
+Escribe el guion de un video promocional de 15 segundos para este negocio: [describe el negocio en dos o tres oraciones].
+Divide el video en 3 escenas de 5 segundos cada una. Para cada escena dame:
+1) qué mostramos, en español;
+2) un prompt en inglés para un generador de video: el tipo de toma (primer plano o plano general), el movimiento de cámara, la luz, el ambiente.
+```
+
+3. Pega el prompt de cada escena en Kling y descarga los tres clips. Si se te acaban los créditos gratis del día, termina mañana o quédate con dos escenas
+4. Abre un editor de video, por ejemplo [CapCut](https://www.capcut.com): crea un proyecto nuevo, pon los clips uno tras otro y guarda el video en tu dispositivo
+5. Escribe una descripción corta: qué haces exactamente y qué no prometes (por ejemplo, no garantizas que suban las ventas)
+
+**Compruébalo:** tienes un archivo de video de 10-15 segundos hecho de dos o tres escenas, y un párrafo que lo describe. Si el video va a un anuncio o a un cliente, revisa primero las condiciones de tu plan: los planes gratis suelen traer marca de agua y límites al uso comercial. Esto es una pieza de portafolio, no una promesa de ingresos.
 
 ---
 
 ## Herramientas y recursos
 
-- **[Runway](https://runway.com)**: API sólida, control profesional
+- **[Runway](https://runway.com)**: API práctica, muchos ajustes
 - **[Kling AI](https://kling.ai)**: movimiento humano, sonido con sincronización de labios
-- **[Luma](https://lumalabs.ai)**: modelos de video Ray, control cuadro por cuadro
+- **[Luma](https://lumalabs.ai)**: modelos de video Ray, control mediante fotogramas clave
 - **[Google Flow](https://flow.google.com)**: video de Google, con créditos gratis al día
-- **[Pika](https://pika.art)**: un conjunto de apps para estilos y efectos, nivel gratis
-- **[FFmpeg](https://ffmpeg.org)**: unir y procesar video desde la línea de comandos, gratis
-- **[CapCut](https://www.capcut.com)**: edición final con subtítulos y música
+- **[Pika](https://pika.art)**: un conjunto de apps para estilos y efectos; en el plan gratis los créditos se compran en paquetes
+- **[FFmpeg](https://ffmpeg.org)**: unir y procesar video desde la línea de comandos, gratis (para quienes programan)
+- **[CapCut](https://www.capcut.com)**: edición sin código: unir clips, subtítulos, música
 - **[ElevenLabs](https://elevenlabs.io)**: voz en off
 - **Precios y versiones:** [Lo vigente](https://aimayak.com/now/)
 
@@ -422,14 +442,14 @@ Define tu precio y tus condiciones con las lecciones de precios y de economía p
 
 > Al cliente no le importa cómo hiciste el video: en 2 horas con IA o en 2 días con un videógrafo. Necesita un video que resuelva su problema. Las herramientas de IA aceleran la producción, pero revisar cada clip sigue siendo tu trabajo.
 
-> La API de una plataforma es la diferencia entre el trabajo a mano y una línea de producción. A mano, haces los videos uno por uno; un flujo automatizado procesa toda una serie de escenas mientras tú haces otra cosa.
+> Puedes armar un video sin código: el guion en Claude, los clips en el sitio del servicio, la unión en un editor de video. Una API importa cuando los videos son muchos: un script procesa toda una serie de escenas mientras tú haces otra cosa.
 
-> Las plataformas cambian rápido: Sora fue cerrado, y Runway y Kling lanzaron nuevas generaciones. Arma tu flujo de modo que puedas cambiar de plataforma cambiando una sola función.
+> Las plataformas cambian rápido: Sora fue cerrado, y Runway y Kling lanzaron nuevas generaciones. No te amarres a un solo servicio: guarda tus guiones y prompts de tu lado para que sea fácil pasarte a otro.
 
 ---
 
 ## Siguiente lección
 
-→ [El flujo de contenido completo: de la idea a la publicación](72-content-pipeline-complete.md)
+→ [Música con IA: Suno y diseño de sonido](69-music-ai-suno.md): música de fondo y sonidos cortos para tus videos.
 
-Vamos a juntarlo todo: texto (Claude) + voz (ElevenLabs) + video (Runway/Kling) + publicación automática (n8n/Buffer).
+Cómo unir texto, voz, video y publicación en un solo flujo lo vemos más adelante, en la lección [El flujo de contenido completo: de la idea a la publicación](72-content-pipeline-complete.md).

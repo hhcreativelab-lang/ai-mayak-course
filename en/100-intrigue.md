@@ -6,7 +6,7 @@
 
 ## The gist
 
-You were expecting code. One more tool, one more integration, one more library. This lesson isn't that. It's a conversation, the kind that usually happens at the end of a long evening, after the laptop is already closed.
+You were expecting one more tool, one more setup, one more trick. This lesson isn't that. It's a conversation, the kind that usually happens at the end of a long evening, after the laptop is already closed.
 
 🎨 **Picture this:** you took driving lessons. You passed the test. You got your license. You got in the car. And only now, driving alone for the first time with no instructor next to you, you realize that knowing how to drive and being able to drive are two different things. This lesson is about what happens when the instructor gets out of the car.
 
@@ -20,7 +20,7 @@ You've finished your path through the course. Depending on the path you chose, y
 - Check AI answers and know which parts not to trust
 - Build agents that keep working while you sleep (the Build my own product path)
 - Package AI into a service or a product (the Earn with AI and Build my own product paths)
-- Monitor, debug and scale what you've built
+- Monitor, debug and scale what you've built (the Build my own product path)
 
 You now hold one of the most capable tools of our time.
 
@@ -36,9 +36,9 @@ That isn't pessimism. It's the most honest thing anyone can tell you at the end 
 
 ---
 
-## What makes a good AI entrepreneur
+## What makes someone good at working with AI
 
-Not prompt skills. Not knowing the API. Three things:
+Not prompt skills. Not knowing the API (the way programs connect to AI directly). Three things:
 
 **Curiosity.** Asking questions nobody asked before. Noticing the friction everyone stopped seeing because they got used to it. Claude is good at answering questions. You're the one who asks them.
 
@@ -46,7 +46,7 @@ Not prompt skills. Not knowing the API. Three things:
 
 **Taste.** Knowing the difference between good and good enough. Claude generates options. You're the one who chooses.
 
-🎨 **Picture this:** a camera with a professional lens in a beginner's hands takes nice photos. The same camera in Henri Cartier-Bresson's hands made masterpieces. Not because he knew more buttons, but because he knew how to see.
+🎨 **Picture this:** a camera with a professional lens in a beginner's hands takes nice photos. The same camera in the hands of Henri Cartier-Bresson, one of the great photographers of the twentieth century, made masterpieces. Not because he knew more buttons, but because he knew how to see.
 
 ---
 
@@ -66,14 +66,18 @@ Working with AI is a discipline of thinking.
 
 ## What's next
 
-You've finished the course. But it's only the beginning.
+You've almost finished the core course. But it's only the beginning.
 
-Some things can't be passed on through video and text: how to take apart a specific case, how to judge your own decisions critically, how to borrow what already works for others and fit it to yourself. That only comes with practice, on your own projects.
+Some things can't be passed on through a written lesson: how to take apart a specific case, how to judge your own decisions critically, how to borrow what already works for others and fit it to yourself. That only comes with practice, on your own projects.
 
-The course continues with two steps toward that practice:
+One lesson is left in the core course: [Choose your path: a map of the deep-dive library](49b-choose-your-path.md). If you took the Use AI in my work path, this conversation is its finale, and you can simply skim the map.
+
+In the library itself (it's optional, for people who build with Claude Code), two steps lead toward that practice:
 
 - [Why a business owner needs security and architecture](100b-why-production-matters.md) and the lessons after it on security and keeping your knowledge in order: how to build a system that holds up through a year of work and growth.
-- [Build-Along: a chatbot for your business](109-build-along-telegram-bot.md) and the other Build-Along lessons: five projects you can build with your own hands, from a business chatbot to an AI consulting practice.
+- [Build-Along: a Telegram bot for a business](109-build-along-telegram-bot.md) and the other Build-Along lessons: four projects you can build with your own hands, a Telegram bot, a subscription app, a content factory and a voice agent (the fifth, the AI consulting practice, sits in the core course, in the 90-day plan module).
+
+There's no certificate at the end of the course. As a keepsake, you can make a commemorative diploma on the My progress page: you make it yourself from the lessons you've marked as done in your own browser. It isn't proof of education, and nobody verifies it.
 
 🎨 **Picture this:** this was training in the harbor. You've studied the charts, the navigation, the engine. From here on, it's open water.
 
@@ -91,7 +95,8 @@ You spent your time on the right thing. Now go build.
 
 ## Tools and resources
 
-- **Next step**: [Why a business owner needs security and architecture](100b-why-production-matters.md) → [Build-Along: a business chatbot](109-build-along-telegram-bot.md)
+- **Next lesson in the core course**: [Choose your path: a map of the deep-dive library](49b-choose-your-path.md)
+- **After that, optional, in the deep-dive library**: [Why a business owner needs security and architecture](100b-why-production-matters.md) → [Build-Along: a Telegram bot for a business](109-build-along-telegram-bot.md)
 
 ---
 
